@@ -74,12 +74,24 @@ echo "    Huawei 6Dof Header/left false = $FH / $FL 次"
 #   → TemperatureReceiver.register() → VrParamsRequester.bindRuntimeService()
 #   → ArvrRuntimeService.onBind(ACTION_GET_INTERNAL_INTERFACE) → binder
 #   → onServiceConnected 赋 mRuntimeInterface → isHW6DoFAvailable() 才有机会 true
+# 2026-11-08 第六轮修正：VrFramework$System.registerReceivers() 在全 SDK 里
+#   **没有任何调用点**（死代码），而它内部的 TemperatureReceiver.register()
+#   才是 bindRuntimeService 的唯一调用者。所以原版恒 bind=0。
+#   补丁 fix_runtime_bind.py 在 HvrSdkBridge.offer 的 FRAMEWORK 分支补上这一步。
 BIND=$(count 'bind RuntimeService')
+BRIDGEOK=$(count 'bindRuntimeService OK on SetClass copy')
+BRIDGEFAIL=$(count 'bindRuntimeService failed')
 ONBIND=$(count 'ArvrRuntimeService: onBind')
 PERMDENY=$(count 'not Internal permitted')
 MGRNULL=$(count 'mManager == null')
 CHKVR=$(count 'checkVRMode fail')
 NOCTX=$(count 'no application context')
+# 点亮链（同轮新增）：WalleDev 陷入 STATUS_FAULT 时会每 100ms 重开设备，
+# 眼镜来不及激活；hwvr-activate 补发 HIDIOCSFEATURE(5) 才能打破循环。
+FAULT=$(count 'STATUS_FAULT')
+CLOSE=$(count 'closeDevice')
+ACTSDK=$(count 'active device(2) OK')
+ACTMOD=$(count 'active device(2) sent')
 HYD=$("$ADB" -s "$SERIAL" shell 'ls /dev/hidraw* 2>/dev/null | wc -l' 2>/dev/null | tr -d '\r')
 VRSYS=$("$ADB" -s "$SERIAL" shell 'timeout 4 content call --uri content://com.huawei.vrlauncherx.registry --method getService --arg vr_system 2>/dev/null | head -1' 2>/dev/null | tr -d '\r')
 echo "    --- 绑定链判据 ---"
@@ -87,12 +99,25 @@ echo "    hidraw 节点数 = ${HYD:-0}          （0 = 眼镜 USB 未枚举，�
 echo "    vr_system 注册表 = ${VRSYS:-（读不到）}"
 echo "    checkVRMode fail / no application context = $CHKVR / $NOCTX 次"
 echo "    bind RuntimeService / onBind / not Internal permitted = $BIND / $ONBIND / $PERMDENY 次"
+echo "    HvrSdkBridge 补丁 OK / failed = $BRIDGEOK / $BRIDGEFAIL 次   （0/0 = 未装补丁或日志被刷掉）"
 echo "    mManager == null = $MGRNULL 次   （RuntimeService 的 manager 没初始化）"
+echo "    --- 点亮链判据 ---"
+echo "    STATUS_FAULT / closeDevice = $FAULT / $CLOSE 次   （close 高频 = WalleDev 重开死循环）"
+echo "    active device(2) OK(SDK) / sent(模块) = $ACTSDK / $ACTMOD 次"
+echo "    ⚠ 本脚本读的是 logcat -d 环形缓冲，VRRender 每帧刷屏会把旧行冲掉，"
+echo "      上面这些计数为 0 **不等于没发生**。要看实时链路用："
+echo "      adb -s $SERIAL shell 'logcat -v threadtime -s DevHid:V VrParamsRequester:V HvrSdkBridge:V'"
+if [ "${CLOSE:-0}" -gt 20 ]; then
+    echo "    [结论] 眼镜激活链不稳：SDK 每 100ms close/open，眼镜来不及点亮；"
+    echo "           用 fix/magisk-module/modules/hwvr-activate 或等模块 30s 冷却自动补发。"
+fi
 if [ "${BIND:-0}" -eq 0 ] && [ "${HYD:-0}" -eq 0 ]; then
     echo "    [结论] 眼镜 USB 物理离线 → isVRMode=false → manager 不初始化 → 绑定从未发起。"
     echo "           这不是 binder/权限缺口；软件侧 (vr_system / 权限 / onBind) 都已就位。"
-elif [ "${BIND:-0}" -eq 0 ]; then
-    echo "    [结论] 眼镜在位但 VrFramework\$System.register() 未触发绑定，查 SDK init 路径。"
+elif [ "${BIND:-0}" -eq 0 ] && [ "${BRIDGEOK:-0}" -eq 0 ]; then
+    echo "    [结论] 或 VrFramework\$System.register() 未触发绑定，或日志已被刷掉。"
+    echo "           补丁装上后应出现 HvrSdkBridge: bindRuntimeService OK；"
+    echo "           用上面的 tag 过滤实时抓复核，别只信 -d 的 0。"
 elif [ "${PERMDENY:-0}" -gt 0 ]; then
     echo "    [结论] onBind 权限被拒，检查 com.huawei.android.permission.VR 授予状态。"
 elif [ "${MGRNULL:-0}" -gt 0 ]; then

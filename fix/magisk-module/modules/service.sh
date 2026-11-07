@@ -72,6 +72,9 @@ STATE_REPAIR_LAST=0
 MISS=0
 # 无线 adb 5555 自愈巡检时间戳（见主循环末尾，2026-11-08 第五轮）
 ADB_GUARD_LAST=0
+# 眼镜激活指令补发时间戳（见主循环「激活兜底」，2026-11-08 第六轮）
+ACTIVATE_LAST=0
+ACTIVATE_BIN=/data/adb/modules/hvrglass/hwvr-activate
 
 while true; do
     for h in /dev/hidraw*; do
@@ -198,6 +201,28 @@ while true; do
                 GLASS_LAUNCH_DONE=1
                 echo "$(date) [WARN] vr_system_state 始终未发布，仍尝试拉起桌面（预期 SDK Quit）" >> "$LOG"
                 am start -n com.huawei.vrlauncherx/.MainActivity >/dev/null 2>&1
+            fi
+        fi
+        # --- 眼镜激活兜底（2026-11-08 第六轮：点亮链）---
+        # 现场取证：WalleDev.cpp ThreadLoop 在 read error 后把 glass 置
+        # STATUS_FAULT，随后每 100ms 重复 closeDevice -> openDevice success，
+        # 永远走不到 ioActiveDev()，眼镜停在未激活态（黑屏）。手册 4.3 记载
+        # 眼镜激活态是粘性的，一次成功的 HIDIOCSFEATURE(5) 即可保持点亮。
+        # 这里由模块低频补发一次，绕开 SDK 的死循环，不改 Java/native。
+        # 冷却 30s + 只在「刚重插」或「检测到 STATUS_FAULT」时发，避免
+        # 高频 USB 请求自激 EMI（见上方「不要在守护里跑 GET_FEATURE」教训）。
+        if [ -f "$ACTIVATE_BIN" ] && [ -L /dev/hwvr1 ] \
+           && [ $((T - ACTIVATE_LAST)) -ge 30 ]; then
+            [ -x "$ACTIVATE_BIN" ] || chmod 755 "$ACTIVATE_BIN" 2>/dev/null
+            NEED=0
+            [ "$GLASS_WAS" != "1" ] && NEED=1
+            if logcat -d -t 120 2>/dev/null | grep -q "STATUS_FAULT"; then
+                NEED=1
+            fi
+            if [ "$NEED" = "1" ] && [ -x "$ACTIVATE_BIN" ]; then
+                "$ACTIVATE_BIN" /dev/hwvr1 2 >> "$LOG" 2>&1 && \
+                    echo "$(date) 补发眼镜激活 HIDIOCSFEATURE(5) (NEED=$NEED)" >> "$LOG"
+                ACTIVATE_LAST=$T
             fi
         fi
         GLASS_WAS=1

@@ -1332,3 +1332,91 @@ hvrglass 是唯一常驻循环，现每 60 秒检查一次、端口没了才用
 `bind RuntimeService` / `onBind` / `not Internal permitted` /
 `mManager == null` / `checkVRMode fail`），能区分「眼镜离线导致绑定从未发起」
 与「眼镜在位但 SDK 未触发绑定」。
+
+---
+
+### 11.15 点亮兜底 + 6DoF 绑定触发（2026-11-08 第六轮，已真机部署）
+
+**A. 眼镜"黑屏"的真实形态不是不激活，而是激活后来不及保持。**
+
+第 14 章写成「激活指令从未发出」，本轮用 tag 过滤实时抓（VRRender 每帧刷屏会
+冲掉 `logcat -d` 缓冲，普通计数会误判为 0）纠正：
+
+```
+06:50:26.209 DevHid: closeDevice -> openDevice success
+06:50:26.309 ... 每 100ms 一次，无限循环
+06:51:33.909 DevHid: ioActiveDev: active device(2) OK   （偶发才走到）
+```
+
+`WalleDev.cpp ThreadLoop` 在 read error 后把 glass 置 `STATUS_FAULT`，随后
+反复 close/open，眼镜停在未激活态。手册 4.3 记载激活态是**粘性**的，所以
+外部补发一次 `HIDIOCSFEATURE(5)` 就能打破循环——**这一步由面具模块做，
+不需要动 SDK Java/native，也不需要 LSPosed**。
+
+协议（`docs/HELMET_HID_PROTOCOL.md` 1.2）：`ioActiveDev(DEVICE_TYPE)` =
+`buf[0]=5, buf[1]=DEVICE_TYPE & 0x7E, ioctl(0xC0054806)`。真机实测：
+
+```
+su -c "/data/adb/modules/hvrglass/hwvr-activate /dev/hwvr1 2"
+  -> active device(2) sent, ret=5, payload=0502000000
+补发后两个 8s 窗口：closeDevice=0 / openDevice=0 / STATUS_FAULT=0，
+                    receive imu data 稳定 8~9 次
+```
+
+`ksu/hwvr_compat/hwvr-activate.c` 用 NDK r26 编成 arm64 静态 ELF，产物在
+`fix/magisk-module/modules/hwvr-activate`。`service.sh` 只在「刚重插」或
+「检出 `STATUS_FAULT`」时补发，**冷却 30 秒**，避免重蹈高频 `GET_FEATURE`
+自激 EMI 的覆辙（见 11.9）。已 root 部署到模块目录，重启后自动生效。
+`install.sh` 同步补了执行位。
+
+> 一个瞬态坑：拔插眼镜的瞬间 `/dev/hwvr1` 会被守护换成占位普通文件，此时
+> 发激活必然 `ENOTTY`。模块用 `[ -L /dev/hwvr1 ]` 挡住了；手动执行前先
+> `readlink /dev/hwvr1` 确认指向 68B 控制口（`hwvr-probe` 返回 0）。
+
+**B. 6DoF 的真正断点：`registerReceivers()` 是死代码。**
+
+`VrParamsRequester.bindRuntimeService()` 是 6DoF 唯一入口——不绑定，
+`mRuntimeInterface` 恒 null，`isHW6DoFAvailable()` 第一行就 return false，
+`Huawei 6Dof Header/left/right` 全 false。而全 SDK 里
+`VrFramework$System.registerReceivers()` **没有任何调用点**，它内部的
+`TemperatureReceiver.register()` 才是 `bindRuntimeService` 的唯一调用者。
+这就是现场 `bind RuntimeService : 0` 的由来。
+
+`fix/patches/vrdesktop/fix_runtime_bind.py` + `apply_runtime_bind.sh` 在
+`HvrSdkBridge.offer()` 的 FRAMEWORK 分支补一步：用 **native SetClass 那份
+Class 的 ClassLoader** 加载 `VrParamsRequester`，反射调
+`getInstance().bindRuntimeService(activity)`。必须是这个 loader——
+`VrFrameworkBootstrap` 另建的 L3 副本与 `LibUpdate` 的 L4 是两份类，
+静态单例互不相通（见 `HvrSdkBridge.java` 头注释）。真机实证：
+
+```
+I HvrSdkBridge: offer[0] com.huawei.vrframework.VrFramework ... hvrframework.dex
+I HvrSdkBridge: VrFramework.init(Activity) OK on SetClass copy
+I VrParamsRequester: bind RuntimeService          ← 从 0 变成实际发生
+I HvrSdkBridge: bindRuntimeService OK on SetClass copy
+VerifyError = 0
+```
+
+**注入点的两次踩坑（已写进 py 头注释）**：放在 `applyFramework()` 的
+`Log.i` 之后会让 dex verifier 在 try/catchall 合并点报
+`[0x30] register v2 has type Method but expected String`，整个
+`HvrSdkBridge` 类加载失败（`getSystemService` 崩，已回滚）；放在
+`setActivity()` 里则因 `CLASSES` 还是空的而静默 return（`setActivity`
+早于 `offer[0]`）。只有 `offer()` 的 FRAMEWORK 分支时序正确且是直线代码。
+
+**C. 尚未闭合的最后一环（本轮明确记录，未修）**
+
+绑定已发生、`onBind` 也调用了，但客户端 `mRuntimeInterface` 仍为 null、
+`Huawei 6Dof Header is true` 从未出现；服务端每次 `onStartCommand` 都报
+`ArvrRuntimeService: mManager == null!`。6 个 native 库（`libVR6Dof.so`
+/`libarvr_slam.so`/`libctrl3dof.so`/`libhivrar_fd.so`/
+`libruntime_service_module.so`/`libc++.so`）在设备 `lib/arm64` 里齐全，
+`NO VR permission` / `Not in Vr Mode` / `UnsatisfiedLinkError` 计数全 0，
+所以不是权限或库缺失；断点收敛到 **`onCreate` 的 `h`(onBind 返回的
+binder) / `j`(manager) 初始化未生效，或 `service/f.getInstance()` 返回 null**。
+下一步应直接替换设备上 `app_SdkLibs/hvrframework.dex`（无需重签
+161MB SDK APK）打点确认，或 patch `ArvrRuntimeService.onCreate()` 无条件
+初始化 `h`/`j`。**6DoF 目前仍不可用，3DoF CF20 不受影响。**
+
+`fix/tools/vr-input-check.sh` A 段已同步加入 `bindRuntimeService OK`、
+`STATUS_FAULT`、`closeDevice`、`active device(2) OK/sent` 计数。

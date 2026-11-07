@@ -330,6 +330,8 @@ cp -f  /data/local/tmp/hvrfix/magisk-module/runtime/light-on.sh     /data/adb/hv
 cp -f  /data/local/tmp/hvrfix/magisk-module/modules/resolution_white.xml /data/adb/hvrglass/resolution_white.xml
 [ -f /data/adb/hvrglass/mode ] || echo auto > /data/adb/hvrglass/mode
 chmod 755 /data/adb/modules/hvrglass /data/adb/modules/hvrglass/post-fs-data.sh /data/adb/modules/hvrglass/service.sh /data/adb/hvrglass/edid-mode.sh /data/adb/hvrglass/light-on.sh
+# 眼镜激活兜底工具（HIDIOCSFEATURE(5)，见 README 11.15 / 分析文档第十五章）
+chmod 755 /data/adb/modules/hvrglass/hwvr-activate 2>/dev/null
 # --- 控制接口协议探测二进制（service.sh 用它真发 HIDIOCGFEATURE(4) 挑接口；
 #     2026-11-08 修判据后必须有，否则会退化为按描述符长度兜底）---
 chmod 755 /data/adb/modules/hvrglass/hwvr-probe
