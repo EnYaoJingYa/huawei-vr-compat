@@ -18,6 +18,7 @@
 只替换这两个 **Java 包装方法**（消费者调用的就是它们，私有 native 原样保留），
 返回语义不变：取不到仍然返回 -1。
 """
+import io
 import re
 import sys
 from pathlib import Path
@@ -35,7 +36,7 @@ HELPER = "Lcom/huawei/vrframework/compat/VrAndroidSensors;->%s()I"
 
 def main(root):
     path = Path(root) / "decode" / MODULE / TARGET
-    text = path.read_text(encoding="utf-8", newline="")
+    text = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in text else "\n"
     body = text.replace("\r\n", "\n")
 

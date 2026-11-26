@@ -1,4 +1,4 @@
-<#
+﻿<#
 一键验证「VR 活动落到虚拟屏、画面走眼镜面板」这条链。
 
 前提：LSPosed 里已经启用 com.hvr.displayrouting 并勾好作用域（系统框架 + 七个包）、
@@ -27,7 +27,15 @@ $serial = $Serial
 
 function Invoke-Adb {
     param([Parameter(ValueFromRemainingArguments = $true)][string[]]$Arguments)
-    & $Adb -s $serial @Arguments
+    # Windows PowerShell 5.1：原生命令的 stderr 在 2>&1/管道捕获下会被包成
+    # NativeCommandError 并按 ErrorActionPreference 升级成 terminating error。
+    # （原工作区是 PS7，无此问题。）adb 的正常输出走 stdout，这里把 stderr
+    # 行降级成文本，避免真机 logcat/grep 的告警行中断验证脚本。
+    $prevEap = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    $output = & $Adb -s $serial @Arguments 2>&1 | ForEach-Object { "$_" }
+    $ErrorActionPreference = $prevEap
+    $output
 }
 
 Write-Output '== 1. 确认 LSPosed 模块已生效 =='
@@ -44,7 +52,9 @@ LSPosed 模块还没生效（logcat 里没有 HvrDisplayRouting 的 hook 日志�
 Write-Output "  hook 日志条数：$hookCount"
 
 Write-Output '== 2. 打路由补丁并重装桌面 =='
-& python (Join-Path $repo 'patches/patch_vr_display_launch.py') $repo
+$pythonCmd = (Get-Command python -ErrorAction SilentlyContinue).Source
+if (!$pythonCmd) { $pythonCmd = (Get-Command py -ErrorAction SilentlyContinue).Source }
+& $pythonCmd (Join-Path $repo 'patches/patch_vr_display_launch.py') $repo
 if ($LASTEXITCODE -ne 0) { throw '路由补丁失败' }
 & (Join-Path $repo 'build/build-module.ps1') -Package com.huawei.vrlauncherx -Revision $Revision |
     Select-Object -Last 3

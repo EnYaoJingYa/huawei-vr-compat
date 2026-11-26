@@ -1,0 +1,2096 @@
+                        lowp vec4 color1b = texture(uTexture0, vec3(oTexCoord1b, eyeIndex));
+                        lowp vec4 color1g = texture(uTexture0, vec3(oTexCoord1g, eyeIndex));
+                        lowp vec4 color1r = texture(uTexture0, vec3(oTexCoord1r, eyeIndex));
+                        outputColor = texture(uTexture0, vec3(oTexCoord, eyeIndex));
+         if(oEyePosition < 0.0 ){
+         outputColor = mix(mix(textureAfterVibrance, textureColor, clamp(pow(radius / enhanceMaxRadius, 1.0), 0.0, 1.0)), UITextureColor, UITextureColor.a);
+         outputColor = mix(textureAfterVibrance, textureColor, clamp(pow(radius / enhanceMaxRadius, 1.0), 0.0, 1.0));
+       if(oEyePosition < 0.0 )
+    else if (radius > enhanceMaxRadius) {
+    enhanceMaxRadius = min(0.15, 0.5 * fovRate);
+    if(oEyePosition < 0.0 )
+    oEyePosition = aPosition.x;
+ imaginary
+%s failed to broadcast
+%s/libWalleAlg.so
+()Landroid/view/Surface;
+)HvrFramework
+.eh_frame
+.eh_frame_hdr
+/interaction_profiles/huawei/6dof_controller
+/user/hand/left/input/aim/pose
+/user/hand/left/input/grip/pose
+/user/hand/left/input/trackpad/click
+/user/hand/left/input/trackpad/touch
+/user/hand/left/input/trackpad/x
+/user/hand/left/input/trackpad/y
+/user/hand/right/input/aim/pose
+/user/hand/right/input/grip/pose
+/user/hand/right/input/trackpad/click
+/user/hand/right/input/trackpad/touch
+/user/hand/right/input/trackpad/x
+/user/hand/right/input/trackpad/y
+12HelmetHandle
+12HvrHelmetExt
+12RenderModule
+12VrDistortion
+13LocalRenderer
+13VRRenderVsync
+15ControllerTrack
+15HelmetHandleImp
+15MediatorMessageI16HelmetOffsetInfoE
+15MediatorMessageI23VrRenderTimespanDFXInfoE
+15MediatorMessageI9_HeadPoseE
+17HvrFrameworkClass
+17VRRenderWalleImpl
+18ControllerTrackImp
+18VRRenderImplCommon
+18VrDistortionRender
+22VRRenderVirtualDisplay
+25PhoneControllerPoseCaller
+77&D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/framework/src/HvrFWMessage.cpp
+;D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VrVBO.cpp
+>VRRender
+?HxrCompositor
+?[%s][%s:%s](%d): HxrSession::HxrSession
+ANativeWindow_fromSurface
+AVRLocalRender
+CheckGazeCalibrationResult
+CheckIfRenderTimeEough
+CreatTargetDisplayFrame
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/../../../native_src/device/inc\PhoneControllerPoseCaller.h
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/../../../native_src/render/inc/DisplayFrame.h
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/../../../native_src/render/inc/VrGlassParams.h
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/../../../native_src/render/inc/VrPhoneParams.h
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/../../../native_src/render/inc\VrProgramDispersion.h
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/../../../native_src/render/inc\VrProgramSimple.h
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/device/src/Helmet.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/device/src/Slam.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/framework/src/HvrControllerClass.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/framework/src/HvrFramework.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/framework/src/HvrFrameworkClass.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/framework/src/HvrHelmetExt.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/framework/src/HvrSportsDeviceClass.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/framework/src/HvrSystemClient.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/localrender/src/VrLocalRenderer.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrBinding.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrCompositor.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrController.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrEvent.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrFunctions.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrHelmet.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrInput.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrInstance.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrNegotiate.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrPath.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrSession.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrSpace.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrSwapchain.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/openxr/src/HxrSystem.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/BoundaryApp.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/RenderModule.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VRRenderImplCommon.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VRRenderVirtualDisplay.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VRRenderWalleImpl.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VrDistortionRender.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VrGlFunction.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VrProgramCommon.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VrScreenControl.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VrScreenRecordUI.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VrShader.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VrSwapChain.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VrTemperatureController.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/../../../build/android/jni/./../../../native_src/render/src/VrVsyncState.cpp
+DFXGetHelmetDebugInfo
+Deleted virtual function called!
+DestroySecondRender
+DistortionRenderImpl
+ERR_EGL_BAD_ACCESS
+ERR_EGL_BAD_CURRENT_SURFACE
+ERR_EGL_BAD_DISPLAY
+ERR_EGL_BAD_SURFACE
+ERR_GL_INVALID_FRAMEBUFFER_OPERATION
+G3HMD by Huawei
+GL_EXT_multisampled_render_to_texture
+GL_IMG_multisampled_render_to_texture
+GL_QCOM_tiled_rendering
+GetCaptureEyeImage
+GetDisplayDpi
+GetDisplayResolution
+GetMiscMag
+GetPose
+GetPredictTimeMS
+GetSlamModel
+GetTexTimestamp
+GetVirtualDisplaySurface
+GetVrRenderStatistics
+Halliday(XRT) by Huawei
+HelmetHotProcess
+HelmetLowpower
+HelmetLowpowerProcess
+HelmetPose
+HelmetResetYaw
+HivrGetVsyncTimeStamp
+HvrFrameworkClass
+HvrHelmetExt
+Hvr_helmet_lowbattery
+Hvr_helmet_lowbattery_toolow
+Hvr_helmet_lowbattery_twenty
+Hvr_rom_not_support_hw6dof
+HxrBinding
+HxrEvent
+HxrFunctions
+HxrHelmet
+HxrInput
+HxrInstance
+HxrNegotiate
+HxrSpace
+Hxr_Initialize
+Hxr_Shutdown
+IMM_Helmet
+ImmEnableMobileSensor
+InitRenderModuleParms
+Is6DoFApp
+IsHw6DofController
+IsVrDisplay
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+N17HvrFrameworkClass11ApplicationE
+N17HvrFrameworkClass11TemperatureE
+N17HvrFrameworkClass13LocalRendererE
+N17HvrFrameworkClass5AudioE
+N17HvrFrameworkClass5MediaE
+N17HvrFrameworkClass6SystemE
+N17HvrFrameworkClass7ProcessE
+N17HvrFrameworkClass9VrDisplayE
+OnHelmetHot
+OpenImuLogFile
+PauseSecondRender
+PhoneControllerPoseGet
+PhoneControllerPoseStart
+PhoneControllerPoseStop
+ProcessCaptureEyeImage
+Pure virtual function called!
+PushVideoRecordImage
+RenderCallBack
+RenderOpen
+ResumeSecondRender
+SetDistortionValue
+SetDistortionValueB
+SetDistortionValueR
+SetFoveatedRenderOn
+SetFrameRate
+SetGazeCalibrationPoint
+SetHelmetPoseOffset
+SetOrignalFramerate
+SetPredictDeltaTimeMS
+SetRenderFrameRate
+SetRenderRatio
+St8bad_cast
+TYPE_WALLE
+TYPE_WALLEX
+ThermalWarningFramerate
+UpdateTexImage
+VRRenderImplCommon
+VRRenderVirtualDisplay
+VirtualDisplayProcess
+XR_ERROR_ACTIONSETS_ALREADY_ATTACHED
+XR_ERROR_ACTIONSET_NOT_ATTACHED
+XR_ERROR_ACTION_TYPE_MISMATCH
+XR_ERROR_ANDROID_THREAD_SETTINGS_FAILURE_KHR
+XR_ERROR_ANDROID_THREAD_SETTINGS_ID_INVALID_KHR
+XR_ERROR_API_LAYER_NOT_PRESENT
+XR_ERROR_API_VERSION_UNSUPPORTED
+XR_ERROR_CALL_ORDER_INVALID
+XR_ERROR_CREATE_SPATIAL_ANCHOR_FAILED_MSFT
+XR_ERROR_ENVIRONMENT_BLEND_MODE_UNSUPPORTED
+XR_ERROR_EXTENSION_NOT_PRESENT
+XR_ERROR_FEATURE_UNSUPPORTED
+XR_ERROR_FILE_ACCESS_ERROR
+XR_ERROR_FILE_CONTENTS_INVALID
+XR_ERROR_FORM_FACTOR_UNAVAILABLE
+XR_ERROR_FORM_FACTOR_UNSUPPORTED
+XR_ERROR_FUNCTION_UNSUPPORTED
+XR_ERROR_GRAPHICS_DEVICE_INVALID
+XR_ERROR_INDEX_OUT_OF_RANGE
+XR_ERROR_INITIALIZATION_FAILED
+XR_ERROR_INSTANCE_LOST
+XR_ERROR_LAYER_INVALID
+XR_ERROR_LAYER_LIMIT_EXCEEDED
+XR_ERROR_LOCALIZED_NAME_DUPLICATED
+XR_ERROR_LOCALIZED_NAME_INVALID
+XR_ERROR_NAME_DUPLICATED
+XR_ERROR_NAME_INVALID
+XR_ERROR_OUT_OF_MEMORY
+XR_ERROR_PATH_FORMAT_INVALID
+XR_ERROR_POSE_INVALID
+XR_ERROR_REFERENCE_SPACE_UNSUPPORTED
+XR_ERROR_RUNTIME_FAILURE
+XR_ERROR_SESSION_LOST
+XR_ERROR_SESSION_NOT_READY
+XR_ERROR_SESSION_NOT_RUNNING
+XR_ERROR_SESSION_NOT_STOPPING
+XR_ERROR_SESSION_RUNNING
+XR_ERROR_SIZE_INSUFFICIENT
+XR_ERROR_SWAPCHAIN_FORMAT_UNSUPPORTED
+XR_ERROR_SWAPCHAIN_RECT_INVALID
+XR_ERROR_SYSTEM_INVALID
+XR_ERROR_TIME_INVALID
+XR_ERROR_VIEW_CONFIGURATION_TYPE_UNSUPPORTED
+XR_EVENT_UNAVAILABLE
+XR_FRAME_DISCARDED
+XR_HUAWEI_controller_interaction
+XR_KHR_android_create_instance
+XR_KHR_opengl_es_enable
+XR_RESULT_MAX_ENUM
+XR_SESSION_LOSS_PENDING
+XR_SESSION_NOT_FOCUSED
+XR_SPACE_BOUNDS_UNAVAILABLE
+XR_STRUCTURE_TYPE_MAX_ENUM
+XR_SUCCESS
+XR_TIMEOUT_EXPIRED
+XR_TYPE_ACTION_SET_CREATE_INFO
+XR_TYPE_ACTION_SPACE_CREATE_INFO
+XR_TYPE_API_LAYER_PROPERTIES
+XR_TYPE_COMPOSITION_LAYER_CUBE_KHR
+XR_TYPE_COMPOSITION_LAYER_CYLINDER_KHR
+XR_TYPE_COMPOSITION_LAYER_DEPTH_INFO_KHR
+XR_TYPE_COMPOSITION_LAYER_EQUIRECT_KHR
+XR_TYPE_COMPOSITION_LAYER_PROJECTION
+XR_TYPE_COMPOSITION_LAYER_PROJECTION_VIEW
+XR_TYPE_COMPOSITION_LAYER_QUAD
+XR_TYPE_DEBUG_UTILS_LABEL_EXT
+XR_TYPE_DEBUG_UTILS_MESSENGER_CALLBACK_DATA_EXT
+XR_TYPE_DEBUG_UTILS_MESSENGER_CREATE_INFO_EXT
+XR_TYPE_DEBUG_UTILS_OBJECT_NAME_INFO_EXT
+XR_TYPE_EVENT_DATA_BUFFER
+XR_TYPE_EVENT_DATA_EVENTS_LOST
+XR_TYPE_EVENT_DATA_INSTANCE_LOSS_PENDING
+XR_TYPE_EVENT_DATA_INTERACTION_PROFILE_CHANGED
+XR_TYPE_EVENT_DATA_PERF_SETTINGS_EXT
+XR_TYPE_EVENT_DATA_REFERENCE_SPACE_CHANGE_PENDING
+XR_TYPE_EVENT_DATA_SESSION_STATE_CHANGED
+XR_TYPE_EVENT_DATA_VISIBILITY_MASK_CHANGED_KHR
+XR_TYPE_EXTENSION_PROPERTIES
+XR_TYPE_FRAME_BEGIN_INFO
+XR_TYPE_FRAME_WAIT_INFO
+XR_TYPE_GRAPHICS_BINDING_D3D11_KHR
+XR_TYPE_GRAPHICS_BINDING_D3D12_KHR
+XR_TYPE_GRAPHICS_BINDING_OPENGL_ES_ANDROID_KHR
+XR_TYPE_GRAPHICS_BINDING_OPENGL_WAYLAND_KHR
+XR_TYPE_GRAPHICS_BINDING_OPENGL_WIN32_KHR
+XR_TYPE_GRAPHICS_BINDING_OPENGL_XCB_KHR
+XR_TYPE_GRAPHICS_BINDING_OPENGL_XLIB_KHR
+XR_TYPE_GRAPHICS_BINDING_VULKAN_KHR
+XR_TYPE_GRAPHICS_REQUIREMENTS_D3D11_KHR
+XR_TYPE_GRAPHICS_REQUIREMENTS_D3D12_KHR
+XR_TYPE_GRAPHICS_REQUIREMENTS_OPENGL_KHR
+XR_TYPE_GRAPHICS_REQUIREMENTS_VULKAN_KHR
+XR_TYPE_HAPTIC_ACTION_INFO
+XR_TYPE_INSTANCE_CREATE_INFO_ANDROID_KHR
+XR_TYPE_SPACE_LOCATION
+XR_TYPE_SPACE_VELOCITY
+XR_TYPE_SPATIAL_ANCHOR_CREATE_INFO_MSFT
+XR_TYPE_SPATIAL_ANCHOR_SPACE_CREATE_INFO_MSFT
+XR_TYPE_SWAPCHAIN_IMAGE_D3D11_KHR
+XR_TYPE_SWAPCHAIN_IMAGE_D3D12_KHR
+XR_TYPE_SWAPCHAIN_IMAGE_OPENGL_ES_KHR
+XR_TYPE_SWAPCHAIN_IMAGE_OPENGL_KHR
+XR_TYPE_SWAPCHAIN_IMAGE_RELEASE_INFO
+XR_TYPE_SWAPCHAIN_IMAGE_VULKAN_KHR
+XR_TYPE_SWAPCHAIN_IMAGE_WAIT_INFO
+XR_TYPE_SYSTEM_PROPERTIES
+XR_TYPE_UNKNOWN
+XR_TYPE_VIEW
+XR_TYPE_VIEW_CONFIGURATION_DEPTH_RANGE_EXT
+XR_TYPE_VIEW_CONFIGURATION_VIEW
+XR_TYPE_VIEW_LOCATE_INFO
+XR_TYPE_VISIBILITY_MASK_KHR
+XR_TYPE_VULKAN_SWAPCHAIN_FORMAT_LIST_CREATE_INFO_KHR
+XR_UNKNOWN_%s_%d
+XR_UNKNOWN_STRUCTURE_TYPE_%d
+[%s][%s:%s](%d):  %s:mFreezeRenderFrame:%d mEnableATW:%d
+[%s][%s:%s](%d):  No valid frame to display!
+[%s][%s:%s](%d): (path == XR_NULL_PATH)
+[%s][%s:%s](%d): @@@ %s EYE front buffer not rendered eye image!!,vsync: %lld, left time: %5.5f ms< Rerserved time: %5.5f ms
+[%s][%s:%s](%d): @@@ IN: %s, eglDestroySurface fail: %s
+[%s][%s:%s](%d): @@@ Render Debug info ::%s
+[%s][%s:%s](%d): BeginRecording sprintf_s image.filePath failed
+[%s][%s:%s](%d): BoundaryApp::is6DoFApp: %d
+[%s][%s:%s](%d): Can not find predict timestamp
+[%s][%s:%s](%d): Can not get proc address for glFramebufferTextureMultisampleMultiviewOVR.
+[%s][%s:%s](%d): Can not get proc address for glFramebufferTextureMultiviewOVR.
+[%s][%s:%s](%d): CaptureEyeImage failed
+[%s][%s:%s](%d): CaptureEyeImage sprintf_s image.filePath failed
+[%s][%s:%s](%d): CheckSlamMap fail, path invalid %s
+[%s][%s:%s](%d): Create Action Sapce XR_ERROR_PATH_INVALID
+[%s][%s:%s](%d): Create Action XR_ERROR_PATH_INVALID
+[%s][%s:%s](%d): CreateSecondRender, SinglePassMode: %d
+[%s][%s:%s](%d): CreateSecondRender,Local Render Mode: %d
+[%s][%s:%s](%d): CreateSecondRender,Single Pass Mode: %d
+[%s][%s:%s](%d): DFX Render MTP Average: %d Device, %d flag, %f ms, %f ms, %f ms, %f ms, %f ms, %f ms, %f ms, %f ms, %f ms, %f rate
+[%s][%s:%s](%d): DFX Render MTP Per Frame: %d Device, %d flag, %f us, %f ms, %f ms, %f ms, %f ms, %f ms, %f ms, %f ms, %d Cycles %d Cycles, %f ms, %f ms 
+[%s][%s:%s](%d): DFX Render get prop %s %s
+[%s][%s:%s](%d): DFX Render regist PropertyCfg %s ok
+[%s][%s:%s](%d): DFX Render regist PropertyCfg Input parameters is null
+[%s][%s:%s](%d): DFX Render unregist PropertyCfg %s ok
+[%s][%s:%s](%d): DFX Render unregist PropertyCfg Input parameters is null
+[%s][%s:%s](%d): DFX Render updateDFXMTPInfo Input parameters is null
+[%s][%s:%s](%d): DFXGetHelmetDebugInfo enable
+[%s][%s:%s](%d): DisplayFrame::eglDestroySyncKHR returned EGL_FALSE
+[%s][%s:%s](%d): EnableLocalRender!
+[%s][%s:%s](%d): Error : Create render module
+[%s][%s:%s](%d): Error : Frame null!
+[%s][%s:%s](%d): Error : Get Surface!
+[%s][%s:%s](%d): Error : RenderModule not create!
+[%s][%s:%s](%d): Error : submitFrame!
+[%s][%s:%s](%d): FindClass LocalRenderer failed
+[%s][%s:%s](%d): FindClass VrDisplay failed
+[%s][%s:%s](%d): Frame get no Texture to draw
+[%s][%s:%s](%d): Framework is null
+[%s][%s:%s](%d): FrameworkClass InitEnv failed
+[%s][%s:%s](%d): FrameworkClass init failed
+[%s][%s:%s](%d): FrameworkClass is not null, we will do nothing
+[%s][%s:%s](%d): FrameworkClass is null
+[%s][%s:%s](%d): Get Rotation Offset deltaYaw1 = %f, deltaYaw2 = %f, mDletaHelmetYaw = %f
+[%s][%s:%s](%d): GetDisplayDpi width(%p) or height(%p) is null
+[%s][%s:%s](%d): GetDisplayResolution width(%p) or height(%p) is null
+[%s][%s:%s](%d): HeadPose is null
+[%s][%s:%s](%d): Helmet handle is null, Tracking may not init
+[%s][%s:%s](%d): Helmet is null
+[%s][%s:%s](%d): Helmet registerSensor ERROR.
+[%s][%s:%s](%d): Helmet::pause ERROR.
+[%s][%s:%s](%d): Helmet::pause().
+[%s][%s:%s](%d): Helmet::resetAlg ERROR.
+[%s][%s:%s](%d): Helmet::resetAlg().
+[%s][%s:%s](%d): Helmet::resume ERROR.
+[%s][%s:%s](%d): Helmet::resume().
+[%s][%s:%s](%d): HelmetExt InitEnv failed
+[%s][%s:%s](%d): HelmetExt init succeed
+[%s][%s:%s](%d): HelmetExt is not null, we will do nothing
+[%s][%s:%s](%d): HelmetLowpower invalid level %d
+[%s][%s:%s](%d): HivrGetVsyncTimeStamp not implement
+[%s][%s:%s](%d): HvrFramework GetHelmetPoseOffset
+[%s][%s:%s](%d): HvrFramework already initialized
+[%s][%s:%s](%d): HvrFrameworkClass RegisterReceivers
+[%s][%s:%s](%d): HvrFrameworkClass get ARGBToNV21 function error, %s
+[%s][%s:%s](%d): HvrFrameworkClass get aRGBScale function error, %s
+[%s][%s:%s](%d): HvrFrameworkClass mApplication is null
+[%s][%s:%s](%d): HvrFrameworkClass mAudio is null
+[%s][%s:%s](%d): HvrFrameworkClass mLocalRenderer is null
+[%s][%s:%s](%d): HvrFrameworkClass mMedia is null
+[%s][%s:%s](%d): HvrFrameworkClass mProcess is null
+[%s][%s:%s](%d): HvrFrameworkClass mSystem is null
+[%s][%s:%s](%d): HvrFrameworkClass mTemperature is null
+[%s][%s:%s](%d): HvrFrameworkClass open libyuv.so error %s
+[%s][%s:%s](%d): HvrFrameworkClass::Media::BeginVideoRecording
+[%s][%s:%s](%d): HvrFrameworkClass::Media::EndVideoRecording
+[%s][%s:%s](%d): HvrFrameworkClass::Media::PushVideoRecordImage width = %d, heigh = %d
+[%s][%s:%s](%d): HvrHelmetExt JavaInstance is null
+[%s][%s:%s](%d): HxrController init failed!
+[%s][%s:%s](%d): HxrController::~HxrController
+[%s][%s:%s](%d): HxrSwapchain delete framebuffer
+[%s][%s:%s](%d): Hxr_Initialize()
+[%s][%s:%s](%d): Hxr_Initialize() initInteractive Error!
+[%s][%s:%s](%d): Hxr_Initialize, Helmet is not available
+[%s][%s:%s](%d): Hxr_Shutdown
+[%s][%s:%s](%d): IN getHelmetOffsetInfo
+[%s][%s:%s](%d): IN hxrGetPhoneControllerPowerState
+[%s][%s:%s](%d): IN: %s, stopFrontBufferDisplay return failure!
+[%s][%s:%s](%d): Image is null
+[%s][%s:%s](%d): In HxrSystem
+[%s][%s:%s](%d): In genFrame
+[%s][%s:%s](%d): In genFrameArray
+[%s][%s:%s](%d): In hxrGetControllerType
+[%s][%s:%s](%d): In hxrGetHelmetType
+[%s][%s:%s](%d): In hxrIsControllerAvailable
+[%s][%s:%s](%d): In hxrJumpToLauncher
+[%s][%s:%s](%d): In hxrResetYaw
+[%s][%s:%s](%d): In hxrTurnOffShortCuts
+[%s][%s:%s](%d): In hxr_xrCreateSession
+[%s][%s:%s](%d): In hxr_xrEnumerateViewConfigurationViews
+[%s][%s:%s](%d): In hxr_xrEnumerateViewConfigurations
+[%s][%s:%s](%d): In xrBeginSession
+[%s][%s:%s](%d): InteractiveManagement registerSensor ERROR.
+[%s][%s:%s](%d): Jni call framework init failed
+[%s][%s:%s](%d): LocalRenderer InitEnv failed
+[%s][%s:%s](%d): MaxCachedFrameNum Error!
+[%s][%s:%s](%d): NULL != mRenderModule
+[%s][%s:%s](%d): NULL == helmetHandle
+[%s][%s:%s](%d): NULL == m_helmet_handle
+[%s][%s:%s](%d): OnHelmetHot invalid level %d
+[%s][%s:%s](%d): OpenXR doesn't support requested version %d <= %d <= %d
+[%s][%s:%s](%d): Print imu log at %s
+[%s][%s:%s](%d): ProcessCaptureEyeImageSize %d %d
+[%s][%s:%s](%d): RenderOpen=:%i
+[%s][%s:%s](%d): SR: VRRenderWalleImpl DELETE FINISH
+[%s][%s:%s](%d): SR: VRRenderWalleImpl create VideoRecordThread
+[%s][%s:%s](%d): SR: VRRenderWalleImpl thread start
+[%s][%s:%s](%d): SR: VRRenderWalleImpl thread::stop
+[%s][%s:%s](%d): SR: is3DofApp and EndRecording
+[%s][%s:%s](%d): ScheduleManager::CaptureEyeImage %d %d
+[%s][%s:%s](%d): ScheduleManager::CaptureEyeImage %s
+[%s][%s:%s](%d): ScheduleManager::CreateSecondRender
+[%s][%s:%s](%d): ScheduleManager::CreateSecondRender GetHelmetInfo Error
+[%s][%s:%s](%d): ScheduleManager::EnableSimulate
+[%s][%s:%s](%d): ScheduleManager::GetHelmetInfo getHelmetType ret %d type %d
+[%s][%s:%s](%d): ScheduleManager::GetHelmetInfo info NULL
+[%s][%s:%s](%d): ScheduleManager::LockPose
+[%s][%s:%s](%d): ScheduleManager::ResetYaw Helmet
+[%s][%s:%s](%d): ScheduleManager::UnlockPose
+[%s][%s:%s](%d): ScheduleManager::getHelmetVersionInfo
+[%s][%s:%s](%d): SetClass HVR_FRAMEWORK_CLASS_INDEX
+[%s][%s:%s](%d): SetClass HVR_HELMET_EXT_CLASS_INDEX
+[%s][%s:%s](%d): SetFoveatedRenderOn In
+[%s][%s:%s](%d): SetFoveatedRenderOn Out
+[%s][%s:%s](%d): SetOrignalFramerate framerate(%d) invalid
+[%s][%s:%s](%d): Submit frame error
+[%s][%s:%s](%d): SurfaceTextureClass is null
+[%s][%s:%s](%d): ThermalWarningFramerate framerate = %d
+[%s][%s:%s](%d): ThermalWarningFramerate reset
+[%s][%s:%s](%d): Tracking may not start!
+[%s][%s:%s](%d): UpdateTexImageMethod or GetTimestampMethod is null
+[%s][%s:%s](%d): VRRenderVirtualDisplay   constructor in!!!
+[%s][%s:%s](%d): VRRenderVirtualDisplay   constructor out!!!
+[%s][%s:%s](%d): VrDisplay InitEnv failed
+[%s][%s:%s](%d): VrDisplay is null
+[%s][%s:%s](%d): XR_ERROR_HANDLE_INVALID
+[%s][%s:%s](%d): XR_ERROR_LIMIT_REACHED
+[%s][%s:%s](%d): XR_ERROR_PATH_COUNT_EXCEEDED
+[%s][%s:%s](%d): XR_TYPE_TURN_OFF_BACK_JUMP_TO_LAUNCHER_HW
+[%s][%s:%s](%d): XR_TYPE_TURN_OFF_HOME_JUMP_TO_LAUNCHER_HW
+[%s][%s:%s](%d): XR_TYPE_TURN_OFF_RESET_YAW_HW
+[%s][%s:%s](%d): acquireInfo->type != XR_TYPE_SWAPCHAIN_IMAGE_ACQUIRE_INFO
+[%s][%s:%s](%d): app&second render cost: %f ms
+[%s][%s:%s](%d): attachInfo->type != XR_TYPE_SESSION_ACTION_SETS_ATTACH_INFO
+[%s][%s:%s](%d): before localRender->start
+[%s][%s:%s](%d): bufferType:%d, image buffer is NULL.
+[%s][%s:%s](%d): bufferType:%d, malloc frame mem failed.
+[%s][%s:%s](%d): captureEyeImage width %d height:%d
+[%s][%s:%s](%d): choose frame wait too long time :%f
+[%s][%s:%s](%d): configurationProperties->type != XR_TYPE_VIEW_CONFIGURATION_PROPERTIES
+[%s][%s:%s](%d): controller mRestControllerPose
+[%s][%s:%s](%d): controllerTrack == NULL
+[%s][%s:%s](%d): createInfo->type != XR_TYPE_ACTION_CREATE_INFO
+[%s][%s:%s](%d): createInfo->type != XR_TYPE_INSTANCE_CREATE_INFO
+[%s][%s:%s](%d): createInfo->type != XR_TYPE_REFERENCE_SPACE_CREATE_INFO
+[%s][%s:%s](%d): createInfo->type != XR_TYPE_SESSION_CREATE_INFO
+[%s][%s:%s](%d): createInfo->type != XR_TYPE_SWAPCHAIN_CREATE_INFO
+[%s][%s:%s](%d): curYaw: %f, lastYaw: %f, mDletaHelmetYaw: %f
+[%s][%s:%s](%d): discardFrameNum = %d
+[%s][%s:%s](%d): display frame or window surface not ready
+[%s][%s:%s](%d): dynamic_cast frameworkClass failed
+[%s][%s:%s](%d): eglClientWaitSyncKHR Return EGL_FALSE, wrong frame!
+[%s][%s:%s](%d): eglCreatePbufferSurface for (mEglPbufferSurface) return FALSE
+[%s][%s:%s](%d): eglGetCurrentDisplay return EGL_NO_DISPLAY
+[%s][%s:%s](%d): eglGetCurrentSurface( EGL_DRAW ) return EGL_NO_SURFACE
+[%s][%s:%s](%d): eglMakeCurrent for (mEglPbufferSurface) return FALSE
+[%s][%s:%s](%d): eglSurfaceAttrib auto refresh ret:%d
+[%s][%s:%s](%d): eglSurfaceAttrib disable auto refresh ret:%d
+[%s][%s:%s](%d): enableEnhancedRenderMode %d
+[%s][%s:%s](%d): enableFoveatedRendering
+[%s][%s:%s](%d): enableFoveatedRenderingMode %d
+[%s][%s:%s](%d): enumerateInfo == NULL->type != XR_TYPE_BOUND_SOURCES_FOR_ACTION_ENUMERATE_INFO
+[%s][%s:%s](%d): error beginInfo->type != XR_TYPE_SESSION_BEGIN_INFO
+[%s][%s:%s](%d): error frame not started
+[%s][%s:%s](%d): eyeParam.chainLength error %d
+[%s][%s:%s](%d): eyeParam.multisamples error %d
+[%s][%s:%s](%d): eyeParam.resolution error %d
+[%s][%s:%s](%d): formatted output pose Error!
+[%s][%s:%s](%d): frameDescription is null
+[%s][%s:%s](%d): frameEndInfo == NULL
+[%s][%s:%s](%d): frameEndInfo->layers[0]->viewCount must be 1 or 2
+[%s][%s:%s](%d): frameEndInfo->type != XR_TYPE_FRAME_END_INFO
+[%s][%s:%s](%d): frameState == NULL
+[%s][%s:%s](%d): frameState->type != XR_TYPE_FRAME_STATE
+[%s][%s:%s](%d): g_IsHelmetThermalTwo == true
+[%s][%s:%s](%d): get system property (hvr.render.swap) failed.
+[%s][%s:%s](%d): getAccelerometer accelerometer is null
+[%s][%s:%s](%d): getExtTrackerData failed
+[%s][%s:%s](%d): getGyroscope gyroScope is null
+[%s][%s:%s](%d): getHeadPose error
+[%s][%s:%s](%d): getHelmetOffsetInfo ERROR.
+[%s][%s:%s](%d): getHelmetType ERROR.
+[%s][%s:%s](%d): getHelmetVersionInfo ERROR.
+[%s][%s:%s](%d): getHelmetVersionInfo Error!
+[%s][%s:%s](%d): getHelmetVersionInfo IN.
+[%s][%s:%s](%d): getInfo == NULL->type != XR_TYPE_INPUT_SOURCE_LOCALIZED_NAME_GET_INFO
+[%s][%s:%s](%d): getInfo->type != XR_TYPE_ACTION_STATE_GET_INFO
+[%s][%s:%s](%d): getInfo->type != XR_TYPE_SYSTEM_GET_INFO
+[%s][%s:%s](%d): getPose error
+[%s][%s:%s](%d): getPose error.
+[%s][%s:%s](%d): getPose pose is null
+[%s][%s:%s](%d): getTrackedPose AIM_POSE
+[%s][%s:%s](%d): getTrackedPose GRIP_POSE
+[%s][%s:%s](%d): getTrackedPose fail
+[%s][%s:%s](%d): getTrackerData ERROR.
+[%s][%s:%s](%d): getVirtualDisplaySurface nativeWindow NULL
+[%s][%s:%s](%d): glBlitFramebuffer %s
+[%s][%s:%s](%d): glFramebufferTexture2D %s
+[%s][%s:%s](%d): glFramebufferTextureLayer %s
+[%s][%s:%s](%d): glassInfo.distortionParamB[%d] = %f
+[%s][%s:%s](%d): glassInfo.distortionParamR[%d] = %f
+[%s][%s:%s](%d): glassInfo.distortionParam[%d] = %f
+[%s][%s:%s](%d): graphicsRequirements->type != XR_TYPE_GRAPHICS_REQUIREMENTS_OPENGL_ES_KHR
+[%s][%s:%s](%d): helemet.cpp helmetVersionInfo success.
+[%s][%s:%s](%d): helmet == NULL
+[%s][%s:%s](%d): helmet is null
+[%s][%s:%s](%d): helmet not available!
+[%s][%s:%s](%d): helmetExt is null
+[%s][%s:%s](%d): helmetExt reset yaw, not using default reset yaw
+[%s][%s:%s](%d): helmetModel != HelmetThirdGen && helmetModel != HelmetSecondGen
+[%s][%s:%s](%d): helmetTrack != NULL
+[%s][%s:%s](%d): helmetTrack == NULL
+[%s][%s:%s](%d): helmetType is nullptr.
+[%s][%s:%s](%d): helmetType:%d
+[%s][%s:%s](%d): helmetVersionInfo is nullptr.
+[%s][%s:%s](%d): hvr.captureimage.second not enable.
+[%s][%s:%s](%d): hxrApplyHapticFeedback XR_ERROR_PATH_INVALID
+[%s][%s:%s](%d): hxr_xrCreateInstance
+[%s][%s:%s](%d): hxr_xrEnumerateApiLayerProperties
+[%s][%s:%s](%d): hxr_xrEnumerateInstanceExtensionProperties
+[%s][%s:%s](%d): hxr_xrGetControllerTypeHW
+[%s][%s:%s](%d): hxr_xrGetInstanceProcAddr
+[%s][%s:%s](%d): hxr_xrIsControllerAvailableHW
+[%s][%s:%s](%d): hxr_xrJumpToLauncherHW
+[%s][%s:%s](%d): hxr_xrSendCommandHW
+[%s][%s:%s](%d): hxr_xrTurnOffShortCutsHW
+[%s][%s:%s](%d): hxr_xrTurnOffShortCutsHW XR_ERROR_VALIDATION_FAILURE
+[%s][%s:%s](%d): imageBuffer is null
+[%s][%s:%s](%d): in LocalRenderer
+[%s][%s:%s](%d): in hxr_xrDestroySession
+[%s][%s:%s](%d): in hxr_xrEndSession
+[%s][%s:%s](%d): in hxr_xrRequestExitSession
+[%s][%s:%s](%d): in ~LocalRenderer
+[%s][%s:%s](%d): initForCurrentSurface FrontBuffer: %d 
+[%s][%s:%s](%d): inst->m_system.m_hmdDev == NULL
+[%s][%s:%s](%d): interactionProfile->type != XR_TYPE_INTERACTION_PROFILE_STATE
+[%s][%s:%s](%d): is36DofApp || is6DofApp
+[%s][%s:%s](%d): isHW6DoFHeaderAvailable false
+[%s][%s:%s](%d): isHW6DoFHeaderAvailable true
+[%s][%s:%s](%d): itFrame->mMinimumVsync %lld currentVsync:%f Offset is abnormal!
+[%s][%s:%s](%d): left profile XR_ERROR_PATH_UNSUPPORTED
+[%s][%s:%s](%d): localRender->stop
+[%s][%s:%s](%d): mHelmetExt is null
+[%s][%s:%s](%d): mHelmetOffsetInfo.offsetLeftX:%5.5f offsetLeftY:%5.5f offsetRightX:%5.5f offsetRightY:%5.5f LCD_DISP_OFFSET_THRESHOLD:%5.5f
+[%s][%s:%s](%d): mIsHelmetThermalTwo to Hxr_Shutdown
+[%s][%s:%s](%d): mIsPhoneThermalThree to Hxr_Shutdown
+[%s][%s:%s](%d): mRenderInited %d
+[%s][%s:%s](%d): mRenderInited is already inited.
+[%s][%s:%s](%d): mRenderInited is not inited.
+[%s][%s:%s](%d): mRenderModule is NULL
+[%s][%s:%s](%d): mVrDisplay GetFenceData is null
+[%s][%s:%s](%d): mVrDisplay GetMonitorFlag is null
+[%s][%s:%s](%d): mVrDisplay GetRedCircleData is null
+[%s][%s:%s](%d): mVrDisplay GetUpdateFenceFlag is null
+[%s][%s:%s](%d): no frame unit  to draw
+[%s][%s:%s](%d): no valid window surface
+[%s][%s:%s](%d): not HXR_OUTPUT_NAME_HW_VIBRATION
+[%s][%s:%s](%d): not created with pose type
+[%s][%s:%s](%d): not getTrackedPose
+[%s][%s:%s](%d): out hxr_xrCreateSession
+[%s][%s:%s](%d): out hxr_xrDestroySession
+[%s][%s:%s](%d): out hxr_xrEndSession
+[%s][%s:%s](%d): out hxr_xrRequestExitSession
+[%s][%s:%s](%d): out xrBeginSession
+[%s][%s:%s](%d): poseOffset: %s
+[%s][%s:%s](%d): process catpture image
+[%s][%s:%s](%d): program change from %d to %d, enableSinglePassMode %d, enableFoveatedRenderingMode %d
+[%s][%s:%s](%d): properties->type != XR_TYPE_INSTANCE_PROPERTIES
+[%s][%s:%s](%d): pstFrame is NULL!
+[%s][%s:%s](%d): pstInitParams->mAsyncDistortion = %i
+[%s][%s:%s](%d): pstInitParams->mMaxCachedFrameNum = %i
+[%s][%s:%s](%d): pstPose is nullptr.
+[%s][%s:%s](%d): pstPose pointer is null
+[%s][%s:%s](%d): renderParams is null
+[%s][%s:%s](%d): right profile XR_ERROR_PATH_UNSUPPORTED
+[%s][%s:%s](%d): setCaptureImageRenderOrder
+[%s][%s:%s](%d): setDistortion fail,vp or vg is null
+[%s][%s:%s](%d): setDistortionValue
+[%s][%s:%s](%d): setDistortionValueB
+[%s][%s:%s](%d): setDistortionValueR
+[%s][%s:%s](%d): setHelemetPose to m_lcontroller error
+[%s][%s:%s](%d): start dump frame, width:%d, height:%d, type:%d.
+[%s][%s:%s](%d): state->type != XR_TYPE_ACTION_STATE_BOOLEAN
+[%s][%s:%s](%d): state->type != XR_TYPE_ACTION_STATE_FLOAT
+[%s][%s:%s](%d): state->type != XR_TYPE_ACTION_STATE_POSE
+[%s][%s:%s](%d): state->type != XR_TYPE_ACTION_STATE_VECTOR2F
+[%s][%s:%s](%d): state->type != XR_TYPE_HAPTIC_VIBRATION
+[%s][%s:%s](%d): suggestedBindings->type != XR_TYPE_INTERACTION_PROFILE_SUGGESTED_BINDING
+[%s][%s:%s](%d): syncInfo->type != XR_TYPE_ACTIONS_SYNC_INFO
+[%s][%s:%s](%d): tracking not begin
+[%s][%s:%s](%d): updateDFXMTPInfoEyeError error
+[%s][%s:%s](%d): updateDFXMTPInfoPerFrame error
+[%s][%s:%s](%d): use WalleX Helmet params
+[%s][%s:%s](%d): viewState->type != XR_TYPE_VIEW_STATE
+[%s][%s:%s](%d): xrAttachSessionActionSets has not been called on this session.
+[%s][%s:%s](%d): xrGetActionStateBoolean XR_ERROR_PATH_INVALID
+[%s][%s:%s](%d): xrGetActionStateFloat XR_ERROR_PATH_INVALID
+[%s][%s:%s](%d): xrGetActionStateVector2f XR_ERROR_PATH_INVALID
+[%s][%s:%s](%d): xrGetControllerTypeHW ret != 0
+[%s][%s:%s](%d): xrGetControllerTypeHW type == NULL
+[%s][%s:%s](%d): xrGetHelmetTypeHW ret != 0
+[%s][%s:%s](%d): xrGetHelmetTypeHW type == NULL
+[%s][%s:%s](%d): xrGetPhoneControllerPowerStateHW ret != 0
+[%s][%s:%s](%d): xrGetPhoneControllerPowerStateHW state == NULL
+[%s][%s:%s](%d): xrIsControllerAvailableHW ret != 0
+[%s][%s:%s](%d): xrIsControllerAvailableHW state == NULL
+[%s][%s:%s](%d): xrResetYawHW ret != 0
+[%s][%s:%s](%d): xrShutdown
+[%s][%s:%s](%d): xrShutdown in
+[%s][%s:%s](%d): xrShutdown uninitialized!
+[%s][%s:%s](%d): xrShutdown()
+[%s][%s:%s](%d): xrShutdown, plugin uninitialized
+[%s][%s:%s](%d): xrTurnOffShortCutsHW ret != 0
+[@SDK][%s:%s](%d): @@@ IN:%s,eglGetCurrentSurface( EGL_DRAW ) != eglPbufferSurface
+[@SDK][%s:%s](%d): Sensor mode is %s
+[@SDK][%s:%s](%d): Sensor mode is mobile
+[@SDK][%s:%s](%d): call immEnableMobileSensor: %d
+[@SDK][%s:%s](%d): error, immEnableMobileSensor == NULL
+[@SDK][%s:%s](%d): helmet version is: %s, phone type is: %s
+_Z13ToEulerAngles11Quaternion2
+_Z16math_pose_invertP7hxrPoseS0_
+_Z16math_quat_invertP7hxrQuatS0_
+_Z16math_vector_plus7hxrVec3S_
+_Z17math_vector_minus7hxrVec3S_
+_Z18math_quat_multiply7hxrQuatS_
+_Z18math_vector_rotate7hxrQuat7hxrVec3
+_Z19math_pose_transformP7hxrPoseS0_S0_
+_Z19math_relation_resetP16hxrSpaceRelation
+_Z22getPhoneControllerPoseP7_JNIEnvP8_jobject
+_Z26changedOrientationToMatrix12VrQuaternionS_
+_Z26glSetInvalidateFramebufferbbb
+_ZGVZN14HxrHandleArrayIP10HxrSessionE11getInstanceEvE8instance
+_ZGVZN14HxrHandleArrayIP11HxrInstanceE11getInstanceEvE8instance
+_ZGVZN14HxrHandleArrayIP12HxrActionSetE11getInstanceEvE8instance
+_ZGVZN14HxrHandleArrayIP12HxrSwapchainE11getInstanceEvE8instance
+_ZGVZN14HxrHandleArrayIP7hxrPathE11getInstanceEvE8instance
+_ZGVZN14HxrHandleArrayIP8HxrSpaceE11getInstanceEvE8instance
+_ZGVZN14HxrHandleArrayIP9HxrActionE11getInstanceEvE8instance
+_ZN10Controller12getGyroscopeEP10VrVector3fi
+_ZN10Controller16getAccelerometerEP10VrVector3fi
+_ZN10Controller17getRotationOffsetEiP12VrQuaternion
+_ZN10Controller17setRotationOffsetEi12VrQuaternionS0_
+_ZN10Controller19ResetControllerPoseEv
+_ZN10Controller19SetHelmetPoseOffsetENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN10Controller19getTouchpadTouchPosEP10VrVector2fi
+_ZN10Controller21setPredictDeltaTimeMSEd
+_ZN10Controller26setHelemetPoseToControllerEP9_HeadPose
+_ZN10Controller7getPoseEP10VrPosturefi
+_ZN10HxrBinding12resetAllKeysEP10hxrBindingm
+_ZN10HxrBinding15uHashmapIntFindEP11uHashmapIntmPPv
+_ZN10HxrBinding17uHashmapIntInsertEP11uHashmapIntmPv
+_ZN10HxrBinding19modMatchingBindingsEP10hxrBindingm
+_ZN10HxrBinding21checkMatchingBindingsEP10hxrBindingm
+_ZN10HxrBinding24addKeyToMatchingBindingsEP10hxrBindingmmj
+_ZN10HxrBinding29hxrBindingFindBindingsFromKeyEP21hxrInteractionProfilejPP10hxrBindingPm
+_ZN10HxrBindingC1Ev
+_ZN10HxrBindingC2Ev
+_ZN10HxrBindingD1Ev
+_ZN10HxrBindingD2Ev
+_ZN10HxrSession10beginFrameEPK16XrFrameBeginInfo
+_ZN10HxrSession10endSessionEv
+_ZN10HxrSession10getBindingEP9HxrActionP21hxrInteractionProfile16hxrSubActionPathP14hxrSourceInputPjP15hxrSourceOutputS7_
+_ZN10HxrSession11locateViewsEPK16XrViewLocateInfoP11XrViewStatejPjP6XrView
+_ZN10HxrSession12beginSessionEPK18XrSessionBeginInfo
+_ZN10HxrSession14hxrSyncActionsEPK17XrActionsSyncInfo
+_ZN10HxrSession15hxrSourceUpdateEP9HxrActionl11hxrSubPaths
+_ZN10HxrSession16getSpaceRelationEP8HxrSpaceS1_lP16hxrSpaceRelation
+_ZN10HxrSession18hxrSourceSetCreateEP12HxrActionSetPP12hxrSourceSet
+_ZN10HxrSession18requestExitSessionEv
+_ZN10HxrSession19getRefSpaceRelationE20XrReferenceSpaceTypeS0_lP16hxrSpaceRelation
+_ZN10HxrSession19hxrSourceBindInputsEP9HxrActionP14hxrSourceCacheP21hxrInteractionProfile16hxrSubActionPath
+_ZN10HxrSession20hxrSourceCacheUpdateEP9HxrActionP14hxrSourceCachelb
+_ZN10HxrSession20restoreHelmetPostureEv
+_ZN10HxrSession21hxrGetActionStatePoseEPK20XrActionStateGetInfoP17XrActionStatePose
+_ZN10HxrSession21hxrStopHapticFeedbackEPK18XrHapticActionInfo
+_ZN10HxrSession22getActionSpaceRelationEP8HxrSpaceS1_lP16hxrSpaceRelation
+_ZN10HxrSession22hxrApplyHapticFeedbackEPK18XrHapticActionInfoPK18XrHapticBaseHeader
+_ZN10HxrSession22hxrGetActionStateFloatEPK20XrActionStateGetInfoP18XrActionStateFloat
+_ZN10HxrSession22hxrSessionGetSourceSetEP13XrActionSet_TPP12hxrSourceSetPP12HxrActionSet
+_ZN10HxrSession24enumerateReferenceSpacesEjPjP20XrReferenceSpaceType
+_ZN10HxrSession24hxrGetActionStateBooleanEPK20XrActionStateGetInfoP20XrActionStateBoolean
+_ZN10HxrSession24hxrSourceCacheStopOutputEP14hxrSourceCache
+_ZN10HxrSession24setSourceOutputVibrationEP14hxrSourceCachelPK17XrHapticVibration
+_ZN10HxrSession25enumerateSwapchainFormatsEjPjPl
+_ZN10HxrSession25hxrGetActionStateVector2fEPK20XrActionStateGetInfoP21XrActionStateVector2f
+_ZN10HxrSession26hxrAttachSessionActionSetsEPK29XrSessionActionSetsAttachInfo
+_ZN10HxrSession27getReferenceSpaceBoundsRectE20XrReferenceSpaceTypeP11XrExtent2Df
+_ZN10HxrSession27hxrActionStopHapticFeedbackEm11hxrSubPaths14XrSessionState
+_ZN10HxrSession28hxrActionApplyHapticFeedbackEm11hxrSubPathsPK18XrHapticBaseHeader14XrSessionState
+_ZN10HxrSession30hxrGetInputSourceLocalizedNameEPK33XrInputSourceLocalizedNameGetInfojPjPc
+_ZN10HxrSession31hxrGetCurrentInteractionProfileEmP25XrInteractionProfileState
+_ZN10HxrSession33hxrEnumerateBoundSourcesForActionEPK36XrBoundSourcesForActionEnumerateInfojPjPm
+_ZN10HxrSession8endFrameEPK14XrFrameEndInfo
+_ZN10HxrSession9waitFrameEPK15XrFrameWaitInfoP12XrFrameState
+_ZN10HxrSessionC1EP9HxrSystemPK19XrSessionCreateInfo
+_ZN10HxrSessionC2EP9HxrSystemPK19XrSessionCreateInfo
+_ZN10HxrSessionD1Ev
+_ZN10HxrSessionD2Ev
+_ZN10VrMatrix3dC1ERK13VrQuaterniond
+_ZN10VrMatrix3dC2ERK13VrQuaterniond
+_ZN10_EyeBuffer8delFrameEv
+_ZN10_EyeBuffer8genFrameER18HvrSwapChainParams
+_ZN11BoundaryApp8genFrameE13VrRenderImagei
+_ZN11BoundaryApp9updateTexENSt6__ndk16vectorIfNS0_9allocatorIfEEEER17VrRenderFrameInfoS4_i
+_ZN11HxrInstance10setupPathsEP15bindingTemplateP10hxrBinding
+_ZN11HxrInstance11getSystemIDEPK15XrSystemGetInfoPm
+_ZN11HxrInstance11hxrResetYawEm
+_ZN11HxrInstance11setupInputsEP15bindingTemplateP10hxrBinding
+_ZN11HxrInstance12setupOutputsEP15bindingTemplateP10hxrBinding
+_ZN11HxrInstance12zeroRelationEP16hxrSpaceRelation
+_ZN11HxrInstance13getPropertiesEP20XrInstanceProperties
+_ZN11HxrInstance13getSystemByIDEmPP9HxrSystem
+_ZN11HxrInstance14resultToStringE8XrResultPc
+_ZN11HxrInstance15hxrAllocatePathEPKcmPP7hxrPath
+_ZN11HxrInstance15hxrPathToStringEmjPjPc
+_ZN11HxrInstance15hxrStringToPathEPKcPm
+_ZN11HxrInstance16hxrGetHelmetTypeEP14XrDeviceTypeHW
+_ZN11HxrInstance16hxrPathGetStringEmPPKcPm
+_ZN11HxrInstance17hxrJumpToLauncherEv
+_ZN11HxrInstance18hxrPathGetOrCreateEPKcmPm
+_ZN11HxrInstance19hxrTurnOffShortCutsE17XrStructureTypeHW
+_ZN11HxrInstance20hxrGetControllerTypeEP14XrDeviceTypeHW
+_ZN11HxrInstance21structureTypeToStringE15XrStructureTypePc
+_ZN11HxrInstance22hxrControllerGetPoseAtEP13HxrController12hxrInputNameP7hxrPosePl
+_ZN11HxrInstance22interactionProfileFindEmPP21hxrInteractionProfile
+_ZN11HxrInstance23hxrFindProfileForDeviceEP13HxrControllerPP21hxrInteractionProfile
+_ZN11HxrInstance24hxrIsControllerAvailableEmPi
+_ZN11HxrInstance25hxrClassifySubActionPathsEjPKmP11hxrSubPaths
+_ZN11HxrInstance25hxrVerifySubactionPathGetEmPK11hxrSubPathsPS0_PKc
+_ZN11HxrInstance25isValidInteractionProfileEm
+_ZN11HxrInstance30interactionProfileFindOrCreateEmPP21hxrInteractionProfile
+_ZN11HxrInstance31hxrGetPhoneControllerPowerStateEPi
+_ZN11HxrInstance36hxrSuggestInteractionProfileBindingsEPK36XrInteractionProfileSuggestedBinding
+_ZN11HxrInstance9cachePathEPKcPm
+_ZN11HxrInstanceC1EPK20XrInstanceCreateInfo
+_ZN11HxrInstanceC2EPK20XrInstanceCreateInfo
+_ZN11HxrInstanceD1Ev
+_ZN11HxrInstanceD2Ev
+_ZN11ImageBuffer13genFrameArrayER14HxrImageParams
+_ZN11ImageBuffer8delFrameEv
+_ZN11ImageBuffer8genFrameER14HxrImageParams
+_ZN11ImageBufferC1Ev
+_ZN11ImageBufferC2Ev
+_ZN11ImageBufferD1Ev
+_ZN11ImageBufferD2Ev
+_ZN11VrSwapChain13endRenderViewEi
+_ZN11VrSwapChain15beginRenderViewEi
+_ZN12DfxFileUtils9endOfFileEv
+_ZN12DisplayFrameD2Ev
+_ZN12HvrFramework10DeinitCtrlEv
+_ZN12HvrFramework10StartVsyncEv
+_ZN12HvrFramework10UnsetClassEi
+_ZN12HvrFramework11GetCtrlDataEilPfi
+_ZN12HvrFramework11GetCtrlTypeEi
+_ZN12HvrFramework11GetInstanceEv
+_ZN12HvrFramework11GetMetaDataENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework11IsVrDisplayEv
+_ZN12HvrFramework11SetListenerEP15FWEventListener
+_ZN12HvrFramework11drawMsgBox2EiPKciS1_i
+_ZN12HvrFramework12ExitCallbackEv
+_ZN12HvrFramework12GetCtrlValueENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework12GetFenceDataERiRNSt6__ndk16vectorIfNS1_9allocatorIfEEEE
+_ZN12HvrFramework12SetCtrlValueENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_
+_ZN12HvrFramework12VsyncProcessEill
+_ZN12HvrFramework12drawGuideTexEiiiPKcS1_
+_ZN12HvrFramework13GetSdkLibPathERNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework13GetVolumeTypeEv
+_ZN12HvrFramework13IsInitializedEv
+_ZN12HvrFramework13NewSMSProcessEi
+_ZN12HvrFramework13UnsetListenerEv
+_ZN12HvrFramework13drawVolumeTexEii
+_ZN12HvrFramework14GetMonitorFlagEv
+_ZN12HvrFramework14JumpToPreSceneENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework14SaveRGBAAsJpegEiiPKcPc
+_ZN12HvrFramework14UpdateTexImageEPv
+_ZN12HvrFramework15AdjustSysVolumeEi
+_ZN12HvrFramework15GetActivityNameEv
+_ZN12HvrFramework15GetTexTimestampEPv
+_ZN12HvrFramework15OnEventReceiverEill
+_ZN12HvrFramework15StopCtrlVibrateEi
+_ZN12HvrFramework15StopFrontBufferEv
+_ZN12HvrFramework15UnsetAllClassesEv
+_ZN12HvrFramework15WifiInfoProcessEill
+_ZN12HvrFramework16DpLinkBadProcessEi
+_ZN12HvrFramework16ForceProcessExitEv
+_ZN12HvrFramework16GetAssetsRawDataENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPai
+_ZN12HvrFramework16GetRedCircleDataERNSt6__ndk16vectorIfNS0_9allocatorIfEEEE
+_ZN12HvrFramework16HelmetHotProcessEil
+_ZN12HvrFramework16StartCtrlVibrateEi
+_ZN12HvrFramework16StartCtrlVibrateEififi
+_ZN12HvrFramework16StartCtrlVibrateEiil
+_ZN12HvrFramework16StartFrontBufferEv
+_ZN12HvrFramework17ConvertEventIndexEi
+_ZN12HvrFramework17EnableHiAnalyticsEb
+_ZN12HvrFramework17EndVideoRecordingEv
+_ZN12HvrFramework17GetDMStyleByIndexEi
+_ZN12HvrFramework17GetVideoBeginTimeEv
+_ZN12HvrFramework17GlassStateProcessEil
+_ZN12HvrFramework17IsAppOnBackgroundEv
+_ZN12HvrFramework17IsPhoneControllerEv
+_ZN12HvrFramework17RegisterReceiversEv
+_ZN12HvrFramework17SetAudioParameterENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_
+_ZN12HvrFramework17SetThreadPriorityEii
+_ZN12HvrFramework17VolumeInfoProcessEill
+_ZN12HvrFramework17drawRecordingIconEiPKcb
+_ZN12HvrFramework18BatteryInfoProcessEill
+_ZN12HvrFramework18ChargeStateProcessEil
+_ZN12HvrFramework18GetDMOthersByIndexEi
+_ZN12HvrFramework18GetDialogueContentENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEi
+_ZN12HvrFramework18GetDrawableRawDataENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPaiRiS8_
+_ZN12HvrFramework18GetUpdateFenceFlagEv
+_ZN12HvrFramework18IsBluetoothEnabledEv
+_ZN12HvrFramework18IsHw6DofControllerEv
+_ZN12HvrFramework18NotifyThermalEventENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEb
+_ZN12HvrFramework18SetCurrentActivityEP8_jobject
+_ZN12HvrFramework18SetThermalInParamsENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_
+_ZN12HvrFramework19ActivityInfoProcessEill
+_ZN12HvrFramework19AttachCurrentThreadEv
+_ZN12HvrFramework19BeginVideoRecordingEiiPKci
+_ZN12HvrFramework19CelullarInfoProcessEill
+_ZN12HvrFramework19DetachCurrentThreadEv
+_ZN12HvrFramework19FinishAllVrActivityEv
+_ZN12HvrFramework19GetHelmetPoseOffsetEv
+_ZN12HvrFramework19GetValidCtrlIndicesEPii
+_ZN12HvrFramework19LowpowerInfoProcessEill
+_ZN12HvrFramework19NetworkStateProcessEil
+_ZN12HvrFramework19SetFoveatedRenderOnEi
+_ZN12HvrFramework19VolumeNotifyProcessEi
+_ZN12HvrFramework19drawMsgBoxStatusTexEiPKcS1_
+_ZN12HvrFramework19getControllerStatusEv
+_ZN12HvrFramework20GetDMIconNameByIndexEi
+_ZN12HvrFramework20GetDMQuantityByIndexEii
+_ZN12HvrFramework20GetDMTipsNameByIndexEi
+_ZN12HvrFramework20PhoneLowpowerProcessEil
+_ZN12HvrFramework20ProcessLockFrequencyENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework20PushVideoRecordImageEiiPc
+_ZN12HvrFramework20RegisterCtrlCallbackEPvPFvi21HVR_CONTROLLER_STATUSE
+_ZN12HvrFramework20UnsetCurrentActivityEv
+_ZN12HvrFramework21GeneralMessageProcessEi
+_ZN12HvrFramework21GetDMTitleNameByIndexEi
+_ZN12HvrFramework21GetScreenSizeInMetersERfS0_
+_ZN12HvrFramework21GetScreenSizeInPixelsERfS0_
+_ZN12HvrFramework21HelmetLowpowerProcessEil
+_ZN12HvrFramework21JumpToAppMarketDetailENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEb
+_ZN12HvrFramework21SetAppBackgroundStateEb
+_ZN12HvrFramework21ThermalWarningProcessEill
+_ZN12HvrFramework21VirtualDisplayProcessEv
+_ZN12HvrFramework22LanguageChangedProcessEi
+_ZN12HvrFramework22UnregisterCtrlCallbackEv
+_ZN12HvrFramework23GetDMContentNameByIndexEi
+_ZN12HvrFramework23isHW6DoFHeaderAvailableEv
+_ZN12HvrFramework24GetVirtualDisplaySurfaceEPP13ANativeWindow
+_ZN12HvrFramework24OtherNotificationProcessEi
+_ZN12HvrFramework24ScreenPowerStatusProcessEi
+_ZN12HvrFramework24drawMsgBoxAutoAdaptorTexEiPKcS1_S1_
+_ZN12HvrFramework25ControllerLowpowerProcessEill
+_ZN12HvrFramework25GetDMDisappearTimeByIndexEi
+_ZN12HvrFramework25LockFrequencyFoveatedModeENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework26ControllerConnectedProcessEil
+_ZN12HvrFramework26drawMsgBoxAutoDisappearTexEiPKc
+_ZN12HvrFramework27UnlockFrequencyFoveatedModeENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework27drawMsgBoxTouchDisappearTexEiPKcS1_
+_ZN12HvrFramework28MissingInteractiveFunProcessEi
+_ZN12HvrFramework29ControllerDisconnectedProcessEil
+_ZN12HvrFramework30ThirdPartyCtrlConnectedProcessEil
+_ZN12HvrFramework4InitEv
+_ZN12HvrFramework6DeinitEv
+_ZN12HvrFramework8InitCtrlEv
+_ZN12HvrFramework8IsVRModeEv
+_ZN12HvrFramework8SetClassEiP8_jobject
+_ZN12HvrFramework9Is6DoFAppEv
+_ZN12HvrFramework9StopVsyncEv
+_ZN12HvrFramework9getBitmapENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEiS6_
+_ZN12HvrFrameworkC1Ev
+_ZN12HvrFrameworkC2Ev
+_ZN12HvrFrameworkD1Ev
+_ZN12HvrFrameworkD2Ev
+_ZN12HvrHelmetExt12resetPostureEv
+_ZN12HvrHelmetExt13GetBrightnessEv
+_ZN12HvrHelmetExt13SetBrightnessEi
+_ZN12HvrHelmetExt17isPositionTrackOnEv
+_ZN12HvrHelmetExt22IsUsingDefaultResetYawEv
+_ZN12HvrHelmetExt23isHW6DoFHeaderAvailableEv
+_ZN12HvrHelmetExt4InitEv
+_ZN12HvrHelmetExt5PauseEv
+_ZN12HvrHelmetExt5SetupEv
+_ZN12HvrHelmetExt6DeinitEv
+_ZN12HvrHelmetExt6ResumeEv
+_ZN12HvrHelmetExt7GetDataEPfil
+_ZN12HvrHelmetExt8TeardownEv
+_ZN12HvrHelmetExt9IsEnabledEv
+_ZN12HvrHelmetExtC1Ev
+_ZN12HvrHelmetExtC2Ev
+_ZN12HvrHelmetExtD0Ev
+_ZN12HvrHelmetExtD1Ev
+_ZN12HvrHelmetExtD2Ev
+_ZN12HxrActionSetC1EP11HxrInstancePK21XrActionSetCreateInfo
+_ZN12HxrActionSetC2EP11HxrInstancePK21XrActionSetCreateInfo
+_ZN12HxrActionSetD1Ev
+_ZN12HxrActionSetD2Ev
+_ZN12HxrSwapchain12acquireImageEPK27XrSwapchainImageAcquireInfoPj
+_ZN12HxrSwapchain12releaseImageEPK27XrSwapchainImageReleaseInfo
+_ZN12HxrSwapchain15enumerateImagesEjPjP26XrSwapchainImageBaseHeader
+_ZN12HxrSwapchain9waitImageEPK24XrSwapchainImageWaitInfo
+_ZN12HxrSwapchainC1EP10HxrSessionPK21XrSwapchainCreateInfo
+_ZN12HxrSwapchainC2EP10HxrSessionPK21XrSwapchainCreateInfo
+_ZN12HxrSwapchainD1Ev
+_ZN12HxrSwapchainD2Ev
+_ZN12OverlayFrameC2Ev
+_ZN12RenderModule11SubmitFrameER17VrRenderFrameInfo
+_ZN12RenderModule12SetFrameRateEib
+_ZN12RenderModule14ReceiveMessageEP8AMessage
+_ZN12RenderModule14RenderCallBackEi
+_ZN12RenderModule16GetPredictTimeMSEv
+_ZN12RenderModule18GetCaptureEyeImageEP15HvrCaptureParam
+_ZN12RenderModule21GetVrRenderStatisticsEP19HvrRenderStatistics
+_ZN12RenderModule21InitRenderModuleParmsEPvS0_
+_ZN12RenderModule21SetPredictDeltaTimeMSEd
+_ZN12RenderModule22wifiSurfaceCreatedFlagE
+_ZN12RenderModule25SetWifiSurfaceCreatedFlagEb
+_ZN12RenderModule26SignalVirtualDisplayThreadEv
+_ZN12RenderModule5PauseEPv
+_ZN12RenderModule6CreateEPv
+_ZN12RenderModule6ResumeEPv
+_ZN12RenderModule6UpdateEP20VrRenderConfigParams
+_ZN12RenderModule7DestroyEv
+_ZN12RenderModule8EndFrameER17VrRenderFrameInfo
+_ZN12RenderModule8SetVsyncEdd
+_ZN12RenderModule9DrawFenceER17VrRenderFrameInfo
+_ZN12RenderModule9WaitFrameEv
+_ZN12RenderModuleC1Ev
+_ZN12RenderModuleC2Ev
+_ZN12RenderModuleD0Ev
+_ZN12RenderModuleD1Ev
+_ZN12RenderModuleD2Ev
+_ZN12VrDistortion18getDispresiveScaleEf
+_ZN12VrDistortionD0Ev
+_ZN12VrDistortionD2Ev
+_ZN12VrQuaternionC1E4Axisf
+_ZN12VrQuaternionC1ERK9VrMatrix4
+_ZN12VrQuaternionC1ERK9VrVector3f
+_ZN12VrQuaternionC2E4Axisf
+_ZN12VrQuaternionC2ERK9VrMatrix4
+_ZN12VrQuaternionC2ERK9VrVector3f
+_ZN12VrQuaternionaSERKS_
+_ZN13HxrCompositor10beginFrameEPK16XrFrameBeginInfo
+_ZN13HxrCompositor11beginRenderE11hxrViewType
+_ZN13HxrCompositor12discardFrameEv
+_ZN13HxrCompositor25enumerateSwapchainFormatsEjPjPl
+_ZN13HxrCompositor8endFrameE12hxrBlendModePP12HxrSwapchainP7XrPosefPjj
+_ZN13HxrCompositor9endRenderEv
+_ZN13HxrCompositor9waitFrameEPK15XrFrameWaitInfoP12XrFrameState
+_ZN13HxrCompositorC1Ev
+_ZN13HxrCompositorC2Ev
+_ZN13HxrCompositorD1Ev
+_ZN13HxrCompositorD2Ev
+_ZN13HxrController12calQuaOffsetER7hxrQuat
+_ZN13HxrController12updateInputsEPl
+_ZN13HxrController14getTrackedPoseE12hxrInputNamePlS1_P16hxrSpaceRelation
+_ZN13HxrController16setStopvibrationE13hxrOutputNamePlP14hxrOutputValue
+_ZN13HxrController16turnOffShortCutsE17XrStructureTypeHW
+_ZN13HxrController16verifyControllerEPP15ControllerTrack
+_ZN13HxrController17setStartvibrationE13hxrOutputNamePlP14hxrOutputValue
+_ZN13HxrController17xrIsButtonPressedEP15ControllerTrack15HVR_BUTTON_TYPE
+_ZN13HxrController19hxrControllerUpdateEPl
+_ZN13HxrController19setControllerStatusEi
+_ZN13HxrController22hxrControllerFindInputE12hxrInputNamePP8hxrInput
+_ZN13HxrController22stopControllerTrackingEv
+_ZN13HxrController22updateControllerHandleEv
+_ZN13HxrController23beginControllerTrackingEv
+_ZN13HxrController23hxrControllerFindOutputE13hxrOutputNamePP9hxrOutput
+_ZN13HxrControllerC1E13hxrDeviceName
+_ZN13HxrControllerC2E13hxrDeviceName
+_ZN13HxrControllerD1Ev
+_ZN13HxrControllerD2Ev
+_ZN13LocalRenderer10ThreadLoopEv
+_ZN13LocalRenderer10mTouchDownE
+_ZN13LocalRenderer10removeRollERK12VrQuaternion
+_ZN13LocalRenderer11drawFenceUIEv
+_ZN13LocalRenderer12getShowTexIdEv
+_ZN13LocalRenderer12onThreadExitEv
+_ZN13LocalRenderer12processEventEi
+_ZN13LocalRenderer12setTouchDownEb
+_ZN13LocalRenderer13onThreadReadyEv
+_ZN13LocalRenderer16DestroyOpenXRAppEv
+_ZN13LocalRenderer16updateFrameStateEv
+_ZN13LocalRenderer18processPersistDrawEv
+_ZN13LocalRenderer20phoneControllerStateE
+_ZN13LocalRenderer20shouldRecordIconShowEv
+_ZN13LocalRenderer4stopEv
+_ZN13LocalRenderer5startEPvS0_S0_
+_ZN13LocalRenderer8getTexIdERj
+_ZN13LocalRendererC1Eb
+_ZN13LocalRendererC2Eb
+_ZN13LocalRendererD0Ev
+_ZN13LocalRendererD1Ev
+_ZN13LocalRendererD2Ev
+_ZN13ScreenControl10endEyeDrawEid
+_ZN13ScreenControl12beginEyeDrawEid
+_ZN13ScreenControl21initForCurrentSurfaceEbi17RenderCallBackSet
+_ZN13ScreenControl27clearStateForCurrentSurfaceEv
+_ZN13SlamInterface7getPoseEP10VrPosturefm
+_ZN13SlamInterfaceC1Ev
+_ZN13SlamInterfaceC2Ev
+_ZN13SlamInterfaceD1Ev
+_ZN13SlamInterfaceD2Ev
+_ZN13VRRenderVsync14isVsyncWorkingEv
+_ZN13VRRenderVsync16getPredictTimeMSE16ENUM_DEVICE_TYPE
+_ZN13VRRenderVsync17updateRenderVsyncEv
+_ZN13VRRenderVsync18getVsyncPointTimeSEd
+_ZN13VRRenderVsync20getLastestVsyncPointEv
+_ZN13VRRenderVsync20sleepUntilVsyncPointEd
+_ZN13VRRenderVsync21setPredictDeltaTimeMSEd
+_ZN13VRRenderVsync22getVsyncIntervalTimeNSEv
+_ZN13VRRenderVsync8setVsyncEdd
+_ZN13VrPhoneParamsC2E16ENUM_DEVICE_TYPE17RenderCallBackSet
+_ZN13VrQuaterniond11getFromAxisE4Axisd
+_ZN13VrQuaterniond13getFromVectorERK10VrVector3dd
+_ZN13VrQuaterniondaSERKS_
+_ZN14ThreadSafeTypeI15RenderFrameInfoED2Ev
+_ZN15GazingHandleImp14enableSimulateEi
+_ZN15GazingHandleImp19setCalibrationPointE10VrVector2fj
+_ZN15GazingHandleImp22checkCalibrationResultEv
+_ZN15HelmetHandleImp11getHeadPoseEP9_HeadPose
+_ZN15HelmetHandleImp11isAvailableEv
+_ZN15HelmetHandleImp11setPoseLockEb
+_ZN15HelmetHandleImp12dfxGetResultEP12DfxAlgResult
+_ZN15HelmetHandleImp13getHelmetInfoEP11HelmetModel
+_ZN15HelmetHandleImp13resetPositionEP10VrVector3f
+_ZN15HelmetHandleImp13resetPositionEv
+_ZN15HelmetHandleImp14enableSimulateEi
+_ZN15HelmetHandleImp14setPostionLockEb
+_ZN15HelmetHandleImp16resetOrientationEP13VrQuaternionf
+_ZN15HelmetHandleImp16resetOrientationEv
+_ZN15HelmetHandleImp17dfxStopStatisticsEv
+_ZN15HelmetHandleImp18dfxStartStatisticsEv
+_ZN15HelmetHandleImp18stopSaveModuleDataEi
+_ZN15HelmetHandleImp19startSaveModuleDataEi
+_ZN15HelmetHandleImp20getHelmetVersionInfoEP13HelmetVerInfo
+_ZN15HelmetHandleImp21getHeadMovementStatusEv
+_ZN15HelmetHandleImp21registerEventCallbackEPFviPKvjPvE
+_ZN15HelmetHandleImp5pauseEv
+_ZN15HelmetHandleImp6resumeEv
+_ZN15HelmetHandleImp8resetAlgEv
+_ZN15HelmetHandleImp8resetYawEv
+_ZN15HelmetHandleImpC1Ev
+_ZN15HelmetHandleImpC2Ev
+_ZN15HelmetHandleImpD0Ev
+_ZN15HelmetHandleImpD1Ev
+_ZN15HelmetHandleImpD2Ev
+_ZN15HvrFWStaticWrap13GetDisplayDpiEPfS0_
+_ZN15HvrFWStaticWrap13SaveJpegImageEiijPKcPc
+_ZN15HvrFWStaticWrap14UpdateTexImageEPv
+_ZN15HvrFWStaticWrap15GetTexTimestampEPv
+_ZN15HvrFWStaticWrap20GetDisplayResolutionEPfS0_
+_ZN15HvrFWStaticWrap20PushVideoRecordImageEiijPc
+_ZN15HvrFWStaticWrap21HivrGetVsyncTimeStampEi
+_ZN15HvrFWStaticWrap24GetVirtualDisplaySurfaceEPP13ANativeWindow
+_ZN15MediatorMessageI16HelmetOffsetInfoE6GetMsgEv
+_ZN15MediatorMessageI16HelmetOffsetInfoED0Ev
+_ZN15MediatorMessageI23VrRenderTimespanDFXInfoE6GetMsgEv
+_ZN15MediatorMessageI23VrRenderTimespanDFXInfoED0Ev
+_ZN15MediatorMessageI9_HeadPoseE6GetMsgEv
+_ZN15MediatorMessageI9_HeadPoseED0Ev
+_ZN15NativeIpcCaller21mIsMobileSensorEnableE
+_ZN15ScheduleManager10GetMiscMagEP10VrVector3fPm
+_ZN15ScheduleManager10GetPostureEP9_HeadPose
+_ZN15ScheduleManager10UnlockPoseEv
+_ZN15ScheduleManager11SubmitFrameER17VrRenderFrameInfo
+_ZN15ScheduleManager12GetSlamModelEPhPjPm
+_ZN15ScheduleManager13GetHelmetInfoEP11HelmetModel
+_ZN15ScheduleManager14EnableSimulateE21InteractionModuleTypei
+_ZN15ScheduleManager15CaptureEyeImageEP15HvrCaptureParam
+_ZN15ScheduleManager16ResetOrientationEP13VrQuaternionf
+_ZN15ScheduleManager16getPredictTimeUsEv
+_ZN15ScheduleManager17PauseSecondRenderEv
+_ZN15ScheduleManager18CreateSecondRenderE18VrRenderInitParams
+_ZN15ScheduleManager18ResumeSecondRenderEv
+_ZN15ScheduleManager18SetRenderFrameRateEib
+_ZN15ScheduleManager19DestroySecondRenderEv
+_ZN15ScheduleManager19GetRenderStatisticsEP19HvrRenderStatistics
+_ZN15ScheduleManager19ResetControllerPoseEv
+_ZN15ScheduleManager19SetHelmetPoseOffsetENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN15ScheduleManager20getHelmetVersionInfoEP13HelmetVerInfo
+_ZN15ScheduleManager21setPredictDeltaTimeUsEi
+_ZN15ScheduleManager22GetControllerGyroscopeEP10VrVector3fi
+_ZN15ScheduleManager23SetGazeCalibrationPointE10VrVector2fj
+_ZN15ScheduleManager26CheckGazeCalibrationResultEv
+_ZN15ScheduleManager26GetControllerAccelerometerEP10VrVector3fi
+_ZN15ScheduleManager26GetControllerThumbstickPosEP10VrVector2fi
+_ZN15ScheduleManager26SignalVirtualDisplayThreadEv
+_ZN15ScheduleManager26setHelemetPoseToControllerEP9_HeadPose
+_ZN15ScheduleManager29GetControllerTouchpadTouchPosEP10VrVector2fi
+_ZN15ScheduleManager8EndFrameER17VrRenderFrameInfo
+_ZN15ScheduleManager8LockPoseEv
+_ZN15ScheduleManager9WaitFrameEv
+_ZN16GestureHandleImp14enableSimulateEi
+_ZN16HvrFWMessageProc11OnHelmetHotEii
+_ZN16HvrFWMessageProc14HelmetLowpowerEii
+_ZN16HvrFWMessageProc16GetHelmetHotFlagEv
+_ZN16HvrFWMessageProc19GetOrignalFramerateEv
+_ZN16HvrFWMessageProc19SetOrignalFramerateEi
+_ZN16HvrFWMessageProc23ThermalWarningFramerateEii
+_ZN16HvrFWMessageProc26SignalVirtualDisplayThreadEv
+_ZN16VrScreenRecordUI12UpdateTexureERK17VrRenderFrameInfoNSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEb
+_ZN16VrScreenRecordUI14GenFrameBufferEi
+_ZN16VrScreenRecordUI17VerticesTransformER15ImageCoordinate
+_ZN16VrScreenRecordUI18DrawScreenRecordUIERK17VrRenderFrameInfoi
+_ZN16VrScreenRecordUI18InitImages4TextureENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN17HvrFrameworkClass10StartVsyncEv
+_ZN17HvrFrameworkClass11Application10SendIntentEPKcS2_S2_S2_
+_ZN17HvrFrameworkClass11Application11InitIconMapEv
+_ZN17HvrFrameworkClass11Application11InitTipsMapEv
+_ZN17HvrFrameworkClass11Application12ExitCallbackEv
+_ZN17HvrFrameworkClass11Application12InitStyleMapEv
+_ZN17HvrFrameworkClass11Application12InitTitleMapEv
+_ZN17HvrFrameworkClass11Application13DeinitIconMapEv
+_ZN17HvrFrameworkClass11Application13DeinitTipsMapEv
+_ZN17HvrFrameworkClass11Application13InitOthersMapEv
+_ZN17HvrFrameworkClass11Application14DeinitStyleMapEv
+_ZN17HvrFrameworkClass11Application14DeinitTitleMapEv
+_ZN17HvrFrameworkClass11Application14InitContentMapEv
+_ZN17HvrFrameworkClass11Application14IsOnBackgroundEv
+_ZN17HvrFrameworkClass11Application14JumpToPreSceneENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN17HvrFrameworkClass11Application15DeinitOthersMapEv
+_ZN17HvrFrameworkClass11Application15GetActivityNameEv
+_ZN17HvrFrameworkClass11Application15InitQuantityMapEv
+_ZN17HvrFrameworkClass11Application16DeinitContentMapEv
+_ZN17HvrFrameworkClass11Application16GetAssetsRawDataENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPai
+_ZN17HvrFrameworkClass11Application16GetNewClockTitleEv
+_ZN17HvrFrameworkClass11Application16GetNewSmsContactEv
+_ZN17HvrFrameworkClass11Application16GetNewSmsContentEv
+_ZN17HvrFrameworkClass11Application17DeinitQuantityMapEv
+_ZN17HvrFrameworkClass11Application17EnableHiAnalyticsEb
+_ZN17HvrFrameworkClass11Application17GetDMStyleByIndexEi
+_ZN17HvrFrameworkClass11Application17GetNewWechatTitleEv
+_ZN17HvrFrameworkClass11Application18GetDMOthersByIndexEi
+_ZN17HvrFrameworkClass11Application18GetDialogueContentENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEi
+_ZN17HvrFrameworkClass11Application18GetDrawableRawDataENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPaiRiS9_
+_ZN17HvrFrameworkClass11Application18GetNewClockContentEv
+_ZN17HvrFrameworkClass11Application19FinishAllVrActivityEv
+_ZN17HvrFrameworkClass11Application19GetNewWechatContentEv
+_ZN17HvrFrameworkClass11Application20GetDMIconNameByIndexEi
+_ZN17HvrFrameworkClass11Application20GetDMQuantityByIndexEii
+_ZN17HvrFrameworkClass11Application20GetDMTipsNameByIndexEi
+_ZN17HvrFrameworkClass11Application21FinishCurrentActivityEv
+_ZN17HvrFrameworkClass11Application21GetDMTitleNameByIndexEi
+_ZN17HvrFrameworkClass11Application21JumpToAppMarketDetailENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEb
+_ZN17HvrFrameworkClass11Application22IsDesActivityInPackageEPKcS2_
+_ZN17HvrFrameworkClass11Application23GetDMContentNameByIndexEi
+_ZN17HvrFrameworkClass11Application25GetDMDisappearTimeByIndexEi
+_ZN17HvrFrameworkClass11Application4InitEv
+_ZN17HvrFrameworkClass11Application5SetupEv
+_ZN17HvrFrameworkClass11Application6DeinitEv
+_ZN17HvrFrameworkClass11Application8TeardownEv
+_ZN17HvrFrameworkClass11ApplicationC1Ev
+_ZN17HvrFrameworkClass11ApplicationC2Ev
+_ZN17HvrFrameworkClass11ApplicationD0Ev
+_ZN17HvrFrameworkClass11ApplicationD1Ev
+_ZN17HvrFrameworkClass11ApplicationD2Ev
+_ZN17HvrFrameworkClass11DeinitClassEv
+_ZN17HvrFrameworkClass11GetMetaDataENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN17HvrFrameworkClass11IsVrDisplayEv
+_ZN17HvrFrameworkClass11Temperature11GetMetaDataENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN17HvrFrameworkClass11Temperature18NotifyThermalEventENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEb
+_ZN17HvrFrameworkClass11Temperature18SetThermalInParamsENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES7_
+_ZN17HvrFrameworkClass11Temperature19SetFoveatedRenderOnEi
+_ZN17HvrFrameworkClass11Temperature20ProcessLockFrequencyENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN17HvrFrameworkClass11Temperature25LockFrequencyFoveatedModeENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN17HvrFrameworkClass11Temperature27UnlockFrequencyFoveatedModeENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN17HvrFrameworkClass11Temperature5SetupEv
+_ZN17HvrFrameworkClass11Temperature8TeardownEv
+_ZN17HvrFrameworkClass11TemperatureC1Ev
+_ZN17HvrFrameworkClass11TemperatureC2Ev
+_ZN17HvrFrameworkClass11TemperatureD0Ev
+_ZN17HvrFrameworkClass11TemperatureD1Ev
+_ZN17HvrFrameworkClass11TemperatureD2Ev
+_ZN17HvrFrameworkClass11drawMsgBox2EiPKciS1_i
+_ZN17HvrFrameworkClass12ExitCallbackEv
+_ZN17HvrFrameworkClass12GetFenceDataERiRNSt6__ndk16vectorIfNS1_9allocatorIfEEEE
+_ZN17HvrFrameworkClass12InitMethodIDEv
+_ZN17HvrFrameworkClass12drawGuideTexEiiiPKcS1_
+_ZN17HvrFrameworkClass13GetSdkLibPathERNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN17HvrFrameworkClass13GetVolumeTypeEv
+_ZN17HvrFrameworkClass13LocalRenderer11drawMsgBox2EiPKciS2_i
+_ZN17HvrFrameworkClass13LocalRenderer12drawGuideTexEiiiPKcS2_
+_ZN17HvrFrameworkClass13LocalRenderer13drawVolumeTexEii
+_ZN17HvrFrameworkClass13LocalRenderer17drawRecordingIconEiPKcb
+_ZN17HvrFrameworkClass13LocalRenderer19drawMsgBoxStatusTexEiPKcS2_
+_ZN17HvrFrameworkClass13LocalRenderer24drawMsgBoxAutoAdaptorTexEiPKcS2_S2_
+_ZN17HvrFrameworkClass13LocalRenderer26drawMsgBoxAutoDisappearTexEiPKc
+_ZN17HvrFrameworkClass13LocalRenderer27drawMsgBoxTouchDisappearTexEiPKcS2_
+_ZN17HvrFrameworkClass13LocalRenderer5SetupEv
+_ZN17HvrFrameworkClass13LocalRenderer8TeardownEv
+_ZN17HvrFrameworkClass13LocalRendererC1Ev
+_ZN17HvrFrameworkClass13LocalRendererC2Ev
+_ZN17HvrFrameworkClass13LocalRendererD0Ev
+_ZN17HvrFrameworkClass13LocalRendererD1Ev
+_ZN17HvrFrameworkClass13LocalRendererD2Ev
+_ZN17HvrFrameworkClass13drawVolumeTexEii
+_ZN17HvrFrameworkClass14DeinitMethodIDEv
+_ZN17HvrFrameworkClass14GetMonitorFlagEv
+_ZN17HvrFrameworkClass14IsOnBackgroundEv
+_ZN17HvrFrameworkClass14JumpToPreSceneENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN17HvrFrameworkClass14SaveRGBAAsJpegEiiPKcPc
+_ZN17HvrFrameworkClass14UpdateTexImageEPv
+_ZN17HvrFrameworkClass15GetActivityNameEv
+_ZN17HvrFrameworkClass15GetTexTimestampEPv
+_ZN17HvrFrameworkClass16ForceProcessExitEv
+_ZN17HvrFrameworkClass16GetAssetsRawDataENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPai
+_ZN17HvrFrameworkClass16GetRedCircleDataERNSt6__ndk16vectorIfNS0_9allocatorIfEEEE
+_ZN17HvrFrameworkClass17EnableHiAnalyticsEb
+_ZN17HvrFrameworkClass17EndVideoRecordingEv
+_ZN17HvrFrameworkClass17GetDMStyleByIndexEi
+_ZN17HvrFrameworkClass17GetVideoBeginTimeEv
+_ZN17HvrFrameworkClass17RegisterReceiversEv
+_ZN17HvrFrameworkClass17SetAudioParameterENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_
+_ZN17HvrFrameworkClass17SetThreadPriorityEii
+_ZN17HvrFrameworkClass17drawRecordingIconEiPKcb
+_ZN17HvrFrameworkClass18GetDMOthersByIndexEi
+_ZN17HvrFrameworkClass18GetDialogueContentENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEi
+_ZN17HvrFrameworkClass18GetDrawableRawDataENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPaiRiS8_
+_ZN17HvrFrameworkClass18GetUpdateFenceFlagEv
+_ZN17HvrFrameworkClass18IsBluetoothEnabledEv
+_ZN17HvrFrameworkClass18NotifyThermalEventENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEb
+_ZN17HvrFrameworkClass18SetThermalInParamsENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_
+_ZN17HvrFrameworkClass19BeginVideoRecordingEiiPKci
+_ZN17HvrFrameworkClass19FinishAllVrActivityEv
+_ZN17HvrFrameworkClass19SetFoveatedRenderOnEi
+_ZN17HvrFrameworkClass19drawMsgBoxStatusTexEiPKcS1_
+_ZN17HvrFrameworkClass20GetDMIconNameByIndexEi
+_ZN17HvrFrameworkClass20GetDMQuantityByIndexEii
+_ZN17HvrFrameworkClass20GetDMTipsNameByIndexEi
+_ZN17HvrFrameworkClass20ProcessLockFrequencyENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN17HvrFrameworkClass20PushVideoRecordImageEiiPc
+_ZN17HvrFrameworkClass21FinishCurrentActivityEv
+_ZN17HvrFrameworkClass21GetDMTitleNameByIndexEi
+_ZN17HvrFrameworkClass21GetScreenSizeInMetersERfS0_
+_ZN17HvrFrameworkClass21GetScreenSizeInPixelsERfS0_
+_ZN17HvrFrameworkClass21JumpToAppMarketDetailENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEb
+_ZN17HvrFrameworkClass23GetDMContentNameByIndexEi
+_ZN17HvrFrameworkClass24GetVirtualDisplaySurfaceEPP13ANativeWindow
+_ZN17HvrFrameworkClass24drawMsgBoxAutoAdaptorTexEiPKcS1_S1_
+_ZN17HvrFrameworkClass25GetDMDisappearTimeByIndexEi
+_ZN17HvrFrameworkClass25LockFrequencyFoveatedModeENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN17HvrFrameworkClass26drawMsgBoxAutoDisappearTexEiPKc
+_ZN17HvrFrameworkClass27UnlockFrequencyFoveatedModeENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN17HvrFrameworkClass27drawMsgBoxTouchDisappearTexEiPKcS1_
+_ZN17HvrFrameworkClass4InitEv
+_ZN17HvrFrameworkClass5Audio12SetParameterENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEES7_
+_ZN17HvrFrameworkClass5Audio5SetupEv
+_ZN17HvrFrameworkClass5Audio8TeardownEv
+_ZN17HvrFrameworkClass5AudioC1Ev
+_ZN17HvrFrameworkClass5AudioC2Ev
+_ZN17HvrFrameworkClass5AudioD0Ev
+_ZN17HvrFrameworkClass5AudioD1Ev
+_ZN17HvrFrameworkClass5AudioD2Ev
+_ZN17HvrFrameworkClass5Media14SaveRGBAAsJpegEiiPKcPc
+_ZN17HvrFrameworkClass5Media17EndVideoRecordingEv
+_ZN17HvrFrameworkClass5Media17GetVideoBeginTimeEv
+_ZN17HvrFrameworkClass5Media19BeginVideoRecordingEiiPKci
+_ZN17HvrFrameworkClass5Media20PushVideoRecordImageEiiPc
+_ZN17HvrFrameworkClass5Media5SetupEv
+_ZN17HvrFrameworkClass5Media8TeardownEv
+_ZN17HvrFrameworkClass5MediaC1Ev
+_ZN17HvrFrameworkClass5MediaC2Ev
+_ZN17HvrFrameworkClass5MediaD0Ev
+_ZN17HvrFrameworkClass5MediaD1Ev
+_ZN17HvrFrameworkClass5MediaD2Ev
+_ZN17HvrFrameworkClass5SetupEv
+_ZN17HvrFrameworkClass6DeinitEv
+_ZN17HvrFrameworkClass6System13GetVolumeTypeEv
+_ZN17HvrFrameworkClass6System17RegisterReceiversEv
+_ZN17HvrFrameworkClass6System18IsBluetoothEnabledEv
+_ZN17HvrFrameworkClass6System19UnregisterReceiversEv
+_ZN17HvrFrameworkClass6System4ExitEi
+_ZN17HvrFrameworkClass6System5SetupEv
+_ZN17HvrFrameworkClass6System8TeardownEv
+_ZN17HvrFrameworkClass6System9getBitmapENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEiS7_
+_ZN17HvrFrameworkClass6SystemC1Ev
+_ZN17HvrFrameworkClass6SystemC2Ev
+_ZN17HvrFrameworkClass6SystemD0Ev
+_ZN17HvrFrameworkClass6SystemD1Ev
+_ZN17HvrFrameworkClass6SystemD2Ev
+_ZN17HvrFrameworkClass7Process17SetThreadPriorityEii
+_ZN17HvrFrameworkClass7Process5SetupEv
+_ZN17HvrFrameworkClass7Process8TeardownEv
+_ZN17HvrFrameworkClass7ProcessC1Ev
+_ZN17HvrFrameworkClass7ProcessC2Ev
+_ZN17HvrFrameworkClass7ProcessD0Ev
+_ZN17HvrFrameworkClass7ProcessD1Ev
+_ZN17HvrFrameworkClass7ProcessD2Ev
+_ZN17HvrFrameworkClass8TeardownEv
+_ZN17HvrFrameworkClass9InitClassEv
+_ZN17HvrFrameworkClass9Is6DoFAppEv
+_ZN17HvrFrameworkClass9StopVsyncEv
+_ZN17HvrFrameworkClass9VrDisplay10StartVsyncEv
+_ZN17HvrFrameworkClass9VrDisplay11IsVrDisplayEv
+_ZN17HvrFrameworkClass9VrDisplay12GetFenceDataERiRNSt6__ndk16vectorIfNS2_9allocatorIfEEEE
+_ZN17HvrFrameworkClass9VrDisplay14GetMonitorFlagEv
+_ZN17HvrFrameworkClass9VrDisplay16GetRedCircleDataERNSt6__ndk16vectorIfNS1_9allocatorIfEEEE
+_ZN17HvrFrameworkClass9VrDisplay18GetUpdateFenceFlagEv
+_ZN17HvrFrameworkClass9VrDisplay21GetScreenSizeInMetersERfS1_
+_ZN17HvrFrameworkClass9VrDisplay21GetScreenSizeInPixelsERfS1_
+_ZN17HvrFrameworkClass9VrDisplay5SetupEv
+_ZN17HvrFrameworkClass9VrDisplay8TeardownEv
+_ZN17HvrFrameworkClass9VrDisplay9Is6DoFAppEv
+_ZN17HvrFrameworkClass9VrDisplay9StopVsyncEv
+_ZN17HvrFrameworkClass9VrDisplayC1Ev
+_ZN17HvrFrameworkClass9VrDisplayC2Ev
+_ZN17HvrFrameworkClass9VrDisplayD0Ev
+_ZN17HvrFrameworkClass9VrDisplayD1Ev
+_ZN17HvrFrameworkClass9VrDisplayD2Ev
+_ZN17HvrFrameworkClass9getBitmapENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEiS6_
+_ZN17HvrFrameworkClassC1Ev
+_ZN17HvrFrameworkClassC2Ev
+_ZN17HvrFrameworkClassD0Ev
+_ZN17HvrFrameworkClassD1Ev
+_ZN17HvrFrameworkClassD2Ev
+_ZN17VRRenderWalleImpl10ThreadLoopEv
+_ZN17VRRenderWalleImpl11submitFrameERK17VrRenderFrameInfo
+_ZN17VRRenderWalleImpl12onThreadExitEv
+_ZN17VRRenderWalleImpl13onThreadReadyEv
+_ZN17VRRenderWalleImpl14CheckFrameListEv
+_ZN17VRRenderWalleImpl14DoScreenRecordERK17VrRenderFrameInfo
+_ZN17VRRenderWalleImpl14ProcessDFXInfoERK12DisplayFrame
+_ZN17VRRenderWalleImpl14renderEnvSetupEv
+_ZN17VRRenderWalleImpl16GetCurrentTimeMSEv
+_ZN17VRRenderWalleImpl16UpdateStatisticsERKdR12DisplayFrameS1_S1_RKi
+_ZN17VRRenderWalleImpl17DrawRenderTextureER12TextureParamiR12DisplayFrameRKd
+_ZN17VRRenderWalleImpl18renderFrameProcessERd
+_ZN17VRRenderWalleImpl19getCaptureImageSizeERiS0_
+_ZN17VRRenderWalleImpl19submitFrameInternalERK17VrRenderFrameInfo
+_ZN17VRRenderWalleImpl20SleepUntilSignalComeEv
+_ZN17VRRenderWalleImpl20createVirtualDisplayEv
+_ZN17VRRenderWalleImpl20renderSurfaceTextureEP8_jobjectR9VrPostureS3_
+_ZN17VRRenderWalleImpl21threadCreatEGLContentEv
+_ZN17VRRenderWalleImpl22CheckIfRenderTimeEoughERKdS1_
+_ZN17VRRenderWalleImpl22ProcessCaptureEyeImageERK12DisplayFrameR21ScreenCaptureStruct_s
+_ZN17VRRenderWalleImpl22getPositionAjustMatrixEdiR12DisplayFrameRA3_A2_9VrMatrix4RS3_
+_ZN17VRRenderWalleImpl23CreatTargetDisplayFrameER12DisplayFrameRKd
+_ZN17VRRenderWalleImpl23createVideoRecordThreadEv
+_ZN17VRRenderWalleImpl23threadDestoryEGLContentEv
+_ZN17VRRenderWalleImpl24CreateRenderTextureParamER12TextureParamiRK12DisplayFrameRA3_A2_9VrMatrix4RS6_
+_ZN17VRRenderWalleImpl24createTextureAndGeometryEv
+_ZN17VRRenderWalleImpl24setupLocalRenderGeometryEv
+_ZN17VRRenderWalleImpl25destroyTextureAndGeometryEv
+_ZN17VRRenderWalleImpl26SignalVirtualDisplayThreadERK12DisplayFrame
+_ZN17VRRenderWalleImpl27ProcessDebugInfoGetPoseTimeEiR12DisplayFrameb
+_ZN17VRRenderWalleImpl9dumpFrameENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEiiiiPhbb
+_ZN17VRRenderWalleImpl9waitFrameEv
+_ZN17VRRenderWalleImplC1E21RenderModuleInitParms
+_ZN17VRRenderWalleImplC2E21RenderModuleInitParms
+_ZN17VRRenderWalleImplD0Ev
+_ZN17VRRenderWalleImplD1Ev
+_ZN17VRRenderWalleImplD2Ev
+_ZN17VrRenderFrameInfoC2Ev
+_ZN18ControllerTrackImp10getPostureEP10VrPosturef
+_ZN18ControllerTrackImp10isButtonUpE15HVR_BUTTON_TYPE
+_ZN18ControllerTrackImp11getGripDataEPf
+_ZN18ControllerTrackImp11isAvailableEv
+_ZN18ControllerTrackImp11resetCenterEv
+_ZN18ControllerTrackImp12getGyroscopeEP10VrVector3f
+_ZN18ControllerTrackImp12isButtonDownE15HVR_BUTTON_TYPE
+_ZN18ControllerTrackImp13stopVibrationEv
+_ZN18ControllerTrackImp14enableSimulateEi
+_ZN18ControllerTrackImp14getTriggerDataEPf
+_ZN18ControllerTrackImp14startVibrationEfifi
+_ZN18ControllerTrackImp14startVibrationEil
+_ZN18ControllerTrackImp14startVibrationEv
+_ZN18ControllerTrackImp15getBatteryLevelEv
+_ZN18ControllerTrackImp15isButtonPressedE15HVR_BUTTON_TYPE
+_ZN18ControllerTrackImp16getAccelerometerEP10VrVector3f
+_ZN18ControllerTrackImp16getThumbstickPosEP10VrVector2f
+_ZN18ControllerTrackImp16isButtonTouchingE15HVR_BUTTON_TYPE
+_ZN18ControllerTrackImp17isButtonNearTouchE15HVR_BUTTON_TYPE
+_ZN18ControllerTrackImp17isTouchpadSwipeUpEv
+_ZN18ControllerTrackImp17isTouchpadTouchUpEv
+_ZN18ControllerTrackImp18isButtonLeaveTouchE15HVR_BUTTON_TYPE
+_ZN18ControllerTrackImp18isTouchpadTouchingEv
+_ZN18ControllerTrackImp18stopSaveModuleDataEi
+_ZN18ControllerTrackImp19getControllerStatusEv
+_ZN18ControllerTrackImp19getTouchpadTouchPosEP10VrVector2f
+_ZN18ControllerTrackImp19isTouchpadSwipeDownEv
+_ZN18ControllerTrackImp19isTouchpadSwipeLeftEv
+_ZN18ControllerTrackImp19isTouchpadTouchDownEv
+_ZN18ControllerTrackImp19setControllerStatusEi
+_ZN18ControllerTrackImp19startSaveModuleDataEi
+_ZN18ControllerTrackImp20isTouchpadSwipeRightEv
+_ZN18ControllerTrackImp21registerEventCallbackEPFviPKvjPvE
+_ZN18ControllerTrackImp7getTypeEv
+_ZN18ControllerTrackImpC1Ei
+_ZN18ControllerTrackImpC2Ei
+_ZN18ControllerTrackImpD0Ev
+_ZN18ControllerTrackImpD1Ev
+_ZN18ControllerTrackImpD2Ev
+_ZN18HvrControllerClass18IsHw6DofControllerEv
+_ZN18HvrControllerClass19GetHelmetPoseOffsetEv
+_ZN18VRRenderImplCommon11chooseFrameER12DisplayFramed
+_ZN18VRRenderImplCommon12setFrameRateEib
+_ZN18VRRenderImplCommon14getPredictPoseEdP9VrPosture
+_ZN18VRRenderImplCommon15updateFrameListEv
+_ZN18VRRenderImplCommon16readImgFromTexIDEiijPhRi
+_ZN18VRRenderImplCommon16updateDFXMTPInfoEP23VrRenderTimespanDFXInfo
+_ZN18VRRenderImplCommon17updateRenCostTimeEd
+_ZN18VRRenderImplCommon18configRenderParamsEP20VrRenderConfigParams
+_ZN18VRRenderImplCommon18getCaptureEyeImageEP15HvrCaptureParam
+_ZN18VRRenderImplCommon18getRenRerserveTimeEv
+_ZN18VRRenderImplCommon19getDFXRenderMessageEP8AMessage
+_ZN18VRRenderImplCommon19getHelmetOffsetInfoEP16HelmetOffsetInfo
+_ZN18VRRenderImplCommon19getRenderStatisticsEP19HvrRenderStatistics
+_ZN18VRRenderImplCommon20createVirtualDisplayEv
+_ZN18VRRenderImplCommon23createVideoRecordThreadEv
+_ZN18VRRenderImplCommon25getHelmetPoseLockedStatusEPi
+_ZN18VRRenderImplCommon25registerPropConfigurationEPKc
+_ZN18VRRenderImplCommon26setCaptureImageRenderOrderEv
+_ZN18VRRenderImplCommon27unRegisterPropConfigurationEPKc
+_ZN18VRRenderImplCommonC2Ev
+_ZN18VRRenderImplCommonD0Ev
+_ZN18VRRenderImplCommonD1Ev
+_ZN18VRRenderImplCommonD2Ev
+_ZN18VrDistortionRender11loadProgramEv
+_ZN18VrDistortionRender13chooseProgramE19VrDistortionProgram
+_ZN18VrDistortionRender20enableSinglePassModeEb
+_ZN18VrDistortionRender24enableEnhancedRenderModeEb
+_ZN18VrDistortionRender27enableFoveatedRenderingModeEbf
+_ZN18VrDistortionRender4drawEP12TextureParam
+_ZN18VrDistortionRenderC1E16ENUM_DEVICE_TYPE17RenderCallBackSet16HelmetOffsetInfo
+_ZN18VrDistortionRenderC2E16ENUM_DEVICE_TYPE17RenderCallBackSet16HelmetOffsetInfo
+_ZN18VrDistortionRenderD0Ev
+_ZN18VrDistortionRenderD1Ev
+_ZN18VrDistortionRenderD2Ev
+_ZN19ControllerHandleImp26setHelemetPoseToControllerEP9_HeadPose
+_ZN20HvrSportsDeviceClass7GetPoseEiP17_SportsDevicePose
+_ZN22VRRenderVirtualDisplay10ThreadLoopEv
+_ZN22VRRenderVirtualDisplay12GetEGLConfigEv
+_ZN22VRRenderVirtualDisplay12onThreadExitEv
+_ZN22VRRenderVirtualDisplay13onThreadReadyEv
+_ZN22VRRenderVirtualDisplay14SetRenderTexIdEj
+_ZN22VRRenderVirtualDisplay21threadCreatEGLContentEv
+_ZN22VRRenderVirtualDisplay23threadDestoryEGLContentEv
+_ZN22VRRenderVirtualDisplay25ClipTextureToDisplayScaleEii
+_ZN22VRRenderVirtualDisplay4LoopEv
+_ZN22VRRenderVirtualDisplay7MakeVAOEv
+_ZN22VRRenderVirtualDisplayC1EP13ANativeWindowPvb
+_ZN22VRRenderVirtualDisplayC2EP13ANativeWindowPvb
+_ZN22VRRenderVirtualDisplayD0Ev
+_ZN22VRRenderVirtualDisplayD1Ev
+_ZN22VRRenderVirtualDisplayD2Ev
+_ZN23VrTemperatureController15getRenderStatusERdS0_S0_S0_
+_ZN23VrTemperatureController18updateFPSCountTimeE15VR_RENDER_ORDER
+_ZN23VrTemperatureController19updateRenderTimeoutEb
+_ZN23VrTemperatureController23resetRenderTimespanInfoEv
+_ZN23VrTemperatureController24updateRenderTimespanInfoERK23VrRenderTimespanDFXInfo
+_ZN23VrTemperatureController35updateRenderAverageTimespanInfoPropER23VrRenderTimespanDFXInfo
+_ZN25PhoneControllerPoseCaller4initEv
+_ZN25PhoneControllerPoseCallerD0Ev
+_ZN25PhoneControllerPoseCallerD2Ev
+_ZN3DFX19isHelmetDebugEnableEv
+_ZN3DFX21DFXGetHelmetDebugInfoEv
+_ZN3DFX27isControllerPoseDebugEnableEv
+_ZN3HVR19ResetControllerPoseEv
+_ZN3HVR26SignalVirtualDisplayThreadEv
+_ZN4Slam10getRawDataEPvPjPm
+_ZN4Slam11getInstanceEv
+_ZN4Slam17getImAvailabilityEv
+_ZN4Slam4initEv
+_ZN4Slam6deinitEv
+_ZN4Slam7getPoseEP10VrPosturefPm
+_ZN4Slam8getModelEPhPjPm
+_ZN4SlamC1Ev
+_ZN4SlamC2Ev
+_ZN4SlamD1Ev
+_ZN4SlamD2Ev
+_ZN5VrVBO13setDistortionE16HelmetOffsetInfo
+_ZN5VrVBO26GenerateVertexBufForWalleXEPf
+_ZN5VrVBO4InitE16HelmetOffsetInfo
+_ZN5VrVBOC1E16ENUM_DEVICE_TYPEii17RenderCallBackSet
+_ZN5VrVBOC2E16ENUM_DEVICE_TYPEii17RenderCallBackSet
+_ZN6Helmet10getRawDataEm
+_ZN6Helmet10unlockPoseEv
+_ZN6Helmet11getInstanceEv
+_ZN6Helmet11getMiscDataEP16helmet_misc_datam
+_ZN6Helmet12CloseLogFileEv
+_ZN6Helmet12dfxGetResultEP12DfxAlgResult
+_ZN6Helmet12lockPositionEv
+_ZN6Helmet13getHelmetTypeEP11helmet_type
+_ZN6Helmet13resetPositionEv
+_ZN6Helmet14OpenImuLogFileEv
+_ZN6Helmet14enableSimulateEi
+_ZN6Helmet14getTrackerDataEP19helmet_tracker_datam
+_ZN6Helmet14unlockPositionEv
+_ZN6Helmet15lockOrientationEv
+_ZN6Helmet15resetToPositionEP9VrVector3
+_ZN6Helmet16resetOrientationEv
+_ZN6Helmet17dfxStopStatisticsEv
+_ZN6Helmet17getExtTrackerDataEP19helmet_tracker_datam
+_ZN6Helmet17getImAvailabilityEv
+_ZN6Helmet17unlockOrientationEv
+_ZN6Helmet18dfxStartStatisticsEv
+_ZN6Helmet18resetToOrientationEP12VrQuaternion
+_ZN6Helmet18stopSaveModuleDataEi
+_ZN6Helmet19getHelmetOffsetInfoEP16HelmetOffsetInfo
+_ZN6Helmet19getPoseLockedStatusEPi
+_ZN6Helmet19startSaveModuleDataEi
+_ZN6Helmet20getHelmetVersionInfoEP13HelmetVerInfo
+_ZN6Helmet20getMiscSupportedFlagERj
+_ZN6Helmet21getHeadMovementStatusEv
+_ZN6Helmet21registerEventCallbackEPFiiPvE
+_ZN6Helmet21waitForImAvailabilityEm
+_ZN6Helmet23getTrackerSupportedFlagERj
+_ZN6Helmet4initEv
+_ZN6Helmet5pauseEv
+_ZN6Helmet6deinitEv
+_ZN6Helmet6resumeEv
+_ZN6Helmet7getPoseEP9_HeadPose
+_ZN6Helmet8lockPoseEv
+_ZN6Helmet8resetAlgEv
+_ZN6Helmet8resetYawEv
+_ZN6HelmetC1Ev
+_ZN6HelmetC2Ev
+_ZN6HelmetD1Ev
+_ZN6HelmetD2Ev
+_ZN6HxrLog3LogENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN6ImmApi7getSlamEv
+_ZN6ImmApi9getHelmetEv
+_ZN7HxrPath11zeroSubpathEP11hxrSubPaths
+_ZN7HxrPath13validPathCharEc
+_ZN7HxrPath14mathHashStringEPKcm
+_ZN7HxrPath15uHashsetFindStrEP8uHashsetPKcmPP12uHashsetItem
+_ZN7HxrPath16hxrTwoCallHelperEjPjPcjPKc
+_ZN7HxrPath16hxrVerifyArgNameEPKc
+_ZN7HxrPath17hxrVerifyFullPathEPKc
+_ZN7HxrPath18uHashsetInsertItemEP8uHashsetP12uHashsetItem
+_ZN7HxrPath20hxrTwoCallHelperENUMEjPjPmjS1_
+_ZN7HxrPath25hxrVerifyArgLocalizedNameEPKc
+_ZN7HxrPath30hxrSessionSuccessFocusedResultE14XrSessionState
+_ZN7HxrPath7getItemEP7hxrPath
+_ZN7HxrPath8fromItemEP12uHashsetItem
+_ZN7HxrPath8toXrPathEP7hxrPath
+_ZN7HxrPath9toHxrPathEm
+_ZN7HxrPathC1Ev
+_ZN7HxrPathC2Ev
+_ZN7HxrPathD1Ev
+_ZN7HxrPathD2Ev
+_ZN8HxrEvent14onStateChangedEP10HxrSession14XrSessionStatel
+_ZN8HxrEvent9pollEventEP17XrEventDataBuffer
+_ZN8HxrEvent9pushEventER17XrEventDataBuffer
+_ZN8HxrEventC1Ev
+_ZN8HxrEventC2Ev
+_ZN8HxrEventD1Ev
+_ZN8HxrEventD2Ev
+_ZN8HxrInput12doIoBindingsEP10hxrBindingP9HxrActionP13HxrControllerP14hxrSourceInputPjP15hxrSourceOutputS8_
+_ZN8HxrInput15hxrSourceCreateEP12hxrSourceSetP9HxrActionP21hxrInteractionProfileS5_
+_ZN8HxrInput16hxrActionGetPoseEP11uHashmapIntm11hxrSubPathsP17XrActionStatePose14XrSessionState
+_ZN8HxrInput16zeroCacheCurrentEP14hxrSourceState
+_ZN8HxrInput19hxrActionGetBooleanEP11uHashmapIntm11hxrSubPathsP20XrActionStateBoolean14XrSessionState
+_ZN8HxrInput19hxrSessionGetSourceEP11uHashmapIntjPP9hxrSource
+_ZN8HxrInput20hxrActionGetVector1fEP11uHashmapIntm11hxrSubPathsP18XrActionStateFloat14XrSessionState
+_ZN8HxrInput20hxrActionGetVector2fEP11uHashmapIntm11hxrSubPathsP21XrActionStateVector2f14XrSessionState
+_ZN8HxrInput21getStateFromStateBoolEP14hxrSourceStateP20XrActionStateBoolean
+_ZN8HxrInput21getStateFromStateVec1EP14hxrSourceStateP18XrActionStateFloat
+_ZN8HxrInput21getStateFromStateVec2EP14hxrSourceStateP21XrActionStateVector2f
+_ZN8HxrInput21hxrSourceGetPoseInputEP11uHashmapIntjPK11hxrSubPathsPP14hxrSourceInput14XrSessionState
+_ZN8HxrInput23hxrSessionSuccessResultE14XrSessionState
+_ZN8HxrInput8doInputsEP10hxrBindingP13HxrControllerP14hxrSourceInputPj
+_ZN8HxrInput9doOutputsEP10hxrBindingP13HxrControllerP15hxrSourceOutputPj
+_ZN8HxrInputC1Ev
+_ZN8HxrInputC2Ev
+_ZN8HxrInputD1Ev
+_ZN8HxrInputD2Ev
+_ZN8HxrSpace11locateSpaceEPS_S0_lP15XrSpaceLocation
+_ZN8HxrSpaceC1EP10HxrSessionPK23XrActionSpaceCreateInfo
+_ZN8HxrSpaceC1EP10HxrSessionPK26XrReferenceSpaceCreateInfob
+_ZN8HxrSpaceC2EP10HxrSessionPK23XrActionSpaceCreateInfo
+_ZN8HxrSpaceC2EP10HxrSessionPK26XrReferenceSpaceCreateInfob
+_ZN8HxrSpaceD1Ev
+_ZN8HxrSpaceD2Ev
+_ZN9HvrApiImp10initRenderE11InitOptions
+_ZN9HvrApiImp11submitFrameEP8HVRFrame
+_ZN9HvrApiImp12unInitRenderEv
+_ZN9HvrApiImp15captureEyeImageEP15HvrCaptureParam
+_ZN9HvrApiImp15getHelmetHandleEv
+_ZN9HvrApiImp16getPredictTimeUsEv
+_ZN9HvrApiImp18setRenderFrameRateEib
+_ZN9HvrApiImp19getRenderStatisticsEP19HvrRenderStatistics
+_ZN9HvrApiImp21setPredictDeltaTimeUsEi
+_ZN9HvrApiImp8endFrameEP8HVRFrame
+_ZN9HvrApiImp9waitFrameEv
+_ZN9HxrActionC1EP12HxrActionSetPK18XrActionCreateInfo
+_ZN9HxrActionC2EP12HxrActionSetPK18XrActionCreateInfo
+_ZN9HxrActionD1Ev
+_ZN9HxrActionD2Ev
+_ZN9HxrHelmet12stopTrackingEv
+_ZN9HxrHelmet13beginTrackingEv
+_ZN9HxrHelmet14getTrackedPoseElP7hxrPose
+_ZN9HxrHelmetC1Ev
+_ZN9HxrHelmetC2Ev
+_ZN9HxrHelmetD1Ev
+_ZN9HxrHelmetD2Ev
+_ZN9HxrSystem13getPropertiesEP18XrSystemProperties
+_ZN9HxrSystem24getHW6DoFHeaderAvailableEv
+_ZN9HxrSystem27enumerateViewConfigurationsEjPjP23XrViewConfigurationType
+_ZN9HxrSystem30enumerateEnvironmentBlendModesEjPjP22XrEnvironmentBlendMode
+_ZN9HxrSystem30getViewConfigurationPropertiesE23XrViewConfigurationTypeP29XrViewConfigurationProperties
+_ZN9HxrSystem31enumerateViewConfigurationViewsE23XrViewConfigurationTypejPjP23XrViewConfigurationView
+_ZN9HxrSystem34getOpenGLESGraphicsRequirementsKHREP33XrGraphicsRequirementsOpenGLESKHR
+_ZN9HxrSystemC1Ev
+_ZN9HxrSystemC2Ev
+_ZN9HxrSystemD1Ev
+_ZN9HxrSystemD2Ev
+_ZN9VrMatrix39transposeEv
+_ZN9VrMatrix3C1ERK12VrQuaternion
+_ZN9VrMatrix3C2ERK12VrQuaternion
+_ZN9VrMatrix410transposedEv
+_ZN9VrMatrix4C1ERK12VrQuaternion
+_ZN9VrMatrix4C2ERK12VrQuaternion
+_ZN9VrVector311transToQuatEPfS0_S0_S0_
+_ZNK10VrMatrix3d10transposedEv
+_ZNK12VrQuaternion12lengthSquareEv
+_ZNK12VrQuaternion14getEulerAnglesEPfS0_S0_
+_ZNK12VrQuaternion15printQuaternionEv
+_ZNK12VrQuaternion3dotERKS_
+_ZNK12VrQuaternion4imagEv
+_ZNK12VrQuaternion5nlerpERKS_f
+_ZNK12VrQuaternion6lengthEv
+_ZNK12VrQuaternion6rotateERK9VrVector3
+_ZNK12VrQuaternion8invertedEv
+_ZNK12VrQuaternion9normalizeEv
+_ZNK12VrQuaterniondvEf
+_ZNK12VrQuaternionmlERK9VrVector3
+_ZNK12VrQuaternionmlERKS_
+_ZNK12VrQuaternionmlEf
+_ZNK12VrQuaternionplERKS_
+_ZNK13ScreenControl18displayRendedframeEv
+_ZNK13ScreenControl20isValidWindowSurfaceEv
+_ZNK13VrQuaterniond12lengthSquareEv
+_ZNK13VrQuaterniond14getEulerAnglesEPdS0_S0_
+_ZNK13VrQuaterniond3dotERKS_
+_ZNK13VrQuaterniond4imagEv
+_ZNK13VrQuaterniond5nlerpERKS_d
+_ZNK13VrQuaterniond6lengthEv
+_ZNK13VrQuaterniond6rotateERK10VrVector3d
+_ZNK13VrQuaterniond8invertedEv
+_ZNK13VrQuaterniond9normalizeEv
+_ZNK13VrQuaternionddvEd
+_ZNK13VrQuaterniondmlERK10VrVector3d
+_ZNK13VrQuaterniondmlERKS_
+_ZNK13VrQuaterniondmlEd
+_ZNK13VrQuaterniondplERKS_
+_ZNK9VrMatrix310transposedEv
+_ZNK9VrMatrix49transposeEv
+_ZNKSt8bad_cast4whatEv
+_ZNSt6__ndk110__list_impI12DisplayFrameNS_9allocatorIS1_EEE5clearEv
+_ZNSt6__ndk110__list_impI12DisplayFrameNS_9allocatorIS1_EEED2Ev
+_ZNSt6__ndk112__hash_tableINS_17__hash_value_typeIiP9HxrActionEENS_22__unordered_map_hasherIiS4_NS_4hashIiEELb1EEENS_21__unordered_map_equalIiS4_NS_8equal_toIiEELb1EEENS_9allocatorIS4_EEE25__emplace_unique_key_argsIiJRKNS_21piecewise_construct_tENS_5tupleIJOiEEENSK_IJEEEEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS4_PvEEEEbEERKT_DpOT0_
+_ZNSt6__ndk112__hash_tableINS_17__hash_value_typeIiP9HxrActionEENS_22__unordered_map_hasherIiS4_NS_4hashIiEELb1EEENS_21__unordered_map_equalIiS4_NS_8equal_toIiEELb1EEENS_9allocatorIS4_EEE6rehashEm
+_ZNSt6__ndk112__hash_tableINS_17__hash_value_typeIiP9HxrActionEENS_22__unordered_map_hasherIiS4_NS_4hashIiEELb1EEENS_21__unordered_map_equalIiS4_NS_8equal_toIiEELb1EEENS_9allocatorIS4_EEE8__rehashEm
+_ZNSt6__ndk114__split_bufferIP17XrEventDataBufferNS_9allocatorIS2_EEE10push_frontEOS2_
+_ZNSt6__ndk114__split_bufferIP17XrEventDataBufferNS_9allocatorIS2_EEE9push_backEOS2_
+_ZNSt6__ndk114__split_bufferIP17XrEventDataBufferRNS_9allocatorIS2_EEE10push_frontERKS2_
+_ZNSt6__ndk114__split_bufferIP17XrEventDataBufferRNS_9allocatorIS2_EEE9push_backEOS2_
+_ZNSt6__ndk14listI12DisplayFrameNS_9allocatorIS1_EEE10push_frontERKS1_
+_ZNSt6__ndk14listI12DisplayFrameNS_9allocatorIS1_EEE8pop_backEv
+_ZNSt6__ndk15dequeI17XrEventDataBufferNS_9allocatorIS1_EEE19__add_back_capacityEv
+_ZNSt6__ndk16__treeINS_12__value_typeIiP18ControllerTrackImpEENS_19__map_value_compareIiS4_NS_4lessIiEELb1EEENS_9allocatorIS4_EEE7destroyEPNS_11__tree_nodeIS4_PvEE
+_ZNSt6__ndk16vectorIP9HxrActionNS_9allocatorIS2_EEE21__push_back_slow_pathIRKS2_EEvOT_
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTI12HelmetHandle
+_ZTI12HvrHelmetExt
+_ZTI12RenderModule
+_ZTI12VrDistortion
+_ZTI13LocalRenderer
+_ZTI13VRRenderVsync
+_ZTI15ControllerTrack
+_ZTI15HelmetHandleImp
+_ZTI15MediatorMessageI16HelmetOffsetInfoE
+_ZTI15MediatorMessageI23VrRenderTimespanDFXInfoE
+_ZTI15MediatorMessageI9_HeadPoseE
+_ZTI17HvrFrameworkClass
+_ZTI17VRRenderWalleImpl
+_ZTI18ControllerTrackImp
+_ZTI18VRRenderImplCommon
+_ZTI18VrDistortionRender
+_ZTI22VRRenderVirtualDisplay
+_ZTI25PhoneControllerPoseCaller
+_ZTIN17HvrFrameworkClass11ApplicationE
+_ZTIN17HvrFrameworkClass11TemperatureE
+_ZTIN17HvrFrameworkClass13LocalRendererE
+_ZTIN17HvrFrameworkClass5AudioE
+_ZTIN17HvrFrameworkClass5MediaE
+_ZTIN17HvrFrameworkClass6SystemE
+_ZTIN17HvrFrameworkClass7ProcessE
+_ZTIN17HvrFrameworkClass9VrDisplayE
+_ZTISt8bad_cast
+_ZTS12HelmetHandle
+_ZTS12HvrHelmetExt
+_ZTS12RenderModule
+_ZTS12VrDistortion
+_ZTS13LocalRenderer
+_ZTS13VRRenderVsync
+_ZTS15ControllerTrack
+_ZTS15HelmetHandleImp
+_ZTS15MediatorMessageI16HelmetOffsetInfoE
+_ZTS15MediatorMessageI23VrRenderTimespanDFXInfoE
+_ZTS15MediatorMessageI9_HeadPoseE
+_ZTS17HvrFrameworkClass
+_ZTS17VRRenderWalleImpl
+_ZTS18ControllerTrackImp
+_ZTS18VRRenderImplCommon
+_ZTS18VrDistortionRender
+_ZTS22VRRenderVirtualDisplay
+_ZTS25PhoneControllerPoseCaller
+_ZTSN17HvrFrameworkClass11ApplicationE
+_ZTSN17HvrFrameworkClass11TemperatureE
+_ZTSN17HvrFrameworkClass13LocalRendererE
+_ZTSN17HvrFrameworkClass5AudioE
+_ZTSN17HvrFrameworkClass5MediaE
+_ZTSN17HvrFrameworkClass6SystemE
+_ZTSN17HvrFrameworkClass7ProcessE
+_ZTSN17HvrFrameworkClass9VrDisplayE
+_ZTSSt8bad_cast
+_ZTV12HvrHelmetExt
+_ZTV12RenderModule
+_ZTV12VrDistortion
+_ZTV13LocalRenderer
+_ZTV15HelmetHandleImp
+_ZTV15MediatorMessageI16HelmetOffsetInfoE
+_ZTV15MediatorMessageI23VrRenderTimespanDFXInfoE
+_ZTV15MediatorMessageI9_HeadPoseE
+_ZTV17HvrFrameworkClass
+_ZTV17VRRenderWalleImpl
+_ZTV18ControllerTrackImp
+_ZTV18VRRenderImplCommon
+_ZTV18VrDistortionRender
+_ZTV22VRRenderVirtualDisplay
+_ZTV25PhoneControllerPoseCaller
+_ZTVN17HvrFrameworkClass11ApplicationE
+_ZTVN17HvrFrameworkClass11TemperatureE
+_ZTVN17HvrFrameworkClass13LocalRendererE
+_ZTVN17HvrFrameworkClass5AudioE
+_ZTVN17HvrFrameworkClass5MediaE
+_ZTVN17HvrFrameworkClass6SystemE
+_ZTVN17HvrFrameworkClass7ProcessE
+_ZTVN17HvrFrameworkClass9VrDisplayE
+_ZTVSt8bad_cast
+_ZZN12DisplayFrame14buildNextFrameEvE11frameNumber
+_ZZN14HxrHandleArrayIP10HxrSessionE11getInstanceEvE8instance
+_ZZN14HxrHandleArrayIP11HxrInstanceE11getInstanceEvE8instance
+_ZZN14HxrHandleArrayIP12HxrActionSetE11getInstanceEvE8instance
+_ZZN14HxrHandleArrayIP12HxrSwapchainE11getInstanceEvE8instance
+_ZZN14HxrHandleArrayIP7hxrPathE11getInstanceEvE8instance
+_ZZN14HxrHandleArrayIP8HxrSpaceE11getInstanceEvE8instance
+_ZZN14HxrHandleArrayIP9HxrActionE11getInstanceEvE8instance
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__uuidof(
+accel:x,y,z,gyro:x,y,z,magn:x,y,z,sampleTime,systemTime,magAccuracy,orientation.x,orientation.y,orientation.z,orientation.w
+active_6dof_ctrl
+allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+android/graphics/SurfaceTexture
+beginControllerTracking
+beginEyeDraw
+beginFrame
+beginRender
+beginTracking
+boundaryRenderValue
+checkCalibrationResult
+chooseFrame
+clearStateForCurrentSurface
+com.huawei.android.vr.sensor.mode
+com.huawei.vrvirtualscreen.main.view.MainActivity
+configRenderParams
+const_cast
+createVirtualDisplay
+displayRendedframe
+dumpFrame
+dynamic_cast
+eglCreatePbufferSurface
+eglCreateWindowSurface
+eglDestroySurface
+eglGetCurrentDisplay
+eglGetCurrentSurface
+eglGetDisplay
+eglQuerySurface
+eglSurfaceAttrib
+enableEnhancedRenderMode
+enableFoveatedRenderingMode
+enableSimulate
+endEyeDraw
+endFrame
+enumerateImages
+eyeIndex
+frontbuffPredictTimePointForWalle
+frontbuffPredictTimePointForWalleX
+gHvrPredictPosture
+g_IsHelmetThermalTwo
+getAccelerometer
+getCaptureEyeImage
+getDFXRenderMessage
+getExtTrackerData
+getGyroscope
+getHW6DoFHeaderAvailable
+getHeadPose
+getHelmetInfo
+getHelmetPoseOffset
+getHelmetType
+getLocalRendererClass
+getPhoneControllerPose
+getPose
+getRenderStatistics
+getTimestamp
+getTrackerData
+getVirtualDisplaySurface
+getVrDisplayClass
+glBindFramebuffer
+glBindRenderbuffer
+glBlitFramebuffer
+glBlitFramebufferEXT
+glCheckFramebufferStatus
+glDeleteFramebuffers
+glDeleteRenderbuffers
+glFramebufferRenderbuffer
+glFramebufferTexture2D
+glFramebufferTexture2D Framebuffer begin
+glFramebufferTexture2DMultisampleEXT
+glFramebufferTexture2DMultisampleIMG
+glFramebufferTexture2DMultisampleIMGEXT
+glFramebufferTextureLayer
+glFramebufferTextureMultisampleMultiviewOVR
+glFramebufferTextureMultiviewOVR
+glGenFramebuffers
+glGenRenderbuffers
+glInvalidateFramebuffer
+glInvalidateFramebufferEXT
+glRenderbufferStorageMultisample
+glRenderbufferStorageMultisampleEXT
+glRenderbufferStorageMultisampleIMG
+glRenderbufferStorageMultisampleIMG MSAA
+glRenderbufferStorageMultisampleIMGEXT
+glTexImage2D
+glTexImage3D
+gl_Position = projection*view*model*vec4(aPos, 1.0f); 
+gl_Position = projectionBou*ViewMatrix*model * vec4(aPos, 1.0f);
+gl_Position = projectionBou*ViewMatrix*model * vec4(aPos, 1.0f); 
+gl_Position = projectionBou*ViewMatrix*model*vec4(aPos, 1.0f); 
+gl_Position = projectionBou[gl_ViewID_OVR]*ViewMatrix*model * vec4(aPos, 1.0f);
+gl_Position = projectionBou[gl_ViewID_OVR]*ViewMatrix*model * vec4(aPos, 1.0f); 
+gl_Position = projectionBou[gl_ViewID_OVR]*ViewMatrix*model*vec4(aPos, 1.0f); 
+gl_Position = projection[gl_ViewID_OVR]*view*model*vec4(aPos, 1.0f); 
+gl_Position =projectionBou*ViewMatrix*model *vec4(aPos, 1.0f); 
+gl_Position =projectionBou[gl_ViewID_OVR]*ViewMatrix*model *vec4(aPos, 1.0f); 
+helmetlowpower_0
+helmetlowpower_1
+hvr.captureimage.second
+hvr.ctrlpose.debug
+hvr.distortion.key0
+hvr.distortion.key1
+hvr.distortion.key2
+hvr.distortion.key3
+hvr.distortion.key4
+hvr.distortion.key5
+hvr.distortionB.key0
+hvr.distortionB.key1
+hvr.distortionB.key2
+hvr.distortionB.key3
+hvr.distortionB.key4
+hvr.distortionB.key5
+hvr.distortionR.key0
+hvr.distortionR.key1
+hvr.distortionR.key2
+hvr.distortionR.key3
+hvr.distortionR.key4
+hvr.distortionR.key5
+hvr.headpose.debug
+hvr.imm.simulate
+hvr.render.apprender
+hvr.render.atw
+hvr.render.avgmtp
+hvr.render.delay
+hvr.render.dispersion
+hvr.render.distortion
+hvr.render.framemtp
+hvr.render.swap
+hvr.render.timecost
+hvrGetHelmetInfo
+hvrRenderCaptureEyeImage
+hvrRenderGetPredictDisplayTime
+hvrRenderGetStatistics
+hvrRenderStart
+hvrRenderStop
+hvrRenderSubmitFrame
+hvrSwapChainBeginRenderView
+hvrSwapChainEndRenderView
+hvrSwapChainGetImage
+hvrTrackingGetPosture
+hvrTrackingIsAvailable
+hvrTrackingResetYaw
+hvrTrackingSetOrientation
+hvrTrackingSetPoseLock
+hvrTrackingSetPosition
+hvrTrackingSetPostionLock
+hvrTrackingStart
+hvrTrackingStop
+hxrActionGetBoolean
+hxrActionGetVector1f
+hxrActionGetVector2f
+hxrAllocatePath
+hxrApplyHapticFeedback
+hxrAttachSessionActionSets
+hxrClassifySubActionPaths
+hxrEnumerateBoundSourcesForAction
+hxrGetActionStateBoolean
+hxrGetActionStateFloat
+hxrGetActionStatePose
+hxrGetActionStateVector2f
+hxrGetCurrentInteractionProfile
+hxrPathToString
+hxrSessionGetSourceSet
+hxrSourceUpdate
+hxrStopHapticFeedback
+hxrSuggestInteractionProfileBindings
+hxrSyncActions
+hxrTwoCallHelper
+hxrTwoCallHelperENUM
+hxrVerifySubactionPathGet
+hxr_xrAcquireSwapchainImage
+hxr_xrApplyHapticFeedback
+hxr_xrAttachSessionActionSets
+hxr_xrBeginFrame
+hxr_xrBeginSession
+hxr_xrCreateAction
+hxr_xrCreateActionSet
+hxr_xrCreateActionSpace
+hxr_xrCreateInstance
+hxr_xrCreateReferenceSpace
+hxr_xrCreateSession
+hxr_xrCreateSwapchain
+hxr_xrDestroyAction
+hxr_xrDestroyActionSet
+hxr_xrDestroyInstance
+hxr_xrDestroySession
+hxr_xrDestroySpace
+hxr_xrDestroySwapchain
+hxr_xrEndFrame
+hxr_xrEndSession
+hxr_xrEnumerateApiLayerProperties
+hxr_xrEnumerateBoundSourcesForAction
+hxr_xrEnumerateEnvironmentBlendModes
+hxr_xrEnumerateInstanceExtensionProperties
+hxr_xrEnumerateReferenceSpaces
+hxr_xrEnumerateSwapchainFormats
+hxr_xrEnumerateSwapchainImages
+hxr_xrEnumerateViewConfigurationViews
+hxr_xrEnumerateViewConfigurations
+hxr_xrGetActionStateBoolean
+hxr_xrGetActionStateFloat
+hxr_xrGetActionStatePose
+hxr_xrGetActionStateVector2f
+hxr_xrGetControllerTypeHW
+hxr_xrGetCurrentInteractionProfile
+hxr_xrGetHelmetTypeHW
+hxr_xrGetInputSourceLocalizedName
+hxr_xrGetInstanceProcAddr
+hxr_xrGetInstanceProperties
+hxr_xrGetOpenGLESGraphicsRequirementsKHR
+hxr_xrGetPhoneControllerPowerStateHW
+hxr_xrGetReferenceSpaceBoundsRect
+hxr_xrGetSystem
+hxr_xrGetSystemProperties
+hxr_xrGetViewConfigurationProperties
+hxr_xrIsControllerAvailableHW
+hxr_xrJumpToLauncherHW
+hxr_xrLocateSpace
+hxr_xrLocateViews
+hxr_xrPathToString
+hxr_xrPollEvent
+hxr_xrReleaseSwapchainImage
+hxr_xrRequestExitSession
+hxr_xrResetYawHW
+hxr_xrResultToString
+hxr_xrSendCommandHW
+hxr_xrStopHapticFeedback
+hxr_xrStringToPath
+hxr_xrStructureTypeToString
+hxr_xrSuggestInteractionProfileBindings
+hxr_xrSyncActions
+hxr_xrTurnOffShortCutsHW
+hxr_xrWaitFrame
+hxr_xrWaitSwapchainImage
+in lowp float  enhanceMaxRadius;
+in lowp float  oEyePosition;
+initForCurrentSurface
+initRender
+isHW6DoFHeaderAvailable
+isHw6DofController
+isIMGMultisampledRenderToTexture
+isPositionTrackOn
+isQCOMTiledRendering
+isVrDisplay
+non-virtual thunk to 
+out  float    enhanceMaxRadius;
+out  float    oEyePosition;
+printQuaternion
+projection
+projectionBou
+projectionBouInset
+projectionBouWhole
+projectionInset
+projectionWhole
+pthread_cond_broadcast
+reinterpret_cast
+render FBO %i is not complete: 0x%x
+renderEnvSetup
+renderFrameProcess
+restoreHelmetPosture
+sdcard//lyx//imudata%d-%d-%d-%d-%d.txt
+setCalibrationPoint
+setDistortion
+setFoveatedRenderOn
+setHelemetPoseToController
+setPoseLock
+setupLocalRenderGeometry
+static_cast
+std::bad_cast
+submitFrame
+submitFrameInternal
+swapbuffPredictTimePointForWalle
+swapbuffPredictTimePointForWalleX
+toHxrPath
+toXrPath
+u8__uuidoft
+u8__uuidofz
+unInitRender
+uniform int eyeIndex;
+uniform mat4 projection; 
+uniform mat4 projectionBou; 
+uniform mat4 projectionBou[2]; 
+uniform mat4 projection[2]; 
+updateFrameState
+updateTexImage
+varying  float    oEyePosition;
+varying lowp float  oEyePosition;
+waitFrame
+xrGetControllerTypeHW
+xrGetHelmetTypeHW
+xrGetPhoneControllerPowerStateHW
+xrIsControllerAvailableHW
+xrJumpToLauncherHW
+xrNegotiateLoaderRuntimeInterface
+xrResetYawHW
+xrSendCommandHW
+xrShutdown
+xrTurnOffShortCutsHW
+xrfoveatedHW
+~DisplayFrame
+~HxrSwapchain
+~VRRenderWalleImpl
+~VrDistortionRender

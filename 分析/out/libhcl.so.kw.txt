@@ -1,0 +1,273 @@
+%s %s(%d)::"BatchnormConvFusion not support quantize."
+%s %s(%d)::"BatchnormConvFusion success."
+%s %s(%d)::"BnCovnOpFusionSetData failed"
+%s %s(%d)::"BnCovnOpFusionTransWeight failed"
+%s %s(%d)::"Cast op:%s optimized."
+%s %s(%d)::"Cast op:%s, type:%d,%d."
+%s %s(%d)::"ConvBatchnormFusion success."
+%s %s(%d)::"Covn Op fusion failed."
+%s %s(%d)::"Covn Op quant fusion failed."
+%s %s(%d)::"CovnBnOpFusionForNewBias failed"
+%s %s(%d)::"CovnBnOpQuantFusion:  weightsSize < 1!"
+%s %s(%d)::"CovnBnOpQuantFusion: get scale_weight_value failed!"
+%s %s(%d)::"CovnBnOpQuantFusion: scale_weight_mode need be vector!"
+%s %s(%d)::"CovnBnOpQuantFusion: scale_weight_size < 1 or scale_weight_size != kernelNum"
+%s %s(%d)::"DoFusion weights get failed!"
+%s %s(%d)::"Failed to remove cast:%s."
+%s %s(%d)::"Fusion pattern %s failed, status:%d"
+%s %s(%d)::"GenerateBcastInfo failed."
+%s %s(%d)::"GraphFusion fail, ret:%d"
+%s %s(%d)::"SetShapeDifferentInfo failed.                 Two tensor shapes are not compatible according to the broadcasting rule."
+%s %s(%d)::"aipp exist, insert transpose op after aipp."
+%s %s(%d)::"cast fail"
+%s %s(%d)::"castInputNode is null."
+%s %s(%d)::"castNode is null!"
+%s %s(%d)::"castNode is nullptr"
+%s %s(%d)::"castOutputNode is null."
+%s %s(%d)::"control flow node %s subgraph input is not fusion yet"
+%s %s(%d)::"control flow node %s subgraph output is not fusion yet"
+%s %s(%d)::"create netoutput transpose op:%s, rule:%s"
+%s %s(%d)::"fusionFilterAndBias failed."
+%s %s(%d)::"fusion_node is nullptr"
+%s %s(%d)::"h_head or h_tail or w_head or w_tail is not 0, " "bn can't fusion."
+%s %s(%d)::"h_head or h_tail or w_head or w_tail is not 0, bn can't fusion."
+%s %s(%d)::"insert nchw to nhwc transpose op."
+%s %s(%d)::"ir inset transpose for data failed!"
+%s %s(%d)::"srcNodeName = %s, dimNum = %d, skip create transpose op."
+%s %s(%d)::"transpose the weight data NHWC to NCHW."
+%s %s(%d)::"weights get failed, node name:%s can't fusion."
+%s %s(%d)::param ["biasDataFusion"] must not be null.
+%s %s(%d)::param ["castOp"] must not be null.
+%s %s(%d)::param ["transposeNode"] must not be null.
+.eh_frame
+.eh_frame_hdr
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/cl_manager/cl_register.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/cl_manager/ops_kernel_store_manager.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/cls/fakednnacl/fakednnacl_graph_compiler.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/common/allocator/local_memory_allocator.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/common/allocator/memory_allocator_factory.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/common/bcast.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/common/bcast.h
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/common/op/ge_op_utils.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/common/trans_tensor.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/common/version.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/compatible/model_compatibility_check.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/complete/inputoutput_graph_complete.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/complete/insert_trans_op_for_data.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/complete/ir_model_complete.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/allocator/aicpv1cl_mem_allocator.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/convert_to_ir_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/general_compiled_model.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/general_model_compiler.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/general_model_executor.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/general_model_recompiler.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/hook/watch_dog_hook.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/model_buffer_helper.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/model_compiler_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/model_memory_assign.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/model_memory_info.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/model_memory_manager.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/model_type_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/op_execution/aipp_config_op_execution.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/op_execution/cast_op_execution.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/op_execution/graph_op_execution.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/op_execution/netoutput_op_execution.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/op_execution/old_om_data_op_execution.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/op_execution/old_om_netout_op_execution.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/op_execution/old_om_yolo_detection_op_execution.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/op_execution/op_execution.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/op_execution/op_execution_factory.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/task/task_thread.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/general_compute/utils/tensor_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/compress/compress.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/compress/compress_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/compress/parse_config.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/context/ctx.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/graph/graph_optimizer.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/model/memory/mem_assigner_algo.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/model/memory/seq_block_mem_assigner.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/model/optimizer/ir_infer_shape_optimizer.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/model/optimizer/pre_infer_shape_optimizer.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/cast_graph_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/cast_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/constant_folding_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/control_flow_ir_infershape_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/copy_shared_const_op_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/dimension_compute_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/fusion/pattern_fusion_base_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/get_original_format_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/greater_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/isolated_op_remove_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/cast_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/clip_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/concat_v2_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/cos_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/dequantize_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/exp_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/expanddims_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/fill_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/floordiv_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/gather_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/neg_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/ones_like_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/pack_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/prod_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/quantize_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/range_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/rank_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/reshape_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/rsqrt_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/shape_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/sin_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/size_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/slice_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/softmax_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/split_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/sqrt_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/squeeze_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/strided_slice_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/sub_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/tile_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/transdata_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/unpack_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/where_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/kernel/zeros_like_kernel.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/matmul_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/merge_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/node_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/pass_manager.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/switch_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/trans_net_output_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/optimizer/unused_op_remove_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/optimizer/model_optimizer.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/optimizer/model_optimizer_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/optimizer/pattern_manager.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/optimizer/pattern_optimizer/conv_batchnorm_fusion_pass.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/optimizer/pattern_optimizer/graph_fusion_math_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/partition/model_partition.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/partition/model_partition_algo.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/perf_manager/performance_manager.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//hiaiengine/node/ai_model_executor_manager.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//hiaiengine/node/ai_timer_manager.cpp
+AnnMAXIMUM
+AnnMINIMUM
+BatchnomConvFusion
+BnCovnOpFusion
+BnCovnOpFusionSetData
+BnCovnOpFusionTransWeight
+BroadcastTo
+CastInputToOutput
+CastT
+ConvBatchnomFusion
+ConvBatchnomFusion1
+ConvTranspose
+CovnBnOpFusion
+CovnBnOpFusionForNewBias
+CovnBnOpQuantFusion
+CreateCastOp
+CreateTansposeOp
+Creator_CAST_Kernel
+DoFusion
+DynamicImageData
+ExtractImagePatches
+FastrcnnPredictions
+FusionBatchNorm
+FusionBatchNormV3
+FusionBias
+FusionFilter
+GenerateBcastInfo
+GetNodeNextCast
+GraphFusion
+ImageChannelSwap
+ImageColorSpaceConvertion
+ImageCrop
+ImageDataTypeConversion
+ImageMultiFrameJoint
+ImagePadding
+ImageResize
+ImageRotation
+InsertTransposeOp
+IsFormatTranspose
+Maximum
+Minimum
+MirrorPad
+RemoveCastNode
+RemoveInputCastOp
+RemoveOutputCastOp
+Run fusion passes failed.
+SupportCastOp
+_ZN2ge17MAXIMUM_INPUT_NUME
+_ZN2ge23DEFAULT_BROADCAST_VALUEE
+_ZN2ge31FASTRCNN_PREDICTIONS_INPUT_SIZEE
+_ZN2ge32FASTRCNN_PREDICTIONS_OUTPUT_SIZEE
+_ZN2ge43SSD_DETECTIONOUTPUT_INPUT_SIZE_AFTER_FUSIONE
+_ZN2ge44SSD_DETECTIONOUTPUT_OUTPUT_SIZE_AFTER_FUSIONE
+_ZN2ge46SSD_DETECTIONOUTPUT_WORKSPACE_NUM_AFTER_FUSIONE
+_ZN2ge50ATTENTION_DECODER_WEIGHT_ATTNOUTPUTPROJECTION_BIASE
+_ZN2ge52ATTENTION_DECODER_WEIGHT_ATTNOUTPUTPROJECTION_KERNELE
+_ZN2ge6OpDesc8SetRunCLENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN4domi10IMAGE_CROPE
+_ZN4domi10IMAGE_DATAE
+_ZN4domi11ANN_MAXIMUME
+_ZN4domi11ANN_MINIMUME
+_ZN4domi11BROADCASTTOE
+_ZN4domi12IMAGE_RESIZEE
+_ZN4domi12XRGB_CHN_NUME
+_ZN4domi14CAST_ATTR_DSTTE
+_ZN4domi14CAST_ATTR_SRCTE
+_ZN4domi15FUSIONBATCHNORME
+_ZN4domi17FUSIONBATCHNORMV3E
+_ZN4domi18DYNAMIC_IMAGE_DATAE
+_ZN4domi18IMAGE_CHANNEL_SWAPE
+_ZN4domi19ATTR_NAME_BROADCASTE
+_ZN4domi19EXTRACTIMAGEPATCHESE
+_ZN4domi19FASTRCNNPREDICTIONSE
+_ZN4domi22ATTR_NAME_FUSION_OPDEFE
+_ZN4domi22ATTR_NAME_FUSION_SCOPEE
+_ZN4domi23IAMGE_MULTI_FRAME_JOINTE
+_ZN4domi24AIPP_ATTR_MAX_IMAGE_SIZEE
+_ZN4domi24MATMUL_ATTR_TRANSPOSE_X1E
+_ZN4domi24MATMUL_ATTR_TRANSPOSE_X2E
+_ZN4domi24MIRRORPAD_ATTR_NAME_MODEE
+_ZN4domi24MIRRORPAD_ATTR_NAME_PADSE
+_ZN4domi26ATTR_NAME_FRAMEWORK_OP_DEFE
+_ZN4domi26IMAGE_DATA_TYPE_CONVERSIONE
+_ZN4domi27MODEL_ATTR_FUSION_MODEL_DEFE
+_ZN4domi28ATTR_NAME_FRAMEWORK_FUNC_DEFE
+_ZN4domi28ATTR_NAME_FRAMEWORK_NODE_DEFE
+_ZN4domi28IMAGE_COLOR_SPACE_CONVERTIONE
+_ZN4domi29ATTR_NAME_FUSION_INFERENCE_IDE
+_ZN4domi29SSD_BOXPREDICTOR_BOXES_FUSIONE
+_ZN4domi30MIRRORPAD_ATTR_NAME_PAD_FORMATE
+_ZN4domi30SSD_BOXPREDICTOR_SCORES_FUSIONE
+_ZN4domi31MIRRORPAD_ATTR_NAME_CONST_VALUEE
+_ZN4domi33ATTR_NAME_FRAMEWORK_ORIGINAL_TYPEE
+_ZN4domi33SSDNORMALIZE_ATTR_ACCROSS_SPATIALE
+_ZN4domi36SSD_BOXPREDICTOR_FUSION_BOX_TYPE_NUME
+_ZN4domi4CASTE
+_ZN4domi5BCast17GenerateBcastInfoERKNSt6__ndk16vectorIlNS1_9allocatorIlEEEES7_b
+_ZN4domi5BCast7ToShapeERKNSt6__ndk16vectorIlNS1_9allocatorIlEEEEPN2ge10TensorDescE
+_ZN4domi5BCast9FromShapeERKN2ge10TensorDescE
+_ZN4domi7MAXIMUME
+_ZN4domi7MINIMUME
+_ZN4domi9MIRRORPADE
+_ZN4domi9TRANSPOSEE
+__cxa_pure_virtual
+broadcast
+data_cast_
+fusion_inference_id
+fusion_opdef
+fusion_scope
+fusion_virtual_op
+max_src_image_size
+netoutput_cast_
+non_broadcast_mode
+src_image_size_h
+src_image_size_w
+ssd_boxpredictor_boxes_fusion
+ssd_boxpredictor_fusion_box_type_num
+ssd_boxpredictor_scores_fusion
+transpose_before_netoutput_
+transpose_for_nd_data_
+transpose_x1
+transpose_x2

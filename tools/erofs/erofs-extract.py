@@ -383,6 +383,47 @@ def cmd_list(e, root):
             print('  [file] %-58s %9d  dl=%d' % (nm, info['size'], info['dl']))
 
 
+def cmd_walk(e, root, out=None, pattern=None):
+    """递归遍历（可选整树导出到 out 目录；pattern 为正则过滤文件名）。"""
+    import re
+    rx = re.compile(pattern, re.I) if pattern else None
+    nid = e.lookup(root) if root else e.root_nid
+    if nid is None:
+        print('路径不存在:', root); return 1
+    tot_files = tot_bytes = 0
+    stack = [(nid, root or '')]
+    while stack:
+        cnid, path = stack.pop()
+        i = e.read_inode(cnid)
+        if (i['mode'] & S_IFMT) != S_IFDIR:
+            continue
+        for nm, cid, ft in e.list_dir(i):
+            if nm in ('.', '..'):
+                continue
+            p = path + '/' + nm
+            info = e.read_inode(cid)
+            if ft == FT_DIR:
+                print('  [dir ] %s' % p)
+                if out and not rx:
+                    os.makedirs(os.path.join(out, p.lstrip('/')), exist_ok=True)
+                stack.append((cid, p))
+            else:
+                tot_files += 1
+                tot_bytes += info['size']
+                hit = (rx is None) or bool(rx.search(p))
+                if hit:
+                    print('  [file] %-70s %9d' % (p, info['size']))
+                if out and hit:
+                    dst = os.path.join(out, p.lstrip('/'))
+                    os.makedirs(os.path.dirname(dst) or '.', exist_ok=True)
+                    try:
+                        open(dst, 'wb').write(e.read_file(cid))
+                    except Exception as ex:
+                        print('    !! 导出失败 %s: %s' % (p, ex))
+    print('\n合计 %d 个文件，%d 字节' % (tot_files, tot_bytes))
+    return 0
+
+
 def cmd_extract(e, path, out):
     nid = e.lookup(path)
     if nid is None:
@@ -436,6 +477,12 @@ def main():
             return cmd_extract(e, sys.argv[3], sys.argv[4])
         elif cmd == 'find':
             cmd_find(e, sys.argv[3])
+        elif cmd == 'walk':
+            # walk <img> [镜像内路径] [out目录] [文件名正则]
+            sub = sys.argv[3] if len(sys.argv) > 3 else ''
+            outd = sys.argv[4] if len(sys.argv) > 4 else None
+            pat = sys.argv[5] if len(sys.argv) > 5 else None
+            return cmd_walk(e, sub, outd, pat)
         else:
             print(__doc__)
             return 2

@@ -1,4 +1,4 @@
-<#
+﻿<#
 用 Mono.Cecil 给原版 Unity 程序集打「空指针判断」补丁。
 
 背景、原始 C# 意图与影响写在 tools/PatchUnityPointerNullGuard.cs 顶部。

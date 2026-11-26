@@ -11,6 +11,7 @@ vsync 取值已由 patches/patch_hisi_vsync_to_android.py 换成
 替换成「直接返回已缓存的服务引用」：行为等价（现在也是 null），但不再触碰 hidden API。
 其它调用点（vrInit/vrMode/vrSetSchedFifo…）原本就有 null 判空分支，行为不变。
 """
+import io
 import re
 import sys
 from pathlib import Path
@@ -23,7 +24,7 @@ ANCHOR = 'const-string v1, "android.os.ServiceManager"'
 
 def main(root):
     path = Path(root) / "decode" / MODULE / TARGET
-    text = path.read_text(encoding="utf-8", newline="")
+    text = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in text else "\n"
     body = text.replace("\r\n", "\n")
 

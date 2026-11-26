@@ -8,7 +8,7 @@
 | com.huawei.vrhandle | com.huawei.vrhandle.apk | 8963026 | E947FC358E9692358AC42CFE4A565C112F7FC9349DA693643F863D08AF98B3D2 |
 | com.huawei.vrlauncherx | com.huawei.vrlauncherx.apk | 59024225 | 1E91F00D596C636C3F52DDDC494EE6B745CDF90BB3A0838FF203F9AE54B92DD3 |
 | com.huawei.vrvirtualscreen | com.huawei.vrvirtualscreen.apk | 14786134 | 229EBA319B78A94DD5B497C1AADD739DB07189FA5B8C4680473529350D70C7FE |
-| com.huawei.vrservice | com.huawei.vrservice.apk | 3042010 | 317C09957C6BF35EDC9F4BCA258A7AEDBB81CEBEDFD212244F2776E82491F41E |
+| com.huawei.vrservice | com.huawei.vrservice.apk | 5298141 | FD363DBEA8F8413E5DE0B984E3151432E27FC788E579B72EC542A2A48F02882D |
 
 解码命令：`java -jar tools/apktool_2.10.0.jar d -f -p tools/framework -o decode/<包名> 原包/<包名>.apk`
 
@@ -16,6 +16,15 @@
 HMA-AL00 EMUI 11.0.0.155 整包固件的 `hw_product` 分区里提取出来的
 （`/region_comm/china/app/VRServiceX/VRServiceX.apk`），提取过程与镜像结构见
 `docs/FIRMWARE_HMA11_EMUI11.md`。
+
+> **版本更正（2026-11-26）**：早期文档把本包标为 `11.0.0.322` / 3,042,010 B /
+> sha256 `317C0995…`，那是**最初从固件中提取时**的记录。当前 `原包/com.huawei.vrservice.apk`
+> 实际是 **12.0.0.302**（DEX 内 `versionName` 字符串实测），5,298,141 B，
+> sha256 `FD363DBE…`。用户 2026-11-26 提供的「华为 VR 服务_12.0.0.302.zip」解出的 APK
+> 与本仓库内文件**逐字节相同**（同一 sha256），因此不需要替换；本表与下方哈希已按实际
+> 文件更新。`docs/FIRMWARE_HMA11_EMUI11.md`、`docs/PATCH_AUDIT.md` 第 20 节、
+> `docs/RK3566-部署记录.md`、`vr/README.md` 中的 `11.0.0.322` 是历史记录，
+> 指提取当时的版本，请以此处为准。
 
 ## 解码方式与偏差
 

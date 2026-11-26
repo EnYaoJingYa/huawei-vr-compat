@@ -1,0 +1,210 @@
+ imaginary
+.eh_frame
+.eh_frame_hdr
+?CTRL3DOF
+CheckCtrl3DofHandle
+Deleted virtual function called!
+E:/Code/Parsifal_3dof/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/ControllerThreeDoF/../../../../../../native_src/common/src/VrMath.cpp
+E:/Code/Parsifal_3dof/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/ControllerThreeDoF/../ControllerThreeDoF/src/ctrl_3dof.cpp
+HSDK_CONFIG_MANAGER_IMPL_GET_VR_3_DOF_HANDLER_CONFIG
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+Pure virtual function called!
+PushSensorData
+St8bad_cast
+VrCtrl3Dof
+[%s][%s:%s](%d): 3dof para init failed
+[%s][%s:%s](%d): CheckCtrl3DofHandle failed, Ctrl3DofMHandle contains null pointer
+[%s][%s:%s](%d): Ctrl 3dof  status is CTRL_3DOF_HANDLE_RUNNING
+[%s][%s:%s](%d): Ctrl 3dof status is CTRL_3DOF_HANDLE_INITED
+[%s][%s:%s](%d): Ctrl3Dof status is CTRL_3DOF_HANDLE_INITED
+[%s][%s:%s](%d): Ctrl3Dof status is CTRL_3DOF_HANDLE_RUNNING
+[%s][%s:%s](%d): Ctrl3Dof status(%d) is not CTRL_3DOF_HANDLE_INITED
+[%s][%s:%s](%d): Ctrl3Dof status(%d) is not CTRL_3DOF_HANDLE_RUNNING
+[%s][%s:%s](%d): VrCtrl3Dof_Create Enter.
+[%s][%s:%s](%d): VrCtrl3Dof_Create Leaving, status(%d)
+[%s][%s:%s](%d): VrCtrl3Dof_Deinit enter
+[%s][%s:%s](%d): VrCtrl3Dof_Deinit handle NULL 
+[%s][%s:%s](%d): VrCtrl3Dof_Deinit leaving
+[%s][%s:%s](%d): VrCtrl3Dof_Destroy Enter.
+[%s][%s:%s](%d): VrCtrl3Dof_Destroy handle NULL 
+[%s][%s:%s](%d): VrCtrl3Dof_Destroy leaving
+[%s][%s:%s](%d): VrCtrl3Dof_GetData data type is false
+[%s][%s:%s](%d): VrCtrl3Dof_GetData handle is null
+[%s][%s:%s](%d): VrCtrl3Dof_Init Enter.
+[%s][%s:%s](%d): VrCtrl3Dof_Init Leaving, status(%d)
+[%s][%s:%s](%d): VrCtrl3Dof_PushData data calculate 3dof failed. index %d
+[%s][%s:%s](%d): VrCtrl3Dof_PushData data type(%s) is false, m_count %d
+[%s][%s:%s](%d): VrCtrl3Dof_PushData handle is null
+[%s][%s:%s](%d): VrCtrl3Dof_RegisterCallback. IN
+[%s][%s:%s](%d): VrCtrl3Dof_SetValue handle is null
+[%s][%s:%s](%d): VrCtrl3Dof_Start Leaving, m_status(%d)
+[%s][%s:%s](%d): VrCtrl3Dof_Start enter
+[%s][%s:%s](%d): VrCtrl3Dof_Start handle NULL 
+[%s][%s:%s](%d): VrCtrl3Dof_Stop Enter
+[%s][%s:%s](%d): VrCtrl3Dof_Stop Leaving, status(%d)
+[%s][%s:%s](%d): VrCtrl3Dof_UnregisterCallback. IN
+[%s][%s:%s](%d): caliPara acc: left: %f %f %f %f %f %f %f %f %f %f %f %f
+[%s][%s:%s](%d): caliPara acc: right: %f %f %f %f %f %f %f %f %f %f %f %f
+[%s][%s:%s](%d): caliPara gyro: left: %f %f %f %f %f %f %f %f %f %f %f %f
+[%s][%s:%s](%d): caliPara gyro: right: %f %f %f %f %f %f %f %f %f %f %f %f
+[%s][%s:%s](%d): close m_3DofCtrlPoseFile1 succeed
+[%s][%s:%s](%d): close m_3DofCtrlPoseFile2 succeed
+[%s][%s:%s](%d): close m_3DofCtrlSensorFile1 succeed
+[%s][%s:%s](%d): close m_3DofCtrlSensorFile2 succeed
+[%s][%s:%s](%d): create ctrl3DofHandle failed
+[%s][%s:%s](%d): flag status: m_3DofCtrlSensorEnable=%d, m_save3DofCtrlPoseEnable=%d
+[%s][%s:%s](%d): open m_3DofCtrlPoseFile1 succeed
+[%s][%s:%s](%d): open m_3DofCtrlPoseFile2 succeed
+[%s][%s:%s](%d): open m_3DofCtrlSensorFile1 succeed
+[%s][%s:%s](%d): open m_3DofCtrlSensorFile2 succeed
+[%s][%s:%s](%d): pose write enable
+[%s][%s:%s](%d): sensor write log enable
+[%s][%s:%s](%d): sensorData is null
+[%s][%s:%s](%d): timeStamp is false, m_leftPreTimeStamp %f, timeStamp %f
+[%s][%s:%s](%d): timeStamp is false, m_rightPreTimeStamp %f, timeStamp %f
+_Z14sf_mat_to_quatPfS_
+_Z14sf_quat_to_matPfS_
+_Z14sf_quat_updatePfS_f
+_Z16sf_quat_continuePfS_
+_Z19sf_matrix_transposePfS_hh
+_Z23sf_convert_int_to_floatPfS_13sensorTypeDef
+_Z30GetControllerThreeDoFInterfacev
+_Z6sf_eyePfh
+_ZN12VrQuaternionC1E4Axisf
+_ZN12VrQuaternionC1ERK9VrMatrix4
+_ZN12VrQuaternionC1ERK9VrVector3f
+_ZN12VrQuaternionC2E4Axisf
+_ZN12VrQuaternionC2ERK9VrMatrix4
+_ZN12VrQuaternionC2ERK9VrVector3f
+_ZN12VrQuaternionaSERKS_
+_ZN13Sensor_fusion13initFusion_AGEP7Gravity
+_ZN13Sensor_fusion21sf_get_pitch_roll_yawEP11YPRDataType14FusionDataType
+_ZN13Sensor_fusion21sf_nine_axis_AGM_initEfP7GravityP7Sf_magnP9Gyro_Cali
+_ZN13Sensor_fusion23game_rotation_vector_AGEPfS0_P18QuaternionDataTypejP7GravityP9Gyro_Cali
+_ZN13Sensor_fusion23sf_nine_axis_fusion_AGMER16nineAxisDataTypeP14FusionDataTypetPiS4_P7GravityP9Gyro_CaliP7Sf_magn
+_ZN13Sensor_fusion30geomagnetic_rotation_vector_AMEPfS0_P18QuaternionDataTypejP7Sf_magn
+_ZN13Sensor_fusionC1Ev
+_ZN13Sensor_fusionC2Ev
+_ZN13VrQuaterniond11getFromAxisE4Axisd
+_ZN13VrQuaterniond13getFromVectorERK10VrVector3dd
+_ZN13VrQuaterniondaSERKS_
+_ZN5DOEaG10ProcessMagEPfPiS1_S1_f
+_ZN5DOEaG11ProcessGyroEPif
+_ZN5DOEaG11updata_quatEPfS0_f
+_ZN5DOEaG13AccuracyJudgeEPiS0_Pf
+_ZN5DOEaG15MatrixTransposeEPfS0_hh
+_ZN5DOEaG17init_magn_anomalyEv
+_ZN5DOEaG18Magn_anomaly_judgeEPfdS0_PtPh
+_ZN5DOEaG18Magn_ppvalue_judgeEPfPtPhS1_
+_ZN5DOEaG19Magn_distance_judgeEPtS0_Pf
+_ZN5DOEaG3eyeEPfh
+_ZN5DOEaG8Quat2MatEPfS0_
+_ZN5_3DOF10sensorInitEPv
+_ZN5_3DOF13SensorProcessEPvS0_S0_
+_ZN5_3DOF13calSensorDataEPfffS0_P10CaliParams
+_ZN5_3DOF17EularToQuaternionEPKfPf
+_ZN7Gravity11sf_acc_riotEPfS0_S0_P11riotTypeDeff
+_ZN7Gravity20sf_acc_anomaly_judgeEPf
+_ZN7Gravity21sf_gravity_extractionEPfS0_S0_P11riotTypeDefP18gravityExtrTypeDeffP9Gyro_Cali
+_ZN7Gravity28sf_gyro_over_range_judgementEPfS0_Ph
+_ZN7Sf_magn12sf_magn_riotEPfS0_S0_P11riotTypeDeftf
+_ZN7Sf_magn13sf_magn_resetEP11riotTypeDef
+_ZN7Sf_magn13sf_unwrap_LMSEfPf
+_ZN7Sf_magn18sf_magn_extractionEPfS0_P17magnExtrKFTypeDefS0_tfS0_PiP9Gyro_CaliP7Gravity
+_ZN7Sf_magn20sf_init_magn_anomalyEv
+_ZN7Sf_magn21sf_magn_anomaly_judgeEPfPt
+_ZN7Sf_magn21sf_magn_ppvalue_judgeEPtt
+_ZN7Sf_magn22sf_magn_distance_judgeEPtS0_S0_Pff
+_ZN7Sf_magn25sf_tilt_magn_compensationEPfS0_S0_
+_ZN7Sf_magnC1Ev
+_ZN7Sf_magnC2Ev
+_ZN7Sf_magnD1Ev
+_ZN7Sf_magnD2Ev
+_ZN8ctrl3Dof11OpenLogFileEv
+_ZN8ctrl3Dof12CloseLogFileEv
+_ZN8ctrl3Dof14PushSensorDataEP19Ctrl3DofSensorEvent
+_ZN8ctrl3Dof16CalibrateImuDataEP19Ctrl3DofSensorEvent
+_ZN8ctrl3Dof18CalibrationMagDataEcR15ThreeDofMagData
+_ZN8ctrl3Dof19CalibrateOutPutDataEcf
+_ZN8ctrl3Dof7ProcessEcf
+_ZN8ctrl3Dof9DeleteMemEv
+_ZN9Gyro_Cali16get_mean_of_axisEPA3_fjtPf
+_ZN9Gyro_Cali17sf_gyro_cali_initEPf
+_ZN9Gyro_Cali19sf_gyro_calibrationEPfS0_
+_ZN9Gyro_Cali19sf_gyro_into_bufferEPf
+_ZN9Gyro_Cali19sf_steady_detectionEPfS0_f
+_ZN9Gyro_Cali21sf_update_gyro_offsetEP14retGyroCali_td
+_ZN9Gyro_Cali23sf_judge_activity_levelEhf
+_ZN9VrMatrix39transposeEv
+_ZN9VrMatrix3C1ERK12VrQuaternion
+_ZN9VrMatrix3C2ERK12VrQuaternion
+_ZN9VrMatrix4C1ERK12VrQuaternion
+_ZN9VrMatrix4C2ERK12VrQuaternion
+_ZNK12VrQuaternion12lengthSquareEv
+_ZNK12VrQuaternion14getEulerAnglesEPfS0_S0_
+_ZNK12VrQuaternion15printQuaternionEv
+_ZNK12VrQuaternion3dotERKS_
+_ZNK12VrQuaternion4imagEv
+_ZNK12VrQuaternion5nlerpERKS_f
+_ZNK12VrQuaternion6lengthEv
+_ZNK12VrQuaternion6rotateERK9VrVector3
+_ZNK12VrQuaternion8invertedEv
+_ZNK12VrQuaternion9normalizeEv
+_ZNK12VrQuaterniondvEf
+_ZNK12VrQuaternionmlERK9VrVector3
+_ZNK12VrQuaternionmlERKS_
+_ZNK12VrQuaternionmlEf
+_ZNK12VrQuaternionplERKS_
+_ZNK13VrQuaterniond12lengthSquareEv
+_ZNK13VrQuaterniond14getEulerAnglesEPdS0_S0_
+_ZNK13VrQuaterniond3dotERKS_
+_ZNK13VrQuaterniond4imagEv
+_ZNK13VrQuaterniond5nlerpERKS_d
+_ZNK13VrQuaterniond6lengthEv
+_ZNK13VrQuaterniond6rotateERK10VrVector3d
+_ZNK13VrQuaterniond8invertedEv
+_ZNK13VrQuaterniond9normalizeEv
+_ZNK13VrQuaternionddvEd
+_ZNK13VrQuaterniondmlERK10VrVector3d
+_ZNK13VrQuaterniondmlERKS_
+_ZNK13VrQuaterniondmlEd
+_ZNK13VrQuaterniondplERKS_
+_ZNK9VrMatrix310transposedEv
+_ZNK9VrMatrix49transposeEv
+_ZNKSt8bad_cast4whatEv
+_ZNSt6__ndk16vectorI11HandlerPoseNS_9allocatorIS1_EEE8__appendEm
+_ZNSt6__ndk16vectorI12VrQuaternionNS_9allocatorIS1_EEE8__appendEm
+_ZNSt6__ndk16vectorI8CtrlPoseNS_9allocatorIS1_EEE8__appendEm
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTISt8bad_cast
+_ZTSSt8bad_cast
+_ZTVSt8bad_cast
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__uuidof(
+const_cast
+dynamic_cast
+fmt:imu@org:controller
+fmt:pose@org:vr3dof
+hvr.3dofctrlsensorlog
+hvr.save3dofctrlpose
+index, ctrl:timestamp, acc:x,y,z,gyro:x,y,z,mag:x,y,z
+libctrl3dof.so
+non-virtual thunk to 
+printQuaternion
+reinterpret_cast
+sdcard/HWSdkDebug/3dofpose/ctrl0-%02d-%02d_%02d_%02d_%02d.txt
+sdcard/HWSdkDebug/3dofpose/ctrl1-%02d-%02d_%02d_%02d_%02d.txt
+sdcard/HWSdkDebug/sensor/ctrl0-%02d-%02d_%02d_%02d_%02d.csv
+sdcard/HWSdkDebug/sensor/ctrl1-%02d-%02d_%02d_%02d_%02d.csv
+static_cast
+std::bad_cast
+u8__uuidoft
+u8__uuidofz

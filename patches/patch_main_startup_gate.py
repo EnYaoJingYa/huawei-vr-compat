@@ -17,6 +17,7 @@
 用法：python patches/patch_main_startup_gate.py [仓库根]
 """
 
+import io
 import sys
 from pathlib import Path
 
@@ -35,7 +36,7 @@ def main(root):
     path = Path(root) / "decode" / MODULE / SMALI
     if not path.exists():
         raise SystemExit("missing %s" % path)
-    raw = path.read_text(encoding="utf-8", newline="")
+    raw = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in raw else "\n"
     text = raw.replace("\r\n", "\n")
     if "VrStartupGate;->attach" not in text:

@@ -15,6 +15,7 @@
 只补不删：华为专有权限的声明保留（没有声明方就是不被授予，不影响功能），
 真正要拦的是发往华为服务器的请求，那是代码层的事（见 patch_offline.py）。
 """
+import io
 import re
 import subprocess
 import sys
@@ -55,7 +56,7 @@ def original_permissions(package):
 
 
 def patch_text(path, permissions):
-    text = path.read_text(encoding="utf-8", newline="")
+    text = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in text else "\n"
     body = text.replace("\r\n", "\n")
     added = []

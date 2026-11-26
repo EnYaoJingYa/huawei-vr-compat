@@ -1,0 +1,422 @@
+ imaginary
+%s failed to broadcast
+.eh_frame
+.eh_frame_hdr
+/SlamXml/vrglass.xml
+/SlamXml/vrglassVN1.xml
+/interaction_profiles/huawei/6dof_controller
+13VirtualGround
+6Dof_Both
+6Dof_Left
+6Dof_Right
+ANativeWindow_fromSurface
+AimPose
+CheckSlamMap
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/GuardianArea/VirtualGround/VirtualGround.cpp
+DeleteFramebuffer
+DeleteRenderbuffer
+Deleted virtual function called!
+DrawVirtualGround
+ERR_EGL_BAD_ACCESS
+ERR_EGL_BAD_CURRENT_SURFACE
+ERR_EGL_BAD_DISPLAY
+ERR_EGL_BAD_SURFACE
+GL_EXT_multisampled_render_to_texture
+GL_IMG_multisampled_render_to_texture
+GL_INVALID_FRAMEBUFFER_OPERATION
+GetPostureBackwardForRender
+GetPostureForRender
+GetSlamMap
+GuardianAreaOpenXR
+InitImages
+MakeBaseRenderData
+MakeFrameBuffer
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+PrintHelmetInfo
+Pure virtual function called!
+RenderFrame
+SLAM_GET_MAP_STATE
+SLAM_GET_MAX_MAP_SIZE
+SLAM_GET_SAVE_MAP
+SLAM_SET_LOAD_MAP
+SLAM_SET_MAP_ADDFEATURE_SWITCH
+SLAM_SET_RELOC_MANUAL_SWITCH
+SetGroundPose
+SetOpenXRVar
+SlamAddFeatureClose
+SlamAddFeatureOpen
+SlamRelocManualClose
+SlamRelocManualOpen
+St8bad_cast
+VirtualGroundImpl
+XR_KHR_android_create_instance
+XR_KHR_opengl_es_enable
+[%s][%s:%s](%d): CheckSlamMap Failed
+[%s][%s:%s](%d): CheckSlamMap IN ,map file = %s
+[%s][%s:%s](%d): CheckSlamMap fail, path invalid %s
+[%s][%s:%s](%d): CheckSlamMap, fopen failed
+[%s][%s:%s](%d): CheckSlamMap, map send to slam done!
+[%s][%s:%s](%d): CheckSlamMap, memset err, err=%d
+[%s][%s:%s](%d): CheckSlamMap: mapSize:[%d]
+[%s][%s:%s](%d): CheckSlamMap:check Slam Map Failed, ret = %d!
+[%s][%s:%s](%d): CreateRendering
+[%s][%s:%s](%d): CreateRendering finish
+[%s][%s:%s](%d): DrawVirtualGround done
+[%s][%s:%s](%d): GAA GAAVST3 CommonFunction :: Error! CreateFrameByBuffer failed!
+[%s][%s:%s](%d): Get EGL14 display failed.
+[%s][%s:%s](%d): GetPostureTowardPredict GetPostureBackwardForRender failes:%d
+[%s][%s:%s](%d): GetPostureTowardPredict failes:%d
+[%s][%s:%s](%d): GetSlamMap failed when save safe region
+[%s][%s:%s](%d): GetSlamMap:Malloc Slam Map Buffer Failed!
+[%s][%s:%s](%d): GetSlamMap:get Slam Map Failed, ret = %d!
+[%s][%s:%s](%d): GetSlamMap:get Slam Map size Failed, ret = %d, mapLength = %d!
+[%s][%s:%s](%d): GetSlamMap:mapBuffer real size:[%d]
+[%s][%s:%s](%d): GetSlamMap:mapBuffer size:[%zd]
+[%s][%s:%s](%d): GetSlamParam
+[%s][%s:%s](%d): GetSlamParam 
+[%s][%s:%s](%d): GetSlamParam ::
+[%s][%s:%s](%d): GetSlamParam D1 : %f, %f, %f, %f
+[%s][%s:%s](%d): GetSlamParam D2 : %f, %f, %f, %f
+[%s][%s:%s](%d): GetSlamParam K1 : %f, %f, %f, 
+[%s][%s:%s](%d): GetSlamParam K2 : %f, %f, %f, 
+[%s][%s:%s](%d): GetSlamParam deltaCam2IMU : %lld
+[%s][%s:%s](%d): GetSlamParam tmpT+Q : %f, %f, %f, %f, %f, %f, %f
+[%s][%s:%s](%d): GetVCtrlPosture GetPostureBackwardForRender failed!
+[%s][%s:%s](%d): HelmetOffset:%f, %f, %f, %f, %f, %f, %f
+[%s][%s:%s](%d): IN: %s, (eglDestroySurface) return EGL_FALSE: %s
+[%s][%s:%s](%d): IN: %s, Not find acceptable EGL color config!
+[%s][%s:%s](%d): InitEGLSurface
+[%s][%s:%s](%d): InitEGLSurface finish, mDisplay:%p, mConfig:%p, mNativeWindow:%p, mContext:%p, windowSurface:%p
+[%s][%s:%s](%d): InitImages fenceType: %d, oldFenceType: %d, isCancel: %d, isCancelFocus:%d, isCancelFocusOld: %d, isConfirm: %d, isConfirmFocus : %d, isConfirmFocusOld : %d 
+[%s][%s:%s](%d): SLAM_GET_MAP_STATE: %d
+[%s][%s:%s](%d): SetOpenXRVar Done
+[%s][%s:%s](%d): SetSurface
+[%s][%s:%s](%d): SetSurface done, jniAddr:%p, surface addr:%p, mNativeWindow addr:%p
+[%s][%s:%s](%d): SetSurface fail
+[%s][%s:%s](%d): SlamAddFeatureClose IN
+[%s][%s:%s](%d): SlamAddFeatureOpen IN
+[%s][%s:%s](%d): SlamRelocManualClose IN
+[%s][%s:%s](%d): SlamRelocManualOpen IN
+[%s][%s:%s](%d): VST DeleteFramebuffer begin
+[%s][%s:%s](%d): VST DeleteFramebuffer success
+[%s][%s:%s](%d): VST DeleteRenderbuffer begin
+[%s][%s:%s](%d): VST DeleteRenderbuffer success
+[%s][%s:%s](%d): VirtualGround Init done, displayProId:%u!
+[%s][%s:%s](%d): XR_SESSION_STATE_EXITING
+[%s][%s:%s](%d): XR_SESSION_STATE_LOSS_PENDING
+[%s][%s:%s](%d): XR_SESSION_STATE_READY
+[%s][%s:%s](%d): XR_SESSION_STATE_STOPPING
+[%s][%s:%s](%d): XR_TYPE_EVENT_DATA_INSTANCE_LOSS_PENDING
+[%s][%s:%s](%d): [updatetest]HelmetOffset:%f, %f, %f, %f, %f, %f, %f
+[%s][%s:%s](%d): buildFromString(vsVirtualGround, vsVirtualGround)
+[%s][%s:%s](%d): eglCreateWindowSurface fail!
+[%s][%s:%s](%d): exitRenderLoop
+[%s][%s:%s](%d): fileTimeStamp:%ju
+[%s][%s:%s](%d): get slam map state Failed, ret = %d
+[%s][%s:%s](%d): history staticPose:%f, %f, %f
+[%s][%s:%s](%d): image rectify shader link failed, eglDestroyContext fail: %s
+[%s][%s:%s](%d): image screen shader link failed, eglDestroyContext fail: %s
+[%s][%s:%s](%d): initModule_RELOC_RUNNING 6dof invalid
+[%s][%s:%s](%d): retxrEndSession: %d
+[%s][%s:%s](%d): save staticPose:%f, %f, %f
+[%s][%s:%s](%d): staticPose ori:%f, %f, %f
+[%s][%s:%s](%d): targetPoseMin:%f, minIndex:%d
+[%s][%s:%s](%d): xrAttachSessionActionSets: %d
+[%s][%s:%s](%d): xrBeginSession :%d
+[%s][%s:%s](%d): xrCreateAction:%d
+[%s][%s:%s](%d): xrCreateActionSpace for left handler: %d
+[%s][%s:%s](%d): xrCreateActionSpace for right handler: %d
+[%s][%s:%s](%d): xrCreateInstance %d
+[%s][%s:%s](%d): xrEndFrame ret:%d
+[%s][%s:%s](%d): xrEnumerateViewConfigurationViews ret:%d
+[%s][%s:%s](%d): xrGetViewConfigurationProperties ret:%d
+_Z15SaveGAData2FileNSt6__ndk16vectorIfNS_9allocatorIfEEEEi
+_Z16math_pose_invertP7hxrPoseS0_
+_Z16math_quat_invertP7hxrQuatS0_
+_Z16math_vector_plus7hxrVec3S_
+_Z17math_vector_minus7hxrVec3S_
+_Z18math_quat_multiply7hxrQuatS_
+_Z18math_vector_rotate7hxrQuat7hxrVec3
+_Z19math_pose_transformP7hxrPoseS0_S0_
+_Z19math_relation_resetP16hxrSpaceRelation
+_ZN10VrMatrix3dC1ERK13VrQuaterniond
+_ZN10VrMatrix3dC2ERK13VrQuaterniond
+_ZN11CreateFence17GetOpenXRInstanceERP12XrInstance_T
+_ZN11DataStorage19GetVstImageDataPoolEv
+_ZN11RuntimeTool19CreateFrameByBufferEPhR9SlamImage
+_ZN11StaticFence13SetManualPoseEv
+_ZN11StaticFence13SetStaticPoseEv
+_ZN11StaticFence8GenFrameEi
+_ZN12GuardianArea10RenderViewEi
+_ZN12GuardianArea10SetSurfaceEP7_JNIEnvP8_jobject
+_ZN12GuardianArea11RenderFrameEv
+_ZN12GuardianArea11RenderLayerER28XrCompositionLayerProjection
+_ZN12GuardianArea14InitEGLSurfaceEv
+_ZN12GuardianArea15CreateRenderingEv
+_ZN12VrQuaternionC1E4Axisf
+_ZN12VrQuaternionC1ERK9VrMatrix4
+_ZN12VrQuaternionC1ERK9VrVector3f
+_ZN12VrQuaternionC2E4Axisf
+_ZN12VrQuaternionC2ERK9VrMatrix4
+_ZN12VrQuaternionC2ERK9VrVector3f
+_ZN12VrQuaternionaSERKS_
+_ZN13VirtualGround10DrawShaderEjR9VrMatrix4S1_
+_ZN13VirtualGround11GetInstanceEv
+_ZN13VirtualGround13GetViewMatrixER9VrMatrix4S1_
+_ZN13VirtualGround13InitStaticPosEv
+_ZN13VirtualGround13MakeScreenVAOERjS0_PKfi
+_ZN13VirtualGround13ResetDrawFlagEv
+_ZN13VirtualGround13SetColorRatioEm
+_ZN13VirtualGround13SetGroundPoseER7Posture
+_ZN13VirtualGround14GenFrameBufferERjS0_ii
+_ZN13VirtualGround14GetModelMatrixER9VrMatrix4S1_9VrVector3
+_ZN13VirtualGround14SetFallDownPosERf
+_ZN13VirtualGround15GetGroundHeightEv
+_ZN13VirtualGround15MakeFrameBufferEv
+_ZN13VirtualGround15MakeModelMatrixER9VrMatrix4
+_ZN13VirtualGround15SetHandleActionE12HandlerState
+_ZN13VirtualGround16SetFallDownRatioEm
+_ZN13VirtualGround17DrawVirtualGroundEPjS0_fR7Posturei
+_ZN13VirtualGround17DrawVirtualGroundEPjS0_fR7Postureii
+_ZN13VirtualGround18MakeBaseRenderDataEv
+_ZN13VirtualGround18MakeGroundVerticesEv
+_ZN13VirtualGround18SetMaxCircleRadiusEmi
+_ZN13VirtualGround19IfNeedInitStaticPosER7Posture
+_ZN13VirtualGround20MakeVirtualGroundVAOEv
+_ZN13VirtualGround21InitDrawVarFromConfigEv
+_ZN13VirtualGround21VirtualGroundInstanceE
+_ZN13VirtualGround22GetGroundPoseForRenderERf
+_ZN13VirtualGround4InitEv
+_ZN13VirtualGround6DeinitEv
+_ZN13VirtualGround7InitVarEv
+_ZN13VirtualGround8GenFrameEi
+_ZN13VirtualGround8SetResetEv
+_ZN13VirtualGround9ProcResetER7Posturemf
+_ZN13VirtualGround9SetCurPosER7Posture
+_ZN13VirtualGroundC1Ev
+_ZN13VirtualGroundC2Ev
+_ZN13VirtualGroundD0Ev
+_ZN13VirtualGroundD1Ev
+_ZN13VirtualGroundD2Ev
+_ZN13VrQuaterniond11getFromAxisE4Axisd
+_ZN13VrQuaterniond13getFromVectorERK10VrVector3dd
+_ZN13VrQuaterniondaSERKS_
+_ZN14BoundaryManual13PoseTransformENSt6__ndk16vectorIfNS0_9allocatorIfEEEER9VrMatrix4S6_Rf
+_ZN14BoundaryManual17PostureForpredictEl
+_ZN14BoundaryManual8GenFrameEi
+_ZN14BoundaryManual9QuatSlerpEPKfPfS2_fffi
+_ZN14Relocalization10GetSlamMapER13SLAM_MAP_INFO
+_ZN14Relocalization12CheckSlamMapElRNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN14Relocalization14SaveRegionDataER10RegionInfoR13SLAM_MAP_INFO
+_ZN14Relocalization14WriteMapToFileER13SLAM_MAP_INFONSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE
+_ZN14Relocalization16FormatRegionDataERN4Json5ValueEmR10RegionInfoR13SLAM_MAP_INFONSt6__ndk112basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEE
+_ZN14Relocalization18SlamAddFeatureOpenEv
+_ZN14Relocalization19SlamAddFeatureCloseEv
+_ZN14Relocalization19SlamRelocManualOpenEv
+_ZN14Relocalization20SlamRelocManualCloseEv
+_ZN15BoundaryHistory17PostureForpredictEl
+_ZN15BoundaryHistory8genFrameEi
+_ZN15BoundaryHistory9quatSlerpEPKfPfS2_fffi
+_ZN15BoundaryTexture10InitImagesEi
+_ZN15BoundaryTexture12IsPointFocusEfffR15ImageCoordinate
+_ZN15BoundaryTexture14PushImagePointERNSt6__ndk16vectorIfNS0_9allocatorIfEEEER15ImageCoordinateS7_S7_S7_S7_S7_S7_
+_ZN15BoundaryTexture17PostureForpredictEl
+_ZN15BoundaryTexture17VerticesTransformER15ImageCoordinateS1_
+_ZN15BoundaryTexture19LoadAnimationImagesEii
+_ZN15BoundaryTexture8genFrameEi
+_ZN15BoundaryTexture9quatSlerpEPKfPfS2_fff
+_ZN17CoordinateManager11GetSLAMTimeERm
+_ZN17CoordinateManager12SetOpenXRVarEP11XrSession_TP9XrSpace_T
+_ZN17CoordinateManager13GetMinCtrlPosER7PostureRfRi
+_ZN17CoordinateManager13SetInvalidPosER7Posture
+_ZN17CoordinateManager15GetHelmetOffsetER9VrPosture
+_ZN17CoordinateManager15PrintHelmetInfoER7Posture
+_ZN17CoordinateManager17TransCoorToRenderER9VrVector3R12VrQuaternion
+_ZN17CoordinateManager18GetPostureByOpenXRElR7Posture
+_ZN17CoordinateManager18WaitVsycTimeOpenXRERl
+_ZN17CoordinateManager19GetPostureForRenderER7PostureRl
+_ZN17CoordinateManager27GetPostureBackwardForRenderEdR7Posture
+_ZN17CoordinateManager9QuatSlerpE12VrQuaternionS0_RS0_ff
+_ZN24ArvrRuntimeModuleManager15GetHelmetOffsetER9VrPosture
+_ZN24ArvrRuntimeModuleManager15GetRealSLAMTimeERm
+_ZN24ArvrRuntimeModuleManager16GetHelmetPostureEdR9VrVector3R12VrQuaternioni
+_ZN6HxrLog3LogENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN7GAAVST312PreATWMatrixE12VrQuaternionS0_R9VrMatrix3
+_ZN7GAAVST314GenFrameBufferERjS0_iii
+_ZN9SlamImageD1Ev
+_ZN9SlamState11GetInstanceEv
+_ZN9SlamState8GetValueEPKclPv
+_ZN9SlamState8SetValueEPKclPKv
+_ZN9VSTCommon12GetSlamParamER9VrMatrix3S1_R9VrVector4S3_S1_R9VrVector3Rl
+_ZN9VSTCommon17DeleteFramebufferERj
+_ZN9VSTCommon18DeleteRenderbufferERj
+_ZN9VrMatrix39transposeEv
+_ZN9VrMatrix3C1ERK12VrQuaternion
+_ZN9VrMatrix3C2ERK12VrQuaternion
+_ZN9VrMatrix410transposedEv
+_ZN9VrMatrix4C1ERK12VrQuaternion
+_ZN9VrMatrix4C2ERK12VrQuaternion
+_ZN9VrVector311transToQuatEPfS0_S0_S0_
+_ZNK10VrMatrix3d10transposedEv
+_ZNK12VrQuaternion12lengthSquareEv
+_ZNK12VrQuaternion14getEulerAnglesEPfS0_S0_
+_ZNK12VrQuaternion15printQuaternionEv
+_ZNK12VrQuaternion3dotERKS_
+_ZNK12VrQuaternion4imagEv
+_ZNK12VrQuaternion5nlerpERKS_f
+_ZNK12VrQuaternion6lengthEv
+_ZNK12VrQuaternion6rotateERK9VrVector3
+_ZNK12VrQuaternion8invertedEv
+_ZNK12VrQuaternion9normalizeEv
+_ZNK12VrQuaterniondvEf
+_ZNK12VrQuaternionmlERK9VrVector3
+_ZNK12VrQuaternionmlERKS_
+_ZNK12VrQuaternionmlEf
+_ZNK12VrQuaternionplERKS_
+_ZNK13VrQuaterniond12lengthSquareEv
+_ZNK13VrQuaterniond14getEulerAnglesEPdS0_S0_
+_ZNK13VrQuaterniond3dotERKS_
+_ZNK13VrQuaterniond4imagEv
+_ZNK13VrQuaterniond5nlerpERKS_d
+_ZNK13VrQuaterniond6lengthEv
+_ZNK13VrQuaterniond6rotateERK10VrVector3d
+_ZNK13VrQuaterniond8invertedEv
+_ZNK13VrQuaterniond9normalizeEv
+_ZNK13VrQuaternionddvEd
+_ZNK13VrQuaterniondmlERK10VrVector3d
+_ZNK13VrQuaterniondmlERKS_
+_ZNK13VrQuaterniondmlEd
+_ZNK13VrQuaterniondplERKS_
+_ZNK9VrMatrix310transposedEv
+_ZNK9VrMatrix49transposeEv
+_ZNKSt8bad_cast4whatEv
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4nposE
+_ZNSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE4nposE
+_ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEE7seekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEE10pubseekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEE7seekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE10pubseekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE7seekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk16vectorI20XrApiLayerPropertiesNS_9allocatorIS1_EEE8__appendEmRKS1_
+_ZNSt6__ndk16vectorI21XrExtensionPropertiesNS_9allocatorIS1_EEE8__appendEmRKS1_
+_ZNSt6__ndk16vectorI23XrViewConfigurationViewNS_9allocatorIS1_EEE8__appendEmRKS1_
+_ZNSt6__ndk16vectorI24XrActionSuggestedBindingNS_9allocatorIS1_EEE21__push_back_slow_pathIS1_EEvOT_
+_ZNSt6__ndk16vectorI27XrSwapchainImageOpenGLESKHRNS_9allocatorIS1_EEE6assignIPS1_EENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS1_NS_15iterator_traitsIS8_E9referenceEEE5valueEvE4typeES8_S8_
+_ZNSt6__ndk16vectorI32XrCompositionLayerProjectionViewNS_9allocatorIS1_EEE8__appendEm
+_ZNSt6__ndk16vectorI6XrViewNS_9allocatorIS1_EEE8__appendEmRKS1_
+_ZNSt6__ndk16vectorINS0_I27XrSwapchainImageOpenGLESKHRNS_9allocatorIS1_EEEENS2_IS4_EEE8__appendEm
+_ZNSt6__ndk16vectorIP13XrSwapchain_TNS_9allocatorIS2_EEE8__appendEm
+_ZNSt6__ndk16vectorIP28XrCompositionLayerBaseHeaderNS_9allocatorIS2_EEE21__push_back_slow_pathIS2_EEvOT_
+_ZNSt6__ndk18ios_base7showposE
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTI13VirtualGround
+_ZTISt8bad_cast
+_ZTS13VirtualGround
+_ZTSSt8bad_cast
+_ZTV13VirtualGround
+_ZTVSt8bad_cast
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__uuidof(
+allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+camera_display_rotation
+const_cast
+dynamic_cast
+eglCreateWindowSurface
+eglDestroySurface
+eglGetDisplay
+gXRState
+glBindFramebuffer
+glDeleteFramebuffers
+glDeleteRenderbuffers
+glFramebufferTexture2D
+glFramebufferTexture2DMultisampleEXT
+glFramebufferTexture2DMultisampleIMG
+glFramebufferTexture2DMultisampleIMG_
+glGenFramebuffers
+glRenderbufferStorageMultisampleEXT
+glRenderbufferStorageMultisampleIMG
+glRenderbufferStorageMultisampleIMG_
+glTexImage2D
+gl_Position = projectionHis*ViewMatrix*model*vec4(aPos, 1.0f); 
+gl_Position = projectionManual*ViewMatrix*model * vec4(aPos, 1.0f);
+gl_Position = projectionManual*ViewMatrix*model * vec4(aPos, 1.0f); 
+gl_Position =projectionHis*ViewMatrix*model *vec4(aPos, 1.0f); 
+imu_model
+isIMGMultisampledRenderToTexture
+layout(location = 0) in vec3 aPos; layout(location = 1) in vec3 aColor; layout(location = 2) in vec3 aOffset; out vec3 vgl_Pos1; out vec3 color1; out vec3 color2; out vec3 position1; out vec3 position2; out float intens; out vec3 aOffset1; out float distancePlane; out vec3 fColor1; uniform mat4 model; uniform mat4 view; uniform mat4 projection; uniform float colorRatio; uniform float vsCircleRadius; uniform float planePos; uniform vec3 curPos; void main() { color1 = vec3(4.0f, 165.0f, 238.0f); color2 = vec3(134.0f, 46.0f, 225.0f); position1 = vec3(0.707f, 0.0f, 0.707f); position2 = vec3(-0.707f, 0.0f, -0.707f); aOffset1 = aOffset; vgl_Pos1 = aPos + aOffset; distancePlane = sqrt((vgl_Pos1.x - curPos.x) * (vgl_Pos1.x - curPos.x) + (vgl_Pos1.z - curPos.z) * (vgl_Pos1.z - curPos.z)); intens = clamp((distancePlane - 0.4f) / (0.4f - 0.20f), 0.3f, 1.0f); if (distancePlane > 1.10f) { intens = clamp((vsCircleRadius - distancePlane) / (0.20f), 0.5f, 1.0f); } vgl_Pos1.y = planePos; gl_Position = projection * view * model * vec4(vgl_Pos1, 1.0f); gl_Position = vec4(gl_Position.x, -gl_Position.y, gl_Position.z, gl_Position.w); float dot_Diff = dot(vgl_Pos1 - position2, position1 - position2); vec3 vec_a = position1 - position2; float diff = dot_Diff / (vec_a.x * vec_a.x + vec_a.y * vec_a.y + vec_a.z * vec_a.z); fColor1 = ((color1 - color2) / 255.0f * diff * colorRatio + color2 / 255.0f) * intens; }
+layout(location = 0) in vec3 aPos; out vec3 sfPose; out vec3 ourColor; out vec3 color1; out vec3 color2; out vec3 position1; out vec3 position2; out vec3 position_Point; out vec3 fColor1; uniform mat4 model; uniform mat4 projectionBou; uniform mat4 ViewMatrix; out vec3 fencePosition; uniform int drawType; void main() { sfPose = aPos; if (drawType == 0) { gl_Position = projectionBou*ViewMatrix*model*vec4(aPos, 1.0f); gl_Position = vec4(gl_Position.x,-gl_Position.y,gl_Position.z,gl_Position.w); position_Point = aPos; color1 = vec3(4.0f, 165.0f, 238.0f); color2 = vec3(134.0f, 46.0f, 225.0f); position1 = 1.50f * vec3(0.707f, 0.0f, 0.707f); position2 = 1.50f * vec3(-0.707f, 0.0f, -0.707f); float dot_Diff = dot(position_Point - position2, position1 - position2); vec3 vec_a = position1 - position2; float diff = dot_Diff / (vec_a.x*vec_a.x + vec_a.y*vec_a.y + vec_a.z*vec_a.z); fColor1 = ((color1 - color2) / 255.0f*diff + color2 / 255.0f); } if (drawType == 1) { gl_Position = projectionBou*ViewMatrix*model*vec4(aPos, 1.0f); gl_Position = vec4(gl_Position.x,-gl_Position.y,gl_Position.z,gl_Position.w); fColor1 = vec3(0.0f / 255.0f, 170.0f / 255.0f, 239.0f / 255.0f); fencePosition = vec3(aPos.x, aPos.y, aPos.z); } }
+layout(location = 0) in vec3 position; layout(location = 1) in vec2 texCoord; uniform int eye; out vec2 oTexCoord; void main() { vec3 newPos; newPos.x = position.x; newPos.y = - 1.0 * position.y; newPos.z = position.z; gl_Position = vec4(newPos, 1.0f); if(eye == 0){ oTexCoord = vec2(texCoord.x + 0.012, texCoord.y); }else{ oTexCoord = vec2(texCoord.x - 0.012, texCoord.y); } }
+libVR6Dof.so
+libarvr_slam.so
+libxr_loader.so
+non-virtual thunk to 
+precision mediump float; out vec4 FragColor; in vec3 color1; in vec3 color2; in vec3 position1; in vec3 position2; in vec3 position_Point; in vec3 fColor1; in vec3 fencePosition; uniform vec3 helPos; uniform vec3 leftPos; uniform vec3 rightPos; uniform vec3 staticPos; uniform int redCircleState; uniform int isInAreaHel; uniform float rightRadio; uniform float leftRadio; uniform float helRadio; in vec3 sfPose; void main() { vec3 offsetPose = sfPose + staticPos; FragColor = vec4(fColor1, 1.0f); if(redCircleState == 1){ float rightPointDis = (offsetPose.x - rightPos.x)*(offsetPose.x - rightPos.x) + (offsetPose.y - rightPos.y)*(offsetPose.y - rightPos.y) + (offsetPose.z - rightPos.z)*(offsetPose.z - rightPos.z); float leftPointDis = (offsetPose.x - leftPos.x)*(offsetPose.x - leftPos.x) + (offsetPose.y - leftPos.y)*(offsetPose.y - leftPos.y) + (offsetPose.z - leftPos.z)*(offsetPose.z - leftPos.z); float helPointDis = (offsetPose.x - helPos.x)*(offsetPose.x - helPos.x) + (offsetPose.y - helPos.y)*(offsetPose.y - helPos.y) + (offsetPose.z - helPos.z)*(offsetPose.z - helPos.z); if(rightPointDis < rightRadio * rightRadio){ discard; } if(leftPointDis < leftRadio * leftRadio){ discard; } if(helPointDis < helRadio * helRadio){ discard; } }else if(redCircleState == 2){ if(isInAreaHel == 1){ FragColor = vec4(230.0f/255.0f, 69.0f/ 255.0f, 72.0f/ 255.0f, 1.0f); }else{ FragColor = vec4(0.0f/255.0f, 170.0f/ 255.0f, 239.0f/ 255.0f, 1.0f); } } }
+printQuaternion
+projection
+projectionBou
+projectionHis
+projectionManual
+projectionTex
+pthread_cond_broadcast
+reinterpret_cast
+slamMap
+slam_distance_type
+staticPose
+static_cast
+std::bad_cast
+u8__uuidoft
+u8__uuidofz
+uniform mat4 projectionHis; 
+uniform mat4 projectionManual; 
+xrAcquireSwapchainImage
+xrAttachSessionActionSets
+xrBeginFrame
+xrBeginSession
+xrCreateAction
+xrCreateActionSet
+xrCreateActionSpace
+xrCreateInstance
+xrCreateReferenceSpace
+xrCreateSession
+xrCreateSwapchain
+xrDestroyAction
+xrDestroyActionSet
+xrDestroyInstance
+xrDestroySession
+xrDestroySpace
+xrDestroySwapchain
+xrEndFrame
+xrEndSession
+xrEnumerateApiLayerProperties
+xrEnumerateEnvironmentBlendModes
+xrEnumerateInstanceExtensionProperties
+xrEnumerateReferenceSpaces
+xrEnumerateSwapchainFormats
+xrEnumerateSwapchainImages
+xrEnumerateViewConfigurationViews
+xrEnumerateViewConfigurations
+xrGetActionStateBoolean
+xrGetInstanceProperties
+xrGetOpenGLESGraphicsRequirementsKHR
+xrGetReferenceSpaceBoundsRect
+xrGetSystem
+xrGetSystemProperties
+xrGetViewConfigurationProperties
+xrLocateViews
+xrPollEvent
+xrReleaseSwapchainImage
+xrRequestExitSession
+xrStringToPath
+xrSuggestInteractionProfileBindings
+xrSyncActions
+xrWaitFrame
+xrWaitSwapchainImage
+~VirtualGround

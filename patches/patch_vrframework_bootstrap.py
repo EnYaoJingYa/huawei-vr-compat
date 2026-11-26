@@ -13,6 +13,7 @@ EMUI 上由系统/框架在 VR 应用起来时调用 `VrFramework.init(activity)
 之后，SDK 的代码已经装载）插入一次兼容层调用，把真实 Activity 交给 SDK。
 只插入一处，原方法其余部分不动；脚本断言原始片段存在且唯一。
 """
+import io
 import sys
 from pathlib import Path
 
@@ -25,7 +26,7 @@ INJECT = ("    invoke-static {p0}, Lcom/huawei/vrframework/compat/"
 
 def main(root):
     path = Path(root) / "decode" / MODULE / TARGET
-    text = path.read_text(encoding="utf-8", newline="")
+    text = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in text else "\n"
     body = text.replace("\r\n", "\n")
 

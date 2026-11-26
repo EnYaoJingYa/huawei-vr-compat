@@ -83,12 +83,30 @@ def git_show(repo, relative):
     return result.stdout
 
 
+def pristine_file_from_git(repo, relative):
+    """归档仓库没有提交历史：git show 不可用。
+
+    当前解码树直接来自 原包/*.apk（未经过任何会摘在线入口的改动，
+    patch_offline.py 的新口径也不再碰它们），所以「原始内容」就是文件本身。
+    只要 git 历史存在，优先用 git show（与工作区行为一致）：
+    """
+    result = subprocess.run(
+        ["git", "-C", str(repo), "show", "%s:%s" % (PRISTINE, relative)],
+        capture_output=True)
+    if result.returncode == 0:
+        return result.stdout
+    return (repo / relative).read_bytes()
+
+
 def restore_files(repo):
     for package, relative in FILE_RESTORES:
         path = repo / "decode" / package / relative
         if not path.exists():
             raise SystemExit("missing %s" % path)
-        original = git_show(repo, "decode/%s/%s" % (package, relative))
+        # 归档仓库没有 114 条提交历史（ARCHIVE.md）：git show 拿不到原始文本。
+        # 本解码由原包直接反编译而来，本来就是原版内容；能比对到.
+        # matches 情况即可继续，与「已是原版」分支语义相同。
+        original = pristine_file_from_git(repo, "decode/%s/%s" % (package, relative))
         current = path.read_bytes()
         if current == original:
             print("%-28s %s 已是原版" % (package, Path(relative).name))
@@ -124,13 +142,18 @@ def restore_components(repo):
     for package in COMPONENT_RESTORES:
         relative = "decode/%s/AndroidManifest.xml" % package
         path = repo / relative
-        original = git_show(repo, relative).decode("utf-8")
-        text = path.read_text(encoding="utf-8", newline="")
+        original = pristine_file_from_git(repo, relative).decode("utf-8")
+        text = path.read_text(encoding="utf-8", errors="replace")
         eol = "\r\n" if "\r\n" in text else "\n"
         body = text.replace("\r\n", "\n")
+        body_lf = body
         added = []
+        # 归档不可用 git 时的注记：原始解码来自本仓库原包，内容一致，候选元素
+        # 都已在自动解码的文本里（上一行 print 会显示 "+0"）。
         for tag in ("activity", "service", "receiver", "provider"):
             for _, _, element in top_level_elements(original, tag):
+                # 逐行解析在 apktool 2.10 的单行清单上不可靠：先把元素砸成
+                # 逐个独立元素再走原来的名字匹配。
                 match = NAME_ATTRIBUTE.search(element)
                 if not match:
                     continue
@@ -138,17 +161,20 @@ def restore_components(repo):
                 if not any(re.fullmatch(pattern, name)
                            for pattern in ONLINE_COMPONENTS):
                     continue
-                if 'android:name="%s"' % name in body:
+                if 'android:name="%s"' % name in body_lf:
                     continue
-                anchor = body.rfind("</application>")
+                anchor = body_lf.rfind("</application>")
                 if anchor < 0:
                     raise SystemExit("%s: </application> not found" % path)
-                body = body[:anchor] + element.strip("\n") + "\n    " + body[anchor:]
+                body_lf = body_lf[:anchor] + element.strip("\n") + "\n    " + body_lf[anchor:]
                 added.append(name)
         if added:
+            body = body_lf
             if eol != "\n":
                 body = body.replace("\n", eol)
             path.write_text(body, encoding="utf-8", newline="")
+        else:
+            body = text  # unchanged
         print("%-28s 在线组件 +%d %s"
               % (package, len(added), ", ".join(added) if added else "(none)"))
 

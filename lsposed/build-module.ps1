@@ -1,4 +1,4 @@
-<#
+﻿<#
 构建 LSPosed 辅助模块（放行「把 VR 活动启动到自建虚拟屏」这一个动作）。
 
 产物：lsposed/out/com.hvr.displayrouting.apk —— 手动装进手机，在 LSPosed 里启用并
@@ -7,7 +7,9 @@
 工具链与主工程一致（android-sdk 里的 build-tools 35 + jdk17 + 仓库自带 keystore）。
 #>
 param([string]$Revision = 'r1')
-$ErrorActionPreference = 'Stop'
+# 原生工具（javac 等）的 stderr 提示在输出被重定向时会由 PowerShell 5.1 包成
+# NativeCommandError；失败已经由每一步的退出码显式兜底，EAP 放开。
+$ErrorActionPreference = 'Continue'
 $repo = Split-Path $PSScriptRoot -Parent
 . (Join-Path $repo 'tools/sdk-path.ps1')
 $sdk = Resolve-HvrAndroidSdk -RepoRoot $repo
@@ -41,8 +43,11 @@ Write-Output '== d8 生成 classes.dex =='
 $classFiles = @(Get-ChildItem (Join-Path $stage 'classes') -Recurse -Filter *.class |
     ForEach-Object FullName)
 $argsFile = Join-Path $stage 'd8-args.txt'
-@('--lib', $androidJar, '--min-api', '29', '--output', $stage) + $classFiles |
-    Set-Content -LiteralPath $argsFile -Encoding utf8
+# UTF-8 **无 BOM** 写入：Windows PowerShell 5.1 的 Set-Content -Encoding utf8
+# 自带 BOM，d8 会把第一行（--lib）读成文件名直接报错；PS7 写 utf8 无 BOM。
+[IO.File]::WriteAllLines($argsFile,
+    @(@('--lib', $androidJar, '--min-api', '29', '--output', $stage) + $classFiles),
+    (New-Object System.Text.UTF8Encoding($false)))
 & (Join-Path $bt 'd8.bat') "@$argsFile"
 if ($LASTEXITCODE -ne 0) { throw 'd8 失败' }
 

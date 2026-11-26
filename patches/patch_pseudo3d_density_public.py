@@ -18,6 +18,7 @@ Display 的** DisplayMetrics（不是应用的兼容资源），它的公开字�
 
 只改这一段；后续 `instanceof Float` / `> 0` 判断和返回值语义全部保留。
 """
+import io
 import sys
 from pathlib import Path
 
@@ -40,7 +41,7 @@ REPLACEMENT = ('    # 公开字段：从 Display 取得的 DisplayMetrics，其 
 
 def main(root):
     path = Path(root) / "decode" / MODULE / TARGET
-    text = path.read_text(encoding="utf-8", newline="")
+    text = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in text else "\n"
     body = text.replace("\r\n", "\n")
 

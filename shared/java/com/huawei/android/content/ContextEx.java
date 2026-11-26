@@ -49,9 +49,54 @@ public final class ContextEx {
         } catch (Throwable ignored) {
             // Not a Unity process.
         }
-        // 之前还有一条 `ActivityThread.currentApplication()` 反射兜底（hidden API，
-        // targetSdk≥28 上会被拦）。**已删除**：不再有 hidden API 反射。
-        // 两条公开来源都没有就返回 null，调用方按自己的 null 分支处理。
+        // 第三条：ActivityThread.currentApplication()（普通反射）。
+        // 2026-11-03 补回：vrlauncherx 的 process="com.huawei.vrservice" 子进程里
+        // （GlassesTipActivity / VrStateService 都在那儿）没有任何 ContentProvider，
+        // 上面的 setApplication 永远不会被调用，而这个进程恰恰是发布和消费
+        // vr_system 的地方 —— 拿不到 context 就只能退回进程内自造值，门禁永远拦。
+        Context reflected = reflectedApplication();
+        if (reflected != null) {
+            applicationContext = reflected;
+            return reflected;
+        }
+        return null;
+    }
+
+    /**
+     * 用反射取当前进程的 Application。
+     *
+     * 两级：先普通反射（targetSdk<30 的进程通常只告警不拦），被拦再用
+     * meta-reflection —— 通过系统类 Class 持有的 getDeclaredMethod 去取
+     * ActivityThread.currentApplication，绕开调用方的 hidden API 检查。
+     * 这与 VrPlatformCompat 里取 Build.MANUFACTURER 的兜底是同一套写法。
+     */
+    private static Context reflectedApplication() {
+        try {
+            Class<?> activityThread = Class.forName("android.app.ActivityThread");
+            java.lang.reflect.Method current =
+                    activityThread.getDeclaredMethod("currentApplication");
+            current.setAccessible(true);
+            Object application = current.invoke(null);
+            if (application instanceof Context) {
+                return (Context) application;
+            }
+        } catch (Throwable ignored) {
+            // targetSdk>=28 上可能被 hidden API 拦掉，走下面的 meta-reflection。
+        }
+        try {
+            java.lang.reflect.Method getDeclaredMethod = Class.class
+                    .getDeclaredMethod("getDeclaredMethod", String.class, Class[].class);
+            Class<?> activityThread = Class.forName("android.app.ActivityThread");
+            java.lang.reflect.Method current = (java.lang.reflect.Method) getDeclaredMethod
+                    .invoke(activityThread, "currentApplication", new Class[0]);
+            current.setAccessible(true);
+            Object application = current.invoke(null);
+            if (application instanceof Context) {
+                return (Context) application;
+            }
+        } catch (Throwable ignored) {
+            // 两条都不通，交回调用方的 null 分支。
+        }
         return null;
     }
 

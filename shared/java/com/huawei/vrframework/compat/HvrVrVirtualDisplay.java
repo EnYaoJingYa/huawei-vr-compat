@@ -4,6 +4,7 @@ import android.content.Context;
 import android.hardware.display.DisplayManager;
 import android.hardware.display.VirtualDisplay;
 import android.util.Log;
+import android.view.Display;
 import android.view.Surface;
 
 /**
@@ -107,5 +108,30 @@ public final class HvrVrVirtualDisplay {
     /** 当前虚拟屏 id（本进程创建的），未建立时返回 -1。 */
     public static synchronized int displayId() {
         return display == null ? -1 : display.getDisplay().getDisplayId();
+    }
+
+    /**
+     * 按名字找这块屏的 id —— 包括**别的进程**（例如桌面）已经建好的那块。
+     * 找不到（眼镜没插 / 还没建）返回 -1。只按名字找，不猜、不建。
+     */
+    public static int findDisplayId(Context context) {
+        if (context == null) {
+            return -1;
+        }
+        DisplayManager manager =
+                (DisplayManager) context.getSystemService(Context.DISPLAY_SERVICE);
+        if (manager == null) {
+            return -1;
+        }
+        try {
+            for (Display display : manager.getDisplays()) {
+                if (display != null && DISPLAY_NAME.equals(display.getName())) {
+                    return display.getDisplayId();
+                }
+            }
+        } catch (Throwable error) {
+            Log.w(TAG, "cannot enumerate displays: " + error);
+        }
+        return -1;
     }
 }

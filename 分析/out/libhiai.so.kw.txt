@@ -1,0 +1,94 @@
+%s %s(%d)::"GetChannelSizeForFormat failed: ImageForamt %d is not supported."
+%s %s(%d)::"GetSizeScaleForFormat failed: ImageForamt %d is not supported."
+%s %s(%d)::"HIAI_CreateImageBuffer ImageBufferInit failed"
+%s %s(%d)::"HIAI_CreateImageBuffer create imageTensor failed"
+%s %s(%d)::"Set SetCscPara failed, can not convert from %s image to %s by CSC"
+%s %s(%d)::"Set SetCscPara failed, can not convert from %s image to YUV400_U8 by CSC"
+%s %s(%d)::"graphic_buffer's imageFormat [%u] not suppported"
+%s %s(%d)::"header->magic is failed."
+%s %s(%d)::"imageForamt is not equal to the graphic_buffer's imageFormat [%u]"
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_built_model.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_built_model_aipp.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_built_model_def.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_foundation_dl_helper.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_model_builder.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_model_builder_types.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_model_manager.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_model_manager_aipp.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_model_manager_def.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_model_manager_ext.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_model_manager_types.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_model_runtime_manager_share.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_native_handle.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_nd_tensor_buffer.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_nd_tensor_buffer_ext.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_nd_tensor_buffer_legacy_util.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_nd_tensor_desc.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_tensor_aipp_para.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_tensor_aipp_para_legacy.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_tensor_aipp_para_local.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_version.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/cloud_service/cloud_service.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model/model_buffer_reader.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/built_model_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/compatible/AiContext.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/compatible/AiModelBuilder.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/compatible/AiModelDescription.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/compatible/HiAiModelManagerService.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/compatible/MembufferUtil.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/executor/built_model_executor_cache.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/executor/loaded_model_executor_cache.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/executor/model_executor.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/executor/model_executor_cache.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/model_builder_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/model_manager_aipp_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/model_manager_ext_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/model_manager_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/model_manager_initializer.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/tensor/aipp_para_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/tensor/compatible/AiTensor.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/tensor/compatible/AippTensor.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/tensor/compatible/HiAiAippPara.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/tensor/image_tensor_buffer.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/tensor/image_tensor_buffer_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/tensor/image_tensor_buffer_impl.h
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/tensor/local_buffer.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/tensor/nd_tensor_buffer_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/util/base_buffer.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/util/file_util.cpp
+CreateImageTensorBuffer
+CreateImageTensorBufferFromHandle
+HIAI_ImageBuffer_create
+ImageBufferInit
+N4hiai18IImageTensorBufferE
+N4hiai21ImageTensorBufferImplE
+NSt6__ndk114default_deleteIN4hiai21ImageTensorBufferImplEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai12AIPPParaImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai14BuiltModelImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai15ModelBuiderImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai17PrivateHandleInfoEZNS1_31HIAI_CreateAiPPTensorFromHandleEPvPKNS1_15TensorDimensionENS1_20AiTensorImage_FormatEE3$_0NS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai18AIPPParaBufferImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai18NDTensorBufferImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai19ManagerListenerImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai19ModelManagerExtImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai20ModelManagerAippImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai21ImageTensorBufferImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai22DynamicShapeBuiltModelENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+XRGB8888_U8
+ZN4hiai31HIAI_CreateAiPPTensorFromHandleEPvPKNS_15TensorDimensionENS_20AiTensorImage_FormatEE3$_0
+_ZN4hiai12AIPPParaImpl10SetCscParaENS_11ImageFormatENS_15ImageColorSpaceE
+_ZN4hiai12AIPPParaImpl14SetInputFormatENS_11ImageFormatE
+_ZN4hiai23CreateImageTensorBufferEiiiNS_11ImageFormatENS_15ImageColorSpaceEiRNSt6__ndk110shared_ptrINS_18IImageTensorBufferEEE
+_ZN4hiai31HIAI_CreateAiPPTensorFromHandleEPvPKNS_15TensorDimensionENS_20AiTensorImage_FormatE
+_ZN4hiai33CreateImageTensorBufferFromHandleERKNS_12NativeHandleEiiiNS_11ImageFormatENS_15ImageColorSpaceEiRNSt6__ndk110shared_ptrINS_18IImageTensorBufferEEE
+_ZN4hiai8AiTensor4InitEjjjNS_20AiTensorImage_FormatE
+_ZN4hiai8AippPara10SetCscParaENS_20AiTensorImage_FormatENS_9ImageTypeE
+_ZN4hiai8AippPara14SetInputFormatENS_20AiTensorImage_FormatE
+_ZNK4hiai18AiModelDescription12GetFrameworkEv
+_ZTIN4hiai18IImageTensorBufferE
+_ZTSN4hiai18IImageTensorBufferE
+__cxa_pure_virtual
+__dynamic_cast
+accept
+access
+pthread_cond_broadcast

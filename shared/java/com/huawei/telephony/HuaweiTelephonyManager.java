@@ -146,10 +146,13 @@ public final class HuaweiTelephonyManager {
         }
     }
 
-    /** 公开等价物：SubscriptionManager.getSubscriptionId(slotId)。 */
+    /** 公开等价物：SubscriptionManager.getSubscriptionId(slotId)（API 31+，反射调用）。 */
     public int getSubidFromSlotId(int slotId) {
         try {
-            return SubscriptionManager.getSubscriptionId(slotId);
+            Object result = SubscriptionManager.class
+                    .getMethod("getSubscriptionId", int.class).invoke(null, slotId);
+            return result instanceof Integer ? (Integer) result
+                    : SubscriptionManager.INVALID_SUBSCRIPTION_ID;
         } catch (Throwable error) {
             Log.w(TAG, "getSubidFromSlotId failed: " + error);
             return SubscriptionManager.INVALID_SUBSCRIPTION_ID;

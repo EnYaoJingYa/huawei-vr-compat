@@ -28,6 +28,7 @@
 注意：这是「移除依赖缺席平台（Huawei Nearby）的组件」，不是「整体删 service」。
 脚本断言原始行存在且只出现一次，不匹配即报错停止。
 """
+import io
 import sys
 from pathlib import Path
 
@@ -38,7 +39,7 @@ SERVICE_NAME = "com.huawei.vrhandle.VrHandleReconnectService"
 
 def main(root):
     path = Path(root) / "decode" / MODULE / MANIFEST
-    text = path.read_text(encoding="utf-8", newline="")
+    text = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in text else "\n"
     body = text.replace("\r\n", "\n")
 

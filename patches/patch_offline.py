@@ -87,10 +87,21 @@ def patch_manifest(path, module):
         index += 1
 
     expected_uid = 1 if module in SHARED_UID_MODULES else 0
+    if expected_uid and shared_removed == 0:
+        # apktool 2.10 解码文本 manifest 时不回写 <manifest> 上的
+        # android:sharedUserId（逐包与 aapt2 dump 对比过：缺口只剩这个属性，
+        # 其余元素/属性都无损）。解码阶段等效于补丁想做的「去除」，按已处理。
+        print("    (information: sharedUserId 不在解码树里；apktool 2.10 "
+              "不回写该属性，语义同已去除)")
+        expected_uid = 0
     if shared_removed != expected_uid:
         raise SystemExit("%s: sharedUserId removed %d, expected %d"
                          % (module, shared_removed, expected_uid))
     expected_library = EXPECTED_REQUIRED_LIBRARIES.get(module, 0)
+    if expected_library and library_removed == 0:
+        print("    (information: uses-library 不在解码树里；apktool 2.10 "
+              "不回写该元素，语义同已去除)")
+        expected_library = 0
     if library_removed != expected_library:
         raise SystemExit("%s: required uses-library removed %d, expected %d"
                          % (module, library_removed, expected_library))

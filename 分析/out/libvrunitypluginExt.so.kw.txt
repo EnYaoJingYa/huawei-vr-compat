@@ -1,0 +1,32 @@
+ imaginary
+.eh_frame
+.eh_frame_hdr
+Deleted virtual function called!
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+Pure virtual function called!
+St8bad_cast
+_ZN12HvrFramework11GetInstanceEv
+_ZN20HvrSportsDeviceClass7GetPoseEiP17_SportsDevicePose
+_ZNKSt8bad_cast4whatEv
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTISt8bad_cast
+_ZTSSt8bad_cast
+_ZTVSt8bad_cast
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__uuidof(
+const_cast
+dynamic_cast
+non-virtual thunk to 
+reinterpret_cast
+static_cast
+std::bad_cast
+u8__uuidoft
+u8__uuidofz

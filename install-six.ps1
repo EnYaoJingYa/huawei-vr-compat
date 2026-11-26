@@ -1,4 +1,4 @@
-<#
+﻿<#
 安装七个模块，并把「通用安卓不再自动给、但原版依赖系统 UID 天然拥有」的授权补齐。
 
 文件名保留 install-six.ps1 是因为前面几轮的文档与习惯都指向它；现在装的是七个包
@@ -49,9 +49,16 @@ $packages = @(
 
 function Invoke-Adb {
     param([Parameter(ValueFromRemainingArguments = $true)][string[]]$Arguments)
-    $output = & $Adb @Arguments 2>&1
+    # Windows PowerShell 5.1 + 2>&1：adb 打到 stderr 的行会被包成
+    # NativeCommandError，并按 ErrorActionPreference=Stop 升级成 terminating
+    # error，根本走不到下面的退出码判断。原工作区是 PS7，无此问题。
+    # 这里临时放开 EAP，并把 stderr 行降级成普通文本；失败由退出码兜底。
+    $prevEap = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    $output = @(& $Adb @Arguments 2>&1 | ForEach-Object { "$_" })
+    $ErrorActionPreference = $prevEap
     if ($LASTEXITCODE -ne 0) {
-        throw "adb $($Arguments -join ' ') 失败：$output"
+        throw "adb $($Arguments -join ' ') 失败：exit $LASTEXITCODE`n$($output -join "`n")"
     }
     return $output
 }

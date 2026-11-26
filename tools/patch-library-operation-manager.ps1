@@ -1,4 +1,4 @@
-<#
+﻿<#
 编译并运行 tools/PatchLibraryOperationManager.cs，给原版 Unity 程序集打
 「LibraryCanvasManager.InitData 序列化字段兜底取单例」的小补丁。
 背景见那个 .cs 顶部的注释。

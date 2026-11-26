@@ -1,0 +1,1938 @@
+    C flags (Debug):             -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -Wno-unused-value -Wno-parentheses-equality  -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Qunused-arguments    -fvisibility=hidden -fvisibility-inlines-hidden -O0 -fno-limit-debug-info -fno-experimental-isel   -DDEBUG -D_DEBUG
+    C flags (Release):           -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -Wno-unused-value -Wno-parentheses-equality  -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Qunused-arguments    -fvisibility=hidden -fvisibility-inlines-hidden -O2 -DNDEBUG   -DNDEBUG
+    C++ flags (Debug):           -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-unused-value -Wno-parentheses-equality  -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Qunused-arguments    -fvisibility=hidden -fvisibility-inlines-hidden -O0 -fno-limit-debug-info -fno-experimental-isel   -DDEBUG -D_DEBUG
+    C++ flags (Release):         -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -Wno-unused-value -Wno-parentheses-equality  -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Qunused-arguments    -fvisibility=hidden -fvisibility-inlines-hidden -O2 -DNDEBUG   -DNDEBUG
+    Timestamp:                   2021-10-26T09:29:47Z
+    To be built:                 calib3d core features2d flann imgcodecs imgproc video
+  Parallel framework:            none
+ exceeds maximum available from the threading model Ceres 
+ imaginary
+ kfPoses(
+!base64decoder.endOfStream()
+%,KeyFrameRetrieval::ProcessData
+%d camera is invalid
+%s %s:ID %u, average IMU error: angleErr %f posErr %f velErr %f
+%s %s:ID %u, last IMU error: angleErr %f posErr %f velErr %f
+%s Module Frame Map is Empty
+%s module new privte camera data failed
+%s module prev frame is not need add to local window
+(CV_MAT_DEPTH(_imagePoints1->type) == CV_32F || CV_MAT_DEPTH(_imagePoints1->type) == CV_64F) && ((_imagePoints1->rows == pointsTotal && _imagePoints1->cols*cn == 2) || (_imagePoints1->rows == 1 && _imagePoints1->cols == pointsTotal && cn == 2))
+(int)imagePoints1.total()
+(int)imagePoints2.total()
+), kfPoseSize(
++g?=TPlane=display dpt param:min_d_m_mm:%f %hu, max_d_m_mm:%f %hu %hu, time_intv:%lf
+.  Bounding to maximum number available.
+../../../algorithm/Slam/../../../open_source/opencv/opencv-4.5.2/modules/core/include/opencv2/core/mat.inl.hpp
+.eh_frame
+.eh_frame_hdr
+/usr1/productcode/vendor/open_source/ceres_solver/ceres_solver-2.0.0/internal/ceres/block_random_access_diagonal_matrix.cc
+/usr1/productcode/vendor/open_source/ceres_solver/ceres_solver-2.0.0/internal/ceres/block_random_access_sparse_matrix.cc
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/calibration.cpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/compat_ptsetreg.cpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/fundam.cpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/levmarq.cpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/ptsetreg.cpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/undistort.dispatch.cpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/undistort.simd.hpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/usac/../usac.hpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/usac/essential_solver.cpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/usac/estimator.cpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/usac/ransac_solvers.cpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/usac/sampler.cpp
+/usr1/productcode/vendor/open_source/opencv/opencv-4.5.2/modules/calib3d/src/usac/utils.cpp
+0. pnp get pose: curID(%u), curT(%f), candiID(%u), candiT(%f), num2d3dMatches(%d) useG(%d)
+1&MTracker==SetTrackingParams m_giState or m_solver is nullptr
+10IMUPreProc
+11SlamManager
+15SmoothPoseState
+15TrackingFactory
+17FeaTrackerFactory
+17TrackingInterface
+4N22HW_SLAM_MAPPING_SOLVER18MiniCeresVisonEdgeE
+;GetGravityResult::FindMatchIMUData p_cine is null
+;map(%d) accept frame %u
+==DenseFeaTracker==, Alloc Successed!
+==FRAMEDATA==DDK : %d cam feature count is less zero,count=%d
+==FRAMEDATA==DDK : %d cam feature count is zero
+==FRAMEDATA==DDK : feature proc type param is error,feaProcType=%d,feaType=%d
+==FRAMEDATA==DDK : feature upload head error
+==FRAMEDATA==DDK : feature value param is empty,pos(%p),desp(%p),oct(%p),ag(%p),resp(%p),ps(%p)
+==FRAMEDATA==DDK : upload feature pack no error,cur_pack_no = %d
+==FRAMEDATA==DDK : upload feature time_stamp error,cur_time_stamp = %lf
+==FRAMEDATA==DDK id(%d),t(%lf): ddk is busy
+==FRAMEDATA==Get6Dof : error pose,poset:%lf,dispt:%lf
+==FRAMEDATA==Get6Dof : get suitable 6dof, dispTime:%lf s, sleepTime:%d ms, sleepTimeTh:%d ms,            rPage:%d, ePage:%d, spage:%d, lstpage:%d, lts:%lf, rts:%lf, lp:%u, rp:%u
+==FRAMEDATA==Get6Dof : t_disp=%lf, t_pose=%lf, translation: %.4f, %.4f, %.4f, quaternion: %.4f,                %.4f, %.4f, %.4f, isValid: %d
+==FRAMEDATA==IMG : upload img is error, data:%p, width:%d, height:%d
+==FRAMEDATA==IMG : upload img lost, cur_pack_no : %d,lst_pack_no = %d
+==FRAMEDATA==IMG : upload img time_stamp error,cur_time_stamp:%lf,lst_time_stamp:%lf
+==FRAMEDATA==IMU :error timestamp,lstT=%lf,curT=%lf
+==FRAMEDATA==depth : depth upload head error
+==FRAMEDATA==depth : packsize is error, packsize=%u
+==FRAMEDATA==depth : packsize is error,needsize=%d,packsize=%d
+==FRAMEDATA==depth : upload depth pack no error,cur_pack_no = %d
+==FRAMEDATA==depth : upload depth time_stamp error,cur_time_stamp = %lf
+==FeaTracker Evaluation== FrameID: %u TrackID: %d Tracklens: %f TrackFrames: %d
+==FeatureTracker== FrameID: %u, Total and not Refine Point Number: %zu, %d
+==FeatureTracker==AddFeatures elapsed time: %f ms
+==FeatureTracker==AddMatchFeatures elapsed time: %f ms
+==FeatureTracker==BackwardOpticalFlow elapsed time: %f ms
+==FeatureTracker==BinaryImage elapsed time: %f ms
+==FeatureTracker==BuildPyramid1 elapsed time: %f ms
+==FeatureTracker==BuildPyramid4 elapsed time: %f ms
+==FeatureTracker==CheckBackwardOpticalFlow elapsed time: %f ms
+==FeatureTracker==ForwardOpticalFlow elapsed time: %f ms
+==FeatureTracker==Framework elapsed time: %f ms
+==FeatureTracker==GetDDKFeatures elapsed time: %f ms
+==FeatureTracker==GetStereoFlag== VIO State: %d, Mapping State: %d, Stereo State:%d
+==FeatureTracker==IMUIntegration elapsed time: %f ms
+==FeatureTracker==MultiRANSAC elapsed time: %f ms
+==FeatureTracker==ProcLastImg elapsed time %f ms
+==FeatureTracker==UndistortKLTPoints elapsed time: %f ms
+==IMG==SetParams:error image type,imgType:%d
+==InitLandmarks, new Slam feat Num: %zu, lmkStkCnt %d
+==KdTree FindnearestKpoints faild==, vecIndex size or trackInliers size is wrong
+==PinHoleCamera==CreateTable== Cam%d distort Table
+==PinHoleCamera==CreateTable== Cam%d undistort Table
+==PinHoleCamera==CreateTable== Cam%d undistort size: %zu, distort size: %zu
+==PoseSmooth==PredictPose==SetTrackingPose== timstamp(%f): new set smooth pose timstamp(%f).
+==SetTwinsTrackingStep== timestamp(%f), TrackState(%d) LoadMap(%d) update VRGlass Smooth pose
+==StatesDetector==CheckNeedResetByDropFrame, ID(%d), t(%f) : imuSize: %d ErrSize %zu ErrCnt: %d err: %f         diffVelNorm: %f featureTrackerIsGood: %d dropFrameTooManyFrames: %d NeedReset: %d
+==StatesDetector==CheckShade, ID(%d), t(%f) :  camId %d, m_isCameraShade %d, m_cameraShadeCnt %d,                             twinsTrackedFeaTemp %d, m_kltFeatNums %d
+==StatesDetector==CheckShakeFrame, ID(%d), t(%f) :  check shake freq, fftGyroResult.x() = %lf, fftGyroResult.y() = %lf, fftAccResult.x() = %lf,                 fftAccResult.y() = %lf, shakeStepSize %d, m_isShakeFrame %d, calFreqTime %lf
+==StatesDetector==CheckVIOStateBadOfVR, ID(%d), t(%f) : vioStateVRBadCounter: %d, curFrameVIOUpdateFeaNum: %d, vioIsStateBadVR: %d
+==StatesDetector==CheckVIOTrackBad, ID(%d), t(%f) : vioTrackBadCounter: %d, curFrameVIOUpdateFeaNum: %d, vioIsTrackBad: %d
+==StatesDetector==JudgeLost , ID(%d), t(%f) :  isShade %d, isShake %d, isImuDelay %d, m_vioIsTrackBad %d,                    m_needResetByDropFrame %d, m_vioIsStateBadVR %d
+==StatesDetector==JudgeTriggerVPSNotCloseDisplay, ID(%d), t(%f) : m_isVIOStatePoorFrame %d,         m_vioStatePoorCnt %d, m_isVIOStatePoor %d, isLostDetector %d, isNeedVPS %d, m_normalTrack %d
+==StatesDetector==ProcessVioLostNeedReloc, ID(%d), t(%f) :  m_isNeedReloc %d, m_isShakeFrame %d, m_deviceShakeCnt %d,        m_isCameraShade[0] %d, m_cameraShadeCnt %d, m_abnormalStateType %d, isShadeByLaserOrImg = %d(10-laser, 15-img),        imudalay = %d, twinsTrackedFeaTemp %d, m_kltFeatNum %d, m_beforeTrackedFeatNum %lf, m_isVIOlost %d,         m_countForLost %d m_normalMotionFlag %d, m_isLaserNormal %d, laser[0] %d, IsCameraShade() %d
+==StatesDetector==SetCameraAndIMUFrequency, ID(%d), t(%f) : cameraFPS: %f imuFPS: %f maxIMUSizeInOneFrame: %d         m_maxReprojectErrorBufferSize: %zu
+==StatesDetector==SubCheckShade, ID(%d), t(%f) :  camId %d, isCameraShadeByEntropy %d isCameraShade %d,             m_isCameraShade %d twinsTrackedFeaTemp %d m_kltFeatNums %d
+==StatesDetector==SubCheckShade, ID(%d), t(%f) :  camId %d, isShadeByGrey %d, isCameraShadeByEntropy %d              isCameraShade %d, m_isCameraShade %d m_aveVel %f m_kltFeatNum %d,  feaTrackeLen %d             m_isVelCovTooBigForShade %d twinsTrackedFeaTemp %d m_cameraShadeCnt %d m_cameraShadeCnt-last %d
+==StatesDetector==SubCheckShade, ID(%d), t(%f) :  isShadeByGrey %d, m_isCameraShade[0] %d m_aveVel %f             m_kltFeatNum %d, feaTrackeLen %d m_isVelCovTooBigForShade %d
+==StatesDetector==checkShadeByGrayHisto, ID(%d), t(%f) : image gray statics, camId %d zeroPixelNum = %d,               grayStatics = %d, maxNumOfGray = %d maxNumOfGrayIdx = %d, maxNumOfGray2 = %d, maxNumOfGrayIdx2 = %d
+==Tracking Thread==, RecvDataFromVPS, uploadtTs:(%f), downloadTs:(%f) lstVps(%f) couplingType %d
+==Vio==AddImuFactor elapsed time: %f ms
+==Vio==AddMaginLandmarkFactor elapsed time: %f ms
+==Vio==ProcessFrame elapsed time: %f ms
+==Vio==SetPoseToPoseSmooth elapsed time: %f ms
+==mp==interface==GetPoints : time: %f, pointNum:%d; translation: %.4f, %.4f, %.4f,                quaternion: %.4f, %.4f, %.4f, %.4f
+==mp==interface==GetPoints : time: %lf, pointNum:%d; translation: %.4f, %.4f, %.4f,                quaternion: %.4f, %.4f, %.4f, %.4f
+==posesmooth==ID(%d),t(%f),step stamp %f not equal tracking stamp %f
+==posesmooth==SetTwinsTrackingPose== timestamp(%f), dure time: %f
+==tracking== , ID(%d), t(%f) :  vio lost and reset.
+==tracking== , ID(%d), t(%f) : set poseSmoothConvergeFlag %d
+==tracking==, ID(%d), t(%f) : PoseToSmooth 1 twins pose %lf, %lf, %lf, %lf, %lf, %lf, %lf, reloc: %lf, %lf, %lf,            %lf, %lf, %lf, %lf, reloc m_relocSuccessTimeStamp %lf
+==tracking==, ID(%d), t(%f) : PoseToSmooth 2 twins pose and reloc %lf, %lf, %lf, %lf, %lf, %lf, %lf, reloc:                 %lf, %lf, %lf, %lf, %lf, %lf, %lf
+==tracking==, ID(%d), t(%f) : PoseToSmooth map %lf, %lf, %lf
+==tracking==, ID(%d), t(%f) : PoseToSmooth twins pose after %lf, %lf, %lf, %lf, %lf, %lf, %lf
+==tracking==, ID(%d), t(%f) : PoseToSmooth twins pose before %lf, %lf, %lf
+==tracking==, ID(%d), t(%f) : PoseToSmooth twins pose before %lf, %lf, %lf, %lf, %lf, %lf, %lf
+==tracking==, ID(%d), t(%f) : PoseToSmooth vio %lf, %lf, %lf
+==tracking==, ID(%d), t(%f) : SendVIOInfoToLBA, PoseToSmooth reloc %lf, %lf, %lf, m_relocSuccessTimeStamp %lf
+==tracking==, ID(%d), t(%f) : SendVIOInfoToLBA2, PoseToSmooth reloc %lf, %lf, %lf, m_relocSuccessTimeStamp %lf
+==tracking==, ID(%d), t(%f) : reloc: %lf %lf %lf %lf %lf %lf %lf
+==tracking==, ID(%d), t(%f) : vio %lf, %lf, %lf map %lf, %lf, %lf
+==tracking====SetTrackingState, ID(%d), t(%f) : tracking_needRelocFlag = %u, needRelocationFlag = %u
+==tracking==AddMappingMeasure, ID(%d), t(%f) : m_VIOMappingMatchFrameStateID size %zu
+==tracking==AverageFiltering, ID(%d), t(%f) : bufferSize: %zu, p: %f, %f, %f, q: %f, %f, %f, %f, Gp: %f, %f, %f, Gq: %f, %f, %f, %f
+==tracking==AverageFilteringWithVps, ID(%d), t(%f) : needCorrect: %d, lastTimeCoupMapping2: %lf
+==tracking==AverageFilteringWithVps, ID(%d), t(%f) : poseHasGreatChange: %d
+==tracking==BackendMap is not valid, TriggerReloc2 failed, ID(%d), t(%f) : request VPS: %d
+==tracking==CacheIMUData, ID(%d), t(%f) : cache IMU data, num = %zu
+==tracking==CalcuMagInitialYaw, ID(%d), t(%f) : detalYaw %lf magYaw %lf stateYaw %lf gyroYaw %lf
+==tracking==CalcuQwiForMagnetometer, ID(%d), t(%f) : state yaw %lf magyaw %lf
+==tracking==CheckIfAllEstimatedParasReasonable, ID(%d), t(%f) : %d %d %d %d.
+==tracking==CheckMemberValid , ID(%d), t(%f) : NewVIO fail, vio adress is null %d.
+==tracking==CheckMemberValid, ID(%d), t(%f) : vio is null.
+==tracking==CheckNeedKeyFrame, ID(%d), t(%f) : needInsertKeyFrame %d, is validKeyFeme %d m_validKeyFrameNum %d,                 parallaxaAvg %f, featuresNum %d
+==tracking==CheckNeedParaUpdate==CheckCameraExtrinsicOverTh, ID(%d), t(%f) : do CameraExtrinsic Para update ,                residual = %lf, %lf, %lf, %lf, %lf, %lf
+==tracking==CheckNeedParaUpdate==CheckCameraIntrinsicOverTh, ID(%d), t(%f) : do CameraIntrinsic Para update ,                residual = %lf, %lf, %lf, %lf, %lf, %lf, %lf, %lf
+==tracking==CheckNeedParaUpdate==CheckImuIntrinsicOverTh, ID(%d), t(%f) : do ImuIntrinsic Para update , residual = , %lf, %lf, %lf
+==tracking==CompensateOnlineParaInEKF==doCameraExtrinsicCalib, ID(%d), t(%f) : do CameraExtrinsic Para update, is Use info txt measure = %d
+==tracking==CompensateOnlineParaInEKF==doImuIntrinsicCalib, ID(%d), t(%f) : do ImuIntrinsic Para update, is Use info txt measure = %d
+==tracking==DetectRelocationStartup, ID(%d), t(%f) : m_curTrackingState:%d, processing time:%lf, return
+==tracking==DetectRelocationStartup, ID(%d), t(%f) : m_needRelocationFlag:%d, m_lstTrackingState:%d
+==tracking==FeedbackManager==FusePose, ID(%d), t(%f) : newestMapFrmID: %d, local pose Tmw dp: %f, %f, %f, dq: %f, %f, %f, %f
+==tracking==FeedbackManager==FusePose, ID(%d), t(%f) : newestMapFrmID: %d, newestGlobalTimeStamp: %f, dp: %f, %f, %f, dq: %f, %f, %f, %f,                   fuseOnline %d, fuseOffline %d, everHasOfflineResult %d
+==tracking==FixCameraExtraParaFor6Dof, ID(%d), t(%f) : Use offline qic and pic!
+==tracking==FixCameraExtraParaFor6Dof, ID(%d), t(%f) : Use prior qic and pic!
+==tracking==FrameManager, ID(%d), t(%f) :  dist is too far.
+==tracking==FrameManager, ID(%d), t(%f) : line 3D points --- dist %f lineLen %f %f
+==tracking==FrameManager--Line reproject dist, ID(%d), t(%f) : actual errSize: %zu triFeatSize %d triFailSize %d 
+==tracking==FrameManager--Line reproject dist, ID(%d), t(%f) : actual errSize: %zu triSize %d failSize %d m_reProjDist: %f %f, %f, %f, %f, %f, %f, %f.
+==tracking==FrameManager--SortFeaturesToReProjErr, ID(%d), t(%f) : actual errSize: %zu; m_reProjErr: %f, %f, %f, %f.
+==tracking==FrameManager--SortFeaturesToReProjErr, ID(%d), t(%f) : m_reProjErrCheck; m_countSmallReprojErr, m_countLooseReprojErr: %f; %d, %d.
+==tracking==InitBaInitializer, ID(%d), t(%f) : m_pMappingInterface is null
+==tracking==InitialVIO, ID(%d), t(%f) : First success frame
+==tracking==InitialVIO, ID(%d), t(%f) : Initial fail
+==tracking==InitialVIO, ID(%d), t(%f) : m_pInitializer null
+==tracking==InitialVIO, ID(%d), t(%f) : success to initial, gravity: %f, %f, %f, vel: %f, %f, %f
+==tracking==Initializer Run, ID(%d), t(%f) : init imu is empty
+==tracking==Initializer, ID(%d), t(%f) :  Empty static imuBuf!
+==tracking==Initializer, ID(%d), t(%f) :  end init imu. imuLen: %d.
+==tracking==Initializer, ID(%d), t(%f) :  start init imu.
+==tracking==Initializer, ID(%d), t(%f) : SetImuStaticThDynamic: %d
+==tracking==Initializer, ID(%d), t(%f) : after, pre:%zu, mid:%zu, post:%zu, static:%u
+==tracking==Initializer, ID(%d), t(%f) : ambiguous speed, one more image, meanAcc:%lf, meanGyro:%f
+==tracking==Initializer, ID(%d), t(%f) : avgGrey:%d
+==tracking==Initializer, ID(%d), t(%f) : before, pre:%zu, mid:%zu, post:%zu, static:%u
+==tracking==Initializer, ID(%d), t(%f) : final, pre:%zu, mid:%zu, post:%zu, static:%u
+==tracking==Initializer, ID(%d), t(%f) : meanAccNorm gx=%lf, gy=%lf, gz=%lf,                           std_gx=%lf, std_gy=%lf, std_gz=%lf, gyroNorm:%f 
+==tracking==Initializer, ID(%d), t(%f) : meanGyroNorm ---- ax=%lf, ay=%lf,                           az=%lf, std_ax=%lf, std_ay=%lf, std_az=%lf, accNorm:%f ---
+==tracking==Initializer, ID(%d), t(%f) : midSeg initial:%u
+==tracking==Initializer, ID(%d), t(%f) : no pre, no mid, no post:%u
+==tracking==Initializer, ID(%d), t(%f) : postSeg initial:%u
+==tracking==Initializer, ID(%d), t(%f) : preSeg initial:%u
+==tracking==Initializer, ID(%d), t(%f) : reset baInit.
+==tracking==Initializer, ID(%d), t(%f) : reset vio initial
+==tracking==Initializer, ID(%d), t(%f) : start vio Initial
+==tracking==Initializer, ID(%d), t(%f) : static image initial:%u
+==tracking==Initializer, ID(%d), t(%f) : static image more %d:%zu
+==tracking==Initializer, ID(%d), t(%f) : stdAccNorm %lf, stdGyroNorm %lf, m_staticIMUNumTh:%d, 
+==tracking==IntegrateGyro, ID(%d), t(%f) : m_gyroYaw %lf gyroData %lf %lf %lf m_stateYaw %lf
+==tracking==IsStaticforIMUBuf, ID(%d), t(%f) :  accNorm %lf gyroNorm %lf
+==tracking==JudgeIfReliableState, ID(%d), t(%f) : isBadFrame %d isBaInited %d isBestReproj %d isBetterReproj %d             isPassableState %d numOfSmallReprojErr %d m_countGoodVisualFrames %d isUpdatedFeaturesOk %d             isPassableFrame %d dangerRe %d numOfMotionFrames %d 
+==tracking==JudgeIfReliableState, ID(%d), t(%f) : isMasterTracker %d m_numLongTracks %d m_keepBadVisualFrames             %zu m_isStateReliable %d
+==tracking==JudgeIfStateStableWithLongerTime, ID(%d), t(%f) : m_countLongTrackFrames, m_isStateReliable: %d, %d.
+==tracking==JudgeLoop, ID(%d), t(%f) : YawUpdate %d distance %lf magyaw %lf gyroYaw %lf magNormDetal %lf
+==tracking==JudgeResetVIOBeforeConverge, ID(%d), t(%f) : beforeConverge reset VIO 2
+==tracking==JudgeResetVIOBeforeConverge, ID(%d), t(%f) : numofTriFail %d triFailRatio %d UpdatedFeaOk %d
+==tracking==LandmarkManager==AddBestFeatureVecWithDepth, ID(%d), t(%f) : new feature(%zu) Add Feature to vio Quit
+==tracking==LoadMap, ID(%d), t(%f) : stop reloc after failure.
+==tracking==LoadMap, ID(%d), t(%f) : trigger Reloc
+==tracking==MTracker -- CompensateBiasInEKF-- , ID(%d), t(%f) : %s, Prior biasinfo: Acb = %lf, %lf, %lf; gybM = %lf, %lf, %lf
+==tracking==MTracker -- CompensateBiasInEKF-- , ID(%d), t(%f) : CompensateBias error %lf noiseTh %lf 
+==tracking==MTracker, ID(%d), t(%f) : CheckIfMotionFrame----parallax: %f
+==tracking==MTracker, ID(%d), t(%f) : CheckIfMotionFrame: %d, m_countMotionFrames: %d
+==tracking==MTracker--JudgeIfEnoughMotionV1, ID(%d), t(%f) : m_isMasterTracker; numOfMotionFrames, numOfSmallReprojErr, isStateReliable: %d; %d, %d, %d.
+==tracking==MTracker--JudgeIfEnoughMotionV2, ID(%d), t(%f) : m_keepBadVisualFrames %zu beforeConverge reset VIO 1
+==tracking==MTracker=====m_cameraExtrin, ID(%d), t(%f) :  camID(%zu) qic: %f, %f, %f, %f; pic: %f, %f, %f
+==tracking==MTracker=====m_cameraIntrin, ID(%d), t(%f) :  camID(%zu) %f, %f, %f, %f, %f, %f, %f, %f, %f, %f
+==tracking==MTracker====ComputeJacobian, ID(%d), t(%f) : count frame %d, updated features number: %d,             reProjErrTheshold %lf, total features num: %d; m_numFeasTriagled: %d, m_isGoodVisualFrame: %d;             failedNum: %d, m_triFailRatio %d convergedTwins: %d, m_isWeakFrame: %d m_badCovisualFeatureNum %d
+==tracking==MTracker====GetCameraIntrinsicsOnline, ID(%d), t(%f) :  stateValid(%d).
+==tracking==MTracker==ComputeJacobianForLandmark, ID(%d), t(%f) : Triangulation prev avg cost: %f, last cost: %f, avg depth: %f, tracks num: %d
+==tracking==MTracker==ComputeMFJacobian, ID(%d), t(%f) : updated features : %d, total features : %zu, failed: %d, aveReproErr: %f , elapsed time: %f ms
+==tracking==MTracker==DescriptorFeatureUpdate, ID(%d), t(%f) : relo %d, processTime: %1f
+==tracking==MTracker==GetVioMapInfo, ID(%d), t(%f) : IMU Data Size %zu 
+==tracking==MTracker==GetVioMapInfo, ID(%d), t(%f) : IMU Data Size: %zu, startTime: %f, endTime: %f
+==tracking==MTracker==SetBaInitCov, ID(%d), t(%f) : done!
+==tracking==MTracker==SetRSConvergeStatus, ID(%d), t(%f) : EKF Globale Converge
+==tracking==MTracker==SetRSConvergeStatus, ID(%d), t(%f) : EKF RS Converge
+==tracking==MTracker==SetRSConvergeStatus, ID(%d), t(%f) : EKF RS Init
+==tracking==MTracker==SetRSVelCorrection, ID(%d), t(%f) : EKF RS Vel Correction Start.
+==tracking==MTracker==SetRSVelCorrection, ID(%d), t(%f) : EKF RS Vel Correction Stop.
+==tracking==MTracker==SetWinFrameState, ID(%d), t(%f) : ba init windows size: %zu
+==tracking==MTracker==SetWinFrameState, ID(%d), t(%f) : g: %f, %f, %f, acc bias: %f, %f, %f, gyro bias: %f, %f, %f
+==tracking==MTracker==SetWinFrameState, ID(%d), t(%f) : set slinding windows state, frame id: %lu, qRIi: %f, %f, %f, %f, pRRIi: %f, %f, %f %lf
+==tracking==MTracker==SetWinFrameState, ID(%d), t(%f) : winFrames size: %d
+==tracking==MagProcess, ID(%d), t(%f) : oriQ %lf %lf %lf %lf UpQ %lf %lf %lf %lf UpP %lf %lf %lf oriP %lf %lf %lf
+==tracking==MagnetometerUpdate, ID(%d), t(%f) : index %d yawMeas %lf afteryaw %lf            statecomyaw %lf stateOriyaw %lf res %lf eulerDeltaQ %lf errorState %lf kMagnet %lf covMagnet %lf             deltaRation %lf maxDetalYaw %lf precov %lf update %lf 
+==tracking==NewMagnetometerMap, ID(%d), t(%f) : pose %lf %lf %lf staYaw %lf magYaw %lf gyroYaw %lf index %d            magData %lf %lf %lf %lf isVpsMap %d
+==tracking==NotifyDemo, ID(%d), t(%f) : poseSmoothConvergeFlag:%d, backendPoseIsReady:%d, needNotifyDemo:%d
+==tracking==PFTAnchorManagerSe, ID(%d), t(%f) : isInitialized(%d) vio(%.5f %.5f %.5f) rotT(%.5f %.5f %.5f)
+==tracking==PFTAnchorManagerSe, ID(%d), t(%f) : rotationTrack.Predict(%.3fms)
+==tracking==ParaInfo::, ID(%d), t(%f) : Pause Success
+==tracking==PrintVIOInfoToLBA, ID(%d), t(%f) : Send Pose To LBA, gravity: %s
+==tracking==PrintVIOInfoToLBA, ID(%d), t(%f) : m_curFramHistoryPoseInWindows, vio pose:%lf, %lf, %lf,                quat: %lf, %lf, %lf, %lf, stateID :%lu
+==tracking==ProcessData, ID(%d), t(%f) : Receive VPS, VIO set current frame as KeyFrame and send to Mapping
+==tracking==ProcessData, ID(%d), t(%f) : request VPS, VIO set current frame as KeyFrame and send to Mapping
+==tracking==ProcessData, ID(%d), t(%f) : start rotation track
+==tracking==ProcessData, ID(%d), t(%f) : vio request VPS due to resume
+==tracking==ProcessData==PreProcessNewMap, ID(%d), t(%f) : need reloc %d or resume %d, display off map
+==tracking==ProcessImageForZeroMotion, ID(%d), t(%f) : zeroratioTh %lf featurenum %d %d ration %lf 
+==tracking==ProcessLocalPose, ID(%d), t(%f) : Current DeviceID: %d, p: %f, %f, %f, q: %f, %f, %f, %f, Lp: %f, %f, %f, Lq: %f, %f, %f, %f
+==tracking==ProcessLostByResume, ID(%d), t(%f) : camera is shade(%d) or img is too few feature, reset vio.
+==tracking==ProcessLostByVioLost, ID(%d), t(%f) : IsStateWeak: %d, IsVelCovTooBig: %d, needCorrectVIO: %d,                 needResetByImuDelay: %d, needResetByDropFrame: %d  vio is shade too long or shake violently, reset vio
+==tracking==ProcessMapStateMsg, ID(%d), t(%f) : mapFrmID: %d, Vp: %f, %f, %f, Vq: %f, %f, %f, %f, poseHasGreatChange %d
+==tracking==ProcessMapStateMsg, ID(%d), t(%f) : mapFrmID: %d, p: %f, %f, %f, q: %f, %f, %f, %f, Gp: %f, %f, %f, Gq: %f, %f, %f, %f, match %d
+==tracking==ProcessTwinsVIO, ID(%d), t(%f) : gravityTracking gravity: %f, %f, %f.
+==tracking==ProcessVIOLost, ID(%d), t(%f) :  m_isNeedResume %d, m_isDisplayOff %d, isReadyForDelayRelocation %d
+==tracking==ProcessVIOLost, ID(%d), t(%f) : isTriggerVPS: %d 
+==tracking==ProcessVIOLost==Reloc, ID(%d), t(%f) :  vio request Reloc due to vio lost,                        hasMap: %d, m_needRotationTrack %d
+==tracking==ProcessVIOLost==Resume, ID(%d), t(%f) :  resume by %s, m_resumeNeedVPS %d
+==tracking==ProcessVIOLost==VPS, ID(%d), t(%f) :  vio don't request VPS
+==tracking==ProcessVIOLost==VPS, ID(%d), t(%f) :  vio request VPS due to vio lost:%d
+==tracking==ProcessVIOLost==Vio, ID(%d), t(%f) : camera is shade %d beforeConverge reset VIO 3
+==tracking==ProcessVIORelocation, ID(%d), t(%f) : globalLocSuc( %d ), m_relocByVPS( %d ), m_needDelayVPS( %d )
+==tracking==ProcessVIORelocation, ID(%d), t(%f) : m_relocSuccessFlag : %d 
+==tracking==ProcessVIORelocation, ID(%d), t(%f) : set m_relocByVPS( %d )
+==tracking==ProcessVioBeforeConverge, ID(%d), t(%f) : ResetVIO done!
+==tracking==PushFrameToAnchorManager, ID(%d), t(%f) : isInitialized(%d) vio(%.5f %.5f %.5f)
+==tracking==PushIMUDataToLBA, ID(%d), t(%f) : m_curFrameIMUBuffer size : %zu 
+==tracking==RelocByVPS, ID(%d), t(%f) : isReadyRequestVPS: %d, m_needDelayVPS: %d, poseSmoothConvergeFlag: %d
+==tracking==RequestVpsByAutoTimer, ID(%d), t(%f) :  vio request VPS due to Time Gap: %d, curTime: %lf
+==tracking==RequestVpsByAutoTimer, ID(%d), t(%f) :  vio update VPS request Time: %lf
+==tracking==RequestVpsByAutoTimer, ID(%d), t(%f) : vioLostOrRelocStarting %d, goodState %d, , poseSmoothConverge %d, readyForRequestVPS %d
+==tracking==ResetLatestParasInfoForImu, ID(%d), t(%f) : enter 
+==tracking==ResetVIO==PrepareForVioAndMap, ID(%d), t(%f) :  new vio fail.
+==tracking==SendVIOInfoToLBA, ID(%d), t(%f) : Send Pose To LBA : ConvergeFlag:%d, m_isCameraShade:%d ,            LostFlag:%d, isKF:%d, m_isNeedReloByShade : %d
+==tracking==SendVIOInfoToLBA, skip because mapIsLoaded
+==tracking==SendVIOInfoToLBA2, ID(%d), t(%f) : Send Pose To LBA : ConvergeFlag:%d, m_isCameraShade:%d ,            LostFlag:%d, isKF:%d, m_isNeedReloByShade : %d
+==tracking==SendVIOInfoToLBA2, ID(%d), t(%f) : hasConverge:%d, m_triggerReloc2:%d, m_sendFrameToMapping2:%d
+==tracking==SendVIOInfoToLBA2, ID(%d), t(%f) : isDisplayLost:%d, isNeedReloc:%d ,               isNeedDelayRelocation:%d, isTriggerReloc:%d
+==tracking==SetPoseToPoseSmooth, ID(%d), t(%f) :  m0m1*twins frame posG = %lf %lf %lf quatG = %lf %lf %lf %lf            pos = %lf %lf %lf m_quat = %lf %lf %lf %lf vel = %lf %lf %lf gravity = %lf %lf %lf
+==tracking==SetTrackedInfo, ID(%d), t(%f) :  camID(%d), kltAveTrackedFeaLen %f, kltTrackedFeaForVIO %d,             m_vioStateVelNorm %f
+==tracking==SetTrackingParams
+==tracking==StateDetector--SetNeedReInit, ID(%d), t(%f) : m_isNeedReInit: %d.
+==tracking==StateDetector==CheckWeakMotionByIMU, ID(%d), t(%f) : weakMotion: %u, timeOfWeakMotion: %f, weakAccTh: %f,weakGyroTh: %f, imuAccNorm: %f, imuGyroNorm: %f
+==tracking==StateDetector==ProcessImuData, ID(%d), t(%f) : vio not init (%d) or imu data empty (%d)
+==tracking==Tracking====SetVPSData, ID(%d), t(%f) : receive vps data, requestType(0x%x) requestValue %d
+==tracking==Tracking==NewVIO, ID(%d), t(%f) :  vio lost need a new vio.
+==tracking==Tracking==StatusUpdateByKF, ID(%d), t(%f) : status update order: %s ---> %s ---> %s
+==tracking==TrackingInit, ID(%d), t(%f) : delete old vio.
+==tracking==TrackingInit, ID(%d), t(%f) : new vio success.
+==tracking==TrackingInit, ID(%d), t(%f) : try to new vio.
+==tracking==TriggerReloc2, ID(%d), t(%f) : triggerReloc2FrameID:%u
+==tracking==Twins, ID(%d), t(%f) : MatchMagnet valid %d magnet %lf %lf %lf %lf
+==tracking==Twins, ID(%d), t(%f) : check is enough ValidKF: %d, ValidKFNum is %d
+==tracking==Twins, ID(%d), t(%f) : check motionFlag: %d , curFrameIsWeak %d,                    m_hasEnoughValidKeyFramesInWindow flag is : %d, m_reProjectErrCounter %d, featuresNum %d,                    m_isTriggeredAbnormalMotion %d, m_isTriggeredFewUpdateNum %d m_curFrameIsBadCovisual %d,                    m_badCovisualFeatureNum %d, maxBadCovisualFeatureNum %d
+==tracking==Twins, ID(%d), t(%f) : twins zero motion flag: %d
+==tracking==Twins, ID(%d), t(%f) : twins_states v= %f, %f, %f; accbias = %f, %f, %f; gyrobias = %f, %f, %f;            translation: %f, %f, %f, quaternion: %f, %f, %f, %f, dt: %f, processTime: %1f
+==tracking==Twins==CheckNeedRelocation, ID(%d), t(%f) : found Twins isTrackLost = %d,                   twinsTrackedFea = %d, m_trackedBadCnt = %d
+==tracking==Twins==CheckNeedRelocation, ID(%d), t(%f) : is Twins need relocation = %u , m_normalMotionFlag : %d
+==tracking==Twins==CheckNeedReset, ID(%d), t(%f) : Twins is converge. m_isMasterTracker: %d,                converge by %s, m_convergeTh %lf
+==tracking==Twins==CheckNeedReset, ID(%d), t(%f) : timestamp %lf, m_initTime %lf, m_convergeTimeTh %lf,                   mtrackerIsStable %d, gravity error: %f, vel cov: %f %f %f
+==tracking==Twins==Pause, ID(%d), t(%f) :  pose: %f, %f, %f
+==tracking==Twins==ProcessRelocationFrame, ID(%d), t(%f) : Vio start to display
+==tracking==Twins==ResetConvergeTimeByRelocationOrNormal, ID(%d), t(%f) :  m_convergeTimeTh: %lf 
+==tracking==Twins==ResetValidPose, ID(%d), t(%f) :  feedbackManagerPlugin ValidPose is reset 
+==tracking==Twins==ResetValidPose, ID(%d), t(%f) :  feedbackManagerPlugin is not exist 
+==tracking==Twins==StateTransform, ID(%d), t(%f) : Twins Display translation: %f, %f, %f, quaternion: %f, %f, %f, %f, StateID : %lu, 
+==tracking==Twins==StateTransform, ID(%d), t(%f) : Twins output_states translation: %f, %f, %f, quaternion: %f, %f, %f, %f, StateID : %lu, 
+==tracking==Twins==StateTransform, ID(%d), t(%f) : output_states StateID : %lu, v= %f, %f, %f; accbias = %f, %f, %f; gyrobias = %f, %f, %f;
+==tracking==Twins==imuCallback, ID(%d), t(%f) : differ of img with end imu timestamp: %f, imu size %zu
+==tracking==Twins==m_isTrackLost, ID(%d), t(%f) :  pose: %f, %f, %f
+==tracking==VPS====SetVPSData, ID(%d), t(%f) : receive vps data, requestType(0x%x) requestValue %d
+==tracking==VPS====SetVPSData, ID(%d), t(%f) : receive vps data, uploadtTime:(%f), downloadTime:(%f)                 requestType(%x) couplingType(%d) sourceType(%d), gvpsPos:%f %f %f %f %f %f %f,                 slam%f %f %f %f %f %f %f
+==tracking==Vio, ID(%d), t(%f) : CacheEstimatedParas: aveAccBias: %f, %f, %f, aveGyrBias: %f, %f, %f
+==tracking==Vio, ID(%d), t(%f) : CacheEstimatedParas: twins converge: %d,                    mFrameCounter: %d, baisSampleStep: %d
+==tracking==VioInitializer, ID(%d), t(%f) : initialize vio by %s, acc=%f %f %f %f, gyro=%f %f %f vel=%f %f %f
+==tracking==YawUpdateafter, ID(%d), t(%f) :  stateYaw %lf afterUpdateYaw %lf detalQ %lf %lf %lf %lf
+==tracking==gyroYaw is big, ID(%d), t(%f) : m_gyroYaw %lf mapgyroYaw %lf
+==tracking==imuIntrinsicOnlineCali==imuIntrinsic, ID(%d), t(%f) :  Tg: %f, %f, %f, %f; Ta: %f, %f, %f, %f; 
+==tracking==preprocess, ID(%d), t(%f) : Vio Failed, Next WorldMap Will Be:%d, Notify To SDK
+==tracking==ruler flag==SetTrackingState, ID(%d), t(%f) : cur t flag = %u, lst t flag = %u
+==tracking==ruler flag==SetTrackingState, ID(%d), t(%f) : endZeroVel = %d, enableQuickPlaneFlag = %d m_relocSuccessFlag = %d trackingState = %d
+=BI=  read biasInfo acc(%f, %f, %f) gyro(%f, %f, %f) BNorm(%f, %f)
+=BI= ID(%d), t(%f), kfID(%s) : GetGravityTrackingRwb, gravity(%f %f %f %f)
+=BI= ID(%d), t(%f), kfID(%s) : ImuPreint: ts(%.6f) dt(%.3e, %.3e)
+=BI= ID(%d), t(%f), kfID(%s) : InsertNewKf, imu preintegrated nullptr
+=BI= ID(%d), t(%f), kfID(%s) : SelectConsecutiveTracks, all(%zu), select(%zu)
+=BI= ID(%d), t(%f), kfID(%s) : Track(%lu) Map has wrong index(%d)
+=BI= ID(%d), t(%f), kfID(%s) : nTrackCandidate linear maxNumFramesNeeded(%d) minFrmsNeed(%d)
+=BI= ID(%d), t(%f), kfID(%s) : nTrackCandidate linear(%d) trackLen(%d) idxAdded(%u)
+=BI= ID(%d), t(%f), kfID(%s) : track3(%lu) avg speed(%f)
+=BI= Imu Residual(%f)
+=BI= ImuErr average(%.3e) ProjErr average(%.3e)  bias(%.3e)
+=BI= SelectTracksForViBA + part1(%zu) candidate(%d)
+=BI= SelectTracksForViBA +part2(%zu, %d) candidate(%d)
+=BI= SelectTracksForViBA +part3(%zu, %d) candidate(%d)
+=BI= SelectTracksForViBA success
+=BI= UpdPoseFromPRP input err
+=BI= Waiting For Enough VI Frame
+=BI= init vi with g, acc = %f %f %f, gyro = %f %f %f, ,vel = %f %f %f
+=BI= rs imuPre err %zu %zu
+=BI= rs imuPre err idx -1
+=BI= select FrmNeed(%d) MaxTrackFrm(%d) AcTrack(%zu) VaTrack(%d) Speed(%.3f) SpeedTh(%.3f)
+=BI= viInitFrameId(%d)
+=ComputeVlad failed; camera is null
+=InitLinePlucker ref frame is null, %lu len %zu
+=LA= ID(%d), t(%f), kfID(%s) : kf relpose costfun is invalid
+=LC= ID(%d), t(%f), kfID(%s) : %s image feature kfs size(%zu, %zu, %zu), total_time(%f)
+=MP= , ID(%d), t(%f) : VPS map online map diff: %u, %f, %f, isDeviated: %d, online quat:                     %f, %f, %f, %f, pos: %f, %f, %f, offline quat: %f, %f, %f, %f, offline pose: %f, %f, %f
+=MP= , ID(%d), t(%f) : after fuse optimize: %f, %f, %f, quaternion: %f, %f, %f, %f, dQAvg: %f,             %f, %f, %f, dPAvg: %f, %f, %f
+=MP= , ID(%d), t(%f) : after loop optimize: %f, %f, %f, quaternion: %f, %f, %f, %f, processTime: %f
+=MP= , ID(%d), t(%f) : mapping_pose translation: %f, %f, %f, quaternion: %f, %f, %f, %f
+=MP= ID(%d), t(%f) : =DispTrack=generate Tracked Points num(%d), send(%d), candiF(%zu), vel(%f)
+=MP= ID(%d), t(%f) : =DispTrack=generate Tracked speed is slow or fast, vel(%f)
+=MP= ID(%d), t(%f) : =DispTrack=send tracked points to disp num(%zu) vel(%f)
+=MP= ID(%d), t(%f) : =DispTrack=vision points is not empty
+=MP= ID(%d), t(%f) : GetNSPredictByVI lstVi %s, curVi %s, lstM %s, curM %s
+=MP= ID(%d), t(%f) : imu cache size(%zu)
+=MP= ID(%d), t(%f) : lstfrm track num is poor mps num(%d), feature tracked(%d), insert
+=MP= ID(%d), t(%f) : track with last kf is poor(%d, %d), insert
+=MP= ID(%d), t(%f), kfID(%s) : Init map(%d) deltaT(%f), baseline(%f), first frameId(%d), second frameId(%d), sceneDepth(%d)
+=MP= ID(%d), t(%f), kfID(%s) : Init map(%d) last id(%d, (%s)), tri(%zu), tracked(%zu)
+=MP= ID(%d), t(%f), kfID(%s) : Init map(%d) newMpt: track(%zu), tri(%zu)
+=MP= ID(%d), t(%f), kfID(%s) : UpdateTrkpose, KFi(%s), StateID(%lu)
+=MP= ID(%d), t(%f), kfID(%s) : create mpt from track, all(%d), track(%zu), lenTh(%zu) coVis(%d %d), triNum(%d %d), replace(%d)
+=MP= ID(%d), t(%f), kfID(%s) : curFrame mpts(%d) Localmpts(%zu)
+=MP= ID(%d), t(%f), kfID(%s) : curKF pose after LBA(%s)
+=MP= ID(%d), t(%f), kfID(%s) : curKF pose before LBA(%s)
+=MP= ID(%d), t(%f), kfID(%s) : keyframe2 id(%s), minDist(%f)/(%f), to culling
+=MP= ID(%d), t(%f), kfID(%s) : searchLKFPts, toMatch(%d), matched(%d), lastKeyFrame(%s), Mappoint(%d)
+=MP= Init map(%d) trackNum from lstKf too low(%d)/(%d)
+=MP= reprojectError, ID(%d), t(%f) : allFrames: %zu, allTracks: %zu, validTracks: %d,                 avgReprojectError: %f, validTrackLength: %d, aiTrackNum: %d
+=MP= timegap is too small, not need newkf, stateId(%u), timestamp(%f)
+=MU= Add Aligned KeyFramePoses(%zu)
+=MU= Add KeyFramePose Resource: %s
+=MU= DelayToDeleteKeyFrame KFId(%s)
+=MU= DelayToDeleteKeyFrame total time(%f)
+=MU= Get KfPosesInAllAlignedMap
+=MU= ID(%d), t(%f), kfID(%s) : SendKeyFrame
+=MU= Map AddDeleteKeyFramesInfo(%s)
+=MU= MultiUserPgo Update oldKeyFramePose(%s) newKeyFramePose(%s)
+=MU= New MatchResult is not in keyframe pool
+=MU= Receive kfPose(%s)
+=MU= UpdateAnchorsPose sharedAnchor is not in keyframe pool anchorId(%s) kfId(%s)
+=MU= UpdateAnchorsPose sharedAnchor(%s)
+=MU= anchor Save KeyFrameRelPose fail
+=MU= anchor loadkeyframepose fail
+=MU= fix localKeyFrameId(%s)
+=MU= match is not in keyframe pool(%s)
+=N6Camera14AbstractCameraE
+=PD= DepthUpdate validCount(%d), trackedCount(%zu), matchedCount(%d), sameCount(%d), 3D(%zu)
+=PD= time ComputeX3DMultiFrames
+=PD= time TrackerMatchedPoints
+=PD= time UpdatePatchFrameDepth
+=PD= tracked size: %zu tracked len size(3~10)=(%d, %d, %d, %d)
+=PD= tracked size: %zu, trackedlen(>3): %d, valid: %d, generate num: %d, average projError: %f
+=RL= 6dof pose is invalid
+=RL= Check RC Pose Gravity acc_norm_gw (%f), acc_gw_norm (%f)
+=RL= ID(%d), t(%f), kfID(%s) : (%s) reloc pose(%s)
+=RL= ID(%d), t(%f), kfID(%s) : 0. pnp get pose: ID(%d), t(%f), nMatches(%d) useG(%d)
+=RL= ID(%d), t(%f), kfID(%s) : 1. pnp get pose:ID(%d), t(%f), inlier(%d) inlierRatio(%f)
+=RL= ID(%d), t(%f), kfID(%s) : 2. pnp get pose:ID(%d), t(%f), DBScore(%f)
+=RL= ID(%d), t(%f), kfID(%s) : Compute 2d3dMatch matchKF frameID(%d), timestamp(%f), matchBruth((%d), numMatches(%zu)
+=RL= ID(%d), t(%f), kfID(%s) : Detect RC Cands Lexicon relocImageSearch%s
+=RL= ID(%d), t(%f), kfID(%s) : PO after only vision, current frame(Twi): %s
+=RL= ID(%d), t(%f), kfID(%s) : PO after vision with imu, frame(Twi): %s
+=RL= ID(%d), t(%f), kfID(%s) : current frame(Twi): %s .
+=RL= ID(%d), t(%f), kfID(%s) : frame size(%zu) overflow
+=RL= ID(%d), t(%f), kfID(%s) : leave trackOK(%d), nmatchesOpt(%d), nBPO(%d), v(%d, %f, %f)
+=RL= fails as no keyframes
+=RL= fails as no keyframes UpdatePose fail
+=TPlane=AcceptPoints, ID(%d), t(%f) : input paras invalid; points Num(%zu), pose empty(%d), vel(%f)
+=TPlane=AcceptPoints, ID(%d), t(%f) : input paras invalid; points Num(%zu), pose empty(%d), vel(%lf)
+=TPlane=AcceptPoints, ID(%d), t(%f) : point filter; before: %zu, after: %zu vel: %f
+=TPlane=AcceptPoints, ID(%d), t(%f) : point filter; before: %zu, after: %zu vel: %lf
+=TPlane=Display Def Freq: copy img buf failed, error code(%d)
+=TPlane=Display alloc failed; width(%d), height(%d)
+=TPlane=GetDPC; pose is empty
+=TPlane=Push Timage ts: %f, w: %d h: %d, d: %f, idx: %d, vel: %f, bStartDisp %d
+=TPlane=Push Timage ts: %lf, w: %d h: %d, d: %f, idx: %d, vel: %f, bStartDisp %d
+=TPlane=Push Timage: alloc frame memory failed
+=TPlane=Push Timage: copy img buf failed, error code(%d, %d)
+=TPlane=Push Timage; invalid input; dpt(%d), rwc(%d), twc(%d), w(%d), h(%d), vel(%lf)
+=TPlane=Push Timage; invalid input; rwc(%d), twc(%d), w(%d), h(%d), vel(%f)
+=TPlane=display dpt param:min_d_m_mm:%f %hu, max_d_m_mm:%f %hu %hu, time_intv:%f
+=TPlane=set tracked points, ID(%d), t(%f) : mono mpt add num(%zu) vel(%f)
+=TPlane=set tracked points, ID(%d), t(%f) : mono mpt add num(%zu) vel(%lf)
+?Clear m_isCameraShade fail
+?N22HW_SLAM_MAPPING_SOLVER7PGOEdgeE
+?NSt6__ndk120__shared_ptr_pointerIPN2cv15OcvDftBasicImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+?SlamOutputPose:imuintv:%f
+?send need GVPS to socket isVpsResultValid = %d, vpsPoseIsUpdated = %d
+@EVioStateInfo==GetCamInfo==> Camera Index Error(camIdx:%d, device camera num:%d).
+@PinHoleCamera UpdateExtrinCalib dx is not normal!, %f, %f, %f
+ACCELERATE_SPARSE
+ACCELERATE_SPARSE is not currently supported with dynamic sparsity.
+Abort Tracking, There is No Features in last frame! CurrFrmID: %u.
+Accuracy flag is set and epsilon is < 0
+AddFramePack frame data size: %zu, frame pack size: %zu, add frame: %d
+AddFrameToNewSubMap:%u,subMap:%d
+AddImuFactor, margin state id: %lu
+AddOffFrm
+AddOfflineFrameMatch add vps edge on frame(%u), m_lastOfflineFrmTime(%f)
+AddVioFrameMatch: %s , %d - %d, matches: %zu
+AddVpsPose
+AddVpsPoseToMap Diff time: %lf, %lf, %lf
+After Composition hisotryPose size: %zu, MaxSize: %zu
+Array should be CvMat or IplImage
+BackendMap Release Images: %zu
+Bad image header
+Bilateral filtering is only implemented for 8u and 32f images
+Both input images must have either 8uC1 or 8uC3 type
+Both input images must have the same data type
+Both input images must have the same size
+Both object points and image points must be 2D
+CALIB_USE_INTRINSIC_GUESS flag is set, but the camera matrix is not 3x3
+COI must be non-null in case of planar images
+CV_ARE_TYPES_EQ(_imagePoints1, _imagePoints2) && CV_ARE_DEPTHS_EQ(_imagePoints1, _objectPoints)
+CV_IS_IMAGE(arr)
+CV_IS_MAT(_cameraMatrix) && _cameraMatrix->rows == 3 && _cameraMatrix->cols == 3
+CV_IS_MAT(_imagePoints1) && CV_IS_MAT(_imagePoints2) && CV_IS_MAT(_objectPoints) && CV_IS_MAT(_npoints) && CV_IS_MAT(matR) && CV_IS_MAT(matT)
+CV_IS_MAT(matrixM) && CV_IS_MAT(matrixR) && CV_IS_MAT(matrixQ) && matrixM->cols == 3 && matrixM->rows == 3 && CV_ARE_SIZES_EQ(matrixM, matrixR) && CV_ARE_SIZES_EQ(matrixM, matrixQ)
+CV_IS_MAT(objectPoints) && CV_IS_MAT(imagePoints) && CV_IS_MAT(A) && CV_IS_MAT(rvec) && CV_IS_MAT(tvec)
+CacheVpsResultForOnlineMap global pose qgl: %f, %f, %f, %f, pgl: %f, %f, %f
+Ceres was compiled without support for Apple's Accelerate 
+CeresLoopSolver, frames.size()=%zu, matches.size()=%zu, pgoEdges.size()=%d, processTime: %f
+Check FeaTracker Results, FrameID: %lu
+Check FeaTracker Results, FrameID: %u, Contains Fea Points Number: %zu
+Check FeaTracker, FrameID %u, beforeTrack %d, afterTrack %d, afterRansac %d, afterMultiRansac %d
+Check KLT Points, FrameID %u Ptx %f Pty %f
+Check failed: blocks.size() < kMaxRowBlocks 
+Check failed: image channels != 1,state: %d
+Check failed: minimum != nullptr 
+Check m_vpsFlagForMag(%d)
+CheckAccBiasOverTh bias is nan
+CheckCameraExtrinsicOverTh CameraExtrinsic is nan
+CheckCameraIntrinsicOverTh CameraIntrinsic is nan
+CheckImuIntrinsicOverTh ImuIntrinsic is nan
+CheckNeedReset, timestamp: %f, m_initTime: %f, m_convergeTimeTh: %f, CheckIfMTrackStable: %d
+CheckSlamHandle error, SLAMHandle contains null pointer
+Clear cur6DofInner.motion fail
+Common.cameraType
+Common.slamFPS
+Common.slamMapMaxSizeBYTE
+Common.virtualCameraFps
+Compute 2d3dMatch, curFrame(%u), matchKF frameID(%u), numMatches(%zu)
+ComputeSceneMedianDepth; frameID:%d, ts:%lf, depthcnt is 0!
+Cov1 frames %zu
+Cov2 frames %zu
+CreateNewMptFromTrack
+CurFeaTrackResMsgID
+CurFrameTrackingMsgID
+CurMatchedFrameMsgID
+DDKtoSlamFeat copy desp is error
+DDKtoSlamFeat copy valid desp is error
+DLT algorithm needs at least 6 points for pose estimation from 3D-2D point correspondences.
+Deleted virtual function called!
+Dense Track DropOut after MappingInited or VioInited
+Dense Track DropOut for TimeOut
+DisplayPointCloud
+DistToVps bad 2 FrameID: %u
+DistToVps bad 3 FrameID: %u, minVPSCovDist: %d, minVPSTrajDist: %f
+Distortion coefficients must be 1x4, 4x1, 1x5, 5x1, 1x8, 8x1, 1x12, 12x1, 1x14 or 14x1 floating-point vector
+DropNextVFrame(%d)
+Error : GetValue HSDK_CONFIG_MANAGER_IMPL_GET_SLAM_BIAS_INFO ret %d
+Error : SetValue HSDK_CONFIG_MANAGER_IMPL_SET_SLAM_BIAS_INFO errcode %d
+Error reprojection
+FRAME; get feature fails
+FeaTracker
+FeaTracker New Track Failed!
+FeaTracker Recv Frame Successfully!
+FeaTracker Start Process Frame!
+FeaTraker, Fisrt Frame of MultiCam, Set PrevFramePack to CurrFramePack
+FeatureExtractARM accept null frame !!!
+FeatureExtractARM get null frame
+FeatureTracker
+FeatureTracker IMUInfo FrameID %u Contains %zu IMU Data
+FeatureTracker Update Tracking Points Number to %d
+FeatureTracker::SetValue, requestType(0x%x) requestValue %d
+FindLevel1CovCamera, seqCam is nullptr
+FindLocalMap, lastFrameId:%u, m_covisibles_LV1:%zu, m_covisibles_LV2:%zu
+For non-planar calibration rigs the initial intrinsic matrix must be specified
+Get FeaTracker Results, FrameID %lu on Cam %d Failed!
+Get6Dof; display IMU pose is empty; dispTime:%lf, s_page:%d, e_page:%d
+Get6Dof; newestExpTime; dispTimeStamp = %lf, oritime = %lf, newestExpTime = %lf,             deltaDelayCam2IMU = %lf, newestDtCalib = %lf
+Get6Dof; wait suitable IMU pose coming; endTime:%lf,disp_time:%lf
+Get6DofPredict: dispTimeStamp = %lf, oritime = %lf, offCalibCam2IMU = %lf
+GetDDKFeatures==DDKtoSlamFeat: empty params
+GetDDKFeatures==DDKtoSlamFeat: feature number %u
+GetData===m_cameraIntrin: camID(%d) %f, %f, %f, %f, %f, %f, %f, %f
+GetGravityResult:flag=%d,img_ts:%lf,posets=%lf,diff_ts=%f,gravity=(%f,%f,%f)
+GetLocalKeyFramesCmdID
+GetMatchesOfTwoImages camFrm1:%u, camFrm2:%u, matchNum is 0
+GetMatchesOfTwoImages camFrm1:%u, camFrm2:%u, matchNum:%d
+GetOnlineCameraIntrinsics -- memcpy copy error reason=%d
+GetOnlineCameraIntrinsics enter
+GetParaInfo ---- UpdateParasInfoWithImuOnline
+GetParaInfo---- abnormal bias; aveAcbNorm, aveGyrbNorm, accScale, gyroScale: %lf, %lf, %lf, %lf
+GetRangeData imu idx is invalid, sT:%lf eT:%lf
+GetRangeData imu is empty
+GetSlamInterface
+GetTrackByCamID Failed! CamID is Invalid!
+GetVioStatusToLBA, frame set error
+GlobalLocToPoseSmooth feedbackWorkingInMapping2: %d isOnlineMapAlignOfflineMap: %d
+GravityTracking Init: m_thrSteadyGyro %lf m_thrSteadyAcc %lf
+H@NSt6__ndk120__shared_ptr_emplaceIN2cv4usac31StandardTerminationCriteriaImplENS_9allocatorIS3_EEEE
+HSDK_CONFIG_MANAGER_IMPL_GET_SLAM_BIAS_INFO
+HSDK_CONFIG_MANAGER_IMPL_GET_SLAM_PARAMS
+HSDK_CONFIG_MANAGER_IMPL_SET_SLAM_BIAS_INFO
+HW_SLAM_Deinit enter
+HW_SLAM_Deinit handle NULL 
+HW_SLAM_Deinit is failed
+HW_SLAM_Deinit leaving
+HW_SLAM_Destroy enter
+HW_SLAM_Destroy handle NULL 
+HW_SLAM_Destroy leaving
+HW_SLAM_GetMapSize: map is unavailable, set mapSize to 0
+HW_SLAM_Init Slam status is SLAM_HANDLE_INITED
+HW_SLAM_Init Slam status is SLAM_HANDLE_RUNNING
+HW_SLAM_Init enter
+HW_SLAM_Init is failed
+HW_SLAM_Init leaving
+HW_SLAM_Pause enter
+HW_SLAM_Pause leaving
+HW_SLAM_Resume enter
+HW_SLAM_Resume leaving
+HW_SLAM_Start Slam start failed, force stop
+HW_SLAM_Start enter
+HW_SLAM_Start leaving
+HW_SLAM_Stop enter
+HW_SLAM_Stop leaving
+HXR_ALG_EVENT_CALLBACK
+HXR_ALG_EVENT_CALLBACK error
+HandleFrameMatch begin loop queue
+HandleFrameMatch end loop queue
+ID(%d), t(%f) : drop start image: m_nImgPackCount %d eps %lf TOFType %d laser %d %d imu %d
+ID(%d), t(%f) : start process image
+IMU:G is bind normal interp A
+IMU:G is less left A too much;lt=%lf;ct=%lf
+IMU:G is near match left A
+IMU:G is not coming,replace A;LAT:%lf,RAT:%lf
+IMU:G match left A
+IMU:G match right A
+IMU:check upload head error
+IMU:left A and right A are both less than G;lt=%lf;rt=%lf;ct=%lf
+IMUIntForKF
+IMUPreProcObj
+Image step is wrong
+Images with planar data layout should be used with COI selected
+ImuPreProc::AcceptIMU: copy m_curGyro failed, error code(%d)
+ImuPreProc::AcceptIMU: copy m_leftAccel failed, error code(%d)
+ImuPreProc::AcceptIMU: copy m_rightAccel failed, error code(%d)
+ImuPreProc::PackApproximateIMU: copy m_lastestOtherTypeIMU failed, error code(%d)
+In compute: image or KeyPoints is NULL
+Init slam failed, null para
+InitLinePlucker ref frame is null, %lu
+InitPara.Camera.imageWidth
+InitPara.Camera.imageheight
+InitPara.IMU.accelFPS
+InitPara.IMU.gyroFPS
+InitPara.IMUType
+InitPara.TCam2IMU
+InitPara.TIMU2Cam
+InitParam;SLAM descriptorLengthInBit:%d
+InitParam;SLAM descriptorLengthInByte:%d
+InitParam;SLAM featureProcType:%d
+InitParam;SLAM featureType:%d
+InitParam;SLAM globalLocNeedVps:%d
+InitParam;SLAM mapDesLengthInBit:%d
+InitParam;SLAM mapDesLengthInByte:%d
+InitParam;SLAM mapFeatureType value: %d 
+InitParam;SLAM mapMaxSize:%d
+InitParam;SLAM onlyGlobalLoc:%d
+InitParam;SLAM onlyOnlineMapping:%d
+InitParam;SLAM openRelocation2:%d
+InitParam;SLAM openVPSOfflineSimu:%d
+InitParam;SLAM openVPSPGO:%d
+InitParam;SLAM switch appType:%d
+InitParam;SLAM switch laser:%d, preImg:%d, depth:%d
+InitParam;SLAM useAIFeature:%d
+InitParam;SLAM useAiFeat:%d
+InitParam;SLAM useMapping2:%d
+Initializer imu is empty
+Initializer--IsStaticImage, nullPtr, m_pLstImg %d, pCurImg %d
+Initializer::GetPosVelByIMU() ---- memset_s error reason=%d
+Input image depth is not supported by function
+Input image or KeyPoints is NULL.
+Integration_tracking
+Invalid number of channels in input image
+Invalid number of channels in output image
+Iterations flag is set and maximum number of iterations is <= 0
+JudgeAndUpdateNewBiasInfo; MAX_ACB_AVG maxRangeAcb: %lf, %lf
+KEY_CAMERA_AF_MODE value: %d error
+KEY_CAMERA_AF_MODE valueSize(%ld)
+KNN match, curFrame:%u, candiCam:%u, nmatches:%d, %zu
+KeyFrame::AddPointWorld, KFID:(%s), ts:%f, empty or idx out range!
+KeyFrame::ReplaceMapPointMatch, KFID:(%s), ts:%f, empty or idx out range
+KeyFramePoseEstimator::FindBestKfs2Matches
+KeyFramePoseEstimator::ProcessData
+KeyFramePoseEstimator::VerifyMatchesByP2PRansacMV
+KltTrackNum: %d, KltAvgLens: %f, BeforeRansc: %d, AfterRansc: %d
+LBACurKeyFrameMsgID
+LBASolver::SelectLocalFrames fixed tracks size: %d, total track size: %zu
+LPCCurKeyFrameMsgID
+LaplacianSanityCheckImage Check failed: lap0's height != lap1's height
+LaplacianSanityCheckImage Check failed: lap0's width != lap1's width
+LaplacianSanityCheckXY Check failed: x + 1 >= image width
+LaplacianSanityCheckXY Check failed: y >= image height
+LbaTrackVisionAfterRelocID
+LocalMapping pose: %u, before: %f, %f, %f, %f; %f, %f, %f
+LocalMapping::AddFramePack id:%u
+LocalMapping::AddFramePack id:%u, relocFrame translation: %f, %f, %f,             quaternion: %f, %f, %f, %f, matchFrame:%u, translation: %f, %f, %f, quaternion: %f, %f, %f, %f
+LocalMapping::AddOfflineFrameMatch did not find offline frame in online map.
+LocalMapping::AddVpsPoseToMap can not find vps Pose or matched KF pose.
+LocalMapping::AddVpsPoseToMap did not find offline frame in online map.
+LocalMapping::ProcessFrame
+LocalMapping::ProcessFrame begin
+LocalWindow::Process, AfterReloc, FrameID: %u, subMapID: %d not found
+LoopClosure==Process frame: %u
+MTrack.kfTG
+MTracker -- Prior biasInfo NOT set! imuType NOT matched!
+MTracker -- Prior biasInfo set successfully! m_biasPriorIsAvaliable=%d
+MTracker--StatusUpdateByEKF, ID(%d), t(%f), m_countOnlineUpdate: %d total_time = %f
+MTracker=====Resume after m_cameraIntrin: camID(%zu) %f, %f, %f, %f, %f, %f, %f, %f
+MTracker=====Resume before m_cameraIntrin: camID(%zu) %f, %f, %f, %f, %f, %f, %f, %f
+MTracker=====onlineCalibSwitch: doCameraIntrinsicCalib: %d, doTimeOffSetCalib: %d,                doCameraExtrinsicCalib: %d, doImuIntrinsicCalib = %d
+MTracker==FeatureCallback m_giState is nullptr
+Mag.empty() || Angle.size == Mag.size
+Mag.size() == Angle.size() && Mag.type() == Angle.type()
+Mag.size() == X.size() && Mag.type() == X.type()
+MagnetometerManager
+Map::KeyFrameBodies Begin...
+Map::KeyFrameBodies End
+Map::KeyFrameCovis Begin...
+Map::KeyFrameCovis End
+Mapping PopKeyFrame %u to LocalMapping
+Mapping PopKeyFrame %u-%u to LocalMapping
+Mapping PushKeyFrame %u to LocalMapping
+Mapping PushKeyFrame %u-%u to LocalMapping
+Mapping accept VPS Data is null
+Mapping accept frame is null
+Mapping accept offlineMap Data is null
+Mapping.Test.fixLbaPose
+Mapping.imuAccBiasRW2
+Mapping.imuAccNoise2
+Mapping.imuGyroBiasRW2
+Mapping.imuGyroNoise2
+Mapping.keyframeTimeGap
+MappingMatcher::VLADMatchCovisibleFrames
+MappingModule: SLAM_GET_MAP_STATE %u
+MarginRedundantFrames, redundantFrame size: %d
+Matrix MultiConst: rTcwAcclen(%zu) error
+Maximum number of iterations reached.
+Maximum number of iterations reached. Number of iterations: %d.
+Maximum solver time reached.
+Maximum solver time reached. Total solver time: %e >= %e.
+Minimum trust region radius reached. Trust region radius: %e <= %e
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+N15SLAMInitializer11InitializerE
+N16HW_SLAM_MAPPING210BackendMapE
+N16HW_SLAM_MAPPING211Relocation2E
+N16HW_SLAM_MAPPING212LocalMappingE
+N16HW_SLAM_MAPPING212MappingTrackE
+N16HW_SLAM_MAPPING212RelativePoseE
+N16HW_SLAM_MAPPING213AnchorManagerE
+N16HW_SLAM_MAPPING215FeatMappingDataE
+N16HW_SLAM_MAPPING216FrameMappingDataE
+N16HW_SLAM_MAPPING216RelativeLoopPoseE
+N16HW_SLAM_MAPPING217CameraMappingDataE
+N16HW_SLAM_MAPPING217DisplayPointCloudE
+N16HW_SLAM_MAPPING29PriorPoseE
+N22HW_SLAM_MAPPING_SOLVER10VisCostFixE
+N22HW_SLAM_MAPPING_SOLVER12CeresPgoEdgeE
+N22HW_SLAM_MAPPING_SOLVER12GravityPriorE
+N22HW_SLAM_MAPPING_SOLVER12PGOPriorEdgeE
+N22HW_SLAM_MAPPING_SOLVER13PositionPriorE
+N22HW_SLAM_MAPPING_SOLVER13RotationPriorE
+N22HW_SLAM_MAPPING_SOLVER14CeresVisonEdgeE
+N22HW_SLAM_MAPPING_SOLVER14PGOGravityEdgeE
+N22HW_SLAM_MAPPING_SOLVER15PGOVPSPriorEdgeE
+N22HW_SLAM_MAPPING_SOLVER15VisCostVariableE
+N22HW_SLAM_MAPPING_SOLVER16CeresVisonEdge3DE
+N22HW_SLAM_MAPPING_SOLVER16MiniCeresPgoEdgeE
+N22HW_SLAM_MAPPING_SOLVER19PGORelativePoseEdgeE
+N22HW_SLAM_MAPPING_SOLVER20MiniCeresVisonEdge3DE
+N22HW_SLAM_MAPPING_SOLVER22CeresVisonEdgeForRelocE
+N22HW_SLAM_MAPPING_SOLVER24CeresVisonEdgeFixed3DPosE
+N22HW_SLAM_MAPPING_SOLVER24CeresVisonEdgeFixedFrameE
+N22HW_SLAM_MAPPING_SOLVER26CeresVisonEdge3DFixedFrameE
+N22HW_SLAM_MAPPING_SOLVER28MiniCeresVisonEdgeFixed3DPosE
+N22HW_SLAM_MAPPING_SOLVER28MiniCeresVisonEdgeFixedFrameE
+N22HW_SLAM_MAPPING_SOLVER30MiniCeresVisonEdge3DFixedFrameE
+N2Co2PO15POVisionWithIMUE
+N2Co2PO17PoseOptimizerBaseE
+N2co12VertexRCeresE
+N2co3lba16EdgeLBAIMUPreIntE
+N2co7VertexRE
+N2cv12cpu_baseline12ColumnFilterINS0_13FixedPtCastExIihEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_13FixedPtCastExIihEENS0_19SymmColumnVec_32s8uEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIddEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIdhEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIdsEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIdtEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIffEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIffEENS0_17SymmColumnVec_32fEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIffEENS0_22SymmColumnSmallVec_32fEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIfhEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIfsEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIfsEENS0_20SymmColumnVec_32f16sEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIftEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIisEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIisEENS0_25SymmColumnSmallVec_32s16sEEE
+N2cv12cpu_baseline12_GLOBAL__N_131initUndistortRectifyMapComputerE
+N2cv12cpu_baseline16SymmColumnFilterINS0_13FixedPtCastExIihEENS0_19SymmColumnVec_32s8uEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIddEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIdhEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIdsEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIdtEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIffEENS0_17SymmColumnVec_32fEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIffEENS0_22SymmColumnSmallVec_32fEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIfhEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIfsEENS0_20SymmColumnVec_32f16sEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIftEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIisEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIisEENS0_25SymmColumnSmallVec_32s16sEEE
+N2cv12cpu_baseline21SymmColumnSmallFilterINS0_13FixedPtCastExIihEENS0_19SymmColumnVec_32s8uEEE
+N2cv12cpu_baseline21SymmColumnSmallFilterINS0_4CastIffEENS0_22SymmColumnSmallVec_32fEEE
+N2cv12cpu_baseline21SymmColumnSmallFilterINS0_4CastIisEENS0_25SymmColumnSmallVec_32s16sEEE
+N2cv12cpu_baseline8Filter2DIdNS0_4CastIddEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIfNS0_4CastIffEENS0_13FilterVec_32fEEE
+N2cv12cpu_baseline8Filter2DIhNS0_4CastIddEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIhNS0_4CastIffEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIhNS0_4CastIfhEENS0_12FilterVec_8uEEE
+N2cv12cpu_baseline8Filter2DIhNS0_4CastIfsEENS0_15FilterVec_8u16sEEE
+N2cv12cpu_baseline8Filter2DIhNS0_4CastIftEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIsNS0_4CastIddEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIsNS0_4CastIffEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIsNS0_4CastIfsEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DItNS0_4CastIddEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DItNS0_4CastIffEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DItNS0_4CastIftEENS0_11FilterNoVecEEE
+N2cv14PyrDownInvokerINS_7FltCastIdLi8EEEEE
+N2cv14PyrDownInvokerINS_7FltCastIfLi8EEEEE
+N2cv14PyrDownInvokerINS_9FixPtCastIhLi8EEEEE
+N2cv14PyrDownInvokerINS_9FixPtCastIsLi8EEEEE
+N2cv14PyrDownInvokerINS_9FixPtCastItLi8EEEEE
+N2cv18TLSDataAccumulatorINS_5instr11NodeDataTlsEEE
+N2cv21resizeGeneric_InvokerINS_12HResizeCubicIddfEENS_12VResizeCubicIddfNS_4CastIddEENS_12VResizeNoVecEEEEE
+N2cv21resizeGeneric_InvokerINS_12HResizeCubicIfffEENS_12VResizeCubicIfffNS_4CastIffEENS_19VResizeCubicVec_32fEEEEE
+N2cv21resizeGeneric_InvokerINS_12HResizeCubicIhisEENS_12VResizeCubicIhisNS_11FixedPtCastIihLi22EEENS_21VResizeCubicVec_32s8uEEEEE
+N2cv21resizeGeneric_InvokerINS_12HResizeCubicIsffEENS_12VResizeCubicIsffNS_4CastIfsEENS_22VResizeCubicVec_32f16sEEEEE
+N2cv21resizeGeneric_InvokerINS_12HResizeCubicItffEENS_12VResizeCubicItffNS_4CastIftEENS_22VResizeCubicVec_32f16uEEEEE
+N2cv21resizeGeneric_InvokerINS_13HResizeLinearIddfLi1ENS_12HResizeNoVecEEENS_13VResizeLinearIddfNS_4CastIddEENS_12VResizeNoVecEEEEE
+N2cv21resizeGeneric_InvokerINS_13HResizeLinearIfffLi1ENS_19HResizeLinearVec_X4IfffNS_12hal_baseline11v_float32x4EEEEENS_13VResizeLinearIfffNS_4CastIffEENS_20VResizeLinearVec_32fEEEEE
+N2cv21resizeGeneric_InvokerINS_13HResizeLinearIhisLi2048ENS_21HResizeLinearVecU8_X4EEENS_13VResizeLinearIhisNS_11FixedPtCastIihLi22EEENS_22VResizeLinearVec_32s8uEEEEE
+N2cv21resizeGeneric_InvokerINS_13HResizeLinearIsffLi1ENS_19HResizeLinearVec_X4IsffNS_12hal_baseline11v_float32x4EEEEENS_13VResizeLinearIsffNS_4CastIfsEENS_23VResizeLinearVec_32f16sEEEEE
+N2cv21resizeGeneric_InvokerINS_13HResizeLinearItffLi1ENS_19HResizeLinearVec_X4ItffNS_12hal_baseline11v_float32x4EEEEENS_13VResizeLinearItffNS_4CastIftEENS_23VResizeLinearVec_32f16uEEEEE
+N2cv21resizeGeneric_InvokerINS_15HResizeLanczos4IddfEENS_15VResizeLanczos4IddfNS_4CastIddEENS_12VResizeNoVecEEEEE
+N2cv21resizeGeneric_InvokerINS_15HResizeLanczos4IfffEENS_15VResizeLanczos4IfffNS_4CastIffEENS_22VResizeLanczos4Vec_32fEEEEE
+N2cv21resizeGeneric_InvokerINS_15HResizeLanczos4IhisEENS_15VResizeLanczos4IhisNS_11FixedPtCastIihLi22EEENS_12VResizeNoVecEEEEE
+N2cv21resizeGeneric_InvokerINS_15HResizeLanczos4IsffEENS_15VResizeLanczos4IsffNS_4CastIfsEENS_25VResizeLanczos4Vec_32f16sEEEEE
+N2cv21resizeGeneric_InvokerINS_15HResizeLanczos4ItffEENS_15VResizeLanczos4ItffNS_4CastIftEENS_25VResizeLanczos4Vec_32f16uEEEEE
+N2cv4usac13MagsacQualityE
+N2cv4usac17MagsacQualityImplE
+N2cv4usac23ReprojectionErrorAffineE
+N2cv4usac24ReprojectionErrorForwardE
+N2cv4usac24ReprojectionErrorPmatrixE
+N2cv4usac26ReprojectionErrorSymmetricE
+N2cv4usac28ReprojectionErrorForwardImplE
+N2cv4usac28ReprojectionErrorPmatrixImplE
+N2cv4usac30ReprojectionDistanceAffineImplE
+N2cv4usac30ReprojectionErrorSymmetricImplE
+N2cv6detail16LKTrackerInvokerE
+N3VIO12VIOLineTrackE
+N3VIO25MagnetometerManagerPluginE
+N3VIO7TrackerE
+N3VIO8MTrackerE
+N5ceres12ComposedLossE
+N5ceres26QuaternionParameterizationE
+N5ceres31EigenQuaternionParameterizationE
+N5ceres8internal12_GLOBAL__N_136BlockRandomAccessSparseMatrixAdapterE
+N5ceres8internal12_GLOBAL__N_138BlockRandomAccessDiagonalMatrixAdapterE
+N5ceres8internal23BlockRandomAccessMatrixE
+N5ceres8internal28BlockRandomAccessDenseMatrixE
+N5ceres8internal29BlockRandomAccessSparseMatrixE
+N5ceres8internal31BlockRandomAccessDiagonalMatrixE
+N6Camera12PinholeDepthE
+N6Camera7PinholeE
+N6Camera9FisheyeKBE
+N7HW_SLAM10OfflineMapE
+N7HW_SLAM10PoseSmoothE
+N7HW_SLAM10SlamThreadE
+N7HW_SLAM10SubscriberE
+N7HW_SLAM11EdgeAbsPoseE
+N7HW_SLAM11EdgeGravityE
+N7HW_SLAM11EdgeRelPoseE
+N7HW_SLAM11FeatVIODataE
+N7HW_SLAM11MCameraBaseE
+N7HW_SLAM11RelocThreadE
+N7HW_SLAM12FeatDataBaseE
+N7HW_SLAM12FrameVIODataE
+N7HW_SLAM12PreProcessorE
+N7HW_SLAM13AnchorManagerE
+N7HW_SLAM13CameraVIODataE
+N7HW_SLAM13FPackDataBaseE
+N7HW_SLAM13MappingModuleE
+N7HW_SLAM13PinHoleCameraE
+N7HW_SLAM13PnpSolverBaseE
+N7HW_SLAM13SingleMapBaseE
+N7HW_SLAM13SlamOutResultE
+N7HW_SLAM13TrackDataBaseE
+N7HW_SLAM14CameraDataBaseE
+N7HW_SLAM14FeatureTrackerE
+N7HW_SLAM14SlamMainThreadE
+N7HW_SLAM14SlamOutputPoseE
+N7HW_SLAM15GlobalLocResultE
+N7HW_SLAM15ImuPreIntegrateE
+N7HW_SLAM15ModuleCompositeE
+N7HW_SLAM15ResourceManagerE
+N7HW_SLAM16EdgeGravityFloatE
+N7HW_SLAM16FastKreafFeatureE
+N7HW_SLAM16FeatureDetectingE
+N7HW_SLAM16PreProcCompositeE
+N7HW_SLAM16SlamParamManagerE
+N7HW_SLAM17DisplayPointCloudE
+N7HW_SLAM17FeatureExtractARME
+N7HW_SLAM17FrameMatchMessageE
+N7HW_SLAM17HSObjectCompositeE
+N7HW_SLAM19ImuPreIntegrateBaseE
+N7HW_SLAM22FeatureExtractBaseAlgmE
+N7HW_SLAM23TrackingToReloc2MessageE
+N7HW_SLAM6VIOMapE
+N7HW_SLAM8HSModuleE
+N7HW_SLAM8HSObjectE
+N7HW_SLAM8TrackingE
+N7HW_SLAM8VIOTrackE
+N7HW_SLAM8WorldMapE
+N7HW_SLAM9FramePackE
+N7HW_SLAM9MessengerE
+N7HW_SLAM9P2pSolverE
+N7HW_SLAM9PnpSolverE
+N7HW_SLAM9PublisherE
+N7cvflann7anyimpl12bad_any_castE
+N9MULTIUSER10KfPoseInfoE
+N9MULTIUSER11KeyFrameMsgE
+N9MULTIUSER18KfPoseNewAndDelMsgE
+N9MULTIUSER20KeyFrameIdAndRelPoseE
+N9ORB_SLAM210BaInitBaseE
+N9ORB_SLAM210EdgePreIntE
+N9ORB_SLAM212LocalMappingE
+N9ORB_SLAM213EdgePriorBiasE
+N9ORB_SLAM214PoseLocalParamE
+N9ORB_SLAM217TofMapInitializerE
+N9ORB_SLAM218BaseMapInitializerE
+N9ORB_SLAM218InitPoseLocalParamE
+N9ORB_SLAM218MonoMapInitializerE
+N9ORB_SLAM220EdgeVerticalPlaneIdpE
+N9ORB_SLAM220VioInitBaInitializerE
+N9ORB_SLAM222EdgeHorizontalPlaneIdpE
+N9ORB_SLAM222EdgeProjectionInvDepthE
+N9ORB_SLAM222PlaneInitBaInitializerE
+N9ORB_SLAM223LinearInitBaInitializerE
+N9ORB_SLAM228EdgeStereoProjectionInvDepthE
+N9ORB_SLAM23PgoE
+N9ORB_SLAM27PgoBaseE
+NSt6__ndk110__function6__baseIFNS_4listINS_10shared_ptrIN9ORB_SLAM28KeyFrameEEENS_9allocatorIS6_EEEEvEEE
+NSt6__ndk110__function6__baseIFbN9ORB_SLAM28UniqueIdEEEE
+NSt6__ndk110__function6__baseIFvN9ORB_SLAM28UniqueIdEEEE
+NSt6__ndk110__function6__baseIFvNS_10shared_ptrIN9ORB_SLAM28KeyFrameEEEEEE
+NSt6__ndk110__function6__baseIFvRK15SmoothPoseStateEEE
+NSt6__ndk110__function6__baseIFvRKNS_10shared_ptrI15SmoothPoseStateEEEEE
+NSt6__ndk110__function6__baseIFvRKNS_10shared_ptrIN7HW_SLAM15GlobalLocResultEEEEEE
+NSt6__ndk110__function6__baseIFvRKNS_10shared_ptrIN7HW_SLAM17FrameMatchMessageEEEEEE
+NSt6__ndk110__function6__baseIFvRKNS_10shared_ptrIN7HW_SLAM23TrackingToReloc2MessageEEEEEE
+NSt6__ndk110__function6__baseIFvRKNS_10shared_ptrIN7HW_SLAM9FramePackEEEEEE
+NSt6__ndk110__function6__baseIFvRNS_4listINS_10shared_ptrIN7HW_SLAM6AnchorEEENS_9allocatorIS6_EEEEEEE
+NSt6__ndk110__function6__baseIFvRNS_4listINS_17reference_wrapperIN9ORB_SLAM28KeyFrameEEENS_9allocatorIS6_EEEEEEE
+NSt6__ndk110__function6__funcINS_6__bindIMN16HW_SLAM_MAPPING210BackendMapEFviEJPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISD_EEFviEEE
+NSt6__ndk110__function6__funcINS_6__bindIMN7HW_SLAM11RelocThreadEFbvEJPS4_EEENS_9allocatorIS8_EEFvvEEE
+NSt6__ndk110__function6__funcINS_6__bindIMN7HW_SLAM13AnchorManagerEFbN9ORB_SLAM28UniqueIdEEJPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISF_EEFbS6_EEE
+NSt6__ndk110__function6__funcINS_6__bindIMN7HW_SLAM13AnchorManagerEFvRKN9ORB_SLAM28UniqueIdEEJPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISH_EEFvS6_EEE
+NSt6__ndk110__function6__funcINS_6__bindIMN7HW_SLAM13AnchorManagerEFvRKNS_4listINS_17reference_wrapperIN9ORB_SLAM28KeyFrameEEENS_9allocatorIS9_EEEEEJPS4_RKNS_12placeholders4__phILi1EEEEEENSA_ISN_EEFvRSC_EEE
+NSt6__ndk110__function6__funcINS_6__bindIMN7HW_SLAM13AnchorManagerEKFvRNS_4listINS_10shared_ptrINS3_6AnchorEEENS_9allocatorIS8_EEEEEJPS4_RKNS_12placeholders4__phILi1EEEEEENS9_ISL_EEFvSC_EEE
+NSt6__ndk110__function6__funcINS_6__bindIMN7HW_SLAM13MappingModuleEFNS_4listINS_10shared_ptrIN9ORB_SLAM28KeyFrameEEENS_9allocatorIS9_EEEEvEJPS4_EEENSA_ISG_EEFSC_vEEE
+NSt6__ndk110__function6__funcINS_6__bindIMN7HW_SLAM13MappingModuleEFvNS_10shared_ptrIN9ORB_SLAM28KeyFrameEEEEJPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISH_EEFvS8_EEE
+NSt6__ndk110__function6__funcINS_6__bindIMN9ORB_SLAM211LoopClosingEFvRNS_4listIN9MULTIUSER11MatchResultENS_9allocatorIS7_EEEEEJPS4_RKNS_12placeholders4__phILi1EEEEEENS8_ISK_EEFvSB_EEE
+NSt6__ndk110__function6__funcINS_6__bindIMN9ORB_SLAM212LocalMappingEFvRNS_4listIN9MULTIUSER11MatchResultENS_9allocatorIS7_EEEEEJPS4_RKNS_12placeholders4__phILi1EEEEEENS8_ISK_EEFvSB_EEE
+NSt6__ndk110__function6__funcINS_6__bindIMN9ORB_SLAM212LocalMappingEFvbEJPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISD_EEFvbEEE
+NSt6__ndk110__function6__funcINS_6__bindIPFNS_10shared_ptrIN9MULTIUSER11KeyFrameMsgEEEvEJEEENS_9allocatorIS9_EEFNS3_INS4_17MultiUserDataBaseEEEvEEE
+NSt6__ndk110__function6__funcINS_6__bindIPFNS_10shared_ptrIN9MULTIUSER18KfPoseNewAndDelMsgEEEvEJEEENS_9allocatorIS9_EEFNS3_INS4_17MultiUserDataBaseEEEvEEE
+NSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRK15SmoothPoseStateEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISK_EEFvS7_EEE
+NSt6__ndk110__function6__funcINS_6__bindIRMN16HW_SLAM_MAPPING211Relocation2EFvRKNS_10shared_ptrIN7HW_SLAM23TrackingToReloc2MessageEEEEJRPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvSA_EEE
+NSt6__ndk110__function6__funcINS_6__bindIRMN16HW_SLAM_MAPPING212LocalMappingEFvRKNS_10shared_ptrIN7HW_SLAM15GlobalLocResultEEEEJRPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvSA_EEE
+NSt6__ndk110__function6__funcINS_6__bindIRMN16HW_SLAM_MAPPING212LocalMappingEFvRKNS_10shared_ptrIN7HW_SLAM17FrameMatchMessageEEEEJRPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvSA_EEE
+NSt6__ndk110__function6__funcINS_6__bindIRMN7HW_SLAM14FeatureTrackerEFvRKNS_10shared_ptrINS3_9FramePackEEEEJRPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISK_EEFvS9_EEE
+NSt6__ndk110__function6__funcINS_6__bindIRMN7HW_SLAM17FeatureExtractARMEFvRKNS_10shared_ptrI20FeatureExtractMssageEEEJRPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISK_EEFvS9_EEE
+NSt6__ndk110__function6__funcINS_6__bindIRMN7HW_SLAM8TrackingEFvRKNS_10shared_ptrINS3_15GlobalLocResultEEEEJRPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISK_EEFvS9_EEE
+NSt6__ndk110__function6__funcINS_6__bindIRMN7HW_SLAM8TrackingEFvRKNS_10shared_ptrINS3_17FrameMatchMessageEEEEJRPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISK_EEFvS9_EEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi2ELi2EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi2ELi2EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi2ELi3EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi2ELi3EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi2ELi4EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi2ELi4EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi2ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi2ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi3ELi3EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi3ELi3EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi3ELi4EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi3ELi4EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi3ELi6EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi3ELi6EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi3ELi9EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi3ELi9EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi3ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi3ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELi3EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELi3EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELi4EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELi4EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELi6EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELi6EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELi8EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELi8EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELi9EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELi9EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELi4ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELin1ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi2ELin1ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi3ELi3ELi3EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi3ELi3ELi3EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi4ELi4ELi2EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi4ELi4ELi2EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi4ELi4ELi3EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi4ELi4ELi3EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi4ELi4ELi4EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi4ELi4ELi4EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi4ELi4ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILi4ELi4ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILin1ELin1ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliE_NS_9allocatorISE_EEFviEEE
+NSt6__ndk110__function6__funcIZN5ceres8internal15SchurEliminatorILin1ELin1ELin1EE9EliminateERKNS3_21BlockSparseMatrixDataEPKdSA_PNS3_23BlockRandomAccessMatrixEPdEUliiE_NS_9allocatorISE_EEFviiEEE
+NSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothE15SmoothPoseStateEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSG_EUlRKNS_10shared_ptrIS6_EEE_NSB_ISR_EEFvSQ_EEE
+NSt6__ndk114default_deleteIN2cv12cpu_baseline12_GLOBAL__N_131initUndistortRectifyMapComputerEEE
+NSt6__ndk114default_deleteIN7HW_SLAM10Subscriber4ImplEEE
+NSt6__ndk114default_deleteIN7HW_SLAM9Publisher4ImplEEE
+NSt6__ndk114unary_functionIPN7HW_SLAM11RelocThreadEbEE
+NSt6__ndk114unary_functionIPN7HW_SLAM13MappingModuleENS_4listINS_10shared_ptrIN9ORB_SLAM28KeyFrameEEENS_9allocatorIS8_EEEEEE
+NSt6__ndk115binary_functionIPKN7HW_SLAM13AnchorManagerERNS_4listINS_10shared_ptrINS1_6AnchorEEENS_9allocatorIS8_EEEEvEE
+NSt6__ndk115binary_functionIPN16HW_SLAM_MAPPING210BackendMapEivEE
+NSt6__ndk115binary_functionIPN16HW_SLAM_MAPPING211Relocation2ERKNS_10shared_ptrIN7HW_SLAM23TrackingToReloc2MessageEEEvEE
+NSt6__ndk115binary_functionIPN16HW_SLAM_MAPPING212LocalMappingERKNS_10shared_ptrIN7HW_SLAM15GlobalLocResultEEEvEE
+NSt6__ndk115binary_functionIPN16HW_SLAM_MAPPING212LocalMappingERKNS_10shared_ptrIN7HW_SLAM17FrameMatchMessageEEEvEE
+NSt6__ndk115binary_functionIPN7HW_SLAM10PoseSmoothERK15SmoothPoseStatevEE
+NSt6__ndk115binary_functionIPN7HW_SLAM13AnchorManagerEN9ORB_SLAM28UniqueIdEbEE
+NSt6__ndk115binary_functionIPN7HW_SLAM13AnchorManagerERKN9ORB_SLAM28UniqueIdEvEE
+NSt6__ndk115binary_functionIPN7HW_SLAM13AnchorManagerERKNS_4listINS_17reference_wrapperIN9ORB_SLAM28KeyFrameEEENS_9allocatorIS8_EEEEvEE
+NSt6__ndk115binary_functionIPN7HW_SLAM13MappingModuleENS_10shared_ptrIN9ORB_SLAM28KeyFrameEEEvEE
+NSt6__ndk115binary_functionIPN7HW_SLAM14FeatureTrackerERKNS_10shared_ptrINS1_9FramePackEEEvEE
+NSt6__ndk115binary_functionIPN7HW_SLAM17FeatureExtractARMERKNS_10shared_ptrI20FeatureExtractMssageEEvEE
+NSt6__ndk115binary_functionIPN7HW_SLAM8TrackingERKNS_10shared_ptrINS1_15GlobalLocResultEEEvEE
+NSt6__ndk115binary_functionIPN7HW_SLAM8TrackingERKNS_10shared_ptrINS1_17FrameMatchMessageEEEvEE
+NSt6__ndk115binary_functionIPN9ORB_SLAM211LoopClosingERNS_4listIN9MULTIUSER11MatchResultENS_9allocatorIS6_EEEEvEE
+NSt6__ndk115binary_functionIPN9ORB_SLAM212LocalMappingERNS_4listIN9MULTIUSER11MatchResultENS_9allocatorIS6_EEEEvEE
+NSt6__ndk115binary_functionIPN9ORB_SLAM212LocalMappingEbvEE
+NSt6__ndk118__weak_result_typeIMN16HW_SLAM_MAPPING210BackendMapEFviEEE
+NSt6__ndk118__weak_result_typeIMN16HW_SLAM_MAPPING211Relocation2EFvRKNS_10shared_ptrIN7HW_SLAM23TrackingToReloc2MessageEEEEEE
+NSt6__ndk118__weak_result_typeIMN16HW_SLAM_MAPPING212LocalMappingEFvRKNS_10shared_ptrIN7HW_SLAM15GlobalLocResultEEEEEE
+NSt6__ndk118__weak_result_typeIMN16HW_SLAM_MAPPING212LocalMappingEFvRKNS_10shared_ptrIN7HW_SLAM17FrameMatchMessageEEEEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM10PoseSmoothEFvRK15SmoothPoseStateEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM11RelocThreadEFbvEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM13AnchorManagerEFbN9ORB_SLAM28UniqueIdEEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM13AnchorManagerEFvRKN9ORB_SLAM28UniqueIdEEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM13AnchorManagerEFvRKNS_4listINS_17reference_wrapperIN9ORB_SLAM28KeyFrameEEENS_9allocatorIS7_EEEEEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM13AnchorManagerEKFvRNS_4listINS_10shared_ptrINS1_6AnchorEEENS_9allocatorIS6_EEEEEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM13MappingModuleEFNS_4listINS_10shared_ptrIN9ORB_SLAM28KeyFrameEEENS_9allocatorIS7_EEEEvEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM13MappingModuleEFvNS_10shared_ptrIN9ORB_SLAM28KeyFrameEEEEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM14FeatureTrackerEFvRKNS_10shared_ptrINS1_9FramePackEEEEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM17FeatureExtractARMEFvRKNS_10shared_ptrI20FeatureExtractMssageEEEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM8TrackingEFvRKNS_10shared_ptrINS1_15GlobalLocResultEEEEEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM8TrackingEFvRKNS_10shared_ptrINS1_17FrameMatchMessageEEEEEE
+NSt6__ndk118__weak_result_typeIMN9ORB_SLAM211LoopClosingEFvRNS_4listIN9MULTIUSER11MatchResultENS_9allocatorIS5_EEEEEEE
+NSt6__ndk118__weak_result_typeIMN9ORB_SLAM212LocalMappingEFvRNS_4listIN9MULTIUSER11MatchResultENS_9allocatorIS5_EEEEEEE
+NSt6__ndk118__weak_result_typeIMN9ORB_SLAM212LocalMappingEFvbEEE
+NSt6__ndk118__weak_result_typeIPFNS_10shared_ptrIN9MULTIUSER11KeyFrameMsgEEEvEEE
+NSt6__ndk118__weak_result_typeIPFNS_10shared_ptrIN9MULTIUSER18KfPoseNewAndDelMsgEEEvEEE
+NSt6__ndk119__async_assoc_stateIvNS_12__async_funcIMN7HW_SLAM17FeatureExtractARMEFvNS_10shared_ptrINS2_9FramePackEEEEJPS3_S6_EEEEE
+NSt6__ndk120__shared_ptr_emplaceI10PatchFrameNS_9allocatorIS1_EEEE
+NSt6__ndk120__shared_ptr_emplaceI15SmoothPoseStateNS_9allocatorIS1_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN16HW_SLAM_MAPPING26AnchorENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN20SLAM_FEATURE_TRACKER15FeatureMetaDataENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv11FileStorage4ImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12LMSolverImplENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12_GLOBAL__N_126SparsePyrLKOpticalFlowImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_13FixedPtCastExIihEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIddEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIdhEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIdsEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIdtEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIffEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIfhEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIfsEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIftEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_13FixedPtCastExIihEENS2_19SymmColumnVec_32s8uEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIddEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIdhEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIdsEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIdtEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIffEENS2_17SymmColumnVec_32fEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIfhEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIfsEENS2_20SymmColumnVec_32f16sEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIftEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIisEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline21SymmColumnSmallFilterINS2_13FixedPtCastExIihEENS2_19SymmColumnVec_32s8uEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline21SymmColumnSmallFilterINS2_4CastIffEENS2_22SymmColumnSmallVec_32fEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline21SymmColumnSmallFilterINS2_4CastIisEENS2_25SymmColumnSmallVec_32s16sEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIdNS2_4CastIddEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIfNS2_4CastIffEENS2_13FilterVec_32fEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIhNS2_4CastIddEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIhNS2_4CastIffEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIhNS2_4CastIfhEENS2_12FilterVec_8uEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIhNS2_4CastIfsEENS2_15FilterVec_8u16sEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIhNS2_4CastIftEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIsNS2_4CastIddEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIsNS2_4CastIffEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIsNS2_4CastIfsEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DItNS2_4CastIddEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DItNS2_4CastIffEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DItNS2_4CastIftEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv13FormattedImplENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv24FastFeatureDetector_ImplENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac10DLSPnPImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac12GraphCutImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac13P3PSolverImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac15MsacQualityImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac16LMedsQualityImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac16PnPEstimatorImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac16RansacOutputImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac16SampsonErrorImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac17MagsacQualityImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac17ModelVerifierImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac17NapsacSamplerImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac17NormTransformImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac17ProsacSamplerImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac17RansacQualityImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac18SigmaConsensusImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac18UniformSamplerImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac19AffineEstimatorImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac19SPRTTerminationImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac21ProgressiveNapsacImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac22EssentialEstimatorImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac23AffineMinimalSolverImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac23EssentialDegeneracyImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac23HomographyEstimatorImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac23PnPNonMinimalSolverImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac23ProsacSimpleSamplerImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac24FundamentalEstimatorImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac24HomographyDegeneracyImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac24PnPMinimalSolver6PtsImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac25FundamentalDegeneracyImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac25GridNeighborhoodGraphImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac25LeastSquaresPolishingImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac26AffineNonMinimalSolverImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac26FlannNeighborhoodGraphImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac26SPRTPNapsacTerminationImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac26UniformRandomGeneratorImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac28ReprojectionErrorForwardImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac28ReprojectionErrorPmatrixImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac29EssentialNonMinimalSolverImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac29ProsacTerminationCriteriaImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac30EpipolarGeometryDegeneracyImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac30HomographyNonMinimalSolverImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac30ReprojectionDistanceAffineImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac30ReprojectionErrorSymmetricImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac30SymmetricGeometricDistanceImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac31FundamentalNonMinimalSolverImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac32FundamentalMinimalSolver7ptsImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac32FundamentalMinimalSolver8ptsImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac33RadiusSearchNeighborhoodGraphImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac34HomographyMinimalSolver4ptsGEMImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac35InnerIterativeLocalOptimizationImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac39EssentialMinimalSolverStewenius5ptsImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac8SPRTImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv4usac9ModelImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN3VIO25MagnetometerManagerPluginENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN6Camera7PinholeENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN6Camera9FisheyeKBENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN7HW_SLAM15GlobalLocResultENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN7HW_SLAM17FrameMatchMessageENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN7HW_SLAM17MultiCamTrackInfoENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN7HW_SLAM23TrackingToReloc2MessageENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN7HW_SLAM6AnchorENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN7HW_SLAM9FramePackENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN7HW_SLAM9HSCommandENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN7HW_SLAM9Messenger4DataENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN9MULTIUSER11KeyFrameMsgENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN9MULTIUSER18KfPoseNewAndDelMsgENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN9ORB_SLAM213BaInitFeatureENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN9ORB_SLAM220VioInitBaInitializerENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN9ORB_SLAM222PlaneInitBaInitializerENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN9ORB_SLAM223LinearInitBaInitializerENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN9ORB_SLAM23IMU13PreintegratedENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN9ORB_SLAM23MapENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN9ORB_SLAM28KeyFrameENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN9ORB_SLAM28MapPointENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN2cv10OcvDctImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN2cv10OcvDftImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN2cv12cpu_baseline12_GLOBAL__N_131initUndistortRectifyMapComputerENS_14default_deleteIS4_EENS_9allocatorIS4_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM10Subscriber4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM9Publisher4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+NSt6__ndk122__deferred_assoc_stateIvNS_12__async_funcIMN7HW_SLAM17FeatureExtractARMEFvNS_10shared_ptrINS2_9FramePackEEEEJPS3_S6_EEEEE
+NSt6__ndk16__bindIMN16HW_SLAM_MAPPING210BackendMapEFviEJPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIMN7HW_SLAM11RelocThreadEFbvEJPS2_EEE
+NSt6__ndk16__bindIMN7HW_SLAM13AnchorManagerEFbN9ORB_SLAM28UniqueIdEEJPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIMN7HW_SLAM13AnchorManagerEFvRKN9ORB_SLAM28UniqueIdEEJPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIMN7HW_SLAM13AnchorManagerEFvRKNS_4listINS_17reference_wrapperIN9ORB_SLAM28KeyFrameEEENS_9allocatorIS7_EEEEEJPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIMN7HW_SLAM13AnchorManagerEKFvRNS_4listINS_10shared_ptrINS1_6AnchorEEENS_9allocatorIS6_EEEEEJPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIMN7HW_SLAM13MappingModuleEFNS_4listINS_10shared_ptrIN9ORB_SLAM28KeyFrameEEENS_9allocatorIS7_EEEEvEJPS2_EEE
+NSt6__ndk16__bindIMN7HW_SLAM13MappingModuleEFvNS_10shared_ptrIN9ORB_SLAM28KeyFrameEEEEJPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIMN9ORB_SLAM211LoopClosingEFvRNS_4listIN9MULTIUSER11MatchResultENS_9allocatorIS5_EEEEEJPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIMN9ORB_SLAM212LocalMappingEFvRNS_4listIN9MULTIUSER11MatchResultENS_9allocatorIS5_EEEEEJPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIMN9ORB_SLAM212LocalMappingEFvbEJPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIPFNS_10shared_ptrIN9MULTIUSER11KeyFrameMsgEEEvEJEEE
+NSt6__ndk16__bindIPFNS_10shared_ptrIN9MULTIUSER18KfPoseNewAndDelMsgEEEvEJEEE
+NSt6__ndk16__bindIRKMN7HW_SLAM10PoseSmoothEFvRK15SmoothPoseStateEJRKPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIRMN16HW_SLAM_MAPPING211Relocation2EFvRKNS_10shared_ptrIN7HW_SLAM23TrackingToReloc2MessageEEEEJRPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIRMN16HW_SLAM_MAPPING212LocalMappingEFvRKNS_10shared_ptrIN7HW_SLAM15GlobalLocResultEEEEJRPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIRMN16HW_SLAM_MAPPING212LocalMappingEFvRKNS_10shared_ptrIN7HW_SLAM17FrameMatchMessageEEEEJRPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIRMN7HW_SLAM14FeatureTrackerEFvRKNS_10shared_ptrINS1_9FramePackEEEEJRPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIRMN7HW_SLAM17FeatureExtractARMEFvRKNS_10shared_ptrI20FeatureExtractMssageEEEJRPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIRMN7HW_SLAM8TrackingEFvRKNS_10shared_ptrINS1_15GlobalLocResultEEEEJRPS2_RKNS_12placeholders4__phILi1EEEEEE
+NSt6__ndk16__bindIRMN7HW_SLAM8TrackingEFvRKNS_10shared_ptrINS1_17FrameMatchMessageEEEEJRPS2_RKNS_12placeholders4__phILi1EEEEEE
+Neither accuracy nor maximum iterations number flags are set in criteria type
+NewKeyFrame
+NotifySlamStatus finish
+NotifySlamStatus status %d, value %d
+Null pointer to image
+Number of object and image points must be equal
+Number of object and image(2) points must be equal
+Optimum cb_index: %g
+Overflow for imageSize
+PIB frm:%zu,track:%zu
+PIB hist:%zu %d, numFramesNeeded:%d
+POForReloc::frame pose after PO. translation: %f, %f, %f, quaternion: %f, %f, %f, %f
+POForReloc::frame pose after PnP. translation: %f, %f, %f, quaternion: %f, %f, %f, %f
+P^UpdateFrameStates
+PackFrame fea failed; length(%ld), needDataSize(%zu)
+ParaInfoIsNan ImuInternalPara is nan
+ParaInfoIsNan accCrossError is nan
+ParaInfoIsNan accScale is nan
+ParaInfoIsNan aveAccBias is nan
+ParaInfoIsNan camIntriPara distortion is nan
+ParaInfoIsNan gyroCrossError is nan
+ParaInfoIsNan gyroScale is nan
+PoseSmooth
+PoseSmooth SetParams TicToTci;(%lf,%lf,%lf;%lf,%lf,%lf;%lf,%lf,%lf;)
+PoseSmooth SetParams: m_pci = %lf %lf %lf, qci = %lf %lf %lf %lf
+PoseSmooth: curElem is NULL!!
+PoseSmooth: pointer p_cine is NULL!!
+PoseSmooth: pointer pe_cine is nullptr!!
+PoseSmooth::Get6Dof:pCine(%p)
+PoseSmooth::Init pSlamPara is nullptr
+PoseSmooth::Run p_cine is null
+PoseSmooth; pose fps; %lf
+PostProcess %d after frame data size: %zu, frame pack size: %zu
+PostProcess %d before frame data size: %zu, frame pack size: %zu
+Principal point must be within the image
+ProcessAfterGet6DofPredict: dispTimeStamp = %lf, 6doftime = %lf, predicttime = %f
+ProcessAfterGet6DofPredict: dispTimeStamp = %lf, find 6dof error.
+ProcessAfterReloc After solve: translation: %f, %f, %f, quaternion: %f, %f, %f, %f
+ProcessAfterReloc::diff pose with matchedkf is too big
+ProjectCurrentFeaturesWithDepth currCamera:%u, matchNum:%d
+ProjectExist3DPoints currCamera:%u, matchNum:%zu
+Ptr<cv::ParallelLoopBody> cv::(anonymous namespace)::getInitUndistortRectifyMapComputer(cv::Size, cv::Mat &, cv::Mat &, int, const double *, cv::Matx33d &, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double)
+Ptr<cv::ParallelLoopBody> cv::cpu_baseline::getInitUndistortRectifyMapComputer(cv::Size, cv::Mat &, cv::Mat &, int, const double *, cv::Matx33d &, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double, double)
+PublishMappingState global pose qgl: %f, %f, %f, %f, pgl: %f, %f, %f
+PublishMappingState subMap ID: %d, frame ID: %d, isAlignOfflineMap: %d, mapping pose q: %f, %f, %f ,%f, p: %f, %f, %f
+Pure virtual function called!
+Push VpsData timeStamp: %f
+PushFrameToAnchorManager, ID(%d), t(%f) : useG(%d) cov(%.5f %.5f %.5f)
+PushImage: copy enhance img failed
+PushImage: copy vga img failed
+RSDeltaPoses: m_preIntegrations empty.
+ReImuPara aBias %lf %lf %lf gBias %lf %lf %lf
+RecvDataFromVPS slam%f %f %f %f %f %f %f
+Reloc2 diff position:%f, diff angle:%f,                relocFrame translation: %f, %f, %f, quaternion: %f, %f, %f, %f,                translation: %f, %f, %f, quaternion: %f, %f, %f, %f
+RelocStopImuAfterRelocID
+Relocalization::GetPoseFromCandidates
+Relocation2 accept frame is null
+Relocation2 accept null frame !!!
+Relocation2 candiKfs frame id(%u)
+Relocation2 curFrame is null
+Relocation2 keyFrameAndMatch frame id(%u) matches size(%zu)
+Relocation2 pKF is not find in keyFrameMatch,                   curFrame(%u), candiFrame(%u), do match.
+Relocation2::FilterByGroup, frame:%u, CameraMappingData is nullptr
+Relocation2::FilterCandiKFsBy2DMatch curFrame Id(%u), candiKF(%u) nmatches(%d)
+Relocation2::GetPoseFromCandidates Enter. vpCandidateKFs(%zu) keyFrameMatch(%zu)
+Relocation2::POForReloc failed. Pose diff is too big
+Relocation2::ProcessData reloc extract ai feats, frame id(%d), m_aiFeats number: %d, total time: %lf
+Relocation2::ProcessReloc Failed: GetBackendMap failed or cameras empty.
+Relocation2::ProcessReloc Failed: GetPoseFromCandidates failed
+Relocation2::ProcessReloc Failed: input curCamera is null.
+Relocation2::ProcessReloc camFrame->GetFeats() size %zu.
+Relocation2::PushFrame, size of m_frmQueue: %zu
+RemoveBadFrames, remove newest frame
+ResetGravityTrackingResult
+RotTrack imu cache size(%zu) overflow
+RotTrack::Predict %s
+RotTrack::SetRotAndBias t(%f) %s
+SLAM Get Pose
+SLAMDFX
+SLAM_FEATURE
+SLAM_FRAMEWORK
+SLAM_FRAMEWORK =RL= ID(%u), t(%f), kfID(%u): PoRelocOK(%d), nmatchesOpt(%d), nBPO(%d)
+SLAM_FRAMEWORK =RL= ID(%u), t(%f), kfID(%u): leave trackOK(%d)
+SLAM_FRAMEWORK init ParaInfo error reason=%d
+SLAM_GET_ANCHOR_LOCAL_MAP
+SLAM_GET_FRAME
+SLAM_GET_INIT_PARA
+SLAM_GET_KEY_FRAME_POSE
+SLAM_GET_KEY_FRAME_TIME
+SLAM_GET_MAPLOAD_STATE
+SLAM_GET_MAP_STATE
+SLAM_GET_MAX_MAP_SIZE
+SLAM_GET_POSE
+SLAM_GET_SAVE_MAP
+SLAM_MAPPING
+SLAM_PARA:deviceProductMode : ***%s***  phoneType:%d
+SLAM_PARA:input gyro vendor: ***%s*** imuType :%d
+SLAM_PARA; Build Project Version Failed
+SLAM_PARA; FRAMEWORK_CAMERA_FPS:%f
+SLAM_PARA; FRAMEWORK_CAMERA_ID:%d
+SLAM_PARA; FRAMEWORK_CAMERA_af:ax=%lf,ay=%lf,bx=%lf,by=%lf,calibV=%lf
+SLAM_PARA; FRAMEWORK_CAMERA_distCoefs:flag=%d,k1=%f,k2=%f,k3=%f,p1=%f,p2=%f
+SLAM_PARA; FRAMEWORK_CAMERA_height:%d
+SLAM_PARA; FRAMEWORK_CAMERA_imageType:%d
+SLAM_PARA; FRAMEWORK_CAMERA_intraParas:fx=%f,fy=%f,cx=%f,cy=%f
+SLAM_PARA; FRAMEWORK_CAMERA_rs:%lf
+SLAM_PARA; FRAMEWORK_CAMERA_stride:%d
+SLAM_PARA; FRAMEWORK_CAMERA_width:%d
+SLAM_PARA; FRAMEWORK_DescriptorLengthInBit:%d
+SLAM_PARA; FRAMEWORK_DescriptorLengthInByte:%d
+SLAM_PARA; FRAMEWORK_FeatureType:%d
+SLAM_PARA; FRAMEWORK_IMU_ACC_bias: %f %f %f
+SLAM_PARA; FRAMEWORK_IMU_ACC_scale: %f %f %f; %f %f %f; %f %f %f
+SLAM_PARA; FRAMEWORK_IMU_A_FPS:%f
+SLAM_PARA; FRAMEWORK_IMU_GYRO_bias: %f %f %f
+SLAM_PARA; FRAMEWORK_IMU_GYRO_scale: %f %f %f; %f %f %f; %f %f %f
+SLAM_PARA; FRAMEWORK_IMU_G_FPS:%f
+SLAM_PARA; FRAMEWORK_IMU_TYPE=%d, FRAMEWORK_PHONE_TYPE=%d
+SLAM_PARA; FRAMEWORK_IMU_Tbc:
+SLAM_PARA; FRAMEWORK_IMU_calibTShiftAETimeSec:%f
+SLAM_PARA; FRAMEWORK_IMU_delayCam2IMU:%f
+SLAM_PARA; FRAMEWORK_IMU_need_Compsate:%d
+SLAM_PARA; FRAMEWORK_IMU_noise: gn=%lf %lf, an=%lf %lf
+SLAM_PARA; FRAMEWORK_VirtualCameraFps:%f
+SLAM_PARA; FRAMEWORK_appType:%d
+SLAM_PARA; FRAMEWORK_autoToolSwitch:%d
+SLAM_PARA; FRAMEWORK_cameraModelType:%s
+SLAM_PARA; FRAMEWORK_cameraType:%d
+SLAM_PARA; FRAMEWORK_depthImageSwitch:%d
+SLAM_PARA; FRAMEWORK_feaTrackerSwitch:%d
+SLAM_PARA; FRAMEWORK_featureProcType:%d
+SLAM_PARA; FRAMEWORK_imuValidCnt:%d
+SLAM_PARA; FRAMEWORK_laserSwitch:%d
+SLAM_PARA; FRAMEWORK_lbaSwitch:%d
+SLAM_PARA; FRAMEWORK_offlineData:switch=%d
+SLAM_PARA; FRAMEWORK_preImgSwitch:%d
+SLAM_PARA; FRAMEWORK_slamProcessImageFps:%f
+SLAM_PARA; FRAMEWORK_validCamCnt:%d
+SLAM_PARA; IMU or phone type is undef:IMUType = %d,phone_type=%d
+SLAM_PARA; Project Ver, AppType %d, camCnt %d, imuCnt %d, res %d
+SLAM_PARA; Upd Param enter
+SLAM_PARA; Upd Param leave
+SLAM_PARA; Upd Param, Extrins change too much.
+SLAM_PARA; Upd Param, Pic change ( %f ).
+SLAM_PARA; Upd Param, Ric change ( %f ).
+SLAM_PARA; Upd Param, acc scale too much.
+SLAM_PARA; Upd Param, dist change (%f, %f, %f, %f, %f) to (%f, %f, %f, %f, %f)
+SLAM_PARA; Upd Param, distCoefs change too much
+SLAM_PARA; Upd Param, gyro scale too much.
+SLAM_PARA; Upd Param, intrins change (%f, %f, %f, %f) to (%f, %f, %f, %f)
+SLAM_PARA; Upd Param, intrins change too much
+SLAM_PARA; Upd Param, intrins invalid.
+SLAM_PARA; Upd Param, pixBorder (%f, %f, %f, %f)
+SLAM_PARA; Upd Param, pixBorder invalid
+SLAM_PARA; pVocBufferIn:%p, len(%u)
+SLAM_SET_ADD_ANCHOR
+SLAM_SET_AF_MODE
+SLAM_SET_LOAD_MAP
+SLAM_SET_MAP_ADDFEATURE_SWITCH
+SLAM_SET_MAX_MAP_SIZE
+SLAM_SET_MODE
+SLAM_SET_RELOC_MANUAL_SWITCH
+SLAM_SET_REMOVE_ANCHOR
+SLAM_SET_SHARE_MAP_MODE
+SLAM_SET_SHARE_MAP_STATUS
+SLAM_SET_VPS_DATA
+SLAM_SET_VPS_OPEN_PLANE_FLAG
+SLAM_SMOOTH
+SLAM_TRACKING
+SensorCounter: gap between sensor %s and image, sub:%lf newT %lf baseT %lf
+SensorCounter:%s data %u times in %f seconds
+SensorCounter:a big gap between sensor %s and img, sub:%lf newT %lf baseT %lf
+SensorCounter:id(%u) imgDelay(%lf), gapinfo %s
+SensorCounter:imu delay, sub:%f
+SensorCounter:sensor %s lost frame,subTime %lf
+SetAnchorRelPose localKeyFrames: %zu
+SetConvergeFlagToPoseSmooth %d
+SetFrameTobeBad 1::%u
+SetFrameTobeBad 2::%u
+SetFrameTobeBad 3::%u
+SetFrameTobeBad 4::%u
+SetFrameTobeBad 5::%u
+SetGlobalInfoFromMap, flag %d, pose: %s
+SetGlobalInfoFromMapResult, pose: %s, isGlobal: %d
+SetLBAMapPointsToDisp cameras or feature size zero
+SetParaInfo -- Prior ParaInfo NOT set! imuType NOT matched!
+SetParaInfo---- abnormal bias; aveAcbNorm, aveGyrbNorm, accScale, gyroScale: %lf, %lf, %lf, %lf
+SetPose failed, nan
+SetSensorType input is null
+SetTrackingParams TrackingInit failed.
+SetTwinsTrackingPose t: %lf, TrackingState: %d, m_isResetVIO: %d, releaseErrorFlag: %d, endZeroVel: %d
+SetVIOLostManual: violost %u stateTrack %d
+SetVpsFlagForMagnet(%d)
+Simultaneous change of shape and number of channels is not supported. Do it by 2 separate calls
+Size of calibration and rotation matrices must be 3x3!
+Size of cameraMatrix must be 3x3!
+Size of projection matrix must be 3x4!
+Slam GetPose error:%d
+Slam Resume failed
+Slam pause failed status(%d)
+Slam status is SLAM_HANDLE_UNINIT
+Slam status(%d)
+Slam status(%d) is not RUNNING
+Slam status(%d) is not RUNNING or INITED
+Slam status(%d) is not SLAM_HANDLE_INITED
+Slam status(%d) is not SLAM_HANDLE_PAUSED
+Slam status(%d) is not SLAM_HANDLE_RUNNING
+Slam status(%d) is not SLAM_HANDLE_RUNNING or SLAM_HANDLE_PAUSED
+SlamCheckPara
+SlamCheckParaLower
+SlamInitPara
+SlamMainThread::BindApp failed
+SlamManager
+SlamManager enter
+SlamManager leaving
+SlamOutResult
+SlamOutputPose
+SolvePose n3DPoints: %d
+Specified non-existed directory, creating OpenCV sub-directory for caching purposes: 
+St8bad_cast
+StateDetector m_isDisplayPlane %d, initialFlag %d, isReloc %d
+StateDetector==CheckNormalMotionByIMU, m_timeOfInertialNormalMotion: %f, imuValidRor.norm(): %f,            RorTh %f, muValidAccNorm: %f, accTh %f deltaT: %f, m_normalMotionFlag %d,             im_timeOfInertialNormalMotionforZeoUpdate: %f,  m_normalMotionFlagforZeroUpdate %d
+Stop reloc2. curFrame:%u,triggerReloc2Frame:%u, request VPS: %d
+SyncCameraIntrinsicOnline camera empty
+TRACKING_STATUS_MSG_ID
+Test.doSavePose
+The destination image does not have the proper type
+The image has NULL data pointer
+The image is interleaved and has over CV_CN_MAX channels
+The specified aspect ratio (= cameraMatrix[0][0] / cameraMatrix[1][1]) is incorrect
+The tilted sensor model must have 14 parameters in the distortion matrix
+Thin prism model must have 12 parameters in the distortion matrix
+Track local structure
+TrackDataBase==GetFirstFeatureInFrame error: %ld.
+TrackToSmoothResMsgID
+Tracking GetGravityResult %d %d
+Tracking accept frame is null
+Tracking::PublishData, cur FrameID:%u, Contains FeatureTracker Points Number: %zu
+Tracking::SetValue value pointer is nullptr
+Tracking==NeedRequestVPSByTimeGap, isInServiceArea %d, currentTime %lf, vpsRequestTimeStamp %lf
+TrackingInit new vio failed.
+TrackingInit vio init failed.
+TrackingToReloc2MsgID
+TransformSLAM2Unity p:%f %f %f, q:%f %f %f %f
+Twins=====SetParams : cameraIntics(%lf,%lf,%lf,%lf)
+Twins=initialize : twins gravity(%lf,%lf,%lf), twins Qimu2W(%lf,%lf,%lf,%lf), timeStamp: %f
+Unknown projection type
+Unsupported depth of input image
+Update Edge deltaPose
+UpdateKeyFrameAndMapPoint
+UpdateNewOnlineCalibInfo---- Online calib parameters info updated!
+VIOMap::BackendKeyFrameDesicion failed 1
+VIOMap::BackendKeyFrameDesicion failed 3: timegap is too small(%f), not need newkf.curFrame id(%d), timestamp(%f), laseKeyFrame id(%d), timestamp(%f)
+VIOMap::GetFrameVioPose:framePack:%u is in vioMap
+VIOMap::GetFrameVioPose:framePack:%u is not in vioMap.vioMap size:%zu
+VIOMapFrm:remove frame pack %d
+VLADMatchCovisibleFrames:curFrameID:%u, bestCovisFrames:%zu, numAllMatches:%d
+Viewer.trackingSwitch
+VioInitializer droped the frame error
+VioInitializer input frame buffer error
+VioInitializer input imu buffer is null
+VioInitializer::IsStaticforIMUBuf() ---- memset_s error reason=%d
+VioStateInfo==GetValidCamID==> Camera Device and Camera Datas Buffer error.
+VpsSimuRequestMsgID
+VpsStateDetector imu cnt(%d)
+VpsStateDetector imutime(%f, %f, %f, %f)
+WriteVpsResult, timeStamp:%lf, tecP: %.4f, %.4f, %.4f,tecQ: %.4f, %.4f, %.4f, %.4f                 tmcP: %.4f, %.4f, %.4f, tmcQ: %.4f, %.4f, %.4f, %.4f
+ZN5ceres8internal15SchurEliminatorILi2ELi2ELi2EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi2ELi2EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi2ELi3EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi2ELi3EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi2ELi4EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi2ELi4EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi2ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi2ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi3ELi3EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi3ELi3EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi3ELi4EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi3ELi4EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi3ELi6EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi3ELi6EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi3ELi9EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi3ELi9EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi3ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi3ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELi3EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELi3EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELi4EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELi4EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELi6EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELi6EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELi8EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELi8EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELi9EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELi9EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELi4ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi2ELin1ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi2ELin1ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi3ELi3ELi3EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi3ELi3ELi3EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi4ELi4ELi2EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi4ELi4ELi2EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi4ELi4ELi3EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi4ELi4ELi3EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi4ELi4ELi4EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi4ELi4ELi4EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILi4ELi4ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILi4ELi4ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN5ceres8internal15SchurEliminatorILin1ELin1ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliE_
+ZN5ceres8internal15SchurEliminatorILin1ELin1ELin1EE9EliminateERKNS0_21BlockSparseMatrixDataEPKdS7_PNS0_23BlockRandomAccessMatrixEPdEUliiE_
+ZN7HW_SLAM9Messenger9SubscribeINS_10PoseSmoothE15SmoothPoseStateEENS_10SubscriberERKNSt6__ndk112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEjMT_FvRKT0_EPSE_EUlRKNS5_10shared_ptrIS3_EEE_
+Zf_track is exist feature in camFrame %d
+[%-4d] AR&VR HW SLAM Build %s
+[%-4d] HW_SLAM_Create leaving
+[%-4d] Handle of Featrue Tracker on DSP Get Faild!
+[%-4d] create slam is failed
+[%-4d] create slam module failed Module name (%s)
+[%-4d] m_pSlamPose is null
+[%-4d] new slam is failed
+[%-4d] slam config valid!
+[%-4d] slam input and output is null
+[%-4d] slam params get faild
+[)imageCount > 0
+[Hfea accept null frame
+]Jpose estimate 
+_ZNKSt8bad_cast4whatEv
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4nposE
+_ZNSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE4nposE
+_ZNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEE10pubseekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE10pubseekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE7seekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk18ios_base7showposE
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTISt8bad_cast
+_ZTSSt8bad_cast
+_ZTVSt8bad_cast
+__cxa_deleted_virtual
+__cxa_guard_abort failed to broadcast condition variable
+__cxa_guard_release failed to broadcast condition variable
+__cxa_pure_virtual
+__deregister_frame
+__deregister_frame_info
+__deregister_frame_info_bases
+__dynamic_cast
+__frame_state_for
+__register_frame
+__register_frame_info
+__register_frame_info_bases
+__register_frame_info_table
+__register_frame_info_table_bases
+__register_frame_table
+_cameraMatrix.needed()
+accidentally use the wrong parameter block or parameterization?
+allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+backendPoseIsReady: %d
+bool cv::stereoRectifyUncalibrated(cv::InputArray, cv::InputArray, cv::InputArray, cv::Size, cv::OutputArray, cv::OutputArray, double)
+bracketing containing such a point. Accepting 
+brief, mnId:(%s), mnFrameId:%d, timeStamp:%.9f, camId:%d
+brief, mnId:(%s), mnFrameId:%u, timeStamp:%.9f, camId:%u
+brief, mnId:(%u, %d), mnFrameId:%d, timeStamp:%.9f, camId:%d
+brief, mnId:(%u, %d), mnFrameId:%u, timeStamp:%.9f, camId:%u
+calibTShiftAETimeSec
+calibrateCameraRO
+calibrationMatrixValues
+cam frm push error image;img:%p, w-h:%d-%d
+camera image is empty
+cameraFPS
+cameraMatrix0.size() == Size(3,3)
+clear IMU data...
+collectCalibrationData
+const_cast
+count track status, track is empty
+counter: img %f gyro %f acc %f
+covis, num of keyframes:%d
+create MagnetometerBuf failed, MagnetometerBuf
+create cinebuf failed, OriginIMU(%p) preProcIMU(%p) dispPose(%p) Gravity(%p) imuPreinte(%p)
+create cinebuf failed, m_imuBufForInit is null
+curFrame(%u),SKDB relocOK(%d) matchFrmId(%u) useGravity(0) m_2d3dMatches size(%zu)
+cv::Mat cv::getOptimalNewCameraMatrix(cv::InputArray, cv::InputArray, cv::Size, double, cv::Size, cv::Rect *, bool)
+cv::Mat cv::initCameraMatrix2D(cv::InputArrayOfArrays, cv::InputArrayOfArrays, cv::Size, double)
+cvCalibrateCamera2Internal
+cvCalibrateCamera4
+cvCalibrationMatrixValues
+cvCloneImage
+cvComposeRT
+cvDecomposeProjectionMatrix
+cvFindExtrinsicCameraParams2
+cvGetImage
+cvGetImageCOI
+cvGetImageROI
+cvInitImageHeader
+cvInitUndistortMap
+cvInitUndistortRectifyMap
+cvIplImage
+cvReleaseImage
+cvReleaseImageHeader
+cvReprojectImageTo3D
+cvResetImageROI
+cvSetImageCOI
+cvSetImageROI
+cvStereoCalibrateImpl
+cvStereoRectifyUncalibrated
+cvTranspose
+cvUndistort2
+cvUndistortPointsInternal
+d:InitBearingVector ref frame is null, %lu
+ddk preproc;null camera, frm (%p)
+delayCam2IMU
+depth preproc;null camera
+display mp
+double cv::calibrateCamera(cv::InputArrayOfArrays, cv::InputArrayOfArrays, cv::Size, cv::InputOutputArray, cv::InputOutputArray, cv::OutputArrayOfArrays, cv::OutputArrayOfArrays, cv::OutputArray, cv::OutputArray, cv::OutputArray, int, cv::TermCriteria)
+double cv::calibrateCamera(cv::InputArrayOfArrays, cv::InputArrayOfArrays, cv::Size, cv::InputOutputArray, cv::InputOutputArray, cv::OutputArrayOfArrays, cv::OutputArrayOfArrays, int, cv::TermCriteria)
+double cv::calibrateCameraRO(cv::InputArrayOfArrays, cv::InputArrayOfArrays, cv::Size, int, cv::InputOutputArray, cv::InputOutputArray, cv::OutputArrayOfArrays, cv::OutputArrayOfArrays, cv::OutputArray, cv::OutputArray, cv::OutputArray, cv::OutputArray, cv::OutputArray, int, cv::TermCriteria)
+double cv::calibrateCameraRO(cv::InputArrayOfArrays, cv::InputArrayOfArrays, cv::Size, int, cv::InputOutputArray, cv::InputOutputArray, cv::OutputArrayOfArrays, cv::OutputArrayOfArrays, cv::OutputArray, int, cv::TermCriteria)
+dynamic_cast
+error slam output type
+extractImageCOI
+fea get null frame
+feature's track is not the same with this track ID: %ld.
+feature_evaluation, timestamp(%f), FeatureTrackerCostTime = %f
+fff?==tracking==LandmarkManager==AddBestFeatureVecWithDepth, ID(%d), t(%f) : candidates size(%zu) maxAddedFeature(%d)
+finish publish frame %u
+fmt:anchor@org:slam@type:update
+fmt:cameraintrin@org:slam
+fmt:imu
+fmt:pointcloud@org:slam
+fmt:pose@org:slam
+fmt:posedouble@org:slam
+fmt:predictpose@org:slam
+frame is invalid
+frame node could not be deleted
+framepack deconstruct frameId:%d, deviceId:%d
+framework solvers.
+ft's track is not the same with this track ID: %ld.
+fuse subMap FrameId: %u, %u, dQ: %f, %f, %f, %f, dP: %f, %f, %f
+get matches of two frames: 
+get null camera frame, camID %d camNum %zu
+getMulTransposedFunc
+gvps hw-slam p:%f %f %f, q:%f %f %f %f
+gvps slam p:%f %f %f, q:%f %f %f %f
+gvps slam-twi p:%f %f %f, q:%f %f %f %f
+idAndRelPose(%s) 
+image feature vector is empty
+image width and height must be positive
+image width or height is invalid.
+imageHeight
+imagePoints1 should contain vector of vectors of points of type Point2f
+imagePoints1 should not contain empty vector of vectors of points
+imageStride
+imageType
+imgpre: IMU pre proc cine is null
+imu pred merge failed:sT %lf, eT %lf
+imu pred, imus is empty
+imu:imu sensor type error %d 
+imu:imu timestamp error;cur_type=%d;cur_time=%lf;lst_time=%lf;lst_AT=%lf;lst_GT=%lf
+imu:upload acce timestamp error,cur_time = %lf
+imu:upload gyro timestamp error,cur_time = %lf
+imuAccFps
+imuGyroFps
+imuNum
+imuSize is 0
+init triangular:frame is null or bad
+initUndistortRectifyMap
+insertImageCOI
+iplImageToMat
+isStaticFrame: %d
+keyFrameIdBeforeReloc2:%u
+keyframeDepthValid(%f)
+keyframeResetDepth, ID(%s), t(%f) : ALLPt: %d ReducedNum: %d Ratio: %f
+keypoints.size() == (size_t)nimages
+kf abs pose cost fun count error, m_absPoseFunIndex=%d,m_nMaxAbsResidualNum=%d
+kf rel pose cost fun count error, relPoseFunIndex=%d,MaxKFResNum=%d
+kfPoseInfo(%s) 
+klt tracked have nan feature
+less features tracked all frames
+less features tracked half frames
+libarvr_slam.so
+m_newestValidKeyFrame ID: %u, subMap ID: %d
+m_newestValidKeyFrame is nullptr
+m_pGtTrackingAlgm is null %d, m_pPoseFPSTimer is null %d
+m_slamMapPoint.pointMapArray malloc Error
+magnitude
+map(%d) accept null frame
+mapFrmTimeStamp: %lf is less than vio first Frame timestamp %lf
+mapping %d frameData is null
+mapping accept null frame
+mapping keyFrame parallax: %f, featNum: %d
+masks.size() == imageCount
+masks.total() == (size_t)nimages
+maxResults > 0
+memset frame buf error, err=%d
+mulTransposed
+new camera frame is null
+new depth frame is null
+new framepack failed
+new m_mTracker failed
+nimages > 0
+no need pred imu
+non-virtual thunk to 
+num of keyframes:%d
+number of iterations maximum / actual 
+numberOfImage2Points
+numberOfImagePoints
+object points and image points must be a single-row matrices
+pEIMU==SetParams: ACycle:%f;GCycle:%lf;m_approxMatchTimeTh:%f
+pMagnetometerBuf is null
+pSLAMHandle is null
+pack camera data is invalid
+pack frame is error
+pack img failed; camera is null
+packframe;null preproc obj
+pose estimate main
+pose getdata failed; length(%ld), needDataSize(%zu)
+poseSmoothConvergeFlag is false 1
+poseSmoothConvergeFlag is false 2
+poseSmoothConvergeFlag is false 3.newestValidKeyFrameId:%u, keyFrameIdBeforeReloc2:%u,                 isValidFeedbackPose:%d, noFeedback: %d, hasFeedback: %d
+poseSmoothConvergeFlag is true
+prepareCameraMatrix
+process imu failed; length(%ld), needDataSize(%zu)
+process relocation frame failed due to camId invalid, FrameID = %ld, FrameTime = %lf
+pthread_cond_broadcast
+qImageEntropy memset error
+quat xyzw to mat by col: input buffer length q(%zu), R(%zu) error
+quat xyzw to mat by row: input buffer length q(%zu), R(%zu) error
+quaternion(
+quaternion: 
+rect.width >= 0 && rect.height >= 0 && rect.x < image->width && rect.y < image->height && rect.x + rect.width >= (int)(rect.width > 0) && rect.y + rect.height >= (int)(rect.height > 0)
+recvGVPS VPS CouplingType to SLAM
+recvGVPS reset after slam request gvps
+reinterpret_cast
+reinterpret_cast<size_t>(*ptr) % alignment == 0
+reinterpret_cast<size_t>(buf) % alignment == 0
+relocSolver SolvePose, bOptimizePose: %d, process time: %f
+reprojectImageTo3D
+reset 6dof buf error
+reset imu error
+rs PreIntegrate Error==badIdx== startIdx: %d, nImu: %d
+rs imu is empty
+sizeof(image)=%zu, keypoints.size()=%zu
+sizeof(image)=%zu, keypoints.size()=%zu, sizeof(descriptors)=%zu
+slam has been initialized
+slam status; tracking; lst:%d, cur:%d
+static cv::MatExpr cv::Mat::eye(cv::Size, int)
+static cv::MatExpr cv::Mat::eye(int, int, int)
+static_cast
+static_cast<uchar*>(*ptr) + type_size * count <= static_cast<uchar*>(raw_mem) + type_size * allocated_count
+std::bad_cast
+stereoCalibrate
+stereoCalibrate does not support CALIB_USE_EXTRINSIC_GUESS.
+stop Slam failed
+the %u frame %s cost time:%lf ms
+this msg %s be send by slam, refuse to accept
+track manager num add release(%d, %d)
+tracking TryPop failed
+tracking accept null frame
+tracking getdata: map is null
+tracking preprocess failed
+transpose
+undistort
+undistortPoints
+vio %d frameData is null
+vio %d newTrack is null
+vio converge: %d, isDisplayLost: %d
+vio map accept frame %u
+vio map accept map frame %d
+vio map cur frame is null
+vio map reject error frame %d
+vio map(%d) add frame
+vio map(%d) pre precess frame %d
+virtual const std::vector<int> &cv::usac::UniformRandomGeneratorImpl::generateUniqueRandomSubset(std::vector<int> &, int)
+virtual cv::Algorithm::~Algorithm()
+virtual cv::String cv::Algorithm::getDefaultName() const
+virtual int cv::FilterEngine::proceed(const uchar *, int, int, uchar *, int)
+virtual int cv::FilterEngine::start(const cv::Mat &, const cv::Size &, const cv::Point &)
+virtual int cv::FilterEngine::start(const cv::Size &, const cv::Size &, const cv::Point &)
+virtual int cv::MatOp::type(const cv::MatExpr &) const
+virtual int cv::flann::Index::radiusSearch(cv::InputArray, cv::OutputArray, cv::OutputArray, double, int, const cv::flann::SearchParams &)
+virtual void cv::(anonymous namespace)::SparsePyrLKOpticalFlowImpl::calc(cv::InputArray, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::OutputArray, cv::OutputArray)
+virtual void cv::Algorithm::save(const cv::String &) const
+virtual void cv::FastFeatureDetector_Impl::detect(cv::InputArray, std::vector<KeyPoint> &, cv::InputArray)
+virtual void cv::Feature2D::compute(cv::InputArray, std::vector<KeyPoint> &, cv::OutputArray)
+virtual void cv::Feature2D::compute(cv::InputArrayOfArrays, std::vector<std::vector<KeyPoint> > &, cv::OutputArrayOfArrays)
+virtual void cv::Feature2D::detect(cv::InputArray, std::vector<KeyPoint> &, cv::InputArray)
+virtual void cv::Feature2D::detect(cv::InputArrayOfArrays, std::vector<std::vector<KeyPoint> > &, cv::InputArrayOfArrays)
+virtual void cv::Feature2D::detectAndCompute(cv::InputArray, cv::InputArray, std::vector<KeyPoint> &, cv::OutputArray, bool)
+virtual void cv::FilterEngine::apply(const cv::Mat &, cv::Mat &, const cv::Size &, const cv::Point &)
+virtual void cv::FlannBasedMatcher::knnMatchImpl(cv::InputArray, std::vector<std::vector<DMatch> > &, int, cv::InputArrayOfArrays, bool)
+virtual void cv::FlannBasedMatcher::radiusMatchImpl(cv::InputArray, std::vector<std::vector<DMatch> > &, float, cv::InputArrayOfArrays, bool)
+virtual void cv::FlannBasedMatcher::read(const cv::FileNode &)
+virtual void cv::FlannBasedMatcher::train()
+virtual void cv::KMeansDistanceComputer<false>::operator()(const cv::Range &) const [onlyDistance = false]
+virtual void cv::KMeansDistanceComputer<true>::operator()(const cv::Range &) const [onlyDistance = true]
+virtual void cv::KMeansPPDistanceComputer::operator()(const cv::Range &) const
+virtual void cv::MatAllocator::copy(cv::UMatData *, cv::UMatData *, int, const size_t *, const size_t *, const size_t *, const size_t *, const size_t *, bool) const
+virtual void cv::MatOp::abs(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp::add(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp::add(const cv::MatExpr &, const cv::Scalar &, cv::MatExpr &) const
+virtual void cv::MatOp::divide(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &, double) const
+virtual void cv::MatOp::divide(double, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp::multiply(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &, double) const
+virtual void cv::MatOp::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp::subtract(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp::subtract(const cv::Scalar &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp::transpose(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::abs(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::add(const cv::MatExpr &, const cv::Scalar &, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::divide(double, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::subtract(const cv::Scalar &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::transpose(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_Bin::divide(double, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_Bin::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp_GEMM::add(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_GEMM::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp_GEMM::subtract(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_GEMM::transpose(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_Initializer::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp_T::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp_T::transpose(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::cpu_baseline::(anonymous namespace)::BilateralFilter_32f_Invoker::operator()(const cv::Range &) const
+virtual void cv::cpu_baseline::(anonymous namespace)::BilateralFilter_8u_Invoker::operator()(const cv::Range &) const
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<double, double>::operator()(const uchar **, uchar *, int, int, int) [ST = double, T = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<double, float>::operator()(const uchar **, uchar *, int, int, int) [ST = double, T = float]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<double, short>::operator()(const uchar **, uchar *, int, int, int) [ST = double, T = short]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<double, unsigned char>::operator()(const uchar **, uchar *, int, int, int) [ST = double, T = unsigned char]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<double, unsigned short>::operator()(const uchar **, uchar *, int, int, int) [ST = double, T = unsigned short]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, double>::operator()(const uchar **, uchar *, int, int, int) [ST = int, T = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, float>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, int>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, short>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, unsigned char>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, unsigned short>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<unsigned short, unsigned char>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<double, double>::operator()(const uchar *, uchar *, int, int) [T = double, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<float, double>::operator()(const uchar *, uchar *, int, int) [T = float, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<int, int>::operator()(const uchar *, uchar *, int, int) [T = int, ST = int]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<short, double>::operator()(const uchar *, uchar *, int, int) [T = short, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<short, int>::operator()(const uchar *, uchar *, int, int) [T = short, ST = int]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<unsigned char, double>::operator()(const uchar *, uchar *, int, int) [T = unsigned char, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<unsigned char, int>::operator()(const uchar *, uchar *, int, int) [T = unsigned char, ST = int]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<unsigned char, unsigned short>::operator()(const uchar *, uchar *, int, int) [T = unsigned char, ST = unsigned short]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<unsigned short, double>::operator()(const uchar *, uchar *, int, int) [T = unsigned short, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<unsigned short, int>::operator()(const uchar *, uchar *, int, int) [T = unsigned short, ST = int]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<double, double>::operator()(const uchar *, uchar *, int, int) [T = double, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<float, double>::operator()(const uchar *, uchar *, int, int) [T = float, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<short, double>::operator()(const uchar *, uchar *, int, int) [T = short, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<unsigned char, double>::operator()(const uchar *, uchar *, int, int) [T = unsigned char, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<unsigned char, int>::operator()(const uchar *, uchar *, int, int) [T = unsigned char, ST = int]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<unsigned short, double>::operator()(const uchar *, uchar *, int, int) [T = unsigned short, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::initUndistortRectifyMapComputer::operator()(const cv::Range &) const
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<double, double>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, double>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<double, short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<double, unsigned char>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, unsigned char>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<double, unsigned short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, unsigned short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::SymmColumnSmallVec_32f>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32f]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::SymmColumnVec_32f>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::SymmColumnVec_32f]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, short>, cv::cpu_baseline::SymmColumnVec_32f16s>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, short>, VecOp = cv::cpu_baseline::SymmColumnVec_32f16s]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, unsigned char>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, unsigned char>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, unsigned short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, unsigned short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<int, short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<int, short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<int, short>, cv::cpu_baseline::SymmColumnSmallVec_32s16s>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<int, short>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32s16s]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, cv::cpu_baseline::SymmColumnVec_32s8u>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, VecOp = cv::cpu_baseline::SymmColumnVec_32s8u]
+virtual void cv::cpu_baseline::RowFilter<double, double, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = double, DT = double, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<float, double, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = float, DT = double, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<float, float, cv::cpu_baseline::RowVec_32f>::operator()(const uchar *, uchar *, int, int) [ST = float, DT = float, VecOp = cv::cpu_baseline::RowVec_32f]
+virtual void cv::cpu_baseline::RowFilter<float, float, cv::cpu_baseline::SymmRowSmallVec_32f>::operator()(const uchar *, uchar *, int, int) [ST = float, DT = float, VecOp = cv::cpu_baseline::SymmRowSmallVec_32f]
+virtual void cv::cpu_baseline::RowFilter<short, double, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = short, DT = double, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<short, float, cv::cpu_baseline::RowVec_16s32f>::operator()(const uchar *, uchar *, int, int) [ST = short, DT = float, VecOp = cv::cpu_baseline::RowVec_16s32f]
+virtual void cv::cpu_baseline::RowFilter<unsigned char, double, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = unsigned char, DT = double, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<unsigned char, float, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = unsigned char, DT = float, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<unsigned char, int, cv::cpu_baseline::RowVec_8u32s>::operator()(const uchar *, uchar *, int, int) [ST = unsigned char, DT = int, VecOp = cv::cpu_baseline::RowVec_8u32s]
+virtual void cv::cpu_baseline::RowFilter<unsigned char, int, cv::cpu_baseline::SymmRowSmallVec_8u32s>::operator()(const uchar *, uchar *, int, int) [ST = unsigned char, DT = int, VecOp = cv::cpu_baseline::SymmRowSmallVec_8u32s]
+virtual void cv::cpu_baseline::RowFilter<unsigned short, double, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = unsigned short, DT = double, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<unsigned short, float, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = unsigned short, DT = float, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<double, double>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, double>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<double, short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<double, unsigned char>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, unsigned char>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<double, unsigned short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, unsigned short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::SymmColumnSmallVec_32f>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32f]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::SymmColumnVec_32f>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::SymmColumnVec_32f]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<float, short>, cv::cpu_baseline::SymmColumnVec_32f16s>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, short>, VecOp = cv::cpu_baseline::SymmColumnVec_32f16s]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<float, unsigned char>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, unsigned char>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<float, unsigned short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, unsigned short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<int, short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<int, short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<int, short>, cv::cpu_baseline::SymmColumnSmallVec_32s16s>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<int, short>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32s16s]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, cv::cpu_baseline::SymmColumnVec_32s8u>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, VecOp = cv::cpu_baseline::SymmColumnVec_32s8u]
+virtual void cv::cpu_baseline::SymmColumnSmallFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::SymmColumnSmallVec_32f>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32f]
+virtual void cv::cpu_baseline::SymmColumnSmallFilter<cv::cpu_baseline::Cast<int, short>, cv::cpu_baseline::SymmColumnSmallVec_32s16s>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<int, short>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32s16s]
+virtual void cv::cpu_baseline::SymmColumnSmallFilter<cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, cv::cpu_baseline::SymmColumnVec_32s8u>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, VecOp = cv::cpu_baseline::SymmColumnVec_32s8u]
+virtual void cv::cpu_baseline::SymmRowSmallFilter<float, float, cv::cpu_baseline::SymmRowSmallVec_32f>::operator()(const uchar *, uchar *, int, int) [ST = float, DT = float, VecOp = cv::cpu_baseline::SymmRowSmallVec_32f]
+virtual void cv::cpu_baseline::SymmRowSmallFilter<unsigned char, int, cv::cpu_baseline::SymmRowSmallVec_8u32s>::operator()(const uchar *, uchar *, int, int) [ST = unsigned char, DT = int, VecOp = cv::cpu_baseline::SymmRowSmallVec_8u32s]
+virtual void cv::detail::LKTrackerInvoker::operator()(const cv::Range &) const
+virtual void cv::flann::Index::build(cv::InputArray, const cv::flann::IndexParams &, cvflann::flann_distance_t)
+virtual void cv::flann::Index::knnSearch(cv::InputArray, cv::OutputArray, cv::OutputArray, int, const cv::flann::SearchParams &)
+virtual void cv::flann::Index::release()
+virtual void cv::flann::Index::save(const cv::String &) const
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::Lab2RGB_b>::operator()(const cv::Range &) const [Cvt = cv::Lab2RGB_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::Lab2RGB_f>::operator()(const cv::Range &) const [Cvt = cv::Lab2RGB_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::Luv2RGB_b>::operator()(const cv::Range &) const [Cvt = cv::Luv2RGB_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::Luv2RGB_f>::operator()(const cv::Range &) const [Cvt = cv::Luv2RGB_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2Lab_b>::operator()(const cv::Range &) const [Cvt = cv::RGB2Lab_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2Lab_f>::operator()(const cv::Range &) const [Cvt = cv::RGB2Lab_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2Luv_b>::operator()(const cv::Range &) const [Cvt = cv::RGB2Luv_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2Luv_f>::operator()(const cv::Range &) const [Cvt = cv::RGB2Luv_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2XYZ_f<float> >::operator()(const cv::Range &) const [Cvt = cv::RGB2XYZ_f<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2XYZ_i<uchar> >::operator()(const cv::Range &) const [Cvt = cv::RGB2XYZ_i<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2XYZ_i<ushort> >::operator()(const cv::Range &) const [Cvt = cv::RGB2XYZ_i<ushort>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::XYZ2RGB_f<float> >::operator()(const cv::Range &) const [Cvt = cv::XYZ2RGB_f<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::XYZ2RGB_i<uchar> >::operator()(const cv::Range &) const [Cvt = cv::XYZ2RGB_i<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::XYZ2RGB_i<ushort> >::operator()(const cv::Range &) const [Cvt = cv::XYZ2RGB_i<ushort>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB5x5>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB5x5]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<float> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<unsigned char> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<unsigned char>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<unsigned short> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<unsigned short>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::HLS2RGB_b>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::HLS2RGB_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::HLS2RGB_f>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::HLS2RGB_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::HSV2RGB_b>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::HSV2RGB_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::HSV2RGB_f>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::HSV2RGB_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<float> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<uchar> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<ushort> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<ushort>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2HLS_b>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2HLS_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2HLS_f>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2HLS_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2HSV_b>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2HSV_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2HSV_f>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2HSV_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB5x5>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB5x5]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<float> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<unsigned char> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<unsigned char>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<unsigned short> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<unsigned short>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_f<float> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_f<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_i<uchar> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_i<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_i<ushort> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_i<ushort>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB5x52Gray>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB5x52Gray]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB5x52RGB>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB5x52RGB]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGBA2mRGBA<uchar> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGBA2mRGBA<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_f<float> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_f<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_i<uchar> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_i<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_i<ushort> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_i<ushort>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::mRGBA2RGBA<uchar> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::mRGBA2RGBA<uchar>]
+virtual void cv::usac::ReprojectionDistanceAffineImpl::setModelParameters(const cv::Mat &)
+virtual void cv::usac::ReprojectionErrorForwardImpl::setModelParameters(const cv::Mat &)
+virtual void cv::usac::ReprojectionErrorPmatrixImpl::setModelParameters(const cv::Mat &)
+virtual void cv::usac::ReprojectionErrorSymmetricImpl::setModelParameters(const cv::Mat &)
+virtual void cv::usac::SampsonErrorImpl::setModelParameters(const cv::Mat &)
+virtual void cv::usac::SymmetricGeometricDistanceImpl::setModelParameters(const cv::Mat &)
+virtual void cv::usac::UniformRandomGeneratorImpl::generateUniqueRandomSet(std::vector<int> &)
+virtual void cv::usac::UniformRandomGeneratorImpl::generateUniqueRandomSet(std::vector<int> &, int)
+virtual void cv::usac::UniformRandomGeneratorImpl::generateUniqueRandomSet(std::vector<int> &, int, int)
+virtual void cv::usac::UniformRandomGeneratorImpl::resetGenerator(int)
+void cv::calibrationMatrixValues(cv::InputArray, cv::Size, double, double, double &, double &, double &, cv::Point2d &, double &)
+void cv::collectCalibrationData(cv::InputArrayOfArrays, cv::InputArrayOfArrays, cv::InputArrayOfArrays, int, cv::Mat &, cv::Mat &, cv::Mat *, cv::Mat &)
+void cv::decomposeProjectionMatrix(cv::InputArray, cv::OutputArray, cv::OutputArray, cv::OutputArray, cv::OutputArray, cv::OutputArray, cv::OutputArray, cv::OutputArray)
+void cv::hal::cpu_baseline::magnitude32f(const float *, const float *, float *, int)
+void cv::hal::cpu_baseline::magnitude64f(const double *, const double *, double *, int)
+void cv::hal::magnitude32f(const float *, const float *, float *, int)
+void cv::hal::magnitude64f(const double *, const double *, double *, int)
+void cv::magnitude(cv::InputArray, cv::InputArray, cv::OutputArray)
+void cv::mulTransposed(cv::InputArray, cv::OutputArray, bool, cv::InputArray, double, int)
+void cv::reprojectImageTo3D(cv::InputArray, cv::OutputArray, cv::InputArray, bool, int)
+void cv::transpose(cv::InputArray, cv::OutputArray)
+void cv::undistort(cv::InputArray, cv::OutputArray, cv::InputArray, cv::InputArray, cv::InputArray)
+void cvFindExtrinsicCameraParams2(const CvMat *, const CvMat *, const CvMat *, const CvMat *, CvMat *, CvMat *, int)
+wrong image w and h
+}==KFDatabase==GetKFsFromKeyframesLexicon

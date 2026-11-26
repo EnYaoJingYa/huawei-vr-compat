@@ -1,0 +1,300 @@
+ imaginary
+%s failed to broadcast
+.eh_frame
+.eh_frame_hdr
+12MobileSensor
+19PhoneControllerPose
+9SingletonI19PhoneControllerPoseE
+?pose_state
+ASensorEventQueue_disableSensor
+ASensorEventQueue_enableSensor
+ASensorEventQueue_getEvents
+ASensorEventQueue_setEventRate
+ASensorManager_createEventQueue
+ASensorManager_destroyEventQueue
+ASensorManager_getDefaultSensor
+ASensorManager_getInstanceForPackage
+ASensor_getMinDelay
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleAlg/../../../../native_src/server/../common/src/GetLibPath.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleAlg/../../../../native_src/server/../common/src/Thread.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleAlg/../../../../native_src/server/../common/src/VrMath.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleAlg/../../../../native_src/server/alg_plugins/WalleAlg/PhoneControllerPose.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleAlg/../../../../native_src/server/alg_plugins/WalleAlg/VrPoseState.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleAlg/../../../../native_src/server/alg_plugins/WalleAlg/WalleAlg.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleAlg/../../../../native_src/server/api/src/dev_interface.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleAlg/../../../../native_src/server/api/src/interface_helper.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleAlg/../../../../native_src/server/dev_plugins/MobileSensor/MobileSensor.cpp
+Deleted virtual function called!
+IMU_F
+Java_com_huawei_vrhandle_VrPoseJni_getPhonePose
+Java_com_huawei_vrhandle_VrPoseJni_getPhoneYaw
+Java_com_huawei_vrhandle_VrPoseJni_phonePoseStart
+Java_com_huawei_vrhandle_VrPoseJni_phonePoseStop
+JudgeMagAccuracyLevel
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+OpenImuLogFile
+PhoneControllerPoseGet
+PhoneControllerPoseStart
+PhoneControllerPoseStop
+PoseWithMagCalibration
+PoseWithTiltCalibration
+Pure virtual function called!
+SetMagCorrectionWeakenRateFromMagState
+St8bad_cast
+WalleDev
+[%s][%s:%s](%d):  MobileSensor paused 
+[%s][%s:%s](%d):  MobileSensor resumed 
+[%s][%s:%s](%d): Helmet is Halliday
+[%s][%s:%s](%d): Helmet is VR_proto
+[%s][%s:%s](%d): Helmet is Walle
+[%s][%s:%s](%d): Helmet is WalleX
+[%s][%s:%s](%d): Helmet is unknow
+[%s][%s:%s](%d): Long time in big difference between magYaw and gyroYaw.
+[%s][%s:%s](%d): Long time without mag correction at %lf
+[%s][%s:%s](%d): Mag abnormal to normal at %lf, change time %d.
+[%s][%s:%s](%d): MinDelay, acc:%d, gyro:%d, magRate:%d
+[%s][%s:%s](%d): Normal mag correction begins at  %lf
+[%s][%s:%s](%d): Print imu log
+[%s][%s:%s](%d): Print imu log at %s
+[%s][%s:%s](%d): Print orientation log at 100hz and imu log
+[%s][%s:%s](%d): Print orientation log at 200hz and imu log
+[%s][%s:%s](%d): Reset mag fusion tag at %lf
+[%s][%s:%s](%d): device IMU enable error.
+[%s][%s:%s](%d): device magn enable error.
+[%s][%s:%s](%d): get helmetVersionInfo success.
+[%s][%s:%s](%d): getInitPose:x:%f, y:%f, z:%f, w:%f
+[%s][%s:%s](%d): getInputSourceName SensorType:%d
+[%s][%s:%s](%d): getPhonePose:x:%f, y:%f, z:%f, w:%f
+[%s][%s:%s](%d): get_helmet_offsetinfo command error.
+[%s][%s:%s](%d): get_helmet_offsetinfo header error
+[%s][%s:%s](%d): get_helmet_offsetinfo malloc error.
+[%s][%s:%s](%d): get_helmet_version command error.
+[%s][%s:%s](%d): get_helmet_version header error
+[%s][%s:%s](%d): get_helmet_version malloc error.
+[%s][%s:%s](%d): imu_fusion_command get helmet version 
+[%s][%s:%s](%d): imu_fusion_command resetAlg 
+[%s][%s:%s](%d): mAccSensor set rate(%d) error.
+[%s][%s:%s](%d): mGyroSensor == nullptr || mAccSensor == nullptr || mMagSensor == nullptr
+[%s][%s:%s](%d): mGyroSensor set rate(%d) error.
+[%s][%s:%s](%d): no Helmet only phone
+[%s][%s:%s](%d): phonePoseStop
+[%s][%s:%s](%d): phonerPoseStart
+[%s][%s:%s](%d): receive imu data count(%u) in one(%f) second
+[%s][%s:%s](%d): reset with mag buffer %lf %lf %lf %lf 
+[%s][%s:%s](%d): sensorType %d
+[%s][%s:%s](%d): walleAlg init end
+[%s][%s:%s](%d): walleAlg init malloc error
+_Z12get_mag_funcPK12alg_module_tPvjS2_Pj
+_Z13vrImuDataRecvP12tlv_header_t
+_Z15get_helmet_typePK12alg_module_tPvjS2_Pj
+_Z15imu_fusion_initPK12alg_module_tP14handler_type_tS3_
+_Z15imu_fusion_stopPK12alg_module_t
+_Z15set_sensor_typePK12alg_module_tPvjS2_Pj
+_Z16get_tracker_dataPK12alg_module_tPvjS2_Pj
+_Z16imu_fusion_pausePK12alg_module_t
+_Z16imu_fusion_resetPK12alg_module_t
+_Z16imu_fusion_startPK12alg_module_t
+_Z17imu_fusion_deinitPK12alg_module_t
+_Z17imu_fusion_resumePK12alg_module_t
+_Z17mobileImuDataRecvP12tlv_header_t
+_Z18get_helmet_versionPK12alg_module_tPvPj
+_Z18imu_fusion_commandPK12alg_module_tiPvjS2_Pj
+_Z18imu_fusion_getDataPK12alg_module_tPvPj
+_Z18imu_fusion_processPK12alg_module_t
+_Z18mobile_sensor_stopPK9vr_device
+_Z19mobile_sensor_pausePK9vr_device
+_Z19mobile_sensor_startPK9vr_device
+_Z20imu_fusion_writeDataPK12alg_module_tPKvPj
+_Z20mobile_sensor_resumePK9vr_device
+_Z20mobile_sensor_statusPK9vr_device
+_Z21get_helmet_offsetinfoPK12alg_module_tPvjS2_Pj
+_Z21mobile_sensor_commandPK9vr_deviceiPvjS2_Pj
+_Z21mobile_sensor_getDataPK9vr_devicePvPj
+_Z21vrNineAxisImuDataRecvP12tlv_header_t
+_Z23funForSPFSCheckWalleAlgj
+_Z23imu_fusion_commandAsyncPK12alg_module_tiPvjPFiPKcS2_jE
+_Z23mobile_sensor_writeDataPK9vr_devicePKvPj
+_Z26mobile_sensor_commandAsyncPK9vr_deviceiPvjPFiPKcS2_jE
+_Z27funForSPFSCheckMobileSensorj
+_Z31imu_fusion_registerDataListenerPK12alg_module_tPFiPKcPvjE
+_Z34mobile_sensor_registerDataListenerPK9vr_devicePFiPKcPvjE
+_ZGVN9SingletonI19PhoneControllerPoseE9instance_E
+_ZN10VrMatrix3dC1ERK13VrQuaterniond
+_ZN10VrMatrix3dC2ERK13VrQuaterniond
+_ZN11VrPoseState11getInitPoseEP12VrQuaternion
+_ZN11VrPoseState11predictPoseEdP12VrQuaternion
+_ZN11VrPoseState11predictPoseEdP9VrPosture
+_ZN11VrPoseState12CloseLogFileEv
+_ZN11VrPoseState12calculatPoseER16ProcessedImuData
+_ZN11VrPoseState12calculatPoseER7IMUData
+_ZN11VrPoseState14OpenImuLogFileEv
+_ZN11VrPoseState18JudgeActivityLevelERK9VrVector3S2_
+_ZN11VrPoseState18SetLogParaFromPropEv
+_ZN11VrPoseState20CalculateInitialPoseERK10VrVector3dS2_
+_ZN11VrPoseState20CheckBigDiffDurationEv
+_ZN11VrPoseState21GetRotationQuaternionERK10VrVector3dS2_
+_ZN11VrPoseState21JudgeMagAccuracyLevelERK16ProcessedImuData
+_ZN11VrPoseState21getHeadMovementStatusEv
+_ZN11VrPoseState22OpenOrientationLogFileEv
+_ZN11VrPoseState22PoseWithMagCalibrationER16ProcessedImuDataR13VrQuaterniond
+_ZN11VrPoseState23PoseWithTiltCalibrationER16ProcessedImuDataRK11HistoryDataR13VrQuaterniond
+_ZN11VrPoseState23SetPoseViaActivityLevelEdR13VrQuaterniond
+_ZN11VrPoseState26GetCorrectionScaleAndAngleERd
+_ZN11VrPoseState27GetMagCorrectionOrientationEddddd
+_ZN11VrPoseState30calculateHorizonMagOrientationEP9VrVector3S1_
+_ZN11VrPoseState38SetMagCorrectionWeakenRateFromMagStateEh9MAG_STATERK16ProcessedImuData
+_ZN11VrPoseState5resetEv
+_ZN11VrPoseStateC1Ev
+_ZN11VrPoseStateC2Ev
+_ZN11VrPoseStateD1Ev
+_ZN11VrPoseStateD2Ev
+_ZN12MobileSensor10ThreadLoopEv
+_ZN12MobileSensor10getMagDataEv
+_ZN12MobileSensor12onThreadExitEv
+_ZN12MobileSensor13onThreadReadyEv
+_ZN12MobileSensor14notifyDataRecvEv
+_ZN12MobileSensor19setDataReadListenerEPFiPKcPvjE
+_ZN12MobileSensor4stopEv
+_ZN12MobileSensor5pauseEv
+_ZN12MobileSensor5startEv
+_ZN12MobileSensor6resumeEv
+_ZN12MobileSensorC1Ev
+_ZN12MobileSensorC2Ev
+_ZN12MobileSensorD0Ev
+_ZN12MobileSensorD1Ev
+_ZN12MobileSensorD2Ev
+_ZN12VrQuaternionC1E4Axisf
+_ZN12VrQuaternionC1ERK9VrMatrix4
+_ZN12VrQuaternionC1ERK9VrVector3f
+_ZN12VrQuaternionC2E4Axisf
+_ZN12VrQuaternionC2ERK9VrMatrix4
+_ZN12VrQuaternionC2ERK9VrVector3f
+_ZN12VrQuaternionaSERKS_
+_ZN13VrQuaterniond11getFromAxisE4Axisd
+_ZN13VrQuaterniond13getFromVectorERK10VrVector3dd
+_ZN13VrQuaterniondaSERKS_
+_ZN15VrMagStateJudge15MagPPvalueJudgeEv
+_ZN15VrMagStateJudge16MagDistanceJudgeE10VrVector3dd
+_ZN15VrMagStateJudge18MagAbnormalyDetectE10VrVector3dR9MAG_STATE
+_ZN15VrMagStateJudge5ResetEv
+_ZN15VrMagStateJudgeC1Ev
+_ZN15VrMagStateJudgeC2Ev
+_ZN15VrMagStateJudgeD1Ev
+_ZN15VrMagStateJudgeD2Ev
+_ZN19PhoneControllerPose10putImuDataEP7IMUData
+_ZN19PhoneControllerPose11getInitPoseEv
+_ZN19PhoneControllerPose14onDataReceivedEPKcPvj
+_ZN19PhoneControllerPose4stopEv
+_ZN19PhoneControllerPose5startEv
+_ZN19PhoneControllerPose7getPoseEP9VrPosture
+_ZN19PhoneControllerPoseD0Ev
+_ZN19PhoneControllerPoseD1Ev
+_ZN19PhoneControllerPoseD2Ev
+_ZN9SingletonI19PhoneControllerPoseE9instance_E
+_ZN9VrMatrix39transposeEv
+_ZN9VrMatrix3C1ERK12VrQuaternion
+_ZN9VrMatrix3C2ERK12VrQuaternion
+_ZN9VrMatrix410transposedEv
+_ZN9VrMatrix4C1ERK12VrQuaternion
+_ZN9VrMatrix4C2ERK12VrQuaternion
+_ZN9VrVector311transToQuatEPfS0_S0_S0_
+_ZNK10VrMatrix3d10transposedEv
+_ZNK12VrQuaternion12lengthSquareEv
+_ZNK12VrQuaternion14getEulerAnglesEPfS0_S0_
+_ZNK12VrQuaternion15printQuaternionEv
+_ZNK12VrQuaternion3dotERKS_
+_ZNK12VrQuaternion4imagEv
+_ZNK12VrQuaternion5nlerpERKS_f
+_ZNK12VrQuaternion6lengthEv
+_ZNK12VrQuaternion6rotateERK9VrVector3
+_ZNK12VrQuaternion8invertedEv
+_ZNK12VrQuaternion9normalizeEv
+_ZNK12VrQuaterniondvEf
+_ZNK12VrQuaternionmlERK9VrVector3
+_ZNK12VrQuaternionmlERKS_
+_ZNK12VrQuaternionmlEf
+_ZNK12VrQuaternionplERKS_
+_ZNK13VrQuaterniond12lengthSquareEv
+_ZNK13VrQuaterniond14getEulerAnglesEPdS0_S0_
+_ZNK13VrQuaterniond3dotERKS_
+_ZNK13VrQuaterniond4imagEv
+_ZNK13VrQuaterniond5nlerpERKS_d
+_ZNK13VrQuaterniond6lengthEv
+_ZNK13VrQuaterniond6rotateERK10VrVector3d
+_ZNK13VrQuaterniond8invertedEv
+_ZNK13VrQuaterniond9normalizeEv
+_ZNK13VrQuaternionddvEd
+_ZNK13VrQuaterniondmlERK10VrVector3d
+_ZNK13VrQuaterniondmlERKS_
+_ZNK13VrQuaterniondmlEd
+_ZNK13VrQuaterniondplERKS_
+_ZNK9VrMatrix310transposedEv
+_ZNK9VrMatrix49transposeEv
+_ZNKSt8bad_cast4whatEv
+_ZNSt6__ndk117__call_once_proxyINS_5tupleIJOZN9SingletonI19PhoneControllerPoseE11getInstanceIJEEERS3_DpOT_EUlvE_EEEEEvPv
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTI12MobileSensor
+_ZTI19PhoneControllerPose
+_ZTI9SingletonI19PhoneControllerPoseE
+_ZTISt8bad_cast
+_ZTS12MobileSensor
+_ZTS19PhoneControllerPose
+_ZTS9SingletonI19PhoneControllerPoseE
+_ZTSSt8bad_cast
+_ZTV12MobileSensor
+_ZTV19PhoneControllerPose
+_ZTVSt8bad_cast
+_ZZN9SingletonI19PhoneControllerPoseE13get_once_flagEvE5once_
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__uuidof(
+accel:x,y,z,gyro:x,y,z,magn:x,y,z,sampleTime,systemTime,magAccuracy,orientation.x,orientation.y,orientation.z,orientation.w
+allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+camera
+const_cast
+dynamic_cast
+eye_tracker
+funForSPFSCheckMobileSensor
+funForSPFSCheckWalleAlg
+getInitPose
+get_helmet_offsetinfo
+get_helmet_type
+get_helmet_version
+get_mag_func
+get_tracker_data
+imu_fusion_command
+imu_fusion_commandAsync
+imu_fusion_getData
+imu_fusion_init
+imu_fusion_pause
+imu_fusion_process
+imu_fusion_registerDataListener
+imu_fusion_reset
+imu_fusion_resume
+imu_fusion_start
+imu_fusion_stop
+imu_fusion_writeData
+libWalleAlg.so
+mobile_sensor
+mobile_sensor_command
+mobile_sensor_stop
+non-virtual thunk to 
+printQuaternion
+pthread_cond_broadcast
+reinterpret_cast
+sdcard//immlog//imudata%d-%d-%d-%d-%d.txt
+set_sensor_type
+static_cast
+std::bad_cast
+u8__uuidoft
+u8__uuidofz
+vr_sensor
+vrsensor
+~PhoneControllerPose

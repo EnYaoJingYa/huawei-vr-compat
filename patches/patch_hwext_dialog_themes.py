@@ -20,6 +20,7 @@ apktool 解不出这个外来包引用，把值直接写成了 `@null`；重建�
 用法：python patches/patch_hwext_dialog_themes.py [仓库根]
 """
 
+import io
 import re
 import sys
 from pathlib import Path
@@ -38,7 +39,7 @@ OLD_THEME = '@null'
 
 
 def main():
-    text = TARGET.read_text(encoding="utf-8", newline="")
+    text = io.open(TARGET, encoding="utf-8", newline="").read()
     original = text
     changed = 0
     for activity in ACTIVITIES:

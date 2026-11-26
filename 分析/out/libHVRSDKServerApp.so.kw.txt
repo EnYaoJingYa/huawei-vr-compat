@@ -1,0 +1,72 @@
+ imaginary
+%s failed to broadcast
+.eh_frame
+.eh_frame_hdr
+Deleted virtual function called!
+ImmEnableMobileSensor
+Java_com_huawei_hvrsdkserverapp_MyBroadcastReceiver_restartAttitude
+MobileCamera
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+Pure virtual function called!
+St8bad_cast
+WalleAlg
+WalleDev
+[%s][%s:%s](%d): IN -> ENUM_IPC_CMD_CODE_GET_HELMET_TYPE
+[%s][%s:%s](%d): IN, simulateIM clientId(%d), imType(%d)
+[%s][%s:%s](%d): OUT -> ENUM_IPC_CMD_CODE_GET_HELMET_TYPE
+[%s][%s:%s](%d): OnCommand get helmet version
+[%s][%s:%s](%d): alg:%s checkGazeCalibrationResult ERROR
+[%s][%s:%s](%d): alg:%s setGazeCalibrationPoint(%d) ERROR
+[%s][%s:%s](%d): device %s ENUM_DEV_SET_CAMERA_JNI_ENV error.
+[%s][%s:%s](%d): invalid or unkown sensor type: %u
+[%s][%s:%s](%d): local enable mobile sensor %d: 
+[%s][%s:%s](%d): mobile sensor enable
+[%s][%s:%s](%d): module:%s have already simulate.
+[%s][%s:%s](%d): no imu switch %d.
+[%s][%s:%s](%d): sensor type: PHONE_IMU
+[%s][%s:%s](%d): sensor type: WALLEX_IMU
+[%s][%s:%s](%d): sensorType:%d
+[%s][%s:%s](%d): setGazeCalibrationPoint flag(%d) invalid.
+_ZN10ServerMain18enableMobileSensorEb
+_ZN9IMMServer10simulateIMEi21InteractionModuleType
+_ZN9IMMServer13getSensorTypeEv
+_ZN9IMMServer15getSimulateListEv
+_ZN9IMMServer23setGazeCalibrationPointENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPvjS7_Pj
+_ZN9IMMServer26checkGazeCalibrationResultENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPKvjPvPj
+_ZN9IMMServer9selectIMUEv
+_ZNKSt8bad_cast4whatEv
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTISt8bad_cast
+_ZTSSt8bad_cast
+_ZTVSt8bad_cast
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__uuidof(
+access
+allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+camera
+checkGazeCalibrationResult
+const_cast
+dynamic_cast
+eye_tracker
+helmet
+libvrpose.so
+non-virtual thunk to 
+pthread_cond_broadcast
+reinterpret_cast
+selectIMU
+setGazeCalibrationPoint
+simulateIM
+static_cast
+std::bad_cast
+u8__uuidoft
+u8__uuidofz
+vr_sensor
+vrsensor

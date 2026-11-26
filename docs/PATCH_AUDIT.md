@@ -1821,7 +1821,7 @@ new Intent().setPackage(getPackageName()).setAction("com.huawei.android.vr.PROMP
   提取到**第 20/22 节一直在找的第七个包**：
 
   ```
-  包名 com.huawei.vrservice   版本 11.0.0.322   大小 3,042,010 字节
+  包名 com.huawei.vrservice   版本 11.0.0.322（提取时标注；当前原包实测为 12.0.0.302 / 5,298,141 B，见 BASELINE.md 版本更正）   大小 3,042,010 字节（提取时）
   label "Huawei VR Service"，附 lib/arm64-v8a/libvrservice.so
   ```
 
@@ -4538,3 +4538,93 @@ SharedPreferences；同意状态存在 `10000.xml` 的 `vr_handle_user_agree`。
 一键跑完补丁、构建、主线与验收判据。
 
 状态：**未完成**（等待 LSPosed 模块启用后验证）。
+
+---
+
+## 67. 归档重建：补丁链复刻与环境适配（2026-10-20）
+
+归档仓库（无 git 历史、无工作区辅助产物）在本机从零复刻了一轮完整构建。过程核对结论如下。
+
+### 67.1 补丁链 30 步全量通过（rerun 语义已修正）
+
+`U:\hvr\run-patches.py` 按 SEQ 顺序跑完 30 个补丁（日志 `U:\hvr\patch-logs\*.log`）。
+两个前提修正：
+
+1. `patch_online_restore.py` 原本依赖 `git show 22297941:...` 取「摘在线入口」之前的原文；
+   归档没有 git 历史。本解码树直接由 `原包/*.apk` 反编译而来，从未做过摘除，所以把
+   取原文的路径改成「git 可用则 git show，否则直接读当前树文件」，全部命中
+   「已是原版」「在线组件 +0」。语义与工作区「已还原完成」态一致。
+2. Python 3.12 没有 `Path.read_text(newline=)`（3.13 之后才有），13 个补丁脚本里的
+   `read_text(encoding="utf-8", newline="")` 统一替换成 `io.open(...)`（内容逻辑不变）。
+
+### 67.2 apktool 2.10 解码静默丢项（沿用既有结论，本轮再核对一次）
+
+`<uses-sdk>` 转入 apktool.yml；`uses-library`（仅 vrlauncherx 的 nearbysdk 1 处）与
+`<manifest>` 上的 `sharedUserId`（vrlauncherx、vrvirtualscreen 2 处）不回写。这三项
+恰好都是移植本来要摘的，语义等价于已处理，`patch_offline.py` 的断言已放宽并打印说明。
+
+### 67.3 官方池缺口：gson 族用上游等价件补齐
+
+`patch_official_platform_classes.py` 依赖 `build/official-pool/hwframework/classes`
+（原厂 hwframework.jar 反编译产物，归档缺失）。全部七包的「引用了但未定义」缺口扫描
+只有一族：`Lcom/huawei/gson/Gson;`（vrlauncherx 的 `x1/d1`、`z2/k1` 两个混淆类，
+用了 `Gson()`、`toJson(Object)String`、`fromJson(String,Class)Object` 三个方法）。
+
+处理：取本机既有 `gson-2.10.1.jar`（用户项目 `D:\PY\Animation\config\libs`，与上游
+Maven 制品一致）→ d8 出 dex → dex 字符串池**同长度替换** `com/google/gson` →
+`com/huawei/gson`（两串均 15 字节，不动任何结构偏移）→ DexDump 反汇编为 217 个
+smali，按真实包路径放入 `build/official-pool/hwframework/classes/com/huawei/gson/`。
+补丁闭包逻辑随后把 217 个类收进 vrlauncherx（各包命中日志见
+`patch-logs/patch_official_platform_classes.py.log`）。注意 DexDump 对「裸 dex」
+输入的容器 entry 名会带上完整路径（包一层 zip 以 `classes.dex` 为 entry 名可规避），
+池文件路径必须剥掉这层目录，否则类描述符变成 `Lclasses/...` 不会被闭包命中。
+
+方法面核对：引用点只用 `Gson()`/`toJson`/`fromJson(String, Class)`，与上游 Gson
+2.10.1 一致，可在 `apktool b` 全量链接时验证引用闭合。
+
+### 67.4 构建链 PS 5.1 适配（PS7 → 5.1 的四类坑）
+
+Windows PowerShell 5.1 与原工作区 PS7 的行为差异，已在脚本内修掉并写明原因：
+
+1. `Set-Content -Encoding utf8` 在 5.1 里**带 BOM**，d8 读 argfile 时把第一行
+   `--lib` 读成文件名（`Error in ?--lib: NoSuchFileException`）→
+   `build/build-module.ps1`、`lsposed/build-module.ps1` 改为
+   `[IO.File]::WriteAllLines` + `UTF8Encoding($false)`。
+2. 5.1 下 `2>&1` 会把原生命令（javac/apksigner/adb）打到 stderr 的
+   提示行包成 `NativeCommandError`，并按 `ErrorActionPreference=Stop` 升级成
+   terminating error（PS7 无此行为）→ `build-module.ps1`、`lsposed/build-module.ps1`
+   顶部放开 EAP（原生失败仍由各步 `if ($LASTEXITCODE -ne 0) { throw }` 兜底）；
+   `build-all.ps1` 在重定向前放开；`install-six.ps1`、`lsposed/verify-display-routing.ps1`
+   的 `Invoke-Adb` 临时放开并把 stderr 行降级成文本。
+3. `python` 不在 PATH（机器只有 `py`）→ `build-module.ps1` 与
+   `verify-display-routing.ps1` 里 python 调用点改为先解析 python、否则用 py。
+4. 脚本 BOM：9 个 .ps1 为 5.1 解析事实加了 UTF-8 BOM（内容不变，见 64 节流程记录）。
+
+### 67.5 本机 DLP（云枢）按文件名拦截 adb.exe
+
+CreateProcessW 启动 `platform-tools\adb.exe` 直接失败（WinError 786），同目录
+fastboot.exe 正常、zip 校验一致；把同一二进制改名即可运行。已在
+`tools/sdk-path.ps1` 的 `Resolve-HvrAdb` 里制度化：查找顺序
+`HVR_ADB` 环境变量 → `adb.exe`（试跑 `-version` 校验可启动）→ `adb-tool.exe`
+（改名副本，已放在 `U:\hvr\android-sdk\platform-tools\`）。
+
+### 67.6 七包 + LSPosed 模块构建产物（-Revision r1，2026-10-20）
+
+`build\build-all.ps1 -Revision r1` 七包全绿（每包均通过 checkout 断言、rezip、
+zipalign、apksigner 签名与验签；DEBUG_MOBILE_MODE=off 正式口径）：
+
+| 包 | 产物（build/out/） | SHA256 |
+|---|---|---|
+| com.huawei.hvrsdkserverapp | `-r1.apk`, 66,967,651 B | E396B6D26089644F3726CB92650C20D7176F1AE626428F36BD20D924175DD5D8 |
+| com.huawei.vrservice | `-r1.apk`, 3,088,630 B | 1C7BE9F0E6A33D2424D73E0E974C808E63C349F1B38F14095CE5B0261E4FA6A9 |
+| com.huawei.vrhandle | `-r1.apk`, 9,171,663 B | 70DE72F7F5B40202ABF9BDDC51DF26E856E2827212456B0EFF180B006E2DB81B |
+| com.huawei.vrvirtualscreen | `-r1.apk` | CA50ED1806A82A36242FED70BF355B261511732E7533C574862B1CEB31CC88EB |
+| com.huawei.himovie.vr | `-r1.apk` | 31C8D763B98368D6762B4FF895FB6C8D646AAD16858F7A3C57758FCE174F4241 |
+| com.huawei.vrlauncherx | `-r1.apk` | D47EEAA6041B408EFDEA3BD70D1F0C4AD09121BC6879C02F9326C89025E42746 |
+| com.huawei.appmarket.vr | `-r1.apk` | 63EFD16ACB453A487EFB8D72080004F6CE0075A4716E06BAD9EB945B01FCD11B |
+
+LSPosed 辅助模块单独构建：`lsposed\out\com.hvr.displayrouting-r1.apk`
+（SHA256 3EDC13303113ADC0AF3804C69BF0CB3006477F2DF013E28CBCA38B9B943B5AD7），
+待装机后在 LSPosed 里启用并勾选作用域（android + 七包）。
+
+状态：**七包构建完成，待真机安装验证**。

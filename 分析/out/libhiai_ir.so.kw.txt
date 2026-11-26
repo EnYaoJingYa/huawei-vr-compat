@@ -1,0 +1,128 @@
+ exceeded maximum protobuf size of 2GB: 
+%s %s(%d)::"%jd int64_t value cannot cast to int32_t"
+%s %s(%d)::"%jd int64_t value cannot cast to uint32_t"
+%s %s(%d)::"Clipboxes input image_info must be 1-D have 2 values, but now have %d value"
+%s %s(%d)::"Clipboxes input image_info two values, must be greater than 0, but now is %d, %d"
+%s %s(%d)::"Delete ir attr transpose to opdesc failed!"
+%s %s(%d)::"DimNum of box_predictions and anchors must be the same, but now is %zu, %zu."
+%s %s(%d)::"ExtractImagePatches attr ksize, rate and strides size must be equal to 4"
+%s %s(%d)::"FastrcnnPredictions Op input dim size should be 2 or 4, but is %zu."
+%s %s(%d)::"FullyConnection transpose attr only support false"
+%s %s(%d)::"LSTM expose_hidden attr only support 'false'."
+%s %s(%d)::"MirrorPad hasn't mode."
+%s %s(%d)::"cannot broadcast through the inputs, inputNum:%zu,dim[%zu]:%jd should be %jd."
+%s %s(%d)::"image_h and image_w must be greater than 0"
+%s %s(%d)::"index %zu %jd int64_t value cannot cast to int32_t"
+%s %s(%d)::"index %zu %jd int64_t value cannot cast to uint32_t"
+%s %s(%d)::"x1 dim[0] must be equal to x2 dim[0] when transpose_x1 is true and transpose_x2 is false"
+%s %s(%d)::"x1 dim[0] must be equal to x2 dim[1] when transpose_x1 and transpose_x2 are true"
+%s %s(%d)::"x1 dim[1] must be equal to x2 dim[0] when transpose_x1 and transpose_x2 are false"
+%s %s(%d)::"x1 dim[1] must be equal to x2 dim[1] when transpose_x1 is false and transpose_x2 is true"
+%s %s(%d)::param["biasShape.GetDim(0)"] is not equals to["kernelShape.GetDim(1) * convtransposeAttr.groups"]
+%s %s(%d)::param["biasShape.GetDim(NCHW_DIM_C)"] is not equals to["kernelShape.GetDim(1) * convtransposeAttr.groups"]
+%s %s(%d)::param["imageTensor"] must not be null.
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../../../open_source/google__protobuf/google__protobuf-3.9.0/src/google/protobuf/arena.cc
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../../../open_source/google__protobuf/google__protobuf-3.9.0/src/google/protobuf/generated_message_util.cc
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../../../open_source/google__protobuf/google__protobuf-3.9.0/src/google/protobuf/io/coded_stream.cc
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../../../open_source/google__protobuf/google__protobuf-3.9.0/src/google/protobuf/io/zero_copy_stream.cc
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../../../open_source/google__protobuf/google__protobuf-3.9.0/src/google/protobuf/io/zero_copy_stream_impl_lite.cc
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../../../open_source/google__protobuf/google__protobuf-3.9.0/src/google/protobuf/message_lite.cc
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../../../open_source/google__protobuf/google__protobuf-3.9.0/src/google/protobuf/stubs/common.cc
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../../../open_source/google__protobuf/google__protobuf-3.9.0/src/google/protobuf/stubs/stringpiece.cc
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/cloud_service/cloud_service_common.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/cloud_service/cloud_service_loader.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/common/helper/model_serialize_wrapper.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/common/helper/om_file_helper.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/common/trans_tensor.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/compatible/ir_transformer.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/anchor.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/attr_value_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/compute_graph.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/compute_graph_builder.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/detail/attributes_holder.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/graph.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/graph_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/aipp_infershape.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/array_b_op_infershapes.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/array_op_infershapes.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/constant_infershape.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/convolution_infershape.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/crop_infershape.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/deconvolution_infershape.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/detection_op_infershapes.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/fc_infershape.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/graph_infershape_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/graph_verify_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/math_op_infershapes.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/netoutput_infershape.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/nn_op_infershapes.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/op_ir_facade.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/op_ir_func_factory.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/op_ir_infer_func.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/op_ir_infer_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/op_ir_verify_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/pooling_infershape.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/random_op_infershapes.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/node.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/op_desc.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/operator.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/operator_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/serialize/model_serialize_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/serialize_factory.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/shape.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/tensor.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/utils/anchor_utils.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/utils/attr_utils.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/utils/graph_utils.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/utils/node_utils.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/utils/op_desc_utils.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/utils/tensor_utils.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/omg/compress/compress_util.cpp
+:/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../../../open_source/google__protobuf/google__protobuf-3.9.0/src/google/protobuf/wire_format_lite.cc
+?/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../framework/domi/graph/infershape/image_op_infershapes.cpp
+BroadcastTo
+BroadcastToInfer
+CastT
+Conv2DTransposeConverter
+ConvTranspose
+ConvTransposeInfer
+ConvTransposeVerify
+ConvTransposeVerifyBiasShape
+ConvTransposeVerifyFilterShape
+CreateTansposeOp
+DynamicImageData
+ExtractImagePatches
+ExtractImagePatchesInfer
+FRACTAL_DECONV_TRANSPOSE
+FSRPredictionsInfer
+FastrcnnPredictions
+FusionBatchNorm
+MathBroadCastBoolInfer
+MathBroadCastInfer
+MathBroadCastIntInfer
+Maximum
+Minimum
+MirrorPad
+MirrorPadInfer
+MirrorPadOMConverter
+MirrorPadVerify
+OutputBroaCastMultiInput
+_ZN2ge14ModelSerialize16UnserializeModelENSt6__ndk110shared_ptrINS_5proto8ModelDefEEEPNS_5ModelE
+_ZN2ge6OpDesc8SetRunCLENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+__cxa_pure_virtual
+data_cast_
+expose_hidden
+frame_num
+invalid model. file_header->length(%u) + sizeof(ModelFileHeader)(%u) !=             model->modelLen(%u) || MODEL_FILE_MAGIC_NUM != file_header->magic
+netoutput_cast_
+sparseAlgorithmData
+transpose
+transposeW
+transposeX
+transpose_a
+transpose_after_permute_
+transpose_b
+transpose_before_correlation_
+transpose_x1
+transpose_x2
+y/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../../../../../out/hihms/obj/hiai_ddk/intermediate/proto/ge_ir.pb.cc

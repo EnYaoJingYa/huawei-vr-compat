@@ -12,6 +12,7 @@
 `ActivityManager.getAppTasks()` 正好给出这个信息，且不需要任何权限。
 本脚本把该方法整体换成一次兼容层查询，语义不变：取不到返回 null。
 """
+import io
 import re
 import sys
 from pathlib import Path
@@ -26,7 +27,7 @@ HELPER = ("Lcom/huawei/vrframework/compat/VrTopActivity;->"
 
 def main(root):
     path = Path(root) / "decode" / MODULE / TARGET
-    text = path.read_text(encoding="utf-8", newline="")
+    text = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in text else "\n"
     body = text.replace("\r\n", "\n")
 

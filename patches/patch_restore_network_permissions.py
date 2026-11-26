@@ -18,6 +18,7 @@
 文本 manifest 直接插入 <uses-permission>；vrservice 是二进制 manifest（apktool -r
 解的），用 axml_edit 插入。脚本幂等：已有该权限就跳过。
 """
+import io
 import sys
 from pathlib import Path
 
@@ -59,7 +60,7 @@ PACKAGES = {
 
 
 def patch_text(path, permissions):
-    text = path.read_text(encoding="utf-8", newline="")
+    text = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in text else "\n"
     body = text.replace("\r\n", "\n")
     added = []

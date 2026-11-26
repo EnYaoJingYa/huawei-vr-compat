@@ -1,0 +1,1131 @@
+ "quaternion":[%f, %f, %f, %f]
+ imaginary
+%s failed to broadcast
+,"KeyFrameTimeStamps":%lf 
+,"cameraPose":
+.eh_frame
+.eh_frame_hdr
+/SlamXml/vrglass.xml
+/SlamXml/vrglassVN1.xml
+10SlamThread
+13IMUDealThread
+13IMUPushThread
+20VrRealDisplayDeepMap
+23ControllerThreeDoFState
+9IMUThread
+9SlamState
+?PostureFusion
+AT^SET6DOFSTATUS=0
+AT^SET6DOFSTATUS=1
+AT^SETTIMESTAMP={%02d-%02d-%02d-%02d-%02d-%02d}
+AT^SETTIMESTAMP={xx-xx-xx-xx-xx-xx}
+AdjustDistanceCamera2Plane
+CalCenterProjection
+CalColorFusion
+CameraNum
+CanPushCtrlImu
+CheckCorrectPointsInPlaneRangeFromCameraForward
+CheckPlaneProjectionAreaCompare
+CheckSlamMap
+ControllerThreeDoFState
+Create slam mEstimateImage fail
+CreatePushSlamData
+CreateSlamDataBySlamImage
+CreateSlamDataBySlamImage faile
+CreateSlamInputImg
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/ControllerThreeDoF/src/ControllerThreeDoFState.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/DataProcess/src/ImageBuffer.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/PostureFusion/src/PostureFusion.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/SLAM/src/BrightEstimate.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/SLAM/src/SlamImage.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/SLAM/src/SlamState.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/SLAM/src/SlamThread.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/device/imu/src/GetAndSaveCalibration.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/device/imu/src/IMUDealThread.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/device/imu/src/IMUPushThread.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/device/imu/src/IMUThread.cpp
+Deleted virtual function called!
+Dispatch3DofCtrlModulePara
+GetAndSaveCalibration
+GetCameraPoseFromSLAM
+GetHelmetPosture
+GetSixDofPosture
+GetSlamFeature
+GetSlamInterface
+GetSlamMap
+GetSlamPointCloud
+GetSlamPosture
+GetThreeDofPosture
+GetVR6DofInterface
+HSDK_CONFIG_MANAGER_IMPL_GET_3_DOF_LEFT_HANDLER_STATE
+HSDK_CONFIG_MANAGER_IMPL_GET_3_DOF_RIGHT_HANDLER_STATE
+HSDK_CONFIG_MANAGER_IMPL_GET_SLAM_BIAS_INFO
+HSDK_CONFIG_MANAGER_IMPL_GET_SLAM_PARAMS
+HSDK_CONFIG_MANAGER_IMPL_GET_VR_3_DOF_HANDLER_CONFIG
+HSDK_CONFIG_MANAGER_IMPL_GET_VR_6_DOF_HANDLER_CONFIG
+HXR_ALG_EVENT_CALLBACK
+HandleCaLibraData
+Helmet-Default
+IMUDealThread
+IMUPushThread
+IMUThread
+ImageBuffer
+ImuLostStatistic
+Java_com_huawei_hvrsdkserverapp_module_ArvrRuntimeModuleManager_Send6dofFlagNative
+Java_com_huawei_hvrsdkserverapp_module_ArvrRuntimeModuleManager_SendTimestampNative
+Java_com_huawei_hvrsdkserverapp_module_ArvrRuntimeModuleManager_isSlamIMUPushedNative
+Java_com_huawei_hvrsdkserverapp_module_ArvrRuntimeModuleManager_updateCameraModeNative
+MultiFrameHist
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+NSt6__ndk120__shared_ptr_pointerIP16HxrAlgorithmDataPFvS2_ENS_9allocatorIS1_EEEE
+PFvP16HxrAlgorithmDataE
+ProcessFrameData
+ProcessSlamFeature
+Pure virtual function called!
+Push 3dof left imu
+Push 3dof right imu
+Push 6dof left imu
+Push 6dof right imu
+Push Slam state %s  time=%lld.
+Push VCtrl image
+Push imu state %s  time=%lld.
+Push slam image
+Push vctrl %s imu state %s  time=%lld.
+PushCtrlIMU
+PushHelmetInfo
+PushIMU
+PushImageBufferPool
+PushImageData
+PushImageData DealTime
+PushImuData
+SLAM_GET_MAP_STATE
+SLAM_GET_MAX_MAP_SIZE
+SLAM_GET_SAVE_MAP
+SLAM_SET_LOAD_MAP
+SLAM_SET_MAP_ADDFEATURE_SWITCH
+SLAM_SET_RELOC_MANUAL_SWITCH
+Save A Frame %lld slamPoolSize=%d
+Save B Frame %lld
+SaveHelmet
+Send6dofFlag
+SendTimestamp
+SetCameraDegree
+SetInSlamRelocation
+SetSlamMode
+SetSlamRelocFlag
+SlamAddFeatureClose
+SlamAddFeatureOpen
+SlamRelocManualClose
+SlamRelocManualOpen
+SlamState
+SlamStatusCallback
+SlamThread
+SlamThread::PushImuData %lld %lld
+St8bad_cast
+Update3DoFPosture
+Update6DoFPosture
+UpdateCtrlIMUInfo
+UpdateHelmetCoordinate
+UpdateHelmetIMUInfo
+UpdateHelmetPos
+UpdatePlaneWhenPoseInvalid
+UpdatePlaneWhenPoseValid
+WaitRectifyImage
+WriteControllerImuData
+WriteImuData
+WriteImuParaXml
+WriteOneCameraParaXml
+WriteSlamPoseData
+WriteSlamXmlData
+[%s][%s:%s](%d):  IMUPushThread Stop IN
+[%s][%s:%s](%d):  IMUPushThread Stop OUT
+[%s][%s:%s](%d):  before combine ,old plane display y:%f 
+[%s][%s:%s](%d):  oldPlane hat:%f   display:%f 
+[%s][%s:%s](%d): %d ctrlPose invalid
+[%s][%s:%s](%d): %s Device info timeStamps is error!
+[%s][%s:%s](%d): %s deviceInfoTimeStamps == 0
+[%s][%s:%s](%d): %s equalTimeStampsCount more than 120!
+[%s][%s:%s](%d): %s error buffer %lld timeStamp:%f
+[%s][%s:%s](%d): %s leftDeviceInfoTimeStamps equal rightDeviceInfoTimeStamps!
+[%s][%s:%s](%d): 3dof params strcpy faild
+[%s][%s:%s](%d): After fusion oldPlane color avg: %f, std: %f 
+[%s][%s:%s](%d): Angle between camera forward and plane normal is invalid.
+[%s][%s:%s](%d): Begin Points with camera parameters.
+[%s][%s:%s](%d): CAMERA PARAM READ END
+[%s][%s:%s](%d): CameraForward = (%f, %f, %f)
+[%s][%s:%s](%d): Check Correct Points In Plane Range From Camera Forward Failed.
+[%s][%s:%s](%d): CheckSlamMap Failed
+[%s][%s:%s](%d): CheckSlamMap IN ,map file = %s
+[%s][%s:%s](%d): CheckSlamMap fail, path invalid %s
+[%s][%s:%s](%d): CheckSlamMap, fopen failed
+[%s][%s:%s](%d): CheckSlamMap, map send to slam done!
+[%s][%s:%s](%d): CheckSlamMap, memset err, err=%d
+[%s][%s:%s](%d): CheckSlamMap: mapSize:[%d]
+[%s][%s:%s](%d): CheckSlamMap:check Slam Map Failed, ret = %d!
+[%s][%s:%s](%d): CreatePushSlamData error, no mAlgInstance
+[%s][%s:%s](%d): CreatePushSlamData failed!
+[%s][%s:%s](%d): Device is not 6DoF Gaming Kit Par-CG012: %04x, %04x
+[%s][%s:%s](%d): Error : GetValue SLAM_GET_KEY_FRAME_POSE
+[%s][%s:%s](%d): Error : controllerthreedof Deinit:%d
+[%s][%s:%s](%d): Error : controllerthreedof Start:%d
+[%s][%s:%s](%d): Error : controllerthreedof Stop:%d
+[%s][%s:%s](%d): Error : controllerthreedof init failed
+[%s][%s:%s](%d): Error : slam Deinit:%d
+[%s][%s:%s](%d): Error : slam Pause:%d
+[%s][%s:%s](%d): Error : slam Resume:%d
+[%s][%s:%s](%d): Error : slam Start:%d
+[%s][%s:%s](%d): Error : slam Stop:%d
+[%s][%s:%s](%d): Error : slam init failed
+[%s][%s:%s](%d): Error TimeStampe! the new timeStampe is jump, now :%lld Last: %lld
+[%s][%s:%s](%d): Error TimeStampe!,the new timeStamp less than  last timeStamp Now: %lld Last: %lld
+[%s][%s:%s](%d): Error! DFX Process accelerometer failed!
+[%s][%s:%s](%d): Error! DFX Process gyroscope failed!
+[%s][%s:%s](%d): Error! Get slam Posture failed!
+[%s][%s:%s](%d): Error! GetVR6DofInterface failed
+[%s][%s:%s](%d): Error! PushLeftCtrlIMU failed!
+[%s][%s:%s](%d): Error! PushRightCtrlIMU failed!
+[%s][%s:%s](%d): Error! SlamState Push acc failed!
+[%s][%s:%s](%d): Error! SlamState Push gyro failed!
+[%s][%s:%s](%d): Error! WaitRectifyImage failed!
+[%s][%s:%s](%d): Error! ctrl PushIMU failed!
+[%s][%s:%s](%d): Error! empty controller pose!
+[%s][%s:%s](%d): Error! empty helmet info!
+[%s][%s:%s](%d): Error! empty slam pose!
+[%s][%s:%s](%d): Error! get 3dof posture failed!
+[%s][%s:%s](%d): Error! not valid  mLastImuTimeStamp:%lld TimeStamp:%lld 
+[%s][%s:%s](%d): Error! vctrl get slam pose failed!
+[%s][%s:%s](%d): GetCtrlPostureForVst[%d]: x:%f, y:%f, z:%f, Quat: x:%f, y:%f, z:%f, w:%f
+[%s][%s:%s](%d): GetEstimateResult:start imu
+[%s][%s:%s](%d): GetEstimateResult:stop imu
+[%s][%s:%s](%d): GetSixDofPosture mVctrlThread is null!
+[%s][%s:%s](%d): GetSlamMap failed when save safe region
+[%s][%s:%s](%d): GetSlamMap:Malloc Slam Map Buffer Failed!
+[%s][%s:%s](%d): GetSlamMap:get Slam Map Failed, ret = %d!
+[%s][%s:%s](%d): GetSlamMap:get Slam Map size Failed, ret = %d, mapLength = %d!
+[%s][%s:%s](%d): GetSlamMap:mapBuffer real size:[%d]
+[%s][%s:%s](%d): GetSlamMap:mapBuffer size:[%zd]
+[%s][%s:%s](%d): GetSlamPointCloud error, no mAlgInstance
+[%s][%s:%s](%d): GetSlamPosture error, no mAlgInstance
+[%s][%s:%s](%d): GetSlamPosture failed!
+[%s][%s:%s](%d): GetThreeDofPosture mCtrlThreeDoFState is null!
+[%s][%s:%s](%d): HELMET IMU PARAM READ END
+[%s][%s:%s](%d): HW_SLAM_INIT_PARA valueSize %ld
+[%s][%s:%s](%d): HandlerInitParam: camera num: %d
+[%s][%s:%s](%d): HandlerInitParam: camera[0] camera id: %d
+[%s][%s:%s](%d): HandlerInitParam: camera[0] image height %d, width %d, stride: %d
+[%s][%s:%s](%d): HandlerInitParam: camera[0] image type: %d
+[%s][%s:%s](%d): HandlerInitParam: handler[0] imu param acc fps: %f
+[%s][%s:%s](%d): HandlerInitParam: handler[1] imu param acc fps: %f
+[%s][%s:%s](%d): HandlerInitParam: helmet imu acc fps: %f
+[%s][%s:%s](%d): HandlerInitParam: helmet imu num: %d
+[%s][%s:%s](%d): HandlerInitParam: helmet imu type: %s
+[%s][%s:%s](%d): HandlerInitParam: helmetCameraType: %d
+[%s][%s:%s](%d): HelmetResetCenter yaw: %f, pitch: %f, roll: %f, PosOffset:%f, %f, %f; RotationOffset:%f, %f, %f, %f
+[%s][%s:%s](%d): IMUDealThread Stop IN
+[%s][%s:%s](%d): IMUDealThread Stop OUT
+[%s][%s:%s](%d): IMUThread ThreadLoop begin.
+[%s][%s:%s](%d): IN Ctrl postion x:%f,y:%f,z:%f,Quat x:%f,y:%f,z:%f,w:%f
+[%s][%s:%s](%d): ImageBuffer = fuction error!
+[%s][%s:%s](%d): ImageBuffer copy fuction error!
+[%s][%s:%s](%d): ImuLostStatistic Error  lost the imu data  mLastImuTimeStamp:%lld TimeStamp:%lld lost:%lld
+[%s][%s:%s](%d): ImuLostStatistic lost persent:%f totalNum:%lld lostNum:%lld
+[%s][%s:%s](%d): InputPlanePro.mSlamPoints.size = %zu
+[%s][%s:%s](%d): InputPlanePro.mSlamPoints.size() < 3.
+[%s][%s:%s](%d): JIN updateCameraModeNative IN
+[%s][%s:%s](%d): JIN updateCameraModeNative OUT
+[%s][%s:%s](%d): No OV IMU data, ret=%d error=%d
+[%s][%s:%s](%d): OUT New position x:%f,y:%f,z:%f,Quat w:%f,x:%f,y:%f,z:%f
+[%s][%s:%s](%d): OVIMU status change to STATUS_FAULT due to read error.
+[%s][%s:%s](%d): OVIMU write log enable
+[%s][%s:%s](%d): Points projection area is too large.
+[%s][%s:%s](%d): Points with camera parameters that not correct is too much .
+[%s][%s:%s](%d): ProcessSlamFeature imgData->data is nullptr
+[%s][%s:%s](%d): PushIMU error, no mAlgInstance
+[%s][%s:%s](%d): PushImageBufferPool copy function error
+[%s][%s:%s](%d): PushImageData time more than %lldms
+[%s][%s:%s](%d): PushImu error, no mAlgInstance
+[%s][%s:%s](%d): PushSlamData time more than %lldms
+[%s][%s:%s](%d): Read Slam Xml error 
+[%s][%s:%s](%d): ResetCameraFrameIndex
+[%s][%s:%s](%d): SLAM_GET_MAP_STATE: %d
+[%s][%s:%s](%d): SLAM_point_cloud is too less to create hist.
+[%s][%s:%s](%d): SaveSlamPoseFlag enable
+[%s][%s:%s](%d): Send(SendTimestamp):%s
+[%s][%s:%s](%d): Slam and vst buffer size=%d
+[%s][%s:%s](%d): Slam feature save dfx failed!
+[%s][%s:%s](%d): Slam getPointCloud error:%d
+[%s][%s:%s](%d): Slam image save dfx failed!
+[%s][%s:%s](%d): SlamAddFeatureClose IN
+[%s][%s:%s](%d): SlamAddFeatureOpen IN
+[%s][%s:%s](%d): SlamImage copy fuction data[0] error!
+[%s][%s:%s](%d): SlamImage copy fuction data[1] error!
+[%s][%s:%s](%d): SlamParam.IMUType strncpy_s faild
+[%s][%s:%s](%d): SlamRelocManualClose IN
+[%s][%s:%s](%d): SlamRelocManualOpen IN
+[%s][%s:%s](%d): SlamState Deinit failed!
+[%s][%s:%s](%d): SlamState Init failed!
+[%s][%s:%s](%d): SlamState Pause failed!
+[%s][%s:%s](%d): SlamState Resume failed!
+[%s][%s:%s](%d): SlamState Stop failed!
+[%s][%s:%s](%d): SlamState start failed!
+[%s][%s:%s](%d): SlamState::SetValueCallback IN, key:%s
+[%s][%s:%s](%d): SlamThread  CreateSlamInputImg memcpy
+[%s][%s:%s](%d): Too much camera params
+[%s][%s:%s](%d): Two planes has same camera poses, dis: %f, cos: %f
+[%s][%s:%s](%d): Update3DoFPosture: [L0/R1]index:%d, xyzw(%f, %f, %f, %f)
+[%s][%s:%s](%d): VCtrl image save dfx failed!
+[%s][%s:%s](%d): Vctrl Pose write enable
+[%s][%s:%s](%d): VrRealDisplayDeepMap Init failed
+[%s][%s:%s](%d): VrRealDisplayDeepMap::stop success!
+[%s][%s:%s](%d): VrRunSlam disable
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] Init !
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] RequestExit once !
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] RunState now !
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] ThreadLoop once !
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] VST3Flag end the circle not save
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] VST3Flag flag %d
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] VrRealDisplayDeepMap not start, do not save image, then return!
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] copy left image data from camera failed!
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] copy right image data from camera failed!
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] dmap begin
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] dmap end
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] dmapBack not get fffffffffffffffkkkkkkkkkkkkkkkk
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] getRunState !
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] image data from camera is null!
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] in VrRealDisplayDeepMap
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] in initialize
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] in initialize end
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] in ~VrRealDisplayDeepMap
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] not running, don't need stop!
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] start !
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] thread exit
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] thread pushDepthMapImgList
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] thread setStopFlag !
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] thread stop !
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] thread updateMap everything is begining
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] updateDmap2 failed ffffffffffffffkkkkkkkkkkkkkkkkkkkk!
+[%s][%s:%s](%d): [VrRealDisplayDeepMap] updateDmap2 success ffffffffffffffkkkkkkkkkkkkkkkkkkkk!
+[%s][%s:%s](%d): [VrRealDisplayDeepMap]::Init done!
+[%s][%s:%s](%d): [VrRealDisplayDeepMap]::Stop!
+[%s][%s:%s](%d): [reloc test] SetInSlamRelocation:%d
+[%s][%s:%s](%d): [reloc test] slamRelocRunning:%d
+[%s][%s:%s](%d): [tx dbg] camera(%f,%f,%f), hit plane id(%d) center(%f,%f,%f) extent(%f,%f,%f)
+[%s][%s:%s](%d): [tx dbg] camera(%f,%f,%f), laser(%f,%f,%f), hit(%f,%f,%f), laserdis(%f), planedis(%f)
+[%s][%s:%s](%d): [tx dbg] hit point was too close to camera. %f
+[%s][%s:%s](%d): [tx dbg] laser point was too close to camera. %f
+[%s][%s:%s](%d): after distanceCamera2Plane = %f.
+[%s][%s:%s](%d): angle between plane(%f,%f,%f) and camera(%f,%f,%f) is too large.
+[%s][%s:%s](%d): befor distanceCamera2Plane = %f.
+[%s][%s:%s](%d): close mCtrlImuFile1 succeed
+[%s][%s:%s](%d): close mCtrlImuFile2 succeed
+[%s][%s:%s](%d): close mCtrlPoseFile1 succeed
+[%s][%s:%s](%d): close mCtrlPoseFile2 succeed
+[%s][%s:%s](%d): close mSlamPoseFile succeed
+[%s][%s:%s](%d): close mSlamYUVFile1 succeed
+[%s][%s:%s](%d): close mSlamYUVFile2 succeed
+[%s][%s:%s](%d): distance_plane_camera = %f.
+[%s][%s:%s](%d): dst.mSlamPoints is empty.
+[%s][%s:%s](%d): error! Update controller IMU Info failed
+[%s][%s:%s](%d): error! Update ctrl IMU Info failed
+[%s][%s:%s](%d): error! Update helmet IMU Info failed
+[%s][%s:%s](%d): error! mEstimateImage size not equal to buffer size
+[%s][%s:%s](%d): extend plane slam old(%f,%f,%f), new(%f, %f, %f)
+[%s][%s:%s](%d): fileTimeStamp:%ju
+[%s][%s:%s](%d): flag status: gIsDfxEnable=%d, gIsDfxReplyEnable=%d, mSaveSlamPoseEnable=%d, misCloseSafeAreaEnable=%d
+[%s][%s:%s](%d): flag status: gIsSlamRunning=%d
+[%s][%s:%s](%d): flag status: gIsSlamRunning=%d gIsVCtrlRunning=%d
+[%s][%s:%s](%d): flag status: mCtrlImuEnable=%d, mYuvImageEnable=%d, mSaveVCtrlPoseEnable=%d
+[%s][%s:%s](%d): flag status: mYuvImageEnable=%d
+[%s][%s:%s](%d): get slam map state Failed, ret = %d
+[%s][%s:%s](%d): getcalibration  curPack:%d packNum:%d
+[%s][%s:%s](%d): getcalibration CAL_STEP_INIT t1 %d
+[%s][%s:%s](%d): getcalibration Cannot find file:%s ! 
+[%s][%s:%s](%d): getcalibration Cannot find node:%s 
+[%s][%s:%s](%d): getcalibration Cannot find root node ! 
+[%s][%s:%s](%d): getcalibration DealAllPackOK set CAL_STEP_INIT index:%d
+[%s][%s:%s](%d): getcalibration SaveData() error, should not run this code,xml will be wrong, index:%d
+[%s][%s:%s](%d): getcalibration cameraPara[0].width:%d cameraPara[0].height:%d cameraPara[1].width:%d cameraPara[1].height:%d 
+[%s][%s:%s](%d): getcalibration case-default, return index:%d
+[%s][%s:%s](%d): getcalibration copyfile failed,src file:%s, des file :%s
+[%s][%s:%s](%d): getcalibration device(%d)hash:%s
+[%s][%s:%s](%d): getcalibration deviceID:%d HashData:%s 
+[%s][%s:%s](%d): getcalibration el == nullptr, index:%d
+[%s][%s:%s](%d): getcalibration file is not valid, using default xml
+[%s][%s:%s](%d): getcalibration final use xml:%s
+[%s][%s:%s](%d): getcalibration find node null:%s
+[%s][%s:%s](%d): getcalibration get one pack index:%d pack_num:%d pack_total:%d
+[%s][%s:%s](%d): getcalibration get one pack ok
+[%s][%s:%s](%d): getcalibration getHash case-default, return index:%d
+[%s][%s:%s](%d): getcalibration getHeadHash over time 3 times,index:%d
+[%s][%s:%s](%d): getcalibration getHeadHash over time,index:%d
+[%s][%s:%s](%d): getcalibration getcalibration file is not valid, using default xml
+[%s][%s:%s](%d): getcalibration hash is exist and the same index:%d
+[%s][%s:%s](%d): getcalibration hash is not the same,prepare to get calibration data index:%d
+[%s][%s:%s](%d): getcalibration index(%d) packNum = 0  use default Param
+[%s][%s:%s](%d): getcalibration index:%d error
+[%s][%s:%s](%d): getcalibration index:%d faild! reason:calibration is not exist
+[%s][%s:%s](%d): getcalibration index:%d faild! reason:hash data error
+[%s][%s:%s](%d): getcalibration input error index:%d
+[%s][%s:%s](%d): getcalibration isDefaultXml[0]:%d,isDefaultXml[1]:%d,isDefaultXml[2]:%d
+[%s][%s:%s](%d): getcalibration mNeedWriteHash:%d mIndex%d
+[%s][%s:%s](%d): getcalibration node nullptr
+[%s][%s:%s](%d): getcalibration num is 0
+[%s][%s:%s](%d): getcalibration openfile failed %s
+[%s][%s:%s](%d): getcalibration over time index:%d
+[%s][%s:%s](%d): getcalibration pop queue index:%d, mGetStatus:%d
+[%s][%s:%s](%d): getcalibration push queue index:%d
+[%s][%s:%s](%d): getcalibration reset math callback
+[%s][%s:%s](%d): getcalibration send getHash command index:%d
+[%s][%s:%s](%d): getcalibration set CAL_STEP_INIT index:%d
+[%s][%s:%s](%d): getcalibration use default xml:%s, define VN1v4WrongUseDefaultxml
+[%s][%s:%s](%d): getcalibration use xml:%s
+[%s][%s:%s](%d): getcalibration write hash to xml index:%d, dest:%s
+[%s][%s:%s](%d): getcalibration::GetHash(%d):%s
+[%s][%s:%s](%d): getcalibration::GetPack(%d):%s
+[%s][%s:%s](%d): hyy mCameraDegree = %d
+[%s][%s:%s](%d): inputPlanePro.mSlamPoints.size() < 3.
+[%s][%s:%s](%d): invalid slam pose
+[%s][%s:%s](%d): m3DofCtrlParam memset zero faild
+[%s][%s:%s](%d): mCameraHeight %.3f,  estimatedHeight:%.3f
+[%s][%s:%s](%d): mFEJni.getSlamFeature fail
+[%s][%s:%s](%d): mFixedSlamPoseEnable enable
+[%s][%s:%s](%d): mFixedVCtrlPoseEnable enable
+[%s][%s:%s](%d): mFrameCount: %zu  mCameraHeight:%.3f
+[%s][%s:%s](%d): mMultiFrameInputPoints clear, and CameraFormward = (%f, %f, %f)
+[%s][%s:%s](%d): mSlamParam memset zero faild
+[%s][%s:%s](%d): mSlamParam.cameraType strncpy_s faild
+[%s][%s:%s](%d): mVCtrlParam.handlerParams[idx].handlerImuType strncpy_s faild
+[%s][%s:%s](%d): mVCtrlParam.helmetImuType strncpy_s faild
+[%s][%s:%s](%d): m_pSlamIniData is nullptr error
+[%s][%s:%s](%d): mdevicecalibration buffer memcpy_s faild
+[%s][%s:%s](%d): mdevicecalibration memset zero faild!
+[%s][%s:%s](%d): notCorrectPointsCount in camera view = %d.
+[%s][%s:%s](%d): open mCtrlImuFile1 succeed
+[%s][%s:%s](%d): open mCtrlImuFile2 succeed
+[%s][%s:%s](%d): open mCtrlPoseFile1 succeed
+[%s][%s:%s](%d): open mCtrlPoseFile2 succeed
+[%s][%s:%s](%d): open mSlamPoseFile succeed
+[%s][%s:%s](%d): open mSlamYUVFile1 succeed
+[%s][%s:%s](%d): open mSlamYUVFile2 succeed
+[%s][%s:%s](%d): save staticPose:%f, %f, %f
+[%s][%s:%s](%d): sixDofPostureVector left: orientation(x:%f y:%f z:%f w:%f), position(%f, %f, %f), state(%x)
+[%s][%s:%s](%d): sixDofPostureVector right: orientation(x:%f y:%f z:%f w:%f), position(%f, %f, %f), state(%x)
+[%s][%s:%s](%d): slam not update point cloud yet.
+[%s][%s:%s](%d): slam pose invalid
+[%s][%s:%s](%d): slam write yuv enable
+[%s][%s:%s](%d): threeDofPoseVector left: %f, %f, %f, %f
+[%s][%s:%s](%d): threeDofPoseVector right: %f, %f, %f, %f
+[%s][%s:%s](%d): track plane (%zu), insert (%zu) to PlaneManager
+[%s][%s:%s](%d): tx_dbg plane: %zu, ground %zu, bad %zu. plane slam points %zu
+[%s][%s:%s](%d): tx_dbg vertical plane %d width %f, height %f, boundry %f. plane slam points %zu
+[%s][%s:%s](%d): use left ctrl pose, y = %f
+[%s][%s:%s](%d): use right ctrl pose, y = %f
+[%s][%s:%s](%d): wrong data type! HW_SLAM_DATA needed
+_Z10PlaneHitExRK7RayCastRK10ArVector3fS4_RS2_
+_Z10coordToHMDR9VrPosturePKiib9VrVector3
+_Z11AdjustPointRK26VerticalExpansionParameterRK10ArVector3fRK5PlaneRNSt6__ndk16vectorI9SlamPointNS8_9allocatorISA_EEEE
+_Z11BuildKDTreeR6KDTreeRKNSt6__ndk16vectorI9SlamPointNS1_9allocatorIS3_EEEE
+_Z12FindMaxGroupRKNSt6__ndk16vectorINS0_I9SlamPointNS_9allocatorIS1_EEEENS2_IS4_EEEERiS9_S9_
+_Z12SaveHsdkPoseP7__sFILERK8HsdkPose
+_Z13FindHitResultRK7RayCastRNSt6__ndk14listI5PlaneNS2_9allocatorIS4_EEEERNS2_6vectorI9HitResultNS5_ISA_EEEE
+_Z13GetPlaneColorRKNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEER5Plane
+_Z14CalColorFusionRK5PlaneRS_
+_Z14CheckOneNormalRK9SlamPointR6KDTreeRKfRKdf
+_Z14FilterBadPointRK26VerticalExpansionParameterRK5PlaneRNSt6__ndk16vectorI9SlamPointNS5_9allocatorIS7_EEEESB_
+_Z14FilterBadPointRNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEEf
+_Z15GetProjectValueRK14InnerFrameDataRK5Planef
+_Z15GetTOFPointsNumRKNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEE
+_Z15SaveCurrentInfoP7__sFILERK13SaveFrameInfoRKNSt6__ndk14listI14HsdkPointInnerNS4_9allocatorIS6_EEEERNS4_6vectorI5PlaneNS7_ISD_EEEERNSC_I10HsdkAnchorNS7_ISH_EEEE
+_Z16FindInlierPointsiiRKNSt6__ndk16vectorINS0_I9SlamPointNS_9allocatorIS1_EEEENS2_IS4_EEEE
+_Z16Get2dAnd3dPointsRKNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEERS4_S7_
+_Z17FindSmallAreaHistRKfS0_RKNSt6__ndk16vectorINS2_I9SlamPointNS1_9allocatorIS3_EEEENS4_IS6_EEEEii
+_Z17RemoveHistInRangeRiS_RNSt6__ndk16vectorINS1_I9SlamPointNS0_9allocatorIS2_EEEENS3_IS5_EEEE
+_Z18CalTransformMatrixRK10HsdkAnchorS1_
+_Z18CheckPointsNormalsRNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEER6KDTreeRKfRKdf
+_Z18FindMaxMinXZinHistRKNSt6__ndk16vectorINS0_I9SlamPointNS_9allocatorIS1_EEEENS2_IS4_EEEEiRNS0_IfNS2_IfEEEE
+_Z18HsdkPoseToMatrix4fRK8HsdkPose
+_Z18IsNearestColorSameRKNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEERKS1_RKfi
+_Z18Slam6DofToHsdkPoseRK12HW_SLAM_6DofR8HsdkPose
+_Z19CalCenterProjectionRK5PlaneS1_
+_Z20Input2dPointsToPlaneRK14InnerFrameDataRKNSt6__ndk16vectorI9SlamPointNS2_9allocatorIS4_EEEER5Plane
+_Z21CheckMaxHistThicknessNSt6__ndk16vectorINS0_I9SlamPointNS_9allocatorIS1_EEEENS2_IS4_EEEEii
+_Z21GetCameraPoseFromSLAMv
+_Z22GetColorPointsForPlaneRK14InnerFrameDataRKNSt6__ndk16vectorI9SlamPointNS2_9allocatorIS4_EEEEfR5Plane
+_Z22InputSlamPointToVectorR5Plane
+_Z22IsPointHasAroundPointsRKNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEERS4_RKfS9_S9_RKi
+_Z23CheckHistIndexInSameNumRKNSt6__ndk16vectorINS0_I9SlamPointNS_9allocatorIS1_EEEENS2_IS4_EEEEiii
+_Z23RemoveSamePointsInPlaneRK18PlaneConfigurationRNSt6__ndk16vectorI9SlamPointNS2_9allocatorIS4_EEEE
+_Z23ResizeBestPointsInPlaneiRNSt6__ndk16vectorINS0_I9SlamPointNS_9allocatorIS1_EEEENS2_IS4_EEEE
+_Z23UpdatePlaneByFourVertexR5PlaneR9SlamPointS2_S2_S2_
+_Z24GetInnerCameraIntrinsicsv
+_Z25CountErrorPointCameraViewRK5PlaneRK9SlamPointRK18PlaneConfigurationRif
+_Z26AdjustDistanceCamera2PlaneRfRKfS1_
+_Z27GetPointsInPlaneExtendRangeRK14InnerFrameDataRK10ArVector3ffR5Plane
+_Z27GetUpdatePointsListForPlaneRKNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEERK24GroundExpansionParameterRK5PlaneRK10ArVector3fRb
+_Z27IsPointHasAroundPointsInVerRKNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEERS4_
+_Z28GetInlierOutlierGroundPointsRK9SlamPointiRNSt6__ndk16vectorIS_NS2_9allocatorIS_EEEES7_S7_
+_Z29CheckSpliceVerticalPlaneInputRKNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEERKNS_4listI5PlaneNS2_IS8_EEEE
+_Z30GetControllerThreeDoFInterfacev
+_Z31CheckInputOfExpandVerticalPlaneRKNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEERKNS_4listI5PlaneNS2_IS8_EEEE
+_Z31CheckPlaneProjectionAreaCompareRK5PlaneS1_RK18PlaneConfiguration
+_Z33CombineGroupFromNeighborInSameNumRKNSt6__ndk16vectorINS0_I9SlamPointNS_9allocatorIS1_EEEENS2_IS4_EEEEiRS4_
+_Z47CheckCorrectPointsInPlaneRangeFromCameraForwardRKNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEERK18PlaneConfigurationRK5PlanefRK10ArVector3f
+_Z8PlaneHitRK7RayCastRK5PlaneR9HitResult
+_Z9CompareZXRK10ArVector3fS1_
+_Z9DoClusterRNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEERKdRKmRKi
+_Z9PCANormalRKNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEE
+_ZN10ArMatrix3fC1ERK13ArQuaternionf
+_ZN10ArMatrix3fC2ERK13ArQuaternionf
+_ZN10ArMatrix4fC1ERK13ArQuaternionf
+_ZN10ArMatrix4fC1ERK13ArQuaternionfRK10ArVector3f
+_ZN10ArMatrix4fC2ERK13ArQuaternionf
+_ZN10ArMatrix4fC2ERK13ArQuaternionfRK10ArVector3f
+_ZN10CameraParaC2ERKS_
+_ZN10SlamThread10GetPostureEP17SlamGetPoseInput_m
+_ZN10SlamThread10ThreadLoopEv
+_ZN10SlamThread11CurSLAMTimeERm
+_ZN10SlamThread11GetInstanceEv
+_ZN10SlamThread11PushImuDataEPh
+_ZN10SlamThread11RecycleDataEP16HxrAlgorithmData
+_ZN10SlamThread11StopWaitingEv
+_ZN10SlamThread12CloseLogFileEv
+_ZN10SlamThread12onThreadExitEv
+_ZN10SlamThread13PushImageDataEPh
+_ZN10SlamThread13onThreadReadyEv
+_ZN10SlamThread14PushHelmetInfoEPh
+_ZN10SlamThread15isSlamIMUPushedE
+_ZN10SlamThread17GetEstimateResultEPKhS1_
+_ZN10SlamThread18CreatePushSlamDataEP12HW_SLAM_DATA
+_ZN10SlamThread18CreateSlamInputImgEP12HW_SLAM_DATAP24SLAM_INPUT_HW_SLAM_IMAGEb
+_ZN10SlamThread18GetPostureRealTimeEP17SlamGetPoseInput_
+_ZN10SlamThread19CreateSlamInputFeatEP12HW_SLAM_DATAP26SLAM_INPUT_HW_SLAM_FEATUREb
+_ZN10SlamThread4InitEPFviE
+_ZN10SlamThread4StopEv
+_ZN10SlamThread5PauseEv
+_ZN10SlamThread5StartEv
+_ZN10SlamThread6DeinitEv
+_ZN10SlamThread6ResumeEv
+_ZN10SlamThread7GetFlagEv
+_ZN10SlamThread8ResetImuEv
+_ZN10SlamThread9mInstanceE
+_ZN10SlamThreadC1Ev
+_ZN10SlamThreadC2Ev
+_ZN10SlamThreadD0Ev
+_ZN10SlamThreadD1Ev
+_ZN10SlamThreadD2Ev
+_ZN10VCtrlState10GetPostureEP16HxrAlgorithmData
+_ZN10VCtrlState13PushVCtrlDataEP16HxrAlgorithmData
+_ZN10VCtrlState16AddDataReferenceEPvP16HxrAlgorithmData
+_ZN10VCtrlState17InputDataCallbackEPvP16HxrAlgorithmData
+_ZN10VCtrlState18OutputDataCallbackEPvP16HxrAlgorithmData
+_ZN10VCtrlState19RemoveDataReferenceEPvP16HxrAlgorithmData
+_ZN10VCtrlState7PushIMUEP16HxrAlgorithmData
+_ZN10VrMatrix3dC1ERK13VrQuaterniond
+_ZN10VrMatrix3dC2ERK13VrQuaterniond
+_ZN10clustering6DBSCAN13ExpandClusterERKNSt6__ndk16vectorI9SlamPointNS1_9allocatorIS3_EEEERNS2_IiNS4_IiEEEEi
+_ZN10clustering6DBSCAN13FindNeighborsERKNSt6__ndk16vectorI9SlamPointNS1_9allocatorIS3_EEEERKj
+_ZN10clustering6DBSCAN6DbScanERKNSt6__ndk16vectorI9SlamPointNS1_9allocatorIS3_EEEE
+_ZN11DataStorage12ResetImuDataEv
+_ZN11DataStorage14GetImuDealPoolEv
+_ZN11DataStorage14GetImuPushPoolEv
+_ZN11DataStorage14SaveHelmetInfoEPh
+_ZN11DataStorage18isTimeStampIsValidEm
+_ZN11DataStorage19GetVstImageDataPoolEv
+_ZN11DataStorage19PushImageBufferPoolEPhi
+_ZN11DataStorage20GetSlamImageDataPoolEv
+_ZN11DataStorage21GetVCtrlImageDataPoolEv
+_ZN11DataStorage21ResetCameraFrameIndexEv
+_ZN11DfxDataPack10processImuEPK19VrsdkVhsSensorEvent
+_ZN11DfxDataPack12WriteImuDataEPK19VrsdkVhsSensorEvent
+_ZN11DfxDataPack15processSlamPoseEPK17SlamGetPoseInput_
+_ZN11DfxDataPack16WriteMonoImgDataEP20HW_SLAM_INPUT_IMAGE_16STEREO_FLAG_TYPE
+_ZN11DfxDataPack16WriteSlamXmlDataEv
+_ZN11DfxDataPack17WriteSlamPoseDataEPK17SlamGetPoseInput_
+_ZN11DfxDataPack19dispatchToStereoImgEP9SlamImageP20HW_SLAM_INPUT_IMAGE_S3_
+_ZN11DfxDataPack20WriteMonoFeatureDataEP21HW_SLAM_INPUT_FEATURE16STEREO_FLAG_TYPE
+_ZN11DfxDataPack20processControllerImuEPK18HandlerSensorEvent
+_ZN11DfxDataPack22WriteControllerImuDataEPK18HandlerSensorEvent
+_ZN11DfxDataPack23dispatchToStereoFeatureEP15HW_SLAM_FEATUREP21HW_SLAM_INPUT_FEATURES3_
+_ZN11ImageBufferC1ERKS_
+_ZN11ImageBufferC2ERKS_
+_ZN11ImageBufferaSERKS_
+_ZN11PlaneUpdate11ExpandPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN11PlaneUpdate11SplicePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN11PlaneUpdate12CombinePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN11PlaneUpdate17UpdatePlanePointsERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN11PlaneUpdate20UpdatePlaneWithPointERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN11PlaneUpdate9TrimPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN11RuntimeTool16CreateHelmetInfoEPhR14HW_HELMET_INFO
+_ZN11RuntimeTool19CreateFrameByBufferEPhR9SlamImage
+_ZN11RuntimeTool23GetTimeStampByImuBufferEPh
+_ZN11RuntimeTool25GetTimeStampByImageBufferEPh
+_ZN11RuntimeTool29WriteFrameNumberToImageBufferEPhj
+_ZN11RuntimeTool37GetExposureDurationValueByImageBufferEPh
+_ZN11RuntimeTool8IsAFrameEPh
+_ZN11VCtrlThread10GetPostureERNSt6__ndk16vectorI11HandlerPoseNS0_9allocatorIS2_EEEE
+_ZN11VCtrlThread11PushCtrlIMUE12HW_CTRL_INFO12VControlType
+_ZN11VCtrlThread11RecycleDataEP16HxrAlgorithmData
+_ZN11VCtrlThread13PushVCtrlDataEP9SlamImage
+_ZN11VCtrlThread19CreateVCtrlInputImgEP9SlamImageP24SLAM_INPUT_HW_SLAM_IMAGEb
+_ZN11VCtrlThread8ResetImuEv
+_ZN11XmlOptWrite15WriteFoxParaXmlER10CameraParaS1_R7ImuPara
+_ZN11XmlOptWrite15WriteImuParaXmlEPN8tinyxml210XMLElementER7ImuParai
+_ZN11XmlOptWrite16WriteHandParaXmlER18SingleHandlerParamR7ImuParai
+_ZN11XmlOptWrite21WriteOneCameraParaXmlEPN8tinyxml210XMLElementER10CameraPara
+_ZN12PlaneManager14PushPointCloudERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERK10ArMatrix4fRK21InnerCameraIntrinsics
+_ZN12PlaneManager17RunPlaneDetectionERK14InnerFrameDataRKNSt6__ndk16vectorI9SlamPointNS3_9allocatorIS5_EEEERS8_
+_ZN12PlaneManager19RunPlaneCombinationERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERNS0_4listI5PlaneNS3_IS9_EEEE
+_ZN12PlaneManager21OnPointCloudAvailableER14InnerFrameData
+_ZN12VrQuaternionC1E4Axisf
+_ZN12VrQuaternionC1ERK9VrMatrix4
+_ZN12VrQuaternionC1ERK9VrVector3f
+_ZN12VrQuaternionC2E4Axisf
+_ZN12VrQuaternionC2ERK9VrMatrix4
+_ZN12VrQuaternionC2ERK9VrVector3f
+_ZN12VrQuaternionaSERKS_
+_ZN13ArQuaternionfC1E6ArAxisf
+_ZN13ArQuaternionfC1ERK10ArMatrix4f
+_ZN13ArQuaternionfC1ERK10ArVector3ff
+_ZN13ArQuaternionfC2E6ArAxisf
+_ZN13ArQuaternionfC2ERK10ArMatrix4f
+_ZN13ArQuaternionfC2ERK10ArVector3ff
+_ZN13IMUDealThread10ThreadLoopEv
+_ZN13IMUDealThread11GetInstanceEv
+_ZN13IMUDealThread16ImuLostStatisticEPh
+_ZN13IMUDealThread19DealInCurrentThreadEPhi
+_ZN13IMUDealThread4InitEv
+_ZN13IMUDealThread4StopEv
+_ZN13IMUDealThread5StartEv
+_ZN13IMUDealThread6DeinitEv
+_ZN13IMUDealThread8ResetImuEv
+_ZN13IMUDealThread9mInstanceE
+_ZN13IMUDealThreadC1Ev
+_ZN13IMUDealThreadC2Ev
+_ZN13IMUDealThreadD0Ev
+_ZN13IMUDealThreadD1Ev
+_ZN13IMUDealThreadD2Ev
+_ZN13IMUPushThread10ThreadLoopEv
+_ZN13IMUPushThread11GetInstanceEv
+_ZN13IMUPushThread4InitEv
+_ZN13IMUPushThread4StopEv
+_ZN13IMUPushThread5StartEv
+_ZN13IMUPushThread6DeinitEv
+_ZN13IMUPushThread9mInstanceE
+_ZN13IMUPushThreadC1Ev
+_ZN13IMUPushThreadC2Ev
+_ZN13IMUPushThreadD0Ev
+_ZN13IMUPushThreadD1Ev
+_ZN13IMUPushThreadD2Ev
+_ZN13PostureFusion10FusionInitEP11VCtrlThreadP23ControllerThreeDoFState
+_ZN13PostureFusion11GetInstanceEv
+_ZN13PostureFusion12FusionReInitERNSt6__ndk16vectorIiNS0_9allocatorIiEEEE
+_ZN13PostureFusion16GetSixDofPostureERNSt6__ndk16vectorI11HandlerPoseNS0_9allocatorIS2_EEEE
+_ZN13PostureFusion18GetThreeDofPostureERNSt6__ndk16vectorI11HandlerPoseNS0_9allocatorIS2_EEEE
+_ZN13PostureFusion6FusionERNSt6__ndk16vectorI11HandlerPoseNS0_9allocatorIS2_EEEE
+_ZN13PostureFusion9mInstanceE
+_ZN13PostureFusionC1Ev
+_ZN13PostureFusionC2Ev
+_ZN13PostureFusionD1Ev
+_ZN13PostureFusionD2Ev
+_ZN13ShareDataWarpC1ENSt6__ndk110shared_ptrI16HxrAlgorithmDataEEPv
+_ZN13ShareDataWarpC2ENSt6__ndk110shared_ptrI16HxrAlgorithmDataEEPv
+_ZN13VrQuaterniond11getFromAxisE4Axisd
+_ZN13VrQuaterniond13getFromVectorERK10VrVector3dd
+_ZN13VrQuaterniondaSERKS_
+_ZN14InnerFrameDataD2Ev
+_ZN14Relocalization10GetSlamMapER13SLAM_MAP_INFO
+_ZN14Relocalization12CheckSlamMapElRNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN14Relocalization14SaveRegionDataER10RegionInfoR13SLAM_MAP_INFO
+_ZN14Relocalization14WriteMapToFileER13SLAM_MAP_INFONSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE
+_ZN14Relocalization16FormatRegionDataERN4Json5ValueEmR10RegionInfoR13SLAM_MAP_INFONSt6__ndk112basic_stringIcNS7_11char_traitsIcEENS7_9allocatorIcEEEE
+_ZN14Relocalization18SlamAddFeatureOpenEv
+_ZN14Relocalization19SlamAddFeatureCloseEv
+_ZN14Relocalization19SlamRelocManualOpenEv
+_ZN14Relocalization20SlamRelocManualCloseEv
+_ZN15VrConfiguration26Dispatch3DofCtrlModuleParaE21HandlerModuleParaData
+_ZN16FeatureExtractor17CreateSlamFeatureER12HW_SLAM_DATAPhiR15HW_SLAM_FEATURE
+_ZN16FeatureExtractor18ProcessSlamFeatureEP9SlamImageiR15HW_SLAM_FEATURER12HW_SLAM_DATA
+_ZN16FeatureExtractor25CreateSlamDataBySlamImageER9SlamImageR12HW_SLAM_DATA
+_ZN18PlaneConfiguration11SetSlamModeElPKv
+_ZN18PlaneConfiguration15SetCameraDegreeEPKv
+_ZN19GroundPlaneDetector11DetectPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN19GroundPlaneDetector14MultiFrameHistERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERK10ArVector3f
+_ZN19GroundPlaneDetector18SelectGroundPointsERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERK10ArVector3ffRS5_
+_ZN19GroundPlaneDetector20CalculateGroundPlaneER5PlaneRKNSt6__ndk16vectorI9SlamPointNS2_9allocatorIS4_EEEERK10ArVector3f
+_ZN19PointCloudProcessor16ProcessFrameDataER14InnerFrameDataRKS0_
+_ZN19PointCloudProcessor20PointCloudPreProcessERNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERKS5_
+_ZN19PointCloudProcessor28BuildKDTreeAndDeleteRePointsERNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERKS5_
+_ZN19VerticalPlaneSplice11ExpandPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN19VerticalPlaneSplice11SplicePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN19VerticalPlaneSplice12CombinePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN19VerticalPlaneSplice17UpdatePlanePointsERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN19VerticalPlaneSplice19SpliceVerticalPlaneERK10ArVector3fRKNSt6__ndk16vectorI9SlamPointNS3_9allocatorIS5_EEEERNS3_4listI5PlaneNS6_ISC_EEEESF_
+_ZN19VerticalPlaneSplice20UpdatePlaneWithPointERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN19VerticalPlaneSplice9TrimPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN19VerticalPlaneUpdate11ExpandPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN19VerticalPlaneUpdate11SplicePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN19VerticalPlaneUpdate12CombinePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN19VerticalPlaneUpdate17UpdatePlanePointsERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN19VerticalPlaneUpdate20UpdatePlaneWithPointERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN19VerticalPlaneUpdate9TrimPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN20GroundPlaneExpansion11ExpandPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN20GroundPlaneExpansion11SplicePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN20GroundPlaneExpansion12CombinePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN20GroundPlaneExpansion17ExpandGroundPlaneERK10ArVector3fRKNSt6__ndk16vectorI9SlamPointNS3_9allocatorIS5_EEEERNS3_4listI5PlaneNS6_ISC_EEEE
+_ZN20GroundPlaneExpansion17UpdatePlanePointsERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN20GroundPlaneExpansion20UpdatePlaneWithPointERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN20GroundPlaneExpansion9TrimPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN20VrRealDisplayDeepMap10ThreadLoopEv
+_ZN20VrRealDisplayDeepMap11getInstanceEv
+_ZN20VrRealDisplayDeepMap11getRunStateEv
+_ZN20VrRealDisplayDeepMap11setRunStateEv
+_ZN20VrRealDisplayDeepMap11setStopFlagEv
+_ZN20VrRealDisplayDeepMap11updateDmap2EPhS0_
+_ZN20VrRealDisplayDeepMap12onThreadExitEv
+_ZN20VrRealDisplayDeepMap13onThreadReadyEv
+_ZN20VrRealDisplayDeepMap14SetVSTListenerEPFiPviE
+_ZN20VrRealDisplayDeepMap16WaitRectifyImageERP14rectifyImgDatai
+_ZN20VrRealDisplayDeepMap19pushDepthMapImgListEPvli
+_ZN20VrRealDisplayDeepMap28VrRealDisplayDeepMapInstanceE
+_ZN20VrRealDisplayDeepMap4InitEP7_jclass
+_ZN20VrRealDisplayDeepMap4stopEv
+_ZN20VrRealDisplayDeepMap5startEv
+_ZN20VrRealDisplayDeepMap9updateMapEv
+_ZN20VrRealDisplayDeepMapC1Ev
+_ZN20VrRealDisplayDeepMapC2Ev
+_ZN20VrRealDisplayDeepMapD0Ev
+_ZN20VrRealDisplayDeepMapD1Ev
+_ZN20VrRealDisplayDeepMapD2Ev
+_ZN21GetAndSaveCalibration10GetCamParaER10CameraParaRi
+_ZN21GetAndSaveCalibration10GetImuParaER7ImuParaRi
+_ZN21GetAndSaveCalibration10IsOverTimeERjRi11GetCalState
+_ZN21GetAndSaveCalibration10SaveHelmetEv
+_ZN21GetAndSaveCalibration11GetInstanceEv
+_ZN21GetAndSaveCalibration12ClearAllHashEv
+_ZN21GetAndSaveCalibration12Send6dofFlagEb
+_ZN21GetAndSaveCalibration12SetDoubleVecERiiRNSt6__ndk16vectorIdNS1_9allocatorIdEEEE
+_ZN21GetAndSaveCalibration12WaitHashDataEiPh
+_ZN21GetAndSaveCalibration12WaitPackDataEiPh
+_ZN21GetAndSaveCalibration12getDeviceCalEi
+_ZN21GetAndSaveCalibration12isDefaultXmlE
+_ZN21GetAndSaveCalibration13DealAllPackOKEv
+_ZN21GetAndSaveCalibration13DealOnePackOKEv
+_ZN21GetAndSaveCalibration13useDefaultXmlE
+_ZN21GetAndSaveCalibration17HandleCaLibraDataEv
+_ZN21GetAndSaveCalibration17SetDoneAndDefaultEv
+_ZN21GetAndSaveCalibration18ResetDefaultStatusEv
+_ZN21GetAndSaveCalibration22getCalibrationFilePathEv
+_ZN21GetAndSaveCalibration6GetIntEPhRiS1_
+_ZN21GetAndSaveCalibration6GetVerEPhRiRNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE
+_ZN21GetAndSaveCalibration7GetHashEv
+_ZN21GetAndSaveCalibration7isSavedE
+_ZN21GetAndSaveCalibration7openDevEv
+_ZN21GetAndSaveCalibration8AddStateEi
+_ZN21GetAndSaveCalibration8DealDataEPh
+_ZN21GetAndSaveCalibration8DealHashEv
+_ZN21GetAndSaveCalibration8GetfloatEPhRiRf
+_ZN21GetAndSaveCalibration8PopQueueEv
+_ZN21GetAndSaveCalibration8SaveDataEv
+_ZN21GetAndSaveCalibration8SaveHandEv
+_ZN21GetAndSaveCalibration8closeDevEv
+_ZN21GetAndSaveCalibration9ClearHashEv
+_ZN21GetAndSaveCalibration9GetDoubleEPhRiRd
+_ZN21GetAndSaveCalibration9ResetParaEv
+_ZN21GetAndSaveCalibration9mInstanceE
+_ZN21GetAndSaveCalibrationC1Ev
+_ZN21GetAndSaveCalibrationC2Ev
+_ZN21GetAndSaveCalibrationD1Ev
+_ZN21GetAndSaveCalibrationD2Ev
+_ZN21PlaneDetectionAdapter12PlaneProcessERK9SlamImageRK8HsdkPoseRNSt6__ndk14listI14HsdkPointInnerNS6_9allocatorIS8_EEEE
+_ZN21PlaneDetectionAdapter16IsAnchorOnPlanesERK8HsdkPose
+_ZN21PlaneDetectionAdapter17UpdatePlaneAnchorERNSt6__ndk14listI10HsdkAnchorNS0_9allocatorIS2_EEEERK8HsdkPose
+_ZN21PlaneDetectionAdapter18StopTrackAllPlanesEv
+_ZN21PlaneDetectionAdapter20HsdkPointToSLAMPointERNSt6__ndk14listI14HsdkPointInnerNS0_9allocatorIS2_EEEERNS0_6vectorI9SlamPointNS3_IS8_EEEE
+_ZN21PlaneDetectionAdapter20IsPoseInPlaneExtentsERK9HsdkPlaneRK8HsdkPoseRi
+_ZN21PlaneDetectionAdapter20IsPoseInPlanePolygonERK9HsdkPlaneRK8HsdkPoseRi
+_ZN21PlaneDetectionAdapter23IsRecoverAnchorOnPlanesER8HsdkPose
+_ZN21PlaneDetectionAdapter24UpdatePlaneWhenPoseValidEiRK10HsdkAnchorS2_RNSt6__ndk16vectorIiNS3_9allocatorIiEEEERNS4_I10ArMatrix4fNS5_IS9_EEEE
+_ZN21PlaneDetectionAdapter26UpdatePlaneWhenPoseInvalidEiRNSt6__ndk16vectorIiNS0_9allocatorIiEEEE
+_ZN21PlaneDetectionAdapter9AddAnchorERK8HsdkPoseii
+_ZN21VerticalPlaneDetector11DetectPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN21VerticalPlaneDetector14CalculatePlaneERK10ArVector3fS2_RNSt6__ndk16vectorI9SlamPointNS3_9allocatorIS5_EEEER5Plane
+_ZN21VerticalPlaneDetector14GetPlaneNormalERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERK10ArVector3fRS8_
+_ZN21VerticalPlaneDetector16AdjustParametersERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERK10ArVector3f
+_ZN21VerticalPlaneDetector17FindVerticalPlaneERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERS5_
+_ZN21VerticalPlaneDetector17InsertPlaneToListERNSt6__ndk14listI5PlaneNS0_9allocatorIS2_EEEERKS2_RKNS0_6vectorI9SlamPointNS3_ISA_EEEESE_
+_ZN21VerticalPlaneDetector18GetCalculatedPlaneER5PlaneRKNSt6__ndk16vectorI9SlamPointNS2_9allocatorIS4_EEEERK10ArVector3f
+_ZN21VerticalPlaneDetector20GetRandomVerticalBoxERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEER10ArVector3fS9_
+_ZN21VerticalPlaneDetector22IsPlaneHasAroundPointsERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERK5PlaneRKfSC_SC_
+_ZN22GroundPlaneCombination11ExpandPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN22GroundPlaneCombination11SplicePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN22GroundPlaneCombination12CombinePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN22GroundPlaneCombination17UpdatePlanePointsERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN22GroundPlaneCombination20UpdatePlaneWithPointERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN22GroundPlaneCombination9TrimPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN22VerticalPlaneExpansion11ExpandPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN22VerticalPlaneExpansion11SplicePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN22VerticalPlaneExpansion12CombinePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN22VerticalPlaneExpansion17UpdatePlanePointsERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN22VerticalPlaneExpansion19ExpandVerticalPlaneERK10ArVector3fRKNSt6__ndk16vectorI9SlamPointNS3_9allocatorIS5_EEEERNS3_4listI5PlaneNS6_ISC_EEEE
+_ZN22VerticalPlaneExpansion20UpdatePlaneWithPointERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN22VerticalPlaneExpansion9TrimPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN23ControllerThreeDoFState10GetPostureERNSt6__ndk16vectorI11HandlerPoseNS0_9allocatorIS2_EEEE
+_ZN23ControllerThreeDoFState11GetInstanceEv
+_ZN23ControllerThreeDoFState11PushCtrlIMUE12HW_CTRL_INFO12VControlType
+_ZN23ControllerThreeDoFState12PushCtrlInfoEPh
+_ZN23ControllerThreeDoFState12mAlgInstanceE
+_ZN23ControllerThreeDoFState13mAlgInterfaceE
+_ZN23ControllerThreeDoFState16AddDataReferenceEPvP16HxrAlgorithmData
+_ZN23ControllerThreeDoFState16GetValueCallbackEPvPKcmS0_
+_ZN23ControllerThreeDoFState16SetValueCallbackEPvPKcmPKv
+_ZN23ControllerThreeDoFState17InputDataCallbackEPvP16HxrAlgorithmData
+_ZN23ControllerThreeDoFState18OutputDataCallbackEPvP16HxrAlgorithmData
+_ZN23ControllerThreeDoFState19RemoveDataReferenceEPvP16HxrAlgorithmData
+_ZN23ControllerThreeDoFState4InitEv
+_ZN23ControllerThreeDoFState4StopEv
+_ZN23ControllerThreeDoFState5StartEv
+_ZN23ControllerThreeDoFState6DeinitEv
+_ZN23ControllerThreeDoFState8ResetImuEv
+_ZN23ControllerThreeDoFState9mInstanceE
+_ZN23ControllerThreeDoFStateC1Ev
+_ZN23ControllerThreeDoFStateC2Ev
+_ZN23ControllerThreeDoFStateD0Ev
+_ZN23ControllerThreeDoFStateD1Ev
+_ZN23ControllerThreeDoFStateD2Ev
+_ZN23HorizontalPlaneDetector10CreateHistERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEE10ArVector3fRNS1_IS5_NS3_IS5_EEEE
+_ZN23HorizontalPlaneDetector11DetectPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN23HorizontalPlaneDetector15CheckBestPointsER6KDTreeRKNSt6__ndk16vectorI9SlamPointNS2_9allocatorIS4_EEEERK10ArVector3fRS7_Rf
+_ZN23HorizontalPlaneDetector18CalPlaneProjectionERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERKNS1_I10ArVector2fNS3_IS8_EEEERK5PlaneRKfSH_
+_ZN23HorizontalPlaneDetector18FindMaxGroupInHistENSt6__ndk16vectorINS1_I9SlamPointNS0_9allocatorIS2_EEEENS3_IS5_EEEERS5_RS7_
+_ZN23HorizontalPlaneDetector18GetCalculatedPlaneER5PlaneRKNSt6__ndk16vectorI9SlamPointNS2_9allocatorIS4_EEEERK10ArVector3fSC_
+_ZN23HorizontalPlaneDetector19GetBestPointsInHistERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERNS1_IS5_NS3_IS5_EEEERNS1_I18PlaneDetectionTypeNS3_ISB_EEEE
+_ZN23HorizontalPlaneDetector22IsPlaneHasAroundPointsERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERK5PlaneRKfSC_SC_
+_ZN23HorizontalPlaneDetector23DetectPlaneInBestPointsERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERK10ArVector3fS7_RKfRNS0_4listI5PlaneNS3_ISE_EEEER18PlaneDetectionType
+_ZN23HorizontalPlaneDetector27IsCorrectPointsInPlaneRangeERKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEERK5PlanefRK10ArVector3fi
+_ZN24ArvrRuntimeModuleManager13UpdateCtrlPosEiP11HandlerPose
+_ZN24ArvrRuntimeModuleManager14GetCtrlPostureEidR9VrVector3R12VrQuaternion
+_ZN24ArvrRuntimeModuleManager15GetHelmetOffsetER9VrPosture
+_ZN24ArvrRuntimeModuleManager15GetRealSLAMTimeERm
+_ZN24ArvrRuntimeModuleManager15PushImageBufferEPvi
+_ZN24ArvrRuntimeModuleManager15UpdateHelmetPosEP17SlamGetPoseInput_
+_ZN24ArvrRuntimeModuleManager16GetHelmetPostureEdR9VrVector3R12VrQuaternioni
+_ZN24ArvrRuntimeModuleManager16SetSlamRelocFlagEb
+_ZN24ArvrRuntimeModuleManager16UpdateCameraModeEi
+_ZN24ArvrRuntimeModuleManager17Update3DoFPostureEiP14HW_DEVICE_INFO
+_ZN24ArvrRuntimeModuleManager17Update6DoFPostureEiP14HW_DEVICE_INFOm
+_ZN24ArvrRuntimeModuleManager17UpdateCtrlIMUInfoEiP12HW_CTRL_INFO
+_ZN24ArvrRuntimeModuleManager17gIsDfxReplyEnableE
+_ZN24ArvrRuntimeModuleManager18SlamStatusCallbackEi
+_ZN24ArvrRuntimeModuleManager18TransSlamCoord2HmdE9VrVector312VrQuaternion
+_ZN24ArvrRuntimeModuleManager19SetInSlamRelocationEb
+_ZN24ArvrRuntimeModuleManager19UpdateHelmetIMUInfoEP14HW_HELMET_INFO
+_ZN24ArvrRuntimeModuleManager19mSlamStatusCallbackE
+_ZN24ArvrRuntimeModuleManager22UpdateHelmetCoordinateE9VrVector312VrQuaternionRS0_RS1_
+_ZN24VerticalPlaneCombination11ExpandPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN24VerticalPlaneCombination11SplicePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN24VerticalPlaneCombination12CombinePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN24VerticalPlaneCombination17UpdatePlanePointsERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN24VerticalPlaneCombination20UpdatePlaneWithPointERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN24VerticalPlaneCombination9TrimPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN26HorizontalPlaneCombination11ExpandPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN26HorizontalPlaneCombination11SplicePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN26HorizontalPlaneCombination12CombinePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN26HorizontalPlaneCombination17UpdatePlanePointsERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN26HorizontalPlaneCombination20UpdatePlaneWithPointERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN26HorizontalPlaneCombination21AddColorPointsToPlaneERK14InnerFrameDataRKNSt6__ndk16vectorI9SlamPointNS3_9allocatorIS5_EEEERNS3_4listI5PlaneNS6_ISC_EEEE
+_ZN26HorizontalPlaneCombination9TrimPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN5FEJni14GetSlamFeatureEimxiPi
+_ZN6HxrLog3LogENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN6XmlOpt10GetImuBiasENSt6__ndk16vectorIdNS0_9allocatorIdEEEES4_S4_Pdi
+_ZN6XmlOpt14ReadImuParaXmlEPN8tinyxml210XMLElementER7ImuPara
+_ZN6XmlOpt17GetAccScaleMatrixENSt6__ndk16vectorIdNS0_9allocatorIdEEEES4_PKdiPdi
+_ZN6XmlOpt17ReadCameraParaXmlEPN8tinyxml210XMLElementER10CameraPara
+_ZN6XmlOpt18GetGyroScaleMatrixENSt6__ndk16vectorIdNS0_9allocatorIdEEEES4_Pdi
+_ZN7ImuParaC2ERKS_
+_ZN7ImuParaD2Ev
+_ZN7ImuParaaSERKS_
+_ZN8CtrlTool14CanPushCtrlImuER12HW_CTRL_INFO
+_ZN8tinyxml28MemPoolTILi104EE10SetTrackedEv
+_ZN8tinyxml28MemPoolTILi112EE10SetTrackedEv
+_ZN8tinyxml28MemPoolTILi120EE10SetTrackedEv
+_ZN8tinyxml28MemPoolTILi80EE10SetTrackedEv
+_ZN9IMUThread10RemoveCRLFEv
+_ZN9IMUThread10ThreadLoopEv
+_ZN9IMUThread10startOVIMUEv
+_ZN9IMUThread11GetInstanceEv
+_ZN9IMUThread12GetWholeInfoEv
+_ZN9IMUThread12SetVibrationEiififi
+_ZN9IMUThread12ioGetDevInfoEi
+_ZN9IMUThread12onThreadExitEv
+_ZN9IMUThread13SendTimestampEv
+_ZN9IMUThread13SetCameraModeEi
+_ZN9IMUThread13onThreadReadyEv
+_ZN9IMUThread14SetHandleLightEi
+_ZN9IMUThread15handleOVIMUDataEv
+_ZN9IMUThread15ioGetVendorInfoEv
+_ZN9IMUThread19DealInCurrentThreadEPhi
+_ZN9IMUThread19SendCommandToDeviceEv
+_ZN9IMUThread4InitEv
+_ZN9IMUThread4StopEv
+_ZN9IMUThread5StartEv
+_ZN9IMUThread6DeinitEv
+_ZN9IMUThread7GetHashEi
+_ZN9IMUThread7GetPackEii
+_ZN9IMUThread7openDevEv
+_ZN9IMUThread9GetABmodeEv
+_ZN9IMUThread9ResetDataEv
+_ZN9IMUThread9mInstanceE
+_ZN9IMUThread9stopOVIMUEv
+_ZN9IMUThreadC1Ev
+_ZN9IMUThreadC2Ev
+_ZN9IMUThreadD0Ev
+_ZN9IMUThreadD1Ev
+_ZN9IMUThreadD2Ev
+_ZN9PlaneImpl12PlaneProcessE9SlamImage
+_ZN9PlaneImpl17GetSlamPointCloudERNSt6__ndk14listI9HsdkPointNS0_9allocatorIS2_EEEERNS1_I14HsdkPointInnerNS3_IS7_EEEES6_R14HsdkPointCloud
+_ZN9PlaneImpl20UpdateHsdkPointCloudERK23SlamGetPointCloudInput_R14HsdkPointCloudRNSt6__ndk14listI9HsdkPointNS5_9allocatorIS7_EEEESB_RNS6_I14HsdkPointInnerNS8_ISC_EEEE
+_ZN9PlaneTrim11ExpandPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN9PlaneTrim11SplicePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN9PlaneTrim12CombinePlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN9PlaneTrim17UpdatePlanePointsERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEE
+_ZN9PlaneTrim20UpdatePlaneWithPointERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN9PlaneTrim9TrimPlaneERK14InnerFrameDataRNSt6__ndk14listI5PlaneNS3_9allocatorIS5_EEEES9_
+_ZN9SlamImage4CopyERKS_
+_ZN9SlamImageC1ERKS_
+_ZN9SlamImageC2ERKS_
+_ZN9SlamImageD1Ev
+_ZN9SlamImageD2Ev
+_ZN9SlamImageaSERKS_
+_ZN9SlamState11GetInstanceEv
+_ZN9SlamState12PushSlamDataEP16HxrAlgorithmData
+_ZN9SlamState12mAlgInstanceE
+_ZN9SlamState13mAlgInterfaceE
+_ZN9SlamState14GetSlamPostureEP16HxrAlgorithmData
+_ZN9SlamState16AddDataReferenceEPvP16HxrAlgorithmData
+_ZN9SlamState16GetPushIMUTimeNsEv
+_ZN9SlamState16GetValueCallbackEPvPKcmS0_
+_ZN9SlamState16SetValueCallbackEPvPKcmPKv
+_ZN9SlamState17GetSlamPointCloudEP16HxrAlgorithmData
+_ZN9SlamState17InputDataCallbackEPvP16HxrAlgorithmData
+_ZN9SlamState18OutputDataCallbackEPvP16HxrAlgorithmData
+_ZN9SlamState19RemoveDataReferenceEPvP16HxrAlgorithmData
+_ZN9SlamState19mSlamStatusCallbackE
+_ZN9SlamState4InitEPFviE
+_ZN9SlamState4StopEv
+_ZN9SlamState5PauseEv
+_ZN9SlamState5StartEv
+_ZN9SlamState6DeinitEv
+_ZN9SlamState6ResumeEv
+_ZN9SlamState7GetFlagEv
+_ZN9SlamState7PushIMUEP16HxrAlgorithmData
+_ZN9SlamState8GetValueEPKclPv
+_ZN9SlamState8SetValueEPKclPKv
+_ZN9SlamState9mInstanceE
+_ZN9SlamStateC1Ev
+_ZN9SlamStateC2Ev
+_ZN9SlamStateD0Ev
+_ZN9SlamStateD1Ev
+_ZN9SlamStateD2Ev
+_ZN9VrMatrix39transposeEv
+_ZN9VrMatrix3C1ERK12VrQuaternion
+_ZN9VrMatrix3C2ERK12VrQuaternion
+_ZN9VrMatrix410transposedEv
+_ZN9VrMatrix4C1ERK12VrQuaternion
+_ZN9VrMatrix4C2ERK12VrQuaternion
+_ZN9VrVector311transToQuatEPfS0_S0_S0_
+_ZNK10VrMatrix3d10transposedEv
+_ZNK12VrQuaternion12lengthSquareEv
+_ZNK12VrQuaternion14getEulerAnglesEPfS0_S0_
+_ZNK12VrQuaternion15printQuaternionEv
+_ZNK12VrQuaternion3dotERKS_
+_ZNK12VrQuaternion4imagEv
+_ZNK12VrQuaternion5nlerpERKS_f
+_ZNK12VrQuaternion6lengthEv
+_ZNK12VrQuaternion6rotateERK9VrVector3
+_ZNK12VrQuaternion8invertedEv
+_ZNK12VrQuaternion9normalizeEv
+_ZNK12VrQuaterniondvEf
+_ZNK12VrQuaternionmlERK9VrVector3
+_ZNK12VrQuaternionmlERKS_
+_ZNK12VrQuaternionmlEf
+_ZNK12VrQuaternionplERKS_
+_ZNK13ArQuaternionf15PrintQuaternionEv
+_ZNK13VrQuaterniond12lengthSquareEv
+_ZNK13VrQuaterniond14getEulerAnglesEPdS0_S0_
+_ZNK13VrQuaterniond3dotERKS_
+_ZNK13VrQuaterniond4imagEv
+_ZNK13VrQuaterniond5nlerpERKS_d
+_ZNK13VrQuaterniond6lengthEv
+_ZNK13VrQuaterniond6rotateERK10VrVector3d
+_ZNK13VrQuaterniond8invertedEv
+_ZNK13VrQuaterniond9normalizeEv
+_ZNK13VrQuaternionddvEd
+_ZNK13VrQuaterniondmlERK10VrVector3d
+_ZNK13VrQuaterniondmlERKS_
+_ZNK13VrQuaterniondmlEd
+_ZNK13VrQuaterniondplERKS_
+_ZNK19GroundPlaneDetector19CheckIsGroundHeightEfRKNSt6__ndk16vectorI9SlamPointNS0_9allocatorIS2_EEEE
+_ZNK21PlaneDetectionAdapter19UpdateHsdkPlanePoseERK10ArMatrix4fR9HsdkPlane
+_ZNK21VerticalPlaneDetector20HasPointsBehindPlaneERK5PlaneRKNSt6__ndk16vectorI9SlamPointNS3_9allocatorIS5_EEEESA_
+_ZNK21VerticalPlaneDetector21PointsDistributeRatioERK5PlaneRKNSt6__ndk16vectorI9SlamPointNS3_9allocatorIS5_EEEE
+_ZNK23HorizontalPlaneDetector15CountErrorPointERK5Plane9SlamPointRif
+_ZNK4Json17ValueIteratorBase3keyEv
+_ZNK8tinyxml210XMLComment6AcceptEPNS_10XMLVisitorE
+_ZNK8tinyxml210XMLElement6AcceptEPNS_10XMLVisitorE
+_ZNK8tinyxml210XMLUnknown6AcceptEPNS_10XMLVisitorE
+_ZNK8tinyxml211XMLDocument6AcceptEPNS_10XMLVisitorE
+_ZNK8tinyxml214XMLDeclaration6AcceptEPNS_10XMLVisitorE
+_ZNK8tinyxml27XMLText6AcceptEPNS_10XMLVisitorE
+_ZNK9VrMatrix310transposedEv
+_ZNK9VrMatrix49transposeEv
+_ZNKSt6__ndk120__shared_ptr_pointerIP16HxrAlgorithmDataPFvS2_ENS_9allocatorIS1_EEE13__get_deleterERKSt9type_info
+_ZNKSt8bad_cast4whatEv
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4nposE
+_ZNSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE4nposE
+_ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEE7seekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk114__split_bufferIP12VrQuaternionNS_9allocatorIS2_EEE10push_frontEOS2_
+_ZNSt6__ndk114__split_bufferIP12VrQuaternionNS_9allocatorIS2_EEE9push_backEOS2_
+_ZNSt6__ndk114__split_bufferIP12VrQuaternionRNS_9allocatorIS2_EEE10push_frontERKS2_
+_ZNSt6__ndk114__split_bufferIP12VrQuaternionRNS_9allocatorIS2_EEE9push_backEOS2_
+_ZNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEE10pubseekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEE7seekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE10pubseekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE7seekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk120__shared_ptr_pointerIP16HxrAlgorithmDataPFvS2_ENS_9allocatorIS1_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_pointerIP16HxrAlgorithmDataPFvS2_ENS_9allocatorIS1_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_pointerIP16HxrAlgorithmDataPFvS2_ENS_9allocatorIS1_EEED0Ev
+_ZNSt6__ndk14pairIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE10CameraParaED2Ev
+_ZNSt6__ndk15dequeI12VrQuaternionNS_9allocatorIS1_EEE19__add_back_capacityEv
+_ZNSt6__ndk15queueI12VrQuaternionNS_5dequeIS1_NS_9allocatorIS1_EEEEED2Ev
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE10CameraParaEENS_19__map_value_compareIS7_S9_NS_4lessIS7_EELb1EEENS5_IS9_EEE12__find_equalIS7_EERPNS_16__tree_node_baseIPvEENS_21__tree_const_iteratorIS9_PNS_11__tree_nodeIS9_SI_EElEERPNS_15__tree_end_nodeISK_EESL_RKT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE10CameraParaEENS_19__map_value_compareIS7_S9_NS_4lessIS7_EELb1EEENS5_IS9_EEE12__find_equalIS7_EERPNS_16__tree_node_baseIPvEERPNS_15__tree_end_nodeISK_EERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE10CameraParaEENS_19__map_value_compareIS7_S9_NS_4lessIS7_EELb1EEENS5_IS9_EEE25__emplace_unique_key_argsIS7_JNS_4pairIS7_S8_EEEEENSH_INS_15__tree_iteratorIS9_PNS_11__tree_nodeIS9_PvEElEEbEERKT_DpOT0_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE10CameraParaEENS_19__map_value_compareIS7_S9_NS_4lessIS7_EELb1EEENS5_IS9_EEE30__emplace_hint_unique_key_argsIS7_JRKNS_4pairIKS7_S8_EEEEENS_15__tree_iteratorIS9_PNS_11__tree_nodeIS9_PvEElEENS_21__tree_const_iteratorIS9_SQ_lEERKT_DpOT0_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE10CameraParaEENS_19__map_value_compareIS7_S9_NS_4lessIS7_EELb1EEENS5_IS9_EEE7destroyEPNS_11__tree_nodeIS9_PvEE
+_ZNSt6__ndk16vectorI12VrQuaternionNS_9allocatorIS1_EEE8__appendEm
+_ZNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEE6assignIPS1_EENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS1_NS_15iterator_traitsIS8_E9referenceEEE5valueEvE4typeES8_S8_
+_ZNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEE6insertINS_11__wrap_iterIPKS1_EEEENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS1_NS_15iterator_traitsISB_E9referenceEEE5valueENS6_IPS1_EEE4typeES9_SB_SB_
+_ZNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEE6insertINS_11__wrap_iterIPS1_EEEENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS1_NS_15iterator_traitsISA_E9referenceEEE5valueES8_E4typeENS6_IPKS1_EESA_SA_
+_ZNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEE8__appendEm
+_ZNSt6__ndk16vectorI9SlamPointNS_9allocatorIS1_EEEC2ERKS4_
+_ZNSt6__ndk16vectorINS0_I9SlamPointNS_9allocatorIS1_EEEENS2_IS4_EEE6assignIPS4_EENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS4_NS_15iterator_traitsISA_E9referenceEEE5valueEvE4typeESA_SA_
+_ZNSt6__ndk16vectorINS0_I9SlamPointNS_9allocatorIS1_EEEENS2_IS4_EEE8__appendEm
+_ZNSt6__ndk16vectorINS0_I9SlamPointNS_9allocatorIS1_EEEENS2_IS4_EEEC2ERKS6_
+_ZNSt6__ndk16vectorINS0_I9SlamPointNS_9allocatorIS1_EEEENS2_IS4_EEEC2Em
+_ZNSt6__ndk16vectorINS_10shared_ptrI16HxrAlgorithmDataEENS_9allocatorIS3_EEE21__push_back_slow_pathIRKS3_EEvOT_
+_ZNSt6__ndk16vectorIP24SLAM_INPUT_HW_SLAM_IMAGENS_9allocatorIS2_EEE21__push_back_slow_pathIRKS2_EEvOT_
+_ZNSt6__ndk16vectorIP24SLAM_INPUT_HW_SLAM_IMAGENS_9allocatorIS2_EEEC2ERKS5_
+_ZNSt6__ndk18ios_base7showposE
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTI10SlamThread
+_ZTI13IMUDealThread
+_ZTI13IMUPushThread
+_ZTI20VrRealDisplayDeepMap
+_ZTI23ControllerThreeDoFState
+_ZTI9IMUThread
+_ZTI9SlamState
+_ZTINSt6__ndk120__shared_ptr_pointerIP16HxrAlgorithmDataPFvS2_ENS_9allocatorIS1_EEEE
+_ZTISt8bad_cast
+_ZTS10SlamThread
+_ZTS13IMUDealThread
+_ZTS13IMUPushThread
+_ZTS20VrRealDisplayDeepMap
+_ZTS23ControllerThreeDoFState
+_ZTS9IMUThread
+_ZTS9SlamState
+_ZTSNSt6__ndk120__shared_ptr_pointerIP16HxrAlgorithmDataPFvS2_ENS_9allocatorIS1_EEEE
+_ZTSPFvP16HxrAlgorithmDataE
+_ZTSSt8bad_cast
+_ZTV10SlamThread
+_ZTV13IMUDealThread
+_ZTV13IMUPushThread
+_ZTV20VrRealDisplayDeepMap
+_ZTV23ControllerThreeDoFState
+_ZTV9IMUThread
+_ZTV9SlamState
+_ZTVNSt6__ndk120__shared_ptr_pointerIP16HxrAlgorithmDataPFvS2_ENS_9allocatorIS1_EEEE
+_ZTVSt8bad_cast
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__uuidof(
+accelBias
+accelBiasSigma
+accelMisalign
+accelNoiseSigma
+accelScale
+allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+calibTShiftAETimeSec
+calibrationAFCode
+camera_display_rotation
+cameraid
+const_cast
+coordToHMD
+delayCam2IMU
+dynamic_cast
+fmt:ai_path@org:vr6dof
+fmt:imu
+fmt:imu@org:controller
+fmt:pointcloud@org:slam
+fmt:pose@org:slam
+fmt:pose@org:slam;fmt:predictpose@org:slam;fmt:cameraintrin@org:slam;fmt:pointcloud@org:slam;fmt:anchor@org:slam@type:update
+fmt:pose@org:vr3dof
+fmt:pose@org:vr6dof
+fmt:predictpose@org:slam
+fmt:yuv@res:480p@rot:0;fmt:imu@org:helmet;fmt:imu@org:controller;fmt:pose@org:slam
+fmt:yuv@res:480p@rot:0;fmt:preyuv@res:480p@rot:0;fmt:feature;fmt:depth@rot:0;fmt:imu
+getCalibrationFilePath
+gyro2accel
+gyroBias
+gyroBiasSigma
+gyroMisalign
+gyroNoiseSigma
+gyroScale
+handleOVIMUData
+handlerDelayCam2IMU
+hvr.abframe
+hvr.closeslam
+hvr.ctrlimulog
+hvr.fixedslampose
+hvr.fixedvctrlpose
+hvr.saveslampose
+hvr.savevctrlpose
+i6xrb
+imu_model
+index, ctrl:timestamp, acc:x,y,z,gyro:x,y,z
+index,status,timestamp,x,y,z,qx,qy,qz,qw
+isTimeStampIsValid
+libVR6Dof.so
+libarvr_slam.so
+libctrl3dof.so
+non-virtual thunk to 
+printQuaternion
+processControllerImu
+pthread_cond_broadcast
+push helmet
+reinterpret_cast
+sdcard/download/imu/ctrl_0_imu-%02d-%02d_%02d_%02d_%02d.csv
+sdcard/download/imu/ctrl_1_imu-%02d-%02d_%02d_%02d_%02d.csv
+sdcard/download/pos/Record_Pose_%04d%02d%02d%02d%02d.txt
+sdcard/download/pos/ctrl_left_pose-%02d-%02d_%02d_%02d_%02d.csv
+sdcard/download/pos/ctrl_right_pose-%02d-%02d_%02d_%02d_%02d.csv
+sdcard/yuvBuffer/slamYuvLeft-%02d-%02d_%02d_%02d_%02d.yuv
+sdcard/yuvBuffer/slamYuvRight-%02d-%02d_%02d_%02d_%02d.yuv
+slamMap
+slam_distance_type
+startOVIMU
+staticPose
+static_cast
+std::bad_cast
+stopOVIMU
+u8__uuidoft
+u8__uuidofz
+uid[%d], uidSubsumedBy:%d, type:%d, Pose:x:%f, y:%f, z:%f, qx:%f, qy:%f, qz:%f, qw:%f 
+updateIMU
+{"Frame":%d

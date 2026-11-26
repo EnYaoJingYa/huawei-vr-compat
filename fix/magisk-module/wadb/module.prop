@@ -1,0 +1,6 @@
+id=wadb
+name=Wireless ADB AutoStart (wadb)
+version=1.1
+versionCode=1
+author=workbuddy
+description=Boot watchdog that guarantees adbd listens on tcp:5555. Pure late_start, no post-fs-data, no mounts — cannot block boot. Persists persist.adb.tcp.port=5555 (lost on reflash). Kill switch: touch /data/adb/wadb/disable. Log: /data/local/tmp/wadb.log

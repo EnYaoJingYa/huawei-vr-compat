@@ -1,0 +1,6 @@
+id=hvrglass
+name=HVR Glass 3200x1600
+version=1.0
+versionCode=1
+author=workbuddy
+description=Feed 3200x1600@70 EDID to HDMI-A-1 and add the mode to Rockchip HWC resolution whitelist

@@ -28,7 +28,12 @@
 | `com.huawei.vrvirtualscreen` | 11.1.0.325 | VR 投屏（MediaProjection） | `VR手机投屏.apk` |
 | `com.huawei.vrhandle` | 10.0.1.345 | CF20 手柄的私有 BLE 协议与 UI | `VR手机手柄.apk` |
 | `com.huawei.hvrsdkserverapp` | 3.5.0.82 | Runtime / SDK：原生渲染、头盔通道、手柄重连 | `华为vrsdk3.5.0.82.apk` |
-| `com.huawei.vrservice` | 11.0.0.322 | **第七个包**：EMUI 的 VR 系统服务本体（vr_system 注册、准备流程） | HMA-AL00 EMUI 11 固件 `/hw_product/.../VRServiceX.apk` |
+| `com.huawei.vrservice` | 12.0.0.302（原标 11.0.0.322，见下注） | **第七个包**：EMUI 的 VR 系统服务本体（vr_system 注册、准备流程） | HMA-AL00 EMUI 11 固件 `/hw_product/.../VRServiceX.apk` |
+
+> 注（2026-11-26 更正）：表中 `11.0.0.322` 是最初从固件提取时的标注；当前
+> `原包/com.huawei.vrservice.apk` 的 DEX `versionName` 实测为 **12.0.0.302**
+> （5,298,141 B，sha256 `FD363DBE…`），与用户提供的 12.0.0.302 包逐字节相同。
+> 详见 `BASELINE.md` 的版本更正说明。
 
 > 主应用原包名是 `com.huawei.appmarket.vr`。六个原包的 dex 里**没有任何一处**引用
 > `com.huawei.vr`，所以禁止给主应用改名（改名会直接让六个包串不起来）。
@@ -238,6 +243,11 @@
   → `<工作区根>/android-sdk` → `<仓库>/android-sdk`
 - PowerShell 7；真机开启无线调试或 USB 调试
 
+> **2026-10 归档复刻环境**（见 PATCH_AUDIT 第 67 节）：本机只有 PowerShell 5.1 与
+> `py`，无 PS7/NDK；JDK 用 JBR25 经 `android-sdk\jdk17tmp\jbr` junction 提供，
+> 编译链不受影响。脚本已适配 5.1 的 BOM/责任 stderr 差异。机器的 DLP 按名
+> 拦截 `adb.exe`，经 `Resolve-HvrAdb` 优先取可运行的改名副本 `adb-tool.exe`。
+
 ### 8.2 构建
 
 ```powershell
@@ -282,7 +292,7 @@ adb logcat | Select-String 'VrSystemActor|VRService_Client|start 3D Launcher|Usi
 | 文档 | 内容 |
 | --- | --- |
 | [PORTING_METHOD.md](PORTING_METHOD.md) | 方法论：只换平台层、四步法、硬性口径 |
-| [PATCH_AUDIT.md](PATCH_AUDIT.md) | 66 节逐轮记录：现象/根因/处理/真机证据 |
+| [PATCH_AUDIT.md](PATCH_AUDIT.md) | 67 节逐轮记录：现象/根因/处理/真机证据 |
 | [HUAWEI_VR_SYSTEM_IFACES.md](HUAWEI_VR_SYSTEM_IFACES.md) | `vr_system` 的 AIDL 契约与各包引用面 |
 | [HELMET_HID_PROTOCOL.md](HELMET_HID_PROTOCOL.md) | `/dev/hwvr1` 的真实协议（标准 HID feature report） |
 | [OFFICIAL_SOURCE_AUDIT.md](OFFICIAL_SOURCE_AUDIT.md) | 手写类 vs 原厂件的逐类对账 |

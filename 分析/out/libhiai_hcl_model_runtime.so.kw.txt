@@ -1,0 +1,49 @@
+%s %s(%d)::"create cast op:%s, src: %d, dst: %d"
+%s %s(%d)::"dynamic_pointer_cast ModelManagerImplOld fail"
+%s %s(%d)::"header->magic is failed."
+%s %s(%d)::"static_cast<AiModelManagerProxy*>(mmHandle_) is nullptr."
+.eh_frame
+.eh_frame_hdr
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_foundation_dl_helper.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_nd_tensor_desc.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/c/hiai_tensor_aipp_para.c
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/common/helper/om_file_helper.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model/model_buffer_reader.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/hcl_built_model.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/hcl_built_model_aipp.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/hcl_built_model_aipp_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/hcl_built_model_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/hcl_model_builder.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/hcl_model_manager.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/hcl_model_manager_aipp.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/model_runtime_util.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/v2/source/common/AiDllParser.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/v2/source/common/common_utils.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/v2/source/common/compatible_utils.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/v2/source/common/model_buffer_impl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/v2/source/model_manager/hcl/../model_manager_factory.h
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/v2/source/model_manager/hcl/model_builder_hcl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/v2/source/model_manager/hcl/model_manager_hcl.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/v2/source/model_manager/legacy/model_builder_legacy.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/v2/source/model_manager/legacy/model_manager_legacy.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/v2/source/model_manager/model_builder_impl_old.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/model_manager/hcl_model_runtime/v2/source/model_manager/model_manager_impl_old.cpp
+/srv/workspace/work_dir/work_code/vendor/hisi/npu/framework/domi/aicp_ddk/../../..//framework/domi/omg/compress/compress_util.cpp
+CastT
+ConvTranspose
+CreateCastOp
+Maximum
+NSt6__ndk120__shared_ptr_pointerIPN4hiai12ListenerImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai15ModelBufferImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai15ModelBuilderHclENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai15ModelManagerHclENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai16ModelBuilderImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN4hiai21HclBuiltModelAippImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+__cxa_pure_virtual
+__dynamic_cast
+accept
+access
+data_cast_
+invalid model. file_header->length(%u) + sizeof(ModelFileHeader)(%u) !=             model->modelLen(%u) || MODEL_FILE_MAGIC_NUM != file_header->magic
+netoutput_cast_
+pthread_cond_broadcast

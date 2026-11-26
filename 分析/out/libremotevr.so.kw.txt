@@ -1,0 +1,321 @@
+        Context = eglCreateContext( Display, Config, EGL_NO_CONTEXT, contextAttribs )
+        TinySurface = eglCreatePbufferSurface( Display, Config, surfaceAttribs )
+        eglCreatePbufferSurface() failed: %s
+        eglDestroyContext( Display, Context )
+        eglDestroySurface( Display, TinySurface )
+        eglDestroySurface() failed: %s
+        eglMakeCurrent( Display, EGL_NO_SURFACE, EGL_NO_SURFACE, EGL_NO_CONTEXT )
+        eglMakeCurrent( Display, TinySurface, TinySurface, Context )
+        eglTerminate( Display )
+   mediump vec3 eyeDir = normalize( oEye.xyz );
+   mediump vec3 reflectionDir = dot( eyeDir, surfaceNormal ) * 2.0 * surfaceNormal - eyeDir;
+   mediump vec3 surfaceNormal = normal.x * oTangent + normal.y * oBinormal + normal.z * oNormal;
+   oEye = eye - vec3( Modelm * ( Joints[int(JointIndices.x)] * Position ) );
+   oEye = eye - vec3( Modelm * Position );
+   vec3 eye = transposeMultiply( Viewm, -vec3( Viewm[3] ) );
+ imaginary
+#extension GL_OES_EGL_image_external : require
+%s failed to broadcast
+--------------- LocalRender OneTimeInit ---------------
+--------------- LocalRender OneTimeShutdown ---------------
+.eh_frame
+.eh_frame_hdr
+AARGH, indxr[col] %d
+ANativeWindow_fromSurface
+ChangeSettings type: %d, enableTestMode: %d, frameQueueSize: %d, suspend: %d
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/WirelessStream/src/LocalRender/ModelShader.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/WirelessStream/src/LocalRender/VrEglEnvSetup.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/build/../module/algorithm/WirelessStream/src/LocalRender/VrGeometry.cpp
+Deleted virtual function called!
+EGL_BAD_ACCESS
+EGL_BAD_CURRENT_SURFACE
+EGL_BAD_DISPLAY
+EGL_BAD_SURFACE
+Framework
+GL_MAX_TEXTURE_IMAGE_UNITS=%d
+GL_RENDERER=%s
+Got invalid frame. Too large SPS or PPS?
+H265::render index=%ju, timewarp index=%d
+HVR_Android_GetHelmet
+HVR_Android_GetRenderStatics
+HVR_CameraEndFrame
+HVR_GetCameraPositionOrientation
+HVR_GetSensorState
+HVR_InitRenderThread
+HVR_InitRenderThread2
+HVR_SetPredictDeltaTimeUS
+HVR_ShutdownRenderThread
+HVR_TimeWarpEvent
+IN: %s, (eglDestroySurface) return EGL_FALSE: %s
+InitRenderInterMediate mDecoderFinishCond = %p
+InitRenderInterMediate mEncoderFinishLock = %p
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_LatencyCollector_DecoderInput
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_LatencyCollector_DecoderOutput
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_UdpReceiverThreadListener_addBroadcastList
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_UdpReceiverThread_addBroadcastList
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_Utils_setRenderRes
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_VrContext_fetchTrackingInfoNative
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_VrContext_getSurfaceTextureIDNative
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_VrContext_onSurfaceChangedNative
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_VrContext_onSurfaceCreatedNative
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_VrContext_onSurfaceDestroyedNative
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_VrContext_renderNative
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_VrContext_renderUINative
+Java_com_huawei_hvrsdkserverapp_module_algorithm_wirelessStreaming_VrContext_setFrameGeometryNative
+LocalRender
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+NSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEEE
+NSt6__ndk114default_deleteI13TrackingFrameEE
+NSt6__ndk115binary_functionIP16LatencyCollectormvEE
+NSt6__ndk118__weak_result_typeIM16LatencyCollectorFvmEEE
+NSt6__ndk120__shared_ptr_pointerIP13TrackingFrameNS_14default_deleteIS1_EENS_9allocatorIS1_EEEE
+NSt6__ndk16__bindIM16LatencyCollectorFvmEJPS1_RKNS_12placeholders4__phILi1EEEEEE
+Projectionm
+Pure virtual function called!
+Renderer not initialize
+St8bad_cast
+Too old frame has arrived. Instead, we use most old tracking data in trackingFrameMap.FrameIndex=%lu, trackingFrameMap=(%ju - %ju)
+TrackingDevice
+[%s] testfec::duplicated frame %d 
+[%s] testfec::fecFailure frame %ju 
+[%s] testfec::new frame %ju 
+[%s][%s:%s](%d): IN: %s, CreatePbufferSurface fail, eglerr: %s
+[%s][%s:%s](%d): IN: %s, Not find acceptable EGL color config!
+_Z26glSetInvalidateFramebufferbbb
+_ZN10UdpManager13sendBroadcastEv
+_ZN10UdpManager18onBroadcastRequestEv
+_ZN10UdpManager20addBroadcastAddrListEP7_JNIEnviP13_jobjectArray
+_ZN10UdpManager20sendPacketLossReportE20ALVR_LOST_FRAME_TYPEjj
+_ZN10VrEyesView13endRenderViewEi
+_ZN10VrEyesView15beginRenderViewEi
+_ZN10VrEyesView16switchViewBufferER8EyeParms
+_ZN10_EyeBuffer8delFrameEv
+_ZN10_EyeBuffer8genFrameER8EyeParms
+_ZN11LocalRender14doDrawEyeViewsEi
+_ZN11LocalRender14initJavaMethodEP7_JNIEnv
+_ZN11LocalRender16doDrawUIEyeViewsEi
+_ZN11LocalRender4initEv
+_ZN11LocalRender6deinitEv
+_ZN11LocalRender6initGLEv
+_ZN11LocalRender6renderEm
+_ZN11LocalRender8deinitGLEv
+_ZN11LocalRender8renderUIEv
+_ZN11LocalRender9doUIFrameERK11_tagVrFrame
+_ZN11LocalRender9waitFrameEv
+_ZN11LocalRenderC1EP7_JavaVMP8_jobject
+_ZN11LocalRenderC2EP7_JavaVMP8_jobject
+_ZN11LocalRenderD1Ev
+_ZN11LocalRenderD2Ev
+_ZN12OvrSceneView16UpdateViewMatrixE11_tagVrFrame
+_ZN12OvrSceneView5FrameE11_tagVrFramex
+_ZN14TrackingDevice15getBatteryLevelEi
+_ZN14TrackingDevice16ProcessQuitEventEi
+_ZN14TrackingDevice18ProcessTouchEventsEi
+_ZN14TrackingDevice20Process6dofKeyEventsEi
+_ZN14TrackingDevice20UpdateControllerDataEi
+_ZN14TrackingDevice21getControllerGripDataEi
+_ZN14TrackingDevice22setControllerVibrationEiiii
+_ZN14TrackingDevice23ProcessBackButtonEventsEi
+_ZN14TrackingDevice23ProcessHomeButtonEventsEi
+_ZN14TrackingDevice23ProcessThumbstickEventsEi
+_ZN14TrackingDevice24getControllerTriggerDataEi
+_ZN14TrackingDevice26ProcessTriggerButtonEventsEi
+_ZN14TrackingDevice27ProcessVolumnUpButtonEventsEi
+_ZN14TrackingDevice29ProcessComplicateButtonEventsEi
+_ZN14TrackingDevice29ProcessControllerButtonEventsEi
+_ZN14TrackingDevice29ProcessVolumnDownButtonEventsEi
+_ZN14TrackingDevice4initEv
+_ZN14TrackingDevice6deinitEv
+_ZN14TrackingDevice6updateEv
+_ZN14TrackingDevice7GetFlagEv
+_ZN14TrackingDeviceC1Ev
+_ZN14TrackingDeviceC2Ev
+_ZN14TrackingDeviceD1Ev
+_ZN14TrackingDeviceD2Ev
+_ZN16LatencyCollector10fecFailureEv
+_ZN16LatencyCollector10getLatencyEjj
+_ZN16LatencyCollector10m_InstanceE
+_ZN16LatencyCollector10packetLossEl
+_ZN16LatencyCollector11resetSecondEv
+_ZN16LatencyCollector12decoderInputEm
+_ZN16LatencyCollector12receivedLastEm
+_ZN16LatencyCollector13decoderOutputEm
+_ZN16LatencyCollector13estimatedSentEmm
+_ZN16LatencyCollector13receivedFirstEm
+_ZN16LatencyCollector13updateLatencyEPmh
+_ZN16LatencyCollector18getFecFailureTotalEv
+_ZN16LatencyCollector19getPacketsLostTotalEv
+_ZN16LatencyCollector21getFecFailureInSecondEv
+_ZN16LatencyCollector22getPacketsLostInSecondEv
+_ZN16LatencyCollector6submitEm
+_ZN16LatencyCollector8InstanceEv
+_ZN16LatencyCollector8getFrameEm
+_ZN16LatencyCollector8resetAllEv
+_ZN16LatencyCollector8trackingEm
+_ZN16LatencyCollector9rendered1Em
+_ZN16LatencyCollector9rendered2Em
+_ZN16LatencyCollectorC1Ev
+_ZN16LatencyCollectorC2Ev
+_ZN16LatencyCollectorD1Ev
+_ZN16LatencyCollectorD2Ev
+_ZN18RenderInterMediate10mRenderFpsE
+_ZN18RenderInterMediate11mFrameIndexE
+_ZN18RenderInterMediate11mFuncSubmitE
+_ZN18RenderInterMediate12mRenderWidthE
+_ZN18RenderInterMediate13mRenderHeightE
+_ZN18RenderInterMediate14mControllerNumE
+_ZN18RenderInterMediate14mFuncRenderEndE
+_ZN18RenderInterMediate15mControllerPoseE
+_ZN18RenderInterMediate16mControllerFlagsE
+_ZN18RenderInterMediate16mFuncRenderStartE
+_ZN18RenderInterMediate16trackingFrameMapE
+_ZN18RenderInterMediate17mAvgRenderLatencyE
+_ZN18RenderInterMediate17mFrameBufferWidthE
+_ZN18RenderInterMediate17mRenderFrameIndexE
+_ZN18RenderInterMediate17mSurfaceTextureIDE
+_ZN18RenderInterMediate18mControllerButtonsE
+_ZN18RenderInterMediate18mDecoderFinishCondE
+_ZN18RenderInterMediate18mDecoderFinishLockE
+_ZN18RenderInterMediate18mFrameBufferHeightE
+_ZN18RenderInterMediate19mClientPredictDelayE
+_ZN18RenderInterMediate19mContorllerPoseLockE
+_ZN18RenderInterMediate20ControllerChangeFlagE
+_ZN18RenderInterMediate21mTrackingFrameMapLockE
+_ZN18RenderInterMediate24mControllerTouchPadPos_XE
+_ZN18RenderInterMediate24mControllerTouchPadPos_YE
+_ZN18RenderInterMediateC1Ev
+_ZN18RenderInterMediateC2Ev
+_ZN18RenderInterMediateD1Ev
+_ZN18RenderInterMediateD2Ev
+_ZN18UdpManagerListener13sendBroadcastEv
+_ZN18UdpManagerListener18onBroadcastRequestEv
+_ZN18UdpManagerListener20addBroadcastAddrListEP7_JNIEnviP13_jobjectArray
+_ZN6Socket13sendBroadcastEPKvm
+_ZN6Socket20addBroadcastAddrListEP7_JNIEnviP13_jobjectArray
+_ZN6Socket20setBroadcastAddrListEP7_JNIEnviP13_jobjectArray
+_ZN8FECQueue14addVideoPacketEPK10VideoFrameiRb
+_ZN8FECQueue14getFrameBufferEv
+_ZN8FECQueue16getFrameByteSizeEv
+_ZN9NALParser13processPacketEP10VideoFrameiRb
+_ZN9VrContext16onSurfaceChangedEP8_jobject
+_ZN9VrContext16onSurfaceCreatedEP8_jobject
+_ZN9VrContext16sendTrackingInfoEP12TrackingInfodP13ovrTracking2_PK12ovrVector3f_PK9ovrQuatf_
+_ZN9VrContext16setFrameGeometryEii
+_ZN9VrContext17fetchTrackingInfoEP7_JNIEnvP10UdpManagerP12ovrVector3f_P9ovrQuatf_
+_ZN9VrContext17setControllerInfoEP12TrackingInfodi
+_ZN9VrContext18onSurfaceDestroyedEv
+_ZN9VrContext19mSurfaceCreateCountE
+_ZN9VrContext6renderEm
+_ZN9VrContext8renderUIEv
+_ZNK12OvrSceneView12CenterEyePosEv
+_ZNK12OvrSceneView16ViewMatrixForEyeEi
+_ZNK12OvrSceneView22ProjectionMatrixForEyeEif
+_ZNK12OvrSceneView9MvpForEyeEif
+_ZNK12VrQuaternion14getEulerAnglesEPfS0_S0_
+_ZNK14TrackingDevice11IsAvailableEi
+_ZNK9VrMatrix49transposeEv
+_ZNKSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEE11target_typeEv
+_ZNKSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEE6targetERKSt9type_info
+_ZNKSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEE7__cloneEPNS0_6__baseISF_EE
+_ZNKSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEE7__cloneEv
+_ZNKSt6__ndk120__shared_ptr_pointerIP13TrackingFrameNS_14default_deleteIS1_EENS_9allocatorIS1_EEE13__get_deleterERKSt9type_info
+_ZNKSt8bad_cast4whatEv
+_ZNSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEE18destroy_deallocateEv
+_ZNSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEE7destroyEv
+_ZNSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEED0Ev
+_ZNSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEEclEOm
+_ZNSt6__ndk120__shared_ptr_pointerIP13TrackingFrameNS_14default_deleteIS1_EENS_9allocatorIS1_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_pointerIP13TrackingFrameNS_14default_deleteIS1_EENS_9allocatorIS1_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_pointerIP13TrackingFrameNS_14default_deleteIS1_EENS_9allocatorIS1_EEED0Ev
+_ZNSt6__ndk16__treeINS_12__value_typeImNS_10shared_ptrI13TrackingFrameEEEENS_19__map_value_compareImS5_NS_4lessImEELb1EEENS_9allocatorIS5_EEE5eraseENS_21__tree_const_iteratorIS5_PNS_11__tree_nodeIS5_PvEElEE
+_ZNSt6__ndk16__treeINS_12__value_typeImNS_10shared_ptrI13TrackingFrameEEEENS_19__map_value_compareImS5_NS_4lessImEELb1EEENS_9allocatorIS5_EEE7destroyEPNS_11__tree_nodeIS5_PvEE
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTINSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEEE
+_ZTINSt6__ndk115binary_functionIP16LatencyCollectormvEE
+_ZTINSt6__ndk118__weak_result_typeIM16LatencyCollectorFvmEEE
+_ZTINSt6__ndk120__shared_ptr_pointerIP13TrackingFrameNS_14default_deleteIS1_EENS_9allocatorIS1_EEEE
+_ZTINSt6__ndk16__bindIM16LatencyCollectorFvmEJPS1_RKNS_12placeholders4__phILi1EEEEEE
+_ZTISt8bad_cast
+_ZTSNSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEEE
+_ZTSNSt6__ndk114default_deleteI13TrackingFrameEE
+_ZTSNSt6__ndk115binary_functionIP16LatencyCollectormvEE
+_ZTSNSt6__ndk118__weak_result_typeIM16LatencyCollectorFvmEEE
+_ZTSNSt6__ndk120__shared_ptr_pointerIP13TrackingFrameNS_14default_deleteIS1_EENS_9allocatorIS1_EEEE
+_ZTSNSt6__ndk16__bindIM16LatencyCollectorFvmEJPS1_RKNS_12placeholders4__phILi1EEEEEE
+_ZTSSt8bad_cast
+_ZTVNSt6__ndk110__function6__funcINS_6__bindIM16LatencyCollectorFvmEJPS3_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISC_EEFvmEEE
+_ZTVNSt6__ndk120__shared_ptr_pointerIP13TrackingFrameNS_14default_deleteIS1_EENS_9allocatorIS1_EEEE
+_ZTVSt8bad_cast
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__uuidof(
+addBroadcastAddrList
+after_doDrawEyeViews
+allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+before_doDrawEyeViews
+can not find surfaceClass(%s)
+com/huawei/hvrsdkserverapp/module/algorithm/wirelessStreaming/LoadingRender
+const_cast
+dynamic_cast
+eglCreatePbufferSurface
+eglCreateWindowSurface
+eglDestroySurface
+eglGetDisplay
+frameIndex
+gRender
+glBindFramebuffer
+glBindRenderbuffer
+glCheckFramebufferStatus
+glDeleteFramebuffers
+glDeleteRenderbuffers
+glFramebufferRenderbuffer
+glFramebufferTexture2DMultisampleIMGEXT
+glGenFramebuffers
+glGenRenderbuffers
+glRenderbufferStorageMultisampleIMG MSAA
+glRenderbufferStorageMultisampleIMGEXT
+glTexImage2D
+index: %d, start rendering: %d 
+libMobileSensor.so
+libVR6Dof.so
+libWalleAlg.so
+libWalleDev.so
+libarvr_slam.so
+libvrpose.so
+non-virtual thunk to 
+onBroadcastRequest
+onPause called. Resumed=%d Window=%p Walle=%d
+onResume called. Resumed=%d Window=%p Walle=%d
+onSurfaceChanged called. Resumed=%d Window=%p Walle=%d
+onSurfaceCreated called. Resumed=%d Window=%p Walle=%d SurfaceCreatedCount = %d
+onSurfaceDestroyed called. Resumed=%d Window=%p Walle=%d
+pthread_cond_broadcast
+reinterpret_cast
+render FBO %i is not complete: 0x%x
+setBroadcastAddrList
+setFrameGeometry invoked end width = %d, height = %d
+static_cast
+std::bad_cast
+testfec::FECQueue::Frame[%ju] Previous frame was completely lost. shards=%zu:%zu frameByteSize=%d fecPercentage=%d m_totalShards=%zu m_shardPackets=%zu m_blockSize=%zu
+testfec::FECQueue::Frame[%ju] Start new frame. frameByteSize=%d fecPercentage=%d m_totalDataShards=%zu m_totalParityShards=%zu m_totalShards=%zu m_shardPackets=%zu m_blockSize=%zu
+testfec::FECQueue::addVideoPacket:: new frame find = %ju m_recovered %d 
+testfec::Frame[%ju] Frame was successfully recovered by FEC.
+testfec::Frame[%ju] Previous frame cannot be recovered. shards=%zu:%zu frameByteSize=%d fecPercentage=%d m_totalShards=%zu m_shardPackets=%zu m_blockSize=%zu
+testfec::Frame[%ju] Recovering. packetIndex=%d receivedDataShards=%d/%zu receivedParityShards=%d/%zu
+testfec::Frame[%ju] packetIndex=%d, shards=%u:%u
+testvr::ConnectionMessage type = %d, version = %d, codec = %d, videoWidth = %d, videoHeight = %d, bufferSize = %d, frameQueueSize = %d refreshRate = %d
+testvr::HVR_TimeWarpEvent missing submit indexs [%d,%d]
+testvr::Sending broadcast hello.
+testvr::submitFrameRate=%lf,latency testvr::LatencyCollector:avgRenderCost=%d,renderFps=%d,timeInterval=%ju,frameIndex=%ju,renderIndex=%d
+testvr::tracking info, index= %ju, renderIndex= %ju x= %f, y= %f, z= %f, rx= %f,ry= %f,rz= %f,rw= %f,averageTotalLatency=%d fps= %d 
+u8__uuidoft
+u8__uuidofz
+varying highp vec3 oEye;
+vec3 transposeMultiply( mat4 m, vec3 v )

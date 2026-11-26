@@ -1,0 +1,1489 @@
+    C flags (Debug):             -isystem /opt/android/android-ndk-r18b/sysroot/usr/include/aarch64-linux-android -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Qunused-arguments    -fvisibility=hidden -fvisibility-inlines-hidden  -O0 -fno-limit-debug-info   -DDEBUG -D_DEBUG -g
+    C flags (Release):           -isystem /opt/android/android-ndk-r18b/sysroot/usr/include/aarch64-linux-android -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Qunused-arguments    -fvisibility=hidden -fvisibility-inlines-hidden  -O2 -DNDEBUG   -DNDEBUG
+    C++ flags (Debug):           -isystem /opt/android/android-ndk-r18b/sysroot/usr/include/aarch64-linux-android -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Qunused-arguments    -fvisibility=hidden -fvisibility-inlines-hidden  -O0 -fno-limit-debug-info   -DDEBUG -D_DEBUG -g
+    C++ flags (Release):         -isystem /opt/android/android-ndk-r18b/sysroot/usr/include/aarch64-linux-android -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winconsistent-missing-override -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Qunused-arguments    -fvisibility=hidden -fvisibility-inlines-hidden  -O2 -DNDEBUG   -DNDEBUG
+    OpenEXR:                     build (ver 2.3.0)
+    Timestamp:                   2021-04-02T13:29:55Z
+    To be built:                 calib3d core dnn features2d flann gapi highgui imgcodecs imgproc java ml objdetect photo stitching video videoio
+  Parallel framework:            TBB (ver 2020.2 interface 11102)
+ [%s:%d]  t,%lf,id ,%llu,ctl,%d,==CheckGravity==%s,(%f,%f), gPnp,%f,%f,%f,gFilter,%f,%f,%f,diff,%f,gAcc,%f,%f,%f,acc,%f,%f,%f,gErr,%f,gAccRatio,%f,gyro,%f,%f,%f
+ [%s:%d]  t,%lf,id ,%llu,ctl,%d,==CompGrav==Fail,img,%f,imu buffer,%f,%f, handle gdiff,%f
+ [%s:%d]  t,%lf,id ,%llu,ctl,%d,==ComputeGravity==Fail,img,%f,imu buffer,%f,%f
+ [%s:%d]  t,%lf,id ,%llu,ctl,%d,==SolveTrack==cost, %f,ms
+ [%s:%d]  t,%lf,id ,%llu,ctl,%d,not process track with mCurPnPFlag,%s, last, %s 
+ [%s:%d]  t,%lf,id ,%llu,ctl,%d,pnp track in
+ [%s:%d]  t,%lf,id ,%llu,ctl,%d,process P3P buffer track, %s
+ [%s:%d] 6DOF cost time: %lf ms
+ [%s:%d] ==FRAMEDATA==IMG : upload img datasize is error,datasize:%d, needSize:%d
+ [%s:%d] ==FRAMEDATA==IMG : upload img is error, data:%p, width:%d, height:%d
+ [%s:%d] ==FRAMEDATA==IMG : upload img lost, cur_pack_no : %d,lst_pack_no = %d
+ [%s:%d] ==FRAMEDATA==IMG : upload img time_stamp error,cur_time_stamp:%lf,lst_time_stamp:%lf
+ [%s:%d] ==IMG==SetParams:error image type,imgType:%d
+ [%s:%d] AIDetection vr6dof_init come in
+ [%s:%d] AIDetection vr6dof_init leave
+ [%s:%d] BlobDetect use total image
+ [%s:%d] BlobDetection remove old frame: Ts: %lf
+ [%s:%d] BlobDetection vr6dof_init enter
+ [%s:%d] BlobDetection vr6dof_init leave
+ [%s:%d] Camera abnormal: t=%f, cam0 BlobNum: %d Cam1 BlobNum: %d
+ [%s:%d] CheckSlamHandle error, SLAMHandle contains null pointer
+ [%s:%d] GetData index %d pose: position: %f %f %f, posture:%f %f %f %f
+ [%s:%d] GetPose Not Exist, Ts: %lf
+ [%s:%d] GetPose fail, ctlId = %d, time_S = %f, timeDisp = %f, POSE_VALID = %d,
+ [%s:%d] GetPose succ, ctlId = %d, time_S = %f, timeDisp = %f, time_E = %f, POSE_VALID = %d,pose = %f %f %f, orientation = %f %f %f %f, velocity = %f %f %f, angularVelocity = %f %f %f,accelerated = %f %f %f, angularAccelerated = %f %f %f
+ [%s:%d] GetRangeData imu idx is invalid, sT:%lf eT:%lf
+ [%s:%d] HANDLER_FRAMEWORK RegisterCallback enter
+ [%s:%d] HANDLER_FRAMEWORK RegisterCallback leaving
+ [%s:%d] HANDLER_FRAMEWORK UnregisterCallback enter
+ [%s:%d] HANDLER_FRAMEWORK UnregisterCallback leaving
+ [%s:%d] HANDLER_FRAMEWORK add %zu module failed
+ [%s:%d] HANDLER_FRAMEWORK create %s module failed
+ [%s:%d] HANDLER_FRAMEWORK create %s thread module failed
+ [%s:%d] HANDLER_FRAMEWORK create %zu thread failed
+ [%s:%d] HANDLER_FRAMEWORK create module manager failed, pModuleRoom(%p)
+ [%s:%d] HANDLER_FRAMEWORK create slam is failed
+ [%s:%d] HANDLER_FRAMEWORK create slam module failed
+ [%s:%d] HANDLER_FRAMEWORK create thread module failed
+ [%s:%d] HANDLER_FRAMEWORK handle is null
+ [%s:%d] HANDLER_FRAMEWORK init module room failed
+ [%s:%d] HANDLER_FRAMEWORK new slam is failed
+ [%s:%d] HANDLER_FRAMEWORK slam input and output is null
+ [%s:%d] HC_Tracker Exit, ctlId = %d, FrameTime = %f, Acb = %f %f %f, Gyb = %f %f %f
+ [%s:%d] HC_Tracker enter,ctlId = %d, FrameTime = %f
+ [%s:%d] HC_Tracker: init pose, t = %f, ig = %lf %lf %lf
+ [%s:%d] HC_Tracker==pnpPose, ctlId = %d, t = %f, txyz = %f %f %f, wxyz = %f %f %f %f, state = %d
+ [%s:%d] HC_Tracker==vioPose, ctlId = %d, t = %f, txyz = %f %f %f, wxyz = %f %f %f %f, state = %d, dt = %f
+ [%s:%d] HW_HANDLER_Init Slam status is HANDLER_HANDLE_INITED
+ [%s:%d] HW_HANDLER_Init Slam status is HANDLER_HANDLE_RUNNING
+ [%s:%d] HW_HANDLER_Start Slam start failed, force stop
+ [%s:%d] HW_Handler_Create enter iMedia AR&VR Hand-6DOF Build %s
+ [%s:%d] HW_SLAM_Init enter
+ [%s:%d] HW_SLAM_Pause leaving
+ [%s:%d] HXR_ALG_EVENT_CALLBACK error
+ [%s:%d] Hand6dof AI cost time: %lf ms
+ [%s:%d] Hander camera[%d] intrinc: fx %lf fy %lf cx %lf cy %lf, k1 %lf k2 %lf p1 %lf p2 %lf, k4 %lf k5 %lf
+ [%s:%d] Hander xml para: imu %f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f
+ [%s:%d] Handler GetPose error:%d
+ [%s:%d] IMU:check upload head error
+ [%s:%d] ImuPreProc input err , data %p TYPE %S
+ [%s:%d] Init slam failed, null para
+ [%s:%d] Input data queue full, discard image error: %lf.
+ [%s:%d] Input data queue full, discard image: %lf
+ [%s:%d] Invalid Input SlamPose: time x y z qx qy qz qw %.f %d %d %d %.f %.f %.f %.f %.f %.f %.f
+ [%s:%d] NotifySlamStatus finish
+ [%s:%d] NotifySlamStatus; status:%d
+ [%s:%d] PushControllerIMU error, handlerId %d, ts: %lf
+ [%s:%d] PushControllerIMU imutype: %d, handlerId: %d, SensorEvent timestamp: %lf,             accData: %f %f %f, gyroData: %f %f %f, orientation: %f %f %f %f
+ [%s:%d] ReceiveImu error,ctl,%d,lastStamp,%lf, currStamp,%lf,dt,%lf
+ [%s:%d] ReceiveImu warn,ctl,%d, miss imu,lastStamp,%lf, currStamp,%lf, dt,%lf
+ [%s:%d] ResourceManager init error: HSVar HandlerNum %d pSlamPara HandlerNum %d
+ [%s:%d] SensorCounter: a big gap between sensor %s and image, sub:%f newT %f baseT %f
+ [%s:%d] SensorCounter: gap between sensor %s and image, sub:%f newT %f baseT %f
+ [%s:%d] SensorCounter:%s data %u times in %f seconds
+ [%s:%d] SetInitParam mHandlerNum %d mHelmetCamDeviceNum %d mHelmetImuNum %d mLedNum %d mBBoxNum %d mImgHeight %dmImgWidth %d 
+ [%s:%d] SetVioPose==id = %d,state(%d), t(%f),tNs(%jd),pose(%f %f %f ),q(%f %f %f %f)
+ [%s:%d] Slam Resume failed
+ [%s:%d] Slam pause failed status(%d)
+ [%s:%d] Slam status is HANDLER_HANDLE_INITED
+ [%s:%d] Slam status is HANDLER_HANDLE_RUNNING
+ [%s:%d] Slam status is HANDLER_HANDLE_UNINIT
+ [%s:%d] Slam status(%d)
+ [%s:%d] Slam status(%d) is not HANDLER_HANDLE_INITED
+ [%s:%d] Slam status(%d) is not HANDLER_HANDLE_PAUSED
+ [%s:%d] Slam status(%d) is not HANDLER_HANDLE_RUNNING
+ [%s:%d] Slam status(%d) is not HANDLER_HANDLE_RUNNING or HANDLER_HANDLE_PAUSED
+ [%s:%d] Slam status(%d) is not RUNNING
+ [%s:%d] Slam status(%d) is not RUNNING or INITED
+ [%s:%d] SlamMainThread::BindApp failed
+ [%s:%d] ThreadLoop in time %lf frameID : %llu
+ [%s:%d] add AIDetect new frame: Ts: %lf
+ [%s:%d] add new frame: Ts: %lf
+ [%s:%d] check int para, handlerNum %d camNum %d headImuNum %d ledNum %d  bBoxNum %d imgHeight %d imgWidth %d imgStride %d camFps %.f camAccFps %.f camGyroFps %.f handAccFps %.f handGyroFps %.f
+ [%s:%d] counter: img %f gyro %f acc %f
+ [%s:%d] ctlId %d: display pose imu buffer is delay: start %f  end %f
+ [%s:%d] ctlId %d: imu buffer is empty
+ [%s:%d] ctlId %d: imu buffer is empty: %f
+ [%s:%d] drop start image: mImgPackCount %d eps %lf laser %d %d
+ [%s:%d] endTime,%lf,imuTime,%lf,%f,%f,%f,%f,%f,%f
+ [%s:%d] error slam output type
+ [%s:%d] fea accept null frame
+ [%s:%d] imu buffer size is zero: cltId = %d,
+ [%s:%d] imu handle num error: %d  %d
+ [%s:%d] imu size = %d, 
+ [%s:%d] imu:imu sensor type error
+ [%s:%d] imu:imu timestamp error;cur_type=%d;cur_time=%lf;lst_time=%lf;lst_AT=%lf;lst_GT=%lf
+ [%s:%d] imu:upload acce timestamp error,cur_time = %lf
+ [%s:%d] imu:upload gyro timestamp error,cur_time = %lf
+ [%s:%d] init pose %d, %f
+ [%s:%d] init pose %d, %f %f %f %f
+ [%s:%d] lastTime,%lf,imuTime,%lf,%f,%f,%f,%f,%f,%f
+ [%s:%d] pSlamHandle is null
+ [%s:%d] pnpDataBuffer push back with timestamp, %f
+ [%s:%d] pop frame: %lf.
+ [%s:%d] pop result(%d) or hxrAlgDataPtr(%p) is nullptr
+ [%s:%d] refer image, frameNumber:  Ts: %lf error
+ [%s:%d] remove frame: %lf.
+ [%s:%d] remove image error: %lf.
+ [%s:%d] remove last image error: %lf.
+ [%s:%d] sensor data is null
+ [%s:%d] slam params get faild
+ [%s:%d] slampose error
+ [%s:%d] stop Slam failed
+ [%s:%d] t(%lf),id(%llu),ctl(%u),PredictHandlePose startTime = %lf, endTime = %lf,        imuBuf startTime = %lf, endTime = %lf
+ [%s:%d] the %u frame %s cost time:%lf ms
+ [%s:%d] this msg %s be send by slam, refuse to accept
+ [%s:%d] vio process imu buffer is delay: %f 
+ [%s:%d] vio time cost track: %lf ms TimeSpend: %lf ms
+ imaginary
+!base64decoder.endOfStream()
+%@x1%@xR%@x
+&@xRzhxR~
+.eh_frame
+.eh_frame_hdr
+10ImuPreProc
+28TegraRowOp_magnitude_InvokerIKffE
+4Mjc8eyexm
+4iydxEyex
+4iyixEyex
+5iydxEyex
+9 [%s:%d] ==updateBias3Dof==ctl,%d,t,%f,gyrobias,%f,%f,%f,steady,%d
+; [%s:%d] HC_Tracker, ctlId = %d : vio lost need reset: timeStamp = %lf, Pch = %lf, blobEmptyNum = %d
+? [%s:%d] GetRangeData imu is empty
+? [%s:%d] Init:imageType:%d height %d, width %d, stride %d
+? [%s:%d] mHandlerPose is null
+?FrameId=:
+@x!xRja8
+@y1jlxRjlxLhlx"
+Accuracy flag is set and epsilon is < 0
+Accuracy must be non-negative
+Array should be CvMat or IplImage
+Bad image header
+Bilateral filtering is only implemented for 8u and 32f images
+COI must be non-null in case of planar images
+CV_IS_IMAGE(arr)
+C`DQEOGMJMKNKQIWIYK[ IMJNJQHWHYIZK[M[OZQXRV TMRVRYSZU[W[YZ[X\V]R]M\M]O UMSVSYU[
+CaDQEOGMIMJNKPKSIX JNJRIVIZ JPHUHXIZK[M[OZQXRU TMRURXSZU[W[YZ[X]U^Q^M]M]N^P UMSUSZ TMVMTTSX
+CurAiDetectedFrameMsgID
+CurFeaTrackResMsgID
+CurFrameTrackingMsgID
+CurMatchedFrameMsgID
+CurMatchedFrameProcedMsg
+Deleted virtual function called!
+DisplayPointCloud
+EYETHVKWPWSVVTXQYNYLXKVKSLPNNQMTMYN\P_
+E_JMJ[ KMK[ GMNM KTOTRUSWSXRZO[G[ OTQURWRXQZO[ YMY[ ZMZ[ VM]M V[][
+E_[O[NZNZP\P\N[MZMYNXPVUTXRZP[L[JZIXIUJSPORMSKSIRGPFNGMIMLNOPRTWWZY[[[\Y\X KZJXJUKSLR RMSI SKRG NGMK NNPQTVWYYZ N[LZKXKULSPO MINMQQUVXYZZ[Z\Y
+E_\O\N[MZMYNXPVUTXRZP[L[JZIYHWHUISJRQNRMSKSIRGPFNGMIMKNNPQUXWZY[[[\Z\Y
+E`RMR[ SMS[ OMVM JNIOHNIMJMKNMRNSPTUTWSXRZN[M\M]N\O[N PTNUMVKZJ[ PTNVLZK[I[HZGX UTWUXVZZ[[ UTWVYZZ[\[]Z^X O[V[
+EfNSOUQVSVUUVSVQUOSNQNOONPMSMVNYP[S\V\Y[[Y\W]T]P\MZJXIUHRHOIMJKLIOHSHXI]KaMcPeTfYf]e`cba KLJNIRIXJ\L`NbQdUeYe]d_cba POTO OPUP NQVQ NRVR NSVS OTUT PUTU aLaNcNcLaL bLbN aMcM aVaXcXcVaV bVbX aWcW
+F [%s:%d] slam has been initialized
+F\HRINKMMMONPOQRRYSb IOKNMNOOPP HRIPKOMOOPPQQTRYRa XMWPVRTUSWR[Qb YMWQ ZMYOWRTVSXR[ XMZM QbSb
+F]GQHOJMMMNNNPMUMXNZO[ LMMNMPLULXMZO[Q[SZUXWUXRYMYIXGVFTFRHRJSMUPWRZT SZUWVUWRXMXIWGVF
+F]IMJNKPKTLWMYNZQ[S[VZWYXWYRYOXJVGTFRFPGOIOKPMSOVP[Q JMKNLPLTMWNY VYWWXRXOWJVHTG GPHNIMKMLNMPMTNXOZQ[ S[UZVXWSWNVJUHSGQGOI
+F]OUMTLTJUIWIXJZL[M[OZPXPWOUJPINIKJILHOGSGWHYJZLZOYRVUUWUYV[X[YZZX MSKPJNJKKILH SGVHXJYLYOXRVU
+F]SHTITLSPRSQUOXMZK[J[IZIWJRKOLMNJPHRGUFXFZG[I[KZMYNWOTP SPTPWQXRYTYWXYWZU[R[PZOX
+F^GQHOJMLMMNNPNSL[ MNMSK[ MPLTJ[L[ NSPPRNTMVMXNYPYSWX XNXRWVWZ XPVUVXWZX[Z[\Y]W
+F^ISMSLRKOKMLJNHQGSGVHXJYMYOXRWS[S ITOTMRLOLMMJOHQG SGUHWJXMXOWRUT[T KXYX KYYY
+F^JIZRJ[ JIJJXRJZJ[
+F^NLLLKKKILGNFPFRGSISLQUQXRZT[V[XZYXYVXUVU ]I]G\FZFXGVITLPUNXLZJ[H[GZGX
+F^QFQ[ RGRZ SFS[ NFVF N[V[ OFQG PFQH TFSH UFSG QZO[ QYP[ SYT[ SZU[ HMIMJNKQLSMTPUTUWTXSYQZN[M\M LRKNJLILKN HMIKJKKLLPMSNTPU YN[LZLYNXR TUVTWSXPYLZK[K\M
+F_[NZO[P\O\N[MZMYNXPVUTXRZP[M[JZIXIUJSPORMSKSIRGPFNGMIMKNNPQUXWZZ[[[\Z\Y M[KZJXJUKSMQ MKNMVXXZZ[
+FeaTracker
+FeatureTracker
+G\KFK[ KFTFWGXHYJYLXNWOTP KPTPWQXRYTYWXYWZT[K[
+G\LFL[MZOZ MGMY IFNFNZ NPONQMSMVNXPYSYUXXVZS[Q[OZNX WPXRXVWX SMUNVOWRWVVYUZS[ JFLG KFLH
+G\LMLb MNMa IMNMNb NPONQMSMVNXPYSYUXXVZS[Q[OZNX WPXRXVWX SMUNVOWRWVVYUZS[ IbQb JMLN KMLO LaJb L`Kb N`Ob NaPb
+G\QFNGMHLJKNKb NHMJLNLa QFOGNIMNMb QFSFVGWHXJXLWNVOSP PPTPWQXRYTYWXYWZT[Q[OZNYMW VHWJWLVN WRXTXWWY SFUGVIVMUOSP TPVQWSWXVZT[ KbMb
+G\QMNNLPKTKb MPLTLa QMONNOMSMb MWNYOZQ[S[VZXXYUYSXPVNSMQM WXXVXRWP S[UZVYWVWRVOUNSM KbMb
+G]HQIOKMNMONOPNTL[ MMNNNPMTK[ NTPPRNTMVMXNYOYRXWUb VMXOXRWWTb
+G]JIIKIMJOLPOPROTNWKXHXGWFVFTGRIQKPNPQQSSTUTWSYQZO WFUGSIRKQNQRST ZOYSWWUYSZO[L[JZIXIWJVKWJX YSWVUXRZO[
+G]JMKNLPL[ KMLNMPMZ HPINJMLMMNNPN[ UMVNWQWb WOXRXa NQOOPNRMUMWNXOYRYb L[N[ WbYb
+G]JMKNLPMTN[ KMLNMPNTOZ HPINJMLMMNNPOTPZ VVWTXQXMYMZNYQXSVVTXQZN[ XRYOYM
+G]LFL[ MFM[ IFUFXGYHZJZLYNXOUP UFWGXHYJYLXNWOUP MPUPXQYRZTZWYYXZU[I[ UPWQXRYTYWXYWZU[
+G]LFL[ MFM[ IFYFYLXF MPUPXQYRZTZWYYXZU[I[ UPWQXRYTYWXYWZU[
+G]LFL[ MGMZ NFN[ IFUFXGYHZJZLYNXOUP XHYJYLXN UFWGXIXMWOUP NPUPXQYRZTZWYYXZU[I[ XRYTYWXY UPWQXSXXWZU[ JFLG KFLH OFNH PFNG LZJ[ LYK[ NYO[ NZP[
+G]PMMNKPJSJUKXMZP[T[WZYXZUZSYPWNTMPM LPKSKULX XXYUYSXP PMNNMOLRLVMYNZP[T[VZWYXVXRWOVNTM QFSb RGRa SFQb QFSF QbSb
+G]QFQ[ RGRZ SFS[ NFVF N[V[ OFQG PFQH TFSH UFSG QZO[ QYP[ SYT[ SZU[ OKLLKMJOJRKTLUOVUVXUYTZRZOYMXLUKOK LMKOKRLT XTYRYOXM OKMLLOLRMUOV UVWUXRXOWLUK
+G]SFPGNILLKOJSJVKYLZN[Q[TZVXXUYRZNZKYHXGVFSF OIMLLOKSKWLY UXWUXRYNYJXH SFQGOJNLMOLSLXMZN[ Q[SZUWVUWRXNXIWGVF
+G]SFPGNILLKOJSJVKYLZN[Q[TZVXXUYRZNZKYHXGVFSF OIMLLOKSKWLY UXWUXRYNYJXH SFQGOJNLMOLSLXMZN[ Q[SZUWVUWRXNXIWGVF LXMVOUPURVSXT]U^V^W] T^U_V_ SXS_T`V`W]W\
+G]SFPGNILLKOJSJVKYLZN[Q[TZVXXUYRZNZKYHXGVFSF SFQGOIMLLOKSKVLYN[ Q[SZUXWUXRYNYKXHVF
+G]SFPGNILLKOJSJVKYLZN[Q[TZVXXUYRZNZKYHXGVFSF SFQGOIMLLOKSKVLYN[ Q[SZUXWUXRYNYKXHVF LYLXMVOUPURVSXS_T`V`W^W] SXT^U_V_W^
+G^LFL[ MGMZ IFNFN[ NQOOPNRMUMWNXOYRY[ WOXRXZ UMVNWQW[ I[Q[ T[\[ JFLG KFLH LZJ[ LYK[ NYO[ NZP[ WZU[ WYV[ YYZ[ YZ[[
+G^LML[ MNMZ IMNMN[ NQOOPNRMUMWNXOYRY[ WOXRXZ UMVNWQW[ I[Q[ T[\[ JMLN KMLO LZJ[ LYK[ NYO[ NZP[ WZU[ WYV[ YYZ[ YZ[[
+GetLocalKeyFramesCmdID
+GetVR6DofInterface
+HANDLER_FRAMEWORK
+HSDK_CONFIG_MANAGER_IMPL_GET_VR_6_DOF_HANDLER_CONFIG
+HXR_ALG_EVENT_CALLBACK
+HZMMM[ NMN[ JMXMXRWM J[Q[
+H[WQWPVPVRXRXPVNTMQMNNLPKSKULXNZQ[S[VZXX MPLRLVMX QMONNOMRMVNYOZQ[
+H\IPKNMMOMQNROSRSVRZOb JOLNPNRO ZMYPXRSYP^Nb YMXPWRSY
+H\IQJOLMNMONOPNTL[ NTPPRNTMVMXOXRWWTb
+H\KFR[ LFRXR[ MFSX YGR[ IFPF UF[F JFLH NFMH OFMG WFYG ZFYG
+H\LFL[ MGMZ LFTFWGXHYJYMXOWPTQ MGTGWHXJXMWOTP MPTPWQXRYTYWXYWZT[L[ MQTQWRXTXWWYTZMZ
+H\LIKFKLLINGPFTFWGXIXLWNTOQO TFVGWIWLVNTO TOVPXRYTYWXYWZT[O[MZLYKWKVLUMVLW WQXTXWWYVZT[
+H\LJLKMKMJLJ LIMINJNKMLLLKKKJLHMGPFTFWGXIXLWNTO VGWIWLVN SFUGVIVLUNSO QOTOVPXRYTYWXYWZT[P[MZLYKWKVLUMUNVNWMXLX WRXTXWWY SOUPVQWTWWVZT[ LVLWMWMVLV
+H\LJMKLLKKKJLHMGPFTFWGXIXLWNTOQO TFVGWIWLVNTO TOVPXRYTYWXYWZT[P[MZLYKWKVLUMVLW WQXTXWWYVZT[
+H\MFKPMNPMSMVNXPYSYUXXVZS[P[MZLYKWKVLUMUNVNWMXLX WPXRXVWX SMUNVOWRWVVYUZS[ LVLWMWMVLV MFWF MGUG MHQHUGWF
+H\MFLO NGMN MFWFWG NGWG MNPMSMVNXPYSYUXXVZS[P[MZLYKWLW LOMOONSNVOXR TNWPXSXUWXTZ XVVYSZPZMYLW OZLX
+H\MPLQLRMSNSOROQNPMP MQMRNRNQMQ WPVQVRWSXSYRYQXPWP WQWRXRXQWQ
+H\MWMXNXNWMW WOVQURSSQSNRLPKMKLLINGQFSFVGXIYLYRXVWXUZR[O[MZLXLWMVNVOWOXNYMY MPLNLKMI VHWIXLXRWVVX QSORNQMNMKNHOGQF SFUGVIWLWSVWUYTZR[
+H\NML[ OMNSMXL[ YMXQVU ZMYPXRVUTWQYOZL[ KMOM
+H\NRMQLRMSNR VRWQXRWSVR
+H\PBP_ TBT_ XIWJXKYJYIWGTFPFMGKIKKLMMNOOUQWRYT KKMMONUPWQXRYTYXWZT[P[MZKXKWLVMWLX
+H\PBP_ TBT_ XKXJWJWLYLYJXHWGTFPFMGKIKLLNOPURWSXUXXWZ LLMNOOUQWRXT MGLILKMMONUPXRYTYWXYWZT[P[MZLYKWKUMUMWLWLV
+H\PFMGLILKMMNNPOTPVQWRXTXWWYTZPZMYLWLTMRNQPPTOVNWMXKXIWGTFPF NGMIMKNMPNTOVPXRYTYWXYWZT[P[MZLYKWKTLRNPPOTNVMWKWIVG WHTGPGMH LXOZ UZXX
+H\PFMGLILKMMONSOVPXRYTYWXYWZT[P[MZLYKWKTLRNPQOUNWMXKXIWGTFPF
+H\QFNGLJKOKRLWNZQ[S[VZXWYRYOXJVGSFQF OGMJLOLRMWOZ NYQZSZVY UZWWXRXOWJUG VHSGQGNH
+H\QFNGLJKOKRLWNZQ[S[VZXWYRYOXJVGSFQF QFOGNHMJLOLRMWNYOZQ[ S[UZVYWWXRXOWJVHUGSF
+H\QMNNLPKSKULXNZQ[S[VZXXYUYSXPVNSMQM MPLRLVMX WXXVXRWP QMONNOMRMVNYOZQ[ S[UZVYWVWRVOUNSM
+H\TMVNXPYPYOWNTMPMMNLOKQKSLUNWPXRYSZT\T^S_Q_O^P^Q_ MOLQLSMUOW PMNNMPMSNURY YPXO
+H\WPURRSQSNRLPKMKLLINGQFRFUGWIXMXRWWUZR[P[MZLXMXNZ WMVPSR WNUQRRQRNQLN PRMPLMLLMIPG LKNHQGRGUHWK SGVIWMWRVWTZ UYRZPZMY
+H\XIYFYLXIVGSFPFMGKIKKLMMNOOUQWRYT KKMMONUPWQXRYTYXWZT[Q[NZLXKUK[LX
+H\XIYFYLXIVGSFPFMGKIKLLNOPURWSXUXXWZ LLMNOOUQWRXT MGLILKMMONUPXRYTYWXYWZT[Q[NZLXKUK[LX
+H\XMWPURRSQSNRLPKMKLLINGQFRFUGWIXMXRWWUZR[P[MZLX
+H\XMWPURRSQSNRLPKMKLLINGQFSFVGXIYLYRXVWXUZR[O[MZLXLWMVNWMX QSORMPLMLLMIOGQF SFUGWIXLXRWVVXTZR[
+H]LRJTIWIZK[L[NZPX MRKTJWJZK[ RRPXPZR[S[UZWXXUXR SRQXQZR[ XRYVZW[W]V
+H]MFM[ NFN[ JFQF NPUPXQYRZTZWYYXZU[J[ UPWQXRYTYWXYWZU[
+H]OJPKOLNKNJOHPGSFVFYGZIZKYMWOTQPSMUKWI[ VFXGYIYKXMVOPS JYKXMXRZUZWYXW MXR[U[WZXW
+H]OKOJPJPLNLNJOHPGSFVFYGZIZKYMWOMUKWI[ XGYIYKXMVOSQ VFWGXIXKWMUOMU JYKXMXRYWYXX MXRZWZ MXR[U[WZXXXW
+H]QFLP QF[F QGVG[F LPMOPNSNVOWPXRXUWXUZR[O[LZKYJWJVKULVKW SNUOVPWRWUVXTZR[
+H]QFLP QF[F QGYG PHUHYG[F LPMOPNSNVOWPXRXUWXUZQ[N[LZKYJWJULULWKWKV VPWRWUVXTZ SNUOVQVUUXSZQ[
+H]TFQGOIMLLOKSKVLYMZO[Q[TZVXXUYRZNZKYHXGVFTF QHOJNLMOLSLWMY TYVWWUXRYNYJXH TFRGPJOLNOMSMXNZO[ Q[SZUWVUWRXNXIWGVF
+H]TFQGOIMLLOKSKVLYMZO[Q[TZVXXUYRZNZKYHXGVFTF TFRGPINLMOLSLVMYO[ Q[SZUXWUXRYNYKXHVF
+H]XNWPVQTRQROQNPMNMKNIPGSFVFXGYHZKZNYRXUVXTZQ[N[LZKXKVMVMXLXLW OPNNNKOI XHYJYNXRWUUX QRPQOOOKPHQGSF VFWGXIXNWRVUUWSZQ[
+H]YMXOVQTRQROQNPMNMKNIPGSFVFXGYHZJZNYRXUVXTZQ[N[LZKXKWLVMWLX OQNONKOIQGSF XGYIYNXRWUUXSZQ[
+I@ [%s:%d] HANDLER_FRAMEWORK create %zu module failed
+I[LNXN LRXR LVXV
+I[LRXR
+I[MSMVNYOZQ[S[UZWXXUXRWOVNTMRMPNNPMSIb
+I[POOPLROTPU OPMROT MRXR
+I[RLQMRNSMRL LRXR RVQWRXSWRV
+I[RLRX LRXR
+I[TKQ\ UKP\ JRKPLONOOPOVPWSWUVWT MONPNTOWPXSXUWWTXRYO
+I[TOUPXRUTTU UPWRUT LRWR
+I[WQWPVPVRXRXPWNUMRMONMQLTLVMYNZP[R[UZWW OONQMTMWNY RMPOOQNTNWOZP[
+I[YHXJVOTUSWQZO[ SLRNPONOMMMKNIPGSF\FZGYHXKVSUVTXRZO[M[KZJYJXKWLXKY UFYGZG
+I\JPLNNMOMQNROSRSVR[ ZMYPXRR[P_Ob
+I\LKLJMHNGQFTFWGXHYJYLXNWOUPRQ LKMKMJNHQGTGWHXJXLWNUORP MIPG UGXI XMTP RPRTSTSP RXQYQZR[S[TZTYSXRX RYRZSZSYRY
+I\MFMU NFMQ MQNOONQMTMWNXPXRWTUV TMVNWPWRTXTZU[W[YY KFNF
+I\MKMJNJNLLLLJMHNGPFTFWGXHYJYLXNWOSQ WHXIXMWN TFVGWIWMVOUP RQRTSTSQRQ RXQYQZR[S[TZTYSXRX RYRZSZSYRY
+I\TFQGOJNLMOLTLXMZO[Q[TZVWWUXRYMYIXGVFTF TFRGPJOLNOMTMXNZO[ Q[SZUWVUWRXMXIWGVF NPWP
+I\XRWOVNTMRMONMQLTLWMYNZP[R[UZWXXUYPYKXHWGUFRFPGOHOIPIPH RMPNNQMTMXNZ R[TZVXWUXPXKWHUF
+I^LRJTIWIYJ[L[NZPX RRPXPZQ[S[UZWXXUXR XRYVZW\W^V
+Illegal tagged_msg cast
+Image step is wrong
+Images with planar data layout should be used with COI selected
+ImuPreProcObj
+ImuProcessor
+InitPara.Camera.imageWidth
+InitPara.Camera.imageheight
+Input image depth is not supported by function
+Invalid number of channels in input image
+Invalid number of channels in output image
+Iterations flag is set and maximum number of iterations is <= 0
+JYNKNX OKOX ORPPROTOVPWRWUVWTXRXPWOU TOUPVRVUUWTX LKOK
+JYNON\ OOO\ ORPPROTOVPWRWUVWTXRXPWOU TOUPVRVUUWTX LOOO L\Q\
+JYRRPQOQMRLTLUMWOXPXRWSUSTRR WMRR RMWMWR RMVNWR
+JZLTLRMPOPUSWSXR LRMQOQUTWTXRXP
+JZNPPPPONPMQLSLUMWNXPXQWRUSR LUNWPWRU RRRWSXUXWVXTXRWPVOVPWP RUSWUWWV
+JZPXR[TX MURZWU RIRZ
+JZRRPQOQMRLTLUMWOXPXRWSUSTRR SLQQ WMRR XQSS
+JZRYQ\ RYS\ Q\S\ RYVXVVXUXRZQZLYIXHVHTGPGNHLHKIJLJQLRLUNVNXRY
+JZSBUEVHWLWQVUTYR\O_LaJb VHVPUUSYQ\ SBTDUGVP VHUQTUSXRZP]M`Jb
+JZWNTLRIPLMN PLRJTL RJRZ WVTXR[PXMV PXRZTX
+J[OOMOLNLLMKOKPLPNNPMRMUNWOXQYTYVXWWXUXRWPUNULVKXKYLYNXOVO NWPXUXWW
+J[OUMULVLXMYOYPXPVNTMRMONMOLQKTKVLWMXOXRWTUVUXVYXYYXYVXUVU NMPLULWM
+J[RMPNNPMSMVNYOZQ[S[UZWXXUXRWOVNTMRM
+J[SMPNNPMRMTNVPWRWUVWTXRXPWNUMSM OPUM NRVN MTWO NUXP OVWR PWVT
+J\K[NZQXSVUSWOXKXIWGUFSGRHQJPOPTQXRZT[V[XZYY
+KWNURTTSURUPSOQOOPNQMSMUNWPXRXTWUV QOOQNSNVPX
+KXOKOX PKPX MKWKWOVK MXRX
+KXOOOX POPX PRQPSOUOVPVQUQUPVP MOPO MXRX
+KXQOOPNQMSMUNWPXRXTWUVVTVRUPSOQO QOOQNSNVPX RXTVUTUQSO
+KXRFRHTHTFRF SFSH RGTG RMR^QaPb SNS]R` OMTMT]S`RaPbMbLaL_N_NaMaM` PMRN QMRO
+KXRKPMOOMUK\ QLPNNTL\ RKTKVLVNUPRQ TKULUNTPRQ RQTRUTUVTWRXQXOWNT RQSRTTTVRX
+KXUPUQVQUPSOQOOPNQMSMUNWPXRXTWUV QOOQNSNVPX
+KXVLWLXKWNVLTKRKPLOMNOMRMUNWPXRXTWUU RKPMOONRNVPX
+KYLQNOPORPSSSXR\ LQNPPPRQSS WOVRSXQ\
+KYRKPLOMNOMRMUNWPXRXTWUVVTWQWNVLTKRK RKPMOONRNVPX RXTVUTVQVMTK
+KYRKPLOMNOMRMUNWPXRXTWUVVTWQWNVLTKRK RKPMOONRNVPX RXTVUTVQVMTK OWOVPUQURVRZS[T[UZ RVSZT[
+KYSOQOOPNQMSMUNWPXRXTWUVVTVRUPRNQLQKRJTJUKVM QOOQNSNVPX RXTVUTUQSO QLRKTKVM
+KYUOU\ VOV\ URTPROPONPMRMUNWPXRXTWUU POOPNRNUOWPX S\X\
+KYVLWLXKWNVLTKRKPLOMNOMRMUNWPXRXTWUVVS RKPMOONRNVPX RXTVUS SSXS
+KYVOR\ WOS\ USUQSOQOOPNQMSMUNWPXRXTV QOOQNSNVPX P\U\
+KYVOTVSYR[ WOUVTYR[P\M\L[M[N\ USUQSOQOOPNQMSMUNWPXRXTV QOOQNSNVPX
+KYVSUPSOQOOPNQMSMUNWPXRXTWUVVTWQWNVLTKQKPLQLRK QOOQNSNVPX RXTVUTVQVNULTK
+KZMVNXQXMRMONMOLQKTKVLWMXOXRTXWXXV OUNRNOOMQK TKVMWOWRVU NWPW UWWW
+KZNMONPPPXQZS[U[WZXX OMPNQPQXRZ LPMNNMPMQNRPRXSZT[
+KZOPNQMSMUNWPXRXUWWUXRXPWOUOTPSRRUO\ MUNVPWRWUVWTXR XQWPUPSR RUQXP\
+KZRKRX SKSX QNNOMQMRNTQUTUWTXRXQWOTNQN QNOONQNROTQU TUVTWRWQVOTN PKUK PXUX
+KZTKQ\ UKP\ QONPMRMUNWQXTXWWXUXRWPTOQO QOOPNRNUOWQX TXVWWUWRVPTO
+KZVMWKWOVMULSKQKOLNMNOOPQQTRVSWT NNOOQPTQVRWSWVVWTXRXPWOVNTNXOV
+KZVOTVTWUXWXXWYU WOUVUWVX USUQSOQOOPNQMSMUNWPXRXTV QOOQNSNVPX
+KZWKTVTWUXWXXWYU XKUVUWVX USUQSOQOOPNQMSMUNWPXRXTV QOOQNSNVPX UKXK
+K[NRLXLZN[O[QZSXUU ORMXMZN[ VRPd WRT[R`PdOfMgLfLdMaO_R]V[YY[V
+K[UUTSRRPRNSMTLVLXMZO[Q[SZTX PRNTMVMYO[ VRPd WRT[R`PdOfMgLfLdMaO_R]V[YY[V
+K[YOQOOPNQMSMUNWPXRXTWUVVTVRUPYP QOOQNSNVPX RXTVUTUQSO
+LBACurKeyFrameMsgID
+LPCCurKeyFrameMsgID
+LXOYQXRWSUSSRRQROSNTMVMXNZP[S[VYXV QROTNVNYP[
+LXRHLRR\XRRH
+LXRKQLRMSLRK RMRQ RQQSRVSSRQ RVR\ POONNOOPPOTOUNVOUPTO
+LXRLNWXPLPVWRL RRRL RRLP RRNW RRVW RRXP
+LXRLRX LQMOWOXQ PWTW
+LXRMPNOONQNSOUPVRVTUUTVRVPUNTMRM
+LXRMPNOONQNSOUPVRVTUUTVRVPUNTMRM QVPUPTQSRSSTTVUWVW
+LXRMPTOXOZP[S[UYVW SMQTPXPZQ[
+LXRMRV NOOPOSQTSTUSUPVO
+LXRMRV PONPNSPTTTVSVPTOPO
+LXRMSLRKQLRMRQQRSURV RQSRQURVRZQ[R\S[RZ POONNOOPPOTOUNVOUPTO PXOWNXOYPXTXUWVXUYTX
+LXRNRV NRVR
+LXRONU ROVU
+LYNCNG VERLPP WCTIQP NEPCRCUE NEPDRDUEVE MRXR QTOUNWOYQZTZVYWWVUTTQT QTPUOWPYQZ TZUYVWUUTT QZO[N]N^O`QaTaV`W^W]V[TZ QZP[O]O^P`Qa TaU`V^V]U[TZ
+LYOCNI OCVC ODSDVC NIOHQGTGVHWJWMVOTPQPOONNNMOMON TGUHVJVMUOTP MRXR QTOUNWOYQZTZVYWWVUTTQT QTPUOWPYQZ TZUYVWUUTT QZO[N]N^O`QaTaV`W^W]V[TZ QZP[O]O^P`Qa TaU`V^V]U[TZ
+LYOCNI OCVC ODSDVC NIOHQGTGVHWJWMVOTPQPOONNNMOMON TGUHVJVMUOTP MRXR VVVWWWWVVUTTRTPUOVNYN^O`QaTaV`W^W\VZTYQYN[ RTPVOYO^P`Qa TaU`V^V\UZTY
+LYOEOFNFNEODQCTCVDWFVHTI TCUDVFUHTI RITIVJWLWMVOTPQPOONNNMOMON TIUJVLVMUOTP MRXR QTOUNWOYQZTZVYWWVUTTQT QTPUOWPYQZ TZUYVWUUTT QZO[N]N^O`QaTaV`W^W]V[TZ QZP[O]O^P`Qa TaU`V^V]U[TZ
+LYOEOFNFNEODQCTCVDWFVHTI TCUDVFUHTI RITIVJWLWMVOTPQPOONNNMOMON TIUJVLVMUOTP MRXR SVSa TTTa TTM]X] QaVa
+LYOEOFNFNEODQCTCVDWFVHTIQJOKNMNP TCUDVFUHTI NOONPNSOVOWN PNSPVPWNWM MRXR OVOWNWNVOUQTTTVUWWVYTZ TTUUVWUYTZ RZTZV[W]W^V`TaQaO`N_N^O^O_ TZU[V]V^U`Ta
+LYPFSCSP RDRP OPVP MRXR OVOWNWNVOUQTTTVUWWVYTZ TTUUVWUYTZ RZTZV[W]W^V`TaQaO`N_N^O^O_ TZU[V]V^U`Ta
+LYPFSCSP RDRP OPVP MRXR OVOWNWNVOUQTTTVUWWVYTZQ[O\N^Na TTUUVWUYTZ N`O_P_S`V`W_ P_SaVaW_W^
+LYPFSCSP RDRP OPVP MRXR QTOUNWOYQZTZVYWWVUTTQT QTPUOWPYQZ TZUYVWUUTT QZO[N]N^O`QaTaV`W^W]V[TZ QZP[O]O^P`Qa TaU`V^V]U[TZ
+LYPFSCSP RDRP OPVP MRXR SVSa TTTa TTM]X] QaVa
+LYPFSCSP RDRP OPVP MRXR VVVWWWWVVUTTRTPUOVNYN^O`QaTaV`W^W\VZTYQYN[ RTPVOYO^P`Qa TaU`V^V\UZTY
+LYSKQLPMOONRNUOWPXRXTWUVVTWQWNVLUKSK SKQMPOOSOVPX RXTVUTVPVMUK OQVQ
+LZLVNSPRRRTTTVSXQZN[P\Q^QaPdOfMgLfLdMaP^S\WYZV
+L[LVNRLXLZM[O[QZSXUU VRPdOfMgLfLdMaP^S\U[XY[V
+L[UUTSRRPRNSMTLVLXMZO[Q[SZ VRUUSZPaOdOfPgRfScS\U[XY[V
+L[UUTSRRPRNSMTLVLXMZO[Q[SZTY VRTYPdOfMgLfLdMaP^S\U[XY[V
+LbaTrackVisionAfterRelocID
+Ly%xr
+MWUPUVTXRYPY USTQRPPQOSPURVTUUS
+MXQ[P[OZOYPXQXRYR[Q]P^N_ PYPZQZQYPY Q[Q\P^
+MXRFQGQIRQ RFRTST RFSFST SFTGTISQ RXQYQZR[S[TZTYSXRX RYRZSZSYRY
+MXRFQGRHSGRF RMR[ SMS[ OMSM O[V[
+MXRFRTST RFSFST RXQYQZR[S[TZTYSXRX RYRZSZSYRY
+MXRFR[ SFS[ OFSF O[V[
+MXRFR[ SFS[ OFVF O[V[
+MXRFR[S[ RFSFS[ OMVMVN OMONVN
+MXRKQLQMSNVN TNQOPPPRRSUS TNROQPQRRS SSPTOUOWQXSYTZT[S\Q\ SSQTPUPWQX
+MXRMPNOPOSPURVSVUUVSVPUNSMRM
+MXRMPNOPOSPURVSVUUVSVPUNSMRM QQTR TQQR
+MXRMPNOPOSPURVSVUUVSVPUNSMRM STVW
+MXRMQNQORPSPTOTNSMRM RNROSOSNRN RXQYQZR[S[TZTYSXRX RYRZSZSYRY
+MXRMQNQORPSPTOTNSMRM RNROSOSNRN TZS[R[QZQYRXSXTYT\S^Q_ RYRZSZSYRY S[T\ TZS^
+MXRMR[ SMS[ OMSM O[V[
+MXRXQYQZR[S[TZTYSXRX RYRZSZSYRY
+MXSMRNROSPTPUOUNTMSM SNSOTOTNSN Q[P[OZOYPXQXRYR[Q]P^N_ PYPZQZQYPY Q[Q\P^
+MXUSTQRPPQOSPURVTUUS VPTVSXRYPYOX
+Mag.empty() || Angle.size == Mag.size
+Mag.size() == Angle.size() && Mag.type() == Angle.type()
+Mag.size() == X.size() && Mag.type() == X.type()
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+N15ARVR_CONTROLLER15SmoothPoseStateE
+N15ARVR_CONTROLLER8PnpTrackE
+N2cv12cpu_baseline12ColumnFilterINS0_13FixedPtCastExIihEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_13FixedPtCastExIihEENS0_19SymmColumnVec_32s8uEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIddEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIdhEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIdsEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIdtEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIffEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIffEENS0_17SymmColumnVec_32fEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIffEENS0_22SymmColumnSmallVec_32fEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIfhEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIfsEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIfsEENS0_20SymmColumnVec_32f16sEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIftEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIisEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline12ColumnFilterINS0_4CastIisEENS0_25SymmColumnSmallVec_32s16sEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_13FixedPtCastExIihEENS0_19SymmColumnVec_32s8uEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIddEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIdhEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIdsEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIdtEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIffEENS0_17SymmColumnVec_32fEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIffEENS0_22SymmColumnSmallVec_32fEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIfhEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIfsEENS0_20SymmColumnVec_32f16sEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIftEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIisEENS0_11ColumnNoVecEEE
+N2cv12cpu_baseline16SymmColumnFilterINS0_4CastIisEENS0_25SymmColumnSmallVec_32s16sEEE
+N2cv12cpu_baseline21SymmColumnSmallFilterINS0_13FixedPtCastExIihEENS0_19SymmColumnVec_32s8uEEE
+N2cv12cpu_baseline21SymmColumnSmallFilterINS0_4CastIffEENS0_22SymmColumnSmallVec_32fEEE
+N2cv12cpu_baseline21SymmColumnSmallFilterINS0_4CastIisEENS0_25SymmColumnSmallVec_32s16sEEE
+N2cv12cpu_baseline8Filter2DIdNS0_4CastIddEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIfNS0_4CastIffEENS0_13FilterVec_32fEEE
+N2cv12cpu_baseline8Filter2DIhNS0_4CastIddEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIhNS0_4CastIffEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIhNS0_4CastIfhEENS0_12FilterVec_8uEEE
+N2cv12cpu_baseline8Filter2DIhNS0_4CastIfsEENS0_15FilterVec_8u16sEEE
+N2cv12cpu_baseline8Filter2DIhNS0_4CastIftEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIsNS0_4CastIddEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIsNS0_4CastIffEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DIsNS0_4CastIfsEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DItNS0_4CastIddEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DItNS0_4CastIffEENS0_11FilterNoVecEEE
+N2cv12cpu_baseline8Filter2DItNS0_4CastIftEENS0_11FilterNoVecEEE
+N2cv18TLSDataAccumulatorINS_5instr11NodeDataTlsEEE
+N2cv18TLSDataAccumulatorINS_5utils5trace7details23TraceManagerThreadLocalEEE
+N2cv21resizeGeneric_InvokerINS_12HResizeCubicIddfEENS_12VResizeCubicIddfNS_4CastIddEENS_12VResizeNoVecEEEEE
+N2cv21resizeGeneric_InvokerINS_12HResizeCubicIfffEENS_12VResizeCubicIfffNS_4CastIffEENS_19VResizeCubicVec_32fEEEEE
+N2cv21resizeGeneric_InvokerINS_12HResizeCubicIhisEENS_12VResizeCubicIhisNS_11FixedPtCastIihLi22EEENS_21VResizeCubicVec_32s8uEEEEE
+N2cv21resizeGeneric_InvokerINS_12HResizeCubicIsffEENS_12VResizeCubicIsffNS_4CastIfsEENS_22VResizeCubicVec_32f16sEEEEE
+N2cv21resizeGeneric_InvokerINS_12HResizeCubicItffEENS_12VResizeCubicItffNS_4CastIftEENS_22VResizeCubicVec_32f16uEEEEE
+N2cv21resizeGeneric_InvokerINS_13HResizeLinearIddfLi1ENS_12HResizeNoVecEEENS_13VResizeLinearIddfNS_4CastIddEENS_12VResizeNoVecEEEEE
+N2cv21resizeGeneric_InvokerINS_13HResizeLinearIfffLi1ENS_19HResizeLinearVec_X4IfffNS_12hal_baseline11v_float32x4EEEEENS_13VResizeLinearIfffNS_4CastIffEENS_20VResizeLinearVec_32fEEEEE
+N2cv21resizeGeneric_InvokerINS_13HResizeLinearIhisLi2048ENS_21HResizeLinearVecU8_X4EEENS_13VResizeLinearIhisNS_11FixedPtCastIihLi22EEENS_22VResizeLinearVec_32s8uEEEEE
+N2cv21resizeGeneric_InvokerINS_13HResizeLinearIsffLi1ENS_19HResizeLinearVec_X4IsffNS_12hal_baseline11v_float32x4EEEEENS_13VResizeLinearIsffNS_4CastIfsEENS_23VResizeLinearVec_32f16sEEEEE
+N2cv21resizeGeneric_InvokerINS_13HResizeLinearItffLi1ENS_19HResizeLinearVec_X4ItffNS_12hal_baseline11v_float32x4EEEEENS_13VResizeLinearItffNS_4CastIftEENS_23VResizeLinearVec_32f16uEEEEE
+N2cv21resizeGeneric_InvokerINS_15HResizeLanczos4IddfEENS_15VResizeLanczos4IddfNS_4CastIddEENS_12VResizeNoVecEEEEE
+N2cv21resizeGeneric_InvokerINS_15HResizeLanczos4IfffEENS_15VResizeLanczos4IfffNS_4CastIffEENS_22VResizeLanczos4Vec_32fEEEEE
+N2cv21resizeGeneric_InvokerINS_15HResizeLanczos4IhisEENS_15VResizeLanczos4IhisNS_11FixedPtCastIihLi22EEENS_12VResizeNoVecEEEEE
+N2cv21resizeGeneric_InvokerINS_15HResizeLanczos4IsffEENS_15VResizeLanczos4IsffNS_4CastIfsEENS_25VResizeLanczos4Vec_32f16sEEEEE
+N2cv21resizeGeneric_InvokerINS_15HResizeLanczos4ItffEENS_15VResizeLanczos4ItffNS_4CastIftEENS_25VResizeLanczos4Vec_32f16uEEEEE
+N7HW_SLAM10PoseSmoothE
+N7HW_SLAM10SlamThreadE
+N7HW_SLAM10SubscriberE
+N7HW_SLAM14SlamMainThreadE
+N7HW_SLAM15ResourceManagerE
+N7HW_SLAM16HandlerOutResultE
+N7HW_SLAM17HandlerOutputPoseE
+N7HW_SLAM19HandlerParamManagerE
+N7HW_SLAM9MessengerE
+N7HW_SLAM9PublisherE
+NSt6__ndk110__function6__baseIFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEEE
+NSt6__ndk110__function6__baseIFvRKNS_10shared_ptrIN15ARVR_CONTROLLER15SmoothPoseStateEEEEEE
+NSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EEE
+NSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EEE
+NSt6__ndk114default_deleteIN15ARVR_CONTROLLER13ImuBufferUtilEEE
+NSt6__ndk114default_deleteIN7HW_SLAM10Subscriber4ImplEEE
+NSt6__ndk114default_deleteIN7HW_SLAM9Publisher4ImplEEE
+NSt6__ndk115binary_functionIPN7HW_SLAM10PoseSmoothERKN15ARVR_CONTROLLER15SmoothPoseStateEvEE
+NSt6__ndk118__weak_result_typeIMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEEE
+NSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER10CameraInfoENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER15SmoothPoseStateENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv11FileStorage4ImplENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_13FixedPtCastExIihEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIddEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIdhEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIdsEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIdtEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIffEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIfhEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIfsEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline12ColumnFilterINS2_4CastIftEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_13FixedPtCastExIihEENS2_19SymmColumnVec_32s8uEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIddEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIdhEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIdsEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIdtEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIffEENS2_17SymmColumnVec_32fEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIfhEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIfsEENS2_20SymmColumnVec_32f16sEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIftEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline16SymmColumnFilterINS2_4CastIisEENS2_11ColumnNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline21SymmColumnSmallFilterINS2_13FixedPtCastExIihEENS2_19SymmColumnVec_32s8uEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline21SymmColumnSmallFilterINS2_4CastIffEENS2_22SymmColumnSmallVec_32fEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline21SymmColumnSmallFilterINS2_4CastIisEENS2_25SymmColumnSmallVec_32s16sEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIdNS2_4CastIddEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIfNS2_4CastIffEENS2_13FilterVec_32fEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIhNS2_4CastIddEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIhNS2_4CastIffEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIhNS2_4CastIfhEENS2_12FilterVec_8uEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIhNS2_4CastIfsEENS2_15FilterVec_8u16sEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIhNS2_4CastIftEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIsNS2_4CastIddEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIsNS2_4CastIffEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DIsNS2_4CastIfsEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DItNS2_4CastIddEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DItNS2_4CastIffEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv12cpu_baseline8Filter2DItNS2_4CastIftEENS2_11FilterNoVecEEENS_9allocatorIS7_EEEE
+NSt6__ndk120__shared_ptr_emplaceIN2cv13FormattedImplENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN15ARVR_CONTROLLER13ImuBufferUtilENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN2cv10OcvDctImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN2cv10OcvDftImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN2cv15OcvDftBasicImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM10Subscriber4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+NSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM9Publisher4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+NSt6__ndk16__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS2_RKNS_12placeholders4__phILi1EEEEEE
+NWTMSNSOTP UPSPQQPSPUQVSWSXRYQY
+NXOYQXRWSUSSRRQROSNUNXOZQ[S[UZVYXV
+Neither accuracy nor maximum iterations number flags are set in criteria type
+Null pointer to image
+OXRRUOWLXIXGWFUGTIKdKfLgNfOcPZQ[S[UZVYXV TISNRRO[M`Kd
+OXXROMOWXR URPO URPU RRPQ RRPS
+Overflow for imageSize
+PUSLRMSNTMSL SPSXRYQYPX
+PnPP3PFrameMsgID
+PoseSmooth
+PoseSmooth.save6DofPose
+Pure virtual function called!
+RelocStopImuAfterRelocID
+SLAMDFX
+SLAM_GET_POSE
+Simultaneous change of shape and number of channels is not supported. Do it by 2 separate calls
+SlamOutResult
+SlamOutputPose
+Specified non-existed directory, creating OpenCV sub-directory for caching purposes: 
+St8bad_cast
+The destination image does not have the proper type
+The image has NULL data pointer
+The image is interleaved and has over CV_CN_MAX channels
+The image/matrix format is not supported by the function
+Unsupported depth of input image
+VR6Dof
+ZN7HW_SLAM9Messenger9SubscribeINS_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS_10SubscriberERKNSt6__ndk112basic_stringIcNS6_11char_traitsIcEENS6_9allocatorIcEEEEjMT_FvRKT0_EPSF_EUlRKNS6_10shared_ptrIS4_EEE_
+[Start]FindContours supports only CV_8UC1 images when mode != CV_RETR_FLOODFILL otherwise supports CV_32SC1 images only
+_Z10cvIplImageRKN2cv3MatE
+_ZGVZN7HW_SLAM9Messenger8InstanceEvE4inst
+_ZN10ImgPreProc11ProcessDataEPK16HxrAlgorithmData
+_ZN10ImgPreProc18CheckVGAUploadHeadERK11HwSlamImage
+_ZN10ImgPreProc19IsStartProcessFrameERK11HwSlamImage
+_ZN10ImgPreProc9CheckHeadERK11HwSlamImagei
+_ZN10ImgPreProcC1ER17SlamSensorCounterRN7HW_SLAM5EventE
+_ZN10ImgPreProcC1ER17SlamSensorCounterb
+_ZN10ImgPreProcC2ER17SlamSensorCounterRN7HW_SLAM5EventE
+_ZN10ImgPreProcC2ER17SlamSensorCounterb
+_ZN10ImuPreProc10ProcessImuERK18HandlerSensorEvent
+_ZN10ImuPreProc10SetImuPataERK16HandlerInitParam
+_ZN10ImuPreProc11ProcessDataEPK16HxrAlgorithmData
+_ZN10ImuPreProc15CheckUploadHeadERK18HandlerSensorEvent
+_ZN10ImuPreProc17TransmitImuPackerEv
+_ZN10ImuPreProc4InitEv
+_ZN10ImuPreProc5PauseEv
+_ZN10ImuPreProc5ResetEv
+_ZN10ImuPreProc6ResumeEv
+_ZN10ImuPreProcC1ER17SlamSensorCounterRN7HW_SLAM5EventE
+_ZN10ImuPreProcC2ER17SlamSensorCounterRN7HW_SLAM5EventE
+_ZN10ImuPreProcD0Ev
+_ZN10ImuPreProcD1Ev
+_ZN10ImuPreProcD2Ev
+_ZN11AIDetection13SyncLockFrameERKNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER8HeadInfoEEE
+_ZN11AIDetection9PushFrameERKNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER8HeadInfoEEE
+_ZN11PreProcBase11ProcessDataEPK16HxrAlgorithmData
+_ZN12PreProcessor20CollectSensorDataMapEPK16HxrAlgorithmData
+_ZN12PreProcessor8PushDataEPK16HxrAlgorithmData
+_ZN12PreProcessorC1ERN7HW_SLAM5EventES2_PNS0_16SingleThreadToolE
+_ZN12PreProcessorC2ERN7HW_SLAM5EventES2_PNS0_16SingleThreadToolE
+_ZN12ThreadModuleC2EPN7HW_SLAM5EventES2_
+_ZN13BlobDetection13SyncLockFrameERKNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER8HeadInfoEEE
+_ZN13BlobDetection14DetectBlobBBoxEPKN15ARVR_CONTROLLER10CameraDataENSt6__ndk110shared_ptrINS0_10ControllerEEE
+_ZN13BlobDetection14Update6DofInfoEv
+_ZN13BlobDetection9PushFrameERKNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER8HeadInfoEEE
+_ZN13HSvarWithTypeINSt6__ndk16vectorIN7HW_SLAM18CallbackInfoStructENS0_9allocatorIS3_EEEENS0_12basic_stringIcNS0_11char_traitsIcEENS4_IcEEEEEixERKSB_
+_ZN14HandlerManager16RegisterCallbackERK23HxrAlgorithmCallbackSet
+_ZN14HandlerManager7GetDataEP16HxrAlgorithmData
+_ZN14HandlerManager8PushDataEP16HxrAlgorithmData
+_ZN14SlamThreadPool11GetInstanceEv
+_ZN14SlamThreadPool11g_sInstanceE
+_ZN14SlamThreadPool13GetMainThreadENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN14SlamThreadPool15DeleteAllThreadEv
+_ZN14SlamThreadPool16CreateMainThreadERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN14SlamThreadPool16DeleteMainThreadERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN14SlamThreadPool4StopEv
+_ZN14SlamThreadPool5PauseEv
+_ZN14SlamThreadPool5StartEv
+_ZN14SlamThreadPool6ResumeEv
+_ZN14SlamThreadPoolC1Ev
+_ZN14SlamThreadPoolC2Ev
+_ZN14SlamThreadPoolD1Ev
+_ZN14SlamThreadPoolD2Ev
+_ZN15ARVR_CONTROLLER10BlobRefine16GenerateImageRoiERKNSt6__ndk16vectorIN2cv5Rect_IiEENS1_9allocatorIS5_EEEE
+_ZN15ARVR_CONTROLLER10CameraData10CreateBlobERKNS_9PixelBlobE
+_ZN15ARVR_CONTROLLER10CameraData11ExtractBlobERKNSt6__ndk16vectorIN2cv5Rect_IiEENS1_9allocatorIS5_EEEERKNS2_IfNS6_IfEEEERKNS2_IbNS6_IbEEEE
+_ZN15ARVR_CONTROLLER10CameraData11g_curBlobIdE
+_ZN15ARVR_CONTROLLER10CameraData7AddBlobENSt6__ndk110shared_ptrINS_8BlobInfoEEE
+_ZN15ARVR_CONTROLLER10CameraData7AddBlobERKNS_9PixelBlobE
+_ZN15ARVR_CONTROLLER10CameraData8AddBlobsERKNSt6__ndk16vectorINS_9PixelBlobENS1_9allocatorIS3_EEEE
+_ZN15ARVR_CONTROLLER10CameraData8SetImageEiiPhmb
+_ZN15ARVR_CONTROLLER10CameraDataC1EPNS_8HeadInfoENSt6__ndk110shared_ptrINS_10CameraInfoEEE
+_ZN15ARVR_CONTROLLER10CameraDataC1ERKN2cv3MatENSt6__ndk110shared_ptrINS_10CameraInfoEEEPNS_8HeadInfoE
+_ZN15ARVR_CONTROLLER10CameraDataC1Ev
+_ZN15ARVR_CONTROLLER10CameraDataC2EPNS_8HeadInfoENSt6__ndk110shared_ptrINS_10CameraInfoEEE
+_ZN15ARVR_CONTROLLER10CameraDataC2ERKN2cv3MatENSt6__ndk110shared_ptrINS_10CameraInfoEEEPNS_8HeadInfoE
+_ZN15ARVR_CONTROLLER10CameraDataC2Ev
+_ZN15ARVR_CONTROLLER10CameraDataD1Ev
+_ZN15ARVR_CONTROLLER10CameraDataD2Ev
+_ZN15ARVR_CONTROLLER10Controller10SetTrackedEb
+_ZN15ARVR_CONTROLLER10Controller12Set6DofValidEb
+_ZN15ARVR_CONTROLLER10Controller18IntegrationPredictEd
+_ZN15ARVR_CONTROLLER10LedProject14CalcProjectionERKN5Eigen6MatrixIfLi3ELi3ELi0ELi3ELi3EEERKNS2_IfLi3ELi1ELi0ELi3ELi1EEES5_S8_i
+_ZN15ARVR_CONTROLLER10LedProject9SetLedCamEPNS_12LedCandidateEPNS_10CameraDataE
+_ZN15ARVR_CONTROLLER10LedProjectC1EPNS_12LedCandidateEPNS_10CameraDataE
+_ZN15ARVR_CONTROLLER10LedProjectC2EPNS_12LedCandidateEPNS_10CameraDataE
+_ZN15ARVR_CONTROLLER10MatchState12HandPoseStepERKN5Eigen6MatrixIfLi6ELi1ELi0ELi6ELi1EEE
+_ZN15ARVR_CONTROLLER10MatchStateC1EmRKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEERKNS6_IfLi6ELi6ELi0ELi6ELi6EEERKNSt6__ndk110shared_ptrINS_7PnpDataEEE
+_ZN15ARVR_CONTROLLER10MatchStateC2EmRKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEERKNS6_IfLi6ELi6ELi0ELi6ELi6EEERKNSt6__ndk110shared_ptrINS_7PnpDataEEE
+_ZN15ARVR_CONTROLLER10RingBufferI18HandlerSensorEventEC2ERNS_14RingBufferInfoE
+_ZN15ARVR_CONTROLLER11CtlPnPState11StepPredictEd
+_ZN15ARVR_CONTROLLER13ImuBufferUtil10GetEndTimeEv
+_ZN15ARVR_CONTROLLER13ImuBufferUtil10GetLastImuER18HandlerSensorEvent
+_ZN15ARVR_CONTROLLER13ImuBufferUtil10ReceiveImuER18HandlerSensorEvent
+_ZN15ARVR_CONTROLLER13ImuBufferUtil11GetRangeImuERKNS_9RangeInfoERNSt6__ndk16vectorI18HandlerSensorEventNS4_9allocatorIS6_EEEE
+_ZN15ARVR_CONTROLLER13ImuBufferUtil12GetBeginTimeEv
+_ZN15ARVR_CONTROLLER13ImuBufferUtil12PackRangeImuERNS_10RingBufferI18HandlerSensorEventEEiRKNS_9RangeInfoERNSt6__ndk16vectorIS2_NS8_9allocatorIS2_EEEE
+_ZN15ARVR_CONTROLLER13ImuBufferUtil14CheckImuStaticERKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEES5_RNSt6__ndk14listIS3_NS6_9allocatorIS3_EEEESB_Rf
+_ZN15ARVR_CONTROLLER13ImuBufferUtil16GetImuBufferSizeEv
+_ZN15ARVR_CONTROLLER13ImuBufferUtil5ResetEv
+_ZN15ARVR_CONTROLLER13ImuBufferUtilC1Ei
+_ZN15ARVR_CONTROLLER13ImuBufferUtilC2Ei
+_ZN15ARVR_CONTROLLER13ImuBufferUtilD1Ev
+_ZN15ARVR_CONTROLLER13ImuBufferUtilD2Ev
+_ZN15ARVR_CONTROLLER13QuaternionComEdRdS0_S0_S0_
+_ZN15ARVR_CONTROLLER16InvertQuaternionEddddRdS0_S0_S0_
+_ZN15ARVR_CONTROLLER19ComplementaryFilter13GetImuPredictERKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEEdRdS6_S6_S6_
+_ZN15ARVR_CONTROLLER19NormalizeQuaternionERdS0_S0_S0_
+_ZN15ARVR_CONTROLLER7DogBlob12SubPixRefineERNS_9PixelBlobE
+_ZN15ARVR_CONTROLLER7DogBlob8GetImageEv
+_ZN15ARVR_CONTROLLER7DogBlob8SetImageERKN2cv3MatE
+_ZN15ARVR_CONTROLLER7P2pWrot16SetObsMainCameraEiRKNSt6__ndk15arrayIiLm6EEE
+_ZN15ARVR_CONTROLLER7P3PPack13SetMaxRayDistERKNSt6__ndk15arrayIdLm6EEE
+_ZN15ARVR_CONTROLLER7P3PPack13SetMaxRayDistEd
+_ZN15ARVR_CONTROLLER7PnpData11AcceptFrameENSt6__ndk110shared_ptrINS_8HeadInfoEEE
+_ZN15ARVR_CONTROLLER7PnpData11FinishFrameEv
+_ZN15ARVR_CONTROLLER7PnpData12SetExtrinsicERKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZN15ARVR_CONTROLLER7PnpData14LogStereoErrorERKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZN15ARVR_CONTROLLER7PnpData14StereoMatchingERKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZN15ARVR_CONTROLLER7PnpData23CalcBlobStereoMatchInfoERKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZN15ARVR_CONTROLLER7PnpData7SetPoseENSt6__ndk110shared_ptrINS_8HeadInfoEEE
+_ZN15ARVR_CONTROLLER8BlobInfoC1EiRKNS_9PixelBlobEPNS_10CameraDataE
+_ZN15ARVR_CONTROLLER8BlobInfoC2EiRKNS_9PixelBlobEPNS_10CameraDataE
+_ZN15ARVR_CONTROLLER8HeadInfo13SetCameraPoseEdRKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEEi
+_ZN15ARVR_CONTROLLER8HeadInfo7SetPoseEdRKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZN15ARVR_CONTROLLER8HeadInfo7SetPoseEdRKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEES9_
+_ZN15ARVR_CONTROLLER8HeadInfoC1ERNSt6__ndk16vectorIPNS_10CameraDataENS1_9allocatorIS4_EEEE
+_ZN15ARVR_CONTROLLER8HeadInfoC2ERNSt6__ndk16vectorIPNS_10CameraDataENS1_9allocatorIS4_EEEE
+_ZN15ARVR_CONTROLLER8PNPCalib10CalcHesResERKNSt6__ndk110shared_ptrINS_7PnpDataEEE
+_ZN15ARVR_CONTROLLER8PNPCalib10MarginPoseEv
+_ZN15ARVR_CONTROLLER8PNPCalib12StepOptimizeEv
+_ZN15ARVR_CONTROLLER8PNPCalib6UpdateERKNSt6__ndk110shared_ptrINS_7PnpDataEEE
+_ZN15ARVR_CONTROLLER8PNPCalibC1ERKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZN15ARVR_CONTROLLER8PNPCalibC2ERKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZN15ARVR_CONTROLLER8PNPCalibD1Ev
+_ZN15ARVR_CONTROLLER8PNPCalibD2Ev
+_ZN15ARVR_CONTROLLER8PnpTrack10SolveTrackENSt6__ndk110shared_ptrINS_11CtlPnPStateEEEb
+_ZN15ARVR_CONTROLLER8PnpTrack11ProcessDataEv
+_ZN15ARVR_CONTROLLER8PnpTrack12SetNeedTrackERKNSt6__ndk16vectorIbNS1_9allocatorIbEEEE
+_ZN15ARVR_CONTROLLER8PnpTrack12TryMatchStepERKNSt6__ndk110shared_ptrINS_10MatchStateEEEiib
+_ZN15ARVR_CONTROLLER8PnpTrack13ResetTryMatchEv
+_ZN15ARVR_CONTROLLER8PnpTrack14SortMatchQueueEv
+_ZN15ARVR_CONTROLLER8PnpTrack15AddToMatchQueueERNSt6__ndk110shared_ptrINS_10MatchStateEEE
+_ZN15ARVR_CONTROLLER8PnpTrack15CheckMatchQueueENSt6__ndk110shared_ptrINS_11CtlPnPStateEEE
+_ZN15ARVR_CONTROLLER8PnpTrack17TryMatchMultiStepERKNSt6__ndk110shared_ptrINS_10MatchStateEEEiib
+_ZN15ARVR_CONTROLLER8PnpTrack19AddToFailMatchQueueERKNSt6__ndk110shared_ptrINS_10MatchStateEEE
+_ZN15ARVR_CONTROLLER8PnpTrack20ProcessMatchFinishedERNSt6__ndk110shared_ptrINS_10MatchStateEEEi
+_ZN15ARVR_CONTROLLER8PnpTrack22GenerateMatchCandidateERNSt6__ndk110shared_ptrINS_10MatchStateEEEi
+_ZN15ARVR_CONTROLLER8PnpTrack26GenerateMatchCandidateProjERNSt6__ndk110shared_ptrINS_10MatchStateEEEi
+_ZN15ARVR_CONTROLLER8PnpTrack27GenerateMatchCandidateResetERNSt6__ndk110shared_ptrINS_10MatchStateEEE
+_ZN15ARVR_CONTROLLER8PnpTrack8TryMatchERNSt6__ndk110shared_ptrINS_10MatchStateEEEiib
+_ZN15ARVR_CONTROLLER8PnpTrackC1ENSt6__ndk110shared_ptrINS_7PnpDataEEE
+_ZN15ARVR_CONTROLLER8PnpTrackC2ENSt6__ndk110shared_ptrINS_7PnpDataEEE
+_ZN15ARVR_CONTROLLER8PnpTrackD0Ev
+_ZN15ARVR_CONTROLLER8PnpTrackD1Ev
+_ZN15ARVR_CONTROLLER8PnpTrackD2Ev
+_ZN15ARVR_CONTROLLER9P3PSolver20SolveP3PStereoCameraERKNSt6__ndk110unique_ptrINS_7P3PPackENS1_14default_deleteIS3_EEEE
+_ZN15ARVR_CONTROLLER9P3PSolver22CalcStereoCameraLengthERKNSt6__ndk110unique_ptrINS_7P3PPackENS1_14default_deleteIS3_EEEERNS1_6vectorINS1_5arrayIdLm6EEENS1_9allocatorISB_EEEE
+_ZN15ARVR_CONTROLLER9P3pDetect20ProcessBufferPredictEd
+_ZN15ARVR_CONTROLLER9PnPModule15InitOnlineCalibEv
+_ZN17SlamSensorCounter12ResetAllTagsEv
+_ZN17SlamSensorCounter13IncreaseCountERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEdj
+_ZN17SlamSensorCounter13SetCountCycleEdd
+_ZN17SlamSensorCounter15DetectFrameInfoEd
+_ZN17SlamSensorCounter4InitEv
+_ZN17SlamSensorCounterC1Ev
+_ZN17SlamSensorCounterC2Ev
+_ZN17SlamSensorCounterD1Ev
+_ZN17SlamSensorCounterD2Ev
+_ZN2cv13mulTransposedERKNS_11_InputArrayERKNS_12_OutputArrayEbS2_di
+_ZN2cv14createTrackbarERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_PiiPFviPvESA_
+_ZN2cv14displayOverlayERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_i
+_ZN2cv14getTrackbarPosERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_
+_ZN2cv14insertImageCOIERKNS_11_InputArrayEPvi
+_ZN2cv14setTrackbarMaxERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_i
+_ZN2cv14setTrackbarMinERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_i
+_ZN2cv14setTrackbarPosERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_i
+_ZN2cv15extractImageCOIEPKvRKNS_12_OutputArrayEi
+_ZN2cv16displayStatusBarERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES8_i
+_ZN2cv18getWindowImageRectERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN2cv24currentParallelFrameworkEv
+_ZN2cv3Mat3eyeENS_5Size_IiEEi
+_ZN2cv3Mat3eyeEiii
+_ZN2cv3hal12magnitude32fEPKfS2_Pfi
+_ZN2cv3hal12magnitude64fEPKdS2_Pdi
+_ZN2cv3hal9magnitudeEPKdS2_Pdi
+_ZN2cv3hal9magnitudeEPKfS2_Pfi
+_ZN2cv4UMat3eyeENS_5Size_IiEEi
+_ZN2cv4UMat3eyeEiii
+_ZN2cv5utils7logging11setLogLevelENS1_8LogLevelE
+_ZN2cv7pollKeyEv
+_ZN2cv7waitKeyEi
+_ZN2cv9magnitudeERKNS_11_InputArrayES2_RKNS_12_OutputArrayE
+_ZN2cv9transposeERKNS_11_InputArrayERKNS_12_OutputArrayE
+_ZN2cv9waitKeyExEi
+_ZN5Eigen15PlainObjectBaseINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEEEC2INS_7ProductIS2_NS_9TransposeIS2_EELi0EEEEERKNS_9DenseBaseIT_EE
+_ZN5Eigen8internal12ldlt_inplaceILi1EE9unblockedINS_9TransposeINS_6MatrixIdLi6ELi6ELi0ELi6ELi6EEEEENS_14TranspositionsILi6ELi6EiEENS5_IdLi6ELi1ELi0ELi6ELi1EEEEEbRT_RT0_RT1_RNS0_10SignMatrixE
+_ZN5Eigen8internal12ldlt_inplaceILi1EE9unblockedINS_9TransposeINS_6MatrixIfLi12ELi12ELi0ELi12ELi12EEEEENS_14TranspositionsILi12ELi12EiEENS5_IfLi12ELi1ELi0ELi12ELi1EEEEEbRT_RT0_RT1_RNS0_10SignMatrixE
+_ZN5Eigen8internal12ldlt_inplaceILi1EE9unblockedINS_9TransposeINS_6MatrixIfLi6ELi6ELi0ELi6ELi6EEEEENS_14TranspositionsILi6ELi6EiEENS5_IfLi6ELi1ELi0ELi6ELi1EEEEEbRT_RT0_RT1_RNS0_10SignMatrixE
+_ZN5Eigen8internal13trmv_selectorILi6ELi1EE3runINS_9TransposeIKNS_5BlockIKNS5_INS_6MatrixIfLi2ELi2ELi0ELi2ELi2EEELin1ELin1ELb0EEELin1ELin1ELb0EEEEENS4_IKNS_13CwiseBinaryOpINS0_17scalar_product_opIffEEKNS_14CwiseNullaryOpINS0_18scalar_constant_opIfEEKNS6_IfLi1ELin1ELi1ELi1ELi2EEEEEKNS4_IKNS5_IKNS5_IS9_Lin1ELi1ELb1EEELin1ELi1ELb0EEEEEEEEENS4_INS5_INS5_INS6_IfLin1ELin1ELi1ELin1ELin1EEELi1ELin1ELb1EEELi1ELin1ELb0EEEEEEEvRKT_RKT0_RT1_RKNS16_6ScalarE
+_ZN5Eigen8internal13trmv_selectorILi6ELi1EE3runINS_9TransposeIKNS_5BlockIKNS5_INS_6MatrixIfLi3ELi2ELi0ELi3ELi2EEELin1ELin1ELb0EEELin1ELin1ELb0EEEEENS4_IKNS_13CwiseBinaryOpINS0_17scalar_product_opIffEEKNS_14CwiseNullaryOpINS0_18scalar_constant_opIfEEKNS6_IfLi1ELin1ELi1ELi1ELi3EEEEEKNS4_IKNS5_IKNS5_IS9_Lin1ELi1ELb1EEELin1ELi1ELb0EEEEEEEEENS4_INS5_INS5_INS6_IfLin1ELin1ELi1ELin1ELin1EEELi1ELin1ELb1EEELi1ELin1ELb0EEEEEEEvRKT_RKT0_RT1_RKNS16_6ScalarE
+_ZN5Eigen8internal15call_assignmentINS_6MatrixIfLin1ELin1ELi0ELi2ELi3EEENS_7ProductINS_14TriangularViewIKNS_9TransposeIKNS2_IfLin1ELin1ELi1ELin1ELin1EEEEELj1EEES3_Li0EEEEEvRT_RKT0_
+_ZN5Eigen8internal15call_assignmentINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEENS_7ProductINS4_INS_13CwiseBinaryOpINS0_17scalar_product_opIffEEKNS_14CwiseNullaryOpINS0_18scalar_constant_opIfEEKS3_EESB_EENS2_IfLi12ELi12ELi0ELi12ELi12EEELi0EEENS_9TransposeIS3_EELi0EEENS0_9assign_opIffEEEEvRT_RKT0_RKT1_NS0_9enable_ifIXsr25evaluator_assume_aliasingISO_EE5valueEPvE4typeE
+_ZN5Eigen8internal19gemv_dense_selectorILi2ELi0ELb1EE3runINS_6MatrixIfLin1ELi12ELi0ELin1ELi12EEENS_5BlockIKNS_9TransposeINS4_IfLin1ELin1ELi0ELin1ELin1EEEEELin1ELi1ELb0EEENS6_INS4_IfLin1ELin1ELi1ELin1ELin1EEELin1ELi1ELb0EEEEEvRKT_RKT0_RT1_RKNSK_6ScalarE
+_ZN5Eigen8internal19gemv_dense_selectorILi2ELi0ELb1EE3runINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEENS_5BlockIKNS_9TransposeIS5_EELin1ELi1ELb0EEENS6_INS4_IfLin1ELin1ELi1ELin1ELin1EEELin1ELi1ELb0EEEEEvRKT_RKT0_RT1_RKNSJ_6ScalarE
+_ZN5Eigen8internal19gemv_dense_selectorILi2ELi0ELb1EE3runINS_9TransposeIKNS4_INS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEEEEEENS4_IKNS_5BlockIKS6_Li1ELin1ELb0EEEEENS4_INSA_IS6_Li1ELin1ELb0EEEEEEEvRKT_RKT0_RT1_RKNSN_6ScalarE
+_ZN5Eigen8internal19gemv_dense_selectorILi2ELi1ELb1EE3runINS_5BlockINS_9TransposeINS_6MatrixIfLi12ELi12ELi0ELi12ELi12EEEEELin1ELin1ELb0EEENS4_INS6_IfLi12ELi1ELi0ELi12ELi1EEELin1ELi1ELb0EEENS4_IS8_Lin1ELi1ELb0EEEEEvRKT_RKT0_RT1_RKNSJ_6ScalarE
+_ZN5Eigen8internal19gemv_dense_selectorILi2ELi1ELb1EE3runINS_9TransposeIKNS_6MatrixIfLi12ELi12ELi0ELi12ELi12EEEEENS4_IKNS_5BlockIKNS_13CwiseBinaryOpINS0_17scalar_product_opIffEEKNS_14CwiseNullaryOpINS0_18scalar_constant_opIfEEKNS5_IfLin1ELin1ELi0ELin1ELin1EEEEESH_EELi1ELin1ELb0EEEEENS4_INS9_INS5_IfLin1ELi12ELi0ELin1ELi12EEELi1ELi12ELb0EEEEEEEvRKT_RKT0_RT1_RKNSY_6ScalarE
+_ZN5Eigen8internal19gemv_dense_selectorILi2ELi1ELb1EE3runINS_9TransposeIKNS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEEEENS4_IKNS_5BlockIS7_Li1ELin1ELb0EEEEENS4_INS9_IS6_Li1ELin1ELb0EEEEEEEvRKT_RKT0_RT1_RKNSL_6ScalarE
+_ZN5Eigen8internal19gemv_dense_selectorILi2ELi1ELb1EE3runINS_9TransposeINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEEEENS5_IfLin1ELi1ELi0ELin1ELi1EEENS5_IfLi6ELi1ELi0ELi6ELi1EEEEEvRKT_RKT0_RT1_RKNSG_6ScalarE
+_ZN5Eigen8internal20generic_product_implINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEENS_9TransposeIS3_EENS_10DenseShapeES6_Li8EE13scaleAndAddToIS3_EEvRT_RKS3_RKS5_RKf
+_ZN5Eigen8internal20generic_product_implINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEENS_9TransposeIS3_EENS_10DenseShapeES6_Li8EE6evalToIS3_EEvRT_RKS3_RKS5_
+_ZN5Eigen8internal20generic_product_implINS_7ProductINS_13CwiseBinaryOpINS0_17scalar_product_opIffEEKNS_14CwiseNullaryOpINS0_18scalar_constant_opIfEEKNS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEEEESB_EENS9_IfLi12ELi12ELi0ELi12ELi12EEELi0EEEKNS_5BlockIKNS_9TransposeISA_EELin1ELi1ELb0EEENS_10DenseShapeESN_Li7EE13scaleAndAddToINSH_INS9_IfLin1ELin1ELi1ELin1ELin1EEELin1ELi1ELb0EEEEEvRT_RKSG_RSM_RKf
+_ZN5Eigen8internal20generic_product_implINS_7ProductINS_13CwiseBinaryOpINS0_17scalar_product_opIffEEKNS_14CwiseNullaryOpINS0_18scalar_constant_opIfEEKNS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEEEESB_EENS9_IfLi12ELi12ELi0ELi12ELi12EEELi0EEENS_9TransposeISA_EENS_10DenseShapeESJ_Li8EE13scaleAndAddToINS9_IfLin1ELin1ELi1ELin1ELin1EEEEEvRT_RKSG_RKSI_RKf
+_ZN5Eigen8internal20generic_product_implINS_7ProductINS_13CwiseBinaryOpINS0_17scalar_product_opIffEEKNS_14CwiseNullaryOpINS0_18scalar_constant_opIfEEKNS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEEEESB_EENS9_IfLi12ELi12ELi0ELi12ELi12EEELi0EEENS_9TransposeISA_EENS_10DenseShapeESJ_Li8EE6evalToINS9_IfLin1ELin1ELi1ELin1ELin1EEEEEvRT_RKSG_RKSI_
+_ZN5Eigen8internal20generic_product_implINS_7ProductINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEES4_Li0EEEKNS_5BlockIKNS_9TransposeIS4_EELin1ELi1ELb0EEENS_10DenseShapeESC_Li7EE13scaleAndAddToINS6_INS3_IfLin1ELin1ELi1ELin1ELin1EEELin1ELi1ELb0EEEEEvRT_RKS5_RSB_RKf
+_ZN5Eigen8internal20generic_product_implINS_7ProductINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEES4_Li0EEENS_9TransposeIS4_EENS_10DenseShapeES8_Li8EE13scaleAndAddToINS3_IfLin1ELin1ELi1ELin1ELin1EEEEEvRT_RKS5_RKS7_RKf
+_ZN5Eigen8internal20generic_product_implINS_7ProductINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEES4_Li0EEENS_9TransposeIS4_EENS_10DenseShapeES8_Li8EE6evalToINS3_IfLin1ELin1ELi1ELin1ELin1EEEEEvRT_RKS5_RKS7_
+_ZN5Eigen8internal20generic_product_implINS_9TransposeINS_18TranspositionsBaseINS_14TranspositionsILi2ELi2EiEEEEEENS_6MatrixIfLi2ELi6ELi0ELi2ELi6EEENS_19TranspositionsShapeENS_10DenseShapeELi3EE6evalToIS9_EEvRT_RKS7_RKS9_
+_ZN5Eigen8internal20generic_product_implINS_9TransposeINS_18TranspositionsBaseINS_14TranspositionsILin1ELin1EiEEEEEENS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEENS_19TranspositionsShapeENS_10DenseShapeELi8EE6evalToIS9_EEvRT_RKS7_RKS9_
+_ZN5Eigen8internal20generic_product_implINS_9TransposeINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEEEES4_NS_10DenseShapeES6_Li8EE13scaleAndAddToINS3_IfLi6ELi6ELi0ELi6ELi6EEEEEvRT_RKS5_RKS4_RKf
+_ZN5Eigen8internal21dense_assignment_loopINS0_41restricted_packet_dense_assignment_kernelINS0_9evaluatorINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEEEENS3_INS_7ProductIS5_NS_9TransposeIKS5_EELi1EEEEENS0_9assign_opIffEEEELi4ELi0EE3runERSF_
+_ZN5Eigen8internal23triangular_product_implILi1ELb1EKNS_9TransposeIKNS_6MatrixIfLin1ELin1ELi1ELin1ELin1EEEEELb0ENS3_IfLin1ELin1ELi0ELi2ELi2EEELb0EE3runINS3_IfLin1ELin1ELi0ELin1ELi2EEEEEvRT_RS7_RKS8_RKNSC_6ScalarE
+_ZN5Eigen8internal23triangular_product_implILi1ELb1EKNS_9TransposeIKNS_6MatrixIfLin1ELin1ELi1ELin1ELin1EEEEELb0ENS3_IfLin1ELin1ELi0ELi2ELi3EEELb0EE3runINS3_IfLin1ELin1ELi0ELin1ELi3EEEEEvRT_RS7_RKS8_RKNSC_6ScalarE
+_ZN5Eigen8internal26call_dense_assignment_loopINS_6MatrixIdLi6ELi6ELi0ELi6ELi6EEENS_7ProductIS3_NS_9TransposeINS_5BlockINS2_IdLi12ELi12ELi0ELi12ELi12EEELi6ELi6ELb0EEEEELi1EEENS0_13sub_assign_opIddEEEEvRT_RKT0_RKT1_
+_ZN5Eigen8internal26call_dense_assignment_loopINS_6MatrixIfLi3ELi3ELi0ELi3ELi3EEENS_7ProductINS4_INS4_INS_9TransposeIKNS_7InverseIS3_EEEES3_Li0EEES3_Li0EEES7_Li1EEENS0_9assign_opIffEEEEvRT_RKT0_RKT1_
+_ZN5Eigen8internal26call_dense_assignment_loopINS_6MatrixIfLi3ELi3ELi0ELi3ELi3EEENS_7ProductINS_9TransposeIKNS_7InverseIS3_EEEES3_Li1EEENS0_9assign_opIffEEEEvRT_RKT0_RKT1_
+_ZN5Eigen8internal26call_dense_assignment_loopINS_6MatrixIfLi6ELi6ELi0ELi6ELi6EEENS_13CwiseBinaryOpINS0_18scalar_quotient_opIffEEKNS4_INS0_13scalar_sum_opIffEEKS3_KNS_9TransposeIS3_EEEEKNS_14CwiseNullaryOpINS0_18scalar_constant_opIfEES9_EEEENS0_9assign_opIffEEEEvRT_RKT0_RKT1_
+_ZN5Eigen8internal26call_dense_assignment_loopINS_6MatrixIfLi6ELi6ELi0ELi6ELi6EEENS_7ProductINS4_INS_5BlockINS2_IfLi12ELi12ELi0ELi12ELi12EEELi6ELi6ELb0EEENS_7InverseIS7_EELi0EEENS_9TransposeIS7_EELi1EEENS0_13sub_assign_opIffEEEEvRT_RKT0_RKT1_
+_ZN5Eigen8internal26call_dense_assignment_loopINS_6MatrixIfLi6ELi6ELi0ELi6ELi6EEENS_7ProductINS_13CwiseBinaryOpINS0_20scalar_difference_opIffEEKNS_14CwiseNullaryOpINS0_18scalar_identity_opIfEES3_EEKNS4_INS_9TransposeINS2_IfLi2ELi6ELi0ELi2ELi6EEEEESE_Li0EEEEES3_Li1EEENS0_9assign_opIffEEEEvRT_RKT0_RKT1_
+_ZN5Eigen8internal26call_dense_assignment_loopINS_6MatrixIfLi6ELi6ELi0ELi6ELi6EEENS_7ProductINS_13CwiseBinaryOpINS0_20scalar_difference_opIffEEKNS_14CwiseNullaryOpINS0_18scalar_identity_opIfEES3_EEKNS4_INS_9TransposeINS2_IfLin1ELin1ELi0ELin1ELin1EEEEESE_Li0EEEEES3_Li1EEENS0_9assign_opIffEEEEvRT_RKT0_RKT1_
+_ZN5Eigen8internal26call_dense_assignment_loopINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEENS_13CwiseBinaryOpINS0_13scalar_sum_opIffEEKNS_7ProductINS7_IS3_S3_Li0EEENS_9TransposeIS3_EELi0EEEKS3_EENS0_9assign_opIffEEEEvRT_RKT0_RKT1_
+_ZN5Eigen8internal26call_dense_assignment_loopINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEENS_13CwiseBinaryOpINS0_13scalar_sum_opIffEEKNS_7ProductIS3_NS_9TransposeIS3_EELi0EEEKS3_EENS0_9assign_opIffEEEEvRT_RKT0_RKT1_
+_ZN5Eigen8internal26quaternionbase_assign_implINS_5BlockINS_6MatrixIfLi4ELi4ELi0ELi4ELi4EEELi3ELi3ELb0EEELi3ELi3EE3runINS_10QuaternionIfLi0EEEEEvRNS_14QuaternionBaseIT_EERKS5_
+_ZN5Eigen8internal26quaternionbase_assign_implINS_6MatrixIfLi3ELi3ELi0ELi3ELi3EEELi3ELi3EE3runINS_10QuaternionIfLi0EEEEEvRNS_14QuaternionBaseIT_EERKS3_
+_ZN5Eigen8internal26triangular_solver_selectorIKNS_9TransposeIKNS2_IKNS_6MatrixIdLi6ELi6ELi0ELi6ELi6EEEEEEENS3_IdLin1ELi1ELi0ELin1ELi1EEELi1ELi6ELi0ELi1EE3runERS9_RSA_
+_ZN5Eigen8internal26triangular_solver_selectorIKNS_9TransposeIKNS_5BlockINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEELin1ELin1ELb0EEEEES6_Li2ELi2ELi0ELin1EE3runERS9_RS6_
+_ZN5Eigen8internal26triangular_solver_selectorIKNS_9TransposeIKNS_6MatrixIdLi6ELi6ELi0ELi6ELi6EEEEENS3_IdLin1ELi1ELi0ELin1ELi1EEELi1ELi5ELi0ELi1EE3runERS7_RS8_
+_ZN5Eigen8internal26triangular_solver_selectorIKNS_9TransposeIKNS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEEEES4_Li1ELi2ELi0ELin1EE3runERS7_RS4_
+_ZN5Eigen8internal26triangular_solver_selectorIKNS_9TransposeIKNS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEEEES4_Li1ELi6ELi0ELin1EE3runERS7_RS4_
+_ZN5Eigen8internal42call_restricted_packet_assignment_no_aliasINS_6MatrixIfLi6ELi6ELi0ELi6ELi6EEENS_7ProductINS_9TransposeIKNS2_IfLin1ELin1ELi0ELin1ELin1EEEEES6_Li1EEENS0_13sub_assign_opIffEEEEvRT_RKT0_RKT1_
+_ZN5Eigen8internal42call_restricted_packet_assignment_no_aliasINS_6MatrixIfLin1ELin1ELi1ELin1ELin1EEENS_7ProductINS4_INS2_IfLin1ELin1ELi0ELin1ELin1EEES5_Li0EEENS_9TransposeIKS5_EELi1EEENS0_9assign_opIffEEEEvRT_RKT0_RKT1_
+_ZN5Eigen8internal42call_restricted_packet_assignment_no_aliasINS_6MatrixIfLin1ELin1ELi1ELin1ELin1EEENS_7ProductINS4_INS_13CwiseBinaryOpINS0_17scalar_product_opIffEEKNS_14CwiseNullaryOpINS0_18scalar_constant_opIfEEKNS2_IfLin1ELin1ELi0ELin1ELin1EEEEESC_EENS2_IfLi12ELi12ELi0ELi12ELi12EEELi0EEENS_9TransposeISC_EELi1EEENS0_9assign_opIffEEEEvRT_RKT0_RKT1_
+_ZN6VIO_HC14GravityTracker10SetInitGraERKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZN6VIO_HC14GravityTracker13IsGravityInitERKNSt6__ndk16vectorI18HandlerSensorEventNS1_9allocatorIS3_EEEEd
+_ZN6VIO_HC14GravityTracker14ProcessGravityERKNSt6__ndk16vectorI18HandlerSensorEventNS1_9allocatorIS3_EEEEdi
+_ZN6VIO_HC14GravityTracker14UpdateGyroBiasERKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEES5_
+_ZN6VIO_HC14GravityTracker20CalcuGravityWithAhrsERKNSt6__ndk16vectorI18HandlerSensorEventNS1_9allocatorIS3_EEEEd
+_ZN6VIO_HC14GravityTracker7GpeAhrsERKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEES5_d
+_ZN6VIO_HC14GravityTrackerC1Ev
+_ZN6VIO_HC14GravityTrackerC2Ev
+_ZN6VIO_HC14GravityTrackerD1Ev
+_ZN6VIO_HC14GravityTrackerD2Ev
+_ZN6VIO_HC7HcState12InitHeaderExERKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEEi
+_ZN6VIO_HC7HcState15InitImuNoiseMatEv
+_ZN6VIO_HC7HcState25PredictAndComputeJacobianEdRKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEES5_RNS2_IfLin1ELin1ELi0ELin1ELin1EEES7_
+_ZN6VIO_HC7HcState7PredictEdRKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEES5_
+_ZN6VIO_HC9HCTracker10PredictImuEdRKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEES5_RNS2_IfLin1ELin1ELi0ELin1ELin1EEE
+_ZN6VIO_HC9HCTracker11ImuCallBackERKNSt6__ndk16vectorI18HandlerSensorEventNS1_9allocatorIS3_EEEEdRN5Eigen6MatrixIfLin1ELin1ELi0ELin1ELin1EEE
+_ZN6VIO_HC9HCTracker11ProcessDataERKNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER8HeadInfoEEERNS2_INS3_10ControllerEEE
+_ZN6VIO_HC9HCTracker12StateProcessERKNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER8HeadInfoEEEiRNS1_6vectorI18HandlerSensorEventNS1_9allocatorIS9_EEEERNS2_INS3_10ControllerEEE
+_ZN6VIO_HC9HCTracker13InitHandleVioERKN15ARVR_CONTROLLER12HeadPoseQpvbERKNS1_15ControllerStateEdN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZN6VIO_HC9HCTracker13VioInitializeERNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER10ControllerEEERKNS2_INS3_8HeadInfoEEERKd
+_ZN6VIO_HC9HCTracker14InitHcStateCovEv
+_ZN6VIO_HC9HCTracker14ObserveBlobNumERKNSt6__ndk16vectorIPN15ARVR_CONTROLLER10CameraDataENS1_9allocatorIS5_EEEEj
+_ZN6VIO_HC9HCTracker14ProcessInitVioERKNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER8HeadInfoEEERNS2_INS3_10ControllerEEEN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEERKd
+_ZN6VIO_HC9HCTracker15HandlePoseStateERKNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER8HeadInfoEEERNS2_INS3_10ControllerEEEi
+_ZN6VIO_HC9HCTracker18GetImuBetweenFrameERKNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER10ControllerEEERNS1_6vectorI18HandlerSensorEventNS1_9allocatorIS9_EEEEdd
+_ZN6VIO_HC9HCTracker4InitEv
+_ZN6VIO_HC9HCTrackerC1Ev
+_ZN6VIO_HC9HCTrackerC2Ev
+_ZN6VIO_HC9HCTrackerD1Ev
+_ZN6VIO_HC9HCTrackerD2Ev
+_ZN7HW_SLAM10PoseSmooth10SetVioPoseERKN15ARVR_CONTROLLER15SmoothPoseStateE
+_ZN7HW_SLAM10PoseSmooth11ProcessDataEv
+_ZN7HW_SLAM10PoseSmooth18PredictDisplayPoseERN15ARVR_CONTROLLER12HandlerStateEdN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEES6_
+_ZN7HW_SLAM10PoseSmooth4InitEv
+_ZN7HW_SLAM10PoseSmooth6DeinitEv
+_ZN7HW_SLAM10PoseSmooth6ResumeEv
+_ZN7HW_SLAM10PoseSmoothC1ERNS_5EventE
+_ZN7HW_SLAM10PoseSmoothC2ERNS_5EventE
+_ZN7HW_SLAM10PoseSmoothD0Ev
+_ZN7HW_SLAM10PoseSmoothD1Ev
+_ZN7HW_SLAM10PoseSmoothD2Ev
+_ZN7HW_SLAM10SlamThread10CheckPauseEv
+_ZN7HW_SLAM10SlamThread11PauseThreadEv
+_ZN7HW_SLAM10SlamThread11PrepareExitEv
+_ZN7HW_SLAM10SlamThread11RequestExitEv
+_ZN7HW_SLAM10SlamThread12OnThreadExitEv
+_ZN7HW_SLAM10SlamThread12ResumeThreadEv
+_ZN7HW_SLAM10SlamThread13OnThreadReadyEv
+_ZN7HW_SLAM10SlamThread3RunEv
+_ZN7HW_SLAM10SlamThread4LoopEPv
+_ZN7HW_SLAM10SlamThreadC2ERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN7HW_SLAM10SlamThreadD0Ev
+_ZN7HW_SLAM10SlamThreadD1Ev
+_ZN7HW_SLAM10SlamThreadD2Ev
+_ZN7HW_SLAM10Subscriber4ImplC2ERKNSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEESA_RKNS2_8functionIFvRKNS2_10shared_ptrIvEEEEEm
+_ZN7HW_SLAM10SubscriberD0Ev
+_ZN7HW_SLAM10SubscriberD2Ev
+_ZN7HW_SLAM14SlamMainThread10CheckPauseEv
+_ZN7HW_SLAM14SlamMainThread10ProcessMsgEv
+_ZN7HW_SLAM14SlamMainThread10ThreadLoopEv
+_ZN7HW_SLAM14SlamMainThread11PauseThreadEv
+_ZN7HW_SLAM14SlamMainThread11PrepareExitEv
+_ZN7HW_SLAM14SlamMainThread12ResumeThreadEv
+_ZN7HW_SLAM14SlamMainThread13OnThreadReadyEv
+_ZN7HW_SLAM14SlamMainThread7BindAppEP12ThreadModule
+_ZN7HW_SLAM14SlamMainThread9UnBindAppEv
+_ZN7HW_SLAM14SlamMainThreadC1ERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN7HW_SLAM14SlamMainThreadC2ERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN7HW_SLAM14SlamMainThreadD0Ev
+_ZN7HW_SLAM14SlamMainThreadD1Ev
+_ZN7HW_SLAM14SlamMainThreadD2Ev
+_ZN7HW_SLAM15ResourceManager11GetInstanceEv
+_ZN7HW_SLAM15ResourceManager16g_rsourceManagerE
+_ZN7HW_SLAM15ResourceManager4InitEv
+_ZN7HW_SLAM15ResourceManager6DeinitEv
+_ZN7HW_SLAM15ResourceManagerC1Ev
+_ZN7HW_SLAM15ResourceManagerC2Ev
+_ZN7HW_SLAM15ResourceManagerD0Ev
+_ZN7HW_SLAM15ResourceManagerD1Ev
+_ZN7HW_SLAM15ResourceManagerD2Ev
+_ZN7HW_SLAM16HandlerOutResult11TranlatePosERPNSt6__ndk16vectorI11HandlerPoseNS1_9allocatorIS3_EEEE
+_ZN7HW_SLAM16HandlerOutResult4InitEv
+_ZN7HW_SLAM16HandlerOutResult6DeinitEv
+_ZN7HW_SLAM16HandlerOutResult6ResumeEv
+_ZN7HW_SLAM16HandlerOutResult7GetDataEP16HxrAlgorithmData
+_ZN7HW_SLAM16HandlerOutResult8GetValueERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEElPv
+_ZN7HW_SLAM16HandlerOutResultC1Ev
+_ZN7HW_SLAM16HandlerOutResultC2Ev
+_ZN7HW_SLAM16HandlerOutResultD0Ev
+_ZN7HW_SLAM16HandlerOutResultD1Ev
+_ZN7HW_SLAM16HandlerOutResultD2Ev
+_ZN7HW_SLAM16SingleThreadTool13WaitNextFrameEv
+_ZN7HW_SLAM16SingleThreadTool16NotifyFrameReadyEv
+_ZN7HW_SLAM16SingleThreadTool9StartDrawEv
+_ZN7HW_SLAM16SingleThreadToolC1Ev
+_ZN7HW_SLAM16SingleThreadToolC2Ev
+_ZN7HW_SLAM16SingleThreadToolD1Ev
+_ZN7HW_SLAM16SingleThreadToolD2Ev
+_ZN7HW_SLAM17HandlerOutputPose10ProcessPosERNSt6__ndk16vectorI11HandlerPoseNS1_9allocatorIS3_EEEEl
+_ZN7HW_SLAM17HandlerOutputPose15CheckStateValidERKN15ARVR_CONTROLLER12HandlerStateERNSt6__ndk16vectorI11HandlerPoseNS5_9allocatorIS7_EEEEi
+_ZN7HW_SLAM17HandlerOutputPose15StateEstimationERKN15ARVR_CONTROLLER12HandlerStateEiR11HandlerPosed
+_ZN7HW_SLAM17HandlerOutputPose7Get6DofERNSt6__ndk16vectorI11HandlerPoseNS1_9allocatorIS3_EEEEl
+_ZN7HW_SLAM17HandlerOutputPoseC1Ev
+_ZN7HW_SLAM17HandlerOutputPoseC2Ev
+_ZN7HW_SLAM17HandlerOutputPoseD0Ev
+_ZN7HW_SLAM17HandlerOutputPoseD1Ev
+_ZN7HW_SLAM17HandlerOutputPoseD2Ev
+_ZN7HW_SLAM18ModuleInterfaceSet11g_sInstanceE
+_ZN7HW_SLAM18ModuleInterfaceSet13SetValueToSDKERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEmPKv
+_ZN7HW_SLAM18ModuleInterfaceSet15GetValueFromSDKERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEmPv
+_ZN7HW_SLAM18ModuleInterfaceSet19RegisterSDKCallbackERK23HxrAlgorithmCallbackSet
+_ZN7HW_SLAM18ModuleInterfaceSet21UnregisterSDKCallbackEv
+_ZN7HW_SLAM18ModuleInterfaceSet6DeinitEv
+_ZN7HW_SLAM18ModuleInterfaceSet8InstanceEv
+_ZN7HW_SLAM18ModuleInterfaceSetC1Ev
+_ZN7HW_SLAM18ModuleInterfaceSetC2Ev
+_ZN7HW_SLAM18ModuleInterfaceSetD1Ev
+_ZN7HW_SLAM18ModuleInterfaceSetD2Ev
+_ZN7HW_SLAM19HandlerParamManager13LoadInitParamEv
+_ZN7HW_SLAM19HandlerParamManager4InitEv
+_ZN7HW_SLAM19HandlerParamManager6DeinitEv
+_ZN7HW_SLAM19HandlerParamManager8GetValueERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEElPv
+_ZN7HW_SLAM19HandlerParamManager8SetValueERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEElPKv
+_ZN7HW_SLAM19HandlerParamManagerC1Ev
+_ZN7HW_SLAM19HandlerParamManagerC2Ev
+_ZN7HW_SLAM19HandlerParamManagerD0Ev
+_ZN7HW_SLAM19HandlerParamManagerD1Ev
+_ZN7HW_SLAM19HandlerParamManagerD2Ev
+_ZN7HW_SLAM9HSCommand15RegisterCommandENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPFiPvS7_S8_lES8_
+_ZN7HW_SLAM9HSCommand17UnRegisterCommandENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN7HW_SLAM9HSCommand17UnRegisterCommandENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPv
+_ZN7HW_SLAM9HSCommand17UnRegisterCommandEPv
+_ZN7HW_SLAM9HSCommand4CallENSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPvl
+_ZN7HW_SLAM9HSCommand4CallERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZN7HW_SLAM9HSCommand5ClearEv
+_ZN7HW_SLAM9HSCommand8InstanceEv
+_ZN7HW_SLAM9HSCommandC1Ev
+_ZN7HW_SLAM9HSCommandC2Ev
+_ZN7HW_SLAM9Messenger13FindPublisherERNS_10SubscriberE
+_ZN7HW_SLAM9Messenger14FindSubscriberERKNSt6__ndk110shared_ptrINS_9Publisher4ImplEEE
+_ZN7HW_SLAM9Messenger4Data5ClearEv
+_ZN7HW_SLAM9Messenger8InstanceEv
+_ZN7HW_SLAM9Messenger9AdvertiseIN15ARVR_CONTROLLER15SmoothPoseStateEEENS_9PublisherERKNSt6__ndk112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEjb
+_ZN7HW_SLAM9Messenger9AdvertiseIN15ARVR_CONTROLLER8HeadInfoEEENS_9PublisherERKNSt6__ndk112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEjb
+_ZN7HW_SLAM9Messenger9AdvertiseIRN15ARVR_CONTROLLER7PnpDataEEENS_9PublisherERKNSt6__ndk112basic_stringIcNS6_11char_traitsIcEENS6_9allocatorIcEEEEjb
+_ZN7HW_SLAM9Messenger9AdvertiseIRN15ARVR_CONTROLLER8HeadInfoEEENS_9PublisherERKNSt6__ndk112basic_stringIcNS6_11char_traitsIcEENS6_9allocatorIcEEEEjb
+_ZN7HW_SLAM9Messenger9SubscribeI11AIDetectionN15ARVR_CONTROLLER8HeadInfoEEENS_10SubscriberERKNSt6__ndk112basic_stringIcNS6_11char_traitsIcEENS6_9allocatorIcEEEEjMT_FvRKNS6_10shared_ptrIT0_EEEPSF_
+_ZN7HW_SLAM9Messenger9SubscribeI13BlobDetectionN15ARVR_CONTROLLER8HeadInfoEEENS_10SubscriberERKNSt6__ndk112basic_stringIcNS6_11char_traitsIcEENS6_9allocatorIcEEEEjMT_FvRKNS6_10shared_ptrIT0_EEEPSF_
+_ZN7HW_SLAM9Messenger9SubscribeIN15ARVR_CONTROLLER15SmoothPoseStateEEENS_10SubscriberERKNSt6__ndk112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEjNS5_8functionIFvRKNS5_10shared_ptrIT_EEEEE
+_ZN7HW_SLAM9Messenger9SubscribeIN15ARVR_CONTROLLER7PnpDataEEENS_10SubscriberERKNSt6__ndk112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEjNS5_8functionIFvRKNS5_10shared_ptrIT_EEEEE
+_ZN7HW_SLAM9Messenger9SubscribeIN15ARVR_CONTROLLER8HeadInfoEEENS_10SubscriberERKNSt6__ndk112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEjNS5_8functionIFvRKNS5_10shared_ptrIT_EEEEE
+_ZN7HW_SLAM9Messenger9SubscribeIN15ARVR_CONTROLLER9PnPModuleENS2_7PnpDataEEENS_10SubscriberERKNSt6__ndk112basic_stringIcNS6_11char_traitsIcEENS6_9allocatorIcEEEEjMT_FvRKNS6_10shared_ptrIT0_EEEPSF_
+_ZN7HW_SLAM9Messenger9SubscribeINS_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS_10SubscriberERKNSt6__ndk112basic_stringIcNS6_11char_traitsIcEENS6_9allocatorIcEEEEjMT_FvRKT0_EPSF_
+_ZN7HW_SLAM9MessengerD0Ev
+_ZN7HW_SLAM9MessengerD2Ev
+_ZN7HW_SLAM9PublisherD0Ev
+_ZN7HW_SLAM9PublisherD2Ev
+_ZN8HSModule7GetDataEP16HxrAlgorithmData
+_ZN8HSModule8PushDataEPK16HxrAlgorithmData
+_ZNK10ImgPreProc12CheckSlamposERK16SlamGetPoseInput
+_ZNK10ImgPreProc16PackFrameAndHeadERK23HandlerImageAndSlamInfoRK16SlamGetPoseInputRNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER8HeadInfoEEE
+_ZNK10ImuPreProc13CompensateImuER18HandlerSensorEventi
+_ZNK10ImuPreProc4NameEv
+_ZNK13BlobDetection10PredictImuEdRKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEES4_RN15ARVR_CONTROLLER15ControllerStateE
+_ZNK13BlobDetection14GetCurrentPoseERA2_Kb
+_ZNK13BlobDetection17PredictHandlePoseEddNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER10ControllerEEENS1_INS2_13ImuBufferUtilEEE
+_ZNK13BlobDetection17ProcessImuPredictERNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER13ImuBufferUtilEEEddRNS1_INS2_10ControllerEEE
+_ZNK14SlamThreadPool7ReleaseEv
+_ZNK15ARVR_CONTROLLER10CameraData5CloneEbPNS_8HeadInfoE
+_ZNK15ARVR_CONTROLLER10CameraData9ShowImageEb
+_ZNK15ARVR_CONTROLLER10CameraInfo11ProjDistortERKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEERbPNS2_IfLi2ELi3ELi0ELi2ELi3EEEPNS2_IfLi2ELi6ELi0ELi2ELi6EEE
+_ZNK15ARVR_CONTROLLER10CameraInfo12DistortPixelERKN5Eigen6MatrixIfLi2ELi1ELi0ELi2ELi1EEE
+_ZNK15ARVR_CONTROLLER10CameraInfo12GetIntrinsicEv
+_ZNK15ARVR_CONTROLLER10CameraInfo13CalcExtrinsicERKNSt6__ndk110shared_ptrIS0_EERN5Eigen10QuaternionIfLi0EEERNS6_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZNK15ARVR_CONTROLLER10CameraInfo13GetDistortionEv
+_ZNK15ARVR_CONTROLLER10CameraInfo13ProjUndistortERKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEEPNS2_IfLi2ELi3ELi0ELi2ELi3EEE
+_ZNK15ARVR_CONTROLLER10CameraInfo15CalcFundamentalERKNSt6__ndk110shared_ptrIS0_EERN5Eigen6MatrixIfLi3ELi3ELi0ELi3ELi3EEE
+_ZNK15ARVR_CONTROLLER10CameraInfo7DistortEfPfPN5Eigen6MatrixIfLi4ELi1ELi0ELi4ELi1EEE
+_ZNK15ARVR_CONTROLLER10CameraInfo8Pixel2UvERKN5Eigen6MatrixIfLi2ELi1ELi0ELi2ELi1EEE
+_ZNK15ARVR_CONTROLLER10CameraInfo9DistortUvERKN5Eigen6MatrixIfLi2ELi1ELi0ELi2ELi1EEEPNS2_IfLi2ELi2ELi0ELi2ELi2EEEPNS2_IfLi2ELi6ELi0ELi2ELi6EEE
+_ZNK15ARVR_CONTROLLER10CameraInfo9UndistortERKN5Eigen6MatrixIfLi2ELi1ELi0ELi2ELi1EEE
+_ZNK15ARVR_CONTROLLER10Controller10DrawHandleERN2cv3MatEPKNS_10CameraDataEii
+_ZNK15ARVR_CONTROLLER10Controller14DrawHandleProjERN2cv3MatEPKNS_10CameraDataERKN5Eigen10QuaternionIfLi0EEERKNS7_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZNK15ARVR_CONTROLLER10Controller17ProjectHandleBBoxERKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEEPKNS_10CameraDataE
+_ZNK15ARVR_CONTROLLER10Controller20DrawHandleModelPointERKN2cv3MatEPKNS_10CameraDataERKN5Eigen10QuaternionIfLi0EEERKNS8_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZNK15ARVR_CONTROLLER10LedProject14CalcViewCosRadERKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEERKNS1_10QuaternionIfLi0EEE
+_ZNK15ARVR_CONTROLLER10MatchState13VisualizeBlobERKNSt6__ndk16vectorIN2cv3MatENS1_9allocatorIS4_EEEERKNS1_10shared_ptrINS_7PnpDataEEERNS2_IPNS_10CameraDataENS5_ISG_EEEERKNS2_INSA_INS_10ControllerEEENS5_ISL_EEEEb
+_ZNK15ARVR_CONTROLLER10MatchState19VisualizeProjectionERKNSt6__ndk16vectorIN2cv3MatENS1_9allocatorIS4_EEEERKNS1_10shared_ptrINS_7PnpDataEEERKNS2_IPNS_10CameraDataENS5_ISG_EEEE
+_ZNK15ARVR_CONTROLLER11CtlPnPState11PredictRectENSt6__ndk110shared_ptrINS_8HeadInfoEEERN5Eigen10QuaternionIfLi0EEERNS5_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZNK15ARVR_CONTROLLER13ImuBufferUtil16GetStartSearchNoERNS_10RingBufferI18HandlerSensorEventEERKNS_9RangeInfoE
+_ZNK15ARVR_CONTROLLER13ImuBufferUtil9InterpImuERNS_10RingBufferI18HandlerSensorEventEEjdRNSt6__ndk16vectorIS2_NS5_9allocatorIS2_EEEE
+_ZNK15ARVR_CONTROLLER19ComplementaryFilter16GetAccCorrectionEdddddddRdS1_S1_S1_
+_ZNK15ARVR_CONTROLLER19ComplementaryFilter16GetMagCorrectionEdddddddRdS1_S1_S1_
+_ZNK15ARVR_CONTROLLER7DogBlob12CheckMinimumEPPKfiif
+_ZNK15ARVR_CONTROLLER7DogBlob22SubPixRefineHessianResERKNSt6__ndk16vectorIN2cv3MatENS1_9allocatorIS4_EEEERKNS_9PixelBlobERN5Eigen6MatrixIdLi3ELi3ELi0ELi3ELi3EEERNSE_IdLi3ELi1ELi0ELi3ELi1EEE
+_ZNK15ARVR_CONTROLLER7LedInfo12Proj2CamDistERKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEERbPKNS_10CameraDataEPNS6_IfLi2ELi6ELi0ELi2ELi6EEE
+_ZNK15ARVR_CONTROLLER7LedInfo8Proj2CamEPKNS_10CameraDataEPN5Eigen6MatrixIfLi2ELi6ELi0ELi2ELi6EEE
+_ZNK15ARVR_CONTROLLER7LedInfo8Proj2CamERKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEEPKNS_10CameraDataEPNS6_IfLi2ELi6ELi0ELi2ELi6EEE
+_ZNK15ARVR_CONTROLLER7PnpBase17SetControllerPoseERKNSt6__ndk110shared_ptrINS_11CtlPnPStateEEERKNS2_INS_10MatchStateEEE
+_ZNK15ARVR_CONTROLLER7PnpData12GetExtrinsicEiiRN5Eigen10QuaternionIfLi0EEERNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZNK15ARVR_CONTROLLER8PNPCalib12GetExtrinsicERN5Eigen10QuaternionIfLi0EEERNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEE
+_ZNK15ARVR_CONTROLLER8PnpTrack11CheckReprojERNSt6__ndk110shared_ptrINS_10MatchStateEEE
+_ZNK15ARVR_CONTROLLER8PnpTrack13OneCandUpdateERKNSt6__ndk110shared_ptrINS_8BlobInfoEEERKNS2_INS_10LedProjectEEERKNS2_INS_10MatchStateEEE
+_ZNK15ARVR_CONTROLLER8PnpTrack17CheckLackMatchingERKNSt6__ndk110shared_ptrINS_10MatchStateEEE
+_ZNK15ARVR_CONTROLLER8PnpTrack17MatchResultRefineERKNSt6__ndk110shared_ptrINS_10MatchStateEEE
+_ZNK15ARVR_CONTROLLER8PnpTrack17MatchResultVarifyERKNSt6__ndk110shared_ptrINS_10MatchStateEEEif
+_ZNK15ARVR_CONTROLLER8PnpTrack22OneCandUpdateWithMatchERKiRKNSt6__ndk110shared_ptrINS_10LedProjectEEERKNS4_INS_10MatchStateEEE
+_ZNK15ARVR_CONTROLLER8PnpTrack24MultiCandUpdateWithMatchERKNSt6__ndk16vectorINS1_4pairIiNS2_INS1_10shared_ptrINS_10LedProjectEEENS1_9allocatorIS6_EEEEEENS7_ISA_EEEERKNS4_INS_10MatchStateEEE
+_ZNK15ARVR_CONTROLLER9P3PSolver14CalcPoseMirrorERKNSt6__ndk110unique_ptrINS_7P3PPackENS1_14default_deleteIS3_EEEERKNS1_5arrayIdLm3EEESC_RKNS9_IdLm16EEERKNS1_4pairImmEE
+_ZNK15ARVR_CONTROLLER9P3PSolver20SolveP3PSingleCameraERKNSt6__ndk110unique_ptrINS_7P3PPackENS1_14default_deleteIS3_EEEE
+_ZNK15ARVR_CONTROLLER9P3PSolver26FilterNonSenseCameraLengthERKNSt6__ndk110unique_ptrINS_7P3PPackENS1_14default_deleteIS3_EEEERKNS1_6vectorINS1_5arrayIdLm6EEENS1_9allocatorISB_EEEE
+_ZNK15ARVR_CONTROLLER9P3PSolver8CalcPoseERKNSt6__ndk110unique_ptrINS_7P3PPackENS1_14default_deleteIS3_EEEERKNS1_5arrayIdLm3EEESC_RKNS9_IdLm16EEERKNS1_4pairImmEE
+_ZNK15ARVR_CONTROLLER9P3pDetect16SetObsMainCameraEiRKNSt6__ndk15arrayIiLm6EEE
+_ZNK17SlamSensorCounter19GetTolerateTimeIntvERKNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZNK2cv12MatAllocator3mapEPNS_8UMatDataENS_10AccessFlagE
+_ZNK2cv14DefaultDeleterI9_IplImageEclEPS1_
+_ZNK2cv16MatConstIterator3posEPi
+_ZNK2cv16MatConstIterator3posEv
+_ZNK2cv16MatConstIterator4lposEv
+_ZNK2cv3Mat7getUMatENS_10AccessFlagENS_14UMatUsageFlagsE
+_ZNK2cv4UMat6getMatENS_10AccessFlagE
+_ZNK2cv4UMat6handleENS_10AccessFlagE
+_ZNK2cv4UMat8ndoffsetEPm
+_ZNK2cv5MatOp9transposeERKNS_7MatExprERS1_
+_ZNK5Eigen3LLTINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEELi1EE22_solve_impl_transposedILb1ES2_S2_EEvRKT0_RT1_
+_ZNK5Eigen4LDLTINS_6MatrixIdLi6ELi6ELi0ELi6ELi6EEELi2EE22_solve_impl_transposedILb1ENS1_IdLi6ELi1ELi0ELi6ELi1EEENS1_IdLin1ELi1ELi0ELin1ELi1EEEEEvRKT0_RT1_
+_ZNK5Eigen4LDLTINS_6MatrixIfLi2ELi2ELi0ELi2ELi2EEELi1EE22_solve_impl_transposedILb1ENS1_IfLi2ELi6ELi0ELi2ELi6EEES5_EEvRKT0_RT1_
+_ZNK5Eigen4LDLTINS_6MatrixIfLi3ELi3ELi0ELi3ELi3EEELi1EE22_solve_impl_transposedILb1ENS_5BlockINS1_IfLi6ELi1ELi0ELi6ELi1EEELi3ELi1ELb0EEENS1_IfLi3ELi1ELi0ELi3ELi1EEEEEvRKT0_RT1_
+_ZNK5Eigen4LDLTINS_6MatrixIfLi6ELi6ELi0ELi6ELi6EEELi2EE22_solve_impl_transposedILb1ENS1_IfLi6ELi1ELi0ELi6ELi1EEES5_EEvRKT0_RT1_
+_ZNK5Eigen4LDLTINS_6MatrixIfLin1ELin1ELi0ELin1ELin1EEELi1EE22_solve_impl_transposedILb1ES2_S2_EEvRKT0_RT1_
+_ZNK5HSVar9ExpandValENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEc
+_ZNK6VIO_HC11HCEKFUpdate9UpdateTchERKN5Eigen10QuaternionIfLi0EEERKNS1_6MatrixIfLi3ELi1ELi0ELi3ELi1EEES5_S9_RNS6_IfLi4ELi4ELi0ELi4ELi4EEE
+_ZNK6VIO_HC14GravityTracker10GetGravityEv
+_ZNK6VIO_HC14GravityTracker11NeedBiasComERKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEES5_
+_ZNK6VIO_HC7HcState10GyroMatrixEv
+_ZNK6VIO_HC7HcState9AccMatrixEv
+_ZNK6VIO_HC7HcState9AccToGyroEv
+_ZNK6VIO_HC9HCTracker13PrintVioStateEdRKNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER10ControllerEEEb
+_ZNK6VIO_HC9HCTracker21SendHandleStateToBlobERNSt6__ndk110shared_ptrIN15ARVR_CONTROLLER10ControllerEEEddb
+_ZNK7HW_SLAM10PoseSmooth10PredictImuEdRKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEES5_RN15ARVR_CONTROLLER12HandlerStateE
+_ZNK7HW_SLAM10PoseSmooth11Display6DofElNSt6__ndk16vectorIN15ARVR_CONTROLLER12HandlerStateENS1_9allocatorIS4_EEEE
+_ZNK7HW_SLAM10PoseSmooth4NameEv
+_ZNK7HW_SLAM10SlamThread4JoinEv
+_ZNK7HW_SLAM10Subscriber7PublishERKSt9type_infoRKNSt6__ndk110shared_ptrIvEE
+_ZNK7HW_SLAM15ResourceManager7ReleaseEv
+_ZNK7HW_SLAM16HandlerOutResult4NameEv
+_ZNK7HW_SLAM16SingleThreadTool11IsStartDrawEv
+_ZNK7HW_SLAM17HandlerOutputPose10PredictImuEdRKN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEES5_RN15ARVR_CONTROLLER12HandlerStateE
+_ZNK7HW_SLAM17HandlerOutputPose11PosePredictEddRN15ARVR_CONTROLLER12HandlerStateENSt6__ndk110shared_ptrINS1_13ImuBufferUtilEEE
+_ZNK7HW_SLAM17HandlerOutputPose11QnxListMeanERKNSt6__ndk15dequeIN15ARVR_CONTROLLER18HandlerPoseForListENS1_9allocatorIS4_EEEEd
+_ZNK7HW_SLAM17HandlerOutputPose11V3xListMeanERKNSt6__ndk15dequeIN15ARVR_CONTROLLER18HandlerPoseForListENS1_9allocatorIS4_EEEEd
+_ZNK7HW_SLAM17HandlerOutputPose16ProcessStateListERKN15ARVR_CONTROLLER12HandlerStateERN5Eigen6MatrixIfLi3ELi1ELi0ELi3ELi1EEERNS5_10QuaternionIfLi0EEERNSt6__ndk15dequeINS1_18HandlerPoseForListENSC_9allocatorISE_EEEEd
+_ZNK7HW_SLAM17HandlerOutputPose4NameEv
+_ZNK7HW_SLAM17HandlerOutputPose7PredictEddRN15ARVR_CONTROLLER12HandlerStateERKNSt6__ndk16vectorI18HandlerSensorEventNS4_9allocatorIS6_EEEE
+_ZNK7HW_SLAM18ModuleInterfaceSet16NotifySlamStatusE19HW_SLAM_STATUS_TYPEjPv
+_ZNK7HW_SLAM18ModuleInterfaceSet17IsSLAM2SDKMessageERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
+_ZNK7HW_SLAM18ModuleInterfaceSet7ReleaseEv
+_ZNK7HW_SLAM19HandlerParamManager14CheckInitParamEv
+_ZNK7HW_SLAM19HandlerParamManager4NameEv
+_ZNK7HW_SLAM19HandlerParamManager8SetParamERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEEPKvi
+_ZNK7HW_SLAM19HandlerParamManager9InitParamERK16HandlerInitParam
+_ZNK7HW_SLAM9Publisher7PublishIN15ARVR_CONTROLLER15SmoothPoseStateEEEvRKNSt6__ndk110shared_ptrIT_EE
+_ZNK7HW_SLAM9Publisher7PublishIN15ARVR_CONTROLLER15SmoothPoseStateEEEvRKT_
+_ZNK7HW_SLAM9Publisher7PublishIN15ARVR_CONTROLLER7PnpDataEEEvRKNSt6__ndk110shared_ptrIT_EE
+_ZNK7HW_SLAM9Publisher7PublishIN15ARVR_CONTROLLER8HeadInfoEEEvRKNSt6__ndk110shared_ptrIT_EE
+_ZNKSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EE11target_typeEv
+_ZNKSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EE6targetERKSt9type_info
+_ZNKSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EE7__cloneEPNS0_6__baseISO_EE
+_ZNKSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EE7__cloneEv
+_ZNKSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EE11target_typeEv
+_ZNKSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EE6targetERKSt9type_info
+_ZNKSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EE7__cloneEPNS0_6__baseISU_EE
+_ZNKSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EE7__cloneEv
+_ZNKSt6__ndk120__shared_ptr_pointerIPN15ARVR_CONTROLLER13ImuBufferUtilENS_14default_deleteIS2_EENS_9allocatorIS2_EEE13__get_deleterERKSt9type_info
+_ZNKSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM10Subscriber4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEE13__get_deleterERKSt9type_info
+_ZNKSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM9Publisher4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEE13__get_deleterERKSt9type_info
+_ZNKSt8bad_cast4whatEv
+_ZNSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EE18destroy_deallocateEv
+_ZNSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EE7destroyEv
+_ZNSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EED0Ev
+_ZNSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EEclES8_
+_ZNSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EE18destroy_deallocateEv
+_ZNSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EE7destroyEv
+_ZNSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EED0Ev
+_ZNSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EEclESR_
+_ZNSt6__ndk110shared_ptrIN7HW_SLAM10Subscriber4ImplEEC2IS3_EEPT_NS_9enable_ifIXsr14is_convertibleIS7_PS3_EE5valueENS4_5__natEE4typeE
+_ZNSt6__ndk110shared_ptrIN7HW_SLAM9Publisher4ImplEEC2IS3_EEPT_NS_9enable_ifIXsr14is_convertibleIS7_PS3_EE5valueENS4_5__natEE4typeE
+_ZNSt6__ndk112__deque_baseIN15ARVR_CONTROLLER18HandlerPoseForListENS_9allocatorIS2_EEED2Ev
+_ZNSt6__ndk112__deque_baseIN7HW_SLAM14SlamMainThread9ThreadMsgENS_9allocatorIS3_EEE5clearEv
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4nposE
+_ZNSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE4nposE
+_ZNSt6__ndk114__split_bufferIPN15ARVR_CONTROLLER18HandlerPoseForListENS_9allocatorIS3_EEE10push_frontEOS3_
+_ZNSt6__ndk114__split_bufferIPN15ARVR_CONTROLLER18HandlerPoseForListENS_9allocatorIS3_EEE9push_backEOS3_
+_ZNSt6__ndk114__split_bufferIPN15ARVR_CONTROLLER18HandlerPoseForListERNS_9allocatorIS3_EEE10push_frontERKS3_
+_ZNSt6__ndk114__split_bufferIPN15ARVR_CONTROLLER18HandlerPoseForListERNS_9allocatorIS3_EEE9push_backEOS3_
+_ZNSt6__ndk114__split_bufferIPN7HW_SLAM14SlamMainThread9ThreadMsgENS_9allocatorIS4_EEE10push_frontEOS4_
+_ZNSt6__ndk114__split_bufferIPN7HW_SLAM14SlamMainThread9ThreadMsgENS_9allocatorIS4_EEE9push_backEOS4_
+_ZNSt6__ndk114__split_bufferIPN7HW_SLAM14SlamMainThread9ThreadMsgERNS_9allocatorIS4_EEE10push_frontERKS4_
+_ZNSt6__ndk114__split_bufferIPN7HW_SLAM14SlamMainThread9ThreadMsgERNS_9allocatorIS4_EEE9push_backEOS4_
+_ZNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEE10pubseekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE10pubseekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE7seekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER10CameraInfoENS_9allocatorIS2_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER10CameraInfoENS_9allocatorIS2_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER10CameraInfoENS_9allocatorIS2_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER15SmoothPoseStateENS_9allocatorIS2_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER15SmoothPoseStateENS_9allocatorIS2_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER15SmoothPoseStateENS_9allocatorIS2_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER15SmoothPoseStateENS_9allocatorIS2_EEED2Ev
+_ZNSt6__ndk120__shared_ptr_pointerIPN15ARVR_CONTROLLER13ImuBufferUtilENS_14default_deleteIS2_EENS_9allocatorIS2_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN15ARVR_CONTROLLER13ImuBufferUtilENS_14default_deleteIS2_EENS_9allocatorIS2_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN15ARVR_CONTROLLER13ImuBufferUtilENS_14default_deleteIS2_EENS_9allocatorIS2_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM10Subscriber4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM10Subscriber4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM10Subscriber4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM9Publisher4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM9Publisher4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM9Publisher4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEED0Ev
+_ZNSt6__ndk15dequeIN15ARVR_CONTROLLER18HandlerPoseForListENS_9allocatorIS2_EEE19__add_back_capacityEv
+_ZNSt6__ndk15dequeIN7HW_SLAM14SlamMainThread9ThreadMsgENS_9allocatorIS3_EEE19__add_back_capacityEv
+_ZNSt6__ndk15queueIN7HW_SLAM14SlamMainThread9ThreadMsgENS_5dequeIS3_NS_9allocatorIS3_EEEEED2Ev
+_ZNSt6__ndk16__treeINS_12__value_typeIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEN17SlamSensorCounter11CounterInfoEEENS_19__map_value_compareIS8_SB_NS_4lessIS8_EELb1EEENS5_ISB_EEE12__find_equalIS7_EERPNS_16__tree_node_baseIPvEERPNS_15__tree_end_nodeISM_EERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEN17SlamSensorCounter11CounterInfoEEENS_19__map_value_compareIS8_SB_NS_4lessIS8_EELb1EEENS5_ISB_EEE16__construct_nodeIJNS_4pairIS8_SA_EEEEENS_10unique_ptrINS_11__tree_nodeISB_PvEENS_22__tree_node_destructorINS5_ISO_EEEEEEDpOT_
+_ZNSt6__ndk16__treeINS_12__value_typeIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEN17SlamSensorCounter11CounterInfoEEENS_19__map_value_compareIS8_SB_NS_4lessIS8_EELb1EEENS5_ISB_EEE4findIS7_EENS_15__tree_iteratorISB_PNS_11__tree_nodeISB_PvEElEERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEN17SlamSensorCounter11CounterInfoEEENS_19__map_value_compareIS8_SB_NS_4lessIS8_EELb1EEENS5_ISB_EEE7destroyEPNS_11__tree_nodeISB_PvEE
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM10SubscriberENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE12__find_equalIS7_EERPNS_16__tree_node_baseIPvEERPNS_15__tree_end_nodeISO_EERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM10SubscriberENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE16__construct_nodeIJRKNS_21piecewise_construct_tENS_5tupleIJRKS7_EEENSO_IJEEEEEENS_10unique_ptrINS_11__tree_nodeISD_PvEENS_22__tree_node_destructorINS5_ISW_EEEEEEDpOT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM10SubscriberENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE4findIS7_EENS_15__tree_iteratorISD_PNS_11__tree_nodeISD_PvEElEERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM10SubscriberENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE7destroyEPNS_11__tree_nodeISD_PvEE
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM18CallbackInfoStructENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE12__find_equalIS7_EERPNS_16__tree_node_baseIPvEERPNS_15__tree_end_nodeISO_EERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM18CallbackInfoStructENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE16__emplace_uniqueINS_4pairIS7_SC_EEEENSL_INS_15__tree_iteratorISD_PNS_11__tree_nodeISD_PvEElEEbEEOT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM18CallbackInfoStructENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE4findIS7_EENS_15__tree_iteratorISD_PNS_11__tree_nodeISD_PvEElEERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM18CallbackInfoStructENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE7destroyEPNS_11__tree_nodeISD_PvEE
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM9PublisherENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE12__find_equalIS7_EERPNS_16__tree_node_baseIPvEERPNS_15__tree_end_nodeISO_EERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM9PublisherENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE16__construct_nodeIJRKNS_21piecewise_construct_tENS_5tupleIJRKS7_EEENSO_IJEEEEEENS_10unique_ptrINS_11__tree_nodeISD_PvEENS_22__tree_node_destructorINS5_ISW_EEEEEEDpOT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM9PublisherENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE4findIS7_EENS_15__tree_iteratorISD_PNS_11__tree_nodeISD_PvEElEERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_6vectorIN7HW_SLAM9PublisherENS5_ISA_EEEEEENS_19__map_value_compareIS7_SD_NS_4lessIS7_EELb1EEENS5_ISD_EEE7destroyEPNS_11__tree_nodeISD_PvEE
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPK16HxrAlgorithmDataEENS_19__map_value_compareIS7_SB_NS_4lessIS7_EELb1EEENS5_ISB_EEE12__find_equalIS7_EERPNS_16__tree_node_baseIPvEERPNS_15__tree_end_nodeISM_EERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPK16HxrAlgorithmDataEENS_19__map_value_compareIS7_SB_NS_4lessIS7_EELb1EEENS5_ISB_EEE7destroyEPNS_11__tree_nodeISB_PvEE
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPN7HW_SLAM14SlamMainThreadEEENS_19__map_value_compareIS7_SB_NS_4lessIS7_EELb1EEENS5_ISB_EEE12__find_equalIS7_EERPNS_16__tree_node_baseIPvEERPNS_15__tree_end_nodeISM_EERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPN7HW_SLAM14SlamMainThreadEEENS_19__map_value_compareIS7_SB_NS_4lessIS7_EELb1EEENS5_ISB_EEE4findIS7_EENS_15__tree_iteratorISB_PNS_11__tree_nodeISB_PvEElEERKT_
+_ZNSt6__ndk16__treeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPN7HW_SLAM14SlamMainThreadEEENS_19__map_value_compareIS7_SB_NS_4lessIS7_EELb1EEENS5_ISB_EEE7destroyEPNS_11__tree_nodeISB_PvEE
+_ZNSt6__ndk16vectorI11HandlerPoseNS_9allocatorIS1_EEE8__appendEm
+_ZNSt6__ndk16vectorI18HandlerSensorEventNS_9allocatorIS1_EEE21__push_back_slow_pathIRKS1_EEvOT_
+_ZNSt6__ndk16vectorI27HW_SLAM_IMU_COMPENSATE_PARANS_9allocatorIS1_EEE8__appendEm
+_ZNSt6__ndk16vectorIN5Eigen10QuaternionIfLi0EEENS_9allocatorIS3_EEE8__appendEm
+_ZNSt6__ndk16vectorIN7HW_SLAM10SubscriberENS_9allocatorIS2_EEE21__push_back_slow_pathIRKS2_EEvOT_
+_ZNSt6__ndk16vectorIN7HW_SLAM10SubscriberENS_9allocatorIS2_EEE6assignIPS2_EENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS2_NS_15iterator_traitsIS9_E9referenceEEE5valueEvE4typeES9_S9_
+_ZNSt6__ndk16vectorIN7HW_SLAM10SubscriberENS_9allocatorIS2_EEEC2ERKS5_
+_ZNSt6__ndk16vectorIN7HW_SLAM18CallbackInfoStructENS_9allocatorIS2_EEE21__push_back_slow_pathIS2_EEvOT_
+_ZNSt6__ndk16vectorIN7HW_SLAM9PublisherENS_9allocatorIS2_EEE21__push_back_slow_pathIRKS2_EEvOT_
+_ZNSt6__ndk16vectorIN7HW_SLAM9PublisherENS_9allocatorIS2_EEE6assignIPS2_EENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS2_NS_15iterator_traitsIS9_E9referenceEEE5valueEvE4typeES9_S9_
+_ZNSt6__ndk16vectorIN7HW_SLAM9PublisherENS_9allocatorIS2_EEEC2ERKS5_
+_ZNSt6__ndk16vectorINS_10shared_ptrIN15ARVR_CONTROLLER13ImuBufferUtilEEENS_9allocatorIS4_EEE8__appendEm
+_ZNSt6__ndk16vectorINS_10shared_ptrIN15ARVR_CONTROLLER13ImuBufferUtilEEENS_9allocatorIS4_EEEC2ERKS7_
+_ZNSt6__ndk16vectorIP11HwSlamImageNS_9allocatorIS2_EEE6assignIPS2_EENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS2_NS_15iterator_traitsIS9_E9referenceEEE5valueEvE4typeES9_S9_
+_ZNSt6__ndk16vectorIP8HSModuleNS_9allocatorIS2_EEE21__push_back_slow_pathIRKS2_EEvOT_
+_ZNSt6__ndk16vectorIPN15ARVR_CONTROLLER10CameraDataENS_9allocatorIS3_EEE21__push_back_slow_pathIRKS3_EEvOT_
+_ZNSt6__ndk16vectorIPN15ARVR_CONTROLLER10CameraDataENS_9allocatorIS3_EEE21__push_back_slow_pathIS3_EEvOT_
+_ZNSt6__ndk16vectorIPN15ARVR_CONTROLLER10CameraDataENS_9allocatorIS3_EEEC2ERKS6_
+_ZNSt6__ndk16vectorIPN6VIO_HC9HCTrackerENS_9allocatorIS3_EEE21__push_back_slow_pathIS3_EEvOT_
+_ZNSt6__ndk18ios_base7showposE
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTI10ImuPreProc
+_ZTIN15ARVR_CONTROLLER15SmoothPoseStateE
+_ZTIN15ARVR_CONTROLLER8PnpTrackE
+_ZTIN7HW_SLAM10PoseSmoothE
+_ZTIN7HW_SLAM10SlamThreadE
+_ZTIN7HW_SLAM10SubscriberE
+_ZTIN7HW_SLAM14SlamMainThreadE
+_ZTIN7HW_SLAM15ResourceManagerE
+_ZTIN7HW_SLAM16HandlerOutResultE
+_ZTIN7HW_SLAM17HandlerOutputPoseE
+_ZTIN7HW_SLAM19HandlerParamManagerE
+_ZTIN7HW_SLAM9MessengerE
+_ZTIN7HW_SLAM9PublisherE
+_ZTINSt6__ndk110__function6__baseIFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEEE
+_ZTINSt6__ndk110__function6__baseIFvRKNS_10shared_ptrIN15ARVR_CONTROLLER15SmoothPoseStateEEEEEE
+_ZTINSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EEE
+_ZTINSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EEE
+_ZTINSt6__ndk115binary_functionIPN7HW_SLAM10PoseSmoothERKN15ARVR_CONTROLLER15SmoothPoseStateEvEE
+_ZTINSt6__ndk118__weak_result_typeIMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEEE
+_ZTINSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER10CameraInfoENS_9allocatorIS2_EEEE
+_ZTINSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER15SmoothPoseStateENS_9allocatorIS2_EEEE
+_ZTINSt6__ndk120__shared_ptr_pointerIPN15ARVR_CONTROLLER13ImuBufferUtilENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+_ZTINSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM10Subscriber4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+_ZTINSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM9Publisher4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+_ZTINSt6__ndk16__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS2_RKNS_12placeholders4__phILi1EEEEEE
+_ZTISt8bad_cast
+_ZTIZN7HW_SLAM9Messenger9SubscribeINS_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS_10SubscriberERKNSt6__ndk112basic_stringIcNS6_11char_traitsIcEENS6_9allocatorIcEEEEjMT_FvRKT0_EPSF_EUlRKNS6_10shared_ptrIS4_EEE_
+_ZTS10ImuPreProc
+_ZTSN15ARVR_CONTROLLER15SmoothPoseStateE
+_ZTSN15ARVR_CONTROLLER8PnpTrackE
+_ZTSN7HW_SLAM10PoseSmoothE
+_ZTSN7HW_SLAM10SlamThreadE
+_ZTSN7HW_SLAM10SubscriberE
+_ZTSN7HW_SLAM14SlamMainThreadE
+_ZTSN7HW_SLAM15ResourceManagerE
+_ZTSN7HW_SLAM16HandlerOutResultE
+_ZTSN7HW_SLAM17HandlerOutputPoseE
+_ZTSN7HW_SLAM19HandlerParamManagerE
+_ZTSN7HW_SLAM9MessengerE
+_ZTSN7HW_SLAM9PublisherE
+_ZTSNSt6__ndk110__function6__baseIFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEEE
+_ZTSNSt6__ndk110__function6__baseIFvRKNS_10shared_ptrIN15ARVR_CONTROLLER15SmoothPoseStateEEEEEE
+_ZTSNSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EEE
+_ZTSNSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EEE
+_ZTSNSt6__ndk114default_deleteIN15ARVR_CONTROLLER13ImuBufferUtilEEE
+_ZTSNSt6__ndk114default_deleteIN7HW_SLAM10Subscriber4ImplEEE
+_ZTSNSt6__ndk114default_deleteIN7HW_SLAM9Publisher4ImplEEE
+_ZTSNSt6__ndk115binary_functionIPN7HW_SLAM10PoseSmoothERKN15ARVR_CONTROLLER15SmoothPoseStateEvEE
+_ZTSNSt6__ndk118__weak_result_typeIMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEEE
+_ZTSNSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER10CameraInfoENS_9allocatorIS2_EEEE
+_ZTSNSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER15SmoothPoseStateENS_9allocatorIS2_EEEE
+_ZTSNSt6__ndk120__shared_ptr_pointerIPN15ARVR_CONTROLLER13ImuBufferUtilENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+_ZTSNSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM10Subscriber4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+_ZTSNSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM9Publisher4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+_ZTSNSt6__ndk16__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS2_RKNS_12placeholders4__phILi1EEEEEE
+_ZTSSt8bad_cast
+_ZTSZN7HW_SLAM9Messenger9SubscribeINS_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS_10SubscriberERKNSt6__ndk112basic_stringIcNS6_11char_traitsIcEENS6_9allocatorIcEEEEjMT_FvRKT0_EPSF_EUlRKNS6_10shared_ptrIS4_EEE_
+_ZTV10ImuPreProc
+_ZTVN15ARVR_CONTROLLER8PnpTrackE
+_ZTVN7HW_SLAM10PoseSmoothE
+_ZTVN7HW_SLAM10SlamThreadE
+_ZTVN7HW_SLAM10SubscriberE
+_ZTVN7HW_SLAM14SlamMainThreadE
+_ZTVN7HW_SLAM15ResourceManagerE
+_ZTVN7HW_SLAM16HandlerOutResultE
+_ZTVN7HW_SLAM17HandlerOutputPoseE
+_ZTVN7HW_SLAM19HandlerParamManagerE
+_ZTVN7HW_SLAM9MessengerE
+_ZTVN7HW_SLAM9PublisherE
+_ZTVNSt6__ndk110__function6__funcINS_6__bindIRKMN7HW_SLAM10PoseSmoothEFvRKN15ARVR_CONTROLLER15SmoothPoseStateEEJRKPS4_RKNS_12placeholders4__phILi1EEEEEENS_9allocatorISL_EEFvS8_EEE
+_ZTVNSt6__ndk110__function6__funcIZN7HW_SLAM9Messenger9SubscribeINS2_10PoseSmoothEN15ARVR_CONTROLLER15SmoothPoseStateEEENS2_10SubscriberERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEjMT_FvRKT0_EPSH_EUlRKNS_10shared_ptrIS7_EEE_NSC_ISS_EEFvSR_EEE
+_ZTVNSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER10CameraInfoENS_9allocatorIS2_EEEE
+_ZTVNSt6__ndk120__shared_ptr_emplaceIN15ARVR_CONTROLLER15SmoothPoseStateENS_9allocatorIS2_EEEE
+_ZTVNSt6__ndk120__shared_ptr_pointerIPN15ARVR_CONTROLLER13ImuBufferUtilENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+_ZTVNSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM10Subscriber4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+_ZTVNSt6__ndk120__shared_ptr_pointerIPN7HW_SLAM9Publisher4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+_ZTVSt8bad_cast
+_ZZN7HW_SLAM9Messenger8InstanceEvE4inst
+__cxa_deleted_virtual
+__cxa_guard_abort failed to broadcast condition variable
+__cxa_guard_release failed to broadcast condition variable
+__cxa_pure_virtual
+__deregister_frame
+__deregister_frame_info
+__deregister_frame_info_bases
+__dynamic_cast
+__frame_state_for
+__itt_frame_begin
+__itt_frame_begin_v3
+__itt_frame_create
+__itt_frame_end
+__itt_frame_end_v3
+__itt_frame_submit_v3
+__itt_get_timestamp
+__itt_heap_internal_access_begin
+__itt_heap_internal_access_end
+__itt_set_track
+__itt_track_create
+__itt_track_group_create
+__register_frame
+__register_frame_info
+__register_frame_info_bases
+__register_frame_info_table
+__register_frame_info_table_bases
+__register_frame_table
+`@ [%s:%d] t(%lf),ctl(%u),PredictHandlePose startTime = %lf, endTime = %lf,imuBuf startTime = %lf, endTime = %lf
+accel
+allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+bjaxrj!x_  k
+cjbxrj"x
+const_cast
+cv::Rect cv::getWindowImageRect(const cv::String &)
+cvCloneImage
+cvCreateImage
+cvCreateImageHeader
+cvCreateTrackbar
+cvCreateTrackbar2
+cvDisplayOverlay
+cvDisplayStatusBar
+cvGetImage
+cvGetImageCOI
+cvGetImageROI
+cvGetTrackbarPos
+cvGetWindowImageRect
+cvGuiBoxReport
+cvInitImageHeader
+cvIplImage
+cvMaxRect
+cvMulTransposed
+cvReleaseImage
+cvReleaseImageHeader
+cvResetImageROI
+cvSetImageCOI
+cvSetImageROI
+cvSetTrackbarMax
+cvSetTrackbarMin
+cvSetTrackbarPos
+cvShowImage
+cvTranspose
+displayOverlay
+displayStatusBar
+dynamic_cast
+extractImageCOI
+fmt:ai_path@org:vr6dof
+fmt:anchor@org:slam@type:Update
+fmt:cameraintrin@org:slam
+fmt:imu
+fmt:imu@org:controller
+fmt:imu@org:helmet
+fmt:pointcloud@org:slam
+fmt:pose@org:2dtr
+fmt:pose@org:3dobjtr
+fmt:pose@org:slam
+fmt:pose@org:vr6dof
+fmt:posedouble@org:slam
+frame node could not be deleted
+getMulTransposedFunc
+insertImageCOI
+int cv::createTrackbar(const cv::String &, const cv::String &, int *, int, cv::TrackbarCallback, void *)
+int cv::getTrackbarPos(const cv::String &, const cv::String &)
+int cv::waitKeyEx(int)
+iplImageToMat
+iyfxEyex
+j#xRih8
+j#xrih8
+j=xRzr
+jixRiix`iix
+libVR6Dof.so
+magnitude
+mulTransposed
+n'XRN
+non-virtual thunk to 
+pthread_cond_broadcast
+rect.width >= 0 && rect.height >= 0 && rect.x < image->width && rect.y < image->height && rect.x + rect.width >= (int)(rect.width > 0) && rect.y + rect.height >= (int)(rect.height > 0)
+reinterpret_cast
+reinterpret_cast<size_t>(*ptr) % alignment == 0
+reinterpret_cast<size_t>(buf) % alignment == 0
+static cv::MatExpr cv::Mat::eye(cv::Size, int)
+static cv::MatExpr cv::Mat::eye(int, int, int)
+static_cast
+static_cast<uchar*>(*ptr) + type_size * count <= static_cast<uchar*>(raw_mem) + type_size * allocated_count
+std::bad_cast
+transpose
+unsupported label/image type
+virtual int cv::FilterEngine::proceed(const uchar *, int, int, uchar *, int)
+virtual int cv::FilterEngine::start(const cv::Mat &, const cv::Size &, const cv::Point &)
+virtual int cv::FilterEngine::start(const cv::Size &, const cv::Size &, const cv::Point &)
+virtual int cv::MatOp::type(const cv::MatExpr &) const
+virtual void cv::FilterEngine::apply(const cv::Mat &, cv::Mat &, const cv::Size &, const cv::Point &)
+virtual void cv::KMeansDistanceComputer<false>::operator()(const cv::Range &) const [onlyDistance = false]
+virtual void cv::KMeansDistanceComputer<true>::operator()(const cv::Range &) const [onlyDistance = true]
+virtual void cv::KMeansPPDistanceComputer::operator()(const cv::Range &) const
+virtual void cv::MatAllocator::copy(cv::UMatData *, cv::UMatData *, int, const size_t *, const size_t *, const size_t *, const size_t *, const size_t *, bool) const
+virtual void cv::MatOp::abs(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp::add(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp::add(const cv::MatExpr &, const cv::Scalar &, cv::MatExpr &) const
+virtual void cv::MatOp::divide(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &, double) const
+virtual void cv::MatOp::divide(double, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp::multiply(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &, double) const
+virtual void cv::MatOp::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp::subtract(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp::subtract(const cv::Scalar &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp::transpose(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::abs(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::add(const cv::MatExpr &, const cv::Scalar &, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::divide(double, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::subtract(const cv::Scalar &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_AddEx::transpose(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_Bin::divide(double, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_Bin::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp_GEMM::add(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_GEMM::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp_GEMM::subtract(const cv::MatExpr &, const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_GEMM::transpose(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::MatOp_Initializer::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp_T::multiply(const cv::MatExpr &, double, cv::MatExpr &) const
+virtual void cv::MatOp_T::transpose(const cv::MatExpr &, cv::MatExpr &) const
+virtual void cv::cpu_baseline::(anonymous namespace)::BilateralFilter_32f_Invoker::operator()(const cv::Range &) const
+virtual void cv::cpu_baseline::(anonymous namespace)::BilateralFilter_8u_Invoker::operator()(const cv::Range &) const
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<double, double>::operator()(const uchar **, uchar *, int, int, int) [ST = double, T = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<double, float>::operator()(const uchar **, uchar *, int, int, int) [ST = double, T = float]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<double, short>::operator()(const uchar **, uchar *, int, int, int) [ST = double, T = short]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<double, unsigned char>::operator()(const uchar **, uchar *, int, int, int) [ST = double, T = unsigned char]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<double, unsigned short>::operator()(const uchar **, uchar *, int, int, int) [ST = double, T = unsigned short]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, double>::operator()(const uchar **, uchar *, int, int, int) [ST = int, T = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, float>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, int>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, short>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, unsigned char>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<int, unsigned short>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::ColumnSum<unsigned short, unsigned char>::operator()(const uchar **, uchar *, int, int, int)
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<double, double>::operator()(const uchar *, uchar *, int, int) [T = double, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<float, double>::operator()(const uchar *, uchar *, int, int) [T = float, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<int, int>::operator()(const uchar *, uchar *, int, int) [T = int, ST = int]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<short, double>::operator()(const uchar *, uchar *, int, int) [T = short, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<short, int>::operator()(const uchar *, uchar *, int, int) [T = short, ST = int]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<unsigned char, double>::operator()(const uchar *, uchar *, int, int) [T = unsigned char, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<unsigned char, int>::operator()(const uchar *, uchar *, int, int) [T = unsigned char, ST = int]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<unsigned char, unsigned short>::operator()(const uchar *, uchar *, int, int) [T = unsigned char, ST = unsigned short]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<unsigned short, double>::operator()(const uchar *, uchar *, int, int) [T = unsigned short, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::RowSum<unsigned short, int>::operator()(const uchar *, uchar *, int, int) [T = unsigned short, ST = int]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<double, double>::operator()(const uchar *, uchar *, int, int) [T = double, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<float, double>::operator()(const uchar *, uchar *, int, int) [T = float, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<short, double>::operator()(const uchar *, uchar *, int, int) [T = short, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<unsigned char, double>::operator()(const uchar *, uchar *, int, int) [T = unsigned char, ST = double]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<unsigned char, int>::operator()(const uchar *, uchar *, int, int) [T = unsigned char, ST = int]
+virtual void cv::cpu_baseline::(anonymous namespace)::SqrRowSum<unsigned short, double>::operator()(const uchar *, uchar *, int, int) [T = unsigned short, ST = double]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<double, double>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, double>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<double, short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<double, unsigned char>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, unsigned char>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<double, unsigned short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, unsigned short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::SymmColumnSmallVec_32f>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32f]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::SymmColumnVec_32f>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::SymmColumnVec_32f]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, short>, cv::cpu_baseline::SymmColumnVec_32f16s>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, short>, VecOp = cv::cpu_baseline::SymmColumnVec_32f16s]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, unsigned char>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, unsigned char>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<float, unsigned short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, unsigned short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<int, short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<int, short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::Cast<int, short>, cv::cpu_baseline::SymmColumnSmallVec_32s16s>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<int, short>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32s16s]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::ColumnFilter<cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, cv::cpu_baseline::SymmColumnVec_32s8u>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, VecOp = cv::cpu_baseline::SymmColumnVec_32s8u]
+virtual void cv::cpu_baseline::RowFilter<double, double, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = double, DT = double, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<float, double, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = float, DT = double, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<float, float, cv::cpu_baseline::RowVec_32f>::operator()(const uchar *, uchar *, int, int) [ST = float, DT = float, VecOp = cv::cpu_baseline::RowVec_32f]
+virtual void cv::cpu_baseline::RowFilter<float, float, cv::cpu_baseline::SymmRowSmallVec_32f>::operator()(const uchar *, uchar *, int, int) [ST = float, DT = float, VecOp = cv::cpu_baseline::SymmRowSmallVec_32f]
+virtual void cv::cpu_baseline::RowFilter<short, double, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = short, DT = double, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<short, float, cv::cpu_baseline::RowVec_16s32f>::operator()(const uchar *, uchar *, int, int) [ST = short, DT = float, VecOp = cv::cpu_baseline::RowVec_16s32f]
+virtual void cv::cpu_baseline::RowFilter<unsigned char, double, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = unsigned char, DT = double, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<unsigned char, float, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = unsigned char, DT = float, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<unsigned char, int, cv::cpu_baseline::RowVec_8u32s>::operator()(const uchar *, uchar *, int, int) [ST = unsigned char, DT = int, VecOp = cv::cpu_baseline::RowVec_8u32s]
+virtual void cv::cpu_baseline::RowFilter<unsigned char, int, cv::cpu_baseline::SymmRowSmallVec_8u32s>::operator()(const uchar *, uchar *, int, int) [ST = unsigned char, DT = int, VecOp = cv::cpu_baseline::SymmRowSmallVec_8u32s]
+virtual void cv::cpu_baseline::RowFilter<unsigned short, double, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = unsigned short, DT = double, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::RowFilter<unsigned short, float, cv::cpu_baseline::RowNoVec>::operator()(const uchar *, uchar *, int, int) [ST = unsigned short, DT = float, VecOp = cv::cpu_baseline::RowNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<double, double>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, double>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<double, short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<double, unsigned char>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, unsigned char>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<double, unsigned short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<double, unsigned short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::SymmColumnSmallVec_32f>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32f]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::SymmColumnVec_32f>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::SymmColumnVec_32f]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<float, short>, cv::cpu_baseline::SymmColumnVec_32f16s>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, short>, VecOp = cv::cpu_baseline::SymmColumnVec_32f16s]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<float, unsigned char>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, unsigned char>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<float, unsigned short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, unsigned short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<int, short>, cv::cpu_baseline::ColumnNoVec>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<int, short>, VecOp = cv::cpu_baseline::ColumnNoVec]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::Cast<int, short>, cv::cpu_baseline::SymmColumnSmallVec_32s16s>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<int, short>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32s16s]
+virtual void cv::cpu_baseline::SymmColumnFilter<cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, cv::cpu_baseline::SymmColumnVec_32s8u>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, VecOp = cv::cpu_baseline::SymmColumnVec_32s8u]
+virtual void cv::cpu_baseline::SymmColumnSmallFilter<cv::cpu_baseline::Cast<float, float>, cv::cpu_baseline::SymmColumnSmallVec_32f>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<float, float>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32f]
+virtual void cv::cpu_baseline::SymmColumnSmallFilter<cv::cpu_baseline::Cast<int, short>, cv::cpu_baseline::SymmColumnSmallVec_32s16s>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::Cast<int, short>, VecOp = cv::cpu_baseline::SymmColumnSmallVec_32s16s]
+virtual void cv::cpu_baseline::SymmColumnSmallFilter<cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, cv::cpu_baseline::SymmColumnVec_32s8u>::operator()(const uchar **, uchar *, int, int, int) [CastOp = cv::cpu_baseline::FixedPtCastEx<int, unsigned char>, VecOp = cv::cpu_baseline::SymmColumnVec_32s8u]
+virtual void cv::cpu_baseline::SymmRowSmallFilter<float, float, cv::cpu_baseline::SymmRowSmallVec_32f>::operator()(const uchar *, uchar *, int, int) [ST = float, DT = float, VecOp = cv::cpu_baseline::SymmRowSmallVec_32f]
+virtual void cv::cpu_baseline::SymmRowSmallFilter<unsigned char, int, cv::cpu_baseline::SymmRowSmallVec_8u32s>::operator()(const uchar *, uchar *, int, int) [ST = unsigned char, DT = int, VecOp = cv::cpu_baseline::SymmRowSmallVec_8u32s]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::Lab2RGB_b>::operator()(const cv::Range &) const [Cvt = cv::Lab2RGB_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::Lab2RGB_f>::operator()(const cv::Range &) const [Cvt = cv::Lab2RGB_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::Luv2RGB_b>::operator()(const cv::Range &) const [Cvt = cv::Luv2RGB_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::Luv2RGB_f>::operator()(const cv::Range &) const [Cvt = cv::Luv2RGB_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2Lab_b>::operator()(const cv::Range &) const [Cvt = cv::RGB2Lab_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2Lab_f>::operator()(const cv::Range &) const [Cvt = cv::RGB2Lab_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2Luv_b>::operator()(const cv::Range &) const [Cvt = cv::RGB2Luv_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2Luv_f>::operator()(const cv::Range &) const [Cvt = cv::RGB2Luv_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2XYZ_f<float> >::operator()(const cv::Range &) const [Cvt = cv::RGB2XYZ_f<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2XYZ_i<uchar> >::operator()(const cv::Range &) const [Cvt = cv::RGB2XYZ_i<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::RGB2XYZ_i<ushort> >::operator()(const cv::Range &) const [Cvt = cv::RGB2XYZ_i<ushort>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::XYZ2RGB_f<float> >::operator()(const cv::Range &) const [Cvt = cv::XYZ2RGB_f<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::XYZ2RGB_i<uchar> >::operator()(const cv::Range &) const [Cvt = cv::XYZ2RGB_i<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::XYZ2RGB_i<ushort> >::operator()(const cv::Range &) const [Cvt = cv::XYZ2RGB_i<ushort>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB5x5>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB5x5]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<float> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<unsigned char> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<unsigned char>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<unsigned short> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::Gray2RGB<unsigned short>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::HLS2RGB_b>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::HLS2RGB_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::HLS2RGB_f>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::HLS2RGB_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::HSV2RGB_b>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::HSV2RGB_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::HSV2RGB_f>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::HSV2RGB_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<float> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<uchar> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<ushort> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2Gray<ushort>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2HLS_b>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2HLS_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2HLS_f>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2HLS_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2HSV_b>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2HSV_b]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2HSV_f>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2HSV_f]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB5x5>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB5x5]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<float> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<unsigned char> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<unsigned char>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<unsigned short> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2RGB<unsigned short>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_f<float> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_f<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_i<uchar> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_i<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_i<ushort> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB2YCrCb_i<ushort>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB5x52Gray>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB5x52Gray]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGB5x52RGB>::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGB5x52RGB]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::RGBA2mRGBA<uchar> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::RGBA2mRGBA<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_f<float> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_f<float>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_i<uchar> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_i<uchar>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_i<ushort> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::YCrCb2RGB_i<ushort>]
+virtual void cv::impl::(anonymous namespace)::CvtColorLoop_Invoker<cv::hal::cpu_baseline::(anonymous namespace)::mRGBA2RGBA<uchar> >::operator()(const cv::Range &) const [Cvt = cv::hal::cpu_baseline::(anonymous namespace)::mRGBA2RGBA<uchar>]
+void cv::hal::cpu_baseline::magnitude32f(const float *, const float *, float *, int)
+void cv::hal::cpu_baseline::magnitude64f(const double *, const double *, double *, int)
+void cv::hal::magnitude32f(const float *, const float *, float *, int)
+void cv::hal::magnitude64f(const double *, const double *, double *, int)
+void cv::magnitude(cv::InputArray, cv::InputArray, cv::OutputArray)
+void cv::mulTransposed(cv::InputArray, cv::OutputArray, bool, cv::InputArray, double, int)
+void cv::setTrackbarMax(const cv::String &, const cv::String &, int)
+void cv::setTrackbarMin(const cv::String &, const cv::String &, int)
+void cv::setTrackbarPos(const cv::String &, const cv::String &, int)
+void cv::transpose(cv::InputArray, cv::OutputArray)
+yhxR2
+yixR2
+yixR~
+yjxR:
+zbxrz"

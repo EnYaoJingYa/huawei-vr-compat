@@ -1,0 +1,1628 @@
+                                                 __read_only image2d_t input2, __read_only image2d_t input3,          \
+                                                 __write_only image2d_t output, int4 input_shape0, int4 input_shape1, \
+                                              __read_only image2d_t filter, __global FLT4 *bias, int2 kernel_size,
+                                              __write_only image2d_t output, const int4 a_shape, const int4 b_shape,
+                                              const int4 output_shape, const int broadcastC_flag, float act_min,
+                                            __read_only image2d_t filter, __global FLT4 *bias, int2 kernel_size,
+                                           __read_only image2d_t weight, __read_only image2d_t bias, int4 in_shape,
+                                          __write_only image2d_t output, int4 input_shape, int4 output_shape) {
+                                        __global FLT *mean, __global FLT *variance, __write_only image2d_t output,
+                                        __read_only image2d_t filter, __global FLT4 *bias, int2 kernel_size,
+                                        __read_only image2d_t input2, __global DTYPE *output, int4 input_shape0,
+                                        __read_only image2d_t input2, __read_only image2d_t input3,
+                                        __read_only image2d_t input4, __global DTYPE *output, int4 input_shape0,
+                                        __read_only image2d_t input4, __read_only image2d_t input5,
+                                       __write_only image2d_t output, const int2 output_shape, float act_min,
+                                       __write_only image2d_t output2, __global int *split_sizes_, int4 in_shape,
+                                      __read_only image2d_t weight, __read_only image2d_t bias, int N, int CI4, int CO4,
+                                     __write_only image2d_t output, const int4 a_shape, const int4 b_shape,
+                                     const int4 output_shape, const int broadcastC_flag, float act_min, float act_max) {
+                                    __read_only image2d_t weight, __global FLT4 *bias, int4 input_shape,
+                                    __write_only image2d_t output, const int4 a_shape, const int4 b_shape,
+                                    const int4 output_shape, const int broadcastC_flag, float act_min, float act_max) {
+                                   __read_only image2d_t input3, __read_only image2d_t input4,
+                                   __read_only image2d_t input5, __read_only image2d_t input6,
+                                   __read_only image2d_t input7, __write_only image2d_t output, int4 shape) {
+                                  __write_only image2d_t output, const int2 output_shape, float act_min,
+                                 __read_only image2d_t weight, __read_only image2d_t bias, int4 in_shape,
+                                 __read_only image2d_t weight, int TILE_HW, int CI_SLICES, int CO_SLICES) {
+                                 __write_only image2d_t output,  // height=CO_SLICES*36    width=TILE_HW
+                                __read_only image2d_t weight, __global FLT4 *bias, int4 input_shape, int4 output_shape,
+                                __write_only image2d_t output, const int2 output_shape, float act_min, float act_max) {
+                                __write_only image2d_t output, const int4 a_shape, const int4 b_shape,
+                                const int4 output_shape, const int broadcastC_flag, float act_min, float act_max) {
+                               __read_only image2d_t biases, int2 kernel_size, int2 stride, int2 padding, int4 src_size,
+                               __write_only image2d_t output, const int2 output_shape, float act_min, float act_max) {
+                               __write_only image2d_t output2, __global int *split_sizes_, int4 in_shape,
+                              __write_only image2d_t output,  // height=CI_SLICES*36    width=H/4*W/4
+                              __write_only image2d_t output,  // height=N*H             width=W*CO_SLICES
+                              __write_only image2d_t output, const int2 output_shape, float act_min, float act_max) {
+                             __read_only image2d_t bias, int N, int CI4, int CO4, int2 in_img_shape, int act_type) {
+                             __write_only image2d_t output,  // height=CO_SLICES*36    width=TILE_HW
+                             __write_only image2d_t output, const int2 output_shape, float act_min, float act_max) {
+                             __write_only image2d_t output, const int2 output_shape, float act_min, float act_max,
+                          __write_only image2d_t output, const int2 output_shape, const int C, const int act_type) {
+                          __write_only image2d_t output, const int2 output_shape, const int H, const int act_type) {
+                        __read_only image2d_t bias, int4 in_shape, int4 out_shape) {
+                        __write_only image2d_t output, const int2 output_shape, const int act_type) {
+              READ_IMAGE(src_data, smp_zero, (int2)(src_y * in_size.w + Z, N * in_size.y + src_x)));
+              READ_IMAGE(src_data, smp_zero, (int2)(src_y, Z * in_size.y + src_x)));
+              READ_IMAGE(src_data, smp_zero, (int2)(wi * in_shape.w + ci, ni * in_shape.y + hi)));
+          READ_IMAGE(src_data, smp_zero, (int2)((Z + 1) * x_a1_sign + x_c_a1 * src_size.z, y_c + batch * src_size.y));
+          READ_IMAGE(src_data, smp_zero, (int2)((Z + 1) * x_sign + x_c * src_size.z, y_c + batch * src_size.y));
+          x0 = READ_IMAGE(src_data, smp_zero, (int2)(out0_src_w * src_size.z + ci, n * src_size.x + out0_src_h));
+          x1 = READ_IMAGE(src_data, smp_zero, (int2)(out0_src_w * src_size.z + ci, n * src_size.x + out1_src_h));
+          x2 = READ_IMAGE(src_data, smp_zero, (int2)(out1_src_w * src_size.z + ci, n * src_size.x + out0_src_h));
+          x3 = READ_IMAGE(src_data, smp_zero, (int2)(out1_src_w * src_size.z + ci, n * src_size.x + out1_src_h));
+        !outside ? READ_IMAGE(input, smp_zero, (int2)(y_c * input_shape.w + Z, N * input_shape.y + x_c)) : (FLT4)(0.0f);
+        FLT4 current = READ_IMAGE(src_data, smp_zero, (int2)(w * size.z + X, h));                              \
+        FLT4 current = READ_IMAGE(src_data, smp_zero, (int2)(w * size.z + c, X));                            \
+        FLT4 filter_ci0_co0 = READ_IMAGE(weight, smp_zero, (int2)(co_slice0, filter_offset + 0));
+        FLT4 filter_ci0_co1 = READ_IMAGE(weight, smp_zero, (int2)(co_slice1, filter_offset + 0));
+        FLT4 filter_ci1_co0 = READ_IMAGE(weight, smp_zero, (int2)(co_slice0, filter_offset + 1));
+        FLT4 filter_ci1_co1 = READ_IMAGE(weight, smp_zero, (int2)(co_slice1, filter_offset + 1));
+        FLT4 filter_ci2_co0 = READ_IMAGE(weight, smp_zero, (int2)(co_slice0, filter_offset + 2));
+        FLT4 filter_ci2_co1 = READ_IMAGE(weight, smp_zero, (int2)(co_slice1, filter_offset + 2));
+        FLT4 filter_ci3_co0 = READ_IMAGE(weight, smp_zero, (int2)(co_slice0, filter_offset + 3));
+        FLT4 filter_ci3_co1 = READ_IMAGE(weight, smp_zero, (int2)(co_slice1, filter_offset + 3));
+        FLT4 flt_p = READ_IMAGE(filter, smp_zero, (int2)(0, Z));
+        FLT4 flt_p = READ_IMAGE(filter, smp_zero, (int2)(ky * kernel_size.x + kx, Z));
+        FLT4 in_h0_w0 = READ_IMAGE(input, smp_zero, (int2)(x_idx0, y_idx0));
+        FLT4 in_h0_w1 = READ_IMAGE(input, smp_zero, (int2)(x_idx1, y_idx0));
+        FLT4 in_h1_w0 = READ_IMAGE(input, smp_zero, (int2)(x_idx0, y_idx1));
+        FLT4 in_h1_w1 = READ_IMAGE(input, smp_zero, (int2)(x_idx1, y_idx1));
+        FLT4 src_p = READ_IMAGE(src_data, smp_zero, (int2)(Z + x_c * src_size.z, y_c + batch * src_size.y));
+        FLT4 src_p00_c0 = READ_IMAGE(src_data, smp_zero, (int2)(Z * x_sign + x_c * src_size.z, y_c));
+        FLT4 src_p01_c0 = READ_IMAGE(src_data, smp_zero, (int2)(Z * x_a1_sign + x_c_a1 * src_size.z, y_c));
+        FLT4 src_p10_c0 = READ_IMAGE(src_data, smp_zero, (int2)(Z + x_c * src_size.z, y_c_a1));
+        FLT4 src_p10_c1 = READ_IMAGE(src_data, smp_zero, (int2)(Z + 1 + x_c * src_size.z, y_c_a1 + batch * src_size.y));
+        FLT4 src_p11_c0 = READ_IMAGE(src_data, smp_zero, (int2)(Z * x_a1_sign + x_c_a1 * src_size.z, y_c_a1));
+        FLT4 src_p11_c1 = READ_IMAGE(src_data, smp_zero,
+        READ_IMAGE(src_data, smp_zero, (int2)(Z * x_a1_sign + x_c_a1 * src_size.z, y_c + batch * src_size.y));
+        READ_IMAGE(src_data, smp_zero, (int2)(Z * x_a1_sign + x_c_a1 * src_size.z, y_c_a1 + batch * src_size.y));
+        WRITE_IMAGE(output, (int2)(co_slice1, n_oh1 * OW + ow0), out_h1_w0_c1);
+        WRITE_IMAGE(output, (int2)(co_slice1, n_oh1 * OW + ow1), out_h1_w1_c1);
+        WRITE_IMAGE(output, (int2)(ow0 * CO_SLICES + co_slice1, n_oh1), out_h1_w0_c1);
+        WRITE_IMAGE(output, (int2)(ow1 * CO_SLICES + co_slice1, n_oh1), out_h1_w1_c1);
+        float4 current = convert_float4(READ_IMAGE(src_data, smp_zero, (int2)(w * size.z + X, h)));           \
+        float4 current = convert_float4(READ_IMAGE(src_data, smp_zero, (int2)(w * size.z + c, X)));         \
+        rd_data = READ_IMAGE(src_data, smp_zero, (int2)(X * src_size.z + offset[i], batch * src_size.y + height));
+        res_data = READ_IMAGE(src_data, smp_zero, (int2)(h_org * src_size.y + Y, X));
+        res_data = READ_IMAGE(src_data, smp_zero, (int2)(w_org * dst_size.x + X, N_I * src_size.z + h_org));
+      FLT4 current = READ_IMAGE(src_data, smp_zero, (int2)(w * size.z + X, h));
+      FLT4 current = READ_IMAGE(src_data, smp_zero, (int2)(w * size.z + c, X));
+      FLT4 current = READ_IMAGE(src_data, smp_zero, (int2)(w * size.z + c, X));                              \
+      FLT4 flt_p0 = READ_IMAGE(filter, smp_zero, (int2)(ky * kernel_size.x + kx, Z));
+      FLT4 flt_p1 = READ_IMAGE(filter, smp_zero, (int2)(ky * kernel_size.x + kx, Z + 1));
+      FLT4 src = READ_IMAGE(input, smp_zero, (int2)(y_c * input_shape.w + Z, N * input_shape.y + x_c));
+      FLT4 src = READ_IMAGE(src_data, smp_zero,
+      FLT4 src_p00_c0 = READ_IMAGE(src_data, smp_zero, (int2)(Z * x_sign + x_c * src_size.z, y_c + batch * src_size.y));
+      FLT4 src_p10_c0 = READ_IMAGE(src_data, smp_zero, (int2)(Z + x_c * src_size.z, y_c_a1 + batch * src_size.y));
+      WRITE_IMAGE(dst_data, (int2)((X + 1) * dst_size.z + Z + 1, Y + 1), r[7]);
+      WRITE_IMAGE(dst_data, (int2)((X + 1) * dst_size.z + Z + 1, Y), r[3]);
+      WRITE_IMAGE(dst_data, (int2)((Y * block_size.y + j) * dst_size.x + X, Z * block_size.x + i), res_data);
+      WRITE_IMAGE(dst_data, (int2)(X * dst_size.z + Z + 1, Y + 1), r[3]);
+      WRITE_IMAGE(dst_data, (int2)(X * dst_size.z + Z + 1, Y + 1), r[5]);
+      WRITE_IMAGE(dst_data, (int2)(Y * dst_size.x + X, ((i * block_size.y + j) * src_size.w + N_I) * dst_size.z + Z),
+      WRITE_IMAGE(dst_data, (int2)(Z * dst_size.y + Y, (i * block_size.y + j) * dst_size.x + X), res_data);
+      WRITE_IMAGE(output, (int2)(co_slice0, n_oh1 * OW + ow0), out_h1_w0_c0);
+      WRITE_IMAGE(output, (int2)(co_slice0, n_oh1 * OW + ow1), out_h1_w1_c0);
+      WRITE_IMAGE(output, (int2)(co_slice1, n_oh0 * OW + ow0), out_h0_w0_c1);
+      WRITE_IMAGE(output, (int2)(co_slice1, n_oh0 * OW + ow1), out_h0_w1_c1);
+      WRITE_IMAGE(output, (int2)(co_slice1, n_oh1 * OW + ow0), out_h1_w0_c1);
+      WRITE_IMAGE(output, (int2)(co_slice1, n_oh1 * OW + ow1), out_h1_w1_c1);
+      WRITE_IMAGE(output, (int2)(coordinate_y, coordinate_x), result);
+      WRITE_IMAGE(output, (int2)(ow0 * CO_SLICES + co_slice0, n_oh1), out_h1_w0_c0);
+      WRITE_IMAGE(output, (int2)(ow0 * CO_SLICES + co_slice1, n_oh0), out_h0_w0_c1);
+      WRITE_IMAGE(output, (int2)(ow0 * CO_SLICES + co_slice1, n_oh1), out_h1_w0_c1);
+      WRITE_IMAGE(output, (int2)(ow1 * CO_SLICES + co_slice0, n_oh1), out_h1_w1_c0);
+      WRITE_IMAGE(output, (int2)(ow1 * CO_SLICES + co_slice1, n_oh0), out_h0_w1_c1);
+      WRITE_IMAGE(output, (int2)(ow1 * CO_SLICES + co_slice1, n_oh1), out_h1_w1_c1);
+      WRITE_IMAGE_OUT(dst_data, (int2)(Y * size.z + Z, X), data);                                                      \
+      WRITE_IMAGE_OUT(dst_data, (int2)(Z, X * size.y + Y), data);                                                      \
+      data = convert_##DST_TYPE##4(READ_IMAGE_IN(src_data, smp_zero, (int2)(Y * size.z + Z, X)));                     \
+      data = convert_##DST_TYPE##4(READ_IMAGE_IN(src_data, smp_zero, (int2)(Z, X * size.y + Y)));                     \
+      maximum = max(src, maximum);
+      rd_data = READ_IMAGE(src_data, smp_zero, (int2)(X * src_size.z + offset[i], batch * src_size.y + height));
+      res = READ_IMAGE(src_data, smp_zero, (int2)(X_src, (gcnt + n) / in_img_x));
+      res_data = READ_IMAGE(src_data, smp_zero, (int2)(Y_org * dst_size.x + X, Z_com));
+      result += convert_float4(READ_IMAGE(src_data, smp_zero, (int2)(w * size.z + X, h)));
+      result += convert_float4(READ_IMAGE(src_data, smp_zero, (int2)(w * size.z + c, X)));
+      temp[localy][localz] += convert_float4(READ_IMAGE(src_data, smp_zero, (int2)(w * size.z + X, h)));
+      temp[localy][localz] += convert_float4(READ_IMAGE(src_data, smp_zero, (int2)(w * size.z + c, X)));
+    DO_LEAKY_RELU(acc, alpha);                        \
+    DTYPE4 result = READ_IMAGE(input, smp_none, (int2)((Y * Align_Shape + i), (IN * input_shape.y + IH)));
+    FLT4 exp0 = exp(acc);                             \
+    FLT4 exp1 = exp(-acc);                            \
+    FLT4 filter_ci0_co0 = READ_IMAGE(weight, smp_zero, (int2)(co_slice0, filter_offset + 0));
+    FLT4 filter_ci0_co0 = READ_IMAGE(weight, smp_zero, (int2)(h * CI_ALIGN + ci_slice * CI_TILE + 0, co_slice + 0));
+    FLT4 filter_ci0_co1 = READ_IMAGE(weight, smp_zero, (int2)(co_slice1, filter_offset + 0));
+    FLT4 filter_ci0_co1 = READ_IMAGE(weight, smp_zero, (int2)(h * CI_ALIGN + ci_slice * CI_TILE + 0, co_slice + 1));
+    FLT4 filter_ci1_co0 = READ_IMAGE(weight, smp_zero, (int2)(co_slice0, filter_offset + 1));
+    FLT4 filter_ci1_co0 = READ_IMAGE(weight, smp_zero, (int2)(h * CI_ALIGN + ci_slice * CI_TILE + 1, co_slice + 0));
+    FLT4 filter_ci1_co1 = READ_IMAGE(weight, smp_zero, (int2)(co_slice1, filter_offset + 1));
+    FLT4 filter_ci1_co1 = READ_IMAGE(weight, smp_zero, (int2)(h * CI_ALIGN + ci_slice * CI_TILE + 1, co_slice + 1));
+    FLT4 filter_ci2_co0 = READ_IMAGE(weight, smp_zero, (int2)(co_slice0, filter_offset + 2));
+    FLT4 filter_ci2_co0 = READ_IMAGE(weight, smp_zero, (int2)(h * CI_ALIGN + ci_slice * CI_TILE + 2, co_slice + 0));
+    FLT4 filter_ci2_co1 = READ_IMAGE(weight, smp_zero, (int2)(co_slice1, filter_offset + 2));
+    FLT4 filter_ci2_co1 = READ_IMAGE(weight, smp_zero, (int2)(h * CI_ALIGN + ci_slice * CI_TILE + 2, co_slice + 1));
+    FLT4 filter_ci3_co0 = READ_IMAGE(weight, smp_zero, (int2)(co_slice0, filter_offset + 3));
+    FLT4 filter_ci3_co0 = READ_IMAGE(weight, smp_zero, (int2)(h * CI_ALIGN + ci_slice * CI_TILE + 3, co_slice + 0));
+    FLT4 filter_ci3_co1 = READ_IMAGE(weight, smp_zero, (int2)(co_slice1, filter_offset + 3));
+    FLT4 filter_ci3_co1 = READ_IMAGE(weight, smp_zero, (int2)(h * CI_ALIGN + ci_slice * CI_TILE + 3, co_slice + 1));
+    FLT4 in0 = READ_IMAGE(input, smp_zero, (int2)(tile_hw + 0, y_idx));
+    FLT4 in1 = READ_IMAGE(input, smp_zero, (int2)(tile_hw + 1, y_idx));
+    FLT4 in_h0_w0 = READ_IMAGE(input, smp_zero, (int2)(x_idx0, y_idx0));
+    FLT4 in_h0_w1 = READ_IMAGE(input, smp_zero, (int2)(x_idx1, y_idx0));
+    FLT4 in_h1_w0 = READ_IMAGE(input, smp_zero, (int2)(x_idx0, y_idx1));
+    FLT4 in_h1_w1 = READ_IMAGE(input, smp_zero, (int2)(x_idx1, y_idx1));
+    FLT4 result_in = READ_IMAGE(input, smp_zero, (int2)(i, gidz));
+    FLT4 result_temp = READ_IMAGE(src_data, smp_none, (int2)(w * ci4 + i, n * in_shape.y + h));
+    FLT4 src = READ_IMAGE(input, smp_none, (int2)(iw * CI_SLICES + ci / 4, in * IH + ih));
+    FLT4 tmp = READ_IMAGE(src_data, smp_zero, (int2)(wi * in_shape.w + ci4, N * in_shape.y + hi));
+    FLT4 v = READ_IMAGE(input, smp_zero, (int2)(gidz * ci4 + i, nh_index));
+    FLT4 v = READ_IMAGE(input, smp_zero, (int2)(i, gidz));
+    FLT4 v = READ_IMAGE(input, smp_zero, (int2)(index % in_img_shape.y, index / in_img_shape.y));
+    FLT4 weight0 = READ_IMAGE(weight, smp_zero, (int2)(i, gidx * 4));
+    FLT4 weight1 = READ_IMAGE(weight, smp_zero, (int2)(i, gidx * 4 + 1));
+    FLT4 weight2 = READ_IMAGE(weight, smp_zero, (int2)(i, gidx * 4 + 2));
+    FLT4 weight3 = READ_IMAGE(weight, smp_zero, (int2)(i, gidx * 4 + 3));
+    FLT4 weight_value0 = READ_IMAGE(weight, smp_zero, (int2)(gidx * 4 * ci4 + i, nh_index));
+    FLT4 weight_value0 = READ_IMAGE(weight, smp_zero, (int2)(i * 4 * co4 + gidx, nh_index));
+    FLT4 weight_value1 = READ_IMAGE(weight, smp_zero, (int2)((gidx * 4 + 1) * ci4 + i, nh_index));
+    FLT4 weight_value1 = READ_IMAGE(weight, smp_zero, (int2)((i * 4 + 1) * co4 + gidx, nh_index));
+    FLT4 weight_value2 = READ_IMAGE(weight, smp_zero, (int2)((gidx * 4 + 2) * ci4 + i, nh_index));
+    FLT4 weight_value2 = READ_IMAGE(weight, smp_zero, (int2)((i * 4 + 2) * co4 + gidx, nh_index));
+    FLT4 weight_value3 = READ_IMAGE(weight, smp_zero, (int2)((gidx * 4 + 3) * ci4 + i, nh_index));
+    FLT4 weight_value3 = READ_IMAGE(weight, smp_zero, (int2)((i * 4 + 3) * co4 + gidx, nh_index));
+    READ_IMAGE(src_data, smp_zero, (int2)(Z * x_a1_sign + x_c_a1 * src_size.z, y_c + batch * src_size.y));
+    READ_IMAGE(src_data, smp_zero, (int2)(Z * x_a1_sign + x_c_a1 * src_size.z, y_c_a1 + batch * src_size.y));
+    READ_IMAGE(src_data, smp_zero, (int2)(in_index_c4 % in_image2d_shape.x, in_index_c4 / in_image2d_shape.x));
+    WRITE_IMAGE(dst_data, (int2)((4 * Y + 1) * C4 + Z, X), dst1);
+    WRITE_IMAGE(dst_data, (int2)((4 * Y + 2) * C4 + Z, X), dst2);
+    WRITE_IMAGE(dst_data, (int2)((4 * Y + 3) * C4 + Z, X), dst3);
+    WRITE_IMAGE(dst_data, (int2)((X + 1) * dst_size.z + Z, Y + 1), r[3]);
+    WRITE_IMAGE(dst_data, (int2)((X + 1) * dst_size.z + Z, Y + 1), r[6]);
+    WRITE_IMAGE(dst_data, (int2)((X + 1) * dst_size.z + Z, Y), r[1]);
+    WRITE_IMAGE(dst_data, (int2)((X + 1) * dst_size.z + Z, Y), r[2]);
+    WRITE_IMAGE(dst_data, (int2)((dst_w + stride.y) * dst_size.z + dst_c, n * dst_size.x + dst_h + stride.x), r3);
+    WRITE_IMAGE(dst_data, (int2)((dst_w + stride.y) * dst_size.z + dst_c, n * dst_size.x + dst_h), r2);
+    WRITE_IMAGE(dst_data, (int2)(0, X), result2);                                                            \
+    WRITE_IMAGE(dst_data, (int2)(0, X), result2);                                                           \
+    WRITE_IMAGE(dst_data, (int2)(4 * Y + 1, Z * shape.y + X), dst1);
+    WRITE_IMAGE(dst_data, (int2)(4 * Y + 2, Z * shape.y + X), dst2);
+    WRITE_IMAGE(dst_data, (int2)(4 * Y + 3, Z * shape.y + X), dst3);
+    WRITE_IMAGE(dst_data, (int2)(X * dst_size.z + Z + 1, Y), r[1]);
+    WRITE_IMAGE(dst_data, (int2)(X * dst_size.z + Z, Y + 1), r[1]);
+    WRITE_IMAGE(dst_data, (int2)(X * dst_size.z + Z, Y + 1), r[2]);
+    WRITE_IMAGE(dst_data, (int2)(X * dst_size.z + Z, Y + 1), r[4]);
+    WRITE_IMAGE(dst_data, (int2)(X, 0), TO_FLT4(result));                                                     \
+    WRITE_IMAGE(dst_data, (int2)(X, 0), result);                                                               \
+    WRITE_IMAGE(dst_data, (int2)(X, Y), res);
+    WRITE_IMAGE(dst_data, (int2)(Y * C4 + Z, 4 * X + 1), dst1);
+    WRITE_IMAGE(dst_data, (int2)(Y * C4 + Z, 4 * X + 2), dst2);
+    WRITE_IMAGE(dst_data, (int2)(Y * C4 + Z, 4 * X + 3), dst3);
+    WRITE_IMAGE(dst_data, (int2)(Y, Z * shape.y + 4 * X + 1), dst1);
+    WRITE_IMAGE(dst_data, (int2)(Y, Z * shape.y + 4 * X + 2), dst2);
+    WRITE_IMAGE(dst_data, (int2)(Y, Z * shape.y + 4 * X + 3), dst3);
+    WRITE_IMAGE(dst_data, (int2)(dst_w * dst_size.z + dst_c, n * dst_size.x + dst_h + stride.x), r1);
+    WRITE_IMAGE(output, (int2)((Y)*output_shape.w + Z, (X)), result);                                                 \
+    WRITE_IMAGE(output, (int2)((Y)*output_shape.w + Z, (X)), result);                                             \
+    WRITE_IMAGE(output, (int2)((Y)*output_shape.w + Z, (X)), result);                                            \
+    WRITE_IMAGE(output, (int2)((Y)*output_shape.w + Z, (X)), result);                                          \
+    WRITE_IMAGE(output, (int2)(Y, (X * C4NUM + i)), result);
+    WRITE_IMAGE(output, (int2)(co_slice0, n_oh0 * OW + ow0), out_h0_w0_c0);
+    WRITE_IMAGE(output, (int2)(co_slice0, n_oh0 * OW + ow1), out_h0_w1_c0);
+    WRITE_IMAGE(output, (int2)(co_slice0, n_oh1 * OW + ow0), out_h1_w0_c0);
+    WRITE_IMAGE(output, (int2)(co_slice0, n_oh1 * OW + ow1), out_h1_w1_c0);
+    WRITE_IMAGE(output, (int2)(co_slice1, n_oh0 * OW + ow0), out_h0_w0_c1);
+    WRITE_IMAGE(output, (int2)(co_slice1, n_oh0 * OW + ow1), out_h0_w1_c1);
+    WRITE_IMAGE(output, (int2)(gidx, gidz), result);
+    WRITE_IMAGE(output, (int2)(gidz * co4 + gidx, nh_index), result);
+    WRITE_IMAGE(output, (int2)(ow * CO_SLICES + co_slice, on_oh), (FLT4)(constant_value));
+    WRITE_IMAGE(output, (int2)(ow * CO_SLICES + co_slice, on_oh), src0);
+    WRITE_IMAGE(output, (int2)(ow0 * CO_SLICES + co_slice0, n_oh0), out_h0_w0_c0);
+    WRITE_IMAGE(output, (int2)(ow0 * CO_SLICES + co_slice0, n_oh1), out_h1_w0_c0);
+    WRITE_IMAGE(output, (int2)(ow0 * CO_SLICES + co_slice1, n_oh0), out_h0_w0_c1);
+    WRITE_IMAGE(output, (int2)(ow1 * CO_SLICES + co_slice0, n_oh0), out_h0_w1_c0);
+    WRITE_IMAGE(output, (int2)(ow1 * CO_SLICES + co_slice0, n_oh1), out_h1_w1_c0);
+    WRITE_IMAGE(output, (int2)(ow1 * CO_SLICES + co_slice1, n_oh0), out_h0_w1_c1);
+    WRITE_IMAGE(output1, (int2)(coordinate_y, coordinate_x), result);
+    WRITE_IMAGE(output2, (int2)(coordinate_y, coordinate_x), result);
+    WRITE_IMAGEOUT(output, (int2)(X * C4 + Y, n * H + d), OUT_FLT4(result));
+    WRITE_IMAGEOUT(output, (int2)(Y * C4 + d, n * H + X), OUT_FLT4(result));
+    WRITE_IMAGEOUT(output, (int2)(d * C4 + Y, n * H + X), OUT_FLT4(result));
+    WRITE_IMAGEOUT(output, (int2)(i, n), OUT_FLT4(result));
+    __read_only image2d_t input0, __read_only image2d_t input1, __read_only image2d_t input2,                     \
+    __read_only image2d_t input0, __read_only image2d_t input1, __read_only image2d_t input2,                    \
+    __read_only image2d_t input0, __read_only image2d_t input1, __read_only image2d_t input2,                  \
+    __read_only image2d_t input3, __read_only image2d_t input4, __read_only image2d_t input5,                  \
+    __read_only image2d_t input3, __read_only image2d_t input4, __write_only image2d_t output, int4 input_shape0, \
+    __write_only image2d_t output, int4 input_shape0, int4 input_shape1, int4 input_shape2, int4 input_shape3, \
+    __write_only image2d_t output, int4 input_shape0, int4 input_shape1, int4 input_shape2, int4 output_shape) { \
+    acc = (FLT4)(1.f) / ((FLT4)(1.f) + exp(-acc));    \
+    acc = (exp0 - exp1) / (exp0 + exp1);              \
+    acc = clamp(acc, (FLT4)(0.0f), (FLT4)(6.0f));     \
+    acc = max(acc, (FLT4)(0.0f));                     \
+    bt0 * READ_IMAGE(input, smp_zero, (int2)(x_idx, h + 0)) + bt1 * READ_IMAGE(input, smp_zero, (int2)(x_idx, h + 1)) +
+    bt2 * READ_IMAGE(input, smp_zero, (int2)(x_idx, h + 2)) + bt3 * READ_IMAGE(input, smp_zero, (int2)(x_idx, h + 3)) +
+    bt4 * READ_IMAGE(input, smp_zero, (int2)(x_idx, h + 4)) + bt5 * READ_IMAGE(input, smp_zero, (int2)(x_idx, h + 5));
+    float4 result = convert_float4(READ_IMAGE(input, smp_zero, (int2)(X * C4 + Y, n * H + d)));
+    float4 result = convert_float4(READ_IMAGE(input, smp_zero, (int2)(Y * C4 + d, n * H + X)));
+    float4 result = convert_float4(READ_IMAGE(input, smp_zero, (int2)(d * C4 + Y, n * H + X)));
+    float4 result = convert_float4(READ_IMAGE(input, smp_zero, (int2)(i, n)));
+    float4 src = convert_float4(READ_IMAGE(input, smp_zero, (int2)(C4 - 1, n)));
+    float4 src = convert_float4(READ_IMAGE(input, smp_zero, (int2)(i, n)));
+    float4 t = convert_float4(READ_IMAGE(input, smp_zero, (int2)(X * C4 + Y, n * H + d)));
+    float4 t = convert_float4(READ_IMAGE(input, smp_zero, (int2)(Y * C4 + d, n * H + X)));
+    float4 t = convert_float4(READ_IMAGE(input, smp_zero, (int2)(d * C4 + Y, n * H + X)));
+    if (size.y * size.z <= MAX_IMAGE2D_WIDTH)                                                                          \
+    if (size.y * size.z <= MAX_IMAGE2D_WIDTH)                                                                         \
+    res = READ_IMAGE(src_data, smp_zero, (int2)(gcnt % in_img_x, gcnt / in_img_x));
+    res_data = READ_IMAGE(src_data, smp_zero, (int2)(X * src_size.z + Z, batch * src_size.y + indices[height]));
+    res_data = READ_IMAGE(src_data, smp_zero, (int2)(X * src_size.z + Z, indices[batch] * src_size.y + height));
+    res_data = READ_IMAGE(src_data, smp_zero, (int2)(indices[X] * src_size.z + Z, batch * src_size.y + height));
+    result += READ_IMAGE(bias, smp_zero, (int2)(gidx, 0));
+    result += convert_float4(READ_IMAGE(src_data, smp_zero, (int2)(Y * size.z + c, X)));
+    result = READ_IMAGE(input0, smp_none, (int2)(coordinate_x, coordinate_y));
+    result = READ_IMAGE(input0, smp_none, (int2)(coordinate_x, coordinate_y)); \
+    result = READ_IMAGE(input1, smp_none, (int2)(coordinate_x, coordinate_y));
+    result = READ_IMAGE(input1, smp_none, (int2)(coordinate_x, coordinate_y)); \
+    result = READ_IMAGE(input2, smp_none, (int2)(coordinate_x, coordinate_y)); \
+    result = READ_IMAGE(input3, smp_none, (int2)(coordinate_x, coordinate_y)); \
+    result = READ_IMAGE(input4, smp_none, (int2)(coordinate_x, coordinate_y)); \
+    result = READ_IMAGE(input5, smp_none, (int2)(coordinate_x, coordinate_y)); \
+    src1 = READ_IMAGE(src_data, smp_zero, (int2)((4 * Z + 1) * H4 + X, Y));
+    src1 = READ_IMAGE(src_data, smp_zero, (int2)(4 * Z + 1, X * shape.z + Y));
+    src1 = READ_IMAGE(src_data, smp_zero, (int2)(X * W4 + Y, 4 * Z + 1));
+    src1 = READ_IMAGE(src_data, smp_zero, (int2)(X, Y * shape.w + 4 * Z + 1));
+    src1 = READ_IMAGE(src_data, smp_zero, (int2)(Y, (4 * Z + 1) * shape.y + X));
+    src2 = READ_IMAGE(src_data, smp_zero, (int2)((4 * Z + 2) * H4 + X, Y));
+    src2 = READ_IMAGE(src_data, smp_zero, (int2)(4 * Z + 2, X * shape.z + Y));
+    src2 = READ_IMAGE(src_data, smp_zero, (int2)(X * W4 + Y, 4 * Z + 2));
+    src2 = READ_IMAGE(src_data, smp_zero, (int2)(X, Y * shape.w + 4 * Z + 2));
+    src2 = READ_IMAGE(src_data, smp_zero, (int2)(Y, (4 * Z + 2) * shape.y + X));
+    src3 = READ_IMAGE(src_data, smp_zero, (int2)((4 * Z + 3) * H4 + X, Y));
+    src3 = READ_IMAGE(src_data, smp_zero, (int2)(4 * Z + 3, X * shape.z + Y));
+    src3 = READ_IMAGE(src_data, smp_zero, (int2)(X * W4 + Y, 4 * Z + 3));
+    src3 = READ_IMAGE(src_data, smp_zero, (int2)(X, Y * shape.w + 4 * Z + 3));
+    src3 = READ_IMAGE(src_data, smp_zero, (int2)(Y, (4 * Z + 3) * shape.y + X));
+  AtM_row[0] += at * READ_IMAGE(input, smp_zero, (int2)(tile_hw, idx++));
+  AtM_row[1] += at * READ_IMAGE(input, smp_zero, (int2)(tile_hw, idx++));
+  AtM_row[2] += at * READ_IMAGE(input, smp_zero, (int2)(tile_hw, idx++));
+  AtM_row[3] += at * READ_IMAGE(input, smp_zero, (int2)(tile_hw, idx++));
+  AtM_row[4] += at * READ_IMAGE(input, smp_zero, (int2)(tile_hw, idx++));
+  AtM_row[5] += at * READ_IMAGE(input, smp_zero, (int2)(tile_hw, idx++));
+  FLT4 a = READ_IMAGE(input_a, smp_none, (int2)(X, Y));
+  FLT4 a = READ_IMAGE(input_a, smp_none, (int2)(Y * a_shape.w + X, Z));
+  FLT4 a = READ_IMAGE(input_a, smp_none, (int2)(a_w * a_shape.w + a_c, a_n * a_shape.y + a_h));
+  FLT4 acc = AtM_row[0] + AtM_row[1] + AtM_row[2] + AtM_row[3] + AtM_row[4];
+  FLT4 acc = BtD_row[0] + (FLT)(-2.5f) * BtD_row[2] + BtD_row[4];
+  FLT4 b = READ_IMAGE(input_b, smp_none, (int2)(X, 0));
+  FLT4 b = READ_IMAGE(input_b, smp_none, (int2)(X, Y));
+  FLT4 b = READ_IMAGE(input_b, smp_none, (int2)(b_w * b_shape.w + b_c, b_n * b_shape.y + b_h));
+  FLT4 bias_val = READ_IMAGE(biases, smp_zero, (int2)(dst_c, 0));
+  FLT4 in = READ_IMAGE(input, smp_none, (int2)(X, Y));
+  FLT4 in_c4 = READ_IMAGE(input, smp_zero, (int2)(X, Y));
+  FLT4 maximum = (FLT4)(-10000.0f);
+  FLT4 o = READ_IMAGE(offset, smp_none, (int2)(X % C, 0));
+  FLT4 o = READ_IMAGE(offset, smp_none, (int2)(X, Y));
+  FLT4 o = READ_IMAGE(offset, smp_none, (int2)(h_quotient, 0));
+  FLT4 out = READ_IMAGE(input, smp_zero, (int2)(x, y));
+  FLT4 result = READ_IMAGE(input, smp_none, (int2)((Y)*input_shape.w + Z, (X)));
+  FLT4 result = READ_IMAGE(input, smp_none, (int2)(coordinate_y, coordinate_x));
+  FLT4 result = READ_IMAGE(input, smp_zero, (int2)(gidy + offset.y, gidx + offset.x));
+  FLT4 result = READ_IMAGE(input0, smp_none, (int2)((Y)*output_shape.w + Z, (X)));
+  FLT4 result0 = READ_IMAGE(input, smp_none, (int2)((Y)*output_shape.w + Z, (n * output_shape.y + h)));
+  FLT4 result0 = READ_IMAGE(input0, smp_none, (int2)((Y)*output_shape.w + Z, (n * output_shape.y + h)));
+  FLT4 result1 = READ_IMAGE(input, smp_zero, (int2)(gidy + offset.y, gidx + offset.x));
+  FLT4 result1 = READ_IMAGE(input0, smp_none, (int2)(X, 0));
+  FLT4 result1 = READ_IMAGE(input1, smp_none, (int2)((Y)*output_shape.w + Z, (n * output_shape.y + h)));
+  FLT4 result2 = READ_IMAGE(input, smp_zero, (int2)(gidy + offset.w, gidx + offset.z));
+  FLT4 result2 = READ_IMAGE(input1, smp_none, (int2)(X, 0));
+  FLT4 result_M1 = READ_IMAGE(input1, smp_zero, (int2)(gidy, gidx));
+  FLT4 result_M2 = READ_IMAGE(input2, smp_zero, (int2)(gidy, gidx));
+  FLT4 result_M3 = READ_IMAGE(input3, smp_zero, (int2)(gidy, gidx));
+  FLT4 result_M4 = READ_IMAGE(input4, smp_zero, (int2)(gidy, gidx));
+  FLT4 result_M5 = READ_IMAGE(input5, smp_zero, (int2)(gidy, gidx));
+  FLT4 result_M6 = READ_IMAGE(input6, smp_zero, (int2)(gidy, gidx));
+  FLT4 result_M7 = READ_IMAGE(input7, smp_zero, (int2)(gidy, gidx));
+  FLT4 result_in = READ_IMAGE(src_data, smp_none, (int2)(w * ci4 + c, n * in_shape.y + h));
+  FLT4 s = READ_IMAGE(scale, smp_none, (int2)(X % C, 0));
+  FLT4 s = READ_IMAGE(scale, smp_none, (int2)(X, Y));
+  FLT4 s = READ_IMAGE(scale, smp_none, (int2)(h_quotient, 0));
+  FLT4 src0 = READ_IMAGE(input, smp_zero, (int2)(iw * CI_SLICES + ci / 4, in * IH + ih));
+  FLT4 src0 = READ_IMAGE(src_data, smp_zero, (int2)(4 * Z * H4 + X, Y));
+  FLT4 src0 = READ_IMAGE(src_data, smp_zero, (int2)(4 * Z, X * shape.z + Y));
+  FLT4 src0 = READ_IMAGE(src_data, smp_zero, (int2)(X * W4 + Y, 4 * Z));
+  FLT4 src0 = READ_IMAGE(src_data, smp_zero, (int2)(X, Y * shape.w + 4 * Z));
+  FLT4 src0 = READ_IMAGE(src_data, smp_zero, (int2)(Y, 4 * Z * shape.y + X));
+  FLT4 src0 = READ_IMAGE(src_data, smp_zero, (int2)(src_y * in_size.w + Z, N * in_size.y + src_x));
+  FLT4 src0 = READ_IMAGE(src_data, smp_zero, (int2)(src_y, in_size.y * Z + src_x));
+  FLT4 src1 = READ_IMAGE(input, smp_zero, (int2)(iw * CI_SLICES + (ci + 4) / 4, in * IH + ih));
+  FLT4 src1 = READ_IMAGE(src_data, smp_zero, (int2)(src_y_1 * in_size.w + Z, N * in_size.y + src_x));
+  FLT4 src1 = READ_IMAGE(src_data, smp_zero, (int2)(src_y_1, in_size.y * Z + src_x));
+  FLT4 src2 = READ_IMAGE(src_data, smp_zero, (int2)(src_y * in_size.w + Z, N * in_size.y + src_x_1));
+  FLT4 src2 = READ_IMAGE(src_data, smp_zero, (int2)(src_y, in_size.y * Z + src_x_1));
+  FLT4 src3 = READ_IMAGE(src_data, smp_zero, (int2)(src_y_1 * in_size.w + Z, N * in_size.y + src_x_1));
+  FLT4 src3 = READ_IMAGE(src_data, smp_zero, (int2)(src_y_1, in_size.y * Z + src_x_1));
+  FLT4 src_p00_c0 = READ_IMAGE(src_data, smp_zero, (int2)(Z * x_sign + x_c * src_size.z, y_c + batch * src_size.y));
+  FLT4 src_p10_c0 = READ_IMAGE(src_data, smp_zero, (int2)(Z + x_c * src_size.z, y_c_a1 + batch * src_size.y));
+  FLT4 temp = READ_IMAGE(input, smp_zero, (int2)(X, Y));
+  LimitAcc();
+  UpdateAcc();
+  WRITE_IMAGE(dst_data, (int2)((w * ci4 + c), (n * in_shape.y + h)), result);
+  WRITE_IMAGE(dst_data, (int2)(0, X), result2);
+  WRITE_IMAGE(dst_data, (int2)(4 * Y * C4 + Z, X), dst0);
+  WRITE_IMAGE(dst_data, (int2)(4 * Y, Z * shape.y + X), dst0);
+  WRITE_IMAGE(dst_data, (int2)(X * dst_size.z + Z, Y), r[0]);
+  WRITE_IMAGE(dst_data, (int2)(X * dst_size.z + Z, Y), res);
+  WRITE_IMAGE(dst_data, (int2)(X * dst_size.z + Z, batch * dst_size.y + height), res_data);
+  WRITE_IMAGE(dst_data, (int2)(X, 0), TO_FLT4(result));
+  WRITE_IMAGE(dst_data, (int2)(X, 0), result);
+  WRITE_IMAGE(dst_data, (int2)(Y * C4 + Z, 4 * X), dst0);
+  WRITE_IMAGE(dst_data, (int2)(Y * CO4_SIZE + Z, X), result_tmp.vector);
+  WRITE_IMAGE(dst_data, (int2)(Y * out_shape.w + X, Z),
+  WRITE_IMAGE(dst_data, (int2)(Y * out_shape.w + X, Z), result);
+  WRITE_IMAGE(dst_data, (int2)(Y * out_shape.w + X, Z), result_flt4);
+  WRITE_IMAGE(dst_data, (int2)(Y * out_size.w + Z, N * out_size.y + X),
+  WRITE_IMAGE(dst_data, (int2)(Y * out_size.w + Z, N * out_size.y + X), result);
+  WRITE_IMAGE(dst_data, (int2)(Y, X), result2);
+  WRITE_IMAGE(dst_data, (int2)(Y, Z * out_size.y + X),
+  WRITE_IMAGE(dst_data, (int2)(Y, Z * shape.y + 4 * X), dst0);
+  WRITE_IMAGE(dst_data, (int2)(Y, out_size.w * Z + X), result);
+  WRITE_IMAGE(dst_data, (int2)(dst_w * dst_size.z + dst_c, n * dst_size.x + dst_h), r0);
+  WRITE_IMAGE(output, (int2)((Y)*input_shape.w + Z, (X)), result);
+  WRITE_IMAGE(output, (int2)((Y)*output_shape.w + Z, (IN * output_shape.y + IH)), result);
+  WRITE_IMAGE(output, (int2)((Y)*output_shape.w + Z, (X)), result);
+  WRITE_IMAGE(output, (int2)((Y)*output_shape.w + Z, (n * output_shape.y + h)), result);
+  WRITE_IMAGE(output, (int2)((Y)*output_shape.w + Z, IN * output_shape.y + IW), result);
+  WRITE_IMAGE(output, (int2)(X, Y), in_c4);
+  WRITE_IMAGE(output, (int2)(X, Y), out);
+  WRITE_IMAGE(output, (int2)(X, Y), result);
+  WRITE_IMAGE(output, (int2)(X, Y), tmp);
+  WRITE_IMAGE(output, (int2)(Y * output_shape.w + X, Z), result);
+  WRITE_IMAGE(output, (int2)(Y * output_shape.w + Z, N * output_shape.y + X), max(maximum, (FLT4)(0.f)));
+  WRITE_IMAGE(output, (int2)(Y * output_shape.w + Z, N * output_shape.y + X), max(result, (FLT4)(0.f)));
+  WRITE_IMAGE(output, (int2)(Y * output_shape.w + Z, N * output_shape.y + X), maximum);
+  WRITE_IMAGE(output, (int2)(Y * output_shape.w + Z, N * output_shape.y + X), result);
+  WRITE_IMAGE(output, (int2)(co_slice0, n_oh0 * OW + ow0), out_h0_w0_c0);
+  WRITE_IMAGE(output, (int2)(co_slice0, n_oh0 * OW + ow1), out_h0_w1_c0);
+  WRITE_IMAGE(output, (int2)(gidy + offset_y, gidx + offset_x), result4);
+  WRITE_IMAGE(output, (int2)(gidy + offset_y, gidx), result2);
+  WRITE_IMAGE(output, (int2)(gidy, gidx + offset_x), result3);
+  WRITE_IMAGE(output, (int2)(gidy, gidx), result);
+  WRITE_IMAGE(output, (int2)(gidy, gidx), result1);
+  WRITE_IMAGE(output, (int2)(ow * CO_SLICES + co_slice, on_oh), out);
+  WRITE_IMAGE(output, (int2)(ow * CO_SLICES + co_slice, on_oh), out_f4);
+  WRITE_IMAGE(output, (int2)(ow0 * CO_SLICES + co_slice0, n_oh0), out_h0_w0_c0);
+  WRITE_IMAGE(output, (int2)(ow1 * CO_SLICES + co_slice0, n_oh0), out_h0_w1_c0);
+  WRITE_IMAGE(output, (int2)(tile_hw + 0, (co_slice + 0) * 36 + h), out00);
+  WRITE_IMAGE(output, (int2)(tile_hw + 0, (co_slice + 1) * 36 + h), out10);
+  WRITE_IMAGE(output, (int2)(tile_hw + 1, (co_slice + 0) * 36 + h), out01);
+  WRITE_IMAGE(output, (int2)(tile_hw + 1, (co_slice + 1) * 36 + h), out11);
+  WRITE_IMAGE(output, (int2)(tile_hw, y_idx++), acc);
+  WRITE_IMAGE(output, (int2)(w * SLICES + slice, nh), out);
+  WRITE_IMAGE(output, (int2)(x, y), out);
+  WRITE_IMAGE(output, (int2)(x_idx, h), acc);
+  WRITE_IMAGEOUT(output, (int2)(Y * C4 + C4 - 1, n * H + X), OUT_FLT4(result));
+  __kernel void BUF_to_IMG_##src_dtype##_##dst_dtype(__global SRC_TYPE##4 * src_data, __write_only image2d_t dst_data, \
+  __kernel void Concat##Inputnum##Axis##ToFormat(__read_only image2d_t input0, __read_only image2d_t input1,          \
+  __kernel void GlobalHW##Method(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size) { \
+  __kernel void GlobalWC##Method(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size, \
+  __kernel void IMG_to_BUF_##src_dtype##_##dst_dtype(__read_only image2d_t src_data, __global DST_TYPE##4 * dst_data, \
+  __kernel void LocalHW##Method(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size) { \
+  __kernel void LocalWC##Method(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size, \
+  acc =
+  acc = (FLT)(0.5f) * (AtM_row[1] + AtM_row[2]) + (FLT)(2.0f) * (AtM_row[3] + AtM_row[4]);
+  acc = (FLT)(0.7071067691f) * (AtM_row[1] - AtM_row[2]) + (FLT)(1.4142135382f) * (AtM_row[3] - AtM_row[4]);
+  acc = -tmp0 + tmp1;
+  acc = BtD_row[1] + (FLT)(-2.5f) * BtD_row[3] + BtD_row[5];
+  acc = max(acc, -HALF_MAX);
+  acc = min(acc, HALF_MAX); \
+  acc = tmp0 + tmp1;
+  char4 a = convert_char4(read_imagei(input_a, smp_none, (int2)(X, Y)));
+  char4 b = convert_char4(read_imagei(input_b, smp_none, (int2)(X, Y)));
+  float4 last = convert_float4(READ_IMAGE(input, smp_zero, (int2)(Y * C4 + C4 - 1, n * H + X)));
+  float4 result = convert_float4(READ_IMAGE(input, smp_zero, (int2)(Y * C4 + C4 - 1, n * H + X)));
+  float4 result = convert_float4(read_imageh(input, smp_none, (int2)(x, y)));
+  float4 result = read_imagef(input, smp_none, (int2)(x, y));
+  float4 t = convert_float4(READ_IMAGE(input, smp_zero, (int2)(Y * C4 + C4 - 1, n * H + X)));
+  half4 result = convert_half4(read_imagef(input, smp_none, (int2)(x, y)));
+  half4 result = read_imageh(input, smp_none, (int2)(x, y));
+  if (OW * CO_SLICES <= MAX_IMAGE2D_WIDTH) {
+  if (bias != 0) acc += bias[co_slice];               \
+  if (broadcastC_flag == 0) {
+  int Y = get_global_id(1);  // upper axis accumulation
+  int4 index_input = read_imagei(input, smp_zero, (int2)(Y, X));
+  int4 indices = READ_IMAGE(src_data, smp_zero, (int2)(Z / C4NUM, 0));
+  int4 indices = READ_IMAGE(src_data, smp_zero, (int2)(in_index % in_image2d_shape.x, in_index / in_image2d_shape.x));
+  write_imagef(output, (int2)(x, y), result);
+  write_imageh(output, (int2)(x, y), result);
+  write_imagei(output, (int2)(X, Y), result);
+  } else if (broadcastC_flag == 1) {
+ -DDTYPE=float -DDTYPE4=float4 -DWRITE_IMAGE=write_imagef -DREAD_IMAGE=read_imagef 
+ -DDTYPE=half -DDTYPE4=half4 -DWRITE_IMAGE=write_imageh -DREAD_IMAGE=read_imageh 
+ -DDTYPE=int -DDTYPE4=int4 -DWRITE_IMAGE=write_imagei  -DREAD_IMAGE=read_imagei 
+ -DEXCEDD_MAX_IMAGE2D_WIDTH
+ -DMAX_IMAGE2D_WIDTH=
+ -DOUT_FLT4=convert_float4 -DWRITE_IMAGEOUT=write_imagef -DWRITE_IMAGE=write_imagef -DREAD_IMAGE=read_imagef 
+ -DOUT_FLT4=convert_half4 -DWRITE_IMAGEOUT=write_imageh -DWRITE_IMAGE=write_imageh -DREAD_IMAGE=read_imageh 
+ -DWRITE_IMAGE=write_imagef -DREAD_IMAGE=read_imagei 
+ -DWRITE_IMAGE=write_imageh -DREAD_IMAGE=write_imagei 
+ = READ_IMAGE(input
+ imaginary
+ |XRz
+#define BUF_to_IMG(src_dtype, dst_dtype, SRC_TYPE, DST_TYPE, WRITE_IMAGE_OUT)                                          \
+#define IMG_to_BUF(src_dtype, dst_dtype, SRC_TYPE, DST_TYPE, READ_IMAGE_IN)                                           \
+#define LimitAcc()          \
+#define LimitAcc() \
+#define UpdateAcc()                                   \
+#ifndef EXCEDD_MAX_IMAGE2D_WIDTH
+%s failed to broadcast
+, image addr: 
+, image_addr: 
+.eh_frame
+.eh_frame_hdr
+// BUF_to_IMG(src_dtype, dst_dtype, SRC_TYPE, DST_TYPE, WRITE_IMAGE_OUT)
+// IMG_to_BUF(src_dtype, dst_dtype, SRC_TYPE, DST_TYPE, READ_IMAGE_IN)
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/compat/v0/broadcast_to_compat_v0.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/compat/v0/cast_compat_v0.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/compat/v0/transpose_compat_v0.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/broadcast_to_populate.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/cast_populate.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/custom_predict_populate.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/lsh_projection_populate.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/quant_dtype_cast_populate.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/transpose_populate.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/v0/broadcast_to_populate_v0.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/v0/cast_populate_v0.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/v0/custom_predict_populate_v0.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/v0/lsh_projection_populate_v0.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/v0/quant_dtype_cast_populate_v0.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/ops/populate/v0/transpose_populate_v0.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/arm/base/quant_dtype_cast.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/arm/fp16/cast_fp16.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/arm/fp16/quant_dtype_cast_fp16.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/arm/fp32/broadcast_to_fp32.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/arm/fp32/lsh_projection_fp32.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/arm/fp32/transpose_fp32.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/opencl/kernel/cast.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/opencl/kernel/conv2d_transpose.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/opencl/kernel/fusion_eltwise.cc
+/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/opencl/kernel/transpose.cc
+AddFusion
+AdderFusion
+ArgMaxFusion
+ArgMinFusion
+AvgPoolFusion
+BUF_to_IMG(float16, float16, half, half, write_imageh);
+BUF_to_IMG(float32, float16, float, half, write_imageh);
+BUF_to_IMG(float32, float32, float, float, write_imagef);
+BUF_to_IMG(int32, int32, int, int, write_imagei);
+BUF_to_IMG(int8, int8, char, int, write_imagei);
+BUF_to_IMG(uint32, uint32, int, int, write_imagei);
+BoardcastScale
+Broadcast
+Broadcast2GpuShape
+BroadcastAdd
+BroadcastAddFp16
+BroadcastAddInt8
+BroadcastDiv
+BroadcastMul
+BroadcastNHWC4
+BroadcastRun
+BroadcastTo
+BroadcastToInferShape
+CL_HPP_MINIMUM_OPENCL_VERSION 
+CalBroadCastBiasDataElements
+Can't get GetImageSize for 
+Can't get Image2D for 
+Can't get Image2D, try to use Buffer. Please confirm the buffer type.
+Cast const tensor from fp16 to fp32 failed, tensor name : 
+Cast const tensor from fp32 to fp16 failed, tensor name : 
+CastConstTensorData
+CastConstTensorsData
+CastConstTensorsData failed: 
+CastFp16Run
+CastTensorInputData
+CastToFp16
+CastToFp32
+CastToOthers
+Cast_
+Conv2DBackpropFilterFusion
+Conv2DBackpropInputFusion
+Conv2DFusion
+Conv2dTranspose doesn't support non-constant bias yet.
+Conv2dTranspose doesn't support non-constant filter yet.
+Conv2dTransposeFusion
+CpuPredictKernelCreator
+CpuQuantDTypeCastFp16KernelCreator
+Create OpenCL Image2D  (ERROR CODE: 
+Create OpenCL Image2D failed! (ERROR CODE: 
+CustomPredict
+CustomPredictInferShape
+Deleted virtual function called!
+DivFusion
+DoCast
+DoFill
+DoTransposeBool
+DoTransposeFp16
+DoTransposeFp32
+DoTransposeInt16
+DoTransposeInt32
+DoTransposeInt64
+DoTransposeInt8
+DoTransposeUInt16
+DoTransposeUInt32
+DoTransposeUInt64
+DoTransposeUInt8
+ElementMaximum
+ElementMaximumFp16
+ElementMaximumInt
+ElementMinimum
+ElementMinimumFp16
+ElementMinimumInt
+ElementMulAcc
+ElementMulAccFp16
+ElementOptMaximumFp16
+ElementOptMinimumFp16
+ElementOptMulAcc
+ElementOptMulAccFp16
+EmbeddingLookupFusion
+ExpFusion
+ExpFusionFp16
+ExpFusionFp32
+FftImag
+FftImagInferShape
+Fp16TransposeDim2
+Fp16TransposeDim3
+Fp16TransposeDim4
+Fp16TransposeDim5
+Fp16TransposeDim6
+FusionEltwise
+FusionEltwise can't find index 
+FusionEltwise: 
+FusionEltwiseParameter
+FusionEltwiseParameter is nullptr.
+FusionPass
+GetBroadcastGpuAxis
+GetFusionSwitchConfigPathChar
+GetImageSize
+GetImageSize failed
+Handle mirror pad failed, error_code[
+IMG_to_BUF(float16, float16, half, half, read_imageh);
+IMG_to_BUF(float16, float32, half, float, read_imageh);
+IMG_to_BUF(float32, float32, float, float, read_imagef);
+IMG_to_BUF(int32, float32, int, float, read_imagei);
+IMG_to_BUF(int32, int32, int, int, read_imagei);
+IMG_to_BUF(int8, int8, char, char, read_imagei);
+IMG_to_BUF(uint32, uint32, int, int, read_imagei);
+If fullconnection input weight is not constant, b_transpose_ should be true.
+Image format mismatch
+Image format not supported
+Image pitch alignment:
+Invalid image descriptor
+Invalid image format descriptor
+Invalid image size
+L2NormalizeFusion
+LayerNormFusion
+LoadAndAddOffset
+LshProjection
+LshProjection kernel parallel launch failed
+LshProjectionInferShape
+Malloc BroadcastShapeInfo failed!
+Malloc a new Image2D, width=
+Map image failed, can not found image :
+MatMulAccFp16
+MatMulActWeightTransposeB
+MatrixTranspose
+MaxPoolFusion
+Maximum
+MaximumByAxes
+MaximumGrad
+MaximumInt8
+Minimum
+MinimumByAxes
+MinimumFit
+MinimumGrad
+MirrorPad
+MirrorPadFp16
+MirrorPadImpl
+MirrorPadInt8
+MulFusion
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+No need to cast from 
+OpenCL doesn't support depthwise Conv2dTranspose.
+OpenCL doesn't support group Conv2dTranspose.
+OpenCLConv2dTransposeCreator
+PReLUFusion
+Pad4DOffset
+PadFusion
+PartialFusion
+PopulateBroadcastToParameter
+PopulateCastParameter
+PopulateCustomPredictParameter
+PopulateLshProjectionParameter
+PopulateQuantDTypeCastParameter
+PopulateTransposeParameter
+PowFusion
+PowerBroadCast
+PowerBroadCastFp16
+Pure virtual function called!
+QuantDTypeCast
+QuantDTypeCast error task_id[
+QuantDTypeCast need quantization parameters which is not found.
+QuantDTypeCastFP16Run
+QuantDTypeCastFP16Run error task_id[
+QuantDTypeCastFp16 error task_id[
+QuantDTypeCastFp16 not support input or output type
+QuantDTypeCastRun
+QuantDTypeCastRun error error_code[
+QuantDTypeCastRun error task_id[
+QuantDtypeCastInferShape
+ReadOrWriteImage
+ReduceFusion
+RegBroadcastToInfer
+RegCastInfer
+RegConv2DBackpropFilterFusionInfer
+RegConv2DBackpropInputFusionInfer
+RegConv2dTransposeInfer
+RegCustomPredictInfer
+RegFftImagInfer
+RegLayerNormFusionInfer
+RegLshProjectionInfer
+RegMaximumGradInfer
+RegMaximumInfer
+RegMinimumGradInfer
+RegMinimumInfer
+RegQuantDTypeCastInfer
+RegTransposeInfer
+RunAxis0 in_image can not be nullptr
+RunAxis0 out_image can not be nullptr
+Running mirror pad with padding bigger than shape.
+ScaleFusion
+SetFusionSwitchConfigPath
+Size of broadcast_to shape exceed MAX_SHAPE_SIZE
+SliceFusion
+SoftmaxRun
+SoftmaxRun error task_id[
+St8bad_cast
+SubFusion
+The length of three inputs are not equal to 1 or length of output, which is unacceptable
+TileFusion
+TopKFusion
+TransferBroadcastToAttr
+TransferCastAttr
+TransferTransposeAttr
+Transpose
+Transpose don't support 5d tensor or higher.
+Transpose input output size unsupported.
+Transpose only support in_ndim equal to out_ndim.
+Transpose12x8ARM64Fp16
+Transpose16x8ARM64Fp16
+Transpose4x8ARM64Fp16
+Transpose8X8Fp32Arm64
+Transpose8x8ARM64Fp16
+TransposeDim2Bool
+TransposeDim2Fp32
+TransposeDim2Int16
+TransposeDim2Int32
+TransposeDim2Int64
+TransposeDim2Int8
+TransposeDim2UInt16
+TransposeDim2UInt32
+TransposeDim2UInt64
+TransposeDim2UInt8
+TransposeDim3Bool
+TransposeDim3Fp32
+TransposeDim3Int16
+TransposeDim3Int32
+TransposeDim3Int64
+TransposeDim3Int8
+TransposeDim3UInt16
+TransposeDim3UInt32
+TransposeDim3UInt64
+TransposeDim3UInt8
+TransposeDim4Bool
+TransposeDim4Fp32
+TransposeDim4Int16
+TransposeDim4Int32
+TransposeDim4Int64
+TransposeDim4Int8
+TransposeDim4UInt16
+TransposeDim4UInt32
+TransposeDim4UInt64
+TransposeDim4UInt8
+TransposeDim5Bool
+TransposeDim5Fp32
+TransposeDim5Int16
+TransposeDim5Int32
+TransposeDim5Int64
+TransposeDim5Int8
+TransposeDim5UInt16
+TransposeDim5UInt32
+TransposeDim5UInt64
+TransposeDim5UInt8
+TransposeDim6Bool
+TransposeDim6Fp32
+TransposeDim6Int16
+TransposeDim6Int32
+TransposeDim6Int64
+TransposeDim6Int8
+TransposeDim6UInt16
+TransposeDim6UInt32
+TransposeDim6UInt64
+TransposeDim6UInt8
+TransposeDimsBool
+TransposeDimsFp16
+TransposeDimsFp32
+TransposeDimsInt16
+TransposeDimsInt32
+TransposeDimsInt64
+TransposeDimsInt8
+TransposeDimsUInt16
+TransposeDimsUInt32
+TransposeDimsUInt64
+TransposeDimsUInt8
+TransposeImpl
+TransposeImpl Run error task_id[
+TransposeInferShape
+Unsupported data type transpose from 
+Unsupported format transpose from 
+W1/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/arm/string/predict.cc
+] OpenCL Image2D 
+_ZN11flatbuffers17FlatBufferBuilder9AddOffsetIN9mindspore6schema9TuneParamEEEvtNS_6OffsetIT_EE
+_ZN11flatbuffers17FlatBufferBuilder9AddOffsetINS_6StringEEEvtNS_6OffsetIT_EE
+_ZN11flatbuffers17FlatBufferBuilder9AddOffsetINS_6VectorINS_6OffsetIN9mindspore6schema10QuantParamEEEEEEEvtNS3_IT_EE
+_ZN11flatbuffers17FlatBufferBuilder9AddOffsetINS_6VectorINS_6OffsetIN9mindspore6schema13ProgramBinaryEEEEEEEvtNS3_IT_EE
+_ZN11flatbuffers17FlatBufferBuilder9AddOffsetINS_6VectorIfEEEEvtNS_6OffsetIT_EE
+_ZN11flatbuffers17FlatBufferBuilder9AddOffsetINS_6VectorIhEEEEvtNS_6OffsetIT_EE
+_ZN11flatbuffers17FlatBufferBuilder9AddOffsetINS_6VectorIiEEEEvtNS_6OffsetIT_EE
+_ZN11flatbuffers17FlatBufferBuilder9AddOffsetIvEEvtNS_6OffsetIT_EE
+_ZN9mindspore13Serialization11ExportModelERKNS_5ModelENS_9ModelTypeEPNS_6BufferE
+_ZN9mindspore13Serialization11ExportModelERKNS_5ModelENS_9ModelTypeERKNSt6__ndk112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEENS_16QuantizationTypeEb
+_ZN9mindspore13Serialization4LoadEPKvmNS_9ModelTypeEPNS_5GraphERKNS_3KeyERKNSt6__ndk16vectorIcNS9_9allocatorIcEEEE
+_ZN9mindspore13Serialization4LoadERKNSt6__ndk16vectorINS2_IcNS1_9allocatorIcEEEENS3_IS5_EEEENS_9ModelTypeEPNS2_INS_5GraphENS3_ISB_EEEERKNS_3KeyERKS5_
+_ZN9mindspore13Serialization4LoadERKNSt6__ndk16vectorIcNS1_9allocatorIcEEEENS_9ModelTypeEPNS_5GraphERKNS_3KeyES7_
+_ZN9mindspore17DeviceInfoContext4CastINS_13CPUDeviceInfoEEENSt6__ndk110shared_ptrIT_EEv
+_ZN9mindspore17DeviceInfoContext4CastINS_13GPUDeviceInfoEEENSt6__ndk110shared_ptrIT_EEv
+_ZN9mindspore17DeviceInfoContext4CastINS_18KirinNPUDeviceInfoEEENSt6__ndk110shared_ptrIT_EEv
+_ZN9mindspore19Ascend310DeviceInfo25SetFusionSwitchConfigPathERKNSt6__ndk16vectorIcNS1_9allocatorIcEEEE
+_ZN9mindspore20EnumStrForMsLogLevelENS_10MsLogLevelE
+_ZN9mindspore4lite11CommConvMulENSt6__ndk16vectorIiNS1_9allocatorIiEEEES5_
+_ZN9mindspore4lite11LiteOpActor12NeedCastDataEPNS0_6TensorES3_
+_ZN9mindspore4lite11LiteOpActor13CastInputDataEPNS0_6TensorES3_
+_ZN9mindspore4lite11LiteOpActor19CastTensorInputDataEPNS0_6TensorES3_
+_ZN9mindspore4lite11LiteOpActor23CastTensorListInputDataEPNS0_10TensorListES3_
+_ZN9mindspore4lite11LiteSession13ReSizeKernelsERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEE
+_ZN9mindspore4lite11LiteSession16FreePackOpWeightERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEE
+_ZN9mindspore4lite13CommConvdwMulENSt6__ndk16vectorIiNS1_9allocatorIiEEEES5_
+_ZN9mindspore4lite13CreateOpActorERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS1_9allocatorIS5_EEEEPKNS0_12InnerContextE
+_ZN9mindspore4lite14KernelRegistry10GetCreatorERKNS_6kernel9KernelKeyE
+_ZN9mindspore4lite14KernelRegistry13SupportKernelERKNS_6kernel9KernelKeyE
+_ZN9mindspore4lite14KernelRegistry15GetCustomKernelERKNSt6__ndk16vectorIPNS0_6TensorENS2_9allocatorIS5_EEEESA_PKNS_7ContextERKNS_6kernel9KernelKeyEPPNSE_10LiteKernelEPKv
+_ZN9mindspore4lite14KernelRegistry19GetCreatorFuncIndexENS_6kernel9KernelKeyE
+_ZN9mindspore4lite14KernelRegistry5MergeERKNSt6__ndk113unordered_mapINS_6kernel9KernelKeyEPFPNS4_11InnerKernelERKNS2_6vectorIPNS0_6TensorENS2_9allocatorISA_EEEESF_P11OpParameterPKNS0_7ContextERKS5_ENS2_4hashIS5_EENS2_8equal_toIS5_EENSB_INS2_4pairISL_SO_EEEEEE
+_ZN9mindspore4lite14KernelRegistry9GetKernelERKNSt6__ndk16vectorIPNS0_6TensorENS2_9allocatorIS5_EEEESA_PKNS0_12InnerContextEPKNS_7ContextERKNS_6kernel9KernelKeyEP11OpParameterPPNSH_10LiteKernelEPKv
+_ZN9mindspore4lite14KernelRegistry9RegKernelENS_6kernel11KERNEL_ARCHENS_6TypeIdEiPFPNS2_11InnerKernelERKNSt6__ndk16vectorIPNS0_6TensorENS7_9allocatorISA_EEEESF_P11OpParameterPKNS0_7ContextERKNS2_9KernelKeyEE
+_ZN9mindspore4lite14KernelRegistry9RegKernelENS_6kernel9KernelKeyEPFPNS2_11InnerKernelERKNSt6__ndk16vectorIPNS0_6TensorENS6_9allocatorIS9_EEEESE_P11OpParameterPKNS0_7ContextERKS3_E
+_ZN9mindspore4lite14MindrtExecutor16PrepareInputDataERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEERKNS3_IPNS0_6TensorENS7_ISD_EEEE
+_ZN9mindspore4lite14MindrtExecutor17PrepareOutputDataERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEERKNS3_IPNS0_6TensorENS7_ISD_EEEE
+_ZN9mindspore4lite14MindrtExecutor3RunERKNSt6__ndk16vectorIPNS0_6TensorENS2_9allocatorIS5_EEEESA_RKNS3_IPNS_6kernel10LiteKernelENS6_ISD_EEEEPNS_9AllocatorERKNS2_8functionIFbNS3_IPNS_6tensor8MSTensorENS6_ISN_EEEESP_RKNS_13CallBackParamEEEESW_
+_ZN9mindspore4lite14MindrtExecutor7PrepareERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEERKNS3_IPNS0_6TensorENS7_ISD_EEEESH_PKNS0_12InnerContextE
+_ZN9mindspore4lite14SearchSubGraph14SubgraphFusionEPNSt6__ndk16vectorINS1_8SubgraphENS2_9allocatorIS4_EEEE
+_ZN9mindspore4lite14SearchSubGraph19OptimizeAfterFusionEPNSt6__ndk16vectorINS1_8SubgraphENS2_9allocatorIS4_EEEEj
+_ZN9mindspore4lite14SearchSubGraph21CalculateConv2DFusionEPNS0_5Model4NodeE
+_ZN9mindspore4lite15OfflineIsolatedERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS1_9allocatorIS5_EEEERKS4_RKNS0_6TensorE
+_ZN9mindspore4lite16TensorVectorCastERKNSt6__ndk16vectorIPNS0_6TensorENS1_9allocatorIS4_EEEE
+_ZN9mindspore4lite16TransferCastAttrEPNS0_5Model4NodeEPNSt6__ndk16vectorIPNS_6schema6TensorENS4_9allocatorIS8_EEEEPNS5_IPcNS9_ISD_EEEE
+_ZN9mindspore4lite17GenPrimVersionKeyEii
+_ZN9mindspore4lite20CastTransferRegistryE
+_ZN9mindspore4lite21PopulateCastParameterEPKv
+_ZN9mindspore4lite21TransferTransposeAttrEPNS0_5Model4NodeEPNSt6__ndk16vectorIPNS_6schema6TensorENS4_9allocatorIS8_EEEEPNS5_IPcNS9_ISD_EEEE
+_ZN9mindspore4lite23TransferBroadcastToAttrEPNS0_5Model4NodeEPNSt6__ndk16vectorIPNS_6schema6TensorENS4_9allocatorIS8_EEEEPNS5_IPcNS9_ISD_EEEE
+_ZN9mindspore4lite25TransposeTransferRegistryE
+_ZN9mindspore4lite25g_castV0ParameterRegistryE
+_ZN9mindspore4lite26PopulateTransposeParameterEPKv
+_ZN9mindspore4lite27BroadcastToTransferRegistryE
+_ZN9mindspore4lite28PopulateBroadcastToParameterEPKv
+_ZN9mindspore4lite28g_maximumV0ParameterRegistryE
+_ZN9mindspore4lite28g_minimumV0ParameterRegistryE
+_ZN9mindspore4lite30PopulateCustomPredictParameterEPKv
+_ZN9mindspore4lite30PopulateLshProjectionParameterEPKv
+_ZN9mindspore4lite30g_transposeV0ParameterRegistryE
+_ZN9mindspore4lite31PopulateQuantDTypeCastParameterEPKv
+_ZN9mindspore4lite32g_broadcastToV0ParameterRegistryE
+_ZN9mindspore4lite34g_customPredictV0ParameterRegistryE
+_ZN9mindspore4lite34g_lshProjectionV0ParameterRegistryE
+_ZN9mindspore4lite35g_quantDTypeCastV0ParameterRegistryE
+_ZN9mindspore4lite6opencl13OpenCLRuntime10WriteImageEPvS3_
+_ZN9mindspore4lite6opencl13OpenCLRuntime16ReadOrWriteImageEPvS3_b
+_ZN9mindspore4lite6opencl13OpenCLRuntime9ReadImageEPvS3_
+_ZN9mindspore4lite6opencl13clCreateImageE
+_ZN9mindspore4lite6opencl14OpenCLExecutor3RunERKNSt6__ndk16vectorIPNS0_6TensorENS3_9allocatorIS6_EEEESB_RKNS4_IPNS_6kernel10LiteKernelENS7_ISE_EEEEPNS_9AllocatorERKNS3_8functionIFbNS4_IPNS_6tensor8MSTensorENS7_ISO_EEEESQ_RKNS_13CallBackParamEEEESX_
+_ZN9mindspore4lite6opencl14OpenCLExecutor7PrepareERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS3_9allocatorIS7_EEEERKNS4_IPNS0_6TensorENS8_ISE_EEEESI_PKNS0_12InnerContextE
+_ZN9mindspore4lite6opencl14OpenCLExecutor9RunOrTuneERKNSt6__ndk16vectorIPNS0_6TensorENS3_9allocatorIS6_EEEESB_RKNS4_IPNS_6kernel10LiteKernelENS7_ISE_EEEEPNS_9AllocatorERKNS3_8functionIFbNS4_IPNS_6tensor8MSTensorENS7_ISO_EEEESQ_RKNS_13CallBackParamEEEESX_b
+_ZN9mindspore4lite6opencl14clGetImageInfoE
+_ZN9mindspore4lite6opencl15OpenCLAllocator10MinimumFitENS1_7MemTypeEmRKNS1_9ImageSizeE
+_ZN9mindspore4lite6opencl15OpenCLAllocator12GetImageSizeEPvPNS1_9ImageSizeE
+_ZN9mindspore4lite6opencl15OpenCLAllocator13CreateImage2DEmRKNS1_9ImageSizeEPvmbPPN2cl6BufferEPPNS7_7Image2DE
+_ZN9mindspore4lite6opencl15OpenCLAllocator15GetImgDtypeSizeERKNS1_9ImageSizeE
+_ZN9mindspore4lite6opencl15OpenCLAllocator7_MallocENS1_7MemTypeEPvmRKNS1_9ImageSizeE
+_ZN9mindspore4lite6opencl15OpenCLAllocator8GetImageEPv
+_ZN9mindspore4lite6opencl15clCreateImage2DE
+_ZN9mindspore4lite6opencl15clCreateImage3DE
+_ZN9mindspore4lite6opencl17clEnqueueMapImageE
+_ZN9mindspore4lite6opencl18clEnqueueCopyImageE
+_ZN9mindspore4lite6opencl18clEnqueueFillImageE
+_ZN9mindspore4lite6opencl18clEnqueueReadImageE
+_ZN9mindspore4lite6opencl19clEnqueueWriteImageE
+_ZN9mindspore4lite6opencl26clEnqueueCopyBufferToImageE
+_ZN9mindspore4lite6opencl26clEnqueueCopyImageToBufferE
+_ZN9mindspore4lite8Executor3RunERKNSt6__ndk16vectorIPNS0_6TensorENS2_9allocatorIS5_EEEESA_RKNS3_IPNS_6kernel10LiteKernelENS6_ISD_EEEEPNS_9AllocatorERKNS2_8functionIFbNS3_IPNS_6tensor8MSTensorENS6_ISN_EEEESP_RKNS_13CallBackParamEEEESW_
+_ZN9mindspore4lite8Executor7PrepareERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEERKNS3_IPNS0_6TensorENS7_ISD_EEEESH_PKNS0_12InnerContextE
+_ZN9mindspore4lite9Scheduler11InitKernelsENSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEE
+_ZN9mindspore4lite9Scheduler13FindCpuKernelERKNSt6__ndk16vectorIPNS0_6TensorENS2_9allocatorIS5_EEEESA_P11OpParameterRKNS_6kernel9KernelKeyENS_6TypeIdEPPNSD_10LiteKernelE
+_ZN9mindspore4lite9Scheduler13FindGpuKernelERKNSt6__ndk16vectorIPNS0_6TensorENS2_9allocatorIS5_EEEESA_P11OpParameterRKNS_6kernel9KernelKeyEPPNSD_10LiteKernelE
+_ZN9mindspore4lite9Scheduler18ConstructSubGraphsENSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEEPS9_PNS2_3mapIPKS5_bNS2_4lessISD_EENS7_INS2_4pairIKSD_bEEEEEE
+_ZN9mindspore4lite9Scheduler19FindAllInoutKernelsERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEE
+_ZN9mindspore4lite9Scheduler19PartialSubGraphTypeERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEE
+_ZN9mindspore4lite9Scheduler21IsControlFlowPartternERKNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEE
+_ZN9mindspore4lite9Scheduler22ReplaceDelegateKernelsEPNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEE
+_ZN9mindspore4lite9Scheduler22ScheduleGraphToKernelsEPNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEENS_6TypeIdE
+_ZN9mindspore4lite9Scheduler25ScheduleSubGraphToKernelsEmPNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEEPNS3_IPNS0_6TensorENS7_ISC_EEEESF_NS_6TypeIdE
+_ZN9mindspore4lite9Scheduler29ConstructControlFlowMainGraphEPNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEE
+_ZN9mindspore4lite9Scheduler8ScheduleEPNSt6__ndk16vectorIPNS_6kernel10LiteKernelENS2_9allocatorIS6_EEEE
+_ZN9mindspore5Model5BuildEPKvmNS_9ModelTypeERKNSt6__ndk110shared_ptrINS_7ContextEEERKNS_3KeyERKNS4_12basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE
+_ZN9mindspore5Model5BuildERKNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEENS_9ModelTypeERKNS1_10shared_ptrINS_7ContextEEERKNS_3KeyES9_
+_ZN9mindspore5Model7PredictERKNSt6__ndk16vectorINS_8MSTensorENS1_9allocatorIS3_EEEEPS6_RKNS1_8functionIFbS8_S8_RKNS_15MSCallBackParamEEEESH_
+_ZN9mindspore6kernel10LiteKernel8set_descENS0_9KernelKeyE
+_ZN9mindspore6kernel10SoftmaxRunEPviff
+_ZN9mindspore6kernel11CpuSubGraphC2ENSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEES8_S8_PNS0_6KernelE
+_ZN9mindspore6kernel11CreateParamEPNS0_10LiteKernelERKNSt6__ndk13mapIPNS_4lite6TensorEPNS0_22FusionEltwiseParameterENS3_4lessIS7_EENS3_9allocatorINS3_4pairIKS7_S9_EEEEEE
+_ZN9mindspore6kernel12OpenCLKernel12GetImageSizeEmPNS_4lite6opencl9ImageSizeE
+_ZN9mindspore6kernel12OpenCLKernel3KeyEv
+_ZN9mindspore6kernel12PadCPUKernel15HandleMirrorPadEv
+_ZN9mindspore6kernel12PadCPUKernel16RunMirrorPadImplEi
+_ZN9mindspore6kernel12PadCPUKernel18InitMirrorPadBlockEv
+_ZN9mindspore6kernel12PhiloxRandomclEv
+_ZN9mindspore6kernel13CastCPUKernel10CastToFp16EPNS_4lite6TensorES4_ii
+_ZN9mindspore6kernel13CastCPUKernel10CastToFp32EPNS_4lite6TensorES4_ii
+_ZN9mindspore6kernel13CastCPUKernel12CastToOthersEPNS_4lite6TensorES4_ii
+_ZN9mindspore6kernel13CastCPUKernel3RunEv
+_ZN9mindspore6kernel13CastCPUKernel4InitEv
+_ZN9mindspore6kernel13CastCPUKernel6DoCastEi
+_ZN9mindspore6kernel13CastCPUKernel6ReSizeEv
+_ZN9mindspore6kernel13CastCPUKernelC2EP11OpParameterRKNSt6__ndk16vectorIPNS_4lite6TensorENS4_9allocatorIS8_EEEESD_PKNS6_12InnerContextE
+_ZN9mindspore6kernel13CastCPUKernelD0Ev
+_ZN9mindspore6kernel13FillCPUKernel6DoFillEi
+_ZN9mindspore6kernel13MirrorPadImplEPviff
+_ZN9mindspore6kernel13TransposeImplEPviff
+_ZN9mindspore6kernel14CustomSubGraphC2ENSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEES8_S8_PNS0_6KernelE
+_ZN9mindspore6kernel14LiteKernelUtil18SubgraphInputNodesERKNSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEE
+_ZN9mindspore6kernel14LiteKernelUtil19SubgraphOutputNodesERKNSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEE
+_ZN9mindspore6kernel14LiteKernelUtil20SubgraphInputTensorsERKNSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEE
+_ZN9mindspore6kernel14LiteKernelUtil21SubgraphOutputTensorsERKNSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEE
+_ZN9mindspore6kernel14LiteKernelUtil22InitTensorInitRefCountERKNSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEE
+_ZN9mindspore6kernel14LiteKernelUtil22TopologicalSortKernelsEPNSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEE
+_ZN9mindspore6kernel14OpenCLSubGraph10FusionPassEv
+_ZN9mindspore6kernel14OpenCLSubGraph13GenToFormatOpERKNSt6__ndk16vectorIPNS_4lite6TensorENS2_9allocatorIS6_EEEERKNS3_INS3_IPNS0_10LiteKernelENS7_ISD_EEEENS7_ISF_EEEEPS9_PNS3_IPNS0_23OpenCLToFormatParameterENS7_ISM_EEEEPSF_NS4_6opencl7MemTypeE
+_ZN9mindspore6kernel14OpenCLSubGraph21GetKernelFromToTensorERKNSt6__ndk16vectorIPNS_4lite6TensorENS2_9allocatorIS6_EEEERKNS3_IPNS0_10LiteKernelENS7_ISD_EEEEPNS3_ISF_NS7_ISF_EEEEb
+_ZN9mindspore6kernel14OpenCLSubGraph34ReplaceOutTensorAndKernelToConvertEPKNS_4lite6TensorERKNSt6__ndk16vectorIPNS0_10LiteKernelENS6_9allocatorIS9_EEEEPS3_S9_NS2_6opencl7MemTypeE
+_ZN9mindspore6kernel14OpenCLSubGraphC2ERKNSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEESA_SA_PNS0_6KernelE
+_ZN9mindspore6kernel14SubGraphKernel16FindInoutKernelsERKNSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEE
+_ZN9mindspore6kernel14SubGraphKernelC2ENSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEES8_S8_PNS0_6KernelE
+_ZN9mindspore6kernel15CpuFp16SubGraphC2ENSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEES8_S8_PNS0_6KernelE
+_ZN9mindspore6kernel15CpuFp32SubGraphC2ENSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEES8_S8_PNS0_6KernelE
+_ZN9mindspore6kernel16CastOpenCLKernel10CheckSpecsEv
+_ZN9mindspore6kernel16CastOpenCLKernel12SetConstArgsEv
+_ZN9mindspore6kernel16CastOpenCLKernel14SetGlobalLocalEv
+_ZN9mindspore6kernel16CastOpenCLKernel3RunEv
+_ZN9mindspore6kernel16CastOpenCLKernel7PrepareEv
+_ZN9mindspore6kernel16CastOpenCLKernelD0Ev
+_ZN9mindspore6kernel16LshProjectionRunEPviff
+_ZN9mindspore6kernel16PadFp16CPUKernel16RunMirrorPadImplEi
+_ZN9mindspore6kernel16PadInt8CPUKernel15HandleMirrorPadEv
+_ZN9mindspore6kernel16PadInt8CPUKernel16RunMirrorPadImplEi
+_ZN9mindspore6kernel16PredictCPUKernel12GetLabelInfoEv
+_ZN9mindspore6kernel16PredictCPUKernel3RunEv
+_ZN9mindspore6kernel16PredictCPUKernel4InitEv
+_ZN9mindspore6kernel16PredictCPUKernel6ReSizeEv
+_ZN9mindspore6kernel16PredictCPUKernelC2EP11OpParameterRKNSt6__ndk16vectorIPNS_4lite6TensorENS4_9allocatorIS8_EEEESD_PKNS6_12InnerContextE
+_ZN9mindspore6kernel16PredictCPUKernelD0Ev
+_ZN9mindspore6kernel16TransposeInt8RunEPviff
+_ZN9mindspore6kernel17CastFp16CPUKernel3RunEv
+_ZN9mindspore6kernel17CastFp16CPUKernel4InitEv
+_ZN9mindspore6kernel17CastFp16CPUKernel6DoCastEi
+_ZN9mindspore6kernel17CastFp16CPUKernel6ReSizeEv
+_ZN9mindspore6kernel17CastFp16CPUKernelC2EP11OpParameterRKNSt6__ndk16vectorIPNS_4lite6TensorENS4_9allocatorIS8_EEEESD_PKNS6_12InnerContextE
+_ZN9mindspore6kernel17CastFp16CPUKernelD0Ev
+_ZN9mindspore6kernel17CropBaseCPUKernel9PadOffsetEiP13CropParameter
+_ZN9mindspore6kernel17FillFp16CPUKernel6DoFillEi
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_12EluCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_12ExpCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_12GluCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_12GruCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_12PadCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_13AddNCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_13BiasCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_13CallCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_13CastCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_13CropCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_13FillCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_13LstmCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_13RankCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_13SizeCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_13TileCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_13TopKCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_14AdderCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_14PReluCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_14PowerCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_14RangeCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_14ScaleCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_14ShapeCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_14SliceCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_14WhereCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15AssertCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15ConcatCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15CumSumCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15GatherCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15L2NormCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15MatmulCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15OneHotCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15ReduceCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15ResizeCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15SelectCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15SpliceCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15SwitchCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_15UniqueCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16DivInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16ExpFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16GruFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16MulInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16NonZeroCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16PadFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16PadInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16PoolingCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16ReverseCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16SoftmaxCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16SubInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_16UnstackCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_17AddNFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_17CastFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_17CropFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_17CropInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_17FillFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_17GatherNdCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_17LstmFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_17PriorBoxCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_17SkipGramCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_17TopKInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18ArgMinMaxCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18BatchnormCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18LayerNormCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18PowerFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18PowerInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18ScaleFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18ScaleInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18ScatterNDCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18SliceFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18SliceInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18SplitBaseCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18SplitInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18StackBaseCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18StackFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18TransposeCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_18ZerosLikeCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19ActivationCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19AffineFp32CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19ArithmeticCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19ConcatFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19ConcatInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19GatherFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19GatherInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19L2NormInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19LogSoftmaxCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19MatmulFP16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19MatmulInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19PartialFusionKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19ROIPoolingCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19ReduceInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_19ResizeInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20BiasAddCPUFp16KernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20BiasAddInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20BroadcastToCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20PoolingFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20PoolingInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20RaggedRangeCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20ReshapeBaseCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20ReshapeInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20SoftmaxFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20SoftmaxInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20SqueezeInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20TensorArrayCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_20UniformRealCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_21BatchToSpaceCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_21DepthToSpaceCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_21GatherNdInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_21InstanceNormCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_21QuantizedAddCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_21SpaceToBatchCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_21SpaceToDepthCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_21StridedSliceCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22ArgMinMaxInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22BatchnormFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22BatchnormInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22CropAndResizeCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22LayerNormFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22LayerNormInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22LeakyReluInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22LshProjectionCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22SparseToDenseCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22TransposeFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22TransposeInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_22Unsqueezeint8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_23ArithmeticFP16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_23ArithmeticSelfCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_23FullconnectionCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_23FusedBatchnormCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_23LogSoftmaxFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_23QuantDTypeCastCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_24ConstantOfShapeCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_24EmbeddingLookupCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_24RaggedRangeFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_24ReverseSequenceCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_24TensorArrayReadCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_24TensorListStackCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_25BatchToSpaceInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_25DepthToSpaceInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_25InstanceNormFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_25SpaceToBatchInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_25TensorArrayWriteCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_26ArithmeticCompareCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_26InvertPermutationCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_26LocalResponseNormCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_26NonMaxSuppressionCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_26TensorListGetItemCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_26TensorListReserveCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_26TensorListSetItemCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_27ArithmeticSelfFp16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_27ArithmeticSelfInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_27FullconnectionFP16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_27FullconnectionInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_29DetectionPostProcessCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_29RandomStandardNormalCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_29SplitWithOverlapBaseCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_29TensorListFromTensorCPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_30ArithmeticCompareFP16CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17LiteKernelCreatorINS0_33DetectionPostProcessInt8CPUKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel17MirrorPadImplInt8EPviff
+_ZN9mindspore6kernel17QuantDTypeCastRunEPviff
+_ZN9mindspore6kernel17ScaleOpenCLKernel23Image2dGetWorkGroupSizeEv
+_ZN9mindspore6kernel18Broadcast2GpuShapeIiiEEvPT0_PKT_i
+_ZN9mindspore6kernel18Conv2DOpenCLKernel3KeyEv
+_ZN9mindspore6kernel18TransposeCPUKernel16TransposeDim2to6Ev
+_ZN9mindspore6kernel18TransposeCPUKernel17GetNchwToNhwcFuncENS_6TypeIdE
+_ZN9mindspore6kernel18TransposeCPUKernel17GetNhwcToNchwFuncENS_6TypeIdE
+_ZN9mindspore6kernel18TransposeCPUKernel20GetNHNCTransposeFuncEPNS_4lite6TensorES4_
+_ZN9mindspore6kernel18TransposeCPUKernel24TransposeDimGreaterThan6Ei
+_ZN9mindspore6kernel18TransposeCPUKernel3RunEv
+_ZN9mindspore6kernel18TransposeCPUKernel4InitEv
+_ZN9mindspore6kernel18TransposeCPUKernel6ReSizeEv
+_ZN9mindspore6kernel18TransposeCPUKernel7RunImplEi
+_ZN9mindspore6kernel18TransposeCPUKernelC2EP11OpParameterRKNSt6__ndk16vectorIPNS_4lite6TensorENS4_9allocatorIS8_EEEESD_PKNS6_12InnerContextE
+_ZN9mindspore6kernel18TransposeCPUKernelD0Ev
+_ZN9mindspore6kernel18TransposeCPUKernelD1Ev
+_ZN9mindspore6kernel18TransposeCPUKernelD2Ev
+_ZN9mindspore6kernel19ArithmeticCPUKernel12BroadcastRunEPvS2_S2_iii
+_ZN9mindspore6kernel19ArithmeticCPUKernel20ConstTensorBroadCastEv
+_ZN9mindspore6kernel19GetBroadcastGpuAxisEii
+_ZN9mindspore6kernel19OpenCLConv2DCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_15PadOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_16CastOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_16FillOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_17PReluOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_17PowerOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_17ScaleOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_17SplitOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_17StackOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_18ConcatOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_18GatherOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_18OneHotOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_18ReduceOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_18ResizeOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_19PoolingOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_19ReshapeOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_19SoftmaxOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_20ToFormatOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_21ArgMinMaxOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_21BatchNormOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_21LayerNormOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_21TransposeOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_22ActivationOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_22ArithmeticOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_24SpaceToDepthOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_24StridedSliceOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_25SparseToDenseOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_26ArithmeticInt8OpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_26ArithmeticSelfOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_26BatchToSpaceNDOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_26FullConnectionOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_26SpaceToBatchNDOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_27Conv2dTransposeOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19OpenCLKernelCreatorINS0_27DepthwiseConv2dOpenCLKernelEEEPNS0_11InnerKernelERKNSt6__ndk16vectorIPNS_4lite6TensorENS5_9allocatorIS9_EEEESE_P11OpParameterPKNS7_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel19PartialFusionKernel3RunEv
+_ZN9mindspore6kernel19PartialFusionKernel4InitEv
+_ZN9mindspore6kernel19PartialFusionKernel6ReSizeEv
+_ZN9mindspore6kernel19PartialFusionKernelC2EP11OpParameterRKNSt6__ndk16vectorIPNS_4lite6TensorENS4_9allocatorIS8_EEEESD_PKNS6_12InnerContextE
+_ZN9mindspore6kernel19PartialFusionKernelD0Ev
+_ZN9mindspore6kernel20BroadcastToCPUKernel3RunEv
+_ZN9mindspore6kernel20BroadcastToCPUKernel4InitEv
+_ZN9mindspore6kernel20BroadcastToCPUKernel6ReSizeEv
+_ZN9mindspore6kernel20BroadcastToCPUKernelC2EP11OpParameterRKNSt6__ndk16vectorIPNS_4lite6TensorENS4_9allocatorIS8_EEEESD_PKNS6_12InnerContextE
+_ZN9mindspore6kernel20BroadcastToCPUKernelD0Ev
+_ZN9mindspore6kernel20BroadcastToCPUKernelD1Ev
+_ZN9mindspore6kernel20BroadcastToCPUKernelD2Ev
+_ZN9mindspore6kernel20GetPhiloxRandomFloatEPfmii
+_ZN9mindspore6kernel21QuantDTypeCastFP16RunEPviff
+_ZN9mindspore6kernel21QuantizedAddCPUKernel12BroadcastRunEi
+_ZN9mindspore6kernel21TransposeOpenCLKernel10CheckSpecsEv
+_ZN9mindspore6kernel21TransposeOpenCLKernel12SetConstArgsEv
+_ZN9mindspore6kernel21TransposeOpenCLKernel14SetGlobalLocalEv
+_ZN9mindspore6kernel21TransposeOpenCLKernel3RunEv
+_ZN9mindspore6kernel21TransposeOpenCLKernel7PrepareEv
+_ZN9mindspore6kernel21TransposeOpenCLKernelD0Ev
+_ZN9mindspore6kernel22FusionEltwiseParameterC2ENS0_15EltwiseOperatorENSt6__ndk112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEERKNS3_6vectorIPNS_4lite6TensorENS7_ISD_EEEERKNS3_3mapISD_PS1_NS3_4lessISD_EENS7_INS3_4pairIKSD_SJ_EEEEEE
+_ZN9mindspore6kernel22FusionEltwiseParameterD2Ev
+_ZN9mindspore6kernel22LshProjectionCPUKernel10GetSignBitEPiPffP22LshProjectionParameterPc
+_ZN9mindspore6kernel22LshProjectionCPUKernel10MallocKeysEv
+_ZN9mindspore6kernel22LshProjectionCPUKernel18LshProjectionDenseEPfPiS2_S3_P22LshProjectionParameteriiPc
+_ZN9mindspore6kernel22LshProjectionCPUKernel19LshProjectionSparseEPfPiS2_S3_P22LshProjectionParameteriiPc
+_ZN9mindspore6kernel22LshProjectionCPUKernel3RunEv
+_ZN9mindspore6kernel22LshProjectionCPUKernel4InitEv
+_ZN9mindspore6kernel22LshProjectionCPUKernel6ReSizeEv
+_ZN9mindspore6kernel22LshProjectionCPUKernel8FreeKeysEv
+_ZN9mindspore6kernel22LshProjectionCPUKernel9DoExecuteEi
+_ZN9mindspore6kernel22LshProjectionCPUKernelC2EP11OpParameterRKNSt6__ndk16vectorIPNS_4lite6TensorENS4_9allocatorIS8_EEEESD_PKNS6_12InnerContextE
+_ZN9mindspore6kernel22LshProjectionCPUKernelD0Ev
+_ZN9mindspore6kernel22TransposeFp16CPUKernel16TransposeDim2to6Ev
+_ZN9mindspore6kernel22TransposeFp16CPUKernel17GetNchwToNhwcFuncENS_6TypeIdE
+_ZN9mindspore6kernel22TransposeFp16CPUKernel17GetNhwcToNchwFuncENS_6TypeIdE
+_ZN9mindspore6kernel22TransposeFp16CPUKernel24TransposeDimGreaterThan6Ei
+_ZN9mindspore6kernel22TransposeFp16CPUKernelD0Ev
+_ZN9mindspore6kernel22TransposeInt8CPUKernel11DoTransposeEi
+_ZN9mindspore6kernel22TransposeInt8CPUKernel20GetNHNCTransposeFuncEPNS_4lite6TensorES4_P18TransposeParameter
+_ZN9mindspore6kernel22TransposeInt8CPUKernel3RunEv
+_ZN9mindspore6kernel22TransposeInt8CPUKernel4InitEv
+_ZN9mindspore6kernel22TransposeInt8CPUKernel6ReSizeEv
+_ZN9mindspore6kernel22TransposeInt8CPUKernelC2EP11OpParameterRKNSt6__ndk16vectorIPNS_4lite6TensorENS4_9allocatorIS8_EEEESD_PKNS6_12InnerContextE
+_ZN9mindspore6kernel22TransposeInt8CPUKernelD0Ev
+_ZN9mindspore6kernel23ArithmeticFP16CPUKernel20ConstTensorBroadCastEv
+_ZN9mindspore6kernel23CpuPredictKernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel23FusedBatchnormCPUKernel18FreeScaleAndOffsetEv
+_ZN9mindspore6kernel23MatmulFp32BaseCPUKernel28CalBroadCastBiasDataElementsEv
+_ZN9mindspore6kernel23QuantDTypeCastCPUKernel14QuantDTypeCastEi
+_ZN9mindspore6kernel23QuantDTypeCastCPUKernel3RunEv
+_ZN9mindspore6kernel23QuantDTypeCastCPUKernel4InitEv
+_ZN9mindspore6kernel23QuantDTypeCastCPUKernel6ReSizeEv
+_ZN9mindspore6kernel23QuantDTypeCastCPUKernelC2EP11OpParameterRKNSt6__ndk16vectorIPNS_4lite6TensorENS4_9allocatorIS8_EEEESD_PKNS6_12InnerContextE
+_ZN9mindspore6kernel23QuantDTypeCastCPUKernelD0Ev
+_ZN9mindspore6kernel24CpuConvFp16KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel24CpuConvFp32KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel24CpuConvInt8KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel25CpuNormalizeKernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel25FusionEltwiseOpenCLKernel11CodegenCoreEPNS0_22FusionEltwiseParameterERKNSt6__ndk112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEEi
+_ZN9mindspore6kernel25FusionEltwiseOpenCLKernel11InitWeightsEv
+_ZN9mindspore6kernel25FusionEltwiseOpenCLKernel12GetTensorIdxEPNS_4lite6TensorE
+_ZN9mindspore6kernel25FusionEltwiseOpenCLKernel12SetConstArgsEv
+_ZN9mindspore6kernel25FusionEltwiseOpenCLKernel14SetGlobalLocalEv
+_ZN9mindspore6kernel25FusionEltwiseOpenCLKernel16GetFormatVarNameENSt6__ndk112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEE
+_ZN9mindspore6kernel25FusionEltwiseOpenCLKernel3RunEv
+_ZN9mindspore6kernel25FusionEltwiseOpenCLKernel7CodegenEv
+_ZN9mindspore6kernel25FusionEltwiseOpenCLKernel7PrepareEv
+_ZN9mindspore6kernel25FusionEltwiseOpenCLKernelD0Ev
+_ZN9mindspore6kernel25FusionEltwiseOpenCLKernelD2Ev
+_ZN9mindspore6kernel25OpenCLMatMulKernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel26ArithmeticCompareCPUKernel12BroadcastRunEPvS2_S2_iii
+_ZN9mindspore6kernel26CpuConvDwInt8KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_12InnerContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel26CpuDeConvFp16KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel26CpuDeConvFp32KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel26CpuDeConvInt8KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel26CpuReduceFp16KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel27Conv2dTransposeOpenCLKernel10CheckSpecsEv
+_ZN9mindspore6kernel27Conv2dTransposeOpenCLKernel10InitFilterEv
+_ZN9mindspore6kernel27Conv2dTransposeOpenCLKernel11InitWeightsEv
+_ZN9mindspore6kernel27Conv2dTransposeOpenCLKernel12SetConstArgsEv
+_ZN9mindspore6kernel27Conv2dTransposeOpenCLKernel14SetGlobalLocalEv
+_ZN9mindspore6kernel27Conv2dTransposeOpenCLKernel14StoreConstDataEv
+_ZN9mindspore6kernel27Conv2dTransposeOpenCLKernel3RunEv
+_ZN9mindspore6kernel27Conv2dTransposeOpenCLKernel7PrepareEv
+_ZN9mindspore6kernel27Conv2dTransposeOpenCLKernel8InitBiasEv
+_ZN9mindspore6kernel27Conv2dTransposeOpenCLKernelD0Ev
+_ZN9mindspore6kernel27QuantDTypeCastFp16CPUKernel14QuantDTypeCastEi
+_ZN9mindspore6kernel27QuantDTypeCastFp16CPUKernel3RunEv
+_ZN9mindspore6kernel27QuantDTypeCastFp16CPUKernel4InitEv
+_ZN9mindspore6kernel27QuantDTypeCastFp16CPUKernel6ReSizeEv
+_ZN9mindspore6kernel27QuantDTypeCastFp16CPUKernelC2EP11OpParameterRKNSt6__ndk16vectorIPNS_4lite6TensorENS4_9allocatorIS8_EEEESD_PKNS6_12InnerContextE
+_ZN9mindspore6kernel27QuantDTypeCastFp16CPUKernelD0Ev
+_ZN9mindspore6kernel28CreateFusionEltwiseParameterEPNS0_10LiteKernelERKNSt6__ndk13mapIPNS_4lite6TensorEPNS0_22FusionEltwiseParameterENS3_4lessIS7_EENS3_9allocatorINS3_4pairIKS7_S9_EEEEEE
+_ZN9mindspore6kernel28OpenCLConv2dTransposeCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel30ArithmeticCompareFP16CPUKernel12BroadcastRunEPDhS2_Phiii
+_ZN9mindspore6kernel30CpuActivationFp16KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel30CpuActivationInt8KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel30CpuArithmeticInt8KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel30CpuExtractFeatureKernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel31CpuHashtableLookupKernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore6kernel34CpuQuantDTypeCastFp16KernelCreatorERKNSt6__ndk16vectorIPNS_4lite6TensorENS1_9allocatorIS5_EEEESA_P11OpParameterPKNS3_7ContextERKNS0_9KernelKeyE
+_ZN9mindspore7session11LiteSession17SetupVirtualBatchEiff
+_ZN9mindspore9ModelImpl7PredictERKNSt6__ndk16vectorINS_8MSTensorENS1_9allocatorIS3_EEEEPS6_RKNS1_8functionIFbS8_S8_RKNS_15MSCallBackParamEEEESH_
+_ZNK9mindspore19Ascend310DeviceInfo29GetFusionSwitchConfigPathCharEv
+_ZNK9mindspore4lite6opencl13OpenCLRuntime9MapBufferERKN2cl7Image2DEbiRKNSt6__ndk16vectorImNS7_9allocatorImEEEEPNS3_12CommandQueueE
+_ZNK9mindspore6schema10TileFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema10TopKFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema11AdderFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema11BroadcastTo6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema11SliceFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema12ArgMaxFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema12ArgMinFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema12Conv2DFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema12ReduceFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema13AvgPoolFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema13MaxPoolFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema15LayerNormFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema17L2NormalizeFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema21Conv2dTransposeFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema25Conv2DBackpropInputFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema26Conv2DBackpropFilterFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema2v011BroadcastTo6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema2v09Transpose6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema9ExpFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore6schema9PadFusion6VerifyERN11flatbuffers8VerifierE
+_ZNK9mindspore7session11LiteSession14GetPredictionsEv
+_ZNKSt8bad_cast4whatEv
+_ZNSt6__ndk112__hash_tableINS_17__hash_value_typeIPN9mindspore4lite6TensorENS_6vectorIPNS2_6kernel10LiteKernelENS_9allocatorIS9_EEEEEENS_22__unordered_map_hasherIS5_SD_NS_4hashIS5_EELb1EEENS_21__unordered_map_equalIS5_SD_NS_8equal_toIS5_EELb1EEENSA_ISD_EEE25__emplace_unique_key_argsIS5_JRKNS_21piecewise_construct_tENS_5tupleIJRKS5_EEENSS_IJEEEEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeISD_PvEEEEbEERKT_DpOT0_
+_ZNSt6__ndk112__hash_tableINS_17__hash_value_typeIPN9mindspore4lite6TensorENS_6vectorIPNS2_6kernel10LiteKernelENS_9allocatorIS9_EEEEEENS_22__unordered_map_hasherIS5_SD_NS_4hashIS5_EELb1EEENS_21__unordered_map_equalIS5_SD_NS_8equal_toIS5_EELb1EEENSA_ISD_EEE6rehashEm
+_ZNSt6__ndk112__hash_tableINS_17__hash_value_typeIPN9mindspore4lite6TensorENS_6vectorIPNS2_6kernel10LiteKernelENS_9allocatorIS9_EEEEEENS_22__unordered_map_hasherIS5_SD_NS_4hashIS5_EELb1EEENS_21__unordered_map_equalIS5_SD_NS_8equal_toIS5_EELb1EEENSA_ISD_EEE8__rehashEm
+_ZNSt6__ndk112__hash_tableINS_17__hash_value_typeIPN9mindspore6kernel10LiteKernelENS2_3AIDEEENS_22__unordered_map_hasherIS5_S7_NS_4hashIS5_EELb1EEENS_21__unordered_map_equalIS5_S7_NS_8equal_toIS5_EELb1EEENS_9allocatorIS7_EEE14__assign_multiINS_21__hash_const_iteratorIPNS_11__hash_nodeIS7_PvEEEEEEvT_SQ_
+_ZNSt6__ndk112__hash_tableINS_17__hash_value_typeIPN9mindspore6kernel10LiteKernelENS2_3AIDEEENS_22__unordered_map_hasherIS5_S7_NS_4hashIS5_EELb1EEENS_21__unordered_map_equalIS5_S7_NS_8equal_toIS5_EELb1EEENS_9allocatorIS7_EEE25__emplace_unique_key_argsIS5_JRKNS_21piecewise_construct_tENS_5tupleIJRKS5_EEENSN_IJEEEEEENS_4pairINS_15__hash_iteratorIPNS_11__hash_nodeIS7_PvEEEEbEERKT_DpOT0_
+_ZNSt6__ndk112__hash_tableINS_17__hash_value_typeIPN9mindspore6kernel10LiteKernelENS2_3AIDEEENS_22__unordered_map_hasherIS5_S7_NS_4hashIS5_EELb1EEENS_21__unordered_map_equalIS5_S7_NS_8equal_toIS5_EELb1EEENS_9allocatorIS7_EEE6rehashEm
+_ZNSt6__ndk112__hash_tableINS_17__hash_value_typeIPN9mindspore6kernel10LiteKernelENS2_3AIDEEENS_22__unordered_map_hasherIS5_S7_NS_4hashIS5_EELb1EEENS_21__unordered_map_equalIS5_S7_NS_8equal_toIS5_EELb1EEENS_9allocatorIS7_EEE8__rehashEm
+_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE4nposE
+_ZNSt6__ndk112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE4nposE
+_ZNSt6__ndk113basic_filebufIcNS_11char_traitsIcEEE7seekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk113unordered_mapIPN9mindspore6kernel10LiteKernelENS1_3AIDENS_4hashIS4_EENS_8equal_toIS4_EENS_9allocatorINS_4pairIKS4_S5_EEEEE2atERSC_
+_ZNSt6__ndk114__split_bufferIPPN9mindspore6kernel10LiteKernelENS_9allocatorIS5_EEE10push_frontEOS5_
+_ZNSt6__ndk114__split_bufferIPPN9mindspore6kernel10LiteKernelENS_9allocatorIS5_EEE9push_backEOS5_
+_ZNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEE10pubseekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEE7seekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE10pubseekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk115basic_streambufIwNS_11char_traitsIwEEE7seekposENS_4fposI9mbstate_tEEj
+_ZNSt6__ndk116allocator_traitsINS_9allocatorIN9mindspore6kernel22FusionEltwiseParameter5Node_EEEE11__constructIS5_JbRPS4_RNS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEEEEvNS_17integral_constantIbLb1EEERS6_PT_DpOT0_
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore13ParameterCellENS_9allocatorIS2_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore13ParameterCellENS_9allocatorIS2_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore13ParameterCellENS_9allocatorIS2_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore13ParameterCellENS_9allocatorIS2_EEED2Ev
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore6kernel25FusionEltwiseOpenCLKernelENS_9allocatorIS3_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore6kernel25FusionEltwiseOpenCLKernelENS_9allocatorIS3_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore6kernel25FusionEltwiseOpenCLKernelENS_9allocatorIS3_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore6kernel25FusionEltwiseOpenCLKernelENS_9allocatorIS3_EEED2Ev
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore8MSTensor4ImplENS_9allocatorIS3_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore8MSTensor4ImplENS_9allocatorIS3_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore8MSTensor4ImplENS_9allocatorIS3_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore8MSTensor4ImplENS_9allocatorIS3_EEED2Ev
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore9GraphCellENS_9allocatorIS2_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore9GraphCellENS_9allocatorIS2_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore9GraphCellENS_9allocatorIS2_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_emplaceIN9mindspore9GraphCellENS_9allocatorIS2_EEED2Ev
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore4lite5ModelENS_14default_deleteIS3_EENS_9allocatorIS3_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore4lite5ModelENS_14default_deleteIS3_EENS_9allocatorIS3_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore4lite5ModelENS_14default_deleteIS3_EENS_9allocatorIS3_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore6kernel11InnerKernelENS_14default_deleteIS3_EENS_9allocatorIS3_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore6kernel11InnerKernelENS_14default_deleteIS3_EENS_9allocatorIS3_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore6kernel11InnerKernelENS_14default_deleteIS3_EENS_9allocatorIS3_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore6kernel6KernelENS_14default_deleteIS3_EENS_9allocatorIS3_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore6kernel6KernelENS_14default_deleteIS3_EENS_9allocatorIS3_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore6kernel6KernelENS_14default_deleteIS3_EENS_9allocatorIS3_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore8MSTensor4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore8MSTensor4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore8MSTensor4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEED0Ev
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore9ModelImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEE16__on_zero_sharedEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore9ModelImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEE21__on_zero_shared_weakEv
+_ZNSt6__ndk120__shared_ptr_pointerIPN9mindspore9ModelImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEED0Ev
+_ZNSt6__ndk125__independent_bits_engineINS_23mersenne_twister_engineImLm32ELm624ELm397ELm31ELm2567483615ELm11ELm4294967295ELm7ELm2636928640ELm15ELm4022730752ELm18ELm1812433253EEEmE6__evalENS_17integral_constantIbLb1EEE
+_ZNSt6__ndk15dequeIPN9mindspore6kernel10LiteKernelENS_9allocatorIS4_EEE19__add_back_capacityEv
+_ZNSt6__ndk16__treeINS_12__value_typeIPN9mindspore4lite6TensorEPNS2_6kernel22FusionEltwiseParameterEEENS_19__map_value_compareIS5_S9_NS_4lessIS5_EELb1EEENS_9allocatorIS9_EEE12__find_equalIS5_EERPNS_16__tree_node_baseIPvEENS_21__tree_const_iteratorIS9_PNS_11__tree_nodeIS9_SJ_EElEERPNS_15__tree_end_nodeISL_EESM_RKT_
+_ZNSt6__ndk16__treeINS_12__value_typeIPN9mindspore4lite6TensorEPNS2_6kernel22FusionEltwiseParameterEEENS_19__map_value_compareIS5_S9_NS_4lessIS5_EELb1EEENS_9allocatorIS9_EEE7destroyEPNS_11__tree_nodeIS9_PvEE
+_ZNSt6__ndk16__treeIPN9mindspore6kernel10LiteKernelENS_4lessIS4_EENS_9allocatorIS4_EEE12__find_equalIS4_EERPNS_16__tree_node_baseIPvEENS_21__tree_const_iteratorIS4_PNS_11__tree_nodeIS4_SC_EElEERPNS_15__tree_end_nodeISE_EESF_RKT_
+_ZNSt6__ndk16__treeIPN9mindspore6kernel10LiteKernelENS_4lessIS4_EENS_9allocatorIS4_EEE7destroyEPNS_11__tree_nodeIS4_PvEE
+_ZNSt6__ndk16vectorIN9mindspore6kernel22FusionEltwiseParameter5Node_ENS_9allocatorIS4_EEE24__emplace_back_slow_pathIJbPS3_NS_12basic_stringIcNS_11char_traitsIcEENS5_IcEEEEEEEvDpOT_
+_ZNSt6__ndk16vectorIN9mindspore6kernel22FusionEltwiseParameter5Node_ENS_9allocatorIS4_EEE24__emplace_back_slow_pathIJbRPS3_RNS_12basic_stringIcNS_11char_traitsIcEENS5_IcEEEEEEEvDpOT_
+_ZNSt6__ndk16vectorINS0_IPN9mindspore6kernel10LiteKernelENS_9allocatorIS4_EEEENS5_IS7_EEE24__emplace_back_slow_pathIJRS7_EEEvDpOT_
+_ZNSt6__ndk16vectorIPN9mindspore6kernel10LiteKernelENS_9allocatorIS4_EEE21__push_back_slow_pathIRKS4_EEvOT_
+_ZNSt6__ndk16vectorIPN9mindspore6kernel10LiteKernelENS_9allocatorIS4_EEE6assignIPS4_EENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS4_NS_15iterator_traitsISB_E9referenceEEE5valueEvE4typeESB_SB_
+_ZNSt6__ndk16vectorIPN9mindspore6kernel10LiteKernelENS_9allocatorIS4_EEE6insertENS_11__wrap_iterIPKS4_EEOS4_
+_ZNSt6__ndk16vectorIPN9mindspore6kernel10LiteKernelENS_9allocatorIS4_EEE6insertINS_11__wrap_iterIPKS4_EEEENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS4_NS_15iterator_traitsISE_E9referenceEEE5valueENS9_IPS4_EEE4typeESC_SE_SE_
+_ZNSt6__ndk16vectorIPN9mindspore6kernel10LiteKernelENS_9allocatorIS4_EEE6insertINS_11__wrap_iterIPS4_EEEENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS4_NS_15iterator_traitsISD_E9referenceEEE5valueESB_E4typeENS9_IPKS4_EESD_SD_
+_ZNSt6__ndk16vectorIPN9mindspore6kernel6KernelENS_9allocatorIS4_EEE6insertENS_11__wrap_iterIPKS4_EERS9_
+_ZNSt6__ndk18ios_base7showposE
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTISt8bad_cast
+_ZTSSt8bad_cast
+_ZTVN9mindspore6kernel13CastCPUKernelE
+_ZTVN9mindspore6kernel16CastOpenCLKernelE
+_ZTVN9mindspore6kernel16PredictCPUKernelE
+_ZTVN9mindspore6kernel17CastFp16CPUKernelE
+_ZTVN9mindspore6kernel18TransposeCPUKernelE
+_ZTVN9mindspore6kernel19PartialFusionKernelE
+_ZTVN9mindspore6kernel20BroadcastToCPUKernelE
+_ZTVN9mindspore6kernel21TransposeOpenCLKernelE
+_ZTVN9mindspore6kernel22LshProjectionCPUKernelE
+_ZTVN9mindspore6kernel22TransposeFp16CPUKernelE
+_ZTVN9mindspore6kernel22TransposeInt8CPUKernelE
+_ZTVN9mindspore6kernel23QuantDTypeCastCPUKernelE
+_ZTVN9mindspore6kernel25FusionEltwiseOpenCLKernelE
+_ZTVN9mindspore6kernel27Conv2dTransposeOpenCLKernelE
+_ZTVN9mindspore6kernel27QuantDTypeCastFp16CPUKernelE
+_ZTVNSt6__ndk120__shared_ptr_emplaceIN9mindspore13ParameterCellENS_9allocatorIS2_EEEE
+_ZTVNSt6__ndk120__shared_ptr_emplaceIN9mindspore6kernel25FusionEltwiseOpenCLKernelENS_9allocatorIS3_EEEE
+_ZTVNSt6__ndk120__shared_ptr_emplaceIN9mindspore8MSTensor4ImplENS_9allocatorIS3_EEEE
+_ZTVNSt6__ndk120__shared_ptr_emplaceIN9mindspore9GraphCellENS_9allocatorIS2_EEEE
+_ZTVNSt6__ndk120__shared_ptr_pointerIPN9mindspore4lite5ModelENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+_ZTVNSt6__ndk120__shared_ptr_pointerIPN9mindspore6kernel11InnerKernelENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+_ZTVNSt6__ndk120__shared_ptr_pointerIPN9mindspore6kernel6KernelENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+_ZTVNSt6__ndk120__shared_ptr_pointerIPN9mindspore8MSTensor4ImplENS_14default_deleteIS3_EENS_9allocatorIS3_EEEE
+_ZTVNSt6__ndk120__shared_ptr_pointerIPN9mindspore9ModelImplENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
+_ZTVSt8bad_cast
+_ZZN9mindspore6kernel14OpenCLSubGraphC1ERKNSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEESA_SA_PNS0_6KernelEE5index
+_ZZN9mindspore6kernel15CpuFp16SubGraphC1ENSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEES8_S8_PNS0_6KernelEE5index
+_ZZN9mindspore6kernel15CpuFp32SubGraphC1ENSt6__ndk16vectorIPNS0_10LiteKernelENS2_9allocatorIS5_EEEES8_S8_PNS0_6KernelEE5index
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__kernel void ArithmeticSelf_ElementAbs_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementCeil_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementCos_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementExp_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementFloor_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementLog_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementLogicalNot_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementNeg_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementRound_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementRsqrt_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementSin_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementSqrt_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void ArithmeticSelf_ElementSquare_NHWC4(__read_only image2d_t input0, __write_only image2d_t output,
+__kernel void AvgPooling2d_NHWC4_IMG(__read_only image2d_t input, __write_only image2d_t output, const int4 input_shape,
+__kernel void AvgPooling2d_ReLU_NHWC4_IMG(__read_only image2d_t input, __write_only image2d_t output,
+__kernel void Batch_normalization_NHWC4(__read_only image2d_t input, __global FLT *scale, __global FLT *offset,
+__kernel void BoardcastScale_IMG(__read_only image2d_t input, float scale, float offset, __write_only image2d_t output,
+__kernel void BroadcastEqual(__read_only image2d_t input_a, float b, __write_only image2d_t output,
+__kernel void BroadcastFloorDiv(__read_only image2d_t input_a, float b, __write_only image2d_t output,
+__kernel void BroadcastGreater(__read_only image2d_t input_a, float b, __write_only image2d_t output,
+__kernel void BroadcastGreaterEqual(__read_only image2d_t input_a, float b, __write_only image2d_t output,
+__kernel void BroadcastLess(__read_only image2d_t input_a, float b, __write_only image2d_t output,
+__kernel void BroadcastLessEqual(__read_only image2d_t input_a, float b, __write_only image2d_t output,
+__kernel void BroadcastLogicalAnd(__read_only image2d_t input_a, float b, __write_only image2d_t output,
+__kernel void BroadcastLogicalOr(__read_only image2d_t input_a, float b, __write_only image2d_t output,
+__kernel void BroadcastMaximum(__read_only image2d_t input_a, float b, __write_only image2d_t output,
+__kernel void BroadcastMinimum(__read_only image2d_t input_a, float b, __write_only image2d_t output,
+__kernel void BroadcastNHWC4Add(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void BroadcastNHWC4BiasAdd(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void BroadcastNHWC4Div(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void BroadcastNHWC4FloorMod(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void BroadcastNHWC4Mul(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void BroadcastNHWC4SquaredDifference(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void BroadcastNHWC4Sub(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void BroadcastNotEqual(__read_only image2d_t input_a, float b, __write_only image2d_t output,
+__kernel void Cast_fp16_to_fp16(__read_only image2d_t input, __write_only image2d_t output, int2 XY) {
+__kernel void Cast_fp16_to_fp32(__read_only image2d_t input, __write_only image2d_t output, int2 XY) {
+__kernel void Cast_fp32_to_fp16(__read_only image2d_t input, __write_only image2d_t output, int2 XY) {
+__kernel void Cast_fp32_to_fp32(__read_only image2d_t input, __write_only image2d_t output, int2 XY) {
+__kernel void ComputeMeanVarAxis3NHWC4(__read_only image2d_t src_data, __global FLT *mean_, __global FLT *variance_,
+__kernel void ConcatInput2UnAlign_NHWC4(__read_only image2d_t input0, __read_only image2d_t input1,
+__kernel void ConcatInput3UnAlign_NHWC4(__read_only image2d_t input0, __read_only image2d_t input1,
+__kernel void ConcatInput4UnAlign_NHWC4(__read_only image2d_t input0, __read_only image2d_t input1,
+__kernel void ConcatInput5UnAlign_NHWC4(__read_only image2d_t input0, __read_only image2d_t input1,
+__kernel void ConcatInput6UnAlign_NHWC4(__read_only image2d_t input0, __read_only image2d_t input1,
+__kernel void Conv2D_H1W1C1(__read_only image2d_t input, __write_only image2d_t output, __global FLT4 *weight,
+__kernel void Conv2D_H1W1C1_1x1(__read_only image2d_t input, __write_only image2d_t output, __global FLT4 *weight,
+__kernel void Conv2D_H2W1C1(__read_only image2d_t input, __write_only image2d_t output, __global FLT4 *weight,
+__kernel void Conv2D_H2W1C1_1x1(__read_only image2d_t input, __write_only image2d_t output, __global FLT4 *weight,
+__kernel void Conv2D_H2W1C2(__read_only image2d_t input, __write_only image2d_t output, __global FLT4 *weight,
+__kernel void Conv2D_H2W1C2_1x1(__read_only image2d_t input, __write_only image2d_t output, __global FLT4 *weight,
+__kernel void Conv2D_H2W2C1(__read_only image2d_t input, __write_only image2d_t output, __global FLT4 *weight,
+__kernel void Conv2D_H2W2C1_1x1(__read_only image2d_t input, __write_only image2d_t output, __global FLT4 *weight,
+__kernel void Conv2D_H2W2C2(__read_only image2d_t input, __write_only image2d_t output, __global FLT4 *weight,
+__kernel void Conv2D_H2W2C2_1x1(__read_only image2d_t input, __write_only image2d_t output, __global FLT4 *weight,
+__kernel void Conv2D_H2W2C2_Img(__read_only image2d_t input, __write_only image2d_t output,
+__kernel void Conv2D_H2W2C2_Img_1x1(__read_only image2d_t input, __write_only image2d_t output,
+__kernel void DepthToSpace(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 in_shape,
+__kernel void DepthToSpaceAlign(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 in_shape,
+__kernel void DepthwiseConv2d_FIWI_NHWC4_b112(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_FIWI_NHWC4_b121(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_FIWI_NHWC4_b211(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_FIWI_NHWC4_b212(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_FIWI_NHWC4_b221(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_FIWI_NHWC4_b222(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_IMG_NHWC4(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_IMG_NHWC4_1x1(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_IMG_NHWC4_1x1_b221(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_IMG_NHWC4_b112(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_IMG_NHWC4_b121(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_IMG_NHWC4_b211(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_IMG_NHWC4_b212(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_IMG_NHWC4_b221(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void DepthwiseConv2d_IMG_NHWC4_b222(__write_only image2d_t dst_data, __read_only image2d_t src_data,
+__kernel void ElementAdd(__read_only image2d_t input_a, __read_only image2d_t input_b, __write_only image2d_t output,
+__kernel void ElementAddInt8(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementDiv(__read_only image2d_t input_a, __read_only image2d_t input_b, __write_only image2d_t output,
+__kernel void ElementEqual(__read_only image2d_t input_a, __read_only image2d_t input_b, __write_only image2d_t output,
+__kernel void ElementFloorDiv(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementFloorMod(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementGreater(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementGreaterEqual(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementLess(__read_only image2d_t input_a, __read_only image2d_t input_b, __write_only image2d_t output,
+__kernel void ElementLessEqual(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementLogicalAnd(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementLogicalOr(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementMaximum(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementMinimum(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementMul(__read_only image2d_t input_a, __read_only image2d_t input_b, __write_only image2d_t output,
+__kernel void ElementNotEqual(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementSquaredDifference(__read_only image2d_t input_a, __read_only image2d_t input_b,
+__kernel void ElementSub(__read_only image2d_t input_a, __read_only image2d_t input_b, __write_only image2d_t output,
+__kernel void FullConnection(__read_only image2d_t input, __write_only image2d_t output, __global FLT16 *weight,
+__kernel void FullConnectionWeightVar(__read_only image2d_t input, __write_only image2d_t output,
+__kernel void FusionEltwise(
+__kernel void GlobalCMean(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size, float4 mask) {
+__kernel void GlobalHWMean(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size) {
+__kernel void GlobalHWSumSquare(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size) {
+__kernel void GlobalWCMean(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size, float4 mask) {
+__kernel void GlobalWCSumSquare(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size,
+__kernel void HSigmoid(__read_only image2d_t input, __write_only image2d_t output, const int2 img_shape) {
+__kernel void HSwish(__read_only image2d_t input, __write_only image2d_t output, const int2 img_shape) {
+__kernel void LayerNormalization_NHWC4(__read_only image2d_t src_data, __write_only image2d_t dst_data,
+__kernel void LeakyRelu(__read_only image2d_t input, __write_only image2d_t output, const int2 img_shape,
+__kernel void LocalHWMean(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size) {
+__kernel void LocalHWSumSquare(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size) {
+__kernel void LocalWCMean(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size, float4 mask) {
+__kernel void LocalWCSumSquare(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 size,
+__kernel void MatMulActWeightTransposeB_4d(__read_only image2d_t input, __write_only image2d_t output,
+__kernel void MatMulActWeight_4d(__read_only image2d_t input, __write_only image2d_t output,
+__kernel void MatMul_2d(__read_only image2d_t input, __write_only image2d_t output, __global FLT16 *weight,
+__kernel void MatMul_4d(__read_only image2d_t input, __write_only image2d_t output, __global FLT16 *weight,
+__kernel void MatMul_IMG_Add_Sub_2(__read_only image2d_t input, __write_only image2d_t output, int4 shape, int4 offset,
+__kernel void MatMul_IMG_Filled(__read_only image2d_t input, __write_only image2d_t output, int4 shape, int2 offset) {
+__kernel void MatMul_Strassen_NHWC4_2d(__read_only image2d_t input, __write_only image2d_t output, __global FLT *weight,
+__kernel void MaxPooling2d_NHWC4_IMG(__read_only image2d_t input, __write_only image2d_t output, const int4 input_shape,
+__kernel void MaxPooling2d_ReLU_NHWC4_IMG(__read_only image2d_t input, __write_only image2d_t output,
+__kernel void OneHot2DAxis3(__read_only image2d_t src_data, __write_only image2d_t dst_data, int2 in_image2d_shape,
+__kernel void OneHotAxis0(__read_only image2d_t src_data, __write_only image2d_t dst_data, int2 in_image2d_shape,
+__kernel void OneHotAxis1(__read_only image2d_t src_data, __write_only image2d_t dst_data, int2 in_image2d_shape,
+__kernel void OneHotAxis2(__read_only image2d_t src_data, __write_only image2d_t dst_data, int2 in_image2d_shape,
+__kernel void OneHotAxis3(__read_only image2d_t src_data, __write_only image2d_t dst_data, int2 in_image2d_shape,
+__kernel void PRelu_scalar(__read_only image2d_t input, __write_only image2d_t output, float weight, int4 shape,
+__kernel void PRelu_vector(__read_only image2d_t input, __write_only image2d_t output, __global FLT4 *weight_vector,
+__kernel void Pad(__read_only image2d_t input, __write_only image2d_t output, int4 input_shape, int4 output_shape,
+__kernel void Relu(__read_only image2d_t input, __write_only image2d_t output, const int2 img_shape) {
+__kernel void Relu6(__read_only image2d_t input, __write_only image2d_t output, const int2 img_shape) {
+__kernel void Scale_C_IMG(__read_only image2d_t input, __read_only image2d_t scale, __read_only image2d_t offset,
+__kernel void Scale_H_IMG(__read_only image2d_t input, __read_only image2d_t scale, __read_only image2d_t offset,
+__kernel void Scale_IMG(__read_only image2d_t input, __read_only image2d_t scale, __read_only image2d_t offset,
+__kernel void Sigmoid(__read_only image2d_t input, __write_only image2d_t output, const int2 img_shape, const int c4,
+__kernel void Softmax1x1_NHWC4(__read_only image2d_t input, __write_only image2d_t output, const float4 mask,
+__kernel void SoftmaxAxis1_NHWC4(__read_only image2d_t input, __write_only image2d_t output, const float4 mask,
+__kernel void SoftmaxAxis2_NHWC4(__read_only image2d_t input, __write_only image2d_t output, const float4 mask,
+__kernel void SoftmaxAxis3_NHWC4(__read_only image2d_t input, __write_only image2d_t output, const float4 mask,
+__kernel void SpaceToDepth(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 in_shape,
+__kernel void SpaceToDepthAlign(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 in_shape,
+__kernel void SparseToDenseScalar(__read_only image2d_t input, __global DTYPE *output, float weight, int2 inputshape,
+__kernel void SparseToDenseVector(__read_only image2d_t input, __global DTYPE *output, __global float *weight_vector,
+__kernel void Strassen_Back_Result(__read_only image2d_t input1, __read_only image2d_t input2,
+__kernel void Swish(__read_only image2d_t input, __write_only image2d_t output, const int2 img_shape) {
+__kernel void Tanh(__read_only image2d_t input, __write_only image2d_t output, const int2 img_shape) {
+__kernel void Winograd36To4x4(__read_only image2d_t input,    // height=CO_SLICES*36    width=TILE_HW
+__kernel void Winograd4x4To36(__read_only image2d_t input,    // height=N*H             width=W*CI_SLICES
+__kernel void WinogradConv2D(__read_only image2d_t input,    // height=CI_SLICES*36    width=TILE_HW
+__kernel void WinogradConv2D_Img(__read_only image2d_t input,    // height=CI_SLICES*36    width=TILE_HW
+__kernel void batch_to_space_nd_NC4HW4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 src_size,
+__kernel void batch_to_space_nd_NHWC4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 src_size,
+__kernel void conv2d_transpose(__read_only image2d_t src_data, __write_only image2d_t dst_data, __global FLT16 *weight,
+__kernel void gather(__write_only image2d_t dst_data, __read_only image2d_t src_data, __global int *indices,
+__kernel void power(__read_only image2d_t input0, __read_only image2d_t input1, __write_only image2d_t output,
+__kernel void power_broadcast(__read_only image2d_t input, __write_only image2d_t output, int4 output_shape,
+__kernel void reshape_NHWC4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 src_size,
+__kernel void resize_bilinear_NC4HW4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 in_size,
+__kernel void resize_bilinear_NHWC4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 in_size,
+__kernel void resize_nearest_neighbor_NC4HW4(__read_only image2d_t src_data, __write_only image2d_t dst_data,
+__kernel void resize_nearest_neighbor_NHWC4(__read_only image2d_t src_data, __write_only image2d_t dst_data,
+__kernel void space_to_batch_nd_NC4HW4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 src_size,
+__kernel void space_to_batch_nd_NHWC4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 src_size,
+__kernel void split_out2_axis1(__read_only image2d_t input, __write_only image2d_t output1,
+__kernel void split_out2_axis2(__read_only image2d_t input, __write_only image2d_t output1,
+__kernel void split_out2_axis3(__read_only image2d_t input, __write_only image2d_t output1,
+__kernel void split_out2_axis3_unalign(__global FLT *input, __write_only image2d_t output1,
+__kernel void stack_2input_1axis_2inshape(__read_only image2d_t input0, __read_only image2d_t input1,
+__kernel void stack_2input_1axis_3inshape(__read_only image2d_t input0, __read_only image2d_t input1,
+__kernel void stack_2input_2axis_3inshape(__read_only image2d_t input0, __read_only image2d_t input1,
+__kernel void stack_2input_3axis_1inshape(__read_only image2d_t input0, __read_only image2d_t input1,
+__kernel void strided_slice(__read_only image2d_t input, __write_only image2d_t output, int4 input_shape,
+__kernel void transpose_0231_NC4HW4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 shape) {
+__kernel void transpose_0231_NHWC4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 shape) {
+__kernel void transpose_0231_oversize_NHWC4(__read_only image2d_t src_data, __write_only image2d_t dst_data,
+__kernel void transpose_0312_NC4HW4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 shape) {
+__kernel void transpose_0312_NHWC4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 shape) {
+__kernel void transpose_0312_oversize_NHWC4(__read_only image2d_t src_data, __write_only image2d_t dst_data,
+__kernel void transpose_general_NHWC4(__read_only image2d_t src_data, __write_only image2d_t dst_data, int4 out_shape,
+__read_only image2d_t input
+__uuidof(
+__write_only image2d_t output, int4 output_shape) {
+_broadcast
+access
+accumulate
+allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+broadcast_to don't need to convert attr to tensor.
+broadcast_to has not shape const tensor.
+broadcast_to_bool
+broadcast_to_float
+broadcast_to_int
+broadcast_to_prim is nullptr
+cast OneHotCPUKernel failed
+cast OneHotParameter nullptr
+cast ResizeParameter failed.
+cast affine_primitive to value failed
+cast to NMSParameter pointer got nullptr
+cast to tensor array primitive failed!
+circumflex-accent
+clCreateImage
+clCreateImage2D
+clCreateImage3D
+clEnqueueCopyBufferToImage
+clEnqueueCopyImage
+clEnqueueCopyImageToBuffer
+clEnqueueFillImage
+clEnqueueMapImage
+clEnqueueReadImage
+clEnqueueWriteImage
+clGetImageInfo
+const_cast
+conv2d_transpose
+create FusionEltwiseOpenCLKernel error.
+custom_predict_prim is nullptr
+dynamic_cast
+f/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/arm/fp32/cast_fp32.cc
+fullconnection only support a_transpose_=false yet.
+fusion kernel CheckSpecs() error: kernel name is 
+grave-accent
+int doconcat(__read_only image2d_t input, __global DTYPE *output, int Align_Shape, int4 input_shape, int IN, int IH,
+int dosplit(__global FLT *input, __write_only image2d_t output, int4 out_shape, int IN, int IH, int IW,
+lsh_projection_prim is nullptr
+malloc BroadcastToParameter failed.
+malloc CastParameter failed.
+malloc LshProjectionParameter failed.
+malloc QuantDTypeCastParameter failed.
+malloc TransposeParameter failed.
+matmul do not support broadcast bias data
+matmul only support a_transpose_=false yet.
+new PredictCPUKernel fail!
+new QuantDTypeCastFp16CPUKernel fail!
+non-virtual thunk to 
+number of kernels(after fusion) : 
+number of kernels(before fusion): 
+pthread_cond_broadcast
+quant_dtype_cast_prim is nullptr
+reinterpret_cast
+start Fusion
+static_cast
+std::bad_cast
+transpose don't need to convert attr to tensor.
+u8__uuidoft
+u8__uuidofz
+|/home/t00469595/mindspore_v13/mindspore/lite/src/runtime/kernel/opencl/opencl_fusion.cc

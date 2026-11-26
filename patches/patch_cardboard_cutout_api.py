@@ -16,6 +16,7 @@ Android 9(API 28) 起有公开 API `Display.getCutout()`，返回同一份数据
 （`DisplayCutout`，`DisplayCutoutCompat` 已经能包装它）。本脚本只把该方法换成
 公开调用，其余方法（`doesWindowExtendIntoCutoutArea` / `getDisplayRect`）不动。
 """
+import io
 import re
 import sys
 from pathlib import Path
@@ -28,12 +29,14 @@ ANCHOR = "android.view.DisplayInfo"
 
 def main(root):
     path = Path(root) / "decode" / MODULE / TARGET
-    text = path.read_text(encoding="utf-8", newline="")
+    text = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in text else "\n"
     body = text.replace("\r\n", "\n")
 
     if "getCutout()" in body:
-        raise SystemExit("already patched")
+        # 已应用过（工作区脚本靠 git 树做幂等；这里改为 rerun 直接算成功）
+        print("already patched: %s -> %s" % (TARGET, SIGNATURE))
+        return
     if ANCHOR not in body:
         raise SystemExit("anchor not found: %s" % ANCHOR)
 

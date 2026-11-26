@@ -10,11 +10,70 @@ decode/
 
 build/out/
 build/evidence/
-build/*.apk
+build/**/*.apk
 build/*.png
+lsposed/out/
 
 *.log
 *.idsig
 __pycache__/
 *.pyc
 .DS_Store
+.workbuddy/
+
+# P30 整包固件 5.2GB，仅本地分析用
+update_sd_base/
+
+# 卸载前的原包备份与逆向中间件（jar/apk 二进制），仅本地留存
+backup/
+
+# 固件解包产物（系统/base、update_sd_* 若干 GB），仅本地分析用
+系统/
+系统固件/
+
+# vr/ 里是大件二进制（约 473MB），只留 README / 08-文档 / 09-上机核验入库
+vr/01-6DoF算法与模型/
+vr/02-系统服务/
+vr/03-框架JAR与VDEX/
+vr/04-HAL-hivrar-桩/
+vr/05-VR显示合成/
+vr/06-应用APK/
+vr/07-反编译/
+
+# 从 APK 里抽出来的 so / dex，属于构建输入缓存，不入库
+build/sdklibs/
+build/appmkt_dex/
+build/vrconn/
+build/cmd_*
+build/*_manifest.txt
+
+# ---- 2026-11-06 提交前收紧：临时产物 / 大二进制 / 私钥不推 GitHub ----
+# 反编译 smali、抽出的 .so/.dex、截图、EDID 实验、签名临时目录
+.tmp-*/
+build/.tmp-*/
+build/tmp/
+build/deps/
+build/removed-overlay/
+build/shots/
+build/*.bin
+# 48MB boot 镜像（原件 = backup/box-2026-11-05/partitions/boot.img，仅本地；
+# 补丁件可由 tools/make_boot_earlyprop.py 重建；2026-11-07 实测失败已停用）
+build/*.img
+build/modetest_glass
+tools/hwvr-activate
+tools/hwvr-report-probe
+
+# 生成/重签的 APK：单文件上限 100MB（本仓库有 161MB 的 runtime 补丁包），
+# 且补丁包可由 fix/patches/vrdesktop/*.py 重建。历史已跟踪的 原包/ 原始
+# APK 不受影响；新增二进制一律走 Release 附件，沿用 dc7304b / 03bf101 决策。
+*.apk
+# 例外：com.youku.vr 占位包只有 8.5KB（仅 AndroidManifest.xml），
+# 一键脚本 install 直接依赖它，clone 后必须存在；其余补丁包仍走 Release/重建。
+!fix/apks/com.youku.vr-stub.apk
+
+# 签名私钥：仓库历史里已有 signing/hvr-compat-debug.jks，不要再新增副本
+fix/signing/
+*.jks
+*.keystore
+*.p12
+*.pem

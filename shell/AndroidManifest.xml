@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  VR 独立应用（com.hvr.shell）。
+
+  与上一版最大的区别：**它不依赖任何华为包**。以前的方案是把原版七个包当引擎、
+  总控只负责调度；现在原包全部卸载，VR 桌面、姿态、双目输出、手柄配对、
+  本地文件浏览都由本应用自己实现。
+
+  权限每一项都对应一条明确能力，不多要：
+    SYSTEM_ALERT_WINDOW   —— 后台启动自己的 VR 界面（插上眼镜就进，不用点图标）
+    MANAGE_EXTERNAL_STORAGE —— 本地视频全盘访问
+    BLUETOOTH / ADMIN + LOCATION —— 扫描并配对 CF20 手柄（targetSdk 30 走旧版权限）
+    FOREGROUND_SERVICE(+MEDIA_PROJECTION) —— 常驻服务与把手机画面投进 VR
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hvr.shell">
+
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="30" />
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    <uses-feature android:name="android.hardware.usb.host" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 锁屏穿透：插眼镜直接进 VR 桌面，不等用户解锁（原厂 vrservice 流程卡在等 USER_PRESENT）。 -->
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 列出并启动已安装的应用（「在 VR 桌面里添加应用」） -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+
+        <!--
+          照抄原厂 vrlauncherx / appmarket.vr / himovie.vr 的声明：
+          HwVrServiceManager（system_server）在眼镜插入时读这三个 meta-data 判定
+          VR 应用，vr_only 的 Activity 会被系统直接启动到眼镜屏（日志
+          "no vr app metadata" 就是在找它们）。这是我们之前 Presentation 黑屏的根因：
+          原厂根本没有 Presentation，靠的就是这套声明。
+        -->
+        <meta-data
+            android:name="com.huawei.android.vr.application.mode"
+            android:value="vr_only" />
+        <meta-data
+            android:name="com.huawei.android.vr.application.type"
+            android:value="launcher" />
+        <meta-data
+            android:name="com.huawei.vr.application.freeDegree"
+            android:value="3dof" />
+
+        <activity
+            android:name=".ShellActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|density|smallestScreenSize|screenLayout"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".ShellService"
+            android:exported="true"
+            android:stopWithTask="false" />
+
+        <service
+            android:name=".cast.MirrorService"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+
+        <!--
+          手柄全局接管：系统级按键过滤。HUAWEI GLASS HID 的按键只发给手机默认屏
+          聚焦窗口，手机不在本应用界面时桌面就收不到手柄——这个服务补上这一环。
+          用户在无障碍设置开启一次（ShellActivity 有直达按钮）。
+        -->
+        <service
+            android:name=".HvrInputService"
+            android:exported="false"
+            android:label="@string/accessibility_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <receiver
+            android:name=".BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".UsbAttachReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/usb_device_filter" />
+        </receiver>
+    </application>
+</manifest>

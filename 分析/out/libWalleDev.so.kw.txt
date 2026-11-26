@@ -1,0 +1,193 @@
+ imaginary
+,3;KZjWalle
+.eh_frame
+.eh_frame_hdr
+11WalleCommon
+5Walle
+6Wallex
+>allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleDev/../../../../native_src/server/../common/src/Thread.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleDev/../../../../native_src/server/../common/src/VrMath.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleDev/../../../../native_src/server/dev_plugins/WalleDev/WalleDev.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleDev/../../../../native_src/server/dev_plugins/WalleDev/WalleHid.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/WalleDev/../../../../native_src/server/dev_plugins/WalleDev/WallexHid.cpp
+Deleted virtual function called!
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+ProcessDataImu
+Pure virtual function called!
+St8bad_cast
+WalleDev
+[%s][%s:%s](%d): Walledev paused 
+[%s][%s:%s](%d): Walledev resumed
+[%s][%s:%s](%d): helmet version: hwVer = %s, swVer = %s
+[%s][%s:%s](%d): imu process takes(%fms) more than 1ms.
+[%s][%s:%s](%d): invalid acc data or gyro data ,%d , %d 
+[%s][%s:%s](%d): invalid imu data
+[%s][%s:%s](%d): memcpy_s imu data temp error.
+[%s][%s:%s](%d): memset_s imu data temp error.
+[%s][%s:%s](%d): receive imu data count(%u) proximity data count(%u) in one(%f) second
+[%s][%s:%s](%d): receive imu data count(%u), invalid data count(%u)in one(%f) second
+[%s][%s:%s](%d): recv from imu accel x = %.9f, y = %.9f, z = %.9f, gyro x = %.9f, y=%.9f, z=%.9f, time = %f
+[%s][%s:%s](%d): the input sensor data is invalid: buffer(0x%p), size(%d)
+[%s][%s:%s](%d): use helmet 1.0
+[%s][%s:%s](%d): use helmet 2.0
+_Z26funForSPFSCheckWalleCommonj
+_ZN10VrMatrix3dC1ERK13VrQuaterniond
+_ZN10VrMatrix3dC2ERK13VrQuaterniond
+_ZN11WalleCommon10ThreadLoopEv
+_ZN11WalleCommon11closeDeviceEv
+_ZN11WalleCommon11deActiveDevE11DEVICE_TYPE
+_ZN11WalleCommon11ioActiveDevE11DEVICE_TYPE
+_ZN11WalleCommon12onThreadExitEv
+_ZN11WalleCommon13ioDeactiveDevE11DEVICE_TYPE
+_ZN11WalleCommon13onThreadReadyEv
+_ZN11WalleCommon14ProcessDataImuEP10DeviceData
+_ZN11WalleCommon14getGlassVendorEv
+_ZN11WalleCommon14notifyDataRecvEP10DeviceData
+_ZN11WalleCommon15getGlassVersionEv
+_ZN11WalleCommon15ioGetOffsetInfoEv
+_ZN11WalleCommon15ioGetVendorInfoEv
+_ZN11WalleCommon15notifyEventRecvEv
+_ZN11WalleCommon16ioGetVersionInfoEv
+_ZN11WalleCommon18ProcessDataHeadPosEP10DeviceData
+_ZN11WalleCommon18initStatisticsArgsEv
+_ZN11WalleCommon19ProcessDataContrPosEP10DeviceData
+_ZN11WalleCommon19parseGlassSwVersionEv
+_ZN11WalleCommon19setDataReadListenerEPFiPKcPvjE
+_ZN11WalleCommon19setEventReadCommondEPFiPKcPvjE
+_ZN11WalleCommon20ProcessDataHeartbeatEP10DeviceData
+_ZN11WalleCommon21ProcessDataLowBatteryEP10DeviceData
+_ZN11WalleCommon21ProcessDataProxyimityEP10DeviceData
+_ZN11WalleCommon21handleGlassDeviceDataEv
+_ZN11WalleCommon21ioGetGlassOpticalInfoEv
+_ZN11WalleCommon23getGlassVersionPropertyEv
+_ZN11WalleCommon24IoGetHallidayVersionInfoEv
+_ZN11WalleCommon26checkGlassSwVersionUpon105Ev
+_ZN11WalleCommon4mHidE
+_ZN11WalleCommon4stopEv
+_ZN11WalleCommon5pauseEv
+_ZN11WalleCommon5startEv
+_ZN11WalleCommon6resumeEv
+_ZN11WalleCommon7mVendorE
+_ZN11WalleCommon7openDevEv
+_ZN11WalleCommon9activeDevE11DEVICE_TYPE
+_ZN11WalleCommon9getIoDataEv
+_ZN11WalleCommon9stopGlassEv
+_ZN11WalleCommonC2Ev
+_ZN11WalleCommonD0Ev
+_ZN11WalleCommonD1Ev
+_ZN11WalleCommonD2Ev
+_ZN12VrQuaternionC1E4Axisf
+_ZN12VrQuaternionC1ERK9VrMatrix4
+_ZN12VrQuaternionC1ERK9VrVector3f
+_ZN12VrQuaternionC2E4Axisf
+_ZN12VrQuaternionC2ERK9VrMatrix4
+_ZN12VrQuaternionC2ERK9VrVector3f
+_ZN12VrQuaternionaSERKS_
+_ZN13VrQuaterniond11getFromAxisE4Axisd
+_ZN13VrQuaterniond13getFromVectorERK10VrVector3dd
+_ZN13VrQuaterniondaSERKS_
+_ZN5Walle11onSartGlassEv
+_ZN5Walle15processImuEventEPhiRiR10DeviceData
+_ZN5Walle17sensorDataStaticsEv
+_ZN5Walle18onGlassSensorEventEPhi
+_ZN5Walle18processChargeEventEPhiRiR10DeviceData
+_ZN5Walle19processGestureEventEPhiRiR10DeviceData
+_ZN5Walle20processEarPhoneEventEPhiRiR10DeviceData
+_ZN5Walle20processProxmiteEventEPhiRiR10DeviceData
+_ZN5Walle21processExceptionEventEPhiRiR10DeviceData
+_ZN5Walle21processHeartBeatEventEPhiRiR10DeviceData
+_ZN5WalleC1Ev
+_ZN5WalleC2Ev
+_ZN5WalleD0Ev
+_ZN5WalleD1Ev
+_ZN5WalleD2Ev
+_ZN6Wallex11onSartGlassEv
+_ZN6Wallex15processImuEventEPhiRiR10DeviceData
+_ZN6Wallex17sensorDataStaticsEv
+_ZN6Wallex18onGlassSensorEventEPhi
+_ZN6Wallex20processProxmiteEventEPhiRiR10DeviceData
+_ZN6WallexC1Ev
+_ZN6WallexC2Ev
+_ZN6WallexD0Ev
+_ZN6WallexD1Ev
+_ZN6WallexD2Ev
+_ZN9VrMatrix39transposeEv
+_ZN9VrMatrix3C1ERK12VrQuaternion
+_ZN9VrMatrix3C2ERK12VrQuaternion
+_ZN9VrMatrix410transposedEv
+_ZN9VrMatrix4C1ERK12VrQuaternion
+_ZN9VrMatrix4C2ERK12VrQuaternion
+_ZN9VrVector311transToQuatEPfS0_S0_S0_
+_ZNK10VrMatrix3d10transposedEv
+_ZNK12VrQuaternion12lengthSquareEv
+_ZNK12VrQuaternion14getEulerAnglesEPfS0_S0_
+_ZNK12VrQuaternion15printQuaternionEv
+_ZNK12VrQuaternion3dotERKS_
+_ZNK12VrQuaternion4imagEv
+_ZNK12VrQuaternion5nlerpERKS_f
+_ZNK12VrQuaternion6lengthEv
+_ZNK12VrQuaternion6rotateERK9VrVector3
+_ZNK12VrQuaternion8invertedEv
+_ZNK12VrQuaternion9normalizeEv
+_ZNK12VrQuaterniondvEf
+_ZNK12VrQuaternionmlERK9VrVector3
+_ZNK12VrQuaternionmlERKS_
+_ZNK12VrQuaternionmlEf
+_ZNK12VrQuaternionplERKS_
+_ZNK13VrQuaterniond12lengthSquareEv
+_ZNK13VrQuaterniond14getEulerAnglesEPdS0_S0_
+_ZNK13VrQuaterniond3dotERKS_
+_ZNK13VrQuaterniond4imagEv
+_ZNK13VrQuaterniond5nlerpERKS_d
+_ZNK13VrQuaterniond6lengthEv
+_ZNK13VrQuaterniond6rotateERK10VrVector3d
+_ZNK13VrQuaterniond8invertedEv
+_ZNK13VrQuaterniond9normalizeEv
+_ZNK13VrQuaternionddvEd
+_ZNK13VrQuaterniondmlERK10VrVector3d
+_ZNK13VrQuaterniondmlERKS_
+_ZNK13VrQuaterniondmlEd
+_ZNK13VrQuaterniondplERKS_
+_ZNK9VrMatrix310transposedEv
+_ZNK9VrMatrix49transposeEv
+_ZNKSt8bad_cast4whatEv
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTI11WalleCommon
+_ZTI5Walle
+_ZTI6Wallex
+_ZTISt8bad_cast
+_ZTS11WalleCommon
+_ZTS5Walle
+_ZTS6Wallex
+_ZTSSt8bad_cast
+_ZTV11WalleCommon
+_ZTV5Walle
+_ZTV6Wallex
+_ZTVSt8bad_cast
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__uuidof(
+const_cast
+dynamic_cast
+funForSPFSCheckWalleCommon
+libWalleDev.so
+non-virtual thunk to 
+onGlassSensorEvent
+printQuaternion
+processImuEvent
+pthread_cond_broadcast
+reinterpret_cast
+sensorDataStatics
+static_cast
+std::bad_cast
+u8__uuidoft
+u8__uuidofz
+wallex

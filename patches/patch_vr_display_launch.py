@@ -20,6 +20,7 @@ EMUI 上这一步由框架的 VR 模式负责把 VR 应用放到「HUAWEI VR Dis
 用法：python patches/patch_vr_display_launch.py [仓库根]
 """
 
+import io
 import sys
 from pathlib import Path
 
@@ -50,7 +51,7 @@ def main(root):
     path = Path(root) / "decode" / MODULE / SMALI
     if not path.exists():
         raise SystemExit("missing %s" % path)
-    raw = path.read_text(encoding="utf-8", newline="")
+    raw = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in raw else "\n"
     text = raw.replace("\r\n", "\n")
     if "HvrDisplayRouter;->applyVrDisplay" in text:

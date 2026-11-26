@@ -37,6 +37,20 @@ public final class WindowManagerEx {
             }
         }
 
+        /**
+         * EMUI 私有「侧屏显示模式」：官方实现把这个值写进平台 LayoutParams 的
+         * 私有字段。AOSP / RK3566 上既没有这个概念也没有承载字段，所以不反射、
+         * 不写隐藏字段，只记一条日志后返回。
+         *
+         * <p>这个方法不能省：vrservice 的 ServiceTermActivity（服务条款页）在
+         * 编译期就定死了 invoke-virtual LayoutParamsEx.setDisplaySideMode(I)V，
+         * 桩类缺方法会抛 NoSuchMethodError，进程被杀后连带 ArvrRuntimeService
+         * onDestroy 空指针，整个 VR 栈回落（见手册第 8 章）。
+         */
+        public void setDisplaySideMode(int mode) {
+            Log.i(TAG, "setDisplaySideMode(I) ignored: no EMUI side-display mode on AOSP");
+        }
+
         public int getHwFlags() {
             return hwFlags;
         }

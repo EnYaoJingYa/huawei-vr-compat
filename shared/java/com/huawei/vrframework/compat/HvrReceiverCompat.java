@@ -38,7 +38,7 @@ public final class HvrReceiverCompat {
     }
 
     private static boolean needsFlag() {
-        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE;
+        return Build.VERSION.SDK_INT >= 34; // UPSIDE_DOWN_CAKE，编译目标只有 android-30，写字面值
     }
 
     /** 原版：registerReceiver(BroadcastReceiver, IntentFilter) */
@@ -46,7 +46,7 @@ public final class HvrReceiverCompat {
                                           IntentFilter filter) {
         if (context != null && receiver != null && filter != null && needsFlag()) {
             try {
-                return context.registerReceiver(receiver, filter, Context.RECEIVER_EXPORTED);
+                return context.registerReceiver(receiver, filter, 2 /*Context.RECEIVER_EXPORTED, API 33 常量，编译目标 android-30 写字面值*/);
             } catch (Throwable error) {
                 Log.w(TAG, "registerReceiver(exported) failed: " + error);
             }
@@ -64,7 +64,7 @@ public final class HvrReceiverCompat {
         if (context != null && receiver != null && filter != null && needsFlag()) {
             try {
                 return context.registerReceiver(receiver, filter, broadcastPermission,
-                        scheduler, Context.RECEIVER_EXPORTED);
+                        scheduler, 2 /*Context.RECEIVER_EXPORTED, API 33 常量，编译目标 android-30 写字面值*/);
             } catch (Throwable error) {
                 Log.w(TAG, "registerReceiver(exported, permission) failed: " + error);
             }

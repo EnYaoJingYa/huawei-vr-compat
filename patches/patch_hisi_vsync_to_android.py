@@ -18,6 +18,7 @@ vsync 边界，与 Choreographer 同基准）。只改 `getVsyncTimeStamp(int)D`
 两行取值指令，外层的 try/catch 与返回值语义原样保留；
 `hisi.vrar` 的其它能力（vrInit/vrMode/...）在 null 时本就有各自的判空分支。
 """
+import io
 import sys
 from pathlib import Path
 
@@ -35,7 +36,7 @@ REPLACEMENT = ('    # 通用安卓等价来源（见 patches/patch_hisi_vsync_to
 
 def main(root):
     path = Path(root) / "decode" / MODULE / TARGET.replace("$", "$")
-    text = path.read_text(encoding="utf-8", newline="")
+    text = io.open(path, encoding="utf-8", newline="").read()
     eol = "\r\n" if "\r\n" in text else "\n"
     body = text.replace("\r\n", "\n")
 

@@ -1,0 +1,190 @@
+ imaginary
+%s failed to broadcast
+.eh_frame
+.eh_frame_hdr
+CaptureEyeImage
+Deleted virtual function called!
+GetOrignalFramerate
+HVR_Android_CaptureEyeImage
+HVR_Android_CheckGazeCalibrationResult
+HVR_Android_GetControllerAccelerometer
+HVR_Android_GetControllerGyroscope
+HVR_Android_GetHeadPose
+HVR_Android_GetHelmet
+HVR_Android_GetHelmetInfo
+HVR_Android_GetHelmetVersion
+HVR_Android_GetRenderEventFunc
+HVR_Android_GetRenderStatics
+HVR_Android_IsHelmetAvailable
+HVR_Android_IsHw6DofController
+HVR_Android_IsHw6DofHeadAvaliable
+HVR_Android_RegisterHelmetCallback
+HVR_Android_SetGazeCalibrationPoint
+HVR_Android_SetPoseLock
+HVR_CameraEndFrame
+HVR_CameraEndFrameFoveated
+HVR_CameraEndFrameSinglepass
+HVR_FoveatedCameraEndFrame
+HVR_GetAcceleration
+HVR_GetCameraPositionOrientation
+HVR_GetEyeDist
+HVR_GetHelmetHotFlag
+HVR_GetPlayerEyeHeight
+HVR_GetSafeModeCameraData
+HVR_GetSensorQuatGL
+HVR_GetSensorState
+HVR_GetSlamPose
+HVR_InitRenderFoveatedThread
+HVR_InitRenderThread
+HVR_InitRenderThread exit
+HVR_InitRenderThread() entry
+HVR_InitRenderThread2
+HVR_InitRenderThread2() entry
+HVR_InitSinglePassRenderThread
+HVR_ResetSensorOrientation
+HVR_ResetSensorYaw
+HVR_SensorGetContainer
+HVR_SensorLockPosestate
+HVR_SensorUnlockPosestate
+HVR_SetEyeParms
+HVR_SetPredictDeltaTimeUS
+HVR_ShutdownRenderThread
+HVR_SinglePassCameraEndFrame
+HVR_TimeWarpEvent
+HelmetResetYaw
+ImmEnableMobileSensor
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+Pure virtual function called!
+ResetCameraTiltAnglePitch
+RestoreHelmetPosture
+SetCameraTiltAnglePitch
+SetRenderFrameMatrix
+SetRenderFrameProgram
+SetRenderFrameRate
+SetRenderFrameTexId
+SetRenderRatio
+St8bad_cast
+UnityRenderEvent
+[%s][%s:%s](%d): CaptureEyeImage sprintf_s image.filePath failed
+[%s][%s:%s](%d): CheckVrMode NULL == pHelmetHandle
+[%s][%s:%s](%d): CheckVrMode, dev is helmet, try to get VRMode
+[%s][%s:%s](%d): CheckVrMode, getHelmetInfo fail, try to get VRMode
+[%s][%s:%s](%d): DeleteSinglePassRenderThread
+[%s][%s:%s](%d): HVR_CameraEndFrameFoveated
+[%s][%s:%s](%d): HVR_CameraEndFrameSinglepass
+[%s][%s:%s](%d): HVR_GetHelmetHotFlag
+[%s][%s:%s](%d): HVR_InitRenderFoveatedThread
+[%s][%s:%s](%d): HVR_InitRenderThread()
+[%s][%s:%s](%d): HVR_InitRenderThread, plugin initialized
+[%s][%s:%s](%d): HVR_InitRenderThread2()
+[%s][%s:%s](%d): HVR_InitRenderThread2, plugin initialized
+[%s][%s:%s](%d): HVR_ResetSensorYaw()
+[%s][%s:%s](%d): HVR_Resume, Helmet is not available
+[%s][%s:%s](%d): HVR_SensorGetContainer()
+[%s][%s:%s](%d): HVR_SensorLockPosestate()
+[%s][%s:%s](%d): HVR_SensorLockPosestate, plugin uninitialized
+[%s][%s:%s](%d): HVR_SensorUnlockPosestate()
+[%s][%s:%s](%d): HVR_SensorUnlockPosestate, plugin uninitialized
+[%s][%s:%s](%d): HVR_ShutdownRenderThread
+[%s][%s:%s](%d): HVR_ShutdownRenderThread uninitialized!
+[%s][%s:%s](%d): HVR_ShutdownRenderThread()
+[%s][%s:%s](%d): HVR_ShutdownRenderThread, plugin uninitialized
+[%s][%s:%s](%d): HVR_TimeWarpEvent, mEyeTextures is null
+[%s][%s:%s](%d): SinglePassTimeWarpEvent %d 
+[%s][%s:%s](%d): UpdateSinglePassRenderThread
+[%s][%s:%s](%d): UpdateSinglePassRenderThread in realtime
+[%s][%s:%s](%d): getHeadPose error
+[%s][%s:%s](%d): getHelmetInfo ret:%d :%d
+[%s][%s:%s](%d): getHelmetVersion success.
+[%s][%s:%s](%d): getHelmetVersionInfo Error!
+[%s][%s:%s](%d): memcpy_s mImages[0].mTexCoordsFromTanFOV.m error.
+[%s][%s:%s](%d): memcpy_s mImages[1].mTexCoordsFromTanFOV.m error.
+[%s][%s:%s](%d): setHelemetPoseToController error
+[%s][%s:%s](%d): submitFrame failed, return -1
+[%s][%s:%s](%d): up.Helmet is null
+[@SDK][%s:%s](%d): Sensor mode is %s
+[@SDK][%s:%s](%d): Sensor mode is mobile
+[@SDK][%s:%s](%d): call immEnableMobileSensor: %d
+[@SDK][%s:%s](%d): error, immEnableMobileSensor == NULL
+_Z26glSetInvalidateFramebufferbbb
+_ZN12HvrFramework11GetInstanceEv
+_ZN12HvrFramework11GetMetaDataENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework11SetListenerEP15FWEventListener
+_ZN12HvrFramework12ExitCallbackEv
+_ZN12HvrFramework13GetSdkLibPathERNSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework13UnsetListenerEv
+_ZN12HvrFramework14JumpToPreSceneENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework15AdjustSysVolumeEi
+_ZN12HvrFramework15GetActivityNameEv
+_ZN12HvrFramework15UnsetAllClassesEv
+_ZN12HvrFramework16ForceProcessExitEv
+_ZN12HvrFramework16GetAssetsRawDataENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPai
+_ZN12HvrFramework17EnableHiAnalyticsEb
+_ZN12HvrFramework17GetDMStyleByIndexEi
+_ZN12HvrFramework17IsPhoneControllerEv
+_ZN12HvrFramework17RegisterReceiversEv
+_ZN12HvrFramework17SetAudioParameterENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEES6_
+_ZN12HvrFramework18GetDMOthersByIndexEi
+_ZN12HvrFramework18GetDialogueContentENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEi
+_ZN12HvrFramework18GetDrawableRawDataENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEPaiRiS8_
+_ZN12HvrFramework18IsHw6DofControllerEv
+_ZN12HvrFramework18SetCurrentActivityEP8_jobject
+_ZN12HvrFramework19AttachCurrentThreadEv
+_ZN12HvrFramework19SetFoveatedRenderOnEi
+_ZN12HvrFramework20GetDMIconNameByIndexEi
+_ZN12HvrFramework20GetDMQuantityByIndexEii
+_ZN12HvrFramework20GetDMTipsNameByIndexEi
+_ZN12HvrFramework20UnsetCurrentActivityEv
+_ZN12HvrFramework21GetDMTitleNameByIndexEi
+_ZN12HvrFramework21JumpToAppMarketDetailENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEb
+_ZN12HvrFramework21SetAppBackgroundStateEb
+_ZN12HvrFramework23GetDMContentNameByIndexEi
+_ZN12HvrFramework23isHW6DoFHeaderAvailableEv
+_ZN12HvrFramework25GetDMDisappearTimeByIndexEi
+_ZN12HvrFramework25LockFrequencyFoveatedModeENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework27UnlockFrequencyFoveatedModeENSt6__ndk112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE
+_ZN12HvrFramework4InitEv
+_ZN12HvrFramework6DeinitEv
+_ZN12HvrFramework8IsVRModeEv
+_ZN12HvrHelmetExt13GetBrightnessEv
+_ZN12HvrHelmetExt13SetBrightnessEi
+_ZN13SlamInterface7getPoseEP10VrPosturefm
+_ZN15HvrFWStaticWrap13GetDisplayDpiEPfS0_
+_ZN15HvrFWStaticWrap13SaveJpegImageEiijPKcPc
+_ZN15HvrFWStaticWrap14UpdateTexImageEPv
+_ZN15HvrFWStaticWrap15GetTexTimestampEPv
+_ZN15HvrFWStaticWrap20GetDisplayResolutionEPfS0_
+_ZN15HvrFWStaticWrap21HivrGetVsyncTimeStampEi
+_ZN15HvrFWStaticWrap24GetVirtualDisplaySurfaceEPP13ANativeWindow
+_ZN15NativeIpcCaller21mIsMobileSensorEnableE
+_ZN16HvrFWMessageProc16GetHelmetHotFlagEv
+_ZN16HvrFWMessageProc19GetOrignalFramerateEv
+_ZN3DFX27isControllerPoseDebugEnableEv
+_ZNKSt8bad_cast4whatEv
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTISt8bad_cast
+_ZTSSt8bad_cast
+_ZTVSt8bad_cast
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__uuidof(
+com.huawei.android.vr.sensor.mode
+const_cast
+dynamic_cast
+glFramebufferTextureMultisampleMultiviewOVR
+non-virtual thunk to 
+pthread_cond_broadcast
+reinterpret_cast
+ro.huawei.build.display.id
+static_cast
+std::bad_cast
+u8__uuidoft
+u8__uuidofz
+useLocalRender

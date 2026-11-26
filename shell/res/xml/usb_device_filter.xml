@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  只按 USB 身份匹配，不按设备名：0x12d1 是华为的 VID，0817(十六进制 0x1092)
+  与 1150(0x107e) 是 CV10 眼镜的 DisplayPort 复合身份与 HID 身份。
+  与 shared/java/.../VrPlatformCompat 里的常量保持一致。
+-->
+<resources>
+    <usb-device vendor-id="4817" product-id="4242" />
+    <usb-device vendor-id="4817" product-id="4222" />
+</resources>

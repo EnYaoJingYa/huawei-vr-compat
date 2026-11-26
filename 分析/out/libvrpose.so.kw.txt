@@ -1,0 +1,122 @@
+ imaginary
+%s failed to broadcast
+.eh_frame
+.eh_frame_hdr
+10HelmetPose
+19PhoneControllerPose
+9SingletonI10HelmetPoseE
+9SingletonI19PhoneControllerPoseE
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/VrPose/../../../../native_src/server/alg_plugins/WalleAlg/HelmetPose.cpp
+D:/Pasifa/code/app_server/HVRSDKServerApp/jni/../../../build/android_server/jni/VrPose/../../../../native_src/server/alg_plugins/WalleAlg/PhoneControllerPose.cpp
+Deleted virtual function called!
+HelmetPoseGet
+HelmetPoseStart
+HelmetPoseStop
+Java_com_huawei_vrhandle_VrPoseJni_getHelmetPose
+Java_com_huawei_vrhandle_VrPoseJni_getPhonePose
+Java_com_huawei_vrhandle_VrPoseJni_getPhoneYaw
+Java_com_huawei_vrhandle_VrPoseJni_helmetPoseStart
+Java_com_huawei_vrhandle_VrPoseJni_helmetPoseStop
+Java_com_huawei_vrhandle_VrPoseJni_phonePoseStart
+Java_com_huawei_vrhandle_VrPoseJni_phonePoseStop
+N12_GLOBAL__N_116itanium_demangle10UUIDOfExprE
+N12_GLOBAL__N_116itanium_demangle15IntegerCastExprE
+N12_GLOBAL__N_116itanium_demangle8CastExprE
+PhoneControllerPoseGet
+PhoneControllerPoseStart
+PhoneControllerPoseStop
+Pure virtual function called!
+St8bad_cast
+[%s][%s:%s](%d): HelmetPoseGet:x:%f, y:%f, z:%f, w:%f
+[%s][%s:%s](%d): getHelmetPose:x:%f, y:%f, z:%f, w:%f
+[%s][%s:%s](%d): getInitPose:x:%f, y:%f, z:%f, w:%f
+[%s][%s:%s](%d): getPhonePose:x:%f, y:%f, z:%f, w:%f
+[%s][%s:%s](%d): helmet sensor start
+[%s][%s:%s](%d): helmet sensor stop
+[%s][%s:%s](%d): helmetPose already Started
+[%s][%s:%s](%d): helmetPoseStart
+[%s][%s:%s](%d): helmetPoseStop
+[%s][%s:%s](%d): phonePoseStop
+[%s][%s:%s](%d): phonerPoseStart
+_Z21funForSPFSCheckVrPosej
+_ZGVN9SingletonI10HelmetPoseE9instance_E
+_ZGVN9SingletonI19PhoneControllerPoseE9instance_E
+_ZN10HelmetPose10putImuDataEP7IMUData
+_ZN10HelmetPose11getInitPoseEv
+_ZN10HelmetPose14onDataReceivedEPKcPvj
+_ZN10HelmetPose4stopEv
+_ZN10HelmetPose5startEv
+_ZN10HelmetPose7getPoseEP9VrPosture
+_ZN10HelmetPoseD0Ev
+_ZN10HelmetPoseD1Ev
+_ZN10HelmetPoseD2Ev
+_ZN11VrPoseState11getInitPoseEP12VrQuaternion
+_ZN11VrPoseState11predictPoseEdP9VrPosture
+_ZN11VrPoseState12calculatPoseER7IMUData
+_ZN11VrPoseStateC1Ev
+_ZN11VrPoseStateD1Ev
+_ZN11WalleCommon19setDataReadListenerEPFiPKcPvjE
+_ZN11WalleCommon4stopEv
+_ZN11WalleCommon5startEv
+_ZN12MobileSensor19setDataReadListenerEPFiPKcPvjE
+_ZN12MobileSensor4stopEv
+_ZN12MobileSensor5startEv
+_ZN12MobileSensorC1Ev
+_ZN12VrQuaternionaSERKS_
+_ZN19PhoneControllerPose10putImuDataEP7IMUData
+_ZN19PhoneControllerPose11getInitPoseEv
+_ZN19PhoneControllerPose14onDataReceivedEPKcPvj
+_ZN19PhoneControllerPose4stopEv
+_ZN19PhoneControllerPose5startEv
+_ZN19PhoneControllerPose7getPoseEP9VrPosture
+_ZN19PhoneControllerPoseD0Ev
+_ZN19PhoneControllerPoseD1Ev
+_ZN19PhoneControllerPoseD2Ev
+_ZN6WallexC1Ev
+_ZN9SingletonI10HelmetPoseE9instance_E
+_ZN9SingletonI19PhoneControllerPoseE9instance_E
+_ZNK12VrQuaternion14getEulerAnglesEPfS0_S0_
+_ZNKSt8bad_cast4whatEv
+_ZNSt6__ndk117__call_once_proxyINS_5tupleIJOZN9SingletonI10HelmetPoseE11getInstanceIJEEERS3_DpOT_EUlvE_EEEEEvPv
+_ZNSt6__ndk117__call_once_proxyINS_5tupleIJOZN9SingletonI19PhoneControllerPoseE11getInstanceIJEEERS3_DpOT_EUlvE_EEEEEvPv
+_ZNSt8bad_castC1Ev
+_ZNSt8bad_castC2Ev
+_ZNSt8bad_castD0Ev
+_ZNSt8bad_castD1Ev
+_ZNSt8bad_castD2Ev
+_ZTI10HelmetPose
+_ZTI19PhoneControllerPose
+_ZTI9SingletonI10HelmetPoseE
+_ZTI9SingletonI19PhoneControllerPoseE
+_ZTISt8bad_cast
+_ZTS10HelmetPose
+_ZTS19PhoneControllerPose
+_ZTS9SingletonI10HelmetPoseE
+_ZTS9SingletonI19PhoneControllerPoseE
+_ZTSSt8bad_cast
+_ZTV10HelmetPose
+_ZTV19PhoneControllerPose
+_ZTVSt8bad_cast
+_ZZN9SingletonI10HelmetPoseE13get_once_flagEvE5once_
+_ZZN9SingletonI19PhoneControllerPoseE13get_once_flagEvE5once_
+__cxa_deleted_virtual
+__cxa_pure_virtual
+__dynamic_cast
+__uuidof(
+const_cast
+dynamic_cast
+funForSPFSCheckVrPose
+getInitPose
+libMobileSensor.so
+libWalleAlg.so
+libWalleDev.so
+libvrpose.so
+non-virtual thunk to 
+pthread_cond_broadcast
+reinterpret_cast
+static_cast
+std::bad_cast
+u8__uuidoft
+u8__uuidofz
+~HelmetPose
+~PhoneControllerPose

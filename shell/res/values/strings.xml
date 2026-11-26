@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VR</string>
+    <string name="accessibility_label">HVR 手柄全局接管</string>
+    <string name="accessibility_desc">截获手柄/眼镜触板的方向键与确认键，驱动 VR 桌面。无论手机停在哪个界面都生效。</string>
+</resources>
