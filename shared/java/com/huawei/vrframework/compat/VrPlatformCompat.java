@@ -122,6 +122,15 @@ public final class VrPlatformCompat {
      * reports {@link Display#STATE_OFF} while the phone is open, so neither is
      * ever returned. This only ever *confirms* the USB identity above - on its
      * own it would also match the cover panel of a folded phone.
+     *
+     * <p><b>2026-11-26 修复：</b>当 {@code overlay_display_devices} 配成两块副屏
+     * （dual 档：{@code 100x100/320;1920x1080/320}）时，旧的「返回第一块非默认亮屏」
+     * 会选中 100x100 的探针屏，Presentation 随之挂到它上面，真正承载 SBS
+     * 双目的大屏成了空壳。现在改为在所有合格副屏里按**可视面积最大**选择；面积
+     * 相同时按 displayId 稳定取小的一个。{@link #hasExternalDisplay(Context)} 的
+     * 「是否存在」语义不变（有任意合格副屏即为 true），只影响「选哪块当面板」。
+     *
+     * @see #displayArea(Display)
      */
     public static Display externalDisplay(Context context) {
         if (context == null) {
@@ -132,15 +141,68 @@ public final class VrPlatformCompat {
         if (manager == null) {
             return null;
         }
-        for (Display display : manager.getDisplays()) {
-            if (display == null || display.getDisplayId() == Display.DEFAULT_DISPLAY) {
+        return largestDisplay(manager.getDisplays());
+    }
+
+    /**
+     * 在一组 display 里挑可视面积最大的合格副屏（非默认、非 OFF）。
+     * 在位判定与面板选择共用同一套「按面积」口径，避免两处各自退回「第一块」打架。
+     */
+    public static Display largestDisplay(Display[] displays) {
+        return largestDisplay(displays, true);
+    }
+
+    /**
+     * 与 {@link #largestDisplay(Display[])} 相同，但可通过 {@code requireOn} 控制
+     * 是否排除 OFF 屏。
+     *
+     * <p>{@code HvrPanelFinder} 的 presentation 类别 / FLAG_PRESENTATION 两级在修复前
+     * 并不检查 OFF（眼镜屏短暂进入 OFF 时仍要认出来），传 {@code false} 可保持该语义；
+     * 真正用于呈现画面的兜底级传 {@code true}，与 {@link #externalDisplay(Context)} 一致。
+     */
+    public static Display largestDisplay(Display[] displays, boolean requireOn) {
+        if (displays == null) {
+            return null;
+        }
+        Display best = null;
+        long bestArea = -1;
+        for (Display display : displays) {
+            if (!isCandidatePanel(display, requireOn)) {
                 continue;
             }
-            if (display.getState() != Display.STATE_OFF) {
-                return display;
+            long area = displayArea(display);
+            // 面积更大，或面积相同但 displayId 更小（稳定、可复现）时替换。
+            if (best == null || area > bestArea
+                    || (area == bestArea && display.getDisplayId() < best.getDisplayId())) {
+                best = display;
+                bestArea = area;
             }
         }
-        return null;
+        return best;
+    }
+
+    /** 合格的面板候选：非 null、非默认屏；requireOn 为 true 时还要求状态不是 OFF。 */
+    public static boolean isCandidatePanel(Display display, boolean requireOn) {
+        return display != null
+                && display.getDisplayId() != Display.DEFAULT_DISPLAY
+                && (!requireOn || display.getState() != Display.STATE_OFF);
+    }
+
+    /** display 的可视面积（realPixels 宽×高）；拿不到尺寸时返回 0 而非抛异常。 */
+    public static long displayArea(Display display) {
+        if (display == null) {
+            return 0;
+        }
+        try {
+            android.util.DisplayMetrics metrics = new android.util.DisplayMetrics();
+            display.getRealMetrics(metrics);
+            long w = Math.max(0, metrics.widthPixels);
+            long h = Math.max(0, metrics.heightPixels);
+            return w * h;
+        } catch (Throwable error) {
+            Log.w(TAG, "displayArea failed for #" + display.getDisplayId() + ": " + error);
+            return 0;
+        }
     }
 
     /** Real name of the connected external display, or {@code null}. */

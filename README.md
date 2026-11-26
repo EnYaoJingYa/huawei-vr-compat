@@ -140,8 +140,11 @@ install-six.ps1 -Revision r23
 
 系统侧配套模块（重建 /dev/hwvr1）单独打包安装：
 
-```powershell
-# 打包 ksu/hwvr_compat -> build/hwvr_compat.zip，再在设备上
+```bash
+# 仓库已附 build/hwvr_compat.zip；改过 ksu/hwvr_compat/ 后重新打包：
+python tools/build-ksu-module.py
+# 推到设备，再在设备上用 KernelSU 安装：
+adb push build/hwvr_compat.zip /data/local/tmp/hwvr_compat.zip
 #   su -c "/data/adb/ksu/bin/ksud module install /data/local/tmp/hwvr_compat.zip"
 # 本机只能用软重启；实测软重启即会拉起模块脚本，不需要真重启。
 ```
@@ -166,3 +169,10 @@ install-six.ps1 -Revision r23
   —— 自动选择 3DOF/6DOF（`TYPE_POSE_6DOF`，无则降级）+ 双目立体渲染 +
   外接屏 `Presentation` + 平面投屏，包名 `dev.vrdemo.posedriver`。
   已签名的独立 APK 在 `sample-app/build/posedriver-debug.apk`。
+- **SBS 面板选择修复（2026-11-26）**：[`docs/SBS-PANEL-FIX.md`](docs/SBS-PANEL-FIX.md)
+  —— dual 档下 `externalDisplay()` / `HvrPanelFinder` 改为按可视面积选大屏，
+  解决「SBS 面板被压成 100×100 空壳」。代码已修 + 编译/逻辑/换芯端到端验证通过，
+  待真机复验；这不是 `vr_display` 前缓冲直出（后者仍未完成）。
+  落地：[`docs/SBS-PANEL-FIX-BUILD.md`](docs/SBS-PANEL-FIX-BUILD.md) —— 用
+  `build/compat-dex/compat-sbs-panel-fix.dex` + `tools/apply-sbs-panel-fix.sh`
+  换芯注入，无需重编整包。

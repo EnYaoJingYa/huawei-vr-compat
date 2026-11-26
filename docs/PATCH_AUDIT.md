@@ -1821,7 +1821,7 @@ new Intent().setPackage(getPackageName()).setAction("com.huawei.android.vr.PROMP
   提取到**第 20/22 节一直在找的第七个包**：
 
   ```
-  包名 com.huawei.vrservice   版本 11.0.0.322   大小 3,042,010 字节
+  包名 com.huawei.vrservice   版本 11.0.0.322（提取时标注；当前原包实测为 12.0.0.302 / 5,298,141 B，见 BASELINE.md 版本更正）   大小 3,042,010 字节（提取时）
   label "Huawei VR Service"，附 lib/arm64-v8a/libvrservice.so
   ```
 

@@ -62,7 +62,7 @@ Windows 上的 7-Zip 26 能认 ext4 / squashfs / LP，但**不认 EROFS**，所�
 ```
 /hw_product/region_comm/china/app/VRServiceX/VRServiceX.apk
     包名    com.huawei.vrservice
-    版本    11.0.0.322 (versionCode 110000322)
+    版本    11.0.0.322 (versionCode 110000322)  ← 提取时标注；当前工程内原包已更新为 12.0.0.302，见 BASELINE.md
     大小    3,042,010 字节（101 个文件，CRC 全通过）
     label   Huawei VR Service
     附带    lib/arm64-v8a/libvrservice.so (112,560 字节)
@@ -130,7 +130,7 @@ Windows 上的 7-Zip 26 能认 ext4 / squashfs / LP，但**不认 EROFS**，所�
    自定义 `signature` 权限。直接装到三星机器上不会以系统身份运行——
    要么重签名+改权限，要么只取它的实现思路。这是新一轮的“系统层替换”工作，
    与前面六个包的处理原则一致：**接口不动，实现换成通用安卓**。
-2. 本包为 EMUI 11 版（11.0.0.322）；用户手上六个包里有的是 EMUI 10/11 混版，
+2. 本包提取时为 EMUI 11 版（11.0.0.322，当前工程内原包已更新为 12.0.0.302）；用户手上六个包里有的是 EMUI 10/11 混版，
    版本要对齐需要再核对。
 3. LYA-AL00C（EMUI 9）那包还没展开——它早于 VR Glass，预期不含该组件，
    本包暂按“未分析”记录。

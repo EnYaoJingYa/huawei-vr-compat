@@ -24,10 +24,11 @@
 #   sh fix/tools/vr-overlay-mode.sh [serial] set '800x600/320'
 #   sh fix/tools/vr-overlay-mode.sh [serial] restore          # 恢复修改前的值
 #
-# 注意：dual 只解决「两块屏职责分开」的硬件前提。HvrVrPanelPresenter 走
-#   VrPlatformCompat.externalDisplay()，它返回**第一个**非默认且 STATE_ON 的
-#   display（通常是小的那块），HvrMirrorService 的 HvrPanelFinder 同理。
-#   要让大屏真正被选为面板，还需 patch 这两个判据按面积优先（尚未做）。
+# 注意：dual 提供「两块屏职责分开」的硬件前提（小屏满足在位判据、大屏承载 SBS）。
+#   2026-11-26 起，面板选择已按可视面积取最大：VrPlatformCompat.externalDisplay()
+#   与 HvrPanelFinder 的各级判据都改为 largestDisplay()，因此大屏会被选为面板，
+#   不再退回 100x100 小屏。前提是 APK 用含该修复的兼容层重新构建（见
+#   docs/SBS-PANEL-FIX.md）。旧 APK 不含此修复时 dual 仍会命中小屏。
 set -u
 
 SERIAL="${1:-192.168.43.133:5555}"
@@ -81,8 +82,8 @@ case "$MODE" in
     show)
         show
         echo
-        echo "档位说明：small=消左眼叠影（当前默认）；panel=SBS 全尺寸（可能重新叠影）；"
-        echo "          dual=两块副屏分离职责（需另 patch externalDisplay 才生效）"
+        echo "档位说明：small=消左眼叠影；panel=SBS 全尺寸（可能重新叠影）；"
+        echo "          dual=小屏满足在位 + 大屏当面板（需含 2026-11-26 面积优先修复的 APK）"
         ;;
     small)   apply "100x100/320" ;;
     panel)   apply "1920x1080/320" ;;

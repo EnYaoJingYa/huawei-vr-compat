@@ -77,7 +77,7 @@ vr/
 
 | 目录 | 包 | 版本 |
 |---|---|---|
-| `华为VR全家桶/` | com.huawei.vrservice | 11.0.0.322（**来自设备原包**，比固件里的旧） |
+| `华为VR全家桶/` | com.huawei.vrservice | 12.0.0.302（原标 11.0.0.322；**来自设备原包**，比固件里的新） |
 | | com.huawei.hvrsdkserverapp | 3.5.0.82 |
 | | com.huawei.vrhandle | 10.0.1.345 |
 | | com.huawei.vrlauncherx | 11.1.0.337 |
